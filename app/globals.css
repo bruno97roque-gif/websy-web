@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── FONT UTILITIES ─── */
+.font-montserrat { font-family: var(--font-montserrat), sans-serif; }
+.font-poppins    { font-family: var(--font-poppins), sans-serif; }
+
+/* ─── SCROLLBAR ─── */
+::-webkit-scrollbar       { width: 3px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #F18C1B; border-radius: 2px; }
+
+/* ─── KEYFRAMES ─── */
+@keyframes gridMove {
+  to { background-position: 90px 90px; }
+}
+
+@keyframes floatY {
+  0%, 100% { transform: translateY(0);    }
+  50%       { transform: translateY(-28px); }
+}
+
+@keyframes sline {
+  0%   { transform: scaleY(0); transform-origin: top;    opacity: 1; }
+  50%  { transform: scaleY(1); transform-origin: top;    opacity: 1; }
+  51%  { transform: scaleY(1); transform-origin: bottom; opacity: 1; }
+  100% { transform: scaleY(0); transform-origin: bottom; opacity: 0; }
+}
+
+@keyframes mq {
+  to { transform: translateX(-50%); }
+}
+
+@keyframes cliScroll {
+  to { transform: translateX(-50%); }
+}
+
+/* ─── MARQUEE (yellow strip) ─── */
+.marquee-track {
+  display: flex;
+  white-space: nowrap;
+  animation: mq 22s linear infinite;
+}
+
+/* ─── CLIENT LOGOS ─── */
+.cli-track {
+  display: flex;
+  white-space: nowrap;
+  animation: cliScroll 30s linear infinite;
+}
+.cli-track:hover { animation-play-state: paused; }
+
+@theme inline {
+  --animate-orbit: orbit calc(var(--duration) * 1s) linear infinite;
+
+  @keyframes orbit {
+    0% {
+      transform: rotate(calc(var(--angle) * 1deg))
+        translateY(calc(var(--radius) * 1px))
+        rotate(calc(var(--angle) * -1deg));
+    }
+    100% {
+      transform: rotate(calc(var(--angle) * 1deg + 360deg))
+        translateY(calc(var(--radius) * 1px))
+        rotate(calc(var(--angle) * -1deg - 360deg));
+    }
+  }
+}
