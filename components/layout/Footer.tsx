@@ -8,7 +8,8 @@ const footerLinks = {
 
 export default function Footer() {
   return (
-    <footer className="bg-[#120719] px-8 pb-9 pt-[72px] md:px-[72px]">
+    <footer className="bg-[#120719]">
+      <div className="mx-auto max-w-[1600px] px-8 pb-9 pt-[72px] md:px-[72px]">
       <div className="grid grid-cols-1 gap-[60px] border-b border-white/06 pb-14 mb-8 md:grid-cols-[2.2fr_1fr_1fr_1fr]">
         {/* brand */}
         <div>
@@ -63,6 +64,7 @@ export default function Footer() {
             </a>
           ))}
         </div>
+      </div>
       </div>
     </footer>
   );

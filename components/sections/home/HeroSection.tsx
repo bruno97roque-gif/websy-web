@@ -1,67 +1,8 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { OrbitingCircles } from "@/components/ui/orbiting-circles";
-
-/* ─── Types ─── */
-interface GlassCardProps {
-  icon: React.ReactNode;
-  title: string;
-  desc: string;
-}
-
-/* ─── Data ─── */
-const cards: GlassCardProps[] = [
-  {
-    icon: (
-      <svg viewBox="0 0 32 32" fill="none" width={26} height={26}>
-        <path d="M8 24L18 8l8 13 5-7 6 11" stroke="#F18C1B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-        <circle cx="28" cy="6" r="3" stroke="#F18C1B" strokeWidth="2" />
-      </svg>
-    ),
-    title: "Branding",
-    desc: "Identidad visual que posiciona tu marca con fuerza.",
-  },
-  {
-    icon: (
-      <svg viewBox="0 0 32 32" fill="none" width={26} height={26}>
-        <rect x="3" y="5" width="26" height="20" rx="3" stroke="#F18C1B" strokeWidth="2" />
-        <path d="M3 11h26" stroke="#F18C1B" strokeWidth="2" />
-        <circle cx="7.5" cy="8" r="1" fill="#F18C1B" />
-        <circle cx="11" cy="8" r="1" fill="#F18C1B" />
-      </svg>
-    ),
-    title: "Webs & Tiendas Virtuales",
-    desc: "Sitios y e-commerce que convierten visitas en clientes.",
-  },
-  {
-    icon: (
-      <svg viewBox="0 0 32 32" fill="none" width={26} height={26}>
-        <circle cx="13" cy="13" r="8" stroke="#F18C1B" strokeWidth="2" />
-        <path d="M19 19l7 7" stroke="#F18C1B" strokeWidth="2" strokeLinecap="round" />
-        <path d="M10 13h6M13 10v6" stroke="#F18C1B" strokeWidth="2" strokeLinecap="round" />
-      </svg>
-    ),
-    title: "Google Ads & SEO",
-    desc: "Aparece primero. Atrae tráfico calificado y multiplica tu ROI.",
-  },
-];
-
-/* ─── GlassCard ─── */
-function GlassCard({ icon, title, desc }: GlassCardProps) {
-  return (
-    <div className="glass-card group flex items-center gap-4 rounded-2xl border border-white/10 bg-white/5 p-5 backdrop-blur-xl transition-all duration-300 hover:translate-x-2 hover:bg-white/10">
-      <div className="gc-icon flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#F18C1B]/15">
-        {icon}
-      </div>
-      <div>
-        <p className="font-montserrat text-[15px] font-extrabold text-white">{title}</p>
-        <p className="font-poppins text-[12px] leading-relaxed text-white/50">{desc}</p>
-      </div>
-    </div>
-  );
-}
 
 /* ─── Main Component ─── */
 export default function HeroSection() {
@@ -69,12 +10,6 @@ export default function HeroSection() {
   const titleRef = useRef<HTMLHeadingElement>(null);
   const descRef  = useRef<HTMLParagraphElement>(null);
   const btnsRef  = useRef<HTMLDivElement>(null);
-  const cardsRef = useRef<HTMLDivElement>(null);
-
-  /* ─── Draggable float state ─── */
-  const [floatPos, setFloatPos] = useState({ x: 60, y: 420 });
-  const isDragging  = useRef(false);
-  const dragOffset  = useRef({ x: 0, y: 0 });
 
   /* ─── GSAP intro ─── */
   useEffect(() => {
@@ -82,56 +17,27 @@ export default function HeroSection() {
     tl.from(pillRef.current,  { opacity: 0, y: 20, duration: 0.6, ease: "power3.out" })
       .from(titleRef.current, { opacity: 0, y: 60, duration: 1,   ease: "power3.out" }, "-=0.3")
       .from(descRef.current,  { opacity: 0, y: 30, duration: 0.7, ease: "power3.out" }, "-=0.5")
-      .from(btnsRef.current,  { opacity: 0, y: 20, duration: 0.6, ease: "power3.out" }, "-=0.4")
-      .from(
-        cardsRef.current ? Array.from(cardsRef.current.children) : [],
-        { opacity: 0, x: 50, duration: 0.6, stagger: 0.15, ease: "power3.out" },
-        "-=0.5"
-      );
+      .from(btnsRef.current,  { opacity: 0, y: 20, duration: 0.6, ease: "power3.out" }, "-=0.4");
   }, []);
-
-  /* ─── Drag events ─── */
-  useEffect(() => {
-    const onMouseMove = (e: MouseEvent) => {
-      if (!isDragging.current) return;
-      setFloatPos({
-        x: e.clientX - dragOffset.current.x,
-        y: e.clientY - dragOffset.current.y,
-      });
-    };
-    const onMouseUp = () => { isDragging.current = false; };
-    window.addEventListener("mousemove", onMouseMove);
-    window.addEventListener("mouseup", onMouseUp);
-    return () => {
-      window.removeEventListener("mousemove", onMouseMove);
-      window.removeEventListener("mouseup", onMouseUp);
-    };
-  }, []);
-
-  const onFloatMouseDown = (e: React.MouseEvent) => {
-    isDragging.current = true;
-    dragOffset.current = { x: e.clientX - floatPos.x, y: e.clientY - floatPos.y };
-    e.preventDefault();
-  };
 
   return (
     <section
       id="hero"
-      className="relative flex h-[calc(100vh-44px)] min-h-[640px] w-full items-center overflow-hidden"
+      className="relative flex h-[calc(100vh-44px)] min-h-[640px] w-full items-center overflow-x-hidden"
     >
       {/* ── VIDEO BG ── */}
       <div className="absolute inset-0 z-0">
+        {/* fallback gradient — detrás del video */}
+        <div className="absolute inset-0 bg-gradient-to-br from-[#180a1e] via-[#291231] to-[#3d1248]" />
         <video
           autoPlay
           muted
           loop
           playsInline
-          className="h-full w-full object-cover"
+          className="absolute inset-0 h-full w-full object-cover"
         >
           <source src="/video/Hero-Bg.webm" type="video/webm" />
         </video>
-        {/* fallback gradient if video doesn't load */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#180a1e] via-[#291231] to-[#3d1248]" />
       </div>
 
       {/* ── GROUND IMAGE (above video, anchored to bottom) ── */}
@@ -163,16 +69,16 @@ export default function HeroSection() {
       <div className="orb-b pointer-events-none absolute bottom-[5%] left-[3%] z-[2] h-[380px] w-[380px] animate-[floatY_7s_ease-in-out_infinite_reverse] rounded-full bg-[radial-gradient(circle,rgba(90,30,120,.45)_0%,transparent_70%)] blur-[90px]" />
 
       {/* ── CONTENT ── */}
-      <div className="relative z-10 mx-auto grid w-full max-w-[1260px] grid-cols-1 items-center gap-14 px-8 md:grid-cols-2 md:px-[72px]">
+      <div className="relative z-10 mx-auto grid w-full max-w-[1600px] grid-cols-1 items-center gap-10 px-8 md:grid-cols-2 md:px-[72px]">
 
         {/* LEFT */}
         <div>
           {/* pill */}
           <div
             ref={pillRef}
-            className="mb-7 inline-flex items-center gap-2 rounded-full border border-[#F18C1B]/28 bg-[#F18C1B]/12 px-4 py-1.5"
+            className="badge-pulse mb-7 inline-flex items-center gap-2 rounded-full border border-[#F18C1B]/28 bg-[#F18C1B]/12 px-4 py-1.5"
           >
-            <span className="h-[7px] w-[7px] animate-[pulse_2s_ease-in-out_infinite] rounded-full bg-[#F18C1B]" />
+            <span className="h-[7px] w-[7px] animate-[pulse_2s_ease-in-out_infinite] rounded-full bg-white shadow-[0_0_6px_rgba(255,255,255,0.6)]" />
             <span className="font-poppins text-[11px] font-medium uppercase tracking-[2px] text-[#F18C1B]">
               Agencia Marketing · Lima, Perú
             </span>
@@ -181,7 +87,7 @@ export default function HeroSection() {
           {/* heading */}
           <h1
             ref={titleRef}
-            className="font-montserrat mb-6 text-[clamp(42px,6vw,78px)] font-black leading-[.97] tracking-tight text-white"
+            className="font-montserrat mb-6 w-full text-[clamp(48px,5.5vw,88px)] font-black leading-[.95] tracking-tight text-white"
           >
             Tu marca en la<br />
             cima del Mundo<br />
@@ -206,7 +112,7 @@ export default function HeroSection() {
 
           <p
             ref={descRef}
-            className="font-poppins mb-10 max-w-[460px] text-[15px] leading-[1.8] text-white/55"
+            className="font-poppins mb-10 max-w-[520px] text-[15px] leading-[1.8] text-white/55"
           >
             Diseño exclusivo, tecnología de vanguardia y estrategia real para que tu negocio se destaque y convierta.
           </p>
@@ -232,10 +138,8 @@ export default function HeroSection() {
         </div>
 
         {/* RIGHT — Orbiting circles */}
-        <div className="flex flex-col items-center gap-6">
-
-          {/* Magic UI Orbiting Circles — 7 icons, white rings */}
-          <div className="relative mb-4 flex h-[340px] w-[340px] items-center justify-center">
+        <div className="flex items-center justify-center">
+          <div className="relative flex h-[500px] w-[500px] items-center justify-center">
 
             {/* Center: Websy logo image */}
             <div className="relative z-10 flex h-24 w-24 items-center justify-center">
@@ -248,53 +152,26 @@ export default function HeroSection() {
               />
             </div>
 
-            {/* Outer ring — 4 icons, radius 155 */}
-            <OrbitingCircles radius={155} duration={22} iconSize={40}>
-              {/* WordPress */}
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#21759b] text-[10px] font-black text-white shadow-lg">
-                WP
-              </div>
-              {/* Shopify */}
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#96bf48] text-[10px] font-black text-white shadow-lg">
-                SH
-              </div>
-              {/* Figma */}
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#a259ff] text-[10px] font-black text-white shadow-lg">
-                Fi
-              </div>
-              {/* BARE WEBP icon — sin fondo, solo la imagen */}
-              {/* Coloca tu icono en /public/icons/icon-orbit.webp */}
+            {/* Outer ring — 4 icons, radius 200 */}
+            <OrbitingCircles radius={200} duration={22} iconSize={44}>
+              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#21759b] text-[10px] font-black text-white shadow-lg">WP</div>
+              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#96bf48] text-[10px] font-black text-white shadow-lg">SH</div>
+              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#a259ff] text-[10px] font-black text-white shadow-lg">Fi</div>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/icons/icon-orbit.webp"
                 alt=""
-                className="h-10 w-10 object-contain drop-shadow-[0_2px_8px_rgba(0,0,0,.4)]"
+                className="h-11 w-11 object-contain drop-shadow-[0_2px_8px_rgba(0,0,0,.4)]"
                 draggable={false}
               />
             </OrbitingCircles>
 
-            {/* Inner ring — 3 icons, radius 95, reverse */}
-            <OrbitingCircles radius={95} duration={14} reverse iconSize={34}>
-              {/* Google */}
-              <div className="flex h-[34px] w-[34px] items-center justify-center rounded-xl bg-[#F18C1B] text-[10px] font-black text-[#291231] shadow-lg">
-                G
-              </div>
-              {/* Next.js */}
-              <div className="flex h-[34px] w-[34px] items-center justify-center rounded-xl bg-white/10 text-[10px] font-black text-white shadow-lg backdrop-blur-sm">
-                N↗
-              </div>
-              {/* Meta Ads */}
-              <div className="flex h-[34px] w-[34px] items-center justify-center rounded-xl bg-[#0668e1] text-[10px] font-black text-white shadow-lg">
-                M
-              </div>
+            {/* Inner ring — 3 icons, radius 120, reverse */}
+            <OrbitingCircles radius={120} duration={14} reverse iconSize={38}>
+              <div className="flex h-[38px] w-[38px] items-center justify-center rounded-xl bg-[#F18C1B] text-[10px] font-black text-[#291231] shadow-lg">G</div>
+              <div className="flex h-[38px] w-[38px] items-center justify-center rounded-xl bg-white/10 text-[10px] font-black text-white shadow-lg backdrop-blur-sm">N↗</div>
+              <div className="flex h-[38px] w-[38px] items-center justify-center rounded-xl bg-[#0668e1] text-[10px] font-black text-white shadow-lg">M</div>
             </OrbitingCircles>
-          </div>
-
-          {/* Glass cards */}
-          <div ref={cardsRef} className="flex w-full flex-col gap-3">
-            {cards.map((c) => (
-              <GlassCard key={c.title} {...c} />
-            ))}
           </div>
         </div>
       </div>
@@ -311,28 +188,6 @@ export default function HeroSection() {
         />
       </div>
 
-      {/* ── DRAGGABLE FLOATING IMAGE ── */}
-      {/* Coloca tu imagen en /public/images/hero-float.webp */}
-      <div
-        style={{
-          position: "fixed",
-          left: floatPos.x,
-          top: floatPos.y,
-          zIndex: 9000,
-          cursor: "grab",
-          userSelect: "none",
-          touchAction: "none",
-        }}
-        onMouseDown={onFloatMouseDown}
-      >
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src="/images/hero-float.webp"
-          alt=""
-          style={{ width: 130, pointerEvents: "none" }}
-          draggable={false}
-        />
-      </div>
     </section>
   );
 }
