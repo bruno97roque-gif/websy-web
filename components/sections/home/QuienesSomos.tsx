@@ -181,7 +181,7 @@ export default function QuienesSomos() {
           <div className="pointer-events-none absolute -bottom-4 -right-4 h-[55%] w-[55%] rounded-br-[12px] border-b-[3px] border-r-[3px] border-[#F18C1B]" />
 
           {/* badge — CountUp */}
-          <div className="absolute -left-6 bottom-7 flex min-w-[200px] items-center gap-3.5 rounded-[14px] bg-[#291231] p-5 shadow-[0_20px_60px_rgba(41,18,49,.25)]">
+          <div className="absolute -left-6 bottom-7 z-10 flex min-w-[200px] items-center gap-3.5 rounded-[14px] bg-[#291231] p-5 shadow-[0_20px_60px_rgba(41,18,49,.25)]">
             <span
               ref={badgeNumRef}
               className="font-montserrat text-[38px] font-black leading-none text-[#F18C1B]"
