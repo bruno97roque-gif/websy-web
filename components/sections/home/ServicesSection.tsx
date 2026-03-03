@@ -132,6 +132,14 @@ export default function ServicesSection() {
       {/* 1 — overlay blanco sobre la imagen de fondo */}
       <div className="pointer-events-none absolute inset-0 z-[1] bg-white/80" />
 
+      {/* 2 — degradado top: funde el borde superior con la sección de arriba */}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src="/images/degradado.webp"
+        alt=""
+        className="pointer-events-none absolute left-0 right-0 top-0 z-[2] w-full select-none"
+        draggable={false}
+      />
       {/* 2 — degradado bottom: funde con QuienesSomos (blanco) */}
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
