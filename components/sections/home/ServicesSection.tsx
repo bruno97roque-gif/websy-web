@@ -62,6 +62,7 @@ const services = [
 export default function ServicesSection() {
   const sectionRef = useRef<HTMLElement>(null);
 
+  /* ── GSAP scroll-in ── */
   useEffect(() => {
     const cards = sectionRef.current?.querySelectorAll(".js-serv");
     if (!cards) return;
@@ -84,6 +85,34 @@ export default function ServicesSection() {
         }
       );
     });
+  }, []);
+
+  /* ── Vanilla-tilt 3D ── */
+  useEffect(() => {
+    const cards = sectionRef.current?.querySelectorAll<HTMLElement>(".js-serv");
+    if (!cards?.length) return;
+
+    // Init after GSAP animation finishes (max duration = 0.85s + 2×0.15s delay + buffer)
+    const timer = window.setTimeout(async () => {
+      const { default: VanillaTilt } = await import("vanilla-tilt");
+      cards.forEach((card) => {
+        VanillaTilt.init(card, {
+          max: 6,
+          speed: 700,
+          glare: true,
+          "max-glare": 0.10,
+          perspective: 1100,
+          scale: 1.015,
+        });
+      });
+    }, 1600);
+
+    return () => {
+      clearTimeout(timer);
+      cards.forEach((card) => {
+        (card as HTMLElement & { vanillaTilt?: { destroy(): void } }).vanillaTilt?.destroy();
+      });
+    };
   }, []);
 
   const feature = services[0];
@@ -120,7 +149,7 @@ export default function ServicesSection() {
 
           {/* ── FEATURE CARD ── */}
           <div
-            className="js-serv group relative flex flex-col overflow-hidden rounded-3xl bg-[#291231] p-[52px_48px] transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_32px_80px_rgba(41,18,49,.22)]"
+            className="js-serv group relative flex flex-col overflow-visible rounded-3xl bg-[#291231] p-[52px_48px] transition-shadow duration-300 hover:shadow-[0_32px_80px_rgba(41,18,49,.22)]"
             style={{ gridRow: "1 / 3" }}
           >
             {/* inner grid pattern */}
@@ -179,7 +208,7 @@ export default function ServicesSection() {
           {rest.map((s) => (
             <div
               key={s.num}
-              className="js-serv group relative flex flex-col overflow-hidden rounded-[20px] border border-[#e4e2ea] bg-[#f8f7fa] p-[40px_38px] transition-all duration-300 hover:-translate-y-1.5 hover:border-[#F18C1B] hover:bg-white hover:shadow-[0_20px_60px_rgba(241,140,27,.12)]"
+              className="js-serv group relative flex flex-col overflow-visible rounded-[20px] border border-[#e4e2ea] bg-[#f8f7fa] p-[40px_38px] transition-[border-color,background-color,box-shadow] duration-300 hover:border-[#F18C1B] hover:bg-white hover:shadow-[0_20px_60px_rgba(241,140,27,.12)]"
             >
               {/* accent bar */}
               <div className="absolute bottom-0 left-0 top-0 w-1 origin-bottom scale-y-0 bg-[#F18C1B] transition-transform duration-[400ms] group-hover:scale-y-100" />
