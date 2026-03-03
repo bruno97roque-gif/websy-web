@@ -30,7 +30,7 @@ export default function ContactSection() {
       <div className="pointer-events-none absolute -top-36 right-[-80px] h-[600px] w-[600px] rounded-full bg-[radial-gradient(circle,rgba(241,140,27,.1)_0%,transparent_65%)] blur-[120px]" />
       <div className="pointer-events-none absolute -bottom-16 left-[10%] h-[350px] w-[350px] rounded-full bg-[radial-gradient(circle,rgba(80,20,110,.4)_0%,transparent_65%)] blur-[120px]" />
 
-      <div className="relative z-10 mx-auto max-w-[1260px]">
+      <div className="relative z-10 mx-auto max-w-[1600px]">
         <div className="grid grid-cols-1 items-center gap-[80px] md:grid-cols-2">
 
           {/* LEFT */}

@@ -123,7 +123,7 @@ export default function ServicesSection() {
       {/* top line */}
       <div className="pointer-events-none absolute left-[72px] right-[72px] top-0 h-px bg-gradient-to-r from-transparent via-[#e4e2ea] to-transparent" />
 
-      <div className="relative z-10 mx-auto max-w-[1260px]">
+      <div className="relative z-10 mx-auto max-w-[1600px]">
 
         {/* header */}
         <div className="mb-[72px] flex items-end justify-between">

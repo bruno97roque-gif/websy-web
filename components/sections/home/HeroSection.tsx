@@ -10,29 +10,20 @@ import { MovingBorderButton } from "@/components/ui/moving-border-button";
 function OrangeIcon({
   src,
   imgSize = 42,
-  circleSize,        // si se pasa, usa tamaño fijo; si no, llena el slot
+  circleSize,
 }: {
   src: string;
   imgSize?: number;
   circleSize?: number;
 }) {
-  const sizeStyle = circleSize
-    ? { width: circleSize, height: circleSize }
-    : undefined;
-
+  const sizeStyle = circleSize ? { width: circleSize, height: circleSize } : undefined;
   return (
     <div
       className={`flex items-center justify-center rounded-full bg-[#F18C1B] shadow-[0_0_20px_rgba(241,140,27,.5)] ${!circleSize ? "h-full w-full" : ""}`}
       style={sizeStyle}
     >
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        src={src}
-        alt=""
-        style={{ width: imgSize, height: imgSize }}
-        className="object-contain"
-        draggable={false}
-      />
+      <img src={src} alt="" style={{ width: imgSize, height: imgSize }} className="object-contain" draggable={false} />
     </div>
   );
 }
@@ -45,11 +36,24 @@ export default function HeroSection() {
   const btnsRef  = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const tl = gsap.timeline({ delay: 0.25 });
-    tl.from(pillRef.current,  { opacity: 0, y: 20, duration: 0.6, ease: "power3.out" })
-      .from(titleRef.current, { opacity: 0, y: 60, duration: 1,   ease: "power3.out" }, "-=0.3")
-      .from(descRef.current,  { opacity: 0, y: 30, duration: 0.7, ease: "power3.out" }, "-=0.5")
-      .from(btnsRef.current,  { opacity: 0, y: 20, duration: 0.6, ease: "power3.out" }, "-=0.4");
+    // Ocultar elementos ANTES de que el DOM pinte para evitar el flash
+    gsap.set([pillRef.current, titleRef.current, descRef.current, btnsRef.current], {
+      opacity: 0,
+    });
+
+    const tl = gsap.timeline({ delay: 0.15 });
+    tl.fromTo(pillRef.current,
+        { opacity: 0, y: 20 },
+        { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" })
+      .fromTo(titleRef.current,
+        { opacity: 0, y: 60 },
+        { opacity: 1, y: 0, duration: 1, ease: "power3.out" }, "-=0.3")
+      .fromTo(descRef.current,
+        { opacity: 0, y: 30 },
+        { opacity: 1, y: 0, duration: 0.7, ease: "power3.out" }, "-=0.5")
+      .fromTo(btnsRef.current,
+        { opacity: 0, y: 20 },
+        { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" }, "-=0.4");
   }, []);
 
   return (
@@ -70,8 +74,10 @@ export default function HeroSection() {
       <img src="/images/hero-ground.webp" alt=""
         className="pointer-events-none absolute bottom-0 left-0 z-[5] w-full select-none" />
 
-      {/* ── OVERLAY ── */}
-      <div className="absolute inset-0 z-[1] bg-[#180a1e]/80 md:bg-gradient-to-r md:from-[#180a1e]/78 md:via-[#291231]/55 md:to-[#180a1e]/35" />
+      {/* ── OVERLAY — capa base oscura cubre toda la pantalla siempre ── */}
+      <div className="absolute inset-0 z-[1] bg-[#180a1e]/70" />
+      {/* Capa de gradiente direccional encima, sólo para efecto estético en md+ */}
+      <div className="absolute inset-0 z-[1] hidden md:block bg-gradient-to-r from-[#180a1e]/55 via-[#291231]/30 to-transparent" />
 
       {/* animated grid */}
       <div className="pointer-events-none absolute inset-0 z-[2]"
@@ -88,11 +94,12 @@ export default function HeroSection() {
       <div className="pointer-events-none absolute bottom-[5%] left-[3%] z-[2] h-[380px] w-[380px] animate-[floatY_7s_ease-in-out_infinite_reverse] rounded-full bg-[radial-gradient(circle,rgba(90,30,120,.45)_0%,transparent_70%)] blur-[90px]" />
 
       {/* ── CONTENT GRID ── */}
-      <div className="relative z-10 mx-auto grid w-full max-w-[1600px] grid-cols-1 items-center gap-8 px-5 py-16 sm:px-8 md:grid-cols-[1.4fr_1fr] md:gap-6 md:px-[72px] md:py-0">
+      <div className="relative z-10 mx-auto grid w-full max-w-[1600px] grid-cols-1 items-center gap-8 px-5 py-20 sm:px-8 md:grid-cols-[1.4fr_1fr] md:gap-6 md:px-[72px] md:py-0">
 
         {/* ──── LEFT ──── */}
         <div className="flex flex-col items-center text-center md:items-start md:text-left">
 
+          {/* pill — inicia invisible, GSAP lo anima */}
           <div ref={pillRef}
             className="badge-pulse mb-6 inline-flex items-center gap-2 rounded-full border border-[#F18C1B]/28 bg-[#F18C1B]/12 px-4 py-1.5">
             <span className="h-[7px] w-[7px] animate-[pulse_2s_ease-in-out_infinite] rounded-full bg-white shadow-[0_0_6px_rgba(255,255,255,0.6)]" />
@@ -125,63 +132,38 @@ export default function HeroSection() {
         </div>
 
         {/* ──── RIGHT — Orbiting + partner badges ──── */}
-        <div className="hidden md:flex flex-col items-center justify-center gap-4">
+        <div className="hidden md:flex flex-col items-center justify-center gap-8">
 
           {/* ── Orbiting container ── */}
           <div className="relative h-[430px] w-[430px] lg:h-[660px] lg:w-[660px]">
             <div className="absolute inset-0 flex items-center justify-center">
-
-              {/*
-                Inner canvas: 740×740 px — escalado al 56% en tablet (≈414px),
-                100% en desktop. Todos los radios y tamaños van en px absolutos.
-              */}
               <div className="relative flex h-[740px] w-[740px] origin-center scale-[0.56] items-center justify-center lg:scale-[0.88]">
 
-                {/* ── Centro: logo flotante ── */}
+                {/* Centro: logo flotante */}
                 <div className="relative z-10 flex h-44 w-44 animate-[floatY_4s_ease-in-out_infinite] items-center justify-center">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src="/images/logo-hero.webp"
-                    alt="Websy"
+                  <img src="/images/logo-hero.webp" alt="Websy"
                     className="h-full w-full object-contain drop-shadow-[0_0_40px_rgba(241,140,27,.55)]"
-                    draggable={false}
-                  />
+                    draggable={false} />
                 </div>
 
-                {/* ── Anillo exterior — 4 iconos ── */}
-                <OrbitingCircles
-                  radius={330}
-                  duration={30}
-                  iconSize={72}
-                  strokeWidth={2.5}
-                  pathClassName="stroke-white/18"
-                >
+                {/* Anillo exterior — 4 iconos */}
+                <OrbitingCircles radius={330} duration={30} iconSize={72} strokeWidth={2.5} pathClassName="stroke-white/18">
                   <OrangeIcon src="/icons/icono1-circle.webp" imgSize={46} />
                   <OrangeIcon src="/icons/icono2-circle.webp" imgSize={46} />
                   <OrangeIcon src="/icons/icono3-circle.webp" imgSize={46} />
                   <OrangeIcon src="/icons/icono4-circle.webp" imgSize={46} />
                 </OrbitingCircles>
 
-                {/* ── Anillo interior — 2 iconos + cohete ── */}
-                <OrbitingCircles
-                  radius={190}
-                  duration={14}
-                  reverse
-                  iconSize={90}
-                  strokeWidth={2.5}
-                  pathClassName="stroke-white/18"
-                >
-                  {/* Icono 5 */}
+                {/* Anillo interior — 2 iconos + ovni GIF */}
+                <OrbitingCircles radius={190} duration={14} reverse iconSize={90} strokeWidth={2.5} pathClassName="stroke-white/18">
                   <OrangeIcon src="/icons/icono5-circle.webp" imgSize={40} circleSize={66} />
-                  {/* Icono 6 */}
                   <OrangeIcon src="/icons/icono6-circle.webp" imgSize={40} circleSize={66} />
-                  {/* Cohete — voltea en la mitad de la órbita (14s = duración del orbit) */}
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
-                    src="/icons/icon-orbit.webp"
+                    src="/icons/remplazo-de-cohete-ovni.gif"
                     alt=""
                     className="h-[90px] w-[90px] object-contain drop-shadow-[0_2px_14px_rgba(0,0,0,.6)]"
-                    style={{ animation: "rocketFlip 14s linear infinite" }}
                     draggable={false}
                   />
                 </OrbitingCircles>
@@ -190,25 +172,17 @@ export default function HeroSection() {
             </div>
           </div>
 
-          {/* ── Partner badges — debajo de los círculos ── */}
-          <div className="flex items-center gap-5 opacity-90">
+          {/* ── Partner badges — debajo, con más separación ── */}
+          <div className="flex items-center gap-6 opacity-90">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/images/Google-partner.webp"
-              alt="Google Partner"
-              className="h-9 w-auto object-contain lg:h-11"
-              draggable={false}
-            />
+            <img src="/images/Google-partner.webp" alt="Google Partner"
+              className="h-9 w-auto object-contain lg:h-11" draggable={false} />
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/images/Shopify-partner.webp"
-              alt="Shopify Partners"
-              className="h-9 w-auto object-contain lg:h-11"
-              draggable={false}
-            />
+            <img src="/images/Shopify-partner.webp" alt="Shopify Partners"
+              className="h-9 w-auto object-contain lg:h-11" draggable={false} />
           </div>
 
-        </div>{/* end RIGHT */}
+        </div>
       </div>
 
       {/* ── SCROLL HINT ── */}

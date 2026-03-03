@@ -21,50 +21,36 @@ export default function Navbar() {
       }`}
     >
       <div className="mx-auto flex h-[78px] w-full max-w-[1600px] items-center justify-between px-8 md:px-[72px]">
-        {/* Logo — coloca /public/images/logo-white.png y /public/images/logo-dark.png */}
+
+        {/* Logo — blanco por defecto, oscuro cuando el nav es sólido */}
         <Link href="/" className="nav-logo flex items-center no-underline">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/images/logo-white.png"
+            src="/icons/logo-white.webp"
             alt="Websy"
-            className={`h-10 w-auto object-contain ${solid ? "hidden" : "block"}`}
+            className={`h-10 w-auto object-contain transition-opacity duration-300 ${solid ? "opacity-0 absolute" : "opacity-100"}`}
           />
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/images/logo-dark.png"
+            src="/icons/logo-dark.webp"
             alt="Websy"
-            className={`h-10 w-auto object-contain ${solid ? "block" : "hidden"}`}
+            className={`h-10 w-auto object-contain transition-opacity duration-300 ${solid ? "opacity-100" : "opacity-0 absolute"}`}
           />
         </Link>
 
-        {/* Links */}
-        <ul className="flex items-center gap-9 list-none">
-          {[
-            { href: "/nosotros", label: "Nosotros" },
-            { href: "/#servicios", label: "Servicios" },
-            { href: "/#clientes", label: "Clientes" },
-          ].map((l) => (
-            <li key={l.href}>
-              <Link
-                href={l.href}
-                className={`group relative pb-1 font-montserrat text-[12px] font-semibold uppercase tracking-[1.5px] no-underline transition-colors hover:text-[#F18C1B] ${
-                  solid ? "text-[#1a1020]" : "text-white/80"
-                }`}
-              >
-                {l.label}
-                <span className="absolute bottom-0 left-0 h-0.5 w-0 bg-[#F18C1B] transition-all group-hover:w-full" />
-              </Link>
-            </li>
-          ))}
-          <li>
-            <Link
-              href="/contacto"
-              className="rounded-full bg-[#F18C1B] px-6 py-2.5 font-montserrat text-[12px] font-black uppercase tracking-[1.5px] text-[#291231] transition-all hover:-translate-y-0.5 hover:shadow-[0_8px_28px_rgba(241,140,27,.4)]"
-            >
-              Contáctanos
-            </Link>
-          </li>
-        </ul>
+        {/* Menú hamburguesa — solo el ícono, sin funcionalidad aún */}
+        <button
+          aria-label="Abrir menú"
+          className="flex items-center justify-center rounded-lg p-1.5 transition-opacity hover:opacity-70"
+        >
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/icons/menu-burguer-pc-mobil.svg"
+            alt=""
+            className={`h-8 w-8 object-contain transition-all duration-300 ${solid ? "brightness-0" : "brightness-100"}`}
+          />
+        </button>
+
       </div>
     </nav>
   );

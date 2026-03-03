@@ -9,7 +9,7 @@ const pillars = [
 export default function QuienesSomos() {
   return (
     <section id="quienes">
-      <div className="mx-auto grid max-w-[1260px] grid-cols-1 items-center gap-[80px] px-8 py-[120px] md:grid-cols-2 md:px-[72px]">
+      <div className="mx-auto grid max-w-[1600px] grid-cols-1 items-center gap-[80px] px-8 py-[120px] md:grid-cols-2 md:px-[72px]">
 
         {/* LEFT — image placeholder */}
         <div className="relative">

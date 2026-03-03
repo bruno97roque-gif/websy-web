@@ -40,7 +40,7 @@ export default function ClientsSection() {
 
   return (
     <section id="clientes" className="bg-white px-8 py-[110px] md:px-[72px]">
-      <div className="mx-auto max-w-[1260px]">
+      <div className="mx-auto max-w-[1600px]">
 
         {/* header */}
         <div className="mb-[72px] text-center">
