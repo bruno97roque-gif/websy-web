@@ -22,7 +22,7 @@ export default function HomePage() {
           <img
             src="/images/hero-float.webp"
             alt=""
-            className="h-[260px] w-auto drop-shadow-2xl"
+            className="h-[150px] w-auto drop-shadow-2xl sm:h-[200px] md:h-[260px]"
           />
         </div>
 

@@ -59,7 +59,7 @@ export default function HeroSection() {
   return (
     <section
       id="hero"
-      className="relative flex min-h-[calc(100svh-44px)] w-full items-center overflow-hidden"
+      className="relative flex min-h-[calc(100svh-44px)] w-full items-center overflow-clip bg-[#180a1e]"
     >
       {/* ── VIDEO BG ── */}
       <div className="absolute inset-0 z-0">
@@ -74,10 +74,14 @@ export default function HeroSection() {
       <img src="/images/hero-ground.webp" alt=""
         className="pointer-events-none absolute bottom-0 left-0 z-[5] w-full select-none" />
 
-      {/* ── OVERLAY — capa base oscura cubre toda la pantalla siempre ── */}
-      <div className="absolute inset-0 z-[1] bg-[#180a1e]/70" />
-      {/* Capa de gradiente direccional encima, sólo para efecto estético en md+ */}
-      <div className="absolute inset-0 z-[1] hidden md:block bg-gradient-to-r from-[#180a1e]/55 via-[#291231]/30 to-transparent" />
+      {/* ── OVERLAY ─────────────────────────────────────────────────────
+           Usamos -inset-px para que tape 1px más allá de cada borde
+           del section, eliminando cualquier raya de subpixel rendering.
+           El section ya tiene bg-[#180a1e] como fallback de color.
+      ──────────────────────────────────────────────────────────────── */}
+      <div className="absolute -inset-px z-[1] bg-[#180a1e]/72" />
+      {/* Gradiente estético adicional — más oscuro en los bordes */}
+      <div className="absolute -inset-px z-[1] bg-[radial-gradient(ellipse_120%_100%_at_70%_50%,transparent_30%,rgba(24,10,30,0.55)_100%)]" />
 
       {/* animated grid */}
       <div className="pointer-events-none absolute inset-0 z-[2]"
@@ -101,8 +105,12 @@ export default function HeroSection() {
 
           {/* pill — inicia invisible, GSAP lo anima */}
           <div ref={pillRef}
-            className="badge-pulse mb-6 inline-flex items-center gap-2 rounded-full border border-[#F18C1B]/28 bg-[#F18C1B]/12 px-4 py-1.5">
-            <span className="h-[7px] w-[7px] animate-[pulse_2s_ease-in-out_infinite] rounded-full bg-white shadow-[0_0_6px_rgba(255,255,255,0.6)]" />
+            className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#F18C1B]/28 bg-[#F18C1B]/12 px-4 py-1.5">
+            {/* Solo el punto hace ping, el badge queda estático */}
+            <span className="relative flex h-[9px] w-[9px] shrink-0">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-white opacity-60" />
+              <span className="relative inline-flex h-[9px] w-[9px] rounded-full bg-white shadow-[0_0_6px_rgba(255,255,255,0.7)]" />
+            </span>
             <span className="font-poppins text-[10px] font-medium uppercase tracking-[2px] text-[#F18C1B] sm:text-[11px]">
               Agencia Marketing · Lima, Perú
             </span>
@@ -173,7 +181,7 @@ export default function HeroSection() {
           </div>
 
           {/* ── Partner badges — debajo, con más separación ── */}
-          <div className="flex items-center gap-6 opacity-90">
+          <div className="flex items-center gap-10 opacity-100">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/images/Google-partner.webp" alt="Google Partner"
               className="h-9 w-auto object-contain lg:h-11" draggable={false} />
