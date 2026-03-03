@@ -140,7 +140,7 @@ export default function HeroSection() {
         </div>
 
         {/* ──── RIGHT — Orbiting + partner badges ──── */}
-        <div className="hidden md:flex flex-col items-center justify-center gap-8">
+        <div className="hidden md:flex flex-col items-center justify-center gap-14">
 
           {/* ── Orbiting container ── */}
           <div className="relative h-[430px] w-[430px] lg:h-[660px] lg:w-[660px]">
@@ -180,14 +180,14 @@ export default function HeroSection() {
             </div>
           </div>
 
-          {/* ── Partner badges — debajo, con más separación ── */}
-          <div className="flex items-center gap-10 opacity-100">
+          {/* ── Partner badges — debajo del orbi ── */}
+          <div className="flex items-center gap-12">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/images/Google-partner.webp" alt="Google Partner"
-              className="h-9 w-auto object-contain lg:h-11" draggable={false} />
+              className="h-12 w-auto object-contain lg:h-[60px]" draggable={false} />
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/images/Shopify-partner.webp" alt="Shopify Partners"
-              className="h-9 w-auto object-contain lg:h-11" draggable={false} />
+              className="h-12 w-auto object-contain lg:h-[60px]" draggable={false} />
           </div>
 
         </div>
@@ -195,9 +195,9 @@ export default function HeroSection() {
 
       {/* ── SCROLL HINT ── */}
       <div className="absolute bottom-8 left-1/2 z-10 hidden -translate-x-1/2 flex-col items-center gap-3 md:flex">
-        <span className="font-poppins text-[10px] uppercase tracking-[2.5px] text-white/30">Scroll</span>
-        {/* Mouse outline SVG */}
-        <div className="relative flex h-[46px] w-[28px] items-start justify-center rounded-[14px] border-2 border-white/25 pt-[7px]">
+        <span className="font-poppins text-[10px] uppercase tracking-[2.5px] text-white/65">Scroll</span>
+        {/* Mouse outline */}
+        <div className="relative flex h-[46px] w-[28px] items-start justify-center rounded-[14px] border-2 border-white/55 pt-[7px]">
           {/* Scrolling dot */}
           <div
             className="h-[7px] w-[2px] rounded-full bg-[#F18C1B]"
@@ -207,10 +207,10 @@ export default function HeroSection() {
         {/* Chevron arrows */}
         <div className="flex flex-col items-center gap-[3px]" style={{ animation: "scrollChevron 1.8s ease-in-out infinite" }}>
           <svg width="12" height="7" viewBox="0 0 12 7" fill="none">
-            <path d="M1 1l5 5 5-5" stroke="#F18C1B" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" opacity=".9" />
+            <path d="M1 1l5 5 5-5" stroke="#F18C1B" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" opacity="1" />
           </svg>
           <svg width="12" height="7" viewBox="0 0 12 7" fill="none">
-            <path d="M1 1l5 5 5-5" stroke="#F18C1B" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" opacity=".4" />
+            <path d="M1 1l5 5 5-5" stroke="#F18C1B" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" opacity=".5" />
           </svg>
         </div>
       </div>

@@ -33,11 +33,11 @@ const services = [
     feature: false,
     icon: (
       <svg viewBox="0 0 36 36" fill="none" width={30} height={30}>
-        <rect x="3" y="6" width="30" height="22" rx="3" stroke="#291231" strokeWidth="2.2" />
-        <path d="M3 12h30" stroke="#291231" strokeWidth="2" />
-        <circle cx="7.5" cy="9" r="1.2" fill="#291231" />
-        <circle cx="11.5" cy="9" r="1.2" fill="#291231" />
-        <path d="M9 19h18M9 23.5h12" stroke="#291231" strokeWidth="2" strokeLinecap="round" />
+        <rect x="3" y="6" width="30" height="22" rx="3" stroke="#F18C1B" strokeWidth="2.2" />
+        <path d="M3 12h30" stroke="#F18C1B" strokeWidth="2" />
+        <circle cx="7.5" cy="9" r="1.2" fill="#F18C1B" />
+        <circle cx="11.5" cy="9" r="1.2" fill="#F18C1B" />
+        <path d="M9 19h18M9 23.5h12" stroke="#F18C1B" strokeWidth="2" strokeLinecap="round" />
       </svg>
     ),
   },
@@ -51,9 +51,9 @@ const services = [
     feature: false,
     icon: (
       <svg viewBox="0 0 36 36" fill="none" width={30} height={30}>
-        <circle cx="15" cy="15" r="9" stroke="#291231" strokeWidth="2.2" />
-        <path d="M22 22l8 8" stroke="#291231" strokeWidth="2.2" strokeLinecap="round" />
-        <path d="M15 10v10M10 15h10" stroke="#291231" strokeWidth="2" strokeLinecap="round" />
+        <circle cx="15" cy="15" r="9" stroke="#F18C1B" strokeWidth="2.2" />
+        <path d="M22 22l8 8" stroke="#F18C1B" strokeWidth="2.2" strokeLinecap="round" />
+        <path d="M15 10v10M10 15h10" stroke="#F18C1B" strokeWidth="2" strokeLinecap="round" />
       </svg>
     ),
   },
@@ -134,6 +134,23 @@ export default function ServicesSection() {
 
       {/* top line */}
       <div className="pointer-events-none absolute left-[72px] right-[72px] top-0 h-px bg-gradient-to-r from-transparent via-[#e4e2ea] to-transparent" />
+
+      {/* Degradado top — funde con la sección de arriba */}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src="/images/degradado.webp"
+        alt=""
+        className="pointer-events-none absolute left-0 right-0 top-0 z-20 w-full select-none"
+        draggable={false}
+      />
+      {/* Degradado bottom — volteado, funde con la sección de abajo */}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src="/images/degradado.webp"
+        alt=""
+        className="pointer-events-none absolute bottom-0 left-0 right-0 z-20 w-full rotate-180 select-none"
+        draggable={false}
+      />
 
       <div className="relative z-10 mx-auto max-w-[1600px]">
 
@@ -216,34 +233,48 @@ export default function ServicesSection() {
             </div>
           </div>
 
-          {/* ── REGULAR CARDS ── */}
+          {/* ── REGULAR CARDS — dark purple style igual que feature ── */}
           {rest.map((s) => (
             <div
               key={s.num}
-              className="js-serv group relative flex flex-col overflow-visible rounded-[20px] border border-[#e4e2ea] bg-[#f8f7fa] p-[40px_38px] transition-[background-color,box-shadow] duration-300 hover:bg-white hover:shadow-[0_20px_60px_rgba(241,140,27,.12)]"
+              className="js-serv group relative flex flex-col overflow-hidden rounded-[20px] bg-[#291231] p-[40px_38px] transition-shadow duration-300 hover:shadow-[0_20px_60px_rgba(41,18,49,.35)]"
             >
-              <span className="pointer-events-none absolute right-6 top-5 font-montserrat text-[56px] font-black leading-none text-[#1a1020]/[.05]">
+              {/* inner grid pattern */}
+              <div
+                className="pointer-events-none absolute inset-0"
+                style={{
+                  backgroundImage: `
+                    linear-gradient(rgba(241,140,27,.05) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(241,140,27,.05) 1px, transparent 1px)
+                  `,
+                  backgroundSize: "48px 48px",
+                }}
+              />
+              {/* glow */}
+              <div className="pointer-events-none absolute -bottom-10 -right-10 h-[220px] w-[220px] rounded-full bg-[radial-gradient(circle,rgba(241,140,27,.14)_0%,transparent_70%)]" />
+
+              <span className="pointer-events-none absolute right-6 top-5 font-montserrat text-[56px] font-black leading-none text-white/[.04]">
                 {s.num}
               </span>
 
               <div className="relative z-10">
-                <div className="mb-6 flex h-[60px] w-[60px] items-center justify-center rounded-[14px] bg-[#1a1020]/[.07] transition-colors group-hover:bg-[#F18C1B]/12">
+                <div className="mb-6 flex h-[60px] w-[60px] items-center justify-center rounded-[14px] bg-[#F18C1B]/15 transition-colors group-hover:bg-[#F18C1B]/28">
                   {s.icon}
                 </div>
-                <p className="font-poppins mb-2 text-[10px] font-semibold uppercase tracking-[2px] text-[#6b6478]">
+                <p className="font-poppins mb-2 text-[10px] font-semibold uppercase tracking-[2px] text-[#F18C1B]">
                   {s.label}
                 </p>
-                <h3 className="font-montserrat mb-3 text-[22px] font-extrabold leading-[1.15] text-[#291231]">
+                <h3 className="font-montserrat mb-3 text-[22px] font-extrabold leading-[1.15] text-white">
                   {s.title}
                 </h3>
-                <p className="font-poppins mb-6 flex-1 text-[14px] leading-[1.75] text-[#6b6478]">
+                <p className="font-poppins mb-6 flex-1 text-[14px] leading-[1.75] text-white/55">
                   {s.desc}
                 </p>
                 <div className="mb-6 flex flex-wrap gap-2">
                   {s.tags.map((t) => (
                     <span
                       key={t}
-                      className="rounded-full border border-[#e4e2ea] px-3.5 py-1 font-poppins text-[11px] font-semibold tracking-[.5px] text-[#6b6478] transition-colors group-hover:border-[#F18C1B]/40 group-hover:text-[#F18C1B]"
+                      className="rounded-full border border-[#F18C1B]/30 px-3.5 py-1 font-poppins text-[11px] font-semibold tracking-[.5px] text-[#F18C1B]/90"
                     >
                       {t}
                     </span>
@@ -251,7 +282,7 @@ export default function ServicesSection() {
                 </div>
                 <a
                   href="#contacto"
-                  className="inline-flex items-center gap-2 border-b-2 border-[#F18C1B] pb-0.5 font-montserrat text-[12px] font-bold uppercase tracking-[1.5px] text-[#291231] transition-all group-hover:gap-3.5 group-hover:text-[#F18C1B]"
+                  className="inline-flex items-center gap-2 border-b-2 border-[#F18C1B] pb-0.5 font-montserrat text-[12px] font-bold uppercase tracking-[1.5px] text-white transition-all group-hover:gap-3.5 group-hover:text-[#F18C1B]"
                 >
                   {s.cta}
                 </a>
