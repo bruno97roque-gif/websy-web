@@ -130,7 +130,7 @@ export default function ServicesSection() {
       }}
     >
       {/* 1 — overlay blanco sobre la imagen de fondo */}
-      <div className="pointer-events-none absolute inset-0 z-[1] bg-white/80" />
+      <div className="pointer-events-none absolute inset-0 z-[1] bg-white/50" />
 
       {/* 2 — degradado top: altura fija para que no consuma padding */}
       {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -152,7 +152,7 @@ export default function ServicesSection() {
       />
 
       {/* top line — encima de los degradados */}
-      <div className="pointer-events-none absolute left-[72px] right-[72px] top-0 z-[3] h-px bg-gradient-to-r from-transparent via-[#e4e2ea] to-transparent" />
+
 
       <div className="relative z-10 mx-auto max-w-[1600px]">
 

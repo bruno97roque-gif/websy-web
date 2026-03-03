@@ -39,7 +39,7 @@ export function OrbitingCircles({
           className="pointer-events-none absolute inset-0 size-full"
         >
           <circle
-            className={cn(pathClassName ?? "stroke-white/25")}
+            className={cn(pathClassName ?? "stroke-white/100")}
             style={{ strokeWidth }}
             cx="50%"
             cy="50%"
