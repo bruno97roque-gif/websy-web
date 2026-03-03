@@ -129,28 +129,27 @@ export default function ServicesSection() {
         backgroundPosition: "center",
       }}
     >
-      {/* bg overlay — mantiene legibilidad sobre la imagen de fondo */}
-      <div className="pointer-events-none absolute inset-0 bg-white/80" />
+      {/* 1 — overlay blanco sobre la imagen de fondo */}
+      <div className="pointer-events-none absolute inset-0 z-[1] bg-white/80" />
 
-      {/* top line */}
-      <div className="pointer-events-none absolute left-[72px] right-[72px] top-0 h-px bg-gradient-to-r from-transparent via-[#e4e2ea] to-transparent" />
-
-      {/* Degradado top — funde con la sección de arriba */}
+      {/* 2 — degradados: funden bordes superior e inferior con secciones adyacentes */}
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src="/images/degradado.webp"
         alt=""
-        className="pointer-events-none absolute left-0 right-0 top-0 z-20 w-full select-none"
+        className="pointer-events-none absolute left-0 right-0 top-0 z-[2] w-full select-none"
         draggable={false}
       />
-      {/* Degradado bottom — volteado, funde con la sección de abajo */}
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src="/images/degradado.webp"
         alt=""
-        className="pointer-events-none absolute bottom-0 left-0 right-0 z-20 w-full rotate-180 select-none"
+        className="pointer-events-none absolute bottom-0 left-0 right-0 z-[2] w-full rotate-180 select-none"
         draggable={false}
       />
+
+      {/* top line — encima de los degradados */}
+      <div className="pointer-events-none absolute left-[72px] right-[72px] top-0 z-[3] h-px bg-gradient-to-r from-transparent via-[#e4e2ea] to-transparent" />
 
       <div className="relative z-10 mx-auto max-w-[1600px]">
 
