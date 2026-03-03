@@ -54,6 +54,12 @@
   50%, 100%   { transform: scaleX(-1); }
 }
 
+/* Loading screen — barra naranja que crece de izquierda a derecha */
+@keyframes loadBar {
+  0%   { transform: scaleX(0); }
+  100% { transform: scaleX(1); }
+}
+
 /* Scroll indicator — dot travels down inside mouse icon */
 @keyframes scrollDot {
   0%   { opacity: 1;   transform: translateY(0);    }
