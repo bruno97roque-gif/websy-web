@@ -54,6 +54,16 @@
   50%, 100%   { transform: scaleX(-1); }
 }
 
+/* Radix Accordion — anima la altura con la variable CSS nativa */
+@keyframes accordionDown {
+  from { height: 0; }
+  to   { height: var(--radix-accordion-content-height); }
+}
+@keyframes accordionUp {
+  from { height: var(--radix-accordion-content-height); }
+  to   { height: 0; }
+}
+
 /* Loading screen — barra naranja que crece de izquierda a derecha */
 @keyframes loadBar {
   0%   { transform: scaleX(0); }
