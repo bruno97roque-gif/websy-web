@@ -67,6 +67,9 @@ export default function ServicesSection() {
     const cards = sectionRef.current?.querySelectorAll(".js-serv");
     if (!cards) return;
 
+    // Ocultar inmediatamente para evitar flash antes del scroll trigger
+    gsap.set(cards, { opacity: 0, y: 60 });
+
     cards.forEach((card, i) => {
       gsap.fromTo(
         card,

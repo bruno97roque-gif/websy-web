@@ -36,11 +36,8 @@ export default function HeroSection() {
   const btnsRef  = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // Ocultar elementos ANTES de que el DOM pinte para evitar el flash
-    gsap.set([pillRef.current, titleRef.current, descRef.current, btnsRef.current], {
-      opacity: 0,
-    });
-
+    // Los elementos ya arrancan con opacity:0 en el JSX (style inline).
+    // GSAP sólo necesita animarlos a opacity:1.
     const tl = gsap.timeline({ delay: 0.15 });
     tl.fromTo(pillRef.current,
         { opacity: 0, y: 20 },
@@ -103,8 +100,8 @@ export default function HeroSection() {
         {/* ──── LEFT ──── */}
         <div className="flex flex-col items-center text-center md:items-start md:text-left">
 
-          {/* pill — inicia invisible, GSAP lo anima */}
-          <div ref={pillRef}
+          {/* pill — opacity:0 en HTML para que nunca flashee */}
+          <div ref={pillRef} style={{ opacity: 0 }}
             className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#F18C1B]/28 bg-[#F18C1B]/12 px-4 py-1.5">
             {/* Solo el punto hace ping, el badge queda estático */}
             <span className="relative flex h-[9px] w-[9px] shrink-0">
@@ -116,19 +113,19 @@ export default function HeroSection() {
             </span>
           </div>
 
-          <h1 ref={titleRef}
+          <h1 ref={titleRef} style={{ opacity: 0 }}
             className="font-montserrat mb-6 w-full text-[clamp(38px,7vw,94px)] font-bold leading-[.95] tracking-tight text-white">
             Tu marca en la<br />
             cima del Mundo<br />
             <span className="relative inline-block text-[#F18C1B]">Digital</span>
           </h1>
 
-          <p ref={descRef}
+          <p ref={descRef} style={{ opacity: 0 }}
             className="font-poppins mb-8 max-w-[480px] text-[14px] leading-[1.8] text-white/100 sm:text-[15px] md:mb-10">
             Diseño exclusivo, tecnología de vanguardia y estrategia real para que tu negocio se destaque y convierta.
           </p>
 
-          <div ref={btnsRef} className="flex flex-wrap justify-center gap-4 md:justify-start">
+          <div ref={btnsRef} style={{ opacity: 0 }} className="flex flex-wrap justify-center gap-4 md:justify-start">
             <ShimmerButton href="#servicios">
               Ver servicios
               <svg width="16" height="16" viewBox="0 0 18 18" fill="none">
