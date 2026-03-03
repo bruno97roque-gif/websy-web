@@ -12,8 +12,8 @@ interface ShimmerButtonProps {
 }
 
 /**
- * ShimmerButton — primary CTA with animated light sweep.
- * Use for the main orange action buttons throughout the site.
+ * ShimmerButton — primary CTA con animated light sweep.
+ * Hover: solo la flecha/ícono se mueve en loop, el botón NO sube.
  */
 export function ShimmerButton({
   children,
@@ -25,7 +25,7 @@ export function ShimmerButton({
   const base = cn(
     "group relative inline-flex items-center overflow-hidden rounded-full bg-[#F18C1B]",
     "px-9 py-4 font-montserrat text-[13px] font-black uppercase tracking-[1.5px] text-[#291231]",
-    "transition-all duration-200 hover:-translate-y-1 hover:shadow-[0_18px_50px_rgba(241,140,27,.55)]",
+    "transition-colors duration-200",
     className
   );
 
@@ -39,7 +39,10 @@ export function ShimmerButton({
     return (
       <a href={href} className={base}>
         {shimmer}
-        <span className="relative flex items-center gap-2.5">{children}</span>
+        {/* El SVG (flecha) dentro hereda group-hover y se anima solo */}
+        <span className="relative flex items-center gap-2.5 [&_svg]:group-hover:animate-[arrowLoop_0.75s_ease-in-out_infinite]">
+          {children}
+        </span>
       </a>
     );
   }
@@ -47,7 +50,9 @@ export function ShimmerButton({
   return (
     <button type={type} onClick={onClick} className={base}>
       {shimmer}
-      <span className="relative flex items-center gap-2.5">{children}</span>
+      <span className="relative flex items-center gap-2.5 [&_svg]:group-hover:animate-[arrowLoop_0.75s_ease-in-out_infinite]">
+        {children}
+      </span>
     </button>
   );
 }

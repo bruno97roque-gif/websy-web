@@ -12,8 +12,8 @@ interface MovingBorderButtonProps {
 }
 
 /**
- * MovingBorderButton — ghost CTA with an animated rotating border beam.
- * Use for secondary/ghost action buttons throughout the site.
+ * MovingBorderButton — white glassmorphism CTA.
+ * Hover: solo la flecha se mueve en loop, el botón NO sube.
  */
 export function MovingBorderButton({
   children,
@@ -23,31 +23,23 @@ export function MovingBorderButton({
   type = "button",
 }: MovingBorderButtonProps) {
   const base = cn(
-    "group relative inline-flex overflow-hidden rounded-full p-[1.5px]",
+    "group relative inline-flex items-center gap-2 overflow-hidden rounded-full",
+    "border border-white/30 bg-white/10 backdrop-blur-md",
+    "px-8 py-[15px]",
+    "font-montserrat text-[13px] font-bold uppercase tracking-[1.5px] text-white",
+    "transition-colors duration-300 hover:bg-white/18 hover:border-white/45",
     className
   );
 
   const inner = (
     <>
-      {/* Rotating conic-gradient — creates the animated border beam */}
+      <span>{children}</span>
+      {/* Flecha animada en loop solo en hover */}
       <span
         aria-hidden
-        className="absolute inset-[-200%] animate-[spin_4s_linear_infinite]"
-        style={{
-          background:
-            "conic-gradient(from 0deg, transparent 0%, transparent 30%, #F18C1B 42%, rgba(255,255,255,.85) 50%, #F18C1B 58%, transparent 70%, transparent 100%)",
-        }}
-      />
-      {/* Content — dark bg hides the gradient except at the 1.5 px border strip */}
-      <span
-        className={cn(
-          "relative flex items-center gap-2 rounded-full",
-          "bg-[#100618]/60 px-8 py-[15px] backdrop-blur-md",
-          "font-montserrat text-[13px] font-bold uppercase tracking-[1.5px] text-white",
-          "transition-all duration-300 group-hover:bg-[#F18C1B]/12"
-        )}
+        className="inline-block group-hover:animate-[arrowLoop_0.75s_ease-in-out_infinite]"
       >
-        {children}
+        →
       </span>
     </>
   );

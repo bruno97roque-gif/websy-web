@@ -41,6 +41,13 @@
   100% { transform: scaleY(0); transform-origin: bottom; opacity: 0; }
 }
 
+@keyframes arrowLoop {
+  0%, 100% { transform: translateX(0);   opacity: 1; }
+  45%       { transform: translateX(8px); opacity: 0; }
+  46%       { transform: translateX(-6px); opacity: 0; }
+  70%       { transform: translateX(0);   opacity: 1; }
+}
+
 @keyframes mq {
   to { transform: translateX(-50%); }
 }
