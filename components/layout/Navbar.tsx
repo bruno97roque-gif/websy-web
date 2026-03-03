@@ -21,17 +21,14 @@ export default function Navbar() {
       }`}
     >
       <div className="mx-auto flex h-[78px] w-full max-w-[1600px] items-center justify-between px-8 md:px-[72px]">
-
-        {/* Logo — swap /images/logo-white.png and /images/logo-dark.png with your files */}
+        {/* Logo — coloca /public/images/logo-white.png y /public/images/logo-dark.png */}
         <Link href="/" className="nav-logo flex items-center no-underline">
-          {/* Logo para header transparente (versión blanca/clara) */}
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/images/logo-white.png"
             alt="Websy"
             className={`h-10 w-auto object-contain ${solid ? "hidden" : "block"}`}
           />
-          {/* Logo para header sticky (versión oscura) */}
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/images/logo-dark.png"

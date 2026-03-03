@@ -11,6 +11,7 @@ export default function HeroSection() {
   const descRef  = useRef<HTMLParagraphElement>(null);
   const btnsRef  = useRef<HTMLDivElement>(null);
 
+  /* ─── GSAP intro ─── */
   useEffect(() => {
     const tl = gsap.timeline({ delay: 0.25 });
     tl.from(pillRef.current,  { opacity: 0, y: 20, duration: 0.6, ease: "power3.out" })
@@ -22,11 +23,11 @@ export default function HeroSection() {
   return (
     <section
       id="hero"
-      className="relative flex h-screen min-h-[680px] w-full items-center overflow-x-hidden"
+      className="relative flex h-[calc(100vh-44px)] min-h-[640px] w-full items-center overflow-x-hidden"
     >
       {/* ── VIDEO BG ── */}
       <div className="absolute inset-0 z-0">
-        {/* fallback gradient — behind video */}
+        {/* fallback gradient — detrás del video */}
         <div className="absolute inset-0 bg-gradient-to-br from-[#180a1e] via-[#291231] to-[#3d1248]" />
         <video
           autoPlay
@@ -35,10 +36,17 @@ export default function HeroSection() {
           playsInline
           className="absolute inset-0 h-full w-full object-cover"
         >
-          <source src="/videos/hero-reel.webm" type="video/webm" />
-          <source src="/videos/hero-reel.mp4"  type="video/mp4" />
+          <source src="/video/Hero-Bg.webm" type="video/webm" />
         </video>
       </div>
+
+      {/* ── GROUND IMAGE (above video, anchored to bottom) ── */}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src="/images/hero-ground.webp"
+        alt=""
+        className="pointer-events-none absolute bottom-0 left-0 z-[5] w-full select-none"
+      />
 
       {/* ── OVERLAYS ── */}
       <div className="absolute inset-0 z-[1] bg-gradient-to-r from-[#180a1e]/92 via-[#291231]/78 to-[#291231]/45" />
@@ -63,9 +71,9 @@ export default function HeroSection() {
       {/* ── CONTENT ── */}
       <div className="relative z-10 mx-auto grid w-full max-w-[1600px] grid-cols-1 items-center gap-10 px-8 md:grid-cols-2 md:px-[72px]">
 
-        {/* LEFT — text + buttons */}
+        {/* LEFT */}
         <div>
-          {/* badge */}
+          {/* pill */}
           <div
             ref={pillRef}
             className="badge-pulse mb-7 inline-flex items-center gap-2 rounded-full border border-[#F18C1B]/28 bg-[#F18C1B]/12 px-4 py-1.5"
@@ -132,21 +140,37 @@ export default function HeroSection() {
         {/* RIGHT — Orbiting circles */}
         <div className="flex items-center justify-center">
           <div className="relative flex h-[500px] w-[500px] items-center justify-center">
-            {/* Center logo */}
-            <div className="relative z-10 flex h-24 w-24 items-center justify-center rounded-2xl bg-[#291231] shadow-[0_0_60px_rgba(241,140,27,.3)]">
-              <span className="font-montserrat text-5xl font-black text-[#F18C1B]">W</span>
+
+            {/* Center: Websy logo image */}
+            <div className="relative z-10 flex h-24 w-24 items-center justify-center">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/images/logo-hero.webp"
+                alt="Websy"
+                className="h-full w-full object-contain drop-shadow-[0_0_30px_rgba(241,140,27,.5)]"
+                draggable={false}
+              />
             </div>
 
-            {/* Outer ring — WP + SH */}
-            <OrbitingCircles radius={200} duration={20} iconSize={44}>
-              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#291231] text-[11px] font-black text-[#F18C1B] shadow-lg ring-1 ring-[#F18C1B]/20">WP</div>
-              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#291231] text-[11px] font-black text-[#F18C1B] shadow-lg ring-1 ring-[#F18C1B]/20">SH</div>
+            {/* Outer ring — 4 icons, radius 200 */}
+            <OrbitingCircles radius={200} duration={22} iconSize={44}>
+              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#21759b] text-[10px] font-black text-white shadow-lg">WP</div>
+              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#96bf48] text-[10px] font-black text-white shadow-lg">SH</div>
+              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#a259ff] text-[10px] font-black text-white shadow-lg">Fi</div>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/icons/icon-orbit.webp"
+                alt=""
+                className="h-11 w-11 object-contain drop-shadow-[0_2px_8px_rgba(0,0,0,.4)]"
+                draggable={false}
+              />
             </OrbitingCircles>
 
-            {/* Inner ring — Google + Next */}
-            <OrbitingCircles radius={120} duration={14} reverse iconSize={40}>
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#F18C1B] text-[11px] font-black text-[#291231] shadow-lg">G</div>
-              <div className="flex h-10 w-10 items-center justify-center rounded-full border border-[#F18C1B]/40 bg-[#291231] text-[11px] font-black text-[#F18C1B] shadow-lg">N↗</div>
+            {/* Inner ring — 3 icons, radius 120, reverse */}
+            <OrbitingCircles radius={120} duration={14} reverse iconSize={38}>
+              <div className="flex h-[38px] w-[38px] items-center justify-center rounded-xl bg-[#F18C1B] text-[10px] font-black text-[#291231] shadow-lg">G</div>
+              <div className="flex h-[38px] w-[38px] items-center justify-center rounded-xl bg-white/10 text-[10px] font-black text-white shadow-lg backdrop-blur-sm">N↗</div>
+              <div className="flex h-[38px] w-[38px] items-center justify-center rounded-xl bg-[#0668e1] text-[10px] font-black text-white shadow-lg">M</div>
             </OrbitingCircles>
           </div>
         </div>
@@ -163,6 +187,7 @@ export default function HeroSection() {
           }}
         />
       </div>
+
     </section>
   );
 }

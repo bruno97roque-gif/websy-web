@@ -13,14 +13,14 @@ export default function HomePage() {
         <HeroSection />
 
         {/*
-          Alien mascot — se superpone encima de la barra naranja.
-          Coloca tu imagen en: /public/images/alien-mascot.png
+          Alien mascot — se superpone encima de la barra naranja. Scrollea con la página (no fixed).
+          Imagen: /public/images/hero-float.webp
           Ajusta h-[220px] al tamaño que prefieras.
         */}
         <div className="pointer-events-none absolute bottom-[12px] left-[5%] z-20">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/images/alien-mascot.png"
+            src="/images/hero-float.webp"
             alt=""
             className="h-[220px] w-auto drop-shadow-2xl"
           />
@@ -28,7 +28,6 @@ export default function HomePage() {
 
         <MarqueeSection />
       </div>
-
       <QuienesSomos />
       <ServicesSection />
       <ClientsSection />
