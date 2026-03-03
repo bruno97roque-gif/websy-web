@@ -11,6 +11,7 @@ export interface OrbitingCirclesProps extends React.HTMLAttributes<HTMLDivElemen
   radius?: number
   path?: boolean
   pathClassName?: string
+  strokeWidth?: number
   iconSize?: number
   speed?: number
 }
@@ -23,6 +24,7 @@ export function OrbitingCircles({
   radius = 160,
   path = true,
   pathClassName,
+  strokeWidth = 1,
   iconSize = 30,
   speed = 1,
   ...props
@@ -37,7 +39,8 @@ export function OrbitingCircles({
           className="pointer-events-none absolute inset-0 size-full"
         >
           <circle
-            className={cn("stroke-1", pathClassName ?? "stroke-white/25")}
+            className={cn(pathClassName ?? "stroke-white/25")}
+            style={{ strokeWidth }}
             cx="50%"
             cy="50%"
             r={radius}

@@ -6,6 +6,22 @@ import { OrbitingCircles } from "@/components/ui/orbiting-circles";
 import { ShimmerButton } from "@/components/ui/shimmer-button";
 import { MovingBorderButton } from "@/components/ui/moving-border-button";
 
+/* ─── Orange icon wrapper ─── */
+function OrangeIcon({ src, size = 40 }: { src: string; size?: number }) {
+  return (
+    <div className="flex h-full w-full items-center justify-center rounded-full bg-[#F18C1B] shadow-[0_0_18px_rgba(241,140,27,.45)]">
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src={src}
+        alt=""
+        style={{ width: size, height: size }}
+        className="object-contain"
+        draggable={false}
+      />
+    </div>
+  );
+}
+
 /* ─── Main Component ─── */
 export default function HeroSection() {
   const pillRef  = useRef<HTMLDivElement>(null);
@@ -41,7 +57,7 @@ export default function HeroSection() {
         </video>
       </div>
 
-      {/* ── GROUND IMAGE (anchored to bottom, above video) ── */}
+      {/* ── GROUND IMAGE ── */}
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src="/images/hero-ground.webp"
@@ -49,7 +65,7 @@ export default function HeroSection() {
         className="pointer-events-none absolute bottom-0 left-0 z-[5] w-full select-none"
       />
 
-      {/* ── OVERLAY ─ mobile: cubre toda la pantalla / desktop: gradiente direccional ── */}
+      {/* ── OVERLAY — mobile: cubre toda la pantalla / md+: gradiente ── */}
       <div className="absolute inset-0 z-[1] bg-[#180a1e]/80 md:bg-gradient-to-r md:from-[#180a1e]/78 md:via-[#291231]/55 md:to-[#180a1e]/35" />
 
       {/* animated grid */}
@@ -66,8 +82,8 @@ export default function HeroSection() {
       />
 
       {/* orbs */}
-      <div className="orb-a pointer-events-none absolute -top-20 right-[8%] z-[2] h-[520px] w-[520px] animate-[floatY_9s_ease-in-out_infinite] rounded-full bg-[radial-gradient(circle,rgba(241,140,27,.22)_0%,transparent_70%)] blur-[90px]" />
-      <div className="orb-b pointer-events-none absolute bottom-[5%] left-[3%] z-[2] h-[380px] w-[380px] animate-[floatY_7s_ease-in-out_infinite_reverse] rounded-full bg-[radial-gradient(circle,rgba(90,30,120,.45)_0%,transparent_70%)] blur-[90px]" />
+      <div className="pointer-events-none absolute -top-20 right-[8%] z-[2] h-[520px] w-[520px] animate-[floatY_9s_ease-in-out_infinite] rounded-full bg-[radial-gradient(circle,rgba(241,140,27,.22)_0%,transparent_70%)] blur-[90px]" />
+      <div className="pointer-events-none absolute bottom-[5%] left-[3%] z-[2] h-[380px] w-[380px] animate-[floatY_7s_ease-in-out_infinite_reverse] rounded-full bg-[radial-gradient(circle,rgba(90,30,120,.45)_0%,transparent_70%)] blur-[90px]" />
 
       {/* ── CONTENT ── */}
       <div className="relative z-10 mx-auto grid w-full max-w-[1600px] grid-cols-1 items-center gap-8 px-5 py-16 sm:px-8 md:grid-cols-[1.4fr_1fr] md:gap-10 md:px-[72px] md:py-0">
@@ -120,15 +136,34 @@ export default function HeroSection() {
           </div>
         </div>
 
-        {/* RIGHT — Orbiting circles (oculto en mobile, escalado en tablet) */}
+        {/* RIGHT — Orbiting circles (oculto en mobile) */}
         <div className="hidden md:flex items-center justify-center">
-          {/* Wrapper que reduce tamaño en tablet y lo pone full en desktop */}
           <div className="relative h-[400px] w-[400px] lg:h-[620px] lg:w-[620px]">
+
+            {/* ── Partner badges — abajo derecha ── */}
+            <div className="absolute bottom-0 right-0 z-20 flex items-center gap-3 lg:bottom-2">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/images/Google-partner.webp"
+                alt="Google Partner"
+                className="h-8 w-auto object-contain opacity-85 lg:h-10"
+                draggable={false}
+              />
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/images/Shopify-partner.webp"
+                alt="Shopify Partners"
+                className="h-8 w-auto object-contain opacity-85 lg:h-10"
+                draggable={false}
+              />
+            </div>
+
+            {/* Scaled container */}
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="relative flex h-[620px] w-[620px] origin-center scale-[0.65] items-center justify-center lg:scale-100">
 
-                {/* Center: Websy logo */}
-                <div className="relative z-10 flex h-24 w-24 items-center justify-center">
+                {/* Center: Websy logo — efecto flotante */}
+                <div className="relative z-10 flex h-24 w-24 animate-[floatY_4s_ease-in-out_infinite] items-center justify-center">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src="/images/logo-hero.webp"
@@ -138,25 +173,25 @@ export default function HeroSection() {
                   />
                 </div>
 
-                {/* Outer ring — 4 icons, radius 260 */}
-                <OrbitingCircles radius={260} duration={22} iconSize={52}>
-                  <div className="flex h-[52px] w-[52px] items-center justify-center rounded-xl bg-[#21759b] text-[11px] font-black text-white shadow-lg">WP</div>
-                  <div className="flex h-[52px] w-[52px] items-center justify-center rounded-xl bg-[#96bf48] text-[11px] font-black text-white shadow-lg">SH</div>
-                  <div className="flex h-[52px] w-[52px] items-center justify-center rounded-xl bg-[#a259ff] text-[11px] font-black text-white shadow-lg">Fi</div>
+                {/* ── Outer ring — 6 iconos con círculo naranja ── */}
+                <OrbitingCircles radius={260} duration={28} iconSize={60} strokeWidth={2} pathClassName="stroke-white/20">
+                  <OrangeIcon src="/icons/icono1-circle.webp" size={38} />
+                  <OrangeIcon src="/icons/icono2-circle.webp" size={38} />
+                  <OrangeIcon src="/icons/icono3-circle.webp" size={38} />
+                  <OrangeIcon src="/icons/icono4-circle.webp" size={38} />
+                  <OrangeIcon src="/icons/icono5-circle.webp" size={38} />
+                  <OrangeIcon src="/icons/icono6-circle.webp" size={38} />
+                </OrbitingCircles>
+
+                {/* ── Inner ring — solo el cohete, más grande ── */}
+                <OrbitingCircles radius={155} duration={14} reverse iconSize={80} strokeWidth={2} pathClassName="stroke-white/20">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src="/icons/icon-orbit.webp"
                     alt=""
-                    className="h-[52px] w-[52px] object-contain drop-shadow-[0_2px_8px_rgba(0,0,0,.4)]"
+                    className="h-[80px] w-[80px] object-contain drop-shadow-[0_2px_14px_rgba(0,0,0,.55)]"
                     draggable={false}
                   />
-                </OrbitingCircles>
-
-                {/* Inner ring — 3 icons, radius 155, reverse */}
-                <OrbitingCircles radius={155} duration={14} reverse iconSize={46}>
-                  <div className="flex h-[46px] w-[46px] items-center justify-center rounded-xl bg-[#F18C1B] text-[11px] font-black text-[#291231] shadow-lg">G</div>
-                  <div className="flex h-[46px] w-[46px] items-center justify-center rounded-xl bg-white/10 text-[11px] font-black text-white shadow-lg backdrop-blur-sm">N↗</div>
-                  <div className="flex h-[46px] w-[46px] items-center justify-center rounded-xl bg-[#0668e1] text-[11px] font-black text-white shadow-lg">M</div>
                 </OrbitingCircles>
 
               </div>
@@ -166,7 +201,7 @@ export default function HeroSection() {
 
       </div>
 
-      {/* ── SCROLL HINT — oculto en mobile para no saturar ── */}
+      {/* ── SCROLL HINT ── */}
       <div className="absolute bottom-9 left-1/2 z-10 hidden -translate-x-1/2 flex-col items-center gap-2 md:flex">
         <span className="font-poppins text-[10px] uppercase tracking-[2.5px] text-white/35">Scroll</span>
         <div
