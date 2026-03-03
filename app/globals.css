@@ -51,9 +51,23 @@
 
 /* ─── MARQUEE (yellow strip) ─── */
 .marquee-track {
-  display: flex;
-  white-space: nowrap;
-  animation: mq 22s linear infinite;
+  /* Ajusta los 25s para hacerlo más rápido o más lento */
+  animation: scroll-marquee 25s linear infinite;
+}
+
+@keyframes scroll-marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    /* El secreto está aquí: -50% porque duplicamos el array en React */
+    transform: translateX(-50%);
+  }
+}
+
+/* Opcional: Pausar la marquesina cuando el usuario pasa el mouse */
+.marquee-track:hover {
+  animation-play-state: paused;
 }
 
 /* ─── CLIENT LOGOS ─── */

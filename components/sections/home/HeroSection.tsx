@@ -89,26 +89,12 @@ export default function HeroSection() {
           {/* heading — wider clamp for more impact */}
           <h1
             ref={titleRef}
-            className="font-montserrat mb-6 w-full text-[clamp(52px,6vw,104px)] font-black leading-[.95] tracking-tight text-white"
+            className="font-montserrat mb-6 w-full text-[clamp(52px,5vw,94px)] font-bold leading-[.95] tracking-tight text-white"
           >
             Tu marca en la<br />
             cima del Mundo<br />
             <span className="relative inline-block text-[#F18C1B]">
               Digital
-              <svg
-                className="absolute -bottom-2 left-0 w-full"
-                viewBox="0 0 240 8"
-                fill="none"
-                aria-hidden
-              >
-                <path
-                  d="M2 5 Q60 1 120 5 Q180 9 238 5"
-                  stroke="#F18C1B"
-                  strokeWidth="2.5"
-                  fill="none"
-                  strokeLinecap="round"
-                />
-              </svg>
             </span>
           </h1>
 
