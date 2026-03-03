@@ -11,6 +11,11 @@
 ::-webkit-scrollbar-thumb { background: #F18C1B; border-radius: 2px; }
 
 /* ─── KEYFRAMES ─── */
+@keyframes shimmer {
+  0%   { transform: skewX(-12deg) translateX(-150%); }
+  100% { transform: skewX(-12deg) translateX(350%);  }
+}
+
 @keyframes gridMove {
   to { background-position: 90px 90px; }
 }
