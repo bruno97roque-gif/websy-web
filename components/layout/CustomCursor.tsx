@@ -7,29 +7,19 @@ export default function CustomCursor() {
   const cur2Ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    let mx = 0, my = 0, fx = 0, fy = 0;
-
     const onMove = (e: MouseEvent) => {
-      mx = e.clientX;
-      my = e.clientY;
+      const x = e.clientX;
+      const y = e.clientY;
       if (curRef.current) {
-        curRef.current.style.left = mx + "px";
-        curRef.current.style.top  = my + "px";
+        curRef.current.style.left = x + "px";
+        curRef.current.style.top  = y + "px";
+      }
+      if (cur2Ref.current) {
+        cur2Ref.current.style.left = x + "px";
+        cur2Ref.current.style.top  = y + "px";
       }
     };
     document.addEventListener("mousemove", onMove);
-
-    let raf: number;
-    const loop = () => {
-      fx += (mx - fx) * 0.11;
-      fy += (my - fy) * 0.11;
-      if (cur2Ref.current) {
-        cur2Ref.current.style.left = fx + "px";
-        cur2Ref.current.style.top  = fy + "px";
-      }
-      raf = requestAnimationFrame(loop);
-    };
-    raf = requestAnimationFrame(loop);
 
     const enlarge = () => {
       if (!curRef.current || !cur2Ref.current) return;
@@ -56,7 +46,6 @@ export default function CustomCursor() {
 
     return () => {
       document.removeEventListener("mousemove", onMove);
-      cancelAnimationFrame(raf);
       targets.forEach((el) => {
         el.removeEventListener("mouseenter", enlarge);
         el.removeEventListener("mouseleave", reset);
