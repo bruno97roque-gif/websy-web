@@ -1,6 +1,5 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@config "../tailwind.config.ts";
 
 /* ─── FONT UTILITIES ─── */
 .font-montserrat { font-family: var(--font-montserrat), sans-serif; }
