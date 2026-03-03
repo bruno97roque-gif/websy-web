@@ -21,8 +21,8 @@ export default function CustomCursor() {
 
     let raf: number;
     const loop = () => {
-      fx += (mx - fx) * 0.11;
-      fy += (my - fy) * 0.11;
+      fx += (mx - fx) * 0.35;
+      fy += (my - fy) * 0.35;
       if (cur2Ref.current) {
         cur2Ref.current.style.left = fx + "px";
         cur2Ref.current.style.top  = fy + "px";

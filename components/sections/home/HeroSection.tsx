@@ -1,8 +1,8 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
-import { OrbitingCircles } from "@/components/ui/orbiting-circles"; // Magic UI
+import { OrbitingCircles } from "@/components/ui/orbiting-circles";
 
 /* ─── Types ─── */
 interface GlassCardProps {
@@ -48,14 +48,6 @@ const cards: GlassCardProps[] = [
   },
 ];
 
-/* ─── Orbiting icons (Magic UI) ─── */
-const orbitIcons = [
-  { icon: "WP", delay: 0, reverse: false, radius: 160, duration: 18 },
-  { icon: "SH", delay: 5, reverse: false, radius: 160, duration: 18 },
-  { icon: "G", delay: 0, reverse: true, radius: 110, duration: 13 },
-  { icon: "✦", delay: 8, reverse: true, radius: 110, duration: 13 },
-];
-
 /* ─── GlassCard ─── */
 function GlassCard({ icon, title, desc }: GlassCardProps) {
   return (
@@ -73,12 +65,18 @@ function GlassCard({ icon, title, desc }: GlassCardProps) {
 
 /* ─── Main Component ─── */
 export default function HeroSection() {
-  const pillRef   = useRef<HTMLDivElement>(null);
-  const titleRef  = useRef<HTMLHeadingElement>(null);
-  const descRef   = useRef<HTMLParagraphElement>(null);
-  const btnsRef   = useRef<HTMLDivElement>(null);
-  const cardsRef  = useRef<HTMLDivElement>(null);
+  const pillRef  = useRef<HTMLDivElement>(null);
+  const titleRef = useRef<HTMLHeadingElement>(null);
+  const descRef  = useRef<HTMLParagraphElement>(null);
+  const btnsRef  = useRef<HTMLDivElement>(null);
+  const cardsRef = useRef<HTMLDivElement>(null);
 
+  /* ─── Draggable float state ─── */
+  const [floatPos, setFloatPos] = useState({ x: 60, y: 420 });
+  const isDragging  = useRef(false);
+  const dragOffset  = useRef({ x: 0, y: 0 });
+
+  /* ─── GSAP intro ─── */
   useEffect(() => {
     const tl = gsap.timeline({ delay: 0.25 });
     tl.from(pillRef.current,  { opacity: 0, y: 20, duration: 0.6, ease: "power3.out" })
@@ -92,10 +90,34 @@ export default function HeroSection() {
       );
   }, []);
 
+  /* ─── Drag events ─── */
+  useEffect(() => {
+    const onMouseMove = (e: MouseEvent) => {
+      if (!isDragging.current) return;
+      setFloatPos({
+        x: e.clientX - dragOffset.current.x,
+        y: e.clientY - dragOffset.current.y,
+      });
+    };
+    const onMouseUp = () => { isDragging.current = false; };
+    window.addEventListener("mousemove", onMouseMove);
+    window.addEventListener("mouseup", onMouseUp);
+    return () => {
+      window.removeEventListener("mousemove", onMouseMove);
+      window.removeEventListener("mouseup", onMouseUp);
+    };
+  }, []);
+
+  const onFloatMouseDown = (e: React.MouseEvent) => {
+    isDragging.current = true;
+    dragOffset.current = { x: e.clientX - floatPos.x, y: e.clientY - floatPos.y };
+    e.preventDefault();
+  };
+
   return (
     <section
       id="hero"
-      className="relative flex h-screen min-h-[680px] w-full items-center overflow-hidden"
+      className="relative flex h-[calc(100vh-44px)] min-h-[640px] w-full items-center overflow-hidden"
     >
       {/* ── VIDEO BG ── */}
       <div className="absolute inset-0 z-0">
@@ -106,12 +128,20 @@ export default function HeroSection() {
           playsInline
           className="h-full w-full object-cover"
         >
-          <source src="/videos/hero-reel.webm" type="video/webm" />
-          <source src="/videos/hero-reel.mp4"  type="video/mp4" />
+          <source src="/videos/hero-bg.webm" type="video/webm" />
+          <source src="/videos/hero-bg.mp4"  type="video/mp4" />
         </video>
-        {/* fallback gradient */}
+        {/* fallback gradient if video doesn't load */}
         <div className="absolute inset-0 bg-gradient-to-br from-[#180a1e] via-[#291231] to-[#3d1248]" />
       </div>
+
+      {/* ── GROUND IMAGE (above video, anchored to bottom) ── */}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src="/images/hero-ground.png"
+        alt=""
+        className="pointer-events-none absolute bottom-0 left-0 z-[5] w-full select-none"
+      />
 
       {/* ── OVERLAYS ── */}
       <div className="absolute inset-0 z-[1] bg-gradient-to-r from-[#180a1e]/92 via-[#291231]/78 to-[#291231]/45" />
@@ -158,7 +188,6 @@ export default function HeroSection() {
             cima del Mundo<br />
             <span className="relative inline-block text-[#F18C1B]">
               Digital
-              {/* wavy underline */}
               <svg
                 className="absolute -bottom-2 left-0 w-full"
                 viewBox="0 0 240 8"
@@ -203,28 +232,62 @@ export default function HeroSection() {
           </div>
         </div>
 
-        {/* RIGHT — Orbiting circles + glass cards */}
+        {/* RIGHT — Orbiting circles */}
         <div className="flex flex-col items-center gap-6">
 
-          {/* Magic UI Orbiting Circles */}
-          <div className="relative mb-4 flex h-[320px] w-[320px] items-center justify-center">
-            {/* Center logo */}
-            <div className="relative z-10 flex h-20 w-20 items-center justify-center rounded-2xl bg-[#291231] shadow-[0_0_60px_rgba(241,140,27,.25)]">
-              <span className="font-montserrat text-4xl font-black text-[#F18C1B]">W</span>
+          {/* Magic UI Orbiting Circles — 7 icons, white rings */}
+          <div className="relative mb-4 flex h-[340px] w-[340px] items-center justify-center">
+
+            {/* Center: Websy logo image */}
+            <div className="relative z-10 flex h-24 w-24 items-center justify-center">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/images/logo-hero.webp"
+                alt="Websy"
+                className="h-full w-full object-contain drop-shadow-[0_0_30px_rgba(241,140,27,.5)]"
+                draggable={false}
+              />
             </div>
 
-            {/* Outer ring — WP + SH */}
-            <OrbitingCircles radius={140} duration={18} iconSize={36}>
+            {/* Outer ring — 4 icons, radius 155 */}
+            <OrbitingCircles radius={155} duration={22} iconSize={40}>
               {/* WordPress */}
-              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-[#291231] text-[10px] font-black text-[#F18C1B] shadow-lg">WP</div>
+              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#21759b] text-[10px] font-black text-white shadow-lg">
+                WP
+              </div>
               {/* Shopify */}
-              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-[#291231] text-[10px] font-black text-[#F18C1B] shadow-lg">SH</div>
+              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#96bf48] text-[10px] font-black text-white shadow-lg">
+                SH
+              </div>
+              {/* Figma */}
+              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#a259ff] text-[10px] font-black text-white shadow-lg">
+                Fi
+              </div>
+              {/* BARE WEBP icon — sin fondo, solo la imagen */}
+              {/* Coloca tu icono en /public/icons/icon-orbit.webp */}
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/icons/icon-orbit.webp"
+                alt=""
+                className="h-10 w-10 object-contain drop-shadow-[0_2px_8px_rgba(0,0,0,.4)]"
+                draggable={false}
+              />
             </OrbitingCircles>
 
-            {/* Inner ring — Google + Next */}
-            <OrbitingCircles radius={90} duration={12} reverse iconSize={32}>
-              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-[#F18C1B] text-[10px] font-black text-[#291231] shadow-lg">G</div>
-              <div className="flex h-8 w-8 items-center justify-center rounded-full border border-[#F18C1B]/40 bg-[#291231] text-[10px] font-black text-[#F18C1B] shadow-lg">N↗</div>
+            {/* Inner ring — 3 icons, radius 95, reverse */}
+            <OrbitingCircles radius={95} duration={14} reverse iconSize={34}>
+              {/* Google */}
+              <div className="flex h-[34px] w-[34px] items-center justify-center rounded-xl bg-[#F18C1B] text-[10px] font-black text-[#291231] shadow-lg">
+                G
+              </div>
+              {/* Next.js */}
+              <div className="flex h-[34px] w-[34px] items-center justify-center rounded-xl bg-white/10 text-[10px] font-black text-white shadow-lg backdrop-blur-sm">
+                N↗
+              </div>
+              {/* Meta Ads */}
+              <div className="flex h-[34px] w-[34px] items-center justify-center rounded-xl bg-[#0668e1] text-[10px] font-black text-white shadow-lg">
+                M
+              </div>
             </OrbitingCircles>
           </div>
 
@@ -246,6 +309,29 @@ export default function HeroSection() {
             background: "linear-gradient(to bottom, #F18C1B, transparent)",
             animation: "sline 2.2s ease-in-out infinite",
           }}
+        />
+      </div>
+
+      {/* ── DRAGGABLE FLOATING IMAGE ── */}
+      {/* Coloca tu imagen en /public/images/hero-float.webp */}
+      <div
+        style={{
+          position: "fixed",
+          left: floatPos.x,
+          top: floatPos.y,
+          zIndex: 9000,
+          cursor: "grab",
+          userSelect: "none",
+          touchAction: "none",
+        }}
+        onMouseDown={onFloatMouseDown}
+      >
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/images/hero-float.webp"
+          alt=""
+          style={{ width: 130, pointerEvents: "none" }}
+          draggable={false}
         />
       </div>
     </section>
