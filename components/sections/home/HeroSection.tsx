@@ -128,8 +128,7 @@ export default function HeroSection() {
           playsInline
           className="h-full w-full object-cover"
         >
-          <source src="/videos/hero-bg.webm" type="video/webm" />
-          <source src="/videos/hero-bg.mp4"  type="video/mp4" />
+          <source src="/video/Hero-Bg.webm" type="video/webm" />
         </video>
         {/* fallback gradient if video doesn't load */}
         <div className="absolute inset-0 bg-gradient-to-br from-[#180a1e] via-[#291231] to-[#3d1248]" />
@@ -138,7 +137,7 @@ export default function HeroSection() {
       {/* ── GROUND IMAGE (above video, anchored to bottom) ── */}
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
-        src="/images/hero-ground.png"
+        src="/images/hero-ground.webp"
         alt=""
         className="pointer-events-none absolute bottom-0 left-0 z-[5] w-full select-none"
       />
