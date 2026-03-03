@@ -1,14 +1,14 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { CountUp } from "countup.js";
 import * as Accordion from "@radix-ui/react-accordion";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCards, Autoplay } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
+import { type Swiper as SwiperType } from "swiper";
 import "swiper/css";
-import "swiper/css/effect-cards";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -34,26 +34,13 @@ const pillars = [
   },
 ];
 
-/* ─── Slides del carrusel ─── */
+/* ─── Slides del carrusel — reemplaza `bg` por src de imagen cuando estén listas ─── */
 const slides = [
-  {
-    bg: "linear-gradient(145deg,#291231 0%,#3d1248 100%)",
-    label: "Años en el mercado",
-    stat: "5+",
-    sub: "Estrategia digital comprobada",
-  },
-  {
-    bg: "linear-gradient(145deg,#1a0d20 0%,#291231 100%)",
-    label: "Proyectos entregados",
-    stat: "120+",
-    sub: "Clientes en toda LATAM",
-  },
-  {
-    bg: "linear-gradient(145deg,#200e2a 0%,#3d1248 100%)",
-    label: "Satisfacción del cliente",
-    stat: "98%",
-    sub: "Recomiendan nuestros servicios",
-  },
+  { bg: "linear-gradient(145deg,#291231 0%,#3d1248 100%)", label: "Identidad de Marca",    stat: "01", tag: "Branding" },
+  { bg: "linear-gradient(145deg,#1a0d20 0%,#291231 100%)", label: "Web & E-commerce",       stat: "02", tag: "Desarrollo" },
+  { bg: "linear-gradient(145deg,#200e2a 0%,#3d1248 100%)", label: "Campañas Google Ads",    stat: "03", tag: "Marketing" },
+  { bg: "linear-gradient(145deg,#291231 0%,#1a0d20 100%)", label: "Social Media",           stat: "04", tag: "Redes Sociales" },
+  { bg: "linear-gradient(145deg,#3d1248 0%,#200e2a 100%)", label: "Estrategia Digital",     stat: "05", tag: "Consultoría" },
 ];
 
 export default function QuienesSomos() {
@@ -65,6 +52,10 @@ export default function QuienesSomos() {
   const descRef     = useRef<HTMLParagraphElement>(null);
   const accordRef   = useRef<HTMLDivElement>(null);
   const ctaRef      = useRef<HTMLAnchorElement>(null);
+
+  /* Swiper control manual */
+  const swiperRef  = useRef<SwiperType | null>(null);
+  const [activeIdx, setActiveIdx] = useState(0);
 
   useEffect(() => {
     const trigger = { trigger: sectionRef.current, start: "top 72%", once: true };
@@ -116,49 +107,74 @@ export default function QuienesSomos() {
         {/* ─── LEFT — Swiper gallery ─── */}
         <div ref={leftRef} className="relative" style={{ opacity: 0 }}>
 
-          {/* Swiper cards effect */}
-          <div className="relative mx-auto h-[460px] w-[320px] md:mx-0 md:w-[360px] lg:w-[400px]">
+          {/* ── Slider tradicional — misma forma del diseño Figma ── */}
+          <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[20px]">
             <Swiper
-              effect="cards"
-              grabCursor
-              modules={[EffectCards, Autoplay]}
-              autoplay={{ delay: 3200, disableOnInteraction: false }}
+              loop
+              speed={600}
+              modules={[Autoplay]}
+              autoplay={{ delay: 3500, disableOnInteraction: false }}
+              onSwiper={(sw) => { swiperRef.current = sw; }}
+              onSlideChange={(sw) => setActiveIdx(sw.realIndex)}
               className="h-full w-full"
             >
               {slides.map((s, i) => (
-                <SwiperSlide
-                  key={i}
-                  className="flex flex-col items-center justify-center overflow-hidden rounded-[22px]"
-                  style={{ background: s.bg }}
-                >
-                  {/* grid pattern */}
-                  <div
-                    className="pointer-events-none absolute inset-0"
-                    style={{
-                      backgroundImage: `
-                        linear-gradient(rgba(241,140,27,.06) 1px, transparent 1px),
-                        linear-gradient(90deg, rgba(241,140,27,.06) 1px, transparent 1px)
-                      `,
-                      backgroundSize: "48px 48px",
-                    }}
-                  />
-                  {/* glow */}
-                  <div className="pointer-events-none absolute -bottom-12 -right-12 h-[220px] w-[220px] rounded-full bg-[radial-gradient(circle,rgba(241,140,27,.22)_0%,transparent_70%)]" />
-
-                  <div className="relative z-10 text-center">
-                    <p className="font-poppins mb-4 text-[11px] font-semibold uppercase tracking-[3px] text-[#F18C1B]">
-                      {s.label}
-                    </p>
-                    <p className="font-montserrat text-[80px] font-black leading-none text-white">
-                      {s.stat}
-                    </p>
-                    <p className="font-poppins mt-4 text-[13px] text-white/45">
-                      {s.sub}
-                    </p>
+                <SwiperSlide key={i}>
+                  {/* Fondo — swap por <img src={s.src} … className="…object-cover"> cuando tengas las imágenes */}
+                  <div className="relative flex h-full w-full flex-col items-center justify-center" style={{ background: s.bg }}>
+                    {/* grid pattern */}
+                    <div className="pointer-events-none absolute inset-0"
+                      style={{
+                        backgroundImage: `linear-gradient(rgba(241,140,27,.06) 1px, transparent 1px),linear-gradient(90deg, rgba(241,140,27,.06) 1px, transparent 1px)`,
+                        backgroundSize: "52px 52px",
+                      }}
+                    />
+                    {/* glow */}
+                    <div className="pointer-events-none absolute -bottom-16 -right-16 h-[280px] w-[280px] rounded-full bg-[radial-gradient(circle,rgba(241,140,27,.2)_0%,transparent_70%)]" />
+                    {/* contenido */}
+                    <div className="relative z-10 text-center">
+                      <span className="font-poppins mb-3 inline-block rounded-full border border-[#F18C1B]/35 px-3.5 py-1 text-[10px] font-semibold uppercase tracking-[2.5px] text-[#F18C1B]">
+                        {s.tag}
+                      </span>
+                      <p className="font-montserrat mt-4 text-[72px] font-black leading-none text-white/[.06]">{s.stat}</p>
+                      <p className="font-montserrat -mt-8 text-[26px] font-black text-white">{s.label}</p>
+                    </div>
+                    {/* gradiente inferior para legibilidad de controles */}
+                    <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-28 bg-gradient-to-t from-black/40 to-transparent" />
                   </div>
                 </SwiperSlide>
               ))}
             </Swiper>
+
+            {/* ── Flechas de navegación — esquina inferior centro ── */}
+            <div className="absolute bottom-5 left-1/2 z-20 flex -translate-x-1/2 items-center gap-3">
+              {/* Prev */}
+              <button
+                onClick={() => swiperRef.current?.slidePrev()}
+                aria-label="Anterior"
+                className="flex h-10 w-10 items-center justify-center rounded-full bg-white/90 shadow-[0_4px_16px_rgba(0,0,0,.18)] backdrop-blur-sm transition-all duration-200 hover:scale-110 hover:bg-white"
+              >
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                  <path d="M9 2L4 7l5 5" stroke="#291231" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </button>
+
+              {/* Contador */}
+              <span className="font-poppins min-w-[40px] text-center text-[12px] font-semibold tabular-nums text-white/80">
+                {String(activeIdx + 1).padStart(2, "0")}&nbsp;/&nbsp;{String(slides.length).padStart(2, "0")}
+              </span>
+
+              {/* Next */}
+              <button
+                onClick={() => swiperRef.current?.slideNext()}
+                aria-label="Siguiente"
+                className="flex h-10 w-10 items-center justify-center rounded-full bg-[#F18C1B] shadow-[0_4px_18px_rgba(241,140,27,.45)] transition-all duration-200 hover:scale-110 hover:shadow-[0_6px_24px_rgba(241,140,27,.60)]"
+              >
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                  <path d="M5 2l5 5-5 5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </button>
+            </div>
           </div>
 
           {/* corner accent */}
