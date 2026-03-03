@@ -24,7 +24,7 @@ export function MovingBorderButton({
 }: MovingBorderButtonProps) {
   const base = cn(
     "group relative inline-flex items-center gap-2 overflow-hidden rounded-full",
-    "border border-white/30 bg-white/10 backdrop-blur-md",
+    "border border-white/30 bg-white/12",
     "px-8 py-[15px]",
     "font-montserrat text-[13px] font-bold uppercase tracking-[1.5px] text-white",
     "transition-colors duration-300 hover:bg-white/18 hover:border-white/45",
