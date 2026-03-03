@@ -38,7 +38,17 @@ export default function QuienesSomos() {
         </div>
 
         {/* RIGHT — text */}
-        <div>
+        <div className="relative">
+
+          {/* Astronaut flotando — top-right del bloque */}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/images/astro-flotando.webp"
+            alt=""
+            className="pointer-events-none absolute -right-4 -top-20 hidden h-[200px] w-auto animate-[floatY_6s_ease-in-out_infinite] drop-shadow-2xl md:block"
+            draggable={false}
+          />
+
           <p className="font-poppins mb-3 text-[11px] font-medium uppercase tracking-[3px] text-[#F18C1B]">
             Quiénes somos
           </p>

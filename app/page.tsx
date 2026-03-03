@@ -17,7 +17,7 @@ export default function HomePage() {
           Imagen: /public/images/hero-float.webp
           Ajusta h-[220px] al tamaño que prefieras.
         */}
-        <div className="pointer-events-none absolute bottom-[0%] left-[20%] z-20">
+        <div className="pointer-events-none absolute bottom-[0%] left-[20%] z-20 hidden min-[390px]:block">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/images/hero-float.webp"

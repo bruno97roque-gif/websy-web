@@ -54,6 +54,20 @@
   50%, 100%   { transform: scaleX(-1); }
 }
 
+/* Scroll indicator — dot travels down inside mouse icon */
+@keyframes scrollDot {
+  0%   { opacity: 1;   transform: translateY(0);    }
+  55%  { opacity: 0;   transform: translateY(13px); }
+  56%  { opacity: 0;   transform: translateY(0);    }
+  100% { opacity: 1;   transform: translateY(0);    }
+}
+
+/* Scroll indicator — chevrons fade in sequence */
+@keyframes scrollChevron {
+  0%, 100% { opacity: 0.5; transform: translateY(0);  }
+  50%       { opacity: 1;   transform: translateY(3px); }
+}
+
 @keyframes mq {
   to { transform: translateX(-50%); }
 }

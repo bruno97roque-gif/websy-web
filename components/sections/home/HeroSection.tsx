@@ -124,7 +124,7 @@ export default function HeroSection() {
           </h1>
 
           <p ref={descRef}
-            className="font-poppins mb-8 max-w-[480px] text-[14px] leading-[1.8] text-white/55 sm:text-[15px] md:mb-10">
+            className="font-poppins mb-8 max-w-[480px] text-[14px] leading-[1.8] text-white/100 sm:text-[15px] md:mb-10">
             Diseño exclusivo, tecnología de vanguardia y estrategia real para que tu negocio se destaque y convierta.
           </p>
 
@@ -148,10 +148,10 @@ export default function HeroSection() {
               <div className="relative flex h-[740px] w-[740px] origin-center scale-[0.56] items-center justify-center lg:scale-[0.88]">
 
                 {/* Centro: logo flotante */}
-                <div className="relative z-10 flex h-44 w-44 animate-[floatY_4s_ease-in-out_infinite] items-center justify-center">
+                <div className="relative z-10 flex h-64 w-64 animate-[floatY_8s_ease-in-out_infinite] items-center justify-center">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img src="/images/logo-hero.webp" alt="Websy"
-                    className="h-full w-full object-contain drop-shadow-[0_0_40px_rgba(241,140,27,.55)]"
+                    className="h-full w-full object-contain"
                     draggable={false} />
                 </div>
 
@@ -194,10 +194,25 @@ export default function HeroSection() {
       </div>
 
       {/* ── SCROLL HINT ── */}
-      <div className="absolute bottom-9 left-1/2 z-10 hidden -translate-x-1/2 flex-col items-center gap-2 md:flex">
-        <span className="font-poppins text-[10px] uppercase tracking-[2.5px] text-white/35">Scroll</span>
-        <div className="h-14 w-px"
-          style={{ background: "linear-gradient(to bottom, #F18C1B, transparent)", animation: "sline 2.2s ease-in-out infinite" }} />
+      <div className="absolute bottom-8 left-1/2 z-10 hidden -translate-x-1/2 flex-col items-center gap-3 md:flex">
+        <span className="font-poppins text-[10px] uppercase tracking-[2.5px] text-white/30">Scroll</span>
+        {/* Mouse outline SVG */}
+        <div className="relative flex h-[46px] w-[28px] items-start justify-center rounded-[14px] border-2 border-white/25 pt-[7px]">
+          {/* Scrolling dot */}
+          <div
+            className="h-[7px] w-[2px] rounded-full bg-[#F18C1B]"
+            style={{ animation: "scrollDot 1.8s ease-in-out infinite" }}
+          />
+        </div>
+        {/* Chevron arrows */}
+        <div className="flex flex-col items-center gap-[3px]" style={{ animation: "scrollChevron 1.8s ease-in-out infinite" }}>
+          <svg width="12" height="7" viewBox="0 0 12 7" fill="none">
+            <path d="M1 1l5 5 5-5" stroke="#F18C1B" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" opacity=".9" />
+          </svg>
+          <svg width="12" height="7" viewBox="0 0 12 7" fill="none">
+            <path d="M1 1l5 5 5-5" stroke="#F18C1B" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" opacity=".4" />
+          </svg>
+        </div>
       </div>
 
     </section>

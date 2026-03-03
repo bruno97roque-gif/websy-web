@@ -119,7 +119,19 @@ export default function ServicesSection() {
   const rest = services.slice(1);
 
   return (
-    <section id="servicios" ref={sectionRef} className="relative overflow-hidden bg-white px-8 py-[120px] md:px-[72px]">
+    <section
+      id="servicios"
+      ref={sectionRef}
+      className="relative overflow-hidden px-8 py-[120px] md:px-[72px]"
+      style={{
+        backgroundImage: "url('/images/fondo-servicios.webp')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      {/* bg overlay — mantiene legibilidad sobre la imagen de fondo */}
+      <div className="pointer-events-none absolute inset-0 bg-white/80" />
+
       {/* top line */}
       <div className="pointer-events-none absolute left-[72px] right-[72px] top-0 h-px bg-gradient-to-r from-transparent via-[#e4e2ea] to-transparent" />
 
@@ -208,11 +220,8 @@ export default function ServicesSection() {
           {rest.map((s) => (
             <div
               key={s.num}
-              className="js-serv group relative flex flex-col overflow-visible rounded-[20px] border border-[#e4e2ea] bg-[#f8f7fa] p-[40px_38px] transition-[border-color,background-color,box-shadow] duration-300 hover:border-[#F18C1B] hover:bg-white hover:shadow-[0_20px_60px_rgba(241,140,27,.12)]"
+              className="js-serv group relative flex flex-col overflow-visible rounded-[20px] border border-[#e4e2ea] bg-[#f8f7fa] p-[40px_38px] transition-[background-color,box-shadow] duration-300 hover:bg-white hover:shadow-[0_20px_60px_rgba(241,140,27,.12)]"
             >
-              {/* accent bar */}
-              <div className="absolute bottom-0 left-0 top-0 w-1 origin-bottom scale-y-0 bg-[#F18C1B] transition-transform duration-[400ms] group-hover:scale-y-100" />
-
               <span className="pointer-events-none absolute right-6 top-5 font-montserrat text-[56px] font-black leading-none text-[#1a1020]/[.05]">
                 {s.num}
               </span>
