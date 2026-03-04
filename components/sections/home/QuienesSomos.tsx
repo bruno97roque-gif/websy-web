@@ -3,7 +3,6 @@
 import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { CountUp } from "countup.js";
 import * as Accordion from "@radix-ui/react-accordion";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
@@ -46,7 +45,6 @@ const slides = [
 export default function QuienesSomos() {
   const sectionRef  = useRef<HTMLElement>(null);
   const leftRef     = useRef<HTMLDivElement>(null);
-  const badgeNumRef = useRef<HTMLSpanElement>(null);
   const labelRef    = useRef<HTMLParagraphElement>(null);
   const titleRef    = useRef<HTMLHeadingElement>(null);
   const descRef     = useRef<HTMLParagraphElement>(null);
@@ -86,18 +84,6 @@ export default function QuienesSomos() {
       });
     });
 
-    /* ── CountUp: 0 → 5+ ── */
-    if (badgeNumRef.current) {
-      const cu = new CountUp(badgeNumRef.current, 5, {
-        suffix: "+", duration: 2.2, useEasing: true,
-      });
-      ScrollTrigger.create({
-        trigger: badgeNumRef.current,
-        start: "top 85%",
-        once: true,
-        onEnter: () => cu.start(),
-      });
-    }
   }, []);
 
   return (
@@ -179,19 +165,6 @@ export default function QuienesSomos() {
           {/* corner accent */}
           <div className="pointer-events-none absolute -bottom-4 -right-4 h-[55%] w-[55%] rounded-br-[12px] border-b-[3px] border-r-[3px] border-[#F18C1B]" />
 
-          {/* badge — CountUp | hidden en móvil */}
-          <div className="absolute -left-6 bottom-7 z-10 hidden min-w-[200px] items-center gap-3.5 rounded-[14px] bg-[#291231] p-5 shadow-[0_20px_60px_rgba(41,18,49,.25)] md:flex">
-            <span
-              ref={badgeNumRef}
-              className="font-montserrat text-[38px] font-black leading-none text-[#F18C1B]"
-            >
-              0
-            </span>
-            <div>
-              <p className="font-montserrat text-[13px] font-bold text-white">Años de experiencia</p>
-              <span className="font-poppins text-[11px] text-white/40">en el mercado digital</span>
-            </div>
-          </div>
         </div>
 
         {/* ─── RIGHT — texto + accordion ─── */}
