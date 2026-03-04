@@ -34,13 +34,13 @@ const pillars = [
   },
 ];
 
-/* ─── Slides del carrusel — reemplaza `bg` por src de imagen cuando estén listas ─── */
+/* ─── Slides del carrusel — agrega más objetos para más slides ─── */
 const slides = [
-  { bg: "linear-gradient(145deg,#291231 0%,#3d1248 100%)", label: "Identidad de Marca",    stat: "01", tag: "Branding" },
-  { bg: "linear-gradient(145deg,#1a0d20 0%,#291231 100%)", label: "Web & E-commerce",       stat: "02", tag: "Desarrollo" },
-  { bg: "linear-gradient(145deg,#200e2a 0%,#3d1248 100%)", label: "Campañas Google Ads",    stat: "03", tag: "Marketing" },
-  { bg: "linear-gradient(145deg,#291231 0%,#1a0d20 100%)", label: "Social Media",           stat: "04", tag: "Redes Sociales" },
-  { bg: "linear-gradient(145deg,#3d1248 0%,#200e2a 100%)", label: "Estrategia Digital",     stat: "05", tag: "Consultoría" },
+  { src: "/images/Galeria-1.webp", label: "Identidad de Marca",  tag: "Branding" },
+  { src: "/images/Galeria-2.webp", label: "Web & E-commerce",    tag: "Desarrollo" },
+  { src: "/images/Galeria-3.webp", label: "Campañas Google Ads", tag: "Marketing" },
+  { src: "/images/Galeria-4.webp", label: "Social Media",        tag: "Redes Sociales" },
+  { src: "/images/Galeria-5.webp", label: "Estrategia Digital",  tag: "Consultoría" },
 ];
 
 export default function QuienesSomos() {
@@ -120,27 +120,26 @@ export default function QuienesSomos() {
             >
               {slides.map((s, i) => (
                 <SwiperSlide key={i}>
-                  {/* Fondo — swap por <img src={s.src} … className="…object-cover"> cuando tengas las imágenes */}
-                  <div className="relative flex h-full w-full flex-col items-center justify-center" style={{ background: s.bg }}>
-                    {/* grid pattern */}
-                    <div className="pointer-events-none absolute inset-0"
-                      style={{
-                        backgroundImage: `linear-gradient(rgba(241,140,27,.06) 1px, transparent 1px),linear-gradient(90deg, rgba(241,140,27,.06) 1px, transparent 1px)`,
-                        backgroundSize: "52px 52px",
-                      }}
+                  <div className="relative h-full w-full">
+                    {/* Imagen real del proyecto */}
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={s.src}
+                      alt={s.label}
+                      className="h-full w-full object-cover"
+                      draggable={false}
                     />
-                    {/* glow */}
-                    <div className="pointer-events-none absolute -bottom-16 -right-16 h-[280px] w-[280px] rounded-full bg-[radial-gradient(circle,rgba(241,140,27,.2)_0%,transparent_70%)]" />
-                    {/* contenido */}
-                    <div className="relative z-10 text-center">
-                      <span className="font-poppins mb-3 inline-block rounded-full border border-[#F18C1B]/35 px-3.5 py-1 text-[10px] font-semibold uppercase tracking-[2.5px] text-[#F18C1B]">
+                    {/* Overlay gradiente para legibilidad del label y los controles */}
+                    <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/65 via-black/10 to-transparent" />
+                    {/* Label del proyecto */}
+                    <div className="absolute bottom-[72px] left-5 z-10">
+                      <span className="font-poppins mb-1.5 inline-block rounded-full border border-[#F18C1B]/50 bg-[#F18C1B]/10 px-3 py-0.5 text-[10px] font-semibold uppercase tracking-[2px] text-[#F18C1B]">
                         {s.tag}
                       </span>
-                      <p className="font-montserrat mt-4 text-[72px] font-black leading-none text-white/[.06]">{s.stat}</p>
-                      <p className="font-montserrat -mt-8 text-[26px] font-black text-white">{s.label}</p>
+                      <p className="font-montserrat mt-1.5 text-[18px] font-black text-white drop-shadow-md">
+                        {s.label}
+                      </p>
                     </div>
-                    {/* gradiente inferior para legibilidad de controles */}
-                    <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-28 bg-gradient-to-t from-black/40 to-transparent" />
                   </div>
                 </SwiperSlide>
               ))}
@@ -180,8 +179,8 @@ export default function QuienesSomos() {
           {/* corner accent */}
           <div className="pointer-events-none absolute -bottom-4 -right-4 h-[55%] w-[55%] rounded-br-[12px] border-b-[3px] border-r-[3px] border-[#F18C1B]" />
 
-          {/* badge — CountUp */}
-          <div className="absolute -left-6 bottom-7 z-10 flex min-w-[200px] items-center gap-3.5 rounded-[14px] bg-[#291231] p-5 shadow-[0_20px_60px_rgba(41,18,49,.25)]">
+          {/* badge — CountUp | hidden en móvil */}
+          <div className="absolute -left-6 bottom-7 z-10 hidden min-w-[200px] items-center gap-3.5 rounded-[14px] bg-[#291231] p-5 shadow-[0_20px_60px_rgba(41,18,49,.25)] md:flex">
             <span
               ref={badgeNumRef}
               className="font-montserrat text-[38px] font-black leading-none text-[#F18C1B]"
@@ -203,7 +202,7 @@ export default function QuienesSomos() {
           <img
             src="/images/astro-flotando.webp"
             alt=""
-            className="pointer-events-none absolute -right-4 -top-20 hidden h-[200px] w-auto animate-[floatY_6s_ease-in-out_infinite] drop-shadow-2xl md:block"
+            className="pointer-events-none absolute -right-4 -top-30 hidden h-[200px] w-auto animate-[floatY_6s_ease-in-out_infinite] drop-shadow-2xl md:block"
             draggable={false}
           />
 

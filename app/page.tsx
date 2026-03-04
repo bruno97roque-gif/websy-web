@@ -17,12 +17,20 @@ export default function HomePage() {
           Imagen: /public/images/hero-float.webp
           Ajusta h-[220px] al tamaño que prefieras.
         */}
-        <div className="pointer-events-none absolute bottom-[0%] left-[20%] z-20 hidden min-[390px]:block">
+        {/*
+          ── ALIEN MASCOTA — responsive ──────────────────────────────────────
+          Posición : ajusta `bottom` y `left` en el div de abajo
+          Tamaños  :
+            h-[130px]           → iPhone XS / SE  (< 390px)
+            min-[390px]:h-[170px] → iPhone 12 / 14  (≥ 390px)
+            md:h-[260px]        → tablet / desktop (≥ 768px)
+          ────────────────────────────────────────────────────────────────── */}
+        <div className="pointer-events-none absolute bottom-[0%] left-[18%] z-20 md:left-[20%]">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/images/hero-float.webp"
             alt=""
-            className="h-[260px] w-auto drop-shadow-2xl"
+            className="h-[130px] w-auto drop-shadow-2xl min-[390px]:h-[170px] md:h-[260px]"
           />
         </div>
 

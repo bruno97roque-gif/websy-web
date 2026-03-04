@@ -7,6 +7,9 @@ export default function CustomCursor() {
   const cur2Ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    // No registrar nada en dispositivos touch (móvil/tablet sin mouse)
+    if (window.matchMedia("(pointer: coarse)").matches) return;
+
     // 1. Actualización directa (mucho más simple, sin loops extraños)
     const onMove = (e: MouseEvent) => {
       if (curRef.current) {
@@ -59,14 +62,15 @@ export default function CustomCursor() {
 
   return (
     <>
+      {/* hidden en touch/móvil — md:block solo lo hace visible en desktop con mouse */}
       <div
         ref={curRef}
-        className="pointer-events-none fixed top-0 left-0 z-[9999] h-2.5 w-2.5 rounded-full bg-[#F18C1B] will-change-transform"
+        className="pointer-events-none fixed top-0 left-0 z-[9999] hidden h-2.5 w-2.5 rounded-full bg-[#F18C1B] will-change-transform md:block"
         style={{ transition: "width 0.2s, height 0.2s, background-color 0.2s", transform: "translate3d(-200px, -200px, 0)" }}
       />
       <div
         ref={cur2Ref}
-        className="pointer-events-none fixed top-0 left-0 z-[9998] h-8 w-8 rounded-full border border-[#F18C1B] opacity-45 will-change-transform"
+        className="pointer-events-none fixed top-0 left-0 z-[9998] hidden h-8 w-8 rounded-full border border-[#F18C1B] opacity-45 will-change-transform md:block"
         style={{ transition: "width 0.25s, height 0.25s", transform: "translate3d(-200px, -200px, 0)" }}
       />
     </>
