@@ -30,8 +30,8 @@ function OrangeIcon({
 
 /* ─── Certificaciones & partners de plataformas ─── */
 const PLATFORM_PARTNERS = [
-  { src: "/images/Google-partner.webp",  alt: "Google Partner" },
-  { src: "/images/Shopify-partner.webp", alt: "Shopify Partner" },
+  { src: "/images/Google-partner.webp",  alt: "Google Partner",  className: "h-7 sm:h-8" },
+  { src: "/images/Shopify-partner.webp", alt: "Shopify Partner", className: "h-10 sm:h-12" },
 ];
 
 /* ─── Main Component ─── */
@@ -168,7 +168,7 @@ export default function HeroSection() {
                   src={p.src}
                   alt={p.alt}
                   title={p.alt}
-                  className="h-7 w-auto max-w-[100px] object-contain brightness-0 invert opacity-70 transition-opacity duration-300 hover:opacity-100 sm:h-8"
+                  className={`${p.className} w-auto max-w-[120px] object-contain brightness-0 invert opacity-70 transition-opacity duration-300 hover:opacity-100`}
                   draggable={false}
                 />
               ))}
