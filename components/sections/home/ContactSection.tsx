@@ -2,13 +2,44 @@
 
 import { useState } from "react";
 
-export default function ContactSection() {
-  const [sent, setSent] = useState(false);
+/* ── Estado del formulario ── */
+type Status = "idle" | "loading" | "success" | "error";
 
-  const handleSubmit = (e: React.FormEvent) => {
+export default function ContactSection() {
+  const [status,  setStatus]  = useState<Status>("idle");
+  const [errMsg,  setErrMsg]  = useState<string>("");
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setSent(true);
-    setTimeout(() => setSent(false), 3500);
+    setStatus("loading");
+    setErrMsg("");
+
+    const form = e.currentTarget;
+    const data = Object.fromEntries(new FormData(form));
+
+    try {
+      const res = await fetch("/api/contact", {
+        method:  "POST",
+        headers: { "Content-Type": "application/json" },
+        body:    JSON.stringify(data),
+      });
+
+      const json = await res.json();
+
+      if (!res.ok) {
+        setErrMsg(json.error ?? "Error al enviar. Intenta de nuevo.");
+        setStatus("error");
+        return;
+      }
+
+      setStatus("success");
+      form.reset();
+      // Vuelve a idle tras 5 s
+      setTimeout(() => setStatus("idle"), 5000);
+    } catch {
+      setErrMsg("Sin conexión. Verifica tu internet e intenta de nuevo.");
+      setStatus("error");
+    }
   };
 
   return (
@@ -44,9 +75,7 @@ export default function ContactSection() {
               una propuesta personalizada. Sin compromisos.
             </p>
 
-            {/* ── Imagen vaca + ovni ──
-                Pon tu imagen en /public/images/contacto-alien.webp
-                y aparecerá aquí automáticamente. */}
+            {/* Imagen vaca + ovni */}
             <div className="flex justify-center md:justify-start">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
@@ -61,18 +90,28 @@ export default function ContactSection() {
 
           {/* ── RIGHT — formulario ── */}
           <div className="rounded-[20px] border border-[#F18C1B]/40 bg-[#1a0928] p-7 md:px-10 md:py-12">
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} noValidate>
+
+              {/* ── Honeypot anti-spam (oculto para humanos, los bots lo llenan) ── */}
+              <input
+                type="text"
+                name="website"
+                tabIndex={-1}
+                autoComplete="off"
+                aria-hidden="true"
+                className="absolute opacity-0 h-0 w-0 pointer-events-none"
+              />
 
               {/* Fila 1: Nombre + Empresa */}
               <div className="mb-5 grid grid-cols-1 gap-4 sm:grid-cols-2">
-                <FormField label="Nombre"  type="text"  placeholder="Tu nombre"   />
-                <FormField label="Empresa" type="text"  placeholder="Tu empresa"  />
+                <FormField name="nombre"  label="Nombre"  type="text"  placeholder="Tu nombre"  required />
+                <FormField name="empresa" label="Empresa" type="text"  placeholder="Tu empresa" />
               </div>
 
               {/* Fila 2: Email + WhatsApp */}
               <div className="mb-5 grid grid-cols-1 gap-4 sm:grid-cols-2">
-                <FormField label="Email"    type="email" placeholder="tu@email.com"    />
-                <FormField label="WhatsApp" type="tel"   placeholder="+51 999 999 999" />
+                <FormField name="email"    label="Email"    type="email" placeholder="tu@email.com"    required />
+                <FormField name="whatsapp" label="WhatsApp" type="tel"   placeholder="+51 999 999 999" />
               </div>
 
               {/* Servicio de interés */}
@@ -82,6 +121,7 @@ export default function ContactSection() {
                 </label>
                 <div className="relative">
                   <select
+                    name="servicio"
                     defaultValue=""
                     className="w-full appearance-none rounded-[10px] border border-white/12 bg-[#0d0616] px-4 py-3.5 font-poppins text-[14px] text-white/70 outline-none transition-colors focus:border-[#F18C1B]/60 focus:text-white"
                   >
@@ -104,25 +144,38 @@ export default function ContactSection() {
               {/* Cuéntanos tu proyecto */}
               <div className="mb-7 flex flex-col gap-2">
                 <label className="font-montserrat text-[11px] font-bold uppercase tracking-[1.5px] text-white/50">
-                  Cuéntanos tu proyecto
+                  Cuéntanos tu proyecto <span className="text-[#F18C1B]">*</span>
                 </label>
                 <textarea
+                  name="proyecto"
                   rows={7}
+                  required
                   placeholder="Describe brevemente qué necesitas…"
                   className="w-full resize-none rounded-[10px] border border-white/12 bg-[#0d0616] px-4 py-3.5 font-poppins text-[14px] text-white placeholder:text-white/25 outline-none transition-colors focus:border-[#F18C1B]/60"
                 />
               </div>
 
+              {/* Mensaje de error */}
+              {status === "error" && (
+                <p className="mb-4 rounded-[10px] border border-red-500/30 bg-red-500/10 px-4 py-3 font-poppins text-[13px] text-red-400">
+                  ⚠️ {errMsg}
+                </p>
+              )}
+
               {/* Botón enviar */}
               <button
                 type="submit"
-                className="w-full rounded-full py-4 font-montserrat text-[13px] font-black uppercase tracking-[2.5px] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_16px_50px_rgba(241,140,27,.45)]"
+                disabled={status === "loading" || status === "success"}
+                className="w-full rounded-full py-4 font-montserrat text-[13px] font-black uppercase tracking-[2.5px] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_16px_50px_rgba(241,140,27,.45)] disabled:cursor-not-allowed disabled:opacity-80"
                 style={{
-                  background: sent ? "#2d9e6b" : "#F18C1B",
-                  color:      sent ? "#fff"    : "#291231",
+                  background: status === "success" ? "#2d9e6b" : "#F18C1B",
+                  color:      status === "success" ? "#fff"    : "#291231",
                 }}
               >
-                {sent ? "✓ Mensaje enviado" : "Enviar mensaje →"}
+                {status === "loading" && "Enviando…"}
+                {status === "success" && "✓ Mensaje enviado"}
+                {status === "error"   && "Enviar mensaje →"}
+                {status === "idle"    && "Enviar mensaje →"}
               </button>
 
             </form>
@@ -136,22 +189,28 @@ export default function ContactSection() {
 
 /* ── Campo de texto reutilizable ── */
 function FormField({
+  name,
   label,
   type,
   placeholder,
+  required,
 }: {
+  name: string;
   label: string;
   type: string;
   placeholder: string;
+  required?: boolean;
 }) {
   return (
     <div className="flex flex-col gap-2">
       <label className="font-montserrat text-[11px] font-bold uppercase tracking-[1.5px] text-white/50">
-        {label}
+        {label}{required && <span className="ml-1 text-[#F18C1B]">*</span>}
       </label>
       <input
         type={type}
+        name={name}
         placeholder={placeholder}
+        required={required}
         className="w-full rounded-[10px] border border-white/12 bg-[#0d0616] px-4 py-3.5 font-poppins text-[14px] text-white placeholder:text-white/25 outline-none transition-colors focus:border-[#F18C1B]/60"
       />
     </div>

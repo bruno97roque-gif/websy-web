@@ -6,6 +6,7 @@ import Footer from "@/components/layout/Footer";
 import CustomCursor from "@/components/layout/CustomCursor";
 import SmoothScroll from "@/components/layout/SmoothScroll";
 import LoadingScreen from "@/components/ui/LoadingScreen";
+import WhatsappButton from "@/components/ui/WhatsappButton";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -41,6 +42,7 @@ export default function RootLayout({
         <Navbar />
         <main>{children}</main>
         <Footer />
+        <WhatsappButton />
       </body>
     </html>
   );
