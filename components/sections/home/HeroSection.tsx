@@ -157,10 +157,10 @@ export default function HeroSection() {
           <div
             ref={partnersRef}
             style={{ opacity: 0 }}
-            className="mt-9 w-full"
+            className="mt-9 flex w-full justify-center md:justify-start"
           >
             {/* Logos de plataformas */}
-            <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-3 md:justify-start md:gap-x-6">
+            <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3">
               {PLATFORM_PARTNERS.map((p) => (
                 // eslint-disable-next-line @next/next/no-img-element
                 <img
