@@ -31,7 +31,7 @@ function OrangeIcon({
 /* ─── Certificaciones & partners de plataformas ─── */
 const PLATFORM_PARTNERS = [
   { src: "/images/Google-partner.webp",  alt: "Google Partner",  className: "h-7 sm:h-8" },
-  { src: "/images/Shopify-partner.webp", alt: "Shopify Partner", className: "h-10 sm:h-12" },
+  { src: "/images/Shopify-partner.webp", alt: "Shopify Partner", className: "h-14 sm:h-16" },
 ];
 
 /* ─── Main Component ─── */
