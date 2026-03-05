@@ -6,10 +6,10 @@ import Link from "next/link";
 import { Particles } from "@/components/ui/particles";
 
 const NAV_LINKS = [
-  { num: "01", label: "Inicio",    href: "/#inicio" },
-  { num: "02", label: "Nosotros",  href: "/#nosotros" },
-  { num: "03", label: "Servicios", href: "/#servicios" },
-  { num: "04", label: "Contacto",  href: "/#contacto" },
+  { num: "01", label: "Inicio",    href: "/" },
+  { num: "02", label: "Nosotros",  href: "/nosotros" },
+  { num: "03", label: "Servicios", href: "/servicios" },
+  { num: "04", label: "Contacto",  href: "/contacto" },
 ];
 
 /* ── Scrollbar width helper ── */
@@ -201,7 +201,7 @@ export default function MobileMenu({
           </div>
 
           <Link
-            href="/#contacto"
+            href="/contacto"
             onClick={onClose}
             className="inline-flex w-fit items-center gap-2 rounded-full border-2 border-[#F18C1B] px-7 py-3 font-montserrat text-[12px] font-bold uppercase tracking-[1.5px] text-white transition-all duration-300 hover:bg-[#F18C1B] hover:text-[#291231]"
           >
@@ -220,7 +220,7 @@ export default function MobileMenu({
             hola@websy.pe
           </a>
           <Link
-            href="/#contacto"
+            href="/contacto"
             onClick={onClose}
             className="font-montserrat text-[11px] font-bold uppercase tracking-[1px] text-[#F18C1B] hover:underline"
           >

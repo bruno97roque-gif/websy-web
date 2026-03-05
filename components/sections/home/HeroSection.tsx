@@ -28,12 +28,16 @@ function OrangeIcon({
   );
 }
 
+/* ─── Partners / clientes en hero ─── */
+const PARTNER_LOGOS = [1, 2, 3, 4, 5];
+
 /* ─── Main Component ─── */
 export default function HeroSection() {
-  const pillRef  = useRef<HTMLDivElement>(null);
-  const titleRef = useRef<HTMLHeadingElement>(null);
-  const descRef  = useRef<HTMLParagraphElement>(null);
-  const btnsRef  = useRef<HTMLDivElement>(null);
+  const pillRef     = useRef<HTMLDivElement>(null);
+  const titleRef    = useRef<HTMLHeadingElement>(null);
+  const descRef     = useRef<HTMLParagraphElement>(null);
+  const btnsRef     = useRef<HTMLDivElement>(null);
+  const partnersRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     // Los elementos ya arrancan con opacity:0 en el JSX (style inline).
@@ -50,7 +54,10 @@ export default function HeroSection() {
         { opacity: 1, y: 0, duration: 0.7, ease: "power3.out" }, "-=0.5")
       .fromTo(btnsRef.current,
         { opacity: 0, y: 20 },
-        { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" }, "-=0.4");
+        { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" }, "-=0.4")
+      .fromTo(partnersRef.current,
+        { opacity: 0, y: 14 },
+        { opacity: 1, y: 0, duration: 0.7, ease: "power3.out" }, "-=0.2");
   }, []);
 
   return (
@@ -142,6 +149,37 @@ export default function HeroSection() {
             </ShimmerButton>
             <MovingBorderButton href="#contacto">Hablemos</MovingBorderButton>
           </div>
+
+          {/* ── Partners strip ── */}
+          <div
+            ref={partnersRef}
+            style={{ opacity: 0 }}
+            className="mt-9 w-full"
+          >
+            {/* Separador con label */}
+            <div className="mb-4 flex items-center gap-3 justify-center md:justify-start">
+              <div className="h-px flex-1 max-w-[40px] bg-white/15" />
+              <span className="font-poppins text-[10px] font-medium uppercase tracking-[2.5px] text-white/35">
+                Confían en nosotros
+              </span>
+              <div className="h-px flex-1 bg-white/15 md:max-w-[40px]" />
+            </div>
+
+            {/* Logos — blanco muted, hover más visible */}
+            <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 md:justify-start md:gap-x-7">
+              {PARTNER_LOGOS.map((n) => (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img
+                  key={n}
+                  src={`/images/logo-cliente-${n}.webp`}
+                  alt=""
+                  className="h-6 w-auto max-w-[90px] object-contain brightness-0 invert opacity-35 transition-opacity duration-300 hover:opacity-60 sm:h-7"
+                  draggable={false}
+                />
+              ))}
+            </div>
+          </div>
+
         </div>
 
         {/* ──── RIGHT — Orbiting circles ──── */}
