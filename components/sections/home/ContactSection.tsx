@@ -81,7 +81,7 @@ export default function ContactSection() {
               <img
                 src="/images/vaca-alien.gif"
                 alt=""
-                className="h-auto w-[340px] object-contain drop-shadow-2xl md:w-[440px]"
+                className="h-auto w-[380px] object-contain drop-shadow-2xl md:w-[500px]"
                 draggable={false}
               />
             </div>
@@ -89,7 +89,7 @@ export default function ContactSection() {
           </div>
 
           {/* ── RIGHT — formulario ── */}
-          <div className="rounded-[24px] border border-[#F18C1B]/50 bg-white/[0.06] p-8 shadow-[0_8px_60px_rgba(0,0,0,0.4),inset_0_1px_0_rgba(255,255,255,0.06)] backdrop-blur-2xl md:px-12 md:py-14">
+          <div className="rounded-[24px] border border-[#F18C1B]/50 bg-white/[0.06] p-8 shadow-[0_8px_60px_rgba(0,0,0,0.4),inset_0_1px_0_rgba(255,255,255,0.06)] md:px-12 md:py-14">
             <form onSubmit={handleSubmit} noValidate>
 
               {/* ── Honeypot anti-spam (oculto para humanos, los bots lo llenan) ── */}
