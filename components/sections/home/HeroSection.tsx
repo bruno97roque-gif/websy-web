@@ -28,8 +28,13 @@ function OrangeIcon({
   );
 }
 
-/* ─── Partners / clientes en hero ─── */
-const PARTNER_LOGOS = [1, 2, 3, 4, 5];
+/* ─── Certificaciones & partners de plataformas ─── */
+const PLATFORM_PARTNERS = [
+  { src: "/images/partner-google.webp",    alt: "Google Partner" },
+  { src: "/images/partner-shopify.webp",   alt: "Shopify Partner" },
+  { src: "/images/partner-meta.webp",      alt: "Meta Business Partner" },
+  { src: "/images/partner-wordpress.webp", alt: "WordPress" },
+];
 
 /* ─── Main Component ─── */
 export default function HeroSection() {
@@ -156,24 +161,21 @@ export default function HeroSection() {
             style={{ opacity: 0 }}
             className="mt-9 w-full"
           >
-            {/* Separador con label */}
-            <div className="mb-4 flex items-center gap-3 justify-center md:justify-start">
-              <div className="h-px flex-1 max-w-[40px] bg-white/15" />
-              <span className="font-poppins text-[10px] font-medium uppercase tracking-[2.5px] text-white/35">
-                Confían en nosotros
-              </span>
-              <div className="h-px flex-1 bg-white/15 md:max-w-[40px]" />
-            </div>
+            {/* Label */}
+            <p className="font-poppins mb-3.5 text-center text-[10px] font-medium uppercase tracking-[2.5px] text-white/30 md:text-left">
+              Certificados & partners
+            </p>
 
-            {/* Logos — blanco muted, hover más visible */}
-            <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 md:justify-start md:gap-x-7">
-              {PARTNER_LOGOS.map((n) => (
+            {/* Logos de plataformas — blanco muted, hover más visible */}
+            <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-3 md:justify-start md:gap-x-6">
+              {PLATFORM_PARTNERS.map((p) => (
                 // eslint-disable-next-line @next/next/no-img-element
                 <img
-                  key={n}
-                  src={`/images/logo-cliente-${n}.webp`}
-                  alt=""
-                  className="h-6 w-auto max-w-[90px] object-contain brightness-0 invert opacity-35 transition-opacity duration-300 hover:opacity-60 sm:h-7"
+                  key={p.src}
+                  src={p.src}
+                  alt={p.alt}
+                  title={p.alt}
+                  className="h-7 w-auto max-w-[100px] object-contain brightness-0 invert opacity-40 transition-opacity duration-300 hover:opacity-70 sm:h-8"
                   draggable={false}
                 />
               ))}
