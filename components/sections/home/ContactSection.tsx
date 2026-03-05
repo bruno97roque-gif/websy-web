@@ -166,7 +166,7 @@ export default function ContactSection() {
               {/* Botón enviar */}
               <ShimmerButton
                 type="submit"
-                className={`w-full justify-center ${
+                className={`${
                   status === "loading" || status === "success"
                     ? "pointer-events-none opacity-80"
                     : ""
