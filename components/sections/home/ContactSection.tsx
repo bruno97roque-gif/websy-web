@@ -75,11 +75,11 @@ export default function ContactSection() {
               una propuesta personalizada. Sin compromisos.
             </p>
 
-            {/* Imagen vaca + ovni */}
+            {/* GIF vaca + ovni */}
             <div className="flex justify-center md:justify-start">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/images/contacto-alien.webp"
+                src="/images/vaca-alien.gif"
                 alt=""
                 className="h-auto w-[260px] object-contain drop-shadow-2xl md:w-[320px]"
                 draggable={false}
