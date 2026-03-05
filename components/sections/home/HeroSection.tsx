@@ -157,7 +157,7 @@ export default function HeroSection() {
           <div
             ref={partnersRef}
             style={{ opacity: 0 }}
-            className="mt-9 flex w-full justify-center md:justify-start"
+            className="mt-9 hidden w-full md:flex md:justify-start"
           >
             {/* Logos de plataformas */}
             <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3">
