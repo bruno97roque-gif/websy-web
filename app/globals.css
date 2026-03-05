@@ -92,6 +92,13 @@
   to { transform: translateX(-50%); }
 }
 
+/* Icon box pulse rings — expand & fade outward */
+@keyframes iconRing {
+  0%   { opacity: 0.55; transform: scale(1);   }
+  65%  { opacity: 0;    transform: scale(1.45); }
+  100% { opacity: 0;    transform: scale(1.45); }
+}
+
 /* ─── MARQUEE (yellow strip) ─── */
 .marquee-track {
   /* Ajusta los 25s para hacerlo más rápido o más lento */
@@ -120,6 +127,20 @@
   animation: cliScroll 30s linear infinite;
 }
 .cli-track:hover { animation-play-state: paused; }
+
+/* Mobile — 2 filas más rápidas */
+.cli-track-fast {
+  display: flex;
+  white-space: nowrap;
+  animation: cliScroll 14s linear infinite;
+}
+.cli-track-fast-rev {
+  display: flex;
+  white-space: nowrap;
+  animation: cliScroll 17s linear infinite reverse;
+}
+.cli-track-fast:hover,
+.cli-track-fast-rev:hover { animation-play-state: paused; }
 
 @theme inline {
   --animate-orbit: orbit calc(var(--duration) * 1s) linear infinite;

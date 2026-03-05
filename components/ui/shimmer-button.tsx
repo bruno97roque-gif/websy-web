@@ -25,7 +25,7 @@ export function ShimmerButton({
   const base = cn(
     "group relative inline-flex items-center overflow-hidden rounded-full bg-[#F18C1B]",
     "px-9 py-4 font-montserrat text-[13px] font-black uppercase tracking-[1.5px] text-[#291231]",
-    "transition-colors duration-200",
+    "whitespace-nowrap transition-colors duration-200",
     className
   );
 

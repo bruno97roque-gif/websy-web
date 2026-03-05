@@ -27,7 +27,7 @@ export function MovingBorderButton({
     "border border-white/30 bg-white/12",
     "px-8 py-[15px]",
     "font-montserrat text-[13px] font-bold uppercase tracking-[1.5px] text-white",
-    "transition-colors duration-300 hover:bg-white/18 hover:border-white/45",
+    "whitespace-nowrap transition-colors duration-300 hover:bg-white/18 hover:border-white/45",
     className
   );
 

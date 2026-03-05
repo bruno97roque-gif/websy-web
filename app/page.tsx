@@ -25,12 +25,23 @@ export default function HomePage() {
             min-[390px]:h-[170px] → iPhone 12 / 14  (≥ 390px)
             md:h-[260px]        → tablet / desktop (≥ 768px)
           ────────────────────────────────────────────────────────────────── */}
-        <div className="pointer-events-none absolute bottom-[0%] left-[18%] z-20 md:left-[20%]">
+        {/*
+          ── ALIEN POSICIÓN por breakpoint ───────────────────────────────────
+          IMPORTANTE: bottom% es relativo al wrapper (hero + marquee).
+          Para iPad hay que superar la altura del marquee (~65px) o el alien
+          desaparece dentro de la barra naranja.
+
+          < 390px  (iPhone SE/XS) : bottom-[4%]   left-[33%]
+          ≥ 390px  (iPhone 12/14) : bottom-[2%]   left-[30%]
+          ≥ 768px  (iPad Mini/Air): bottom-[8%]   left-[8%]   ← sube por encima del marquee
+          ≥ 1024px (Desktop)      : bottom-[0%]   left-[20%]
+          ──────────────────────────────────────────────────────────────────── */}
+        <div className="pointer-events-none absolute bottom-[4%] left-[33%] z-20 min-[390px]:bottom-[2%] min-[390px]:left-[30%] md:bottom-[8%] md:left-[8%] lg:bottom-[0%] lg:left-[20%]">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/images/hero-float.webp"
             alt=""
-            className="h-[130px] w-auto drop-shadow-2xl min-[390px]:h-[170px] md:h-[260px]"
+            className="h-[130px] w-auto drop-shadow-2xl min-[390px]:h-[170px] md:h-[220px] lg:h-[260px]"
           />
         </div>
 

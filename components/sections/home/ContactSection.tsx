@@ -5,117 +5,136 @@ import { useState } from "react";
 export default function ContactSection() {
   const [sent, setSent] = useState(false);
 
-  const handleSubmit = () => {
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
     setSent(true);
-    setTimeout(() => setSent(false), 3000);
+    setTimeout(() => setSent(false), 3500);
   };
 
   return (
     <section
       id="contacto"
-      className="relative overflow-hidden bg-[#291231] px-8 py-[120px] md:px-[72px]"
+      className="relative overflow-hidden bg-[#291231] px-8 py-[100px] md:px-[72px] md:py-[120px]"
+      style={{
+        backgroundImage: "url('/images/background-form.webp')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
     >
-      {/* grid bg */}
-      <div
-        className="pointer-events-none absolute inset-0"
-        style={{
-          backgroundImage: `
-            linear-gradient(rgba(241,140,27,.04) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(241,140,27,.04) 1px, transparent 1px)
-          `,
-          backgroundSize: "80px 80px",
-        }}
-      />
-      {/* orbs */}
-      <div className="pointer-events-none absolute -top-36 right-[-80px] h-[600px] w-[600px] rounded-full bg-[radial-gradient(circle,rgba(241,140,27,.1)_0%,transparent_65%)] blur-[120px]" />
-      <div className="pointer-events-none absolute -bottom-16 left-[10%] h-[350px] w-[350px] rounded-full bg-[radial-gradient(circle,rgba(80,20,110,.4)_0%,transparent_65%)] blur-[120px]" />
+      {/* glow orbs */}
+      <div className="pointer-events-none absolute -top-40 right-[-60px] h-[600px] w-[600px] rounded-full bg-[radial-gradient(circle,rgba(241,140,27,.07)_0%,transparent_65%)] blur-[120px]" />
+      <div className="pointer-events-none absolute -bottom-20 left-[8%] h-[380px] w-[380px] rounded-full bg-[radial-gradient(circle,rgba(80,20,110,.35)_0%,transparent_65%)] blur-[120px]" />
 
       <div className="relative z-10 mx-auto max-w-[1600px]">
-        <div className="grid grid-cols-1 items-center gap-[80px] md:grid-cols-2">
+        <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-[5fr_7fr] md:gap-16">
 
-          {/* LEFT */}
-          <div>
-            <p className="font-poppins mb-3 text-[11px] font-medium uppercase tracking-[3px] text-[#F18C1B]/65">
+          {/* ── LEFT ── */}
+          <div className="flex flex-col">
+
+            <p className="font-poppins mb-4 text-[11px] font-medium uppercase tracking-[3px] text-[#F18C1B]">
               Contáctanos
             </p>
-            <h2 className="font-montserrat mb-5 text-[clamp(30px,3.5vw,50px)] font-black leading-[1.08] tracking-tight text-white">
+            <h2 className="font-montserrat mb-5 text-[clamp(32px,3.8vw,56px)] font-black leading-[1.06] tracking-tight text-white">
               ¿Listo para llevar<br />
               tu marca a{" "}
               <em className="not-italic text-[#F18C1B]">otra órbita?</em>
             </h2>
-            <p className="font-poppins mb-10 text-[15px] leading-[1.85] text-white/50">
-              Cuéntanos tu proyecto y te respondemos en menos de 24 horas con una propuesta personalizada. Sin compromisos.
+            <p className="font-poppins mb-10 max-w-[420px] text-[15px] leading-[1.85] text-white/50">
+              Cuéntanos tu proyecto y te respondemos en menos de 24 horas con
+              una propuesta personalizada. Sin compromisos.
             </p>
 
-            <div className="flex flex-col gap-4">
-              {[
-                { icon: "✉", label: "Email", val: "hola@websy.pe" },
-                { icon: "📱", label: "WhatsApp", val: "+51 999 999 999" },
-                { icon: "📍", label: "Ubicación", val: "Lima, Perú" },
-              ].map((item) => (
-                <div
-                  key={item.label}
-                  className="flex items-center gap-3.5 rounded-[12px] border border-white/08 bg-white/04 px-5 py-4 transition-all hover:border-[#F18C1B]/30 hover:bg-[#F18C1B]/06"
-                >
-                  <div className="flex h-[42px] w-[42px] shrink-0 items-center justify-center rounded-[10px] bg-[#F18C1B]/12 text-lg">
-                    {item.icon}
-                  </div>
-                  <div>
-                    <p className="font-poppins text-[11px] uppercase tracking-[1px] text-white/35">{item.label}</p>
-                    <p className="font-montserrat text-[14px] font-bold text-white">{item.val}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* RIGHT — form */}
-          <div className="rounded-[20px] border border-white/10 bg-white/05 p-10 backdrop-blur-[16px]">
-            <div className="mb-4 grid grid-cols-2 gap-4">
-              <FormField label="Nombre" type="text" placeholder="Tu nombre" />
-              <FormField label="Empresa" type="text" placeholder="Tu empresa" />
-            </div>
-            <div className="mb-4 grid grid-cols-2 gap-4">
-              <FormField label="Email" type="email" placeholder="tu@email.com" />
-              <FormField label="WhatsApp" type="tel" placeholder="+51 999 999 999" />
-            </div>
-            <div className="mb-4 flex flex-col gap-2">
-              <label className="font-montserrat text-[11px] font-bold uppercase tracking-[1.5px] text-white/40">
-                Servicio de interés
-              </label>
-              <select className="w-full rounded-[10px] border border-white/10 bg-white/06 px-4 py-3.5 font-poppins text-[14px] text-white outline-none focus:border-[#F18C1B] focus:bg-[#F18C1B]/06">
-                <option value="" disabled>Selecciona un servicio</option>
-                <option>Branding</option>
-                <option>Página Web</option>
-                <option>Tienda Virtual</option>
-                <option>Google Ads & SEO</option>
-                <option>Paquete completo</option>
-              </select>
-            </div>
-            <div className="mb-6 flex flex-col gap-2">
-              <label className="font-montserrat text-[11px] font-bold uppercase tracking-[1.5px] text-white/40">
-                Cuéntanos tu proyecto
-              </label>
-              <textarea
-                rows={4}
-                placeholder="Describe brevemente qué necesitas…"
-                className="w-full resize-none rounded-[10px] border border-white/10 bg-white/06 px-4 py-3.5 font-poppins text-[14px] text-white placeholder:text-white/25 outline-none focus:border-[#F18C1B] focus:bg-[#F18C1B]/06"
+            {/* ── Imagen vaca + ovni ──
+                Pon tu imagen en /public/images/contacto-alien.webp
+                y aparecerá aquí automáticamente. */}
+            <div className="flex justify-center md:justify-start">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/images/contacto-alien.webp"
+                alt=""
+                className="h-auto w-[260px] object-contain drop-shadow-2xl md:w-[320px]"
+                draggable={false}
               />
             </div>
-            <button
-              onClick={handleSubmit}
-              className="relative w-full overflow-hidden rounded-[12px] py-[17px] font-montserrat text-[13px] font-black uppercase tracking-[2px] text-[#291231] transition-all hover:-translate-y-0.5 hover:shadow-[0_16px_50px_rgba(241,140,27,.35)]"
-              style={{ background: sent ? "#2d9e6b" : "#F18C1B", color: sent ? "#fff" : "#291231" }}
-            >
-              {sent ? "✓ Mensaje enviado" : "Enviar mensaje →"}
-            </button>
+
           </div>
+
+          {/* ── RIGHT — formulario ── */}
+          <div className="rounded-[20px] border border-[#F18C1B]/40 bg-[#1a0928] p-7 md:px-10 md:py-12">
+            <form onSubmit={handleSubmit}>
+
+              {/* Fila 1: Nombre + Empresa */}
+              <div className="mb-5 grid grid-cols-1 gap-4 sm:grid-cols-2">
+                <FormField label="Nombre"  type="text"  placeholder="Tu nombre"   />
+                <FormField label="Empresa" type="text"  placeholder="Tu empresa"  />
+              </div>
+
+              {/* Fila 2: Email + WhatsApp */}
+              <div className="mb-5 grid grid-cols-1 gap-4 sm:grid-cols-2">
+                <FormField label="Email"    type="email" placeholder="tu@email.com"    />
+                <FormField label="WhatsApp" type="tel"   placeholder="+51 999 999 999" />
+              </div>
+
+              {/* Servicio de interés */}
+              <div className="mb-5 flex flex-col gap-2">
+                <label className="font-montserrat text-[11px] font-bold uppercase tracking-[1.5px] text-white/50">
+                  Servicio de interés
+                </label>
+                <div className="relative">
+                  <select
+                    defaultValue=""
+                    className="w-full appearance-none rounded-[10px] border border-white/12 bg-[#0d0616] px-4 py-3.5 font-poppins text-[14px] text-white/70 outline-none transition-colors focus:border-[#F18C1B]/60 focus:text-white"
+                  >
+                    <option value="" disabled className="bg-[#0d0616]">Selecciona un servicio</option>
+                    <option className="bg-[#0d0616]">Branding</option>
+                    <option className="bg-[#0d0616]">Página Web</option>
+                    <option className="bg-[#0d0616]">Tienda Virtual</option>
+                    <option className="bg-[#0d0616]">Google Ads &amp; SEO</option>
+                    <option className="bg-[#0d0616]">Paquete completo</option>
+                  </select>
+                  {/* flecha naranja custom */}
+                  <div className="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2">
+                    <svg width="12" height="7" viewBox="0 0 12 7" fill="none">
+                      <path d="M1 1l5 5 5-5" stroke="#F18C1B" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              {/* Cuéntanos tu proyecto */}
+              <div className="mb-7 flex flex-col gap-2">
+                <label className="font-montserrat text-[11px] font-bold uppercase tracking-[1.5px] text-white/50">
+                  Cuéntanos tu proyecto
+                </label>
+                <textarea
+                  rows={7}
+                  placeholder="Describe brevemente qué necesitas…"
+                  className="w-full resize-none rounded-[10px] border border-white/12 bg-[#0d0616] px-4 py-3.5 font-poppins text-[14px] text-white placeholder:text-white/25 outline-none transition-colors focus:border-[#F18C1B]/60"
+                />
+              </div>
+
+              {/* Botón enviar */}
+              <button
+                type="submit"
+                className="w-full rounded-full py-4 font-montserrat text-[13px] font-black uppercase tracking-[2.5px] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_16px_50px_rgba(241,140,27,.45)]"
+                style={{
+                  background: sent ? "#2d9e6b" : "#F18C1B",
+                  color:      sent ? "#fff"    : "#291231",
+                }}
+              >
+                {sent ? "✓ Mensaje enviado" : "Enviar mensaje →"}
+              </button>
+
+            </form>
+          </div>
+
         </div>
       </div>
     </section>
   );
 }
 
+/* ── Campo de texto reutilizable ── */
 function FormField({
   label,
   type,
@@ -127,13 +146,13 @@ function FormField({
 }) {
   return (
     <div className="flex flex-col gap-2">
-      <label className="font-montserrat text-[11px] font-bold uppercase tracking-[1.5px] text-white/40">
+      <label className="font-montserrat text-[11px] font-bold uppercase tracking-[1.5px] text-white/50">
         {label}
       </label>
       <input
         type={type}
         placeholder={placeholder}
-        className="w-full rounded-[10px] border border-white/10 bg-white/06 px-4 py-3.5 font-poppins text-[14px] text-white placeholder:text-white/25 outline-none focus:border-[#F18C1B] focus:bg-[#F18C1B]/06"
+        className="w-full rounded-[10px] border border-white/12 bg-[#0d0616] px-4 py-3.5 font-poppins text-[14px] text-white placeholder:text-white/25 outline-none transition-colors focus:border-[#F18C1B]/60"
       />
     </div>
   );

@@ -42,7 +42,7 @@ export default function CustomCursor() {
     };
 
     const selectors = "a, button, .glass-card, .trust-item, .qs-pillar";
-    
+
     const onMouseOver = (e: MouseEvent) => {
       if ((e.target as Element).closest?.(selectors)) enlarge();
     };
@@ -50,10 +50,38 @@ export default function CustomCursor() {
       if ((e.target as Element).closest?.(selectors)) reset();
     };
 
+    // Ocultar cursor cuando el mouse entra a una service card.
+    // mouseenter/mouseleave NO burbujean → no se disparan al moverse entre hijos.
+    const hideCursor = () => {
+      if (!curRef.current || !cur2Ref.current) return;
+      curRef.current.style.opacity  = "0";
+      cur2Ref.current.style.opacity = "0";
+    };
+    const showCursor = () => {
+      if (!curRef.current || !cur2Ref.current) return;
+      curRef.current.style.opacity  = "1";
+      cur2Ref.current.style.opacity = "1";
+    };
+
+    // Adjuntar a los cards cuando el DOM esté listo
+    let cards: NodeListOf<HTMLElement> | null = null;
+    const cardTimer = window.setTimeout(() => {
+      cards = document.querySelectorAll<HTMLElement>(".js-serv");
+      cards.forEach((card) => {
+        card.addEventListener("mouseenter", hideCursor);
+        card.addEventListener("mouseleave", showCursor);
+      });
+    }, 300);
+
     document.addEventListener("mouseover", onMouseOver);
     document.addEventListener("mouseout", onMouseOut);
 
     return () => {
+      clearTimeout(cardTimer);
+      cards?.forEach((card) => {
+        card.removeEventListener("mouseenter", hideCursor);
+        card.removeEventListener("mouseleave", showCursor);
+      });
       document.removeEventListener("mousemove", onMove);
       document.removeEventListener("mouseover", onMouseOver);
       document.removeEventListener("mouseout", onMouseOut);

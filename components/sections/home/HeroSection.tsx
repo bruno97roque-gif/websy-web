@@ -113,11 +113,19 @@ export default function HeroSection() {
             </span>
           </div>
 
+          {/*
+            Tamaños calculados para que cada línea NUNCA haga wrap en su breakpoint:
+            default  →  34px  (móvil columna completa ~335px)
+            md 768px →  38px  (columna izq. ~350px en grid 2 cols)
+            lg 1024px → 54px  (columna izq. ~490px)
+            xl 1280px → 68px  (columna izq. ~640px)
+            2xl 1536px→ 82px  (columna izq. ~760px)
+          */}
           <h1 ref={titleRef} style={{ opacity: 0 }}
-            className="font-montserrat mb-6 w-full text-[clamp(38px,7vw,94px)] font-bold leading-[.95] tracking-tight text-white">
-            Tu marca en la<br />
-            cima del Mundo<br />
-            <span className="relative inline-block text-[#F18C1B]">Digital</span>
+            className="font-montserrat mb-6 w-full text-[34px] font-bold leading-[1] tracking-tight text-white md:text-[38px] lg:text-[54px] xl:text-[68px] 2xl:text-[82px]">
+            <span className="block whitespace-nowrap">Tu marca en la</span>
+            <span className="block whitespace-nowrap">cima del Mundo</span>
+            <span className="block whitespace-nowrap text-[#F18C1B]">Digital</span>
           </h1>
 
           <p ref={descRef} style={{ opacity: 0 }}
@@ -136,11 +144,11 @@ export default function HeroSection() {
           </div>
         </div>
 
-        {/* ──── RIGHT — Orbiting + partner badges ──── */}
-        <div className="hidden md:flex flex-col items-center justify-center gap-14">
+        {/* ──── RIGHT — Orbiting circles ──── */}
+        <div className="hidden items-center justify-center md:flex">
 
           {/* ── Orbiting container ── */}
-          <div className="relative h-[430px] w-[430px] lg:h-[660px] lg:w-[660px]">
+          <div className="relative h-[460px] w-[460px] lg:h-[680px] lg:w-[680px]">
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="relative flex h-[740px] w-[740px] origin-center scale-[0.56] items-center justify-center lg:scale-[0.88]">
 
@@ -153,7 +161,7 @@ export default function HeroSection() {
                 </div>
 
                 {/* Anillo exterior — 4 iconos */}
-                <OrbitingCircles radius={330} duration={30} iconSize={72} strokeWidth={2.5} pathClassName="stroke-white/18">
+                <OrbitingCircles radius={330} duration={30} iconSize={72} strokeWidth={1.5} pathClassName="stroke-white">
                   <OrangeIcon src="/icons/icono1-circle.webp" imgSize={46} />
                   <OrangeIcon src="/icons/icono2-circle.webp" imgSize={46} />
                   <OrangeIcon src="/icons/icono3-circle.webp" imgSize={46} />
@@ -161,7 +169,7 @@ export default function HeroSection() {
                 </OrbitingCircles>
 
                 {/* Anillo interior — 2 iconos + ovni GIF */}
-                <OrbitingCircles radius={190} duration={14} reverse iconSize={90} strokeWidth={2.5} pathClassName="stroke-white/18">
+                <OrbitingCircles radius={190} duration={14} reverse iconSize={90} strokeWidth={1.5} pathClassName="stroke-white">
                   <OrangeIcon src="/icons/icono5-circle.webp" imgSize={40} circleSize={66} />
                   <OrangeIcon src="/icons/icono6-circle.webp" imgSize={40} circleSize={66} />
                   {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -177,38 +185,6 @@ export default function HeroSection() {
             </div>
           </div>
 
-          {/* ── Partner badges — debajo del orbi ── */}
-          <div className="flex items-center gap-12">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/Google-partner.webp" alt="Google Partner"
-              className="h-12 w-auto object-contain lg:h-[60px]" draggable={false} />
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/Shopify-partner.webp" alt="Shopify Partners"
-              className="h-12 w-auto object-contain lg:h-[60px]" draggable={false} />
-          </div>
-
-        </div>
-      </div>
-
-      {/* ── SCROLL HINT ── */}
-      <div className="absolute bottom-8 left-1/2 z-10 hidden -translate-x-1/2 flex-col items-center gap-3 md:flex">
-        <span className="font-poppins text-[10px] uppercase tracking-[2.5px] text-white/65">Scroll</span>
-        {/* Mouse outline */}
-        <div className="relative flex h-[46px] w-[28px] items-start justify-center rounded-[14px] border-2 border-white/55 pt-[7px]">
-          {/* Scrolling dot */}
-          <div
-            className="h-[7px] w-[2px] rounded-full bg-[#F18C1B]"
-            style={{ animation: "scrollDot 1.8s ease-in-out infinite" }}
-          />
-        </div>
-        {/* Chevron arrows */}
-        <div className="flex flex-col items-center gap-[3px]" style={{ animation: "scrollChevron 1.8s ease-in-out infinite" }}>
-          <svg width="12" height="7" viewBox="0 0 12 7" fill="none">
-            <path d="M1 1l5 5 5-5" stroke="#F18C1B" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" opacity="1" />
-          </svg>
-          <svg width="12" height="7" viewBox="0 0 12 7" fill="none">
-            <path d="M1 1l5 5 5-5" stroke="#F18C1B" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" opacity=".5" />
-          </svg>
         </div>
       </div>
 
