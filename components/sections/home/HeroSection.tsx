@@ -159,12 +159,7 @@ export default function HeroSection() {
             style={{ opacity: 0 }}
             className="mt-9 w-full"
           >
-            {/* Label */}
-            <p className="font-poppins mb-3.5 text-center text-[10px] font-medium uppercase tracking-[2.5px] text-white/30 md:text-left">
-              Certificados & partners
-            </p>
-
-            {/* Logos de plataformas — blanco muted, hover más visible */}
+            {/* Logos de plataformas */}
             <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-3 md:justify-start md:gap-x-6">
               {PLATFORM_PARTNERS.map((p) => (
                 // eslint-disable-next-line @next/next/no-img-element
@@ -173,7 +168,7 @@ export default function HeroSection() {
                   src={p.src}
                   alt={p.alt}
                   title={p.alt}
-                  className="h-7 w-auto max-w-[100px] object-contain brightness-0 invert opacity-40 transition-opacity duration-300 hover:opacity-70 sm:h-8"
+                  className="h-7 w-auto max-w-[100px] object-contain brightness-0 invert opacity-70 transition-opacity duration-300 hover:opacity-100 sm:h-8"
                   draggable={false}
                 />
               ))}
