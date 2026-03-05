@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { ShimmerButton } from "@/components/ui/shimmer-button";
 
 /* ── Estado del formulario ── */
 type Status = "idle" | "loading" | "success" | "error";
@@ -163,20 +164,33 @@ export default function ContactSection() {
               )}
 
               {/* Botón enviar */}
-              <button
+              <ShimmerButton
                 type="submit"
-                disabled={status === "loading" || status === "success"}
-                className="w-full rounded-full py-4 font-montserrat text-[13px] font-black uppercase tracking-[2.5px] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_16px_50px_rgba(241,140,27,.45)] disabled:cursor-not-allowed disabled:opacity-80"
-                style={{
-                  background: status === "success" ? "#2d9e6b" : "#F18C1B",
-                  color:      status === "success" ? "#fff"    : "#291231",
-                }}
+                className={`w-full justify-center ${
+                  status === "loading" || status === "success"
+                    ? "pointer-events-none opacity-80"
+                    : ""
+                } ${status === "success" ? "!bg-[#2d9e6b] !text-white" : ""}`}
               >
                 {status === "loading" && "Enviando…"}
                 {status === "success" && "✓ Mensaje enviado"}
-                {status === "error"   && "Enviar mensaje →"}
-                {status === "idle"    && "Enviar mensaje →"}
-              </button>
+                {status === "error" && (
+                  <>
+                    Enviar mensaje
+                    <svg width="16" height="16" viewBox="0 0 18 18" fill="none">
+                      <path d="M3 9h12M9 3l6 6-6 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  </>
+                )}
+                {status === "idle" && (
+                  <>
+                    Enviar mensaje
+                    <svg width="16" height="16" viewBox="0 0 18 18" fill="none">
+                      <path d="M3 9h12M9 3l6 6-6 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  </>
+                )}
+              </ShimmerButton>
 
             </form>
           </div>
