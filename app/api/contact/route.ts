@@ -1,7 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+// ⚠️ NO instanciar Resend en el módulo global — solo en el handler (runtime)
+// Si se instancia aquí, el build falla porque RESEND_API_KEY no existe en build time
 
 /* ─────────────────────────────────────────────
    Rate limiter en memoria
@@ -83,7 +84,8 @@ export async function POST(req: NextRequest) {
       timeStyle: "short",
     });
 
-    /* 4 — Enviar email vía Resend */
+    /* 4 — Enviar email vía Resend (instanciado aquí = solo en runtime, no en build) */
+    const resend = new Resend(process.env.RESEND_API_KEY);
     await resend.emails.send({
       from:    `Websy Contacto <${process.env.FROM_EMAIL ?? "onboarding@resend.dev"}>`,
       to:      [process.env.CONTACT_EMAIL ?? "hola@websy.pe"],
