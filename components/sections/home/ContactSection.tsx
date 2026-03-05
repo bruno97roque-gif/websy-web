@@ -57,7 +57,7 @@ export default function ContactSection() {
       <div className="pointer-events-none absolute -bottom-20 left-[8%] h-[380px] w-[380px] rounded-full bg-[radial-gradient(circle,rgba(80,20,110,.35)_0%,transparent_65%)] blur-[120px]" />
 
       <div className="relative z-10 mx-auto max-w-[1600px]">
-        <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-[5fr_7fr] md:gap-16">
+        <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2 md:gap-16">
 
           {/* ── LEFT ── */}
           <div className="flex flex-col">
