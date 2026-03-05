@@ -89,7 +89,7 @@ export default function ContactSection() {
           </div>
 
           {/* ── RIGHT — formulario ── */}
-          <div className="rounded-[20px] border border-[#F18C1B]/40 bg-[#1a0928] p-7 md:px-10 md:py-12">
+          <div className="rounded-[24px] border border-white/10 bg-white/[0.06] p-8 shadow-[0_8px_60px_rgba(0,0,0,0.4),inset_0_1px_0_rgba(255,255,255,0.08)] backdrop-blur-2xl md:px-12 md:py-14">
             <form onSubmit={handleSubmit} noValidate>
 
               {/* ── Honeypot anti-spam (oculto para humanos, los bots lo llenan) ── */}
@@ -123,7 +123,7 @@ export default function ContactSection() {
                   <select
                     name="servicio"
                     defaultValue=""
-                    className="w-full appearance-none rounded-[10px] border border-white/12 bg-[#0d0616] px-4 py-3.5 font-poppins text-[14px] text-white/70 outline-none transition-colors focus:border-[#F18C1B]/60 focus:text-white"
+                    className="w-full appearance-none rounded-[10px] border border-white/12 bg-white/[0.06] px-4 py-3.5 font-poppins text-[14px] text-white/70 outline-none backdrop-blur-sm transition-colors focus:border-[#F18C1B]/60 focus:text-white"
                   >
                     <option value="" disabled className="bg-[#0d0616]">Selecciona un servicio</option>
                     <option className="bg-[#0d0616]">Branding</option>
@@ -151,7 +151,7 @@ export default function ContactSection() {
                   rows={7}
                   required
                   placeholder="Describe brevemente qué necesitas…"
-                  className="w-full resize-none rounded-[10px] border border-white/12 bg-[#0d0616] px-4 py-3.5 font-poppins text-[14px] text-white placeholder:text-white/25 outline-none transition-colors focus:border-[#F18C1B]/60"
+                  className="w-full resize-none rounded-[10px] border border-white/12 bg-white/[0.06] px-4 py-3.5 font-poppins text-[14px] text-white placeholder:text-white/25 outline-none backdrop-blur-sm transition-colors focus:border-[#F18C1B]/60"
                 />
               </div>
 
@@ -211,7 +211,7 @@ function FormField({
         name={name}
         placeholder={placeholder}
         required={required}
-        className="w-full rounded-[10px] border border-white/12 bg-[#0d0616] px-4 py-3.5 font-poppins text-[14px] text-white placeholder:text-white/25 outline-none transition-colors focus:border-[#F18C1B]/60"
+        className="w-full rounded-[10px] border border-white/12 bg-white/[0.06] px-4 py-3.5 font-poppins text-[14px] text-white placeholder:text-white/25 outline-none backdrop-blur-sm transition-colors focus:border-[#F18C1B]/60"
       />
     </div>
   );
