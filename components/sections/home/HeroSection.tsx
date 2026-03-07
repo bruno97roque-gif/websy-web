@@ -110,10 +110,10 @@ export default function HeroSection() {
       <div className="pointer-events-none absolute bottom-[5%] left-[3%] z-[2] h-[380px] w-[380px] animate-[floatY_7s_ease-in-out_infinite_reverse] rounded-full bg-[radial-gradient(circle,rgba(90,30,120,.45)_0%,transparent_70%)] blur-[90px]" />
 
       {/* ── CONTENT GRID ── */}
-      <div className="relative z-10 mx-auto grid w-full max-w-[1600px] grid-cols-1 items-center gap-8 px-5 py-20 sm:px-8 lg:grid-cols-[1.4fr_1fr] lg:gap-6 md:px-[72px] lg:py-0">
+      <div className="relative z-10 mx-auto grid w-full max-w-[1600px] grid-cols-1 items-center gap-8 px-5 py-20 sm:px-8 xl:grid-cols-[1.4fr_1fr] xl:gap-6 md:px-[72px] xl:py-0">
 
         {/* ──── LEFT ──── */}
-        <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
+        <div className="flex flex-col items-center text-center xl:items-start xl:text-left">
 
           {/* pill — opacity:0 en HTML para que nunca flashee */}
           <div ref={pillRef} style={{ opacity: 0 }}
@@ -145,11 +145,11 @@ export default function HeroSection() {
           </h1>
 
           <p ref={descRef} style={{ opacity: 0 }}
-            className="font-poppins mb-8 max-w-[480px] text-[14px] leading-[1.8] text-white/100 sm:text-[15px] lg:mb-10">
+            className="font-poppins mb-8 max-w-[480px] text-[14px] leading-[1.8] text-white/100 sm:text-[15px] xl:mb-10">
             Diseño exclusivo, tecnología de vanguardia y estrategia real para que tu negocio se destaque y convierta.
           </p>
 
-          <div ref={btnsRef} style={{ opacity: 0 }} className="flex flex-wrap justify-center gap-4 lg:justify-start">
+          <div ref={btnsRef} style={{ opacity: 0 }} className="flex flex-wrap justify-center gap-4 xl:justify-start">
             <ShimmerButton href="#servicios">
               Ver servicios
               <svg width="16" height="16" viewBox="0 0 18 18" fill="none">
@@ -163,7 +163,7 @@ export default function HeroSection() {
           <div
             ref={partnersRef}
             style={{ opacity: 0 }}
-            className="mt-9 hidden w-full lg:flex lg:justify-start"
+            className="mt-9 hidden w-full xl:flex xl:justify-start"
           >
             {/* Logos de plataformas */}
             <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3">
@@ -184,12 +184,12 @@ export default function HeroSection() {
         </div>
 
         {/* ──── RIGHT — Orbiting circles (solo desktop, en iPad se usa layout móvil) ──── */}
-        <div className="hidden items-center justify-center lg:flex">
+        <div className="hidden items-center justify-center xl:flex">
 
           {/* ── Orbiting container ── */}
-          <div className="relative h-[460px] w-[460px] lg:h-[680px] lg:w-[680px]">
+          <div className="relative h-[460px] w-[460px] xl:h-[680px] xl:w-[680px]">
             <div className="absolute inset-0 flex items-center justify-center">
-              <div className="relative flex h-[740px] w-[740px] origin-center scale-[0.56] items-center justify-center lg:scale-[0.88]">
+              <div className="relative flex h-[740px] w-[740px] origin-center scale-[0.56] items-center justify-center xl:scale-[0.88]">
 
                 {/* Centro: logo flotante */}
                 <div className="relative z-10 flex h-64 w-64 animate-[floatY_8s_ease-in-out_infinite] items-center justify-center">
