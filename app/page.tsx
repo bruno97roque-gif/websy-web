@@ -21,16 +21,17 @@ export default function HomePage() {
 
         {/*
           ── ALIEN MASCOTA ──────────────────────────────────────────────────
-          ⚡ Oculto en móvil (<768px): el GIF pesa 13.8 MB — en dispositivos
-          lentos o con datos móviles esto impacta mucho la carga.
-          En tablet/desktop sigue visible.
+          Visible en todos los dispositivos.
+          En móvil: centrado abajo del hero, tamaño reducido (110px) para
+          ahorrar memoria GPU y tiempo de render.
           ─────────────────────────────────────────────────────────────────── */}
-        <div className="pointer-events-none absolute z-20 hidden md:block md:bottom-[8%] md:left-[8%] lg:bottom-[0%] lg:left-[20%]">
+        <div className="pointer-events-none absolute z-20 bottom-[3%] left-1/2 -translate-x-1/2 md:bottom-[8%] md:left-[8%] md:translate-x-0 lg:bottom-[0%] lg:left-[20%]">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/images/hero-alien-float.gif"
             alt=""
-            className="h-auto w-auto drop-shadow-2xl md:h-[220px] lg:h-[260px]"
+            className="h-[110px] w-auto drop-shadow-2xl md:h-[220px] lg:h-[260px]"
+            decoding="async"
           />
         </div>
 
