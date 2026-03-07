@@ -22,8 +22,8 @@ export default function HomePage() {
         {/* ── ALIEN MASCOTA ── */}
         <style>{`
           .alien-wrap{position:absolute;z-index:20;pointer-events:none;bottom:14%;left:33%}
-          .alien-img{height:90px;width:auto;filter:drop-shadow(0 20px 13px rgb(0 0 0/.35))}
-          @media(min-width:390px){.alien-wrap{bottom:12%;left:30%}.alien-img{height:120px}}
+          .alien-img{height:120px;width:auto;filter:drop-shadow(0 20px 13px rgb(0 0 0/.35))}
+          @media(min-width:390px){.alien-wrap{bottom:12%;left:30%}.alien-img{height:160px}}
           @media(min-width:768px){.alien-wrap{bottom:8%;left:8%}.alien-img{height:220px}}
           @media(min-width:1024px){.alien-wrap{bottom:0%;left:20%}.alien-img{height:260px}}
         `}</style>
