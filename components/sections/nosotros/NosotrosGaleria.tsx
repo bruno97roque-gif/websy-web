@@ -1,11 +1,8 @@
 "use client";
 
-import { useEffect, useRef, useState, useCallback } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import React, { useState, useCallback, useEffect } from "react";
 import Image from "next/image";
-
-gsap.registerPlugin(ScrollTrigger);
+import { useReveal, useRevealList } from "@/hooks/useReveal";
 
 /* ── 9 gallery items — swap src for real photos later ── */
 const GALLERY_ITEMS = [
@@ -223,28 +220,12 @@ function Lightbox({
 
 /* ── Main Gallery ── */
 export default function NosotrosGaleria() {
-  const sectionRef  = useRef<HTMLElement>(null);
-  const headerRef   = useRef<HTMLDivElement>(null);
-  const gridRef     = useRef<HTMLDivElement>(null);
+  // CSS reveals via IntersectionObserver — sin GSAP ScrollTrigger
+  const headerRef = useReveal<HTMLDivElement>();
+  const { containerRef: gridRef, itemRefs: itemRevealRefs } =
+    useRevealList<HTMLDivElement>(GALLERY_ITEMS.length);
+  const mobileGridRef = useReveal<HTMLDivElement>();
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
-
-  useEffect(() => {
-    if (headerRef.current) {
-      gsap.fromTo(headerRef.current,
-        { opacity: 0, y: 40 },
-        { opacity: 1, y: 0, duration: 0.8, ease: "power3.out",
-          scrollTrigger: { trigger: sectionRef.current, start: "top 78%", once: true } }
-      );
-    }
-    if (gridRef.current) {
-      const items = gridRef.current.querySelectorAll(".g-item");
-      gsap.fromTo(items,
-        { opacity: 0, scale: 0.92, y: 28 },
-        { opacity: 1, scale: 1, y: 0, duration: 0.65, stagger: 0.07, ease: "power3.out",
-          scrollTrigger: { trigger: sectionRef.current, start: "top 72%", once: true } }
-      );
-    }
-  }, []);
 
   /* ── Desktop layout: 4 cols × 4 rows ── */
   const DESKTOP_LAYOUT: React.CSSProperties[] = [
@@ -261,7 +242,6 @@ export default function NosotrosGaleria() {
 
   return (
     <section
-      ref={sectionRef}
       className="relative overflow-hidden px-8 py-[80px] md:px-[72px] md:py-[100px]"
       style={{ backgroundColor: "#0d0616" }}
     >
@@ -287,6 +267,10 @@ export default function NosotrosGaleria() {
         .g-item:hover .g-img {
           transform: scale(1.07) !important;
         }
+        /* Shared transition: hover effects + CSS reveal (opacity/transform from reveal-item) */
+        .g-item {
+          transition: border-color 0.35s, box-shadow 0.35s, opacity 0.65s cubic-bezier(0.4,0,0.2,1), transform 0.65s cubic-bezier(0.4,0,0.2,1);
+        }
         /* Orange border glow on hover */
         .g-item:hover {
           border-color: rgba(241,140,27,0.5) !important;
@@ -308,8 +292,8 @@ export default function NosotrosGaleria() {
 
       <div className="relative z-10 mx-auto max-w-[1600px]">
 
-        {/* ── Header ── */}
-        <div ref={headerRef} className="mb-[52px]" style={{ opacity: 0 }}>
+        {/* ── Header — CSS reveal ── */}
+        <div ref={headerRef} className="reveal mb-[52px]">
           <p className="font-poppins mb-3 text-[11px] font-medium uppercase tracking-[3px] text-[#F18C1B]">
             Nuestro trabajo
           </p>
@@ -327,7 +311,7 @@ export default function NosotrosGaleria() {
         {/* ── Desktop masonry grid ── */}
         <div
           ref={gridRef}
-          className="g-desktop"
+          className="reveal-stagger g-desktop"
           style={{
             gridTemplateColumns: "repeat(4, 1fr)",
             gridTemplateRows: "210px 210px 200px 155px",
@@ -339,6 +323,7 @@ export default function NosotrosGaleria() {
               key={item.id}
               item={item}
               index={i}
+              itemRef={(el) => { itemRevealRefs.current[i] = el; }}
               style={DESKTOP_LAYOUT[i]}
               onOpen={setLightboxIndex}
             />
@@ -347,7 +332,8 @@ export default function NosotrosGaleria() {
 
         {/* ── Mobile grid: 2 cols, all items ── */}
         <div
-          className="g-mobile"
+          ref={mobileGridRef}
+          className="reveal g-mobile"
           style={{
             gridTemplateColumns: "repeat(2, 1fr)",
             gap: 8,
@@ -384,16 +370,19 @@ function GalleryItem({
   item,
   index,
   style,
+  itemRef,
   onOpen,
 }: {
   item: (typeof GALLERY_ITEMS)[0];
   index: number;
   style?: React.CSSProperties;
+  itemRef?: (el: HTMLDivElement | null) => void;
   onOpen: (i: number) => void;
 }) {
   return (
     <div
-      className="g-item"
+      ref={itemRef}
+      className="g-item reveal-item"
       onClick={() => onOpen(index)}
       style={{
         position: "relative",
@@ -401,8 +390,6 @@ function GalleryItem({
         cursor: "pointer",
         border: "1px solid rgba(255,255,255,0.06)",
         boxShadow: "0 4px 24px rgba(0,0,0,0.35)",
-        opacity: 0, // GSAP animates to 1
-        transition: "border-color 0.35s, box-shadow 0.35s",
         ...style,
       }}
     >

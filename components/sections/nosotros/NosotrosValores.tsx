@@ -1,10 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
+import { useReveal, useRevealList } from "@/hooks/useReveal";
 
 const valores = [
   {
@@ -58,55 +54,13 @@ const valores = [
 ];
 
 export default function NosotrosValores() {
-  const sectionRef = useRef<HTMLElement>(null);
-  const headerRef = useRef<HTMLDivElement>(null);
-  const cardsRef = useRef<(HTMLDivElement | null)[]>([]);
-
-  useEffect(() => {
-    // 1. Animación de entrada para el Header (Título y descripción)
-    if (headerRef.current) {
-      gsap.fromTo(
-        headerRef.current,
-        { opacity: 0, y: 40 },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 0.8,
-          ease: "power3.out",
-          scrollTrigger: {
-            trigger: sectionRef.current,
-            start: "top 75%",
-            once: true,
-          },
-        }
-      );
-    }
-
-    // 2. Animación de entrada escalonada para las Tarjetas
-    cardsRef.current.forEach((card, i) => {
-      if (!card) return;
-      gsap.fromTo(
-        card,
-        { opacity: 0, y: 40 },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 0.8,
-          delay: 0.2 + i * 0.15, // Espera a que empiece el header y luego salen una por una
-          ease: "power3.out",
-          scrollTrigger: {
-            trigger: sectionRef.current,
-            start: "top 75%",
-            once: true,
-          },
-        }
-      );
-    });
-  }, []);
+  // CSS-based reveals via IntersectionObserver — sin GSAP ScrollTrigger
+  const headerRef = useReveal<HTMLDivElement>();
+  const { containerRef: cardsContainerRef, itemRefs: cardsRef } =
+    useRevealList<HTMLDivElement>(valores.length);
 
   return (
     <section
-      ref={sectionRef}
       className="relative overflow-hidden px-8 py-[80px] md:px-[72px] md:py-[100px]"
       style={{
         backgroundImage: "url('/images/fondo-tarjeta-valores.webp')",
@@ -141,8 +95,8 @@ export default function NosotrosValores() {
 
       <div className="relative z-10 mx-auto max-w-[1600px]">
 
-        {/* Header (Ahora referenciado para animación) */}
-        <div ref={headerRef} className="mb-[52px]" style={{ opacity: 0 }}>
+        {/* Header — reveal via IntersectionObserver CSS */}
+        <div ref={headerRef} className="reveal mb-[52px]">
           <p className="font-poppins mb-3 text-[11px] font-medium uppercase tracking-[3px] text-[#F18C1B]">
             Lo que nos define
           </p>
@@ -155,13 +109,16 @@ export default function NosotrosValores() {
           </p>
         </div>
 
-        {/* Grid de flip cards */}
-        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        {/* Grid de flip cards — reveal stagger via IntersectionObserver */}
+        <div
+          ref={cardsContainerRef}
+          className="reveal-stagger grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4"
+        >
           {valores.map((v, i) => (
             <div
               key={v.title}
-              ref={(el) => { cardsRef.current[i] = el; }}
-              style={{ opacity: 0 }} // Inicializado en 0 para evitar FOUC (Flicker) antes de que GSAP actúe
+              ref={(el) => { cardsRef.current[i] = el as HTMLDivElement | null; }}
+              className="reveal-item"
             >
               <div className="vflip-wrapper">
                 <div className="vflip-inner">

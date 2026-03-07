@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useRef } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 
 interface Particle {
   x: number;
@@ -39,10 +39,18 @@ export function Particles({
   const rafRef       = useRef<number>(0);
   const timeRef      = useRef<number>(0);
 
-  // Reduce particle count on mobile/low-power devices to improve FPS
-  const effectiveCount = typeof window !== "undefined" && window.innerWidth < 768
-    ? Math.min(count, 30)
-    : count;
+  // Detect mobile on mount — skip canvas loop entirely on small screens
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    const mq = window.matchMedia("(max-width: 767px)");
+    setIsMobile(mq.matches);
+    const handler = (e: MediaQueryListEvent) => setIsMobile(e.matches);
+    mq.addEventListener("change", handler);
+    return () => mq.removeEventListener("change", handler);
+  }, []);
+
+  // Desktop: use full count. Tablet: cap at 45. (Mobile exits early below.)
+  const effectiveCount = count;
 
   const hexToRgb = useCallback((hex: string) => {
     const r = parseInt(hex.slice(1, 3), 16);
@@ -121,6 +129,9 @@ export function Particles({
       ro.disconnect();
     };
   }, [initParticles, hexToRgb, brightness]);
+
+  // Skip canvas entirely on mobile — saves the RAF loop per component
+  if (isMobile) return null;
 
   return (
     <canvas

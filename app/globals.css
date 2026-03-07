@@ -149,6 +149,41 @@
 .cli-track-fast:hover,
 .cli-track-fast-rev:hover { animation-play-state: paused; }
 
+/* ─── REVEAL — CSS IntersectionObserver animations (sin GSAP) ─── */
+
+/* Single element reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.72s cubic-bezier(0.4,0,0.2,1),
+              transform 0.72s cubic-bezier(0.4,0,0.2,1);
+}
+.reveal.is-revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger container: each direct child animates individually */
+.reveal-stagger > .reveal-item {
+  opacity: 0;
+  transform: translateY(28px) scale(0.97);
+  transition: opacity 0.65s cubic-bezier(0.4,0,0.2,1),
+              transform 0.65s cubic-bezier(0.4,0,0.2,1);
+}
+.reveal-stagger > .reveal-item.is-revealed {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* Respect reduced-motion: skip transforms, keep opacity only */
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .reveal-stagger > .reveal-item {
+    transform: none !important;
+    transition: opacity 0.4s ease !important;
+  }
+}
+
 /* ─── PERFORMANCE — Older / slow devices ─── */
 
 /* GPU acceleration hints for heavy animated elements */
