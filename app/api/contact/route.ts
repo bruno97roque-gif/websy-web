@@ -146,10 +146,8 @@ function buildEmailHtml(d: EmailData): string {
   .card{background:#ffffff;border-radius:20px;overflow:hidden;box-shadow:0 4px 32px rgba(41,18,49,.10)}
 
   /* Header */
-  .hdr{background:#291231;padding:24px 36px;display:flex;align-items:center;justify-content:space-between}
-  .logo{font-size:22px;font-weight:900;color:#fff;letter-spacing:-.5px;font-family:Arial,Helvetica,sans-serif}
-  .logo em{color:#F18C1B;font-style:normal}
-  .badge{background:#F18C1B;color:#291231;font-size:10px;font-weight:800;padding:5px 14px;border-radius:20px;text-transform:uppercase;letter-spacing:1.2px;white-space:nowrap}
+  .hdr{background:#291231;padding:24px 36px;display:flex;align-items:center}
+  .logo-img{display:block;height:38px;width:auto}
 
   /* Franja naranja fina bajo el header */
   .accent-bar{height:3px;background:linear-gradient(90deg,#F18C1B 0%,#e07010 100%)}
@@ -195,10 +193,9 @@ function buildEmailHtml(d: EmailData): string {
 <div class="wrap">
   <div class="card">
 
-    <!-- Header morado con texto logo y badge -->
+    <!-- Header morado con logo real -->
     <div class="hdr">
-      <div class="logo">Web<em>sy</em></div>
-      <div class="badge">Nuevo contacto</div>
+      <img src="${SITE}/icons/logo-white.webp" alt="Websy" class="logo-img" />
     </div>
     <div class="accent-bar"></div>
 
