@@ -21,16 +21,20 @@ export default function HomePage() {
 
         {/*
           ── ALIEN MASCOTA ──────────────────────────────────────────────────
-          Visible en todos los dispositivos.
-          En móvil: centrado abajo del hero, tamaño reducido (110px) para
-          ahorrar memoria GPU y tiempo de render.
-          ─────────────────────────────────────────────────────────────────── */}
-        <div className="pointer-events-none absolute z-20 bottom-[4.5%] left-1/2 -translate-x-1/2 md:bottom-[8%] md:left-[8%] md:translate-x-0 lg:bottom-[0%] lg:left-[20%]">
+          Posición afinada por breakpoint para que quede justo encima del
+          marquee naranja sin desaparecer dentro de la barra.
+
+          < 390px  (iPhone SE/XS) : bottom-[4%]   left-[33%]
+          ≥ 390px  (iPhone 12/14) : bottom-[2%]   left-[30%]
+          ≥ 768px  (iPad Mini/Air): bottom-[8%]   left-[8%]   ← sube por encima del marquee
+          ≥ 1024px (Desktop)      : bottom-[0%]   left-[20%]
+          ──────────────────────────────────────────────────────────────────── */}
+        <div className="pointer-events-none absolute bottom-[4%] left-[33%] z-20 min-[390px]:bottom-[2%] min-[390px]:left-[30%] md:bottom-[8%] md:left-[8%] lg:bottom-[0%] lg:left-[20%]">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/images/hero-alien-float.gif"
             alt=""
-            className="h-[110px] w-auto drop-shadow-2xl md:h-[220px] lg:h-[260px]"
+            className="h-[130px] w-auto drop-shadow-2xl min-[390px]:h-[170px] md:h-[220px] lg:h-[260px]"
             decoding="async"
           />
         </div>
