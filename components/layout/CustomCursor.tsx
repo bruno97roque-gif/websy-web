@@ -93,12 +93,12 @@ export default function CustomCursor() {
       {/* hidden en touch/móvil — md:block solo lo hace visible en desktop con mouse */}
       <div
         ref={curRef}
-        className="pointer-events-none fixed top-0 left-0 z-[9999] hidden h-2.5 w-2.5 rounded-full bg-[#F18C1B] will-change-transform md:block"
+        className="pointer-events-none fixed top-0 left-0 z-[100001] hidden h-2.5 w-2.5 rounded-full bg-[#F18C1B] will-change-transform md:block"
         style={{ transition: "width 0.2s, height 0.2s, background-color 0.2s", transform: "translate3d(-200px, -200px, 0)" }}
       />
       <div
         ref={cur2Ref}
-        className="pointer-events-none fixed top-0 left-0 z-[9998] hidden h-8 w-8 rounded-full border border-[#F18C1B] opacity-45 will-change-transform md:block"
+        className="pointer-events-none fixed top-0 left-0 z-[100000] hidden h-8 w-8 rounded-full border border-[#F18C1B] opacity-45 will-change-transform md:block"
         style={{ transition: "width 0.25s, height 0.25s", transform: "translate3d(-200px, -200px, 0)" }}
       />
     </>
