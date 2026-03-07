@@ -19,12 +19,30 @@ export default function HomePage() {
       <div className="relative">
         <HeroSection />
 
-        {/* ── ALIEN MASCOTA ── */}
+        {/*
+          ── ALIEN MASCOTA — GUÍA PARA MODIFICAR MANUALMENTE ──────────────
+          Edita los valores dentro del <style> de abajo.
+
+          POSICIÓN (bottom = distancia desde abajo de la pantalla):
+            • iPhone SE (≤375px) .......... línea con "max-width:375px"  → bottom: 3vh
+            • iPhone 12-15 (376-767px) .... línea con "min-width:376px"  → bottom: 3vh
+            • iPad (≥768px) ............... línea con "min-width:768px"  → bottom: 8%
+            • Desktop (≥1024px) ........... línea con "min-width:1024px" → bottom: 0%
+
+          TAMAÑO (height del img):
+            • iPhone SE ................... 120px  (default, sin media query)
+            • iPhone 12-15 ................ 160px  (línea min-width:376px img)
+            • iPad ........................ 220px  (línea min-width:768px img)
+            • Desktop ..................... 260px  (línea min-width:1024px img)
+
+          HORIZONTAL (left):
+            • ≤375px → left:33%  |  376-767px → left:30%  |  ≥768px → left:8%  |  ≥1024px → left:20%
+          ──────────────────────────────────────────────────────────────────── */}
         <style>{`
-          .hw-alien{position:absolute;z-index:20;pointer-events:none;bottom:4vh;left:33%}
+          .hw-alien{position:absolute;z-index:20;pointer-events:none;bottom:3vh;left:33%}
           .hw-alien img{height:120px;width:auto}
-          @media(max-width:375px){.hw-alien{bottom:4vh;left:33%}}
-          @media(min-width:376px) and (max-width:767px){.hw-alien{bottom:4vh;left:30%}}
+          @media(max-width:375px){.hw-alien{bottom:3vh;left:33%}}
+          @media(min-width:376px) and (max-width:767px){.hw-alien{bottom:3vh;left:30%}}
           @media(min-width:376px) and (max-width:767px){.hw-alien img{height:160px}}
           @media(min-width:768px){.hw-alien{bottom:8%;left:8%}}
           @media(min-width:768px){.hw-alien img{height:220px}}
