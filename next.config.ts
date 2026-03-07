@@ -70,13 +70,8 @@ const nextConfig: NextConfig = {
         source: "/(.*)",
         headers: securityHeaders,
       },
-      {
-        // Cache agresivo para assets estáticos (imágenes, iconos, video)
-        source: "/:path*(\\.(webp|gif|webm|mp4|svg|ico|woff2))",
-        headers: [
-          { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
-        ],
-      },
+      // Nota: Vercel CDN cachea automáticamente los assets estáticos de /public.
+      // No se necesita regla extra de Cache-Control para imágenes/video/gif.
     ];
   },
 };
