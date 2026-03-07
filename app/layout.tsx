@@ -3,10 +3,13 @@ import { Montserrat, Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import CTABanner from "@/components/ui/CTABanner";
 import CustomCursor from "@/components/layout/CustomCursor";
 import SmoothScroll from "@/components/layout/SmoothScroll";
 import LoadingScreen from "@/components/ui/LoadingScreen";
 import WhatsappButton from "@/components/ui/WhatsappButton";
+import CookieBanner from "@/components/ui/CookieBanner";
+import ContactSection from "@/components/sections/home/ContactSection";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
@@ -34,7 +37,7 @@ export const viewport: Viewport = {
 };
 
 /* ─── Metadata + Open Graph ─── */
-const SITE_URL = "https://websy.pe"; // ← cambia al dominio real cuando tengas
+const SITE_URL = "https://websy.com.pe"; // ← cambia al dominio real cuando tengas
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -109,7 +112,7 @@ const jsonLd = {
   logo: `${SITE_URL}/images/logo-websy-dark.png`,
   image: `${SITE_URL}/og-image.png`,
   telephone: "+51950817844",
-  email: "hola@websy.pe",
+  email: "ventas@websy.com.pe",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Lima",
@@ -175,8 +178,25 @@ export default function RootLayout({
         <CustomCursor />
         <Navbar />
         <main>{children}</main>
+        <ContactSection />
+        <CTABanner
+          buttonText="Escríbenos por WhatsApp"
+          buttonHref="https://wa.me/51940549322?text=Hola%20deseo%20m%C3%A1s%20informaci%C3%B3n%20de%20sus%20servicios%20y%20como%20pueden%20ayudarme%20con%20mi%20marca."
+          image={
+            // eslint-disable-next-line @next/next/no-img-element
+            <img
+              src="/images/alien-saludando.gif"
+              alt=""
+              className="w-[170px] object-contain md:w-[320px]"
+              draggable={false}
+              loading="lazy"
+              decoding="async"
+            />
+          }
+        />
         <Footer />
         <WhatsappButton />
+        <CookieBanner />
         {/* Vercel Analytics — registra visitas y eventos */}
         <Analytics />
         {/* Vercel Speed Insights — mide Core Web Vitals reales */}

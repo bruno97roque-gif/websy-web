@@ -12,7 +12,7 @@ export default function ContactoPage() {
     <>
       {/* Espacio para la Navbar fija */}
       <div className="h-[78px] bg-[#291231]" />
-      <ContactSection />
+      
     </>
   );
 }

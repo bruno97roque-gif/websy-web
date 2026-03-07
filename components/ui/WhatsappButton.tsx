@@ -10,7 +10,7 @@ interface WhatsappButtonProps {
 }
 
 export default function WhatsappButton({
-  phone   = "51950817844",
+  phone   = "51940549322",
   message = "Hola, me interesa saber más sobre los servicios de Websy 👋",
 }: WhatsappButtonProps) {
   const [hovered, setHovered] = useState(false);

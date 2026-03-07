@@ -3,7 +3,6 @@ import MarqueeSection   from "@/components/sections/home/MarqueeSection";
 import QuienesSomos     from "@/components/sections/home/QuienesSomos";
 import ServicesSection  from "@/components/sections/home/ServicesSection";
 import ClientsSection   from "@/components/sections/home/ClientsSection";
-import ContactSection   from "@/components/sections/home/ContactSection";
 
 export default function HomePage() {
   return (
@@ -39,7 +38,7 @@ export default function HomePage() {
         <div className="pointer-events-none absolute bottom-[4%] left-[33%] z-20 min-[390px]:bottom-[2%] min-[390px]:left-[30%] md:bottom-[8%] md:left-[8%] lg:bottom-[0%] lg:left-[20%]">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/images/hero-float.webp"
+            src="/images/hero-alien-float.gif"
             alt=""
             className="h-[130px] w-auto drop-shadow-2xl min-[390px]:h-[170px] md:h-[220px] lg:h-[260px]"
           />
@@ -50,7 +49,6 @@ export default function HomePage() {
       <QuienesSomos />
       <ServicesSection />
       <ClientsSection />
-      <ContactSection />
     </>
   );
 }

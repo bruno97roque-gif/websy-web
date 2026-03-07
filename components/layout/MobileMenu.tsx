@@ -164,7 +164,7 @@ export default function MobileMenu({
               <Link
                 href={link.href}
                 onClick={onClose}
-                className="font-montserrat text-[clamp(48px,9vw,96px)] font-black uppercase leading-[1] text-white transition-colors duration-200 hover:text-[#F18C1B]"
+                className="font-montserrat text-[clamp(48px,9vw,96px)] font-bold uppercase leading-[1] text-white transition-colors duration-200 hover:text-[#F18C1B]"
               >
                 {link.label}
               </Link>
@@ -180,23 +180,23 @@ export default function MobileMenu({
           <p className="font-poppins mb-3 text-[11px] font-medium uppercase tracking-[3px] text-[#F18C1B]">
             ¿Listo para crecer?
           </p>
-          <h3 className="font-montserrat mb-8 text-[32px] font-black leading-[1.1] text-white">
+          <h3 className="font-montserrat mb-8 text-[32px] font-bold leading-[1.1] text-white">
             Cuéntanos tu<br />
             <span className="text-[#F18C1B]">proyecto</span>
           </h3>
 
           <div className="mb-10 flex flex-col gap-3 border-t border-white/10 pt-8">
             <a
-              href="mailto:hola@websy.pe"
-              className="font-poppins text-[14px] text-white/50 transition-colors hover:text-[#F18C1B]"
+              href="mailto:ventas@websy.com.pe"
+              className="font-poppins text-[14px] text-white transition-colors hover:text-[#F18C1B]"
             >
-              hola@websy.pe
+              ventas@websy.com.pe
             </a>
             <a
-              href="tel:+51950817844"
-              className="font-poppins text-[14px] text-white/50 transition-colors hover:text-[#F18C1B]"
+              href="tel:+51940549322"
+              className="font-poppins text-[14px] text-white transition-colors hover:text-[#F18C1B]"
             >
-              +51 950 817 844
+              +51 940 549 322
             </a>
           </div>
 
@@ -214,10 +214,10 @@ export default function MobileMenu({
       <div className="relative z-10 shrink-0 border-t border-white/10 px-8 py-5 md:hidden">
         <div className="flex items-center justify-between">
           <a
-            href="mailto:hola@websy.pe"
-            className="font-poppins text-[13px] text-white/50 transition-colors hover:text-[#F18C1B]"
+            href="mailto:ventas@websy.com.pe"
+            className="font-poppins text-[13px] text-white transition-colors hover:text-[#F18C1B]"
           >
-            hola@websy.pe
+            ventas@websy.com.pe
           </a>
           <Link
             href="/contacto"

@@ -68,10 +68,15 @@ export default function HeroSection() {
       id="hero"
       className="relative flex min-h-[calc(100svh-44px)] w-full items-center overflow-clip bg-[#180a1e]"
     >
-      {/* ── VIDEO BG ── */}
+      {/* ── VIDEO BG — hidden on mobile to save bandwidth on slow devices ── */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-br from-[#180a1e] via-[#291231] to-[#3d1248]" />
-        <video autoPlay muted loop playsInline className="absolute inset-0 h-full w-full object-cover">
+        {/* Video solo en md+ (tablets/desktop). En móvil queda el gradiente como fondo. */}
+        <video
+          autoPlay muted loop playsInline
+          className="hidden md:block absolute inset-0 h-full w-full object-cover"
+          style={{ willChange: "transform" }}
+        >
           <source src="/video/Hero-Bg.webm" type="video/webm" />
         </video>
       </div>

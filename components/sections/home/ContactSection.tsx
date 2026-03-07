@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { ShimmerButton } from "@/components/ui/shimmer-button";
 
 /* ── Estado del formulario ── */
@@ -60,18 +60,18 @@ export default function ContactSection() {
       <div className="relative z-10 mx-auto max-w-[1600px]">
         <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2 md:gap-16">
 
-          {/* ── LEFT ── */}
-          <div className="flex flex-col">
+          {/* ── LEFT — on mobile shows BELOW the form ── */}
+          <div className="order-2 flex flex-col md:order-1">
 
             <p className="font-poppins mb-4 text-[11px] font-medium uppercase tracking-[3px] text-[#F18C1B]">
               Contáctanos
             </p>
-            <h2 className="font-montserrat mb-5 text-[clamp(32px,3.8vw,56px)] font-black leading-[1.06] tracking-tight text-white">
+            <h2 className="font-montserrat mb-5 text-[clamp(32px,3.8vw,56px)] font-bold leading-[1.06] tracking-tight text-white">
               ¿Listo para llevar<br />
               tu marca a{" "}
               <em className="not-italic text-[#F18C1B]">otra órbita?</em>
             </h2>
-            <p className="font-poppins mb-10 max-w-[420px] text-[15px] leading-[1.85] text-white/50">
+            <p className="font-poppins mb-10 max-w-[420px] text-[15px] leading-[1.85] text-white">
               Cuéntanos tu proyecto y te respondemos en menos de 24 horas con
               una propuesta personalizada. Sin compromisos.
             </p>
@@ -84,13 +84,15 @@ export default function ContactSection() {
                 alt=""
                 className="h-auto w-[380px] object-contain drop-shadow-2xl md:w-[500px]"
                 draggable={false}
+                loading="lazy"
+                decoding="async"
               />
             </div>
 
           </div>
 
-          {/* ── RIGHT — formulario ── */}
-          <div className="rounded-[24px] border border-[#F18C1B]/50 bg-white/[0.06] p-8 shadow-[0_8px_60px_rgba(0,0,0,0.4),inset_0_1px_0_rgba(255,255,255,0.06)] md:px-12 md:py-14">
+          {/* ── RIGHT — formulario — on mobile shows FIRST ── */}
+          <div className="order-1 rounded-[24px] md:order-2 border border-[#F18C1B]/50 bg-white/[0.06] p-8 shadow-[0_8px_60px_rgba(0,0,0,0.4),inset_0_1px_0_rgba(255,255,255,0.06)] md:px-12 md:py-14">
             <form onSubmit={handleSubmit} noValidate>
 
               {/* ── Honeypot anti-spam (oculto para humanos, los bots lo llenan) ── */}
@@ -117,34 +119,15 @@ export default function ContactSection() {
 
               {/* Servicio de interés */}
               <div className="mb-5 flex flex-col gap-2">
-                <label className="font-montserrat text-[11px] font-bold uppercase tracking-[1.5px] text-white/50">
+                <label className="font-montserrat text-[11px] font-bold uppercase tracking-[1.5px] text-white">
                   Servicio de interés
                 </label>
-                <div className="relative">
-                  <select
-                    name="servicio"
-                    defaultValue=""
-                    className="w-full appearance-none rounded-[10px] border border-[#F18C1B]/40 bg-white/[0.06] px-4 py-3.5 font-poppins text-[14px] text-white/70 outline-none backdrop-blur-sm transition-colors focus:border-[#F18C1B] focus:text-white"
-                  >
-                    <option value="" disabled className="bg-[#0d0616]">Selecciona un servicio</option>
-                    <option className="bg-[#0d0616]">Branding</option>
-                    <option className="bg-[#0d0616]">Página Web</option>
-                    <option className="bg-[#0d0616]">Tienda Virtual</option>
-                    <option className="bg-[#0d0616]">Google Ads &amp; SEO</option>
-                    <option className="bg-[#0d0616]">Paquete completo</option>
-                  </select>
-                  {/* flecha naranja custom */}
-                  <div className="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2">
-                    <svg width="12" height="7" viewBox="0 0 12 7" fill="none">
-                      <path d="M1 1l5 5 5-5" stroke="#F18C1B" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
-                  </div>
-                </div>
+                <ServiceSelect name="servicio" />
               </div>
 
               {/* Cuéntanos tu proyecto */}
               <div className="mb-7 flex flex-col gap-2">
-                <label className="font-montserrat text-[11px] font-bold uppercase tracking-[1.5px] text-white/50">
+                <label className="font-montserrat text-[11px] font-bold uppercase tracking-[1.5px] text-white">
                   Cuéntanos tu proyecto <span className="text-[#F18C1B]">*</span>
                 </label>
                 <textarea
@@ -201,6 +184,68 @@ export default function ContactSection() {
   );
 }
 
+/* ── Custom select de servicios ── */
+const SERVICIOS = ["Branding", "Página Web", "Tienda Virtual", "Google Ads & SEO", "Paquete completo"];
+
+function ServiceSelect({ name }: { name: string }) {
+  const [open, setOpen]         = useState(false);
+  const [selected, setSelected] = useState("");
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (ref.current && !ref.current.contains(e.target as Node)) setOpen(false);
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  return (
+    <div ref={ref} style={{ position: "relative", zIndex: 9999 }}>
+      <input type="hidden" name={name} value={selected} />
+
+      {/* Trigger */}
+      <button
+        type="button"
+        onClick={() => setOpen((o) => !o)}
+        className="flex w-full items-center justify-between rounded-[10px] border border-[#F18C1B]/40 bg-white/[0.06] px-4 py-3.5 font-poppins text-[14px] outline-none transition-colors focus:border-[#F18C1B]"
+        style={{ color: selected ? "white" : "rgba(255,255,255,0.35)" }}
+      >
+        <span>{selected || "Selecciona un servicio"}</span>
+        <svg
+          width="12" height="7" viewBox="0 0 12 7" fill="none"
+          className="shrink-0 transition-transform duration-200"
+          style={{ transform: open ? "rotate(180deg)" : "rotate(0deg)" }}
+        >
+          <path d="M1 1l5 5 5-5" stroke="#F18C1B" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+        </svg>
+      </button>
+
+      {/* Dropdown panel */}
+      {open && (
+        <div style={{ position: "absolute", left: 0, right: 0, top: "calc(100% + 6px)", zIndex: 9999, backgroundColor: "#1a0b28", border: "1px solid rgba(241,140,27,0.3)", borderRadius: 12, overflow: "hidden", boxShadow: "0 12px 40px rgba(0,0,0,0.85)" }}>
+          {SERVICIOS.map((opt) => (
+            <button
+              key={opt}
+              type="button"
+              onClick={() => { setSelected(opt); setOpen(false); }}
+              className="flex w-full items-center gap-3 px-4 py-3 font-poppins text-[14px] transition-colors hover:bg-[#F18C1B]/10"
+              style={{ color: selected === opt ? "#F18C1B" : "rgba(255,255,255,0.85)" }}
+            >
+              {selected === opt && (
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" className="shrink-0">
+                  <path d="M2 7l3.5 3.5L12 4" stroke="#F18C1B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              )}
+              <span className={selected === opt ? "" : "ml-[22px]"}>{opt}</span>
+            </button>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
 /* ── Campo de texto reutilizable ── */
 function FormField({
   name,
@@ -217,7 +262,7 @@ function FormField({
 }) {
   return (
     <div className="flex flex-col gap-2">
-      <label className="font-montserrat text-[11px] font-bold uppercase tracking-[1.5px] text-white/50">
+      <label className="font-montserrat text-[11px] font-bold uppercase tracking-[1.5px] text-white">
         {label}{required && <span className="ml-1 text-[#F18C1B]">*</span>}
       </label>
       <input

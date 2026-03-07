@@ -39,6 +39,11 @@ export function Particles({
   const rafRef       = useRef<number>(0);
   const timeRef      = useRef<number>(0);
 
+  // Reduce particle count on mobile/low-power devices to improve FPS
+  const effectiveCount = typeof window !== "undefined" && window.innerWidth < 768
+    ? Math.min(count, 30)
+    : count;
+
   const hexToRgb = useCallback((hex: string) => {
     const r = parseInt(hex.slice(1, 3), 16);
     const g = parseInt(hex.slice(3, 5), 16);
@@ -48,7 +53,7 @@ export function Particles({
 
   const initParticles = useCallback(
     (w: number, h: number) => {
-      particles.current = Array.from({ length: count }, () => ({
+      particles.current = Array.from({ length: effectiveCount }, () => ({
         x:          Math.random() * w,
         y:          Math.random() * h,
         vx:         (Math.random() - 0.5) * 0.25,
@@ -60,7 +65,7 @@ export function Particles({
         pulsePhase: Math.random() * Math.PI * 2,
       }));
     },
-    [count, colors]
+    [effectiveCount, colors]
   );
 
   useEffect(() => {

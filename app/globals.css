@@ -149,6 +149,50 @@
 .cli-track-fast:hover,
 .cli-track-fast-rev:hover { animation-play-state: paused; }
 
+/* ─── PERFORMANCE — Older / slow devices ─── */
+
+/* GPU acceleration hints for heavy animated elements */
+video,
+canvas,
+.vflip-inner,
+.vflip-face {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/* Reduce animations for users who prefer it (accessibility + older devices) */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .marquee-track,
+  .cli-track,
+  .cli-track-fast,
+  .cli-track-fast-rev {
+    animation: none !important;
+  }
+  .vflip-inner {
+    transition: none !important;
+  }
+}
+
+/* On very small/old screens: simplify shadows and backdrops */
+@media (max-width: 480px) {
+  * {
+    -webkit-tap-highlight-color: transparent;
+    text-rendering: optimizeSpeed;
+  }
+  .animate-\[floatY_6s_ease-in-out_infinite\] {
+    animation-duration: 8s; /* slightly slower = less GPU */
+  }
+}
+
 @theme inline {
   --animate-orbit: orbit calc(var(--duration) * 1s) linear infinite;
 

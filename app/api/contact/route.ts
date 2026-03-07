@@ -88,7 +88,7 @@ export async function POST(req: NextRequest) {
     const resend = new Resend(process.env.RESEND_API_KEY);
     await resend.emails.send({
       from:    `Websy Contacto <${process.env.FROM_EMAIL ?? "onboarding@resend.dev"}>`,
-      to:      [process.env.CONTACT_EMAIL ?? "hola@websy.pe"],
+      to:      [process.env.CONTACT_EMAIL ?? "ventas@websy.com.pe"],
       replyTo: email,
       subject: `✉️ Nuevo contacto: ${nombre} · ${servicio}`,
       html:    buildEmailHtml({ nombre, empresa, email, whatsapp, servicio, proyecto, fecha }),
@@ -129,6 +129,8 @@ function buildEmailHtml(d: EmailData): string {
   const esc = (s: string) =>
     s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
+  const SITE = "https://websy.com.pe";
+
   return `<!DOCTYPE html>
 <html lang="es">
 <head>
@@ -137,53 +139,122 @@ function buildEmailHtml(d: EmailData): string {
 <title>Nuevo contacto – Websy</title>
 <style>
   *{box-sizing:border-box;margin:0;padding:0}
-  body{background:#f0edf5;font-family:Arial,Helvetica,sans-serif;padding:28px 16px}
+  body{background:#f3f0f7;font-family:Arial,Helvetica,sans-serif;padding:32px 16px}
   .wrap{max-width:580px;margin:0 auto}
-  .card{background:#1e0d2e;border-radius:18px;overflow:hidden;border:1px solid rgba(241,140,27,.3)}
-  .hdr{background:#291231;padding:26px 36px;border-bottom:2.5px solid #F18C1B;display:flex;align-items:center;gap:14px}
-  .logo{font-size:22px;font-weight:900;color:#fff;letter-spacing:-.5px}
+
+  /* Card principal */
+  .card{background:#ffffff;border-radius:20px;overflow:hidden;box-shadow:0 4px 32px rgba(41,18,49,.10)}
+
+  /* Header */
+  .hdr{background:#291231;padding:24px 36px;display:flex;align-items:center;justify-content:space-between}
+  .logo{font-size:22px;font-weight:900;color:#fff;letter-spacing:-.5px;font-family:Arial,Helvetica,sans-serif}
   .logo em{color:#F18C1B;font-style:normal}
-  .badge{background:#F18C1B;color:#291231;font-size:10px;font-weight:800;padding:4px 12px;border-radius:20px;text-transform:uppercase;letter-spacing:1.2px}
-  .body{padding:28px 36px}
-  .title{color:#fff;font-size:20px;font-weight:800;margin-bottom:22px;line-height:1.3}
-  .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}
-  .field{background:rgba(255,255,255,.055);border-radius:8px;padding:11px 14px;border-left:3px solid #F18C1B}
-  .lbl{color:#F18C1B;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4px}
-  .val{color:#fff;font-size:14px;word-break:break-word;line-height:1.4}
-  .full{grid-column:1/-1}
-  .msg{background:rgba(255,255,255,.04);border:1px solid rgba(241,140,27,.2);border-radius:10px;padding:16px;margin-top:14px}
-  .msg .lbl{margin-bottom:8px}
-  .msg .val{color:rgba(255,255,255,.85);font-size:14px;line-height:1.75}
-  .btn{display:block;text-align:center;background:#F18C1B;color:#291231 !important;font-weight:800;font-size:12px;text-decoration:none;padding:14px 28px;border-radius:50px;margin:22px 0 0;text-transform:uppercase;letter-spacing:1.5px}
-  .ftr{background:rgba(0,0,0,.22);padding:16px 36px;text-align:center;color:rgba(255,255,255,.3);font-size:11px;line-height:1.6}
+  .badge{background:#F18C1B;color:#291231;font-size:10px;font-weight:800;padding:5px 14px;border-radius:20px;text-transform:uppercase;letter-spacing:1.2px;white-space:nowrap}
+
+  /* Franja naranja fina bajo el header */
+  .accent-bar{height:3px;background:linear-gradient(90deg,#F18C1B 0%,#e07010 100%)}
+
+  /* Body */
+  .body{padding:32px 36px}
+  .title{font-size:19px;font-weight:800;color:#291231;margin-bottom:6px;line-height:1.3}
+  .subtitle{font-size:13px;color:#7a6882;margin-bottom:28px;line-height:1.5}
+
+  /* Divider */
+  .divider{height:1px;background:#ede9f3;margin:20px 0}
+
+  /* Grid de campos */
+  .grid{display:table;width:100%;border-collapse:separate;border-spacing:0 10px}
+  .row{display:table-row}
+  .cell-lbl{display:table-cell;width:38%;vertical-align:top;padding:10px 14px 10px 0}
+  .cell-val{display:table-cell;vertical-align:top;padding:10px 14px;background:#f8f5fc;border-radius:8px;border-left:3px solid #291231}
+
+  /* Labels */
+  .lbl{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1.4px;color:#9b85ab}
+  .val{font-size:14px;color:#1a0820;word-break:break-word;line-height:1.45;font-weight:500}
+  .val a{color:#291231;text-decoration:none}
+
+  /* Chip de servicio */
+  .chip{display:inline-block;background:#291231;color:#F18C1B;font-size:11px;font-weight:700;padding:4px 14px;border-radius:20px;letter-spacing:.8px;margin-top:2px}
+
+  /* Bloque de proyecto */
+  .project-box{background:#faf8fd;border:1px solid #ede9f3;border-left:3px solid #F18C1B;border-radius:10px;padding:16px 18px;margin-top:4px}
+  .project-lbl{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1.4px;color:#9b85ab;margin-bottom:8px}
+  .project-val{font-size:14px;color:#1a0820;line-height:1.8}
+
+  /* Botón CTA */
+  .btn-wrap{margin-top:26px}
+  .btn{display:inline-block;background:#F18C1B;color:#291231 !important;font-weight:800;font-size:12px;text-decoration:none;padding:14px 32px;border-radius:50px;text-transform:uppercase;letter-spacing:1.5px}
+
+  /* Footer */
+  .ftr{background:#f3f0f7;padding:16px 36px;text-align:center;border-top:1px solid #ede9f3}
+  .ftr p{color:#9b85ab;font-size:11px;line-height:1.7}
+  .ftr a{color:#291231;text-decoration:none;font-weight:600}
 </style>
 </head>
 <body>
 <div class="wrap">
   <div class="card">
+
+    <!-- Header morado con texto logo y badge -->
     <div class="hdr">
       <div class="logo">Web<em>sy</em></div>
       <div class="badge">Nuevo contacto</div>
     </div>
+    <div class="accent-bar"></div>
+
+    <!-- Body blanco -->
     <div class="body">
+
       <p class="title">¡Alguien quiere trabajar con Websy! 🚀</p>
+      <p class="subtitle">Has recibido una nueva solicitud a través del formulario de contacto.</p>
+
+      <!-- Tabla de datos -->
       <div class="grid">
-        <div class="field"><div class="lbl">Nombre</div><div class="val">${esc(d.nombre)}</div></div>
-        <div class="field"><div class="lbl">Empresa</div><div class="val">${esc(d.empresa)}</div></div>
-        <div class="field"><div class="lbl">Email</div><div class="val">${esc(d.email)}</div></div>
-        <div class="field"><div class="lbl">WhatsApp</div><div class="val">${esc(d.whatsapp)}</div></div>
-        <div class="field full"><div class="lbl">Servicio de interés</div><div class="val">${esc(d.servicio)}</div></div>
+        <div class="row">
+          <div class="cell-lbl"><span class="lbl">Nombre</span></div>
+          <div class="cell-val"><span class="val">${esc(d.nombre)}</span></div>
+        </div>
+        <div class="row">
+          <div class="cell-lbl"><span class="lbl">Empresa</span></div>
+          <div class="cell-val"><span class="val">${esc(d.empresa)}</span></div>
+        </div>
+        <div class="row">
+          <div class="cell-lbl"><span class="lbl">Email</span></div>
+          <div class="cell-val"><span class="val"><a href="mailto:${esc(d.email)}">${esc(d.email)}</a></span></div>
+        </div>
+        <div class="row">
+          <div class="cell-lbl"><span class="lbl">WhatsApp</span></div>
+          <div class="cell-val"><span class="val">${esc(d.whatsapp)}</span></div>
+        </div>
+        <div class="row">
+          <div class="cell-lbl"><span class="lbl">Servicio</span></div>
+          <div class="cell-val"><span class="chip">${esc(d.servicio)}</span></div>
+        </div>
       </div>
-      <div class="msg">
-        <div class="lbl">Su proyecto</div>
-        <div class="val">${esc(d.proyecto).replace(/\n/g, "<br/>")}</div>
+
+      <div class="divider"></div>
+
+      <!-- Bloque proyecto -->
+      <div class="project-box">
+        <div class="project-lbl">Su proyecto</div>
+        <div class="project-val">${esc(d.proyecto).replace(/\n/g, "<br/>")}</div>
       </div>
-      <a class="btn" href="mailto:${esc(d.email)}">Responder a ${esc(d.nombre)} →</a>
+
+      <!-- Botón responder -->
+      <div class="btn-wrap">
+        <a class="btn" href="mailto:${esc(d.email)}">Responder a ${esc(d.nombre)} →</a>
+      </div>
+
     </div>
+
+    <!-- Footer -->
     <div class="ftr">
-      Websy · Lima, Perú · hola@websy.pe<br/>
-      Recibido el ${esc(d.fecha)}
+      <p>
+        <a href="${SITE}">Websy</a> · Lima, Perú · <a href="mailto:ventas@websy.com.pe">ventas@websy.com.pe</a>
+      </p>
+      <p>Recibido el ${esc(d.fecha)}</p>
     </div>
+
   </div>
 </div>
 </body>

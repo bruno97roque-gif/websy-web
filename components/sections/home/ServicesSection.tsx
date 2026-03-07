@@ -21,6 +21,7 @@ const services = [
     title: "Manual de Identidad de Marca",
     desc: "Creamos identidades visuales poderosas que diferencian tu marca, generan confianza inmediata y se quedan grabadas en la mente de tus clientes. Desde el logotipo hasta el manual completo.",
     cta: "Quiero mi branding",
+    ctaHref: "https://wa.me/51940549322?text=Hola%20deseo%20m%C3%A1s%20informaci%C3%B3n%20de%20sus%20servicios%20y%20como%20pueden%20ayudarme%20con%20mi%20marca.",
     feature: true,
     icon: "/icons/Icon-servicio1.webp",
     cursor: CURSORS.heart,
@@ -31,6 +32,7 @@ const services = [
     title: "Webs y Tiendas Virtuales",
     desc: "Desarrollamos sitios web y e-commerce a medida, rápidos, seguros y optimizados para convertir visitantes en compradores reales desde el primer clic.",
     cta: "Quiero mi web",
+    ctaHref: "https://wa.me/51940549322?text=Hola%20deseo%20m%C3%A1s%20informaci%C3%B3n%20de%20sus%20servicios%20y%20como%20pueden%20ayudarme%20con%20mi%20marca.",
     feature: false,
     icon: "/icons/icon-servicio2.webp",
     cursor: CURSORS.triangle,
@@ -41,6 +43,7 @@ const services = [
     title: "Google Ads & SEO",
     desc: "Aparecer primero en Google no es casualidad, es estrategia. Diseñamos campañas y optimizaciones que atraen tráfico calificado y multiplican tu retorno de inversión.",
     cta: "Quiero más visitas",
+    ctaHref: "https://wa.me/51940549322?text=Hola%20deseo%20m%C3%A1s%20informaci%C3%B3n%20de%20sus%20servicios%20y%20como%20pueden%20ayudarme%20con%20mi%20marca.",
     feature: false,
     icon: "/icons/icon-servicio3.webp",
     cursor: CURSORS.star,
@@ -188,7 +191,7 @@ export default function ServicesSection() {
             <p className="font-poppins mb-3 text-[11px] font-medium uppercase tracking-[3px] text-[#F18C1B]">
               Nuestros servicios
             </p>
-            <h2 className="font-montserrat text-[clamp(30px,3.5vw,50px)] font-black leading-[1.08] tracking-tight text-[#291231]">
+            <h2 className="font-montserrat text-[clamp(30px,3.5vw,50px)] font-bold leading-[1.08] tracking-tight text-[#291231]">
               Todo lo que tu marca<br />
               necesita para <span className="text-[#F18C1B]">despegar</span>
             </h2>
@@ -225,7 +228,7 @@ export default function ServicesSection() {
             <div className="js-shine pointer-events-none absolute inset-0 z-20 rounded-3xl opacity-0 transition-opacity duration-200" />
 
             <div className="relative z-10">
-              <span className="pointer-events-none absolute right-6 top-4 font-montserrat text-[52px] font-black leading-none text-[#F18C1B] md:right-8 md:top-6 md:text-[80px]">
+              <span className="pointer-events-none absolute right-6 top-4 font-montserrat text-[52px] font-bold leading-none text-[#F18C1B] md:right-8 md:top-6 md:text-[80px]">
                 {feature.num}
               </span>
 
@@ -234,13 +237,13 @@ export default function ServicesSection() {
               <p className="font-poppins mb-3 text-[11px] font-medium uppercase tracking-[3px] text-[#F18C1B]">
                 {feature.label}
               </p>
-              <h3 className="font-montserrat mb-5 text-[clamp(28px,2.4vw,42px)] font-black uppercase leading-[1.05] text-white">
+              <h3 className="font-montserrat mb-5 text-[clamp(28px,2.4vw,42px)] font-bold uppercase leading-[1.05] text-white">
                 {feature.title}
               </h3>
               <p className="font-poppins mb-6 flex-1 text-[15px] leading-[1.8] text-white md:mb-10">
                 {feature.desc}
               </p>
-              <ShimmerButton href="#contacto">
+              <ShimmerButton href={feature.ctaHref} target="_blank" rel="noopener noreferrer">
                 {feature.cta}
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                   <path d="M3 8h10M8 3l5 5-5 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -269,7 +272,7 @@ export default function ServicesSection() {
                 }}
               />
               {/* number */}
-              <span className="pointer-events-none absolute right-5 top-4 font-montserrat text-[40px] font-black leading-none text-[#F18C1B] md:right-6 md:top-5 md:text-[56px]">
+              <span className="pointer-events-none absolute right-5 top-4 font-montserrat text-[40px] font-bold leading-none text-[#F18C1B] md:right-6 md:top-5 md:text-[56px]">
                 {s.num}
               </span>
               {/* metallic shine */}
@@ -280,14 +283,16 @@ export default function ServicesSection() {
                 <p className="font-poppins mb-2 text-[10px] font-semibold uppercase tracking-[2px] text-[#F18C1B]">
                   {s.label}
                 </p>
-                <h3 className="font-montserrat mb-3 text-[clamp(20px,1.8vw,30px)] font-black uppercase leading-[1.1] text-white">
+                <h3 className="font-montserrat mb-3 text-[clamp(20px,1.8vw,30px)] font-bold uppercase leading-[1.1] text-white">
                   {s.title}
                 </h3>
                 <p className="font-poppins mb-4 flex-1 text-[14px] leading-[1.75] text-white md:mb-6">
                   {s.desc}
                 </p>
                 <a
-                  href="#contacto"
+                  href={s.ctaHref}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 border-b-2 border-[#F18C1B] pb-0.5 font-montserrat text-[12px] font-bold uppercase tracking-[1.5px] text-white transition-all group-hover:gap-3.5 group-hover:text-[#F18C1B]"
                 >
                   {s.cta} →

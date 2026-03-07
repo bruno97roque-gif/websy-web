@@ -52,12 +52,30 @@ const securityHeaders = [
 ];
 
 const nextConfig: NextConfig = {
+  /* ── Image optimization ── */
+  images: {
+    // Formatos modernos: AVIF (mejor compresión), WebP (compatible)
+    formats: ["image/avif", "image/webp"],
+    // Responsive breakpoints
+    deviceSizes: [375, 640, 750, 828, 1080, 1200, 1920],
+    imageSizes:  [16, 32, 48, 64, 96, 128, 256],
+    // Caché 30 días en CDN/Vercel Edge
+    minimumCacheTTL: 2592000,
+  },
+
   async headers() {
     return [
       {
         // Aplica a todas las rutas
         source: "/(.*)",
         headers: securityHeaders,
+      },
+      {
+        // Cache agresivo para assets estáticos (imágenes, iconos, video)
+        source: "/:path*(\\.(webp|gif|webm|mp4|svg|ico|woff2))",
+        headers: [
+          { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
+        ],
       },
     ];
   },

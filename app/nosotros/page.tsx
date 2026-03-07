@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import QuienesSomos from "@/components/sections/home/QuienesSomos";
-import NosotrosHero from "@/components/sections/nosotros/NosotrosHero";
+import NosotrosHero    from "@/components/sections/nosotros/NosotrosHero";
 import NosotrosValores from "@/components/sections/nosotros/NosotrosValores";
+import TeamGrid        from "@/components/sections/nosotros/TeamGrid";
+import NosotrosGaleria from "@/components/sections/nosotros/NosotrosGaleria";
 
 export const metadata: Metadata = {
   title: "Nosotros",
@@ -12,11 +13,11 @@ export const metadata: Metadata = {
 export default function NosotrosPage() {
   return (
     <>
-      {/* Espacio para la Navbar fija */}
       <div className="h-[78px] bg-[#291231]" />
       <NosotrosHero />
-      <QuienesSomos />
       <NosotrosValores />
+      <TeamGrid />
+      <NosotrosGaleria />
     </>
   );
 }
