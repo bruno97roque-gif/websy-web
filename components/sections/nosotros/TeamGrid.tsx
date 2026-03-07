@@ -114,7 +114,7 @@ function CometSVG() {
 
 const TEAM = [
   { name: "Bruno",  surname: "Roque",      role: "Puesto", tag: "Co-Fundador",  Planet: SaturnSVG  },
-  { name: "Debora", surname: "Santamaría", role: "Puesto", tag: "Co-Fundadora", Planet: MoonSVG    },
+  { name: "Debora", surname: "Santa María", role: "Puesto", tag: "Co-Fundadora", Planet: MoonSVG    },
   { name: "Luis",   surname: "",           role: "Puesto", tag: "Equipo",       Planet: RocketSVG  },
   { name: "Ada",    surname: "",           role: "Puesto", tag: "Equipo",       Planet: NebulaSVG  },
   { name: "Gimena", surname: "",           role: "Puesto", tag: "Equipo",       Planet: CometSVG   },
@@ -182,6 +182,14 @@ export default function TeamGrid() {
 
                 {/* Gradiente inferior sutil */}
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#291231]/60 via-transparent to-transparent" />
+
+                {/* Planet SVG — top-right decorative, scale-down to fit card */}
+                <div
+                  className="pointer-events-none absolute right-2 top-2 z-10 origin-top-right opacity-90 transition-transform duration-500 group-hover:scale-110"
+                  style={{ transform: "scale(0.62)" }}
+                >
+                  <member.Planet />
+                </div>
 
                 {/* Tag */}
                 <span className="absolute bottom-3 left-3 rounded-full border border-[#F18C1B]/50 bg-[#F18C1B]/10 px-2.5 py-0.5 font-poppins text-[9px] font-semibold uppercase tracking-[1.5px] text-[#F18C1B]">
