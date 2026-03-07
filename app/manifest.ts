@@ -13,15 +13,9 @@ export default function manifest(): MetadataRoute.Manifest {
     orientation: "portrait",
     icons: [
       {
-        src: "/icon-192.png",   // Crea estos íconos en /public (192×192 y 512×512)
-        sizes: "192x192",
-        type: "image/png",
-        purpose: "maskable",
-      },
-      {
-        src: "/icon-512.png",
-        sizes: "512x512",
-        type: "image/png",
+        src: "/icons/logo-white.webp",
+        sizes: "any",
+        type: "image/webp",
         purpose: "any",
       },
     ],

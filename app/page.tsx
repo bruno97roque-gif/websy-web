@@ -30,7 +30,7 @@ export default function HomePage() {
           <img
             src="/images/hero-alien-float.gif"
             alt=""
-            className="h-[110px] w-auto drop-shadow-2xl md:h-[220px] lg:h-[260px]"
+            className="h-[110px] w-auto drop-shadow-2xl animate-[floatY_6s_ease-in-out_infinite] md:h-[220px] lg:h-[260px]"
             decoding="async"
           />
         </div>
