@@ -60,8 +60,8 @@ export default function ContactSection() {
       <div className="relative z-10 mx-auto max-w-[1600px]">
         <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2 md:gap-16">
 
-          {/* ── LEFT — on mobile shows BELOW the form ── */}
-          <div className="order-2 flex flex-col md:order-1">
+          {/* ── LEFT — texto — móvil: primero, desktop: columna izquierda ── */}
+          <div className="order-1 flex flex-col md:order-1">
 
             <p className="font-poppins mb-4 text-[11px] font-medium uppercase tracking-[3px] text-[#F18C1B]">
               Contáctanos
@@ -76,15 +76,13 @@ export default function ContactSection() {
               una propuesta personalizada. Sin compromisos.
             </p>
 
-            {/* GIF vaca + ovni — visible en todos los dispositivos.
-                En móvil: centrado y más pequeño (240px) para reducir
-                memoria GPU y tiempo de render. */}
-            <div className="flex justify-center md:justify-start">
+            {/* GIF — solo visible en desktop dentro de la columna izquierda */}
+            <div className="hidden md:flex md:justify-start">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/images/vaca-alien.gif"
                 alt=""
-                className="h-auto w-[240px] object-contain drop-shadow-2xl md:w-[500px]"
+                className="h-auto w-[500px] object-contain drop-shadow-2xl"
                 draggable={false}
                 loading="lazy"
                 decoding="async"
@@ -93,8 +91,8 @@ export default function ContactSection() {
 
           </div>
 
-          {/* ── RIGHT — formulario — on mobile shows FIRST ── */}
-          <div className="order-1 rounded-[24px] md:order-2 border border-[#F18C1B]/50 bg-white/[0.06] p-8 shadow-[0_8px_60px_rgba(0,0,0,0.4),inset_0_1px_0_rgba(255,255,255,0.06)] md:px-12 md:py-14">
+          {/* ── RIGHT — formulario — móvil: segundo, desktop: columna derecha ── */}
+          <div className="order-2 rounded-[24px] md:order-2 border border-[#F18C1B]/50 bg-white/[0.06] p-8 shadow-[0_8px_60px_rgba(0,0,0,0.4),inset_0_1px_0_rgba(255,255,255,0.06)] md:px-12 md:py-14">
             <form onSubmit={handleSubmit} noValidate>
 
               {/* ── Honeypot anti-spam (oculto para humanos, los bots lo llenan) ── */}
@@ -178,6 +176,19 @@ export default function ContactSection() {
               </ShimmerButton>
 
             </form>
+          </div>
+
+          {/* GIF — solo móvil, después del formulario (order-3) */}
+          <div className="order-3 flex justify-center md:hidden">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/vaca-alien.gif"
+              alt=""
+              className="h-auto w-[240px] object-contain drop-shadow-2xl"
+              draggable={false}
+              loading="lazy"
+              decoding="async"
+            />
           </div>
 
         </div>
