@@ -76,13 +76,13 @@ export default function ContactSection() {
               una propuesta personalizada. Sin compromisos.
             </p>
 
-            {/* GIF vaca + ovni */}
-            <div className="flex justify-center md:justify-start">
+            {/* GIF vaca + ovni — oculto en móvil para no cargar 8.8MB */}
+            <div className="hidden md:flex md:justify-start">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/images/vaca-alien.gif"
                 alt=""
-                className="h-auto w-[380px] object-contain drop-shadow-2xl md:w-[500px]"
+                className="h-auto w-[500px] object-contain drop-shadow-2xl"
                 draggable={false}
                 loading="lazy"
                 decoding="async"
