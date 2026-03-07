@@ -1,0 +1,33 @@
+/* Posición del alien por breakpoint — CSS Module aislado */
+.wrap {
+  position: absolute;
+  z-index: 20;
+  pointer-events: none;
+  /* < 390px (iPhone SE/XS) */
+  bottom: 14%;
+  left: 33%;
+}
+
+.img {
+  height: 60px;
+  width: auto;
+  filter: drop-shadow(0 20px 13px rgb(0 0 0 / 0.35));
+}
+
+/* ≥ 390px (iPhone 12/14 Pro) */
+@media (min-width: 390px) {
+  .wrap { bottom: 12%; left: 30%; }
+  .img  { height: 85px; }
+}
+
+/* ≥ 768px (iPad) */
+@media (min-width: 768px) {
+  .wrap { bottom: 8%; left: 8%; }
+  .img  { height: 220px; }
+}
+
+/* ≥ 1024px (Desktop) */
+@media (min-width: 1024px) {
+  .wrap { bottom: 0%; left: 20%; }
+  .img  { height: 260px; }
+}
