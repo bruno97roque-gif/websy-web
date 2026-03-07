@@ -23,7 +23,7 @@ export default function HomePage() {
         <style>{`
           .hw-alien{position:absolute;z-index:20;pointer-events:none;bottom:2%;left:33%}
           .hw-alien img{height:120px;width:auto}
-          @media(max-width:375px){.hw-alien{bottom:9% !important}}
+          @media(max-width:375px){.hw-alien{bottom:5% !important}}
           @media(min-width:390px){.hw-alien{bottom:2%;left:30%}}
           @media(min-width:390px){.hw-alien img{height:160px}}
           @media(min-width:768px){.hw-alien{bottom:8%;left:8%}}
