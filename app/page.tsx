@@ -57,9 +57,8 @@ export default function HomePage() {
           @media(min-width:768px){.hw-alien{bottom:1%;left:50%;transform:translateX(-50%)}}
           @media(min-width:820px){.hw-alien{bottom:0.8%;left:50%;transform:translateX(-50%)}}
           @media(min-width:768px){.hw-alien img{height:220px}}
-          @media(min-width:1024px){.hw-alien{bottom:-0.2%;left:50%;transform:translateX(-50%)}}
-          @media(min-width:1280px){.hw-alien{bottom:-0.2%;left:10%;transform:none}}
-          @media(min-width:1440px){.hw-alien{bottom: -0.2%;left:5%;transform:none}}
+          @media(min-width:1024px){.hw-alien{bottom:-0.2%;left:10%}}
+          @media(min-width:1440px){.hw-alien{bottom: -0.2%;left:5%}}
           @media(min-width:1920px){.hw-alien{bottom:-1.2%;left:10%}}
           @media(min-width:2000px){.hw-alien{bottom: -0.3%;left:20%}}
           @media(min-width:1024px){.hw-alien img{height:290px}}
