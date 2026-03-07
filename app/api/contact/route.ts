@@ -146,8 +146,9 @@ function buildEmailHtml(d: EmailData): string {
   .card{background:#ffffff;border-radius:20px;overflow:hidden;box-shadow:0 4px 32px rgba(41,18,49,.10)}
 
   /* Header */
-  .hdr{background:#291231;padding:24px 36px;display:flex;align-items:center}
-  .logo-img{display:block;height:38px;width:auto}
+  .hdr{background:#291231;padding:22px 36px}
+  .logo{font-size:24px;font-weight:900;color:#fff;letter-spacing:-.5px;font-family:Arial,Helvetica,sans-serif}
+  .logo em{color:#F18C1B;font-style:normal}
 
   /* Franja naranja fina bajo el header */
   .accent-bar{height:3px;background:linear-gradient(90deg,#F18C1B 0%,#e07010 100%)}
@@ -160,11 +161,11 @@ function buildEmailHtml(d: EmailData): string {
   /* Divider */
   .divider{height:1px;background:#ede9f3;margin:20px 0}
 
-  /* Grid de campos */
-  .grid{display:table;width:100%;border-collapse:separate;border-spacing:0 10px}
+  /* Grid de campos — sin fondos, separado por líneas */
+  .grid{display:table;width:100%;border-collapse:collapse}
   .row{display:table-row}
-  .cell-lbl{display:table-cell;width:38%;vertical-align:top;padding:10px 14px 10px 0}
-  .cell-val{display:table-cell;vertical-align:top;padding:10px 14px;background:#f8f5fc;border-radius:8px;border-left:3px solid #291231}
+  .cell-lbl{display:table-cell;width:36%;vertical-align:middle;padding:11px 16px 11px 0;border-bottom:1px solid #ede9f3}
+  .cell-val{display:table-cell;vertical-align:middle;padding:11px 0;border-bottom:1px solid #ede9f3}
 
   /* Labels */
   .lbl{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1.4px;color:#9b85ab}
@@ -193,9 +194,9 @@ function buildEmailHtml(d: EmailData): string {
 <div class="wrap">
   <div class="card">
 
-    <!-- Header morado con logo real -->
+    <!-- Header morado con logo texto -->
     <div class="hdr">
-      <img src="${SITE}/icons/logo-white.webp" alt="Websy" class="logo-img" />
+      <div class="logo">Web<em>sy</em></div>
     </div>
     <div class="accent-bar"></div>
 
