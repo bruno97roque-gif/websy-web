@@ -21,19 +21,21 @@ export default function HomePage() {
 
         {/* ── ALIEN MASCOTA ── */}
         <style>{`
-          .alien-wrap{position:absolute;z-index:20;pointer-events:none;bottom:2%;left:33%}
-          .alien-img{height:120px;width:auto}
-          @media(max-width:375px){.alien-wrap{bottom:9% !important}}
-          @media(min-width:390px){.alien-wrap{bottom:2%;left:30%}.alien-img{height:160px}}
-          @media(min-width:768px){.alien-wrap{bottom:8%;left:8%}.alien-img{height:220px}}
-          @media(min-width:1024px){.alien-wrap{bottom:0%;left:20%}.alien-img{height:260px}}
+          .hw-alien{position:absolute;z-index:20;pointer-events:none;bottom:2%;left:33%}
+          .hw-alien img{height:120px;width:auto}
+          @media(max-width:375px){.hw-alien{bottom:9% !important}}
+          @media(min-width:390px){.hw-alien{bottom:2%;left:30%}}
+          @media(min-width:390px){.hw-alien img{height:160px}}
+          @media(min-width:768px){.hw-alien{bottom:8%;left:8%}}
+          @media(min-width:768px){.hw-alien img{height:220px}}
+          @media(min-width:1024px){.hw-alien{bottom:0%;left:20%}}
+          @media(min-width:1024px){.hw-alien img{height:260px}}
         `}</style>
-        <div className="alien-wrap">
+        <div className="hw-alien">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/images/hero-alien-float.gif"
             alt=""
-            className="alien-img"
             decoding="async"
           />
         </div>
