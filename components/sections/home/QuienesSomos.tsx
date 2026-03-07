@@ -36,10 +36,10 @@ const pillars = [
 /* ─── Slides del carrusel — agrega más objetos para más slides ─── */
 const slides = [
   { src: "/images/Galeria-1.webp", label: "Identidad de Marca",  tag: "Branding" },
-  { src: "/images/Galeria-2.webp", label: "Web & E-commerce",    tag: "Desarrollo" },
-  { src: "/images/Galeria-3.webp", label: "Campañas Google Ads", tag: "Marketing" },
-  { src: "/images/Galeria-4.webp", label: "Social Media",        tag: "Redes Sociales" },
-  { src: "/images/Galeria-5.webp", label: "Estrategia Digital",  tag: "Consultoría" },
+  { src: "/images/Galeria-2.webp", label: "Diseño de logos e identidad",    tag: "Logotipos" },
+  { src: "/images/Galeria-3.webp", label: "Manuales de Marcas", tag: "Manuales" },
+  { src: "/images/Galeria-4.webp", label: "Lo último en software",        tag: "Adobe Suit" },
+  { src: "/images/Galeria-5.webp", label: "Estrategia digital creativa",  tag: "Branding 360°" },
 ];
 
 export default function QuienesSomos() {
@@ -122,7 +122,7 @@ export default function QuienesSomos() {
                       <span className="font-poppins mb-1.5 inline-block rounded-full border border-[#F18C1B]/50 bg-[#F18C1B]/10 px-3 py-0.5 text-[10px] font-semibold uppercase tracking-[2px] text-[#F18C1B]">
                         {s.tag}
                       </span>
-                      <p className="font-montserrat mt-1.5 text-[18px] font-black text-white drop-shadow-md">
+                      <p className="font-montserrat mt-1.5 text-[18px] font-bold text-white drop-shadow-md">
                         {s.label}
                       </p>
                     </div>
@@ -145,7 +145,7 @@ export default function QuienesSomos() {
               </button>
 
               {/* Contador */}
-              <span className="font-poppins min-w-[40px] text-center text-[12px] font-semibold tabular-nums text-white/80">
+              <span className="font-poppins min-w-[40px] text-center text-[12px] font-semibold tabular-nums text-white">
                 {String(activeIdx + 1).padStart(2, "0")}&nbsp;/&nbsp;{String(slides.length).padStart(2, "0")}
               </span>
 
@@ -185,7 +185,7 @@ export default function QuienesSomos() {
           </p>
 
           <h2 ref={titleRef} style={{ opacity: 0 }}
-            className="font-montserrat mb-5 text-[clamp(30px,3.5vw,50px)] font-black leading-[1.08] tracking-tight text-[#291231]">
+            className="font-montserrat mb-5 text-[clamp(30px,3.5vw,50px)] font-bold leading-[1.08] tracking-tight text-[#291231]">
             No somos una agencia<br />
             más. Somos{" "}
             <em className="not-italic text-[#F18C1B]">tu aliado<br />estratégico.</em>

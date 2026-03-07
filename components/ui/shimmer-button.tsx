@@ -6,6 +6,8 @@ import { ReactNode } from "react";
 interface ShimmerButtonProps {
   children: ReactNode;
   href?: string;
+  target?: string;
+  rel?: string;
   className?: string;
   onClick?: () => void;
   type?: "button" | "submit" | "reset";
@@ -18,13 +20,15 @@ interface ShimmerButtonProps {
 export function ShimmerButton({
   children,
   href,
+  target,
+  rel,
   className,
   onClick,
   type = "button",
 }: ShimmerButtonProps) {
   const base = cn(
     "group relative inline-flex items-center overflow-hidden rounded-full bg-[#F18C1B]",
-    "px-9 py-4 font-montserrat text-[13px] font-black uppercase tracking-[1.5px] text-[#291231]",
+    "px-9 py-4 font-montserrat text-[13px] font-bold uppercase tracking-[1.5px] text-[#291231]",
     "whitespace-nowrap transition-colors duration-200",
     className
   );
@@ -37,7 +41,7 @@ export function ShimmerButton({
 
   if (href) {
     return (
-      <a href={href} className={base}>
+      <a href={href} target={target} rel={rel} className={base}>
         {shimmer}
         {/* El SVG (flecha) dentro hereda group-hover y se anima solo */}
         <span className="relative flex items-center gap-2.5 [&_svg]:group-hover:animate-[arrowLoop_0.75s_ease-in-out_infinite]">

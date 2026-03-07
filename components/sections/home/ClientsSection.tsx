@@ -46,7 +46,7 @@ export default function ClientsSection() {
             Nuestros clientes
           </p>
           {/* "Websy" reemplazado por el logo imagen */}
-          <h2 className="font-montserrat inline-flex flex-wrap items-center justify-center gap-x-3 text-[clamp(28px,3.5vw,48px)] font-black leading-[1.2] tracking-tight text-[#291231]">
+          <h2 className="font-montserrat inline-flex flex-wrap items-center justify-center gap-x-3 text-[clamp(28px,3.5vw,48px)] font-bold leading-[1.2] tracking-tight text-[#291231]">
             <span className="block w-full">Marcas que confían en</span>
             <span className="block">
               {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -126,7 +126,7 @@ export default function ClientsSection() {
               key={s.label}
               className="trust-item flex cursor-default flex-col items-center rounded-[16px] border border-[#F18C1B] bg-[#f8f7fa] px-6 py-9 text-center transition-all hover:shadow-[0_12px_40px_rgba(241,140,27,.1)]"
             >
-              <div className="font-montserrat text-[52px] font-black leading-none text-[#291231]">
+              <div className="font-montserrat text-[52px] font-bold leading-none text-[#291231]">
                 <span className="cnt" data-t={s.num}>0</span>
                 <span className="text-[28px] text-[#F18C1B]">{s.suf}</span>
               </div>
