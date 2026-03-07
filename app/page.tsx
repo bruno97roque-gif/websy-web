@@ -23,7 +23,7 @@ export default function HomePage() {
         <style>{`
           .alien-wrap{position:absolute;z-index:20;pointer-events:none;bottom:2%;left:33%}
           .alien-img{height:120px;width:auto}
-          @media(max-width:375px){.alien-wrap{bottom:6%}}
+          @media(max-width:374px){.alien-wrap{bottom:15%}}
           @media(min-width:390px){.alien-wrap{bottom:2%;left:30%}.alien-img{height:160px}}
           @media(min-width:768px){.alien-wrap{bottom:8%;left:8%}.alien-img{height:220px}}
           @media(min-width:1024px){.alien-wrap{bottom:0%;left:20%}.alien-img{height:260px}}
