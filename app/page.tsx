@@ -30,7 +30,7 @@ export default function HomePage() {
         <div className="alien-wrap">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/images/alien-floating.webp"
+            src="/images/hero-alien-float.gif"
             alt=""
             className="alien-img"
             decoding="async"
