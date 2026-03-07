@@ -29,12 +29,12 @@ export default function HomePage() {
           ≥ 768px  (iPad Mini/Air): bottom-[8%]   left-[8%]   ← sube por encima del marquee
           ≥ 1024px (Desktop)      : bottom-[0%]   left-[20%]
           ──────────────────────────────────────────────────────────────────── */}
-        <div className="pointer-events-none absolute bottom-[8%] left-[33%] z-20 min-[390px]:bottom-[6%] min-[390px]:left-[30%] md:bottom-[8%] md:left-[8%] lg:bottom-[0%] lg:left-[20%]">
+        <div className="pointer-events-none absolute bottom-[14%] left-[33%] z-20 min-[390px]:bottom-[12%] min-[390px]:left-[30%] md:bottom-[8%] md:left-[8%] lg:bottom-[0%] lg:left-[20%]">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/images/hero-alien-float.gif"
             alt=""
-            className="h-[80px] w-auto drop-shadow-2xl min-[390px]:h-[110px] md:h-[220px] lg:h-[260px]"
+            className="h-[60px] w-auto drop-shadow-2xl min-[390px]:h-[85px] md:h-[220px] lg:h-[260px]"
             decoding="async"
           />
         </div>
