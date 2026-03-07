@@ -19,22 +19,20 @@ export default function HomePage() {
       <div className="relative">
         <HeroSection />
 
-        {/*
-          ── ALIEN MASCOTA ──────────────────────────────────────────────────
-          Posición afinada por breakpoint para que quede justo encima del
-          marquee naranja sin desaparecer dentro de la barra.
-
-          < 390px  (iPhone SE/XS) : bottom-[4%]   left-[33%]
-          ≥ 390px  (iPhone 12/14) : bottom-[2%]   left-[30%]
-          ≥ 768px  (iPad Mini/Air): bottom-[8%]   left-[8%]   ← sube por encima del marquee
-          ≥ 1024px (Desktop)      : bottom-[0%]   left-[20%]
-          ──────────────────────────────────────────────────────────────────── */}
-        <div className="pointer-events-none absolute bottom-[14%] left-[33%] z-20 min-[390px]:bottom-[12%] min-[390px]:left-[30%] md:bottom-[8%] md:left-[8%] lg:bottom-[0%] lg:left-[20%]">
+        {/* ── ALIEN MASCOTA ── */}
+        <style>{`
+          .alien-wrap{position:absolute;z-index:20;pointer-events:none;bottom:14%;left:33%}
+          .alien-img{height:60px;width:auto;filter:drop-shadow(0 20px 13px rgb(0 0 0/.35))}
+          @media(min-width:390px){.alien-wrap{bottom:12%;left:30%}.alien-img{height:85px}}
+          @media(min-width:768px){.alien-wrap{bottom:8%;left:8%}.alien-img{height:220px}}
+          @media(min-width:1024px){.alien-wrap{bottom:0%;left:20%}.alien-img{height:260px}}
+        `}</style>
+        <div className="alien-wrap">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/images/hero-alien-float.gif"
             alt=""
-            className="h-[60px] w-auto drop-shadow-2xl min-[390px]:h-[85px] md:h-[220px] lg:h-[260px]"
+            className="alien-img"
             decoding="async"
           />
         </div>
