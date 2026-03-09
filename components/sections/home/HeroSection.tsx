@@ -155,9 +155,9 @@ export default function HeroSection() {
         <div className="hidden items-center justify-center md:flex">
 
           {/* ── Orbiting container ── */}
-          <div className="relative h-[460px] w-[460px] lg:h-[560px] lg:w-[560px] xl:h-[680px] xl:w-[680px]">
+          <div className="relative h-[460px] w-[460px] lg:h-[560px] lg:w-[560px] 2xl:h-[680px] 2xl:w-[680px]">
             <div className="absolute inset-0 flex items-center justify-center">
-              <div className="relative flex h-[740px] w-[740px] origin-center scale-[0.56] items-center justify-center lg:scale-[0.76] xl:scale-[0.88]">
+              <div className="relative flex h-[740px] w-[740px] origin-center scale-[0.56] items-center justify-center lg:scale-[0.76] 2xl:scale-[0.88]">
 
                 {/* Centro: logo flotante */}
                 <div className="relative z-10 flex h-64 w-64 animate-[floatY_8s_ease-in-out_infinite] items-center justify-center">
