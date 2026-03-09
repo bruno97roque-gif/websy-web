@@ -55,8 +55,9 @@ export default function HomePage() {
           @media(min-width:1024px){.hw-alien video{height:290px}}
           @media(min-width:1024px) and (max-width:1535px){.hw-alien{bottom:1.4%}}
           @media(min-width:1024px) and (max-width:1535px){.hw-alien video{height:170px}}
-          @media(min-width:1440px){.hw-alien{bottom:-0.2%;left:5%}}
+          @media(min-width:1440px){.hw-alien{bottom:2%;left:5%}}
           @media(min-width:1920px){.hw-alien{bottom:-1.2%;left:10%}}
+          @media(min-width:1920px){.hw-alien video{height:260px}}
           @media(min-width:2000px){.hw-alien{bottom:-0.3%;left:20%}}
         `}</style>
         <div className="hw-alien">
