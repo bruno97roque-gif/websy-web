@@ -28,20 +28,12 @@ function OrangeIcon({
   );
 }
 
-/* ─── Certificaciones & partners de plataformas ─── */
-const PLATFORM_PARTNERS = [
-  { src: "/images/Google-partner.webp",  alt: "Google Partner",  className: "h-7 sm:h-8" },
-  { src: "/images/Shopify-partner.webp", alt: "Shopify Partner", className: "h-14 sm:h-16" },
-];
-
 /* ─── Main Component ─── */
 export default function HeroSection() {
   const pillRef     = useRef<HTMLDivElement>(null);
   const titleRef    = useRef<HTMLHeadingElement>(null);
   const descRef     = useRef<HTMLParagraphElement>(null);
   const btnsRef     = useRef<HTMLDivElement>(null);
-  const partnersRef = useRef<HTMLDivElement>(null);
-
   useEffect(() => {
     // Los elementos ya arrancan con opacity:0 en el JSX (style inline).
     // GSAP sólo necesita animarlos a opacity:1.
@@ -58,9 +50,7 @@ export default function HeroSection() {
       .fromTo(btnsRef.current,
         { opacity: 0, y: 20 },
         { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" }, "-=0.4")
-      .fromTo(partnersRef.current,
-        { opacity: 0, y: 14 },
-        { opacity: 1, y: 0, duration: 0.7, ease: "power3.out" }, "-=0.2");
+;
   }, []);
 
   return (
@@ -158,27 +148,6 @@ export default function HeroSection() {
             <MovingBorderButton href="#contacto">Hablemos</MovingBorderButton>
           </div>
 
-          {/* ── Partners strip ── */}
-          <div
-            ref={partnersRef}
-            style={{ opacity: 0 }}
-            className="mt-9 hidden w-full md:flex md:justify-start"
-          >
-            {/* Logos de plataformas */}
-            <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3">
-              {PLATFORM_PARTNERS.map((p) => (
-                // eslint-disable-next-line @next/next/no-img-element
-                <img
-                  key={p.src}
-                  src={p.src}
-                  alt={p.alt}
-                  title={p.alt}
-                  className={`${p.className} w-auto max-w-[120px] object-contain brightness-0 invert opacity-70 transition-opacity duration-300 hover:opacity-100`}
-                  draggable={false}
-                />
-              ))}
-            </div>
-          </div>
 
         </div>
 
