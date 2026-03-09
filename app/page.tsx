@@ -49,10 +49,10 @@ export default function HomePage() {
           @media(min-width:412px) and (max-width:413px){.hw-alien{bottom:2.7vh;left:34%}}
           @media(min-width:390px) and (max-width:767px){.hw-alien video,.hw-alien img{height:140px}}
           @media(min-width:768px){.hw-alien{bottom:4%;left:8%}}
-          @media(min-width:768px){.hw-alien video{height:190px}}
+          @media(min-width:768px){.hw-alien video{height:220px}}
           @media(min-width:820px){.hw-alien{bottom:0.8%;left:8%}}
           @media(min-width:1024px){.hw-alien{bottom:-0.2%;left:10%}}
-          @media(min-width:1024px){.hw-alien video{height:260px}}
+          @media(min-width:1024px){.hw-alien video{height:290px}}
           @media(min-width:1024px) and (max-width:1439px){.hw-alien{bottom:1.4%}}
           @media(min-width:1024px) and (max-width:1439px){.hw-alien video{height:170px}}
           @media(min-width:1440px){.hw-alien{bottom:-0.2%;left:5%}}
