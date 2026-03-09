@@ -183,13 +183,14 @@ export default function RootLayout({
           buttonText="Escríbenos por WhatsApp"
           buttonHref="https://wa.me/51940549322?text=Hola%20deseo%20m%C3%A1s%20informaci%C3%B3n%20de%20sus%20servicios%20y%20como%20pueden%20ayudarme%20con%20mi%20marca."
           image={
-            // eslint-disable-next-line @next/next/no-img-element
-            <img
-              src="/images/alien-saludando.webp"
-              alt=""
+            <video
+              src="/images/alien-saludando.webm"
+              autoPlay
+              loop
+              muted
+              playsInline
               aria-hidden="true"
               className="w-[170px] object-contain md:w-[320px]"
-              draggable={false}
             />
           }
         />

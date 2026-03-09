@@ -10,7 +10,7 @@ export default function NosotrosHero() {
   const h1Ref        = useRef<HTMLHeadingElement>(null);
   const descRef      = useRef<HTMLParagraphElement>(null);
   const alienWrapRef = useRef<HTMLDivElement>(null);
-  const alienImgRef  = useRef<HTMLImageElement>(null);
+  const alienImgRef  = useRef<HTMLVideoElement>(null);
 
   /* ── GSAP entry — text only ── */
   useEffect(() => {
@@ -224,14 +224,15 @@ export default function NosotrosHero() {
           userSelect: "none",
         }}
       >
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
+        <video
           ref={alienImgRef}
-          src="/images/alien-floating.webp"
-          alt=""
+          src="/images/alien-floating.webm"
+          autoPlay
+          loop
+          muted
+          playsInline
           aria-hidden="true"
           className="h-auto w-[260px] animate-[floatY_6s_ease-in-out_infinite] object-contain drop-shadow-2xl sm:w-[280px] md:w-[320px]"
-          draggable={false}
           style={{ pointerEvents: "none" }}
         />
       </div>
