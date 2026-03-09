@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect } from "react";
 import { ShimmerButton } from "@/components/ui/shimmer-button";
+import { AnimatedMedia } from "@/components/ui/animated-media";
 
 /* ── Estado del formulario ── */
 type Status = "idle" | "loading" | "success" | "error";
@@ -78,12 +79,9 @@ export default function ContactSection() {
 
             {/* GIF — solo visible en desktop dentro de la columna izquierda */}
             <div className="hidden md:flex md:justify-start">
-              <video
-                src="/images/vaca-alien.webm"
-                autoPlay
-                loop
-                muted
-                playsInline
+              <AnimatedMedia
+                webmSrc="/images/vaca-alien.webm"
+                gifSrc="/images/vaca-alien-mobile.gif"
                 className="h-auto w-[500px] object-contain drop-shadow-2xl"
                 aria-hidden="true"
               />
@@ -180,12 +178,9 @@ export default function ContactSection() {
 
           {/* GIF — solo móvil, después del formulario (order-3) */}
           <div className="order-3 flex justify-center md:hidden">
-            <video
-              src="/images/vaca-alien.webm"
-              autoPlay
-              loop
-              muted
-              playsInline
+            <AnimatedMedia
+              webmSrc="/images/vaca-alien.webm"
+              gifSrc="/images/vaca-alien-mobile.gif"
               className="h-auto w-[240px] object-contain drop-shadow-2xl"
               aria-hidden="true"
             />

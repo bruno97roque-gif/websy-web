@@ -1,6 +1,7 @@
 import dynamic from "next/dynamic";
 import HeroSection    from "@/components/sections/home/HeroSection";
 import MarqueeSection from "@/components/sections/home/MarqueeSection";
+import { AnimatedMedia } from "@/components/ui/animated-media";
 
 /*
  * Secciones below-the-fold: dynamic import para code-splitting.
@@ -40,13 +41,13 @@ export default function HomePage() {
           ──────────────────────────────────────────────────────────────────── */}
         <style>{`
           .hw-alien{position:absolute;z-index:20;pointer-events:none;bottom:3vh;left:33%}
-          .hw-alien video{height:100px;width:auto}
+          .hw-alien video,.hw-alien img{height:100px;width:auto}
           @media(max-width:375px){.hw-alien{bottom:5vh;left:38%}}
           @media(max-width:360px){.hw-alien{bottom:4.5vh;left:38%}}
           @media(min-width:414px) and (max-width:767px){.hw-alien{bottom:2.7vh;left:34%}}
           @media(min-width:390px) and (max-width:413px){.hw-alien{bottom:2.8vh;left:32%}}
           @media(min-width:412px) and (max-width:413px){.hw-alien{bottom:2.7vh;left:34%}}
-          @media(min-width:390px) and (max-width:767px){.hw-alien video{height:140px}}
+          @media(min-width:390px) and (max-width:767px){.hw-alien video,.hw-alien img{height:140px}}
           @media(min-width:768px){.hw-alien{bottom:4%;left:8%}}
           @media(min-width:768px){.hw-alien video{height:190px}}
           @media(min-width:820px){.hw-alien{bottom:0.8%;left:8%}}
@@ -59,12 +60,9 @@ export default function HomePage() {
           @media(min-width:2000px){.hw-alien{bottom:-0.3%;left:20%}}
         `}</style>
         <div className="hw-alien">
-          <video
-            src="/images/hero-alien-float.webm"
-            autoPlay
-            loop
-            muted
-            playsInline
+          <AnimatedMedia
+            webmSrc="/images/hero-alien-float.webm"
+            gifSrc="/images/hero-alien-float-mobile.gif"
             aria-hidden="true"
           />
         </div>

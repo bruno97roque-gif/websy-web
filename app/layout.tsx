@@ -12,6 +12,7 @@ import CookieBanner from "@/components/ui/CookieBanner";
 import ContactSection from "@/components/sections/home/ContactSection";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { AnimatedMedia } from "@/components/ui/animated-media";
 
 /* ─── Fuentes ─── */
 const montserrat = Montserrat({
@@ -183,12 +184,9 @@ export default function RootLayout({
           buttonText="Escríbenos por WhatsApp"
           buttonHref="https://wa.me/51940549322?text=Hola%20deseo%20m%C3%A1s%20informaci%C3%B3n%20de%20sus%20servicios%20y%20como%20pueden%20ayudarme%20con%20mi%20marca."
           image={
-            <video
-              src="/images/alien-saludando.webm"
-              autoPlay
-              loop
-              muted
-              playsInline
+            <AnimatedMedia
+              webmSrc="/images/alien-saludando.webm"
+              gifSrc="/images/alien-saludando-mobile.gif"
               aria-hidden="true"
               className="w-[170px] object-contain md:w-[320px]"
             />

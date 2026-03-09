@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
+import { AnimatedMedia } from "@/components/ui/animated-media";
 
 export default function NosotrosHero() {
   const sectionRef   = useRef<HTMLElement>(null);
@@ -224,13 +225,10 @@ export default function NosotrosHero() {
           userSelect: "none",
         }}
       >
-        <video
+        <AnimatedMedia
           ref={alienImgRef}
-          src="/images/alien-floating.webm"
-          autoPlay
-          loop
-          muted
-          playsInline
+          webmSrc="/images/alien-floating.webm"
+          gifSrc="/images/alien-floating-mobile.gif"
           aria-hidden="true"
           className="h-auto w-[260px] animate-[floatY_6s_ease-in-out_infinite] object-contain drop-shadow-2xl sm:w-[280px] md:w-[320px]"
           style={{ pointerEvents: "none" }}
