@@ -122,12 +122,12 @@ export default function HeroSection() {
             Tamaños calculados para que cada línea NUNCA haga wrap en su breakpoint:
             default  →  34px  (móvil columna completa ~335px)
             md 768px →  38px  (columna izq. ~350px en grid 2 cols)
-            lg 1024px → 54px  (columna izq. ~490px)
-            xl 1280px → 68px  (columna izq. ~640px)
+            lg 1024px → 42px  (columna izq. ~490px — laptops pequeños)
+            xl 1280px → 54px  (columna izq. ~640px — laptops grandes)
             2xl 1536px→ 82px  (columna izq. ~760px)
           */}
           <h1 ref={titleRef} style={{ opacity: 0 }}
-            className="font-montserrat mb-6 w-full text-[34px] font-bold leading-[1] tracking-tight text-white md:text-[38px] lg:text-[54px] xl:text-[68px] 2xl:text-[82px]">
+            className="font-montserrat mb-6 w-full text-[34px] font-bold leading-[1] tracking-tight text-white md:text-[38px] lg:text-[42px] xl:text-[54px] 2xl:text-[82px]">
             <span className="block whitespace-nowrap">Tu marca en la</span>
             <span className="block whitespace-nowrap">cima del Mundo</span>
             <span className="block whitespace-nowrap text-[#F18C1B]">Digital</span>
@@ -155,9 +155,9 @@ export default function HeroSection() {
         <div className="hidden items-center justify-center md:flex">
 
           {/* ── Orbiting container ── */}
-          <div className="relative h-[460px] w-[460px] lg:h-[680px] lg:w-[680px]">
+          <div className="relative h-[460px] w-[460px] lg:h-[560px] lg:w-[560px] xl:h-[680px] xl:w-[680px]">
             <div className="absolute inset-0 flex items-center justify-center">
-              <div className="relative flex h-[740px] w-[740px] origin-center scale-[0.56] items-center justify-center lg:scale-[0.88]">
+              <div className="relative flex h-[740px] w-[740px] origin-center scale-[0.56] items-center justify-center lg:scale-[0.76] xl:scale-[0.88]">
 
                 {/* Centro: logo flotante */}
                 <div className="relative z-10 flex h-64 w-64 animate-[floatY_8s_ease-in-out_infinite] items-center justify-center">
