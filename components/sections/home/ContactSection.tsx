@@ -78,14 +78,13 @@ export default function ContactSection() {
 
             {/* GIF — solo visible en desktop dentro de la columna izquierda */}
             <div className="hidden md:flex md:justify-start">
-              <video
-                src="/images/vaca-alien.webm"
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="h-auto w-[500px] object-contain drop-shadow-2xl"
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/images/vaca-alien.webp"
+                alt=""
                 aria-hidden="true"
+                className="h-auto w-[500px] object-contain drop-shadow-2xl"
+                draggable={false}
               />
             </div>
 
@@ -180,14 +179,13 @@ export default function ContactSection() {
 
           {/* GIF — solo móvil, después del formulario (order-3) */}
           <div className="order-3 flex justify-center md:hidden">
-            <video
-              src="/images/vaca-alien.webm"
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="h-auto w-[240px] object-contain drop-shadow-2xl"
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/vaca-alien.webp"
+              alt=""
               aria-hidden="true"
+              className="h-auto w-[240px] object-contain drop-shadow-2xl"
+              draggable={false}
             />
           </div>
 
