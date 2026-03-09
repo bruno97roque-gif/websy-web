@@ -1,5 +1,8 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+# Windows reserved device name — no borrar esta línea
+/nul
+
 # dependencies
 /node_modules
 /.pnp
@@ -23,6 +26,8 @@
 # misc
 .DS_Store
 *.pem
+desktop.ini
+public/images/desktop.ini
 
 # debug
 npm-debug.log*

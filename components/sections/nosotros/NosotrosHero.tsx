@@ -10,7 +10,7 @@ export default function NosotrosHero() {
   const h1Ref        = useRef<HTMLHeadingElement>(null);
   const descRef      = useRef<HTMLParagraphElement>(null);
   const alienWrapRef = useRef<HTMLDivElement>(null);
-  const alienImgRef  = useRef<HTMLImageElement>(null);
+  const alienImgRef  = useRef<HTMLVideoElement>(null);
 
   /* ── GSAP entry — text only ── */
   useEffect(() => {
@@ -224,19 +224,17 @@ export default function NosotrosHero() {
           userSelect: "none",
         }}
       >
-        {/* WebP animated (74% smaller) → GIF fallback */}
-        <picture style={{ pointerEvents: "none" }}>
-          <source srcSet="/images/alien-floating.webp" type="image/webp" />
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            ref={alienImgRef}
-            src="/images/alien-floating.gif"
-            alt=""
-            className="h-auto w-[260px] animate-[floatY_6s_ease-in-out_infinite] object-contain drop-shadow-2xl sm:w-[280px] md:w-[320px]"
-            draggable={false}
-            style={{ pointerEvents: "none" }}
-          />
-        </picture>
+        <video
+          ref={alienImgRef}
+          src="/images/alien-floating.webm"
+          autoPlay
+          loop
+          muted
+          playsInline
+          aria-hidden="true"
+          className="h-auto w-[260px] animate-[floatY_6s_ease-in-out_infinite] object-contain drop-shadow-2xl sm:w-[280px] md:w-[320px]"
+          style={{ pointerEvents: "none" }}
+        />
       </div>
     </section>
   );

@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const SITE_URL = "https://websy.pe"; // ← actualiza al dominio real
+const SITE_URL = "https://websy.com.pe";
 
 export default function robots(): MetadataRoute.Robots {
   return {
