@@ -131,7 +131,7 @@
 /* ─── CLIENT LOGOS ─── */
 .cli-track {
   display: flex;
-  white-space: nowrap;
+  width: max-content;
   animation: cliScroll 30s linear infinite;
 }
 .cli-track:hover { animation-play-state: paused; }
@@ -139,12 +139,12 @@
 /* Mobile — 2 filas más rápidas */
 .cli-track-fast {
   display: flex;
-  white-space: nowrap;
+  width: max-content;
   animation: cliScroll 14s linear infinite;
 }
 .cli-track-fast-rev {
   display: flex;
-  white-space: nowrap;
+  width: max-content;
   animation: cliScroll 17s linear infinite reverse;
 }
 .cli-track-fast:hover,
