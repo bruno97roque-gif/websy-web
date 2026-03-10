@@ -107,13 +107,13 @@ export default function HeroSection() {
 
           {/* pill — opacity:0 en HTML para que nunca flashee */}
           <div ref={pillRef} style={{ opacity: 0 }}
-            className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#F18C1B]/28 bg-[#F18C1B]/12 px-4 py-1.5">
+            className="mb-6 inline-flex items-center gap-[7px] rounded-full border border-[#F18C1B]/28 bg-[#F18C1B]/12 px-[14px] py-[5px]">
             {/* Solo el punto hace ping, el badge queda estático */}
-            <span className="relative flex h-[9px] w-[9px] shrink-0">
+            <span className="relative flex h-[8px] w-[8px] shrink-0">
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-white opacity-60" />
-              <span className="relative inline-flex h-[9px] w-[9px] rounded-full bg-white shadow-[0_0_6px_rgba(255,255,255,0.7)]" />
+              <span className="relative inline-flex h-[8px] w-[8px] rounded-full bg-white shadow-[0_0_6px_rgba(255,255,255,0.7)]" />
             </span>
-            <span className="font-poppins text-[10px] font-medium uppercase tracking-[2px] text-[#F18C1B] sm:text-[11px]">
+            <span className="font-poppins text-[9px] font-medium uppercase tracking-[1.7px] text-[#F18C1B]">
               Agencia Marketing · Lima, Perú
             </span>
           </div>
@@ -127,10 +127,9 @@ export default function HeroSection() {
             2xl 1536px→ 82px  (columna izq. ~760px)
           */}
           <h1 ref={titleRef} style={{ opacity: 0 }}
-            className="font-montserrat mb-6 w-full text-[34px] font-bold leading-[1] tracking-tight text-white md:text-[36px] lg:text-[40px] xl:text-[51px] 2xl:text-[78px]">
-            <span className="block whitespace-nowrap">Tu marca en la</span>
-            <span className="block whitespace-nowrap">cima del Mundo</span>
-            <span className="block whitespace-nowrap text-[#F18C1B]">Digital</span>
+            className="font-montserrat mb-6 w-full text-[34px] font-bold leading-[1] tracking-tight text-white md:text-[34px] lg:text-[38px] xl:text-[48px] 2xl:text-[74px]">
+            <span className="block whitespace-nowrap">Tu marca en la cima</span>
+            <span className="block whitespace-nowrap">del Mundo <span className="text-[#F18C1B]">Digital</span></span>
           </h1>
 
           <p ref={descRef} style={{ opacity: 0 }}
@@ -150,7 +149,7 @@ export default function HeroSection() {
 
           {/* Spacer para reservar espacio del alien y evitar superposición con el contenido.
               Coincide con la altura del alien por breakpoint. Solo visible en desktop (md+). */}
-          <div aria-hidden="true" className="hidden md:block md:h-[140px] lg:h-[160px] xl:h-[190px] 2xl:h-[220px]" />
+          <div aria-hidden="true" className="hidden md:block md:h-[98px] lg:h-[112px] xl:h-[133px] 2xl:h-[154px]" />
 
 
         </div>
