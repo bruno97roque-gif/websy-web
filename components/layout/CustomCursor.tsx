@@ -10,14 +10,17 @@ export default function CustomCursor() {
     // No registrar nada en dispositivos touch (móvil/tablet sin mouse)
     if (window.matchMedia("(pointer: coarse)").matches) return;
 
-    // 1. Actualización directa (mucho más simple, sin loops extraños)
+    // 1. RAF batching — limita actualizaciones a 1 por frame (máx 60fps)
+    //    evita acumulación de microtasks en ratones de alta frecuencia
+    let rafId: number;
     const onMove = (e: MouseEvent) => {
-      if (curRef.current) {
-        curRef.current.style.transform = `translate3d(${e.clientX}px, ${e.clientY}px, 0) translate(-50%, -50%)`;
-      }
-      if (cur2Ref.current) {
-        cur2Ref.current.style.transform = `translate3d(${e.clientX}px, ${e.clientY}px, 0) translate(-50%, -50%)`;
-      }
+      cancelAnimationFrame(rafId);
+      rafId = requestAnimationFrame(() => {
+        if (curRef.current)
+          curRef.current.style.transform = `translate3d(${e.clientX}px, ${e.clientY}px, 0) translate(-50%, -50%)`;
+        if (cur2Ref.current)
+          cur2Ref.current.style.transform = `translate3d(${e.clientX}px, ${e.clientY}px, 0) translate(-50%, -50%)`;
+      });
     };
 
     document.addEventListener("mousemove", onMove);
@@ -41,17 +44,19 @@ export default function CustomCursor() {
       cur2Ref.current.style.height = "32px";
     };
 
-    const selectors = "a, button, .glass-card, .trust-item, .qs-pillar";
+    // 3. pointerenter/pointerleave directo en elementos interactivos
+    //    (no burbujean por todo el DOM como mouseover/mouseout)
+    let interactives: NodeListOf<HTMLElement> | null = null;
+    const interactiveTimer = window.setTimeout(() => {
+      interactives = document.querySelectorAll<HTMLElement>("a, button, .glass-card, .trust-item, .qs-pillar");
+      interactives.forEach((el) => {
+        el.addEventListener("pointerenter", enlarge);
+        el.addEventListener("pointerleave", reset);
+      });
+    }, 300);
 
-    const onMouseOver = (e: MouseEvent) => {
-      if ((e.target as Element).closest?.(selectors)) enlarge();
-    };
-    const onMouseOut = (e: MouseEvent) => {
-      if ((e.target as Element).closest?.(selectors)) reset();
-    };
-
-    // Ocultar cursor cuando el mouse entra a una service card.
-    // mouseenter/mouseleave NO burbujean → no se disparan al moverse entre hijos.
+    // 4. Ocultar/mostrar cursor en service cards con fade suave
+    //    (transition opacity definida en el JSX)
     const hideCursor = () => {
       if (!curRef.current || !cur2Ref.current) return;
       curRef.current.style.opacity  = "0";
@@ -63,7 +68,6 @@ export default function CustomCursor() {
       cur2Ref.current.style.opacity = "1";
     };
 
-    // Adjuntar a los cards cuando el DOM esté listo
     let cards: NodeListOf<HTMLElement> | null = null;
     const cardTimer = window.setTimeout(() => {
       cards = document.querySelectorAll<HTMLElement>(".js-serv");
@@ -73,18 +77,19 @@ export default function CustomCursor() {
       });
     }, 300);
 
-    document.addEventListener("mouseover", onMouseOver);
-    document.addEventListener("mouseout", onMouseOut);
-
     return () => {
+      cancelAnimationFrame(rafId);
+      clearTimeout(interactiveTimer);
       clearTimeout(cardTimer);
+      interactives?.forEach((el) => {
+        el.removeEventListener("pointerenter", enlarge);
+        el.removeEventListener("pointerleave", reset);
+      });
       cards?.forEach((card) => {
         card.removeEventListener("mouseenter", hideCursor);
         card.removeEventListener("mouseleave", showCursor);
       });
       document.removeEventListener("mousemove", onMove);
-      document.removeEventListener("mouseover", onMouseOver);
-      document.removeEventListener("mouseout", onMouseOut);
     };
   }, []);
 
@@ -94,12 +99,12 @@ export default function CustomCursor() {
       <div
         ref={curRef}
         className="pointer-events-none fixed top-0 left-0 z-[100001] hidden h-2.5 w-2.5 rounded-full bg-[#F18C1B] will-change-transform md:block"
-        style={{ transition: "width 0.2s, height 0.2s, background-color 0.2s", transform: "translate3d(-200px, -200px, 0)" }}
+        style={{ transition: "width 0.2s, height 0.2s, background-color 0.2s, opacity 0.15s", transform: "translate3d(-200px, -200px, 0)" }}
       />
       <div
         ref={cur2Ref}
         className="pointer-events-none fixed top-0 left-0 z-[100000] hidden h-8 w-8 rounded-full border border-[#F18C1B] opacity-45 will-change-transform md:block"
-        style={{ transition: "width 0.25s, height 0.25s", transform: "translate3d(-200px, -200px, 0)" }}
+        style={{ transition: "width 0.25s, height 0.25s, opacity 0.15s", transform: "translate3d(-200px, -200px, 0)" }}
       />
     </>
   );
