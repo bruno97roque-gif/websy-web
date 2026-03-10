@@ -127,9 +127,9 @@ export default function HeroSection() {
             2xl 1536px→ 82px  (columna izq. ~760px)
           */}
           <h1 ref={titleRef} style={{ opacity: 0 }}
-            className="font-montserrat mb-6 w-full text-[34px] font-bold leading-[1] tracking-tight text-white md:text-[34px] lg:text-[38px] xl:text-[48px] 2xl:text-[74px]">
-            <span className="block whitespace-nowrap">Tu marca en la cima</span>
-            <span className="block whitespace-nowrap">del Mundo <span className="text-[#F18C1B]">Digital</span></span>
+            className="font-montserrat mb-6 w-full text-[26px] font-bold leading-[1.1] tracking-tight text-white md:leading-[1] md:text-[34px] lg:text-[38px] xl:text-[48px] 2xl:text-[74px]">
+            <span className="block md:whitespace-nowrap">Tu marca en la cima</span>
+            <span className="block md:whitespace-nowrap">del Mundo <span className="text-[#F18C1B]">Digital</span></span>
           </h1>
 
           <p ref={descRef} style={{ opacity: 0 }}
