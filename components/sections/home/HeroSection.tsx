@@ -127,7 +127,7 @@ export default function HeroSection() {
             2xl 1536px→ 82px  (columna izq. ~760px)
           */}
           <h1 ref={titleRef} style={{ opacity: 0 }}
-            className="font-montserrat mb-6 w-full text-[34px] font-bold leading-[1] tracking-tight text-white md:text-[38px] lg:text-[42px] xl:text-[54px] 2xl:text-[82px]">
+            className="font-montserrat mb-6 w-full text-[34px] font-bold leading-[1] tracking-tight text-white md:text-[36px] lg:text-[40px] xl:text-[51px] 2xl:text-[78px]">
             <span className="block whitespace-nowrap">Tu marca en la</span>
             <span className="block whitespace-nowrap">cima del Mundo</span>
             <span className="block whitespace-nowrap text-[#F18C1B]">Digital</span>
@@ -147,6 +147,10 @@ export default function HeroSection() {
             </ShimmerButton>
             <MovingBorderButton href="#contacto">Hablemos</MovingBorderButton>
           </div>
+
+          {/* Spacer para reservar espacio del alien y evitar superposición con el contenido.
+              Coincide con la altura del alien por breakpoint. Solo visible en desktop (md+). */}
+          <div aria-hidden="true" className="hidden md:block md:h-[140px] lg:h-[160px] xl:h-[190px] 2xl:h-[220px]" />
 
 
         </div>

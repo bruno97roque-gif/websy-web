@@ -39,11 +39,11 @@ export default function HomePage() {
           .hw-alien{position:absolute;z-index:20;pointer-events:none;bottom:3vh;left:33%}
           .hw-alien video,.hw-alien img{height:100px;width:auto}
           @media(max-width:360px){.hw-alien{bottom:4.5vh;left:38%}}
-          @media(max-width:375px){.hw-alien{bottom:5vh;left:38%}}
-          @media(min-width:390px) and (max-width:413px){.hw-alien{bottom:2.8vh;left:32%}}
+          @media(max-width:375px){.hw-alien{bottom: -3vh;left:38%}}
+          @media(min-width:390px) and (max-width:414px){.hw-alien{bottom:-3.2vh;left:32%}}
           @media(min-width:390px) and (max-width:767px){.hw-alien video,.hw-alien img{height:140px}}
-          @media(min-width:412px) and (max-width:413px){.hw-alien{bottom:2.7vh;left:34%}}
-          @media(min-width:414px) and (max-width:767px){.hw-alien{bottom:2.7vh;left:34%}}
+          @media(min-width:412px) and (max-width:413px){.hw-alien{bottom:-2.8vh;left:34%}}
+          @media(min-width:414px) and (max-width:768px){.hw-alien{bottom:-3vh;left:34%}}
           @media(min-width:768px){.hw-alien{display:none}}
         `}</style>
         <div className="hw-alien">
@@ -73,13 +73,13 @@ export default function HomePage() {
             • 2xl 1536px → h-[280px]
           ──────────────────────────────────────────────────────────────── */}
       <div className="relative">
-        <div className="pointer-events-none absolute bottom-full left-0 right-0 z-[30] hidden translate-y-[20px] md:block">
+        <div className="pointer-events-none absolute bottom-full left-0 right-0 z-[30] hidden translate-y-[43px] md:block">
           <div className="mx-auto w-full max-w-[1600px] pl-[92px]">
             <AnimatedMedia
               webmSrc="/images/hero-alien-float.webm"
               gifSrc="/images/hero-alien-float-mobile.gif"
               aria-hidden="true"
-              className="h-[150px] w-auto lg:h-[170px] xl:h-[200px] 2xl:h-[230px]"
+              className="h-[140px] w-auto lg:h-[160px] xl:h-[190px] 2xl:h-[220px]"
             />
           </div>
         </div>
