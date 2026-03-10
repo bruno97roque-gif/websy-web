@@ -73,13 +73,13 @@ export default function HomePage() {
             • 2xl 1536px → h-[280px]
           ──────────────────────────────────────────────────────────────── */}
       <div className="relative">
-        <div className="pointer-events-none absolute bottom-full left-0 right-0 z-[30] hidden md:block">
+        <div className="pointer-events-none absolute bottom-full left-0 right-0 z-[30] hidden translate-y-[20px] md:block">
           <div className="mx-auto w-full max-w-[1600px] pl-[92px]">
             <AnimatedMedia
               webmSrc="/images/hero-alien-float.webm"
               gifSrc="/images/hero-alien-float-mobile.gif"
               aria-hidden="true"
-              className="h-[180px] w-auto lg:h-[200px] xl:h-[240px] 2xl:h-[280px]"
+              className="h-[150px] w-auto lg:h-[170px] xl:h-[200px] 2xl:h-[230px]"
             />
           </div>
         </div>
