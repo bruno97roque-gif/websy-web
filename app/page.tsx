@@ -16,29 +16,25 @@ const ClientsSection  = dynamic(() => import("@/components/sections/home/Clients
 export default function HomePage() {
   return (
     <>
-      {/* Wrapper relativo para el alien y el marquee */}
+      {/* ── ALIEN MÓVIL (<768px) ─────────────────────────────────────────
+          Wrapper relativo solo con HeroSection.
+          Los media queries de móvil se conservan exactamente como estaban.
+          En ≥768px se oculta con display:none — el alien desktop toma el relevo.
+          ─────────────────────────────────────────────────────────────────── */}
       <div className="relative">
         <HeroSection />
 
         {/*
-          ── ALIEN MASCOTA — GUÍA PARA MODIFICAR MANUALMENTE ──────────────
-          Edita los valores dentro del <style> de abajo.
-
-          POSICIÓN (bottom = distancia desde abajo de la pantalla):
-            • iPhone SE (≤375px) .......... línea con "max-width:375px"  → bottom: 3vh
-            • iPhone 12-15 (376-767px) .... línea con "min-width:376px"  → bottom: 3vh
-            • iPad (≥768px) ............... línea con "min-width:768px"  → bottom: 8%
-            • Desktop (≥1024px) ........... línea con "min-width:1024px" → bottom: 0%
-
-          TAMAÑO (height del img):
-            • iPhone SE ................... 120px  (default, sin media query)
-            • iPhone 12-15 ................ 160px  (línea min-width:376px img)
-            • iPad ........................ 220px  (línea min-width:768px img)
-            • Desktop ..................... 260px  (línea min-width:1024px img)
-
-          HORIZONTAL (left):
-            • ≤375px → left:33%  |  376-767px → left:30%  |  ≥768px → left:8%  |  ≥1024px → left:20%
-          ──────────────────────────────────────────────────────────────────── */}
+          ── GUÍA MÓVIL — edita solo los valores de aquí abajo ────────────
+          POSICIÓN (bottom = distancia desde abajo del hero):
+            • ≤360px → bottom:4.5vh  left:38%
+            • ≤375px → bottom:5vh    left:38%
+            • 390–413px → bottom:2.8vh  left:32%
+            • 414–767px → bottom:2.7vh  left:34%
+          TAMAÑO:
+            • base (móvil pequeño) .... 100px
+            • 390–767px ............... 140px
+          ──────────────────────────────────────────────────────────────── */}
         <style>{`
           .hw-alien{position:absolute;z-index:20;pointer-events:none;bottom:3vh;left:33%}
           .hw-alien video,.hw-alien img{height:100px;width:auto}
@@ -48,17 +44,7 @@ export default function HomePage() {
           @media(min-width:390px) and (max-width:767px){.hw-alien video,.hw-alien img{height:140px}}
           @media(min-width:412px) and (max-width:413px){.hw-alien{bottom:2.7vh;left:34%}}
           @media(min-width:414px) and (max-width:767px){.hw-alien{bottom:2.7vh;left:34%}}
-          @media(min-width:768px){.hw-alien{bottom:4%;left:8%}}
-          @media(min-width:768px){.hw-alien video{height:220px}}
-          @media(min-width:820px){.hw-alien{bottom:0.8%;left:8%}}
-          @media(min-width:1024px){.hw-alien{bottom:-0.2%;left:10%}}
-          @media(min-width:1024px){.hw-alien video{height:290px}}
-          @media(min-width:1024px) and (max-width:1535px){.hw-alien{bottom:1.4%}}
-          @media(min-width:1024px) and (max-width:1535px){.hw-alien video{height:170px}}
-          @media(min-width:1440px){.hw-alien{bottom:2%;left:5%}}
-          @media(min-width:1920px){.hw-alien{bottom:0.5%;left:10%}}
-          @media(min-width:1920px){.hw-alien video{height:230px}}
-          @media(min-width:2000px){.hw-alien{bottom:-0.3%;left:20%}}
+          @media(min-width:768px){.hw-alien{display:none}}
         `}</style>
         <div className="hw-alien">
           <AnimatedMedia
@@ -67,7 +53,36 @@ export default function HomePage() {
             aria-hidden="true"
           />
         </div>
+      </div>
 
+      {/* ── ALIEN DESKTOP/TABLET (≥768px) ───────────────────────────────
+          Wrapper relativo solo con MarqueeSection.
+          "absolute bottom-full" → el borde inferior del alien queda
+          exactamente en la unión hero/marquee, sin depender de la altura
+          del hero ni de media queries de posición vertical.
+          El overflow-clip del hero NO lo afecta (este div es su hermano).
+
+          ALINEACIÓN: max-w-[1600px] + pl-[92px]
+            = 72px (padding del hero) + 20px (aire)
+            → siempre alineado con el borde izquierdo del texto.
+
+          TAMAÑO (ajusta aquí si necesitas cambiar por breakpoint):
+            • md  768px  → h-[180px]
+            • lg  1024px → h-[200px]
+            • xl  1280px → h-[240px]
+            • 2xl 1536px → h-[280px]
+          ──────────────────────────────────────────────────────────────── */}
+      <div className="relative">
+        <div className="pointer-events-none absolute bottom-full left-0 right-0 z-[30] hidden md:block">
+          <div className="mx-auto w-full max-w-[1600px] pl-[92px]">
+            <AnimatedMedia
+              webmSrc="/images/hero-alien-float.webm"
+              gifSrc="/images/hero-alien-float-mobile.gif"
+              aria-hidden="true"
+              className="h-[180px] w-auto lg:h-[200px] xl:h-[240px] 2xl:h-[280px]"
+            />
+          </div>
+        </div>
         <MarqueeSection />
       </div>
 
