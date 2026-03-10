@@ -103,7 +103,7 @@ export default function HeroSection() {
       <div className="relative z-10 mx-auto grid w-full max-w-[1600px] grid-cols-1 items-center gap-8 px-5 py-20 sm:px-8 md:grid-cols-[1.4fr_1fr] md:gap-6 md:px-[72px] md:py-0">
 
         {/* ──── LEFT ──── */}
-        <div className="flex flex-col items-center text-center md:items-start md:text-left">
+        <div className="flex flex-col items-center text-center md:items-start md:pt-[74px] md:text-left">
 
           {/* pill — opacity:0 en HTML para que nunca flashee */}
           <div ref={pillRef} style={{ opacity: 0 }}
@@ -149,7 +149,7 @@ export default function HeroSection() {
 
           {/* Spacer para reservar espacio del alien y evitar superposición con el contenido.
               Coincide con la altura del alien por breakpoint. Solo visible en desktop (md+). */}
-          <div aria-hidden="true" className="hidden md:block md:h-[98px] lg:h-[112px] xl:h-[133px] 2xl:h-[154px]" />
+          <div aria-hidden="true" className="hidden md:block md:h-[83px] lg:h-[95px] xl:h-[113px] 2xl:h-[131px]" />
 
 
         </div>
