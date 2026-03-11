@@ -113,11 +113,11 @@ function CometSVG() {
 }
 
 const TEAM = [
-  { name: "Bruno",  surname: "Roque",      role: "Puesto", tag: "Co-Fundador",  Planet: SaturnSVG  },
-  { name: "Debora", surname: "Santa María", role: "Puesto", tag: "Co-Fundadora", Planet: MoonSVG    },
-  { name: "Luis",   surname: "",           role: "Puesto", tag: "Equipo",       Planet: RocketSVG  },
-  { name: "Ada",    surname: "",           role: "Puesto", tag: "Equipo",       Planet: NebulaSVG  },
-  { name: "Gimena", surname: "",           role: "Puesto", tag: "Equipo",       Planet: CometSVG   },
+  { name: "Bruno",  surname: "Roque",      role: "Puesto",            tag: "Co-Fundador",  Planet: SaturnSVG, img: "/images/prueba-empleado-1.webp" },
+  { name: "Debora", surname: "Santa María", role: "Puesto",           tag: "Co-Fundadora", Planet: MoonSVG,   img: "/images/prueba-empleado-1.webp" },
+  { name: "Luis",   surname: "",           role: "Developer Full Stack", tag: "Equipo",    Planet: RocketSVG, img: "/images/prueba-empleado-1.webp" },
+  { name: "Ada",    surname: "",           role: "Brand Designer",    tag: "Equipo",       Planet: NebulaSVG, img: "/images/ada-diseñadora.webp"    },
+  { name: "Gimena", surname: "",           role: "Sales Manager",     tag: "Equipo",       Planet: CometSVG,  img: "/images/gimena-comercial.webp"  },
 ];
 
 export default function TeamGrid() {
@@ -174,7 +174,7 @@ export default function TeamGrid() {
                 {/* Foto de prueba */}
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/images/prueba-empleado-1.webp"
+                  src={member.img}
                   alt={member.name}
                   className="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
                   draggable={false}
