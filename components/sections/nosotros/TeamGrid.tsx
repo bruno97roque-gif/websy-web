@@ -115,7 +115,7 @@ function CometSVG() {
 const TEAM = [
   { name: "Bruno",  surname: "Roque",      role: "Puesto",            tag: "Co-Fundador",  Planet: SaturnSVG, img: "/images/prueba-empleado-1.webp" },
   { name: "Debora", surname: "Santa María", role: "Puesto",           tag: "Co-Fundadora", Planet: MoonSVG,   img: "/images/prueba-empleado-1.webp" },
-  { name: "Luis",   surname: "",           role: "Developer Full Stack", tag: "Equipo",    Planet: RocketSVG, img: "/images/prueba-empleado-1.webp" },
+  { name: "Luis",   surname: "",           role: "Developer Full Stack", tag: "Equipo",    Planet: RocketSVG, img: "/images/luis-developer.webp"   },
   { name: "Ada",    surname: "",           role: "Brand Designer",    tag: "Equipo",       Planet: NebulaSVG, img: "/images/ada-diseñadora.webp"    },
   { name: "Gimena", surname: "",           role: "Sales Manager",     tag: "Equipo",       Planet: CometSVG,  img: "/images/gimena-comercial.webp"  },
 ];
