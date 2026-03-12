@@ -10,7 +10,7 @@ export default function MarqueeSection() {
   return (
     <div className="overflow-hidden bg-[#F18C1B] py-[15px]" aria-hidden>
       {/* Añadimos 'flex' y 'w-max' aquí */}
-      <div className="marquee-track flex w-max hover:cursor-default">
+      <div className="marquee-track flex w-max cursor-default">
         {doubled.map((item, i) => (
           <span
             key={i}

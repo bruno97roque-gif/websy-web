@@ -123,10 +123,7 @@
   }
 }
 
-/* Opcional: Pausar la marquesina cuando el usuario pasa el mouse */
-.marquee-track:hover {
-  animation-play-state: paused;
-}
+/* Marquee siempre en movimiento — sin pausa en hover */
 
 /* ─── CLIENT LOGOS ─── */
 .cli-track {
