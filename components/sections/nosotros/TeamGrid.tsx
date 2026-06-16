@@ -214,23 +214,30 @@ export default function TeamGrid() {
           </div>
         </div>
 
-        {/* Fila 1 — primeros 5 */}
-        <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-5">
-          {TEAM.slice(0, 5).map((member, i) => (
+        {/* Mobile: grid simple 2 columnas, todos los miembros */}
+        <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 lg:hidden">
+          {TEAM.map((member, i) => (
             <Card key={`${member.name}-${i}`} member={member} index={i} cardsRef={cardsRef} />
           ))}
         </div>
 
-        {/* Fila 2 — últimos 2, centrados */}
-        <div className="mt-6 flex justify-center gap-6">
-          {TEAM.slice(5).map((member, idx) => {
-            const i = idx + 5;
-            return (
-              <div key={`${member.name}-${i}`} className="w-full max-w-[calc(20%-12px)] min-w-[120px]">
-                <Card member={member} index={i} cardsRef={cardsRef} />
-              </div>
-            );
-          })}
+        {/* Desktop: fila 1 (5 cols) + fila 2 centrada (2) */}
+        <div className="hidden lg:block">
+          <div className="grid grid-cols-5 gap-6">
+            {TEAM.slice(0, 5).map((member, i) => (
+              <Card key={`${member.name}-${i}`} member={member} index={i} cardsRef={cardsRef} />
+            ))}
+          </div>
+          <div className="mt-6 flex justify-center gap-6">
+            {TEAM.slice(5).map((member, idx) => {
+              const i = idx + 5;
+              return (
+                <div key={`${member.name}-${i}`} style={{ width: "calc(20% - 12px)" }}>
+                  <Card member={member} index={i} cardsRef={cardsRef} />
+                </div>
+              );
+            })}
+          </div>
         </div>
 
       </div>
