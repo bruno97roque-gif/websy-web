@@ -43,7 +43,6 @@ const AnimatedMedia = forwardRef<HTMLVideoElement | HTMLImageElement, AnimatedMe
           src={gifSrc}
           alt=""
           loading="eager"
-          // @ts-expect-error fetchPriority no está en los tipos de React aún
           fetchPriority="high"
           className={className}
           style={style}

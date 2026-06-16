@@ -114,7 +114,7 @@ export default function HeroSection() {
               <span className="relative inline-flex h-[8px] w-[8px] rounded-full bg-white shadow-[0_0_6px_rgba(255,255,255,0.7)]" />
             </span>
             <span className="font-poppins text-[9px] font-medium uppercase tracking-[1.7px] text-[#F18C1B]">
-              Agencia Marketing · Lima, Perú
+              Agencia de Tecnología · Lima, Perú
             </span>
           </div>
 
