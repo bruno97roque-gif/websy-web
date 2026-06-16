@@ -113,11 +113,13 @@ function CometSVG() {
 }
 
 const TEAM = [
-  { name: "Bruno",  surname: "Roque",      role: "Puesto",            tag: "Co-Fundador",  Planet: SaturnSVG, img: "/images/prueba-empleado-1.webp" },
-  { name: "Debora", surname: "Santa María", role: "Puesto",           tag: "Co-Fundadora", Planet: MoonSVG,   img: "/images/prueba-empleado-1.webp" },
-  { name: "Luis",   surname: "",           role: "Developer Full Stack", tag: "Equipo",    Planet: RocketSVG, img: "/images/luis-developer.webp"   },
-  { name: "Ada",    surname: "",           role: "Brand Designer",    tag: "Equipo",       Planet: NebulaSVG, img: "/images/ada-diseñadora.webp"    },
-  { name: "Gimena", surname: "",           role: "Sales Manager",     tag: "Equipo",       Planet: CometSVG,  img: "/images/gimena-comercial.webp"  },
+  { name: "Bruno",       surname: "Roque",      role: "Puesto",               tag: "Co-Fundador",  Planet: SaturnSVG, img: "/images/prueba-empleado-1.webp" },
+  { name: "Debora",      surname: "Santa María", role: "Puesto",              tag: "Co-Fundadora", Planet: MoonSVG,   img: "/images/prueba-empleado-1.webp" },
+  { name: "Luis",        surname: "",           role: "Developer Full Stack",  tag: "Equipo",       Planet: RocketSVG, img: "/images/luis-developer.webp"    },
+  { name: "Ada",         surname: "",           role: "Brand Designer",        tag: "Equipo",       Planet: NebulaSVG, img: "/images/ada-diseñadora.webp"    },
+  { name: "Gimena",      surname: "",           role: "Sales Manager",         tag: "Equipo",       Planet: CometSVG,  img: "/images/gimena-comercial.webp"  },
+  { name: "Juan Carlos", surname: "Huapaya",    role: "Brand Designer",        tag: "Equipo",       Planet: NebulaSVG, img: "/images/luis-developer.webp"    },
+  { name: "Aaron",       surname: "Jauregui",   role: "Developer Full Stack",  tag: "Equipo",       Planet: RocketSVG, img: "/images/luis-developer.webp"    },
 ];
 
 export default function TeamGrid() {
@@ -158,7 +160,7 @@ export default function TeamGrid() {
         </div>
 
         {/* Grid 5 columnas */}
-        <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-5">
+        <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7">
           {TEAM.map((member, i) => (
             <div
               key={`${member.name}-${i}`}

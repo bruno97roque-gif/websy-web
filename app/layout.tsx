@@ -43,19 +43,21 @@ const SITE_URL = "https://websy.com.pe"; // ← cambia al dominio real cuando te
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Websy – Agencia Web Lima, Perú",
+    default: "Websy – Agencia de Tecnología y Desarrollo Web | Lima, Perú",
     template: "%s | Websy",
   },
   description:
-    "Agencia de diseño web y marketing digital en Lima, Perú. Creamos páginas web, tiendas online, branding y estrategia digital para que tu negocio se destaque.",
+    "Agencia de tecnología y desarrollo de software en Lima, Perú. Creamos páginas web, aplicaciones a medida, tiendas online y branding para que tu negocio se destaque en el mundo digital.",
   keywords: [
+    "agencia de tecnología Lima",
+    "desarrollo de software Perú",
     "agencia web Lima",
     "diseño web Perú",
     "páginas web Lima",
-    "tienda online Perú",
-    "marketing digital Lima",
-    "SEO Perú",
+    "aplicaciones web Perú",
+    "tienda online Lima",
     "branding Lima",
+    "SEO Perú",
     "websy",
   ],
   authors: [{ name: "Websy", url: SITE_URL }],
@@ -69,21 +71,21 @@ export const metadata: Metadata = {
     locale: "es_PE",
     url: SITE_URL,
     siteName: "Websy",
-    title: "Websy – Agencia Web Lima, Perú",
+    title: "Websy – Agencia de Tecnología y Desarrollo Web | Lima, Perú",
     description:
-      "Diseño exclusivo, tecnología de vanguardia y estrategia real para que tu negocio se destaque y convierta.",
+      "Agencia de tecnología y desarrollo de software en Lima, Perú. Diseño exclusivo, soluciones digitales a medida y estrategia real para que tu negocio se destaque y convierta.",
     images: [
       {
-        url: "/og-image.png", // Crea una imagen 1200×630 y ponla en /public
+        url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Websy – Agencia Web Lima",
+        alt: "Websy – Agencia de Tecnología Lima, Perú",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Websy – Agencia Web Lima, Perú",
+    title: "Websy – Agencia de Tecnología y Desarrollo Web | Lima, Perú",
     description:
       "Diseño exclusivo, tecnología de vanguardia y estrategia real para que tu negocio se destaque y convierta.",
     images: ["/og-image.png"],
@@ -108,7 +110,7 @@ const jsonLd = {
   "@type": "ProfessionalService",
   name: "Websy",
   description:
-    "Agencia de diseño web y marketing digital en Lima, Perú. Especialistas en páginas web, tiendas online, branding y Google Ads.",
+    "Agencia de tecnología y desarrollo de software en Lima, Perú. Especialistas en páginas web, aplicaciones a medida, tiendas online, branding y SEO.",
   url: SITE_URL,
   logo: `${SITE_URL}/images/logo-websy-dark.png`,
   image: `${SITE_URL}/og-image.png`,
