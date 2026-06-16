@@ -128,15 +128,17 @@ function Card({
   member,
   index,
   cardsRef,
+  animate = true,
 }: {
   member: TeamMember;
   index: number;
   cardsRef: React.MutableRefObject<(HTMLDivElement | null)[]>;
+  animate?: boolean;
 }) {
   return (
     <div
-      ref={(el) => { cardsRef.current[index] = el; }}
-      style={{ opacity: 0 }}
+      ref={animate ? (el) => { cardsRef.current[index] = el; } : undefined}
+      style={animate ? { opacity: 0 } : undefined}
       className="group flex flex-col items-center text-center"
     >
       <div
@@ -217,7 +219,7 @@ export default function TeamGrid() {
         {/* Mobile: grid simple 2 columnas, todos los miembros */}
         <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 lg:hidden">
           {TEAM.map((member, i) => (
-            <Card key={`${member.name}-${i}`} member={member} index={i} cardsRef={cardsRef} />
+            <Card key={`${member.name}-${i}`} member={member} index={i} cardsRef={cardsRef} animate={false} />
           ))}
         </div>
 
