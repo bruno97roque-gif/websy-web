@@ -4,17 +4,25 @@ import React, { useState, useCallback, useEffect } from "react";
 import Image from "next/image";
 import { useReveal, useRevealList } from "@/hooks/useReveal";
 
-/* ── 9 gallery items — swap src for real photos later ── */
 const GALLERY_ITEMS = [
-  { id: 1,  src: "/images/Imagen-ejemplo-galeria-nosotros.webp", label: "Identidad Visual" },
-  { id: 2,  src: "/images/Imagen-ejemplo-galeria-nosotros.webp", label: "Diseño Web" },
-  { id: 3,  src: "/images/Imagen-ejemplo-galeria-nosotros.webp", label: "E-commerce" },
-  { id: 4,  src: "/images/Imagen-ejemplo-galeria-nosotros.webp", label: "Google Ads" },
-  { id: 5,  src: "/images/Imagen-ejemplo-galeria-nosotros.webp", label: "Branding" },
-  { id: 6,  src: "/images/Imagen-ejemplo-galeria-nosotros.webp", label: "Social Media" },
-  { id: 7,  src: "/images/Imagen-ejemplo-galeria-nosotros.webp", label: "SEO" },
-  { id: 8,  src: "/images/Imagen-ejemplo-galeria-nosotros.webp", label: "Landing Page" },
-  { id: 9,  src: "/images/Imagen-ejemplo-galeria-nosotros.webp", label: "Estrategia Digital" },
+  { id: 1,  src: "/images/mockupgaleria1.webp",  label: "Identidad Visual" },
+  { id: 2,  src: "/images/mockupgaleria2.webp",  label: "Diseño Web" },
+  { id: 3,  src: "/images/mockupgaleria3.webp",  label: "E-commerce" },
+  { id: 4,  src: "/images/mockupgaleria4.webp",  label: "Branding" },
+  { id: 5,  src: "/images/mockupgaleria5.webp",  label: "Landing Page" },
+  { id: 6,  src: "/images/mockupgaleria6.webp",  label: "Social Media" },
+  { id: 7,  src: "/images/mockupgaleria7.webp",  label: "SEO" },
+  { id: 8,  src: "/images/mockupgaleria8.webp",  label: "Estrategia Digital" },
+  { id: 9,  src: "/images/mockupgaleria9.webp",  label: "Google Ads" },
+  { id: 10, src: "/images/mockupgaleria10.webp", label: "Diseño Web" },
+  { id: 11, src: "/images/mockupgaleria11.webp", label: "Identidad Visual" },
+  { id: 12, src: "/images/mockupgaleria12.webp", label: "E-commerce" },
+  { id: 13, src: "/images/mockupgaleria13.webp", label: "Branding" },
+  { id: 14, src: "/images/mockupgaleria14.webp", label: "Landing Page" },
+  { id: 15, src: "/images/mockupgaleria15.webp", label: "Social Media" },
+  { id: 16, src: "/images/mockupgaleria16.webp", label: "SEO" },
+  { id: 17, src: "/images/mockupgaleria17.webp", label: "Estrategia Digital" },
+  { id: 18, src: "/images/mockupgaleria18.webp", label: "Google Ads" },
 ];
 
 /* ── Premium Lightbox with keyboard & arrow navigation ── */
@@ -227,17 +235,26 @@ export default function NosotrosGaleria() {
   const mobileGridRef = useReveal<HTMLDivElement>();
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
-  /* ── Desktop layout: 4 cols × 4 rows ── */
+  /* ── Desktop layout: 4 cols × 8 rows (2 bloques de 9) ── */
   const DESKTOP_LAYOUT: React.CSSProperties[] = [
-    { gridColumn: "1/3", gridRow: "1/3" },   // 1: big 2×2
-    { gridColumn: "3/4", gridRow: "1/2" },   // 2: small
-    { gridColumn: "4/5", gridRow: "1/3" },   // 3: tall 1×2
-    { gridColumn: "3/4", gridRow: "2/3" },   // 4: small
-    { gridColumn: "1/3", gridRow: "3/4" },   // 5: wide 2×1
-    { gridColumn: "3/4", gridRow: "3/4" },   // 6: small
-    { gridColumn: "1/2", gridRow: "4/5" },   // 7: small
-    { gridColumn: "2/4", gridRow: "4/5" },   // 8: wide 2×1
-    { gridColumn: "4/5", gridRow: "3/5" },   // 9: tall 1×2
+    { gridColumn: "1/3", gridRow: "1/3" },
+    { gridColumn: "3/4", gridRow: "1/2" },
+    { gridColumn: "4/5", gridRow: "1/3" },
+    { gridColumn: "3/4", gridRow: "2/3" },
+    { gridColumn: "1/3", gridRow: "3/4" },
+    { gridColumn: "3/4", gridRow: "3/4" },
+    { gridColumn: "1/2", gridRow: "4/5" },
+    { gridColumn: "2/4", gridRow: "4/5" },
+    { gridColumn: "4/5", gridRow: "3/5" },
+    { gridColumn: "1/3", gridRow: "5/7" },
+    { gridColumn: "3/4", gridRow: "5/6" },
+    { gridColumn: "4/5", gridRow: "5/7" },
+    { gridColumn: "3/4", gridRow: "6/7" },
+    { gridColumn: "1/3", gridRow: "7/8" },
+    { gridColumn: "3/4", gridRow: "7/8" },
+    { gridColumn: "1/2", gridRow: "8/9" },
+    { gridColumn: "2/4", gridRow: "8/9" },
+    { gridColumn: "4/5", gridRow: "7/9" },
   ];
 
   return (
@@ -314,7 +331,7 @@ export default function NosotrosGaleria() {
           className="reveal-stagger g-desktop"
           style={{
             gridTemplateColumns: "repeat(4, 1fr)",
-            gridTemplateRows: "210px 210px 200px 155px",
+            gridTemplateRows: "210px 210px 200px 155px 210px 210px 200px 155px",
             gap: 10,
           }}
         >
