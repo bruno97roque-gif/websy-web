@@ -232,30 +232,8 @@ export default function NosotrosGaleria() {
   const headerRef = useReveal<HTMLDivElement>();
   const { containerRef: gridRef, itemRefs: itemRevealRefs } =
     useRevealList<HTMLDivElement>(GALLERY_ITEMS.length);
-  const mobileGridRef = useReveal<HTMLDivElement>();
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
-  /* ── Desktop layout: 4 cols × 8 rows (2 bloques de 9) ── */
-  const DESKTOP_LAYOUT: React.CSSProperties[] = [
-    { gridColumn: "1/3", gridRow: "1/3" },
-    { gridColumn: "3/4", gridRow: "1/2" },
-    { gridColumn: "4/5", gridRow: "1/3" },
-    { gridColumn: "3/4", gridRow: "2/3" },
-    { gridColumn: "1/3", gridRow: "3/4" },
-    { gridColumn: "3/4", gridRow: "3/4" },
-    { gridColumn: "1/2", gridRow: "4/5" },
-    { gridColumn: "2/4", gridRow: "4/5" },
-    { gridColumn: "4/5", gridRow: "3/5" },
-    { gridColumn: "1/3", gridRow: "5/7" },
-    { gridColumn: "3/4", gridRow: "5/6" },
-    { gridColumn: "4/5", gridRow: "5/7" },
-    { gridColumn: "3/4", gridRow: "6/7" },
-    { gridColumn: "1/3", gridRow: "7/8" },
-    { gridColumn: "3/4", gridRow: "7/8" },
-    { gridColumn: "1/2", gridRow: "8/9" },
-    { gridColumn: "2/4", gridRow: "8/9" },
-    { gridColumn: "4/5", gridRow: "7/9" },
-  ];
 
   return (
     <section
@@ -264,14 +242,6 @@ export default function NosotrosGaleria() {
     >
       {/* ── CSS for shine and grid ── */}
       <style>{`
-        /* Gallery grid responsive show/hide */
-        .g-desktop { display: grid; }
-        .g-mobile  { display: none; }
-        @media (max-width: 767px) {
-          .g-desktop { display: none; }
-          .g-mobile  { display: grid; }
-        }
-
         /* Shine sweep animation on hover */
         @keyframes gShine {
           0%   { transform: translateX(-130%) skewX(-18deg); }
@@ -292,6 +262,13 @@ export default function NosotrosGaleria() {
         .g-item:hover {
           border-color: rgba(241,140,27,0.5) !important;
           box-shadow: 0 0 0 1px rgba(241,140,27,0.15), 0 20px 60px rgba(0,0,0,0.55) !important;
+        }
+        /* Responsive columns */
+        @media (max-width: 767px) {
+          .g-uniform { grid-template-columns: repeat(3, 1fr) !important; }
+        }
+        @media (max-width: 480px) {
+          .g-uniform { grid-template-columns: repeat(2, 1fr) !important; }
         }
       `}</style>
 
@@ -325,13 +302,13 @@ export default function NosotrosGaleria() {
           </div>
         </div>
 
-        {/* ── Desktop masonry grid ── */}
+        {/* ── Grid uniforme cuadrado ── */}
         <div
           ref={gridRef}
-          className="reveal-stagger g-desktop"
+          className="reveal-stagger g-uniform"
           style={{
-            gridTemplateColumns: "repeat(4, 1fr)",
-            gridTemplateRows: "210px 210px 200px 155px 210px 210px 200px 155px",
+            display: "grid",
+            gridTemplateColumns: "repeat(6, 1fr)",
             gap: 10,
           }}
         >
@@ -341,27 +318,6 @@ export default function NosotrosGaleria() {
               item={item}
               index={i}
               itemRef={(el) => { itemRevealRefs.current[i] = el; }}
-              style={DESKTOP_LAYOUT[i]}
-              onOpen={setLightboxIndex}
-            />
-          ))}
-        </div>
-
-        {/* ── Mobile grid: 2 cols, all items ── */}
-        <div
-          ref={mobileGridRef}
-          className="reveal g-mobile"
-          style={{
-            gridTemplateColumns: "repeat(2, 1fr)",
-            gap: 8,
-          }}
-        >
-          {GALLERY_ITEMS.map((item, i) => (
-            <GalleryItem
-              key={item.id}
-              item={item}
-              index={i}
-              style={{ height: 150 }}
               onOpen={setLightboxIndex}
             />
           ))}
@@ -386,13 +342,11 @@ export default function NosotrosGaleria() {
 function GalleryItem({
   item,
   index,
-  style,
   itemRef,
   onOpen,
 }: {
   item: (typeof GALLERY_ITEMS)[0];
   index: number;
-  style?: React.CSSProperties;
   itemRef?: (el: HTMLDivElement | null) => void;
   onOpen: (i: number) => void;
 }) {
@@ -407,7 +361,7 @@ function GalleryItem({
         cursor: "pointer",
         border: "1px solid rgba(255,255,255,0.06)",
         boxShadow: "0 4px 24px rgba(0,0,0,0.35)",
-        ...style,
+        aspectRatio: "1 / 1",
       }}
     >
       {/* Image */}
