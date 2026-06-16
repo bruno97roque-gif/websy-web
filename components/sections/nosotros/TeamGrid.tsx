@@ -118,9 +118,64 @@ const TEAM = [
   { name: "Luis",        surname: "",           role: "Developer Full Stack",  tag: "Equipo",       Planet: RocketSVG, img: "/images/luis-developer.webp"    },
   { name: "Ada",         surname: "",           role: "Brand Designer",        tag: "Equipo",       Planet: NebulaSVG, img: "/images/ada-diseñadora.webp"    },
   { name: "Gimena",      surname: "",           role: "Sales Manager",         tag: "Equipo",       Planet: CometSVG,  img: "/images/gimena-comercial.webp"  },
-  { name: "Juan Carlos", surname: "Huapaya",    role: "Brand Designer",        tag: "Equipo",       Planet: NebulaSVG, img: "/images/luis-developer.webp"    },
-  { name: "Aaron",       surname: "Jauregui",   role: "Developer Full Stack",  tag: "Equipo",       Planet: RocketSVG, img: "/images/luis-developer.webp"    },
+  { name: "Juan Carlos", surname: "Huapaya",    role: "Brand Designer",        tag: "Equipo",       Planet: NebulaSVG, img: "/images/Juancarlos.webp"        },
+  { name: "Aaron",       surname: "Jauregui",   role: "Developer Full Stack",  tag: "Equipo",       Planet: RocketSVG, img: "/images/Aaron.webp"             },
 ];
+
+type TeamMember = typeof TEAM[0];
+
+function Card({
+  member,
+  index,
+  cardsRef,
+}: {
+  member: TeamMember;
+  index: number;
+  cardsRef: React.MutableRefObject<(HTMLDivElement | null)[]>;
+}) {
+  return (
+    <div
+      ref={(el) => { cardsRef.current[index] = el; }}
+      style={{ opacity: 0 }}
+      className="group flex flex-col items-center text-center"
+    >
+      <div
+        className="relative mb-4 w-full overflow-hidden rounded-[24px] aspect-[3/4]"
+        style={{ backgroundColor: "#ffffff" }}
+      >
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={member.img}
+          alt={member.name}
+          className="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+          draggable={false}
+        />
+
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#291231]/60 via-transparent to-transparent" />
+
+        {/* Planet SVG — oculto temporalmente */}
+        <div className="hidden pointer-events-none absolute right-2 top-2 z-10 origin-top-right opacity-90 transition-transform duration-500 group-hover:scale-110" style={{ transform: "scale(0.62)" }}>
+          <member.Planet />
+        </div>
+
+        <span className="absolute bottom-3 left-3 rounded-full border border-[#F18C1B]/50 bg-[#F18C1B]/10 px-2.5 py-0.5 font-poppins text-[9px] font-semibold uppercase tracking-[1.5px] text-[#F18C1B]">
+          {member.tag}
+        </span>
+      </div>
+
+      <h3 className="font-montserrat text-[15px] font-bold leading-tight text-white">
+        {member.name}
+        {member.surname && (
+          <> <span className="text-[#F18C1B]">{member.surname}</span></>
+        )}
+      </h3>
+
+      <p className="font-poppins mt-1 text-[12px] text-white">
+        {member.role}
+      </p>
+    </div>
+  );
+}
 
 export default function TeamGrid() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -159,60 +214,23 @@ export default function TeamGrid() {
           </div>
         </div>
 
-        {/* Grid 5 columnas */}
-        <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7">
-          {TEAM.map((member, i) => (
-            <div
-              key={`${member.name}-${i}`}
-              ref={(el) => { cardsRef.current[i] = el; }}
-              style={{ opacity: 0 }}
-              className="group flex flex-col items-center text-center"
-            >
-              {/* Tarjeta de ilustración — fondo blanco */}
-              <div
-                className="relative mb-4 w-full overflow-hidden rounded-[24px] aspect-[3/4]"
-                style={{ backgroundColor: "#ffffff" }}
-              >
-                {/* Foto de prueba */}
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={member.img}
-                  alt={member.name}
-                  className="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
-                  draggable={false}
-                />
-
-                {/* Gradiente inferior sutil */}
-                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#291231]/60 via-transparent to-transparent" />
-
-                {/* Planet SVG — top-right decorative, scale-down to fit card */}
-                <div
-                  className="pointer-events-none absolute right-2 top-2 z-10 origin-top-right opacity-90 transition-transform duration-500 group-hover:scale-110"
-                  style={{ transform: "scale(0.62)" }}
-                >
-                  <member.Planet />
-                </div>
-
-                {/* Tag */}
-                <span className="absolute bottom-3 left-3 rounded-full border border-[#F18C1B]/50 bg-[#F18C1B]/10 px-2.5 py-0.5 font-poppins text-[9px] font-semibold uppercase tracking-[1.5px] text-[#F18C1B]">
-                  {member.tag}
-                </span>
-              </div>
-
-              {/* Nombre — apellido en naranja si existe */}
-              <h3 className="font-montserrat text-[15px] font-bold leading-tight text-white">
-                {member.name}
-                {member.surname && (
-                  <> <span className="text-[#F18C1B]">{member.surname}</span></>
-                )}
-              </h3>
-
-              {/* Puesto */}
-              <p className="font-poppins mt-1 text-[12px] text-white">
-                {member.role}
-              </p>
-            </div>
+        {/* Fila 1 — primeros 5 */}
+        <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-5">
+          {TEAM.slice(0, 5).map((member, i) => (
+            <Card key={`${member.name}-${i}`} member={member} index={i} cardsRef={cardsRef} />
           ))}
+        </div>
+
+        {/* Fila 2 — últimos 2, centrados */}
+        <div className="mt-6 flex justify-center gap-6">
+          {TEAM.slice(5).map((member, idx) => {
+            const i = idx + 5;
+            return (
+              <div key={`${member.name}-${i}`} className="w-full max-w-[calc(20%-12px)] min-w-[120px]">
+                <Card member={member} index={i} cardsRef={cardsRef} />
+              </div>
+            );
+          })}
         </div>
 
       </div>
