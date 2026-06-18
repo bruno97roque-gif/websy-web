@@ -4,13 +4,13 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import Link from "next/link";
 import { Particles } from "@/components/ui/particles";
+import { MAIN_LINKS } from "@/lib/nav";
 
-const NAV_LINKS = [
-  { num: "01", label: "Inicio",    href: "/" },
-  { num: "02", label: "Nosotros",  href: "/nosotros" },
-  { num: "03", label: "Servicios", href: "/servicios" },
-  { num: "04", label: "Contacto",  href: "/contacto" },
-];
+const NAV_LINKS = MAIN_LINKS.map((l, i) => ({
+  num: String(i + 1).padStart(2, "0"),
+  label: l.label,
+  href: l.href,
+}));
 
 /* ── Scrollbar width helper ── */
 function getScrollbarWidth() {

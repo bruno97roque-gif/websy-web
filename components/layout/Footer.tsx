@@ -1,9 +1,11 @@
 import Link from "next/link";
+import { SERVICE_LINKS } from "@/lib/nav";
 
 const navLinks = [
   { label: "Inicio", href: "/" },
   { label: "Nosotros", href: "/nosotros" },
   { label: "Servicios", href: "/servicios" },
+  { label: "Cotizar", href: "/cotizacion" },
   { label: "Contacto", href: "/contacto" },
 ];
 
@@ -125,6 +127,36 @@ export default function Footer() {
           </div>
 
         </div>
+
+        {/* ── Servicios (enlazado por silo) ── */}
+        <nav
+          aria-label="Servicios"
+          style={{
+            marginTop: 28,
+            paddingTop: 22,
+            borderTop: "1px solid rgba(41,18,49,0.10)",
+            display: "flex",
+            flexWrap: "wrap",
+            gap: "8px 22px",
+            justifyContent: "center",
+          }}
+        >
+          {SERVICE_LINKS.map(({ label, href }) => (
+            <Link
+              key={href}
+              href={href}
+              style={{
+                fontFamily: "var(--font-poppins, sans-serif)",
+                fontSize: 13,
+                fontWeight: 400,
+                color: "#6b6478",
+                textDecoration: "none",
+              }}
+            >
+              {label}
+            </Link>
+          ))}
+        </nav>
       </div>
 
       {/* ── Barra legal ── */}
