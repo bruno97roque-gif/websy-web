@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta({
+  path: "/terminos",
   title: "Términos y Condiciones",
-  description: "Términos y condiciones de uso de los servicios de Websy, agencia de diseño web y marketing digital en Lima, Perú.",
-};
+  description:
+    "Términos y condiciones de uso de los servicios de Websy, agencia de diseño web y marketing digital en Lima, Perú.",
+});
 
 const UPDATED = "01 de marzo de 2025";
 

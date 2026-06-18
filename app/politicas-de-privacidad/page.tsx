@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta({
+  path: "/politicas-de-privacidad",
   title: "Políticas de Privacidad",
-  description: "Políticas de privacidad y tratamiento de datos personales de Websy, conforme a la Ley N° 29733 de Perú.",
-};
+  description:
+    "Políticas de privacidad y tratamiento de datos personales de Websy, conforme a la Ley N° 29733 de Perú.",
+});
 
 const UPDATED = "01 de marzo de 2025";
 

@@ -13,6 +13,9 @@ import ContactSection from "@/components/sections/home/ContactSection";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { AnimatedMedia } from "@/components/ui/animated-media";
+import { SITE_URL } from "@/lib/seo";
+import JsonLd from "@/components/seo/JsonLd";
+import { organizationSchema, websiteSchema } from "@/lib/schema";
 
 /* ─── Fuentes ─── */
 const montserrat = Montserrat({
@@ -37,9 +40,7 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
-/* ─── Metadata + Open Graph ─── */
-const SITE_URL = "https://websy.com.pe"; // ← cambia al dominio real cuando tengas
-
+/* ─── Metadata + Open Graph (home) ─── */
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
@@ -104,57 +105,6 @@ export const metadata: Metadata = {
   },
 };
 
-/* ─── JSON-LD (Schema.org LocalBusiness) ─── */
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  name: "Websy",
-  description:
-    "Agencia de tecnología y desarrollo de software en Lima, Perú. Especialistas en páginas web, aplicaciones a medida, tiendas online, branding y SEO.",
-  url: SITE_URL,
-  logo: `${SITE_URL}/images/logo-websy-dark.png`,
-  image: `${SITE_URL}/og-image.png`,
-  telephone: "+51940549322",
-  email: "ventas@websy.com.pe",
-  address: {
-    "@type": "PostalAddress",
-    addressLocality: "Lima",
-    addressCountry: "PE",
-  },
-  geo: {
-    "@type": "GeoCoordinates",
-    latitude: -12.0464,
-    longitude: -77.0428,
-  },
-  areaServed: {
-    "@type": "Country",
-    name: "Perú",
-  },
-  priceRange: "$$",
-  openingHoursSpecification: [
-    {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-      opens: "09:00",
-      closes: "18:00",
-    },
-  ],
-  sameAs: [
-    "https://www.instagram.com/websy.pe",
-    "https://www.facebook.com/websy.pe",
-  ],
-  hasOfferCatalog: {
-    "@type": "OfferCatalog",
-    name: "Servicios Websy",
-    itemListElement: [
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Branding" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Diseño Web" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Tienda Virtual" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Google Ads & SEO" } },
-    ],
-  },
-};
-
 /* ─── Layout ─── */
 export default function RootLayout({
   children,
@@ -162,13 +112,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="es" className="scroll-smooth">
+    <html lang="es-PE" className="scroll-smooth">
       <head>
-        {/* JSON-LD Structured Data */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
+        {/* JSON-LD global: Organization + WebSite */}
+        <JsonLd data={[organizationSchema(), websiteSchema()]} />
         {/* Preconnect a fuentes para mejorar LCP */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
