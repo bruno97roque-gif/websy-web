@@ -18,9 +18,12 @@ export const SERVICE_LINKS: NavLink[] = [
   { label: "Sistema de Ventas y Facturación", href: "/sistemas/ventas-y-facturacion" },
   { label: "Sistema de Gestión (ERP / CRM)", href: "/sistemas/gestion-erp-crm" },
   { label: "SEO y Posicionamiento", href: "/seo" },
+  { label: "Posicionamiento SEO", href: "/posicionamiento-seo" },
   { label: "Google Ads", href: "/google-ads" },
   { label: "Branding", href: "/branding" },
+  { label: "Branding y UX/UI", href: "/branding-y-diseno-ux-ui" },
   { label: "Mantenimiento Web", href: "/mantenimiento-web" },
+  { label: "Mantenimiento y Soporte Web", href: "/mantenimiento-y-soporte-web" },
   { label: "Precios", href: "/precios" },
 ];
 
@@ -48,7 +51,7 @@ export const MAIN_LINKS: NavLink[] = [
   { label: "Contacto", href: "/contacto" },
 ];
 
-/** URLs nuevas de esta ola, para el sitemap. */
+/** URLs de las landings de servicio, para el sitemap. */
 export const SERVICE_SITEMAP: { path: string; priority: number }[] = [
   { path: "/tiendas-virtuales", priority: 0.9 },
   { path: "/tiendas-virtuales/shopify", priority: 0.9 },
@@ -64,11 +67,15 @@ export const SERVICE_SITEMAP: { path: string; priority: number }[] = [
   { path: "/sistemas/gestion-erp-crm", priority: 0.8 },
   { path: "/precios", priority: 0.9 },
   { path: "/cotizacion", priority: 0.8 },
-  // Nuevos pilares de servicio.
+  // Pilares de servicio existentes.
   { path: "/seo", priority: 0.9 },
   { path: "/google-ads", priority: 0.9 },
   { path: "/branding", priority: 0.9 },
   { path: "/mantenimiento-web", priority: 0.9 },
+  // Nuevas landings SEO optimizadas.
+  { path: "/posicionamiento-seo", priority: 0.9 },
+  { path: "/branding-y-diseno-ux-ui", priority: 0.8 },
+  { path: "/mantenimiento-y-soporte-web", priority: 0.8 },
   // Silo de diseño web por rubro (hijas de /diseno-de-paginas-web).
   { path: "/diseno-de-paginas-web/restaurantes", priority: 0.8 },
   { path: "/diseno-de-paginas-web/clinicas", priority: 0.8 },
