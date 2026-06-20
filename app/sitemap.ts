@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { SITE_URL } from "@/lib/seo";
 import { SERVICE_SITEMAP } from "@/lib/nav";
+import { BLOG_POSTS } from "@/lib/blog";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();
@@ -22,5 +23,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: s.priority,
   }));
 
-  return [...fixed, ...services];
+  // Blog: índice + cada artículo.
+  const blog: MetadataRoute.Sitemap = [
+    { url: `${SITE_URL}/blog`, lastModified, changeFrequency: "weekly", priority: 0.7 },
+    ...BLOG_POSTS.map((p) => ({
+      url: `${SITE_URL}/blog/${p.slug}`,
+      lastModified: new Date(p.dateModified ?? p.datePublished),
+      changeFrequency: "monthly" as const,
+      priority: 0.6,
+    })),
+  ];
+
+  return [...fixed, ...services, ...blog];
 }
