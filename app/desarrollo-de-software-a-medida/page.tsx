@@ -56,8 +56,9 @@ export default function SoftwareAMedidaPage() {
         },
       ]}
       related={[
-        { label: "Tiendas virtuales / ecommerce", href: "/tiendas-virtuales", desc: "¿Tu sistema necesita vender online? Súmale una tienda virtual." },
-        { label: "Diseño de páginas web", href: "/diseno-de-paginas-web", desc: "La cara pública de tu negocio, optimizada para captar clientes." },
+        { label: "Sistema de inventario", href: "/sistemas/inventario", desc: "Controla stock, almacenes y pedidos en tiempo real." },
+        { label: "Sistema de ventas y facturación", href: "/sistemas/ventas-y-facturacion", desc: "Vende y emite comprobantes electrónicos en un flujo." },
+        { label: "Gestión ERP y CRM", href: "/sistemas/gestion-erp-crm", desc: "Integra ventas, clientes y procesos en una plataforma." },
       ]}
       faqs={[
         {
