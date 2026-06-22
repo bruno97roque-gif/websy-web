@@ -146,6 +146,39 @@ export function faqPageSchema(faqs: { q: string; a: string }[]) {
   };
 }
 
+/** BlogPosting de un artículo del blog. */
+export function blogPostingSchema({
+  slug,
+  title,
+  description,
+  datePublished,
+  dateModified,
+  image,
+}: {
+  slug: string;
+  title: string;
+  description: string;
+  datePublished: string;
+  dateModified?: string;
+  image?: string;
+}) {
+  const url = `${SITE_URL}/blog/${slug}`;
+  return {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: title,
+    description,
+    url,
+    mainEntityOfPage: { "@type": "WebPage", "@id": url },
+    datePublished,
+    dateModified: dateModified ?? datePublished,
+    inLanguage: "es-PE",
+    image: image ?? `${SITE_URL}/og-image.png`,
+    author: { "@id": ORG_ID, name: SITE_NAME },
+    publisher: { "@id": ORG_ID },
+  };
+}
+
 export function aboutPageSchema() {
   return {
     "@context": "https://schema.org",
