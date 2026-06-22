@@ -438,6 +438,336 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Diseño de páginas web", href: "/diseno-de-paginas-web", desc: "La presencia online que capta tus clientes." },
     ],
   },
+  {
+    slug: "que-necesita-una-tienda-virtual-para-vender",
+    title: "Qué necesita una tienda virtual para vender de verdad",
+    h1: "¿Qué necesita una tienda virtual para vender?",
+    description:
+      "Más allá del catálogo: qué necesita una tienda virtual en Perú para vender de verdad. Pagos, confianza, velocidad, SEO y los detalles que convierten visitas en ventas.",
+    excerpt:
+      "No basta con subir productos. Estos son los elementos que separan una tienda que vende de una que solo existe.",
+    datePublished: "2026-06-19",
+    category: "Ecommerce",
+    readingMin: 5,
+    intro:
+      "Muchas tiendas virtuales no venden no por falta de tráfico, sino por detalles que matan la confianza o complican la compra. Estos son los elementos que necesita una tienda virtual en Perú para convertir visitas en ventas reales.",
+    sections: [
+      {
+        h2: "Pagos que tus clientes ya usan",
+        body:
+          "Si el cliente no encuentra su método de pago, se va. Una tienda lista para vender acepta Yape y Plin, tarjeta vía Niubiz o Izipay, y transferencia o pago contra entrega.",
+      },
+      {
+        h2: "Confianza visible",
+        bullets: [
+          "Fotos de producto reales y de buena calidad.",
+          "Información clara de envíos, tiempos y devoluciones.",
+          "Datos de contacto y WhatsApp a la vista.",
+          "Diseño profesional y candado de seguridad (HTTPS).",
+        ],
+      },
+      {
+        h2: "Velocidad y móvil",
+        body:
+          "La mayoría compra desde el celular. Una tienda lenta o difícil de usar en el móvil pierde ventas aunque tenga buenos productos.",
+      },
+      {
+        h2: "Que la encuentren en Google",
+        body:
+          "Una tienda invisible no vende. Fichas optimizadas, categorías con texto y un blog que atrae búsquedas acercan compradores con intención real.",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Basta con subir mis productos a la tienda?",
+        a: "No. Necesitas pagos configurados, confianza (fotos, políticas, contacto), velocidad y SEO. Por eso entregamos la tienda lista para vender, no solo montada.",
+      },
+    ],
+    related: [
+      { label: "Desarrollo de tiendas virtuales", href: "/tiendas-virtuales", desc: "Una tienda lista para vender, no a medio armar." },
+      { label: "Pasarelas de pago en Perú", href: "/blog/pasarelas-de-pago-para-ecommerce-en-peru", desc: "Cómo aceptar Yape, Plin y tarjetas." },
+    ],
+  },
+
+  {
+    slug: "ventajas-de-tener-una-tienda-virtual",
+    title: "Ventajas de tener una tienda virtual para tu negocio",
+    h1: "Ventajas de tener una tienda virtual",
+    description:
+      "Las ventajas de tener una tienda virtual para tu negocio en Perú: vender 24/7, llegar a más clientes, reducir costos y crecer sin depender solo del local.",
+    excerpt:
+      "Por qué una tienda virtual deja de ser opcional: vende sola, llega más lejos y trabaja por ti las 24 horas.",
+    datePublished: "2026-06-19",
+    category: "Ecommerce",
+    readingMin: 4,
+    intro:
+      "Una tienda virtual no reemplaza tu negocio: lo multiplica. Vende cuando tú duermes, llega a clientes fuera de tu zona y reduce el trabajo manual de cada venta. Estas son las ventajas concretas de tener un ecommerce en Perú.",
+    sections: [
+      {
+        h2: "Vendes las 24 horas, los 7 días",
+        body:
+          "Tu tienda no cierra. Un cliente puede comprar a medianoche o un domingo sin que tú estés presente, y el pedido te llega listo para despachar.",
+      },
+      {
+        h2: "Llegas a más clientes",
+        bullets: [
+          "Vendes fuera de tu barrio, ciudad o región.",
+          "Apareces en Google cuando buscan tus productos.",
+          "Conectas tus campañas de redes y Ads directo a la compra.",
+        ],
+      },
+      {
+        h2: "Menos trabajo manual, más control",
+        body:
+          "Los pedidos llegan ordenados, el stock se descuenta solo y tienes reportes de qué se vende más. Menos errores y mejores decisiones.",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Una tienda virtual reemplaza mi local?",
+        a: "No necesariamente: lo complementa. Muchos negocios usan la tienda para vender más y llegar más lejos, manteniendo su local físico.",
+      },
+    ],
+    related: [
+      { label: "Desarrollo de tiendas virtuales", href: "/tiendas-virtuales", desc: "Empieza a vender online con una tienda a tu medida." },
+      { label: "Página web o tienda virtual", href: "/blog/pagina-web-o-tienda-virtual", desc: "¿Cuál necesitas primero? Te ayudamos a decidir." },
+    ],
+  },
+
+  {
+    slug: "cuanto-cuesta-una-tienda-en-shopify",
+    title: "Cuánto cuesta una tienda en Shopify en Perú",
+    h1: "¿Cuánto cuesta una tienda en Shopify?",
+    description:
+      "Cuánto cuesta una tienda en Shopify en Perú: el plan mensual, el desarrollo, las comisiones y qué incluye, para que sepas cuánto invertir en tu ecommerce.",
+    excerpt:
+      "El plan mensual es solo una parte. Esto es lo que realmente compone el costo de una tienda Shopify.",
+    datePublished: "2026-06-19",
+    category: "Ecommerce",
+    readingMin: 5,
+    intro:
+      "El costo de una tienda en Shopify tiene varias partes: el plan mensual de la plataforma, el desarrollo y diseño, y las comisiones de pago. Aquí desglosamos cada una para que sepas en qué inviertes y evites sorpresas.",
+    sections: [
+      {
+        h2: "El plan mensual de Shopify",
+        body:
+          "Shopify cobra una mensualidad por usar su plataforma, con distintos niveles según el tamaño de tu operación. Es un costo recurrente y predecible que cubre el alojamiento, la seguridad y el mantenimiento de la plataforma.",
+      },
+      {
+        h2: "El desarrollo y diseño de la tienda",
+        body:
+          "Es la inversión en montar tu tienda: diseño a tu marca, carga de productos, configuración de pagos y envíos. Se cotiza según el alcance y se paga una vez (más mejoras futuras si las necesitas).",
+      },
+      {
+        h2: "Comisiones de pago",
+        bullets: [
+          "Las pasarelas (tarjeta, Yape, Plin) cobran una comisión por transacción.",
+          "Varía según el método y el proveedor que uses.",
+          "Conviene tenerla en cuenta al fijar tus precios.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Shopify conviene si recién empiezo?",
+        a: "Sí, si quieres lanzar rápido y sin preocuparte por el servidor. Si buscas evitar la mensualidad, WooCommerce puede ser mejor. Te recomendamos la opción correcta en la cotización.",
+      },
+      {
+        q: "¿Cómo sé cuánto me costaría a mí?",
+        a: "Cuéntanos tu proyecto y te enviamos una cotización a medida del desarrollo, sin compromiso, en menos de 24 horas.",
+      },
+    ],
+    related: [
+      { label: "Agencia Shopify Perú", href: "/tiendas-virtuales/shopify", desc: "Desarrollamos y migramos tu tienda Shopify." },
+      { label: "Shopify vs WooCommerce", href: "/blog/shopify-vs-woocommerce", desc: "Compara antes de decidir tu plataforma." },
+    ],
+  },
+
+  {
+    slug: "ventajas-de-woocommerce-para-negocios",
+    title: "Ventajas de WooCommerce para negocios en Perú",
+    h1: "Ventajas de WooCommerce para tu negocio",
+    description:
+      "Ventajas de WooCommerce para negocios en Perú: sin mensualidad de plataforma, control total sobre WordPress, escalable y con SEO potente para vender más.",
+    excerpt:
+      "Por qué muchos negocios eligen WooCommerce: control total, sin mensualidad de plataforma y listo para crecer.",
+    datePublished: "2026-06-19",
+    category: "Ecommerce",
+    readingMin: 4,
+    intro:
+      "WooCommerce convierte tu WordPress en una tienda virtual completa. Para muchos negocios en Perú es la opción ideal: control total, sin mensualidad de plataforma y con un SEO muy potente. Estas son sus principales ventajas.",
+    sections: [
+      {
+        h2: "Sin mensualidad de plataforma",
+        body:
+          "A diferencia de plataformas cerradas, WooCommerce no cobra mensualidad ni comisión por venta. Solo pagas tu hosting y dominio, costos bajos y bajo tu control.",
+      },
+      {
+        h2: "Control total y propiedad",
+        bullets: [
+          "Eres dueño de tu tienda, tu contenido y tus datos de clientes.",
+          "Eliges tu hosting y no dependes de las reglas de una plataforma.",
+          "Puedes ampliar la tienda sin límites con el tiempo.",
+        ],
+      },
+      {
+        h2: "SEO potente sobre WordPress",
+        body:
+          "Al vivir en WordPress, sumar un blog para atraer tráfico es natural. Eso convierte tu tienda en una máquina de captación, no solo en un catálogo.",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿WooCommerce es difícil de administrar?",
+        a: "No. Te entregamos la tienda con un panel ordenado y te capacitamos para gestionar productos, precios y pedidos sin saber programar.",
+      },
+    ],
+    related: [
+      { label: "Desarrollo WooCommerce Perú", href: "/tiendas-virtuales/woocommerce", desc: "Tu tienda sobre WordPress, 100% tuya." },
+      { label: "Shopify vs WooCommerce", href: "/blog/shopify-vs-woocommerce", desc: "Compara las dos plataformas líderes." },
+    ],
+  },
+
+  {
+    slug: "cuando-una-empresa-necesita-un-sistema-web",
+    title: "Cuándo una empresa necesita un sistema web a medida",
+    h1: "¿Cuándo una empresa necesita un sistema web?",
+    description:
+      "Señales de que tu empresa en Perú necesita un sistema web a medida: procesos manuales, errores, Excel saturado y áreas desconectadas. Cuándo conviene desarrollarlo.",
+    excerpt:
+      "Si reconoces estas señales, tu negocio probablemente ya necesita un sistema web a medida.",
+    datePublished: "2026-06-19",
+    category: "Software",
+    readingMin: 5,
+    intro:
+      "No toda empresa necesita un sistema a medida, pero hay señales claras de cuándo deja de ser un lujo y se vuelve necesario. Si tu operación ya no cabe en Excel o pierdes tiempo en tareas repetitivas, este artículo es para ti.",
+    sections: [
+      {
+        h2: "Señales de que ya lo necesitas",
+        bullets: [
+          "Llevas el negocio en varias hojas de Excel que nadie cuadra.",
+          "Cometes errores por procesos manuales (stock, precios, pedidos).",
+          "Repites tareas que podrían automatizarse.",
+          "Cada área tiene su propia información y nadie ve el todo.",
+          "Ningún software del mercado encaja con tu forma de trabajar.",
+        ],
+      },
+      {
+        h2: "Qué ganas con un sistema a medida",
+        body:
+          "Un sistema hecho para tu operación ordena la información, automatiza lo repetitivo y te da reportes para decidir. Lo que antes tomaba horas pasa a hacerse en minutos, con menos errores.",
+      },
+      {
+        h2: "No tienes que hacerlo todo de golpe",
+        body:
+          "Lo recomendable es empezar por lo que más te urge (inventario, ventas o clientes) e ir sumando módulos por etapas, según el sistema demuestra su valor.",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Un sistema a medida es solo para empresas grandes?",
+        a: "No. Muchos negocios medianos y en crecimiento lo necesitan justo cuando el Excel deja de alcanzar. Se puede empezar pequeño e ir creciendo.",
+      },
+    ],
+    related: [
+      { label: "Software a medida", href: "/desarrollo-de-software-a-medida", desc: "Sistemas que automatizan tu operación." },
+      { label: "Web, sistema y software: diferencias", href: "/blog/pagina-web-sistema-web-y-software-a-medida", desc: "Entiende qué necesitas exactamente." },
+    ],
+  },
+
+  {
+    slug: "como-controlar-inventario-en-una-tienda-online",
+    title: "Cómo controlar el inventario en una tienda online",
+    h1: "Cómo controlar el inventario en una tienda online",
+    description:
+      "Cómo controlar el inventario en una tienda online en Perú: evita vender sin stock, sincroniza con tu tienda virtual y mantén tu almacén siempre cuadrado.",
+    excerpt:
+      "Vender lo que no tienes ahuyenta clientes. Así se controla bien el stock de una tienda online.",
+    datePublished: "2026-06-19",
+    category: "Ecommerce",
+    readingMin: 5,
+    intro:
+      "Uno de los errores que más cuesta en ecommerce es vender un producto que ya no tienes en stock. Controlar bien el inventario de tu tienda online evita cancelaciones, reembolsos y clientes molestos. Aquí cómo hacerlo de forma ordenada.",
+    sections: [
+      {
+        h2: "Centraliza el stock en un solo lugar",
+        body:
+          "Si vendes en tienda física, online y por WhatsApp, el stock debe ser uno solo. Centralizarlo evita que vendas dos veces lo mismo o que tu web muestre productos agotados.",
+      },
+      {
+        h2: "Sincroniza la tienda con tu inventario",
+        bullets: [
+          "Que cada venta descuente el stock automáticamente.",
+          "Que un producto agotado se marque o se oculte en la tienda.",
+          "Alertas cuando un producto está por acabarse.",
+        ],
+      },
+      {
+        h2: "Cuándo conviene un sistema de inventario",
+        body:
+          "Si manejas muchos productos, varias sedes o vendes por varios canales, un sistema de inventario conectado a tu tienda te ahorra descuadres y horas de trabajo manual.",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Puedo conectar mi inventario con mi tienda virtual?",
+        a: "Sí. Integramos tu sistema de inventario con tu tienda online para que el stock se descuente automáticamente con cada venta.",
+      },
+    ],
+    related: [
+      { label: "Sistema de inventario", href: "/sistemas/inventario", desc: "Controla tu stock en tiempo real y multi-almacén." },
+      { label: "Desarrollo de tiendas virtuales", href: "/tiendas-virtuales", desc: "Tiendas con control de stock integrado." },
+    ],
+  },
+
+  {
+    slug: "tienda-virtual-para-vender-ropa",
+    title: "Tienda virtual para vender ropa en Perú: guía para empezar",
+    h1: "Tienda virtual para vender ropa: cómo empezar",
+    description:
+      "Cómo crear una tienda virtual para vender ropa en Perú: tallas y colores, fotos, pagos con Yape y Plin, y todo lo que necesita tu tienda de moda para vender.",
+    excerpt:
+      "Vender ropa online tiene sus reglas: tallas, fotos y devoluciones. Así se arma una tienda de moda que vende.",
+    datePublished: "2026-06-19",
+    category: "Ecommerce",
+    readingMin: 5,
+    intro:
+      "Vender ropa online en Perú funciona muy bien, pero tiene detalles propios: variantes de talla y color, buenas fotos y una política de cambios clara. Esta guía te muestra qué necesita una tienda virtual de ropa para vender desde el primer día.",
+    sections: [
+      {
+        h2: "Tallas, colores y variantes",
+        body:
+          "Una tienda de ropa necesita manejar variantes: cada prenda en sus tallas y colores, con stock independiente. Así el cliente elige exacto lo que quiere y tú controlas qué se vende más.",
+      },
+      {
+        h2: "Fotos que venden",
+        bullets: [
+          "Imágenes claras de cada prenda y color.",
+          "Fotos de la prenda puesta, no solo en plano.",
+          "Tabla de tallas para reducir dudas y cambios.",
+        ],
+      },
+      {
+        h2: "Pagos y envíos pensados para moda",
+        body:
+          "Acepta Yape, Plin y tarjeta para no perder ventas, y define envíos y una política de cambios clara. En ropa, la confianza en el cambio o devolución es lo que cierra la compra.",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿La tienda maneja tallas y colores con stock por separado?",
+        a: "Sí. Configuramos variantes (talla, color) con su propio stock, para que controles cada combinación y no vendas lo agotado.",
+      },
+      {
+        q: "¿Sirve para otros rubros además de ropa?",
+        a: "Sí. El mismo enfoque aplica a calzado, accesorios y cualquier catálogo con variantes. Adaptamos la tienda a tu rubro.",
+      },
+    ],
+    related: [
+      { label: "Desarrollo de tiendas virtuales", href: "/tiendas-virtuales", desc: "Tu tienda de moda lista para vender." },
+      { label: "Cómo crear una tienda virtual", href: "/blog/como-crear-una-tienda-virtual-en-peru", desc: "La guía paso a paso para empezar." },
+    ],
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {

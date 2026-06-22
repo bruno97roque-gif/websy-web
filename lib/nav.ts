@@ -11,6 +11,12 @@ export const SERVICE_LINKS: NavLink[] = [
   { label: "Tiendas WooCommerce", href: "/tiendas-virtuales/woocommerce" },
   { label: "Diseño de Páginas Web", href: "/diseno-de-paginas-web" },
   { label: "Software a Medida", href: "/desarrollo-de-software-a-medida" },
+  { label: "Sistema de Inventario", href: "/sistemas/inventario" },
+  { label: "Ventas y Facturación", href: "/sistemas/ventas-y-facturacion" },
+  { label: "ERP y CRM", href: "/sistemas/gestion-erp-crm" },
+  { label: "Posicionamiento SEO", href: "/posicionamiento-seo" },
+  { label: "Branding y UX/UI", href: "/branding-y-diseno-ux-ui" },
+  { label: "Mantenimiento Web", href: "/mantenimiento-y-soporte-web" },
 ];
 
 /** Navegación principal (menú fullscreen). Etiquetas cortas: el menú usa tipografía
@@ -25,12 +31,18 @@ export const MAIN_LINKS: NavLink[] = [
   { label: "Contacto", href: "/contacto" },
 ];
 
-/** URLs nuevas de esta ola, para el sitemap. */
+/** URLs de las landings de servicio, para el sitemap. */
 export const SERVICE_SITEMAP: { path: string; priority: number }[] = [
   { path: "/tiendas-virtuales", priority: 0.9 },
   { path: "/tiendas-virtuales/shopify", priority: 0.7 },
   { path: "/tiendas-virtuales/woocommerce", priority: 0.7 },
   { path: "/diseno-de-paginas-web", priority: 0.9 },
   { path: "/desarrollo-de-software-a-medida", priority: 0.8 },
+  { path: "/sistemas/inventario", priority: 0.7 },
+  { path: "/sistemas/ventas-y-facturacion", priority: 0.7 },
+  { path: "/sistemas/gestion-erp-crm", priority: 0.7 },
+  { path: "/posicionamiento-seo", priority: 0.7 },
+  { path: "/branding-y-diseno-ux-ui", priority: 0.7 },
+  { path: "/mantenimiento-y-soporte-web", priority: 0.7 },
   { path: "/cotizacion", priority: 0.8 },
 ];
