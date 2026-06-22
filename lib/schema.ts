@@ -107,6 +107,45 @@ export function servicesSchema() {
   };
 }
 
+/** Service individual de una landing (con la Organization como proveedor). */
+export function serviceSchema({
+  name,
+  description,
+  slug,
+}: {
+  name: string;
+  description: string;
+  slug: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name,
+    description,
+    serviceType: name,
+    url: `${SITE_URL}${slug}`,
+    provider: { "@id": ORG_ID },
+    areaServed: { "@type": "Country", name: "Perú" },
+    availableChannel: {
+      "@type": "ServiceChannel",
+      serviceUrl: `${SITE_URL}/cotizacion`,
+    },
+  };
+}
+
+/** FAQPage a partir de pares pregunta/respuesta — captura el long-tail e IA. */
+export function faqPageSchema(faqs: { q: string; a: string }[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  };
+}
+
 export function aboutPageSchema() {
   return {
     "@context": "https://schema.org",
