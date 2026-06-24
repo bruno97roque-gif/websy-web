@@ -104,6 +104,11 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  // Verificación de Google Search Console (propiedad tipo "Prefijo de URL").
+  // Emite <meta name="google-site-verification" content="..."> en el <head>.
+  verification: {
+    google: "-VDo8z1Cbe6saUG8q9ic-GPm5h9TKRqWsd5xLgrFyk8",
+  },
 };
 
 /* ─── Layout ─── */
