@@ -30,15 +30,16 @@ const securityHeaders = [
     value: [
       "default-src 'self'",
       // Scripts: propio dominio + inline necesario para Next.js hydration
-      "script-src 'self' 'unsafe-inline' 'unsafe-eval'",
+      // + Google Tag Manager (carga de gtag.js para Google Analytics GA4)
+      "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com",
       // Estilos: propio dominio + inline (Tailwind CSS-in-JS)
       "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
       // Fuentes Google Fonts
       "font-src 'self' https://fonts.gstatic.com",
-      // Imágenes: propio dominio + data URIs
-      "img-src 'self' data: blob:",
-      // Conexiones: propio dominio + APIs externas usadas
-      "connect-src 'self' https://api.resend.com https://script.google.com",
+      // Imágenes: propio dominio + data URIs + beacons de Google Analytics
+      "img-src 'self' data: blob: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com",
+      // Conexiones: propio dominio + APIs externas + envío de hits a Google Analytics GA4
+      "connect-src 'self' https://api.resend.com https://script.google.com https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com",
       // Frames: ninguno (no embebemos iframes)
       "frame-src 'none'",
       // Objects: ninguno
