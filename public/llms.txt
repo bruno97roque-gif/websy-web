@@ -1,0 +1,36 @@
+# Websy — Agencia de desarrollo web y software en Lima, Perú
+
+> Websy es una agencia peruana de tecnología que desarrolla páginas web, tiendas virtuales (Shopify y WooCommerce), software y sistemas a medida, branding y SEO para empresas y emprendedores en Lima y todo el Perú. Las tiendas se entregan autoadministrables, con pasarelas de pago locales (Yape, Plin, Niubiz, Izipay) y acompañamiento después del lanzamiento.
+
+## Servicios
+- [Tiendas virtuales / ecommerce](https://websy.com.pe/tiendas-virtuales): desarrollo de tiendas online autoadministrables con pasarela de pago (Yape, Plin, Niubiz, Izipay) y control de stock.
+- [Tiendas Shopify](https://websy.com.pe/tiendas-virtuales/shopify): tiendas sobre Shopify, listas para vender rápido con pagos locales.
+- [Tiendas WooCommerce](https://websy.com.pe/tiendas-virtuales/woocommerce): tiendas sobre WordPress, sin mensualidad de plataforma y 100% del cliente.
+- [Diseño de páginas web](https://websy.com.pe/diseno-de-paginas-web): páginas web profesionales, responsive y optimizadas para captar clientes.
+- [Software a medida](https://websy.com.pe/desarrollo-de-software-a-medida): sistemas y plataformas hechos a la medida de los procesos del negocio.
+- [Cotización](https://websy.com.pe/cotizacion): solicitud de propuesta a medida, respuesta en menos de 24 horas.
+
+## Blog — guías de ecommerce, web y software en Perú
+- [Cuánto cuesta una tienda virtual en Perú](https://websy.com.pe/blog/cuanto-cuesta-una-tienda-virtual-en-peru)
+- [Cómo crear una tienda virtual en Perú](https://websy.com.pe/blog/como-crear-una-tienda-virtual-en-peru)
+- [Shopify vs WooCommerce](https://websy.com.pe/blog/shopify-vs-woocommerce)
+- [Pasarelas de pago para ecommerce en Perú](https://websy.com.pe/blog/pasarelas-de-pago-para-ecommerce-en-peru)
+- [Cómo aceptar pagos con tarjeta en tu web en Perú](https://websy.com.pe/blog/como-aceptar-pagos-con-tarjeta-en-tu-web-peru)
+- [Facturación electrónica SUNAT para tu tienda online](https://websy.com.pe/blog/facturacion-electronica-sunat-para-tu-tienda-online)
+- [Cuánto cuesta una página web en Perú](https://websy.com.pe/blog/cuanto-cuesta-una-pagina-web-en-peru)
+- [Cuánto tiempo toma hacer una página web](https://websy.com.pe/blog/cuanto-tiempo-toma-hacer-una-pagina-web)
+- [Diferencia entre página web y landing page](https://websy.com.pe/blog/diferencia-entre-pagina-web-y-landing-page)
+- [Cómo elegir una agencia de desarrollo web en Perú](https://websy.com.pe/blog/como-elegir-una-agencia-de-desarrollo-web-en-peru)
+- [Cuánto cuesta una aplicación móvil en Perú](https://websy.com.pe/blog/cuanto-cuesta-una-aplicacion-movil-en-peru)
+- [Software a medida vs software enlatado](https://websy.com.pe/blog/software-a-medida-vs-software-enlatado)
+- [Cuándo una empresa necesita un sistema web](https://websy.com.pe/blog/cuando-una-empresa-necesita-un-sistema-web)
+- [Cómo controlar inventario en una tienda online](https://websy.com.pe/blog/como-controlar-inventario-en-una-tienda-online)
+- [Cómo posicionar una tienda virtual en Google](https://websy.com.pe/blog/como-posicionar-una-tienda-virtual-en-google)
+- [Cómo tener presencia online para tu negocio en Perú](https://websy.com.pe/blog/como-tener-presencia-online-para-tu-negocio-en-peru)
+- [Google Mi Negocio para empresas en Perú](https://websy.com.pe/blog/google-mi-negocio-para-empresas-en-peru)
+
+## Contacto
+- Web: https://websy.com.pe
+- Email: ventas@websy.com.pe
+- WhatsApp / teléfono: +51 940 549 322
+- Ubicación: Lima, Perú (atención a todo el Perú)
