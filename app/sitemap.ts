@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { SITE_URL } from "@/lib/seo";
 import { SERVICE_SITEMAP } from "@/lib/nav";
+import { BLOG_POSTS } from "@/lib/blog";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();
@@ -10,6 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/servicios`, lastModified, changeFrequency: "monthly", priority: 0.7 },
     { url: `${SITE_URL}/nosotros`, lastModified, changeFrequency: "monthly", priority: 0.6 },
     { url: `${SITE_URL}/contacto`, lastModified, changeFrequency: "monthly", priority: 0.6 },
+    { url: `${SITE_URL}/blog`, lastModified, changeFrequency: "weekly", priority: 0.7 },
     { url: `${SITE_URL}/terminos`, lastModified, changeFrequency: "yearly", priority: 0.3 },
     { url: `${SITE_URL}/politicas-de-privacidad`, lastModified, changeFrequency: "yearly", priority: 0.3 },
   ];
@@ -22,5 +24,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: s.priority,
   }));
 
-  return [...fixed, ...services];
+  // Artículos del blog — añadidos automáticamente desde lib/blog.
+  const posts: MetadataRoute.Sitemap = BLOG_POSTS.map((p) => ({
+    url: `${SITE_URL}/blog/${p.slug}`,
+    lastModified: new Date(p.dateModified ?? p.datePublished),
+    changeFrequency: "monthly",
+    priority: 0.6,
+  }));
+
+  return [...fixed, ...services, ...posts];
 }

@@ -59,6 +59,11 @@ export default function SoftwareAMedidaPage() {
         { label: "Tiendas virtuales / ecommerce", href: "/tiendas-virtuales", desc: "¿Tu sistema necesita vender online? Súmale una tienda virtual." },
         { label: "Diseño de páginas web", href: "/diseno-de-paginas-web", desc: "La cara pública de tu negocio, optimizada para captar clientes." },
       ]}
+      articles={[
+        { label: "¿Cuándo una empresa necesita un sistema web?", href: "/blog/cuando-una-empresa-necesita-un-sistema-web", desc: "Señales de que tu operación ya pide un software a medida." },
+        { label: "Página web, sistema web y software a medida", href: "/blog/pagina-web-sistema-web-y-software-a-medida", desc: "Diferencias claras para elegir lo que de verdad necesitas." },
+        { label: "Cómo controlar inventario en una tienda online", href: "/blog/como-controlar-inventario-en-una-tienda-online", desc: "Integra stock y ventas para dejar de cuadrar a mano." },
+      ]}
       faqs={[
         {
           q: "¿Cuánto cuesta desarrollar un software a medida?",
