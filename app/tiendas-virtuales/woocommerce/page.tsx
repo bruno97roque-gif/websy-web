@@ -60,6 +60,10 @@ export default function WooCommercePage() {
         { label: "Desarrollo de tiendas virtuales", href: "/tiendas-virtuales", desc: "Mira todo lo que incluye nuestro servicio de ecommerce." },
         { label: "Tiendas Shopify", href: "/tiendas-virtuales/shopify", desc: "¿Quieres lanzar rápido sin gestionar hosting? Compara con Shopify." },
       ]}
+      articles={[
+        { label: "Ventajas de WooCommerce para negocios", href: "/blog/ventajas-de-woocommerce-para-negocios", desc: "Por qué WooCommerce te da control total y costos más flexibles." },
+        { label: "Shopify vs WooCommerce", href: "/blog/shopify-vs-woocommerce", desc: "Cuál conviene según tu negocio, presupuesto y forma de vender." },
+      ]}
       faqs={[
         {
           q: "¿WooCommerce tiene mensualidad?",

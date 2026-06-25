@@ -27,6 +27,7 @@ export type ServiceLandingProps = {
   stats?: LandingStat[];
   sections: LandingSection[];
   related?: LandingRelated[]; // enlazado en silo (pilar ↔ hijas)
+  articles?: LandingRelated[]; // enlazado al blog (página de dinero → artículos)
   faqs: LandingFaq[];
   serviceName: string;
   serviceDescription: string;
@@ -59,6 +60,7 @@ export default function ServiceLanding({
   stats,
   sections,
   related,
+  articles,
   faqs,
   serviceName,
   serviceDescription,
@@ -192,6 +194,31 @@ export default function ServiceLanding({
                     {r.label} <span style={{ color: ORANGE }}>→</span>
                   </span>
                   <span style={{ display: "block", fontFamily: fp, fontSize: 14.5, color: "#5a5365", lineHeight: 1.55 }}>{r.desc}</span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* ── ARTÍCULOS DEL BLOG (página de dinero → blog) ── */}
+      {articles && articles.length > 0 && (
+        <section style={{ padding: "28px 24px 8px" }}>
+          <div style={{ maxWidth: 860, margin: "0 auto" }}>
+            <p style={{ fontFamily: fp, fontSize: 12, fontWeight: 600, textTransform: "uppercase", letterSpacing: "3px", color: "#d2760f", marginBottom: 14 }}>
+              Sigue aprendiendo en el blog
+            </p>
+            <div style={{ display: "grid", gap: 14, gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))" }}>
+              {articles.map((a) => (
+                <Link
+                  key={a.href}
+                  href={a.href}
+                  style={{ display: "block", background: "#fff", border: "1px solid #ece8f2", borderRadius: 16, padding: "20px 22px", textDecoration: "none", boxShadow: "0 4px 30px rgba(41,18,49,0.05)" }}
+                >
+                  <span style={{ display: "block", fontFamily: fm, fontSize: 16, fontWeight: 700, color: PURPLE, marginBottom: 6 }}>
+                    {a.label} <span style={{ color: ORANGE }}>→</span>
+                  </span>
+                  <span style={{ display: "block", fontFamily: fp, fontSize: 14.5, color: "#5a5365", lineHeight: 1.55 }}>{a.desc}</span>
                 </Link>
               ))}
             </div>

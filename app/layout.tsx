@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import Script from "next/script";
 import { Montserrat, Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
@@ -103,6 +104,11 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  // Verificación de Google Search Console (propiedad tipo "Prefijo de URL").
+  // Emite <meta name="google-site-verification" content="..."> en el <head>.
+  verification: {
+    google: "-VDo8z1Cbe6saUG8q9ic-GPm5h9TKRqWsd5xLgrFyk8",
+  },
 };
 
 /* ─── Layout ─── */
@@ -148,6 +154,22 @@ export default function RootLayout({
         <Analytics />
         {/* Vercel Speed Insights — mide Core Web Vitals reales */}
         <SpeedInsights />
+
+        {/* Google Analytics (GA4 / gtag.js) — ID G-KTWZ5KEZR7.
+            Requiere googletagmanager.com en script-src y google-analytics.com
+            en connect-src/img-src de la CSP (ya añadidos en next.config.ts). */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-KTWZ5KEZR7"
+          strategy="afterInteractive"
+        />
+        <Script id="ga4-gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-KTWZ5KEZR7');
+          `}
+        </Script>
       </body>
     </html>
   );

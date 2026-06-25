@@ -87,6 +87,11 @@ export default function TiendasVirtualesPage() {
         { label: "Tiendas WooCommerce", href: "/tiendas-virtuales/woocommerce", desc: "Tu tienda sobre WordPress, sin mensualidad de plataforma y 100% tuya." },
         { label: "Páginas web profesionales", href: "/diseno-de-paginas-web", desc: "¿Aún no vendes online? Empieza con una web que capte clientes." },
       ]}
+      articles={[
+        { label: "¿Cuánto cuesta una tienda virtual en Perú?", href: "/blog/cuanto-cuesta-una-tienda-virtual-en-peru", desc: "Qué define el precio de un ecommerce y cómo cotizar sin sorpresas." },
+        { label: "Cómo crear una tienda virtual en Perú", href: "/blog/como-crear-una-tienda-virtual-en-peru", desc: "Guía paso a paso: plataforma, pagos, productos y lanzamiento." },
+        { label: "Cómo posicionar tu tienda en Google", href: "/blog/como-posicionar-una-tienda-virtual-en-google", desc: "SEO para ecommerce: que tus clientes te encuentren y compren." },
+      ]}
       faqs={[
         {
           q: "¿Cuánto cuesta una tienda virtual en Perú?",

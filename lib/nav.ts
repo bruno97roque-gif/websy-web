@@ -20,6 +20,7 @@ export const MAIN_LINKS: NavLink[] = [
   { label: "Tiendas", href: "/tiendas-virtuales" },
   { label: "Web", href: "/diseno-de-paginas-web" },
   { label: "Software", href: "/desarrollo-de-software-a-medida" },
+  { label: "Blog", href: "/blog" },
   { label: "Nosotros", href: "/nosotros" },
   { label: "Contacto", href: "/contacto" },
 ];
