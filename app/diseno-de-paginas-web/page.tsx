@@ -75,6 +75,10 @@ export default function DisenoPaginasWebPage() {
         { label: "Tiendas virtuales / ecommerce", href: "/tiendas-virtuales", desc: "¿Quieres vender online? Convierte tu web en una tienda virtual." },
         { label: "Software a medida", href: "/desarrollo-de-software-a-medida", desc: "Automatiza tu operación con un sistema web hecho para ti." },
       ]}
+      articles={[
+        { label: "¿Cuánto cuesta una página web en Perú?", href: "/blog/cuanto-cuesta-una-pagina-web-en-peru", desc: "Qué define el precio de una web profesional y qué debe incluir." },
+        { label: "¿Página web o tienda virtual?", href: "/blog/pagina-web-o-tienda-virtual", desc: "Cuál necesita tu negocio según cómo y qué quieres vender." },
+      ]}
       faqs={[
         {
           q: "¿Cuánto cuesta una página web para empresa en Perú?",

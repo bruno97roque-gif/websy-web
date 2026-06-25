@@ -60,6 +60,10 @@ export default function ShopifyPage() {
         { label: "Desarrollo de tiendas virtuales", href: "/tiendas-virtuales", desc: "Mira todo lo que incluye nuestro servicio de ecommerce." },
         { label: "Tiendas WooCommerce", href: "/tiendas-virtuales/woocommerce", desc: "¿Prefieres WordPress sin mensualidad? Compara la otra opción." },
       ]}
+      articles={[
+        { label: "¿Cuánto cuesta una tienda en Shopify?", href: "/blog/cuanto-cuesta-una-tienda-en-shopify", desc: "Planes, costos reales y qué incluye montar tu tienda en Shopify." },
+        { label: "Shopify vs WooCommerce", href: "/blog/shopify-vs-woocommerce", desc: "Cuál conviene según tu negocio, presupuesto y forma de vender." },
+      ]}
       faqs={[
         {
           q: "¿Cuánto cuesta una tienda en Shopify?",
