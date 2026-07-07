@@ -127,7 +127,9 @@ export default function ClientsSection() {
               className="trust-item flex cursor-default flex-col items-center rounded-[16px] border border-[#F18C1B] bg-[#f8f7fa] px-6 py-9 text-center transition-all hover:shadow-[0_12px_40px_rgba(241,140,27,.1)]"
             >
               <div className="font-montserrat text-[52px] font-bold leading-none text-[#291231]">
-                <span className="cnt" data-t={s.num}>0</span>
+                {/* Valor real renderizado en SSR (crawlers/IA/no-JS ven la cifra,
+                    no "0"). CountUp lo re-anima 0→N solo si el JS corre. */}
+                <span className="cnt" data-t={s.num}>{s.num}</span>
                 <span className="text-[28px] text-[#F18C1B]">{s.suf}</span>
               </div>
               <p className="font-poppins mt-2 text-[14px] text-[#6b6478]">{s.label}</p>
