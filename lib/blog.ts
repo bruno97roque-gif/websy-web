@@ -2200,6 +2200,222 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
   },
+
+  {
+    slug: "pagina-web-para-clinicas-y-consultorios-medicos",
+    title: "Página web para clínicas y consultorios médicos en Perú",
+    h1: "Página web para clínicas y consultorios médicos",
+    description:
+      "Página web para clínicas y consultorios en Perú: reserva de citas, información de especialidades, confianza al paciente y SEO local para aparecer en Google.",
+    excerpt:
+      "Los pacientes buscan y eligen su médico en Google. Así debe ser la web de una clínica o consultorio.",
+    datePublished: "2026-06-26",
+    category: "Diseño web",
+    readingMin: 6,
+    intro:
+      "Antes de pedir una cita, el paciente busca en Google, lee y compara. Una página web profesional para tu clínica o consultorio transmite confianza, muestra tus especialidades y permite reservar sin llamar. Aquí verás qué necesita para llenar tu agenda.",
+    sections: [
+      {
+        h2: "Por qué una clínica necesita web propia",
+        body:
+          "Las redes sociales ayudan, pero no reemplazan una web: es donde el paciente confirma que eres serio, ve tus especialidades, horarios y ubicación, y decide contactarte. Además, es lo que Google muestra cuando alguien busca tu especialidad en tu ciudad.",
+      },
+      {
+        h2: "Qué debe tener la web de un consultorio",
+        body:
+          "Todo pensado para dar confianza y facilitar la cita:",
+        bullets: [
+          "Reserva de citas o contacto directo por WhatsApp.",
+          "Especialidades y servicios explicados con claridad.",
+          "Perfil de los profesionales, con su formación y experiencia.",
+          "Ubicación con Google Maps, horarios y medios de pago.",
+          "Diseño sobrio y rápido, que funcione bien en el celular.",
+        ],
+      },
+      {
+        h2: "Confianza: el factor que más pesa en salud",
+        body:
+          "En salud, la confianza lo es todo. Fotos reales del local y del equipo, testimonios, certificaciones y textos claros marcan la diferencia entre que el paciente te escriba o siga buscando. Lo cuidamos en cada [página web](/diseno-de-paginas-web) que desarrollamos para el sector.",
+      },
+      {
+        h2: "SEO local: aparece cuando buscan tu especialidad",
+        body:
+          "La mayoría de pacientes busca dentista cerca, pediatra en su distrito o su especialidad en Lima. Con una web optimizada y tu ficha de Google al día apareces en esas búsquedas. Revisa nuestra guía para [aparecer en Google](/blog/como-aparecer-en-google-con-tu-pagina-web) y gana pacientes desde el buscador.",
+      },
+      {
+        h2: "Cuánto cuesta y cómo empezar",
+        body:
+          "Depende de si necesitas solo presencia y contacto o también reserva de citas en línea. Te preparamos una cotización a medida y sin costo; puedes ver qué incluye cada opción en [nuestra página de precios](/precios).",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿La web puede tener reserva de citas en línea?",
+        a: "Sí. Podemos integrar reserva de citas o, si prefieres algo más simple, contacto directo por WhatsApp con el motivo de consulta ya cargado.",
+      },
+      {
+        q: "¿Sirve para varias especialidades o sedes?",
+        a: "Sí. Estructuramos la web por especialidades y sedes, cada una con su información, para que el paciente encuentre rápido lo que busca.",
+      },
+      {
+        q: "¿Puedo actualizar horarios y precios yo mismo?",
+        a: "Sí. La entregamos administrable y te capacitamos para editar horarios, servicios y contenido cuando lo necesites.",
+      },
+      {
+        q: "¿Cuánto cuesta la página web de un consultorio?",
+        a: "Depende del alcance. Te enviamos una cotización clara y sin costo en menos de 24 horas; también puedes revisar qué incluye cada servicio en nuestra página de precios.",
+      },
+    ],
+    related: [
+      { label: "Diseño de páginas web para negocios", href: "/diseno-de-paginas-web", desc: "Webs que transmiten confianza y captan pacientes." },
+      { label: "Cómo aparecer en Google", href: "/blog/como-aparecer-en-google-con-tu-pagina-web", desc: "SEO local para que te encuentren en tu ciudad." },
+      { label: "Ver precios y cotizar", href: "/precios", desc: "Qué incluye la web de una clínica o consultorio." },
+    ],
+  },
+
+  {
+    slug: "pagina-web-para-estudios-de-abogados",
+    title: "Página web para estudios de abogados en Perú",
+    h1: "Página web para estudios y abogados independientes",
+    description:
+      "Página web para estudios de abogados en Perú: áreas de práctica, confianza profesional, captación de consultas y SEO local para aparecer en Google.",
+    excerpt:
+      "Un cliente con un problema legal busca y elige rápido. Tu web debe transmitir autoridad y facilitar el contacto.",
+    datePublished: "2026-06-28",
+    category: "Diseño web",
+    readingMin: 6,
+    intro:
+      "Cuando alguien tiene un problema legal, busca en Google y contacta al abogado que le da más confianza y responde primero. Una página web profesional posiciona tu estudio como autoridad, explica tus áreas de práctica y convierte visitas en consultas. Esto es lo que necesita.",
+    sections: [
+      {
+        h2: "Por qué un abogado necesita página web",
+        body:
+          "La reputación se construye también en Google. Una web propia muestra tu experiencia, tus áreas de práctica y casos de éxito, y separa a un profesional serio de quien solo tiene un perfil de redes. Es donde el cliente decide confiar y escribir.",
+      },
+      {
+        h2: "Qué debe incluir la web de un estudio",
+        body:
+          "Enfocada en autoridad y en captar la consulta:",
+        bullets: [
+          "Áreas de práctica bien explicadas (laboral, familia, penal, corporativo, etc.).",
+          "Perfil del abogado o del equipo, con formación y trayectoria.",
+          "Formulario de consulta y WhatsApp para contacto inmediato.",
+          "Contenido que resuelva dudas frecuentes y demuestre conocimiento.",
+          "Diseño serio, rápido y perfecto en el celular.",
+        ],
+      },
+      {
+        h2: "Contenido que capta clientes",
+        body:
+          "Responder en tu web las dudas legales más comunes (qué hacer ante un despido, cómo iniciar un trámite) atrae exactamente a quien necesita tu ayuda y te posiciona como experto. Es la misma lógica que explicamos en cómo [aparecer en Google con tu página web](/blog/como-aparecer-en-google-con-tu-pagina-web).",
+      },
+      {
+        h2: "SEO local para abogados",
+        body:
+          "Muchos buscan abogado laboral en Lima o abogado de familia cerca. Una [página web optimizada](/diseno-de-paginas-web) y tu ficha de Google te ponen frente a esos clientes en el momento justo, cuando ya buscan contratar.",
+      },
+      {
+        h2: "Cuánto cuesta y cómo empezar",
+        body:
+          "Según tengas un abogado independiente o un estudio con varias áreas, el alcance cambia. Te damos una cotización clara y sin costo; mira qué incluye cada servicio en [nuestros precios](/precios).",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿La web sirve para captar consultas reales?",
+        a: "Sí. La diseñamos para convertir: áreas claras, prueba de experiencia y un contacto directo por formulario y WhatsApp para que la consulta llegue de inmediato.",
+      },
+      {
+        q: "¿Puedo mostrar mis áreas de práctica por separado?",
+        a: "Sí. Creamos una página por área de práctica, lo que además ayuda a posicionar cada una en Google.",
+      },
+      {
+        q: "¿Necesito un blog legal?",
+        a: "No es obligatorio, pero ayuda mucho: responder dudas legales frecuentes atrae clientes y te posiciona como autoridad en tu especialidad.",
+      },
+      {
+        q: "¿Cuánto cuesta la web de un estudio de abogados?",
+        a: "Depende del número de áreas y funciones. Te enviamos una cotización a medida y sin costo en menos de 24 horas.",
+      },
+    ],
+    related: [
+      { label: "Diseño de páginas web profesionales", href: "/diseno-de-paginas-web", desc: "Webs que proyectan autoridad y captan consultas." },
+      { label: "Cómo aparecer en Google", href: "/blog/como-aparecer-en-google-con-tu-pagina-web", desc: "SEO para que te encuentren clientes con intención." },
+      { label: "Ver precios y cotizar", href: "/precios", desc: "Qué incluye la web de un estudio de abogados." },
+    ],
+  },
+
+  {
+    slug: "pagina-web-para-inmobiliarias-y-constructoras",
+    title: "Página web para inmobiliarias y constructoras en Perú",
+    h1: "Página web para inmobiliarias y constructoras",
+    description:
+      "Página web para inmobiliarias y constructoras en Perú: catálogo de proyectos y propiedades, captación de leads, WhatsApp y SEO local para aparecer en Google.",
+    excerpt:
+      "Vender un inmueble empieza en Google. Tu web debe mostrar proyectos y capturar leads calificados.",
+    datePublished: "2026-07-01",
+    category: "Diseño web",
+    readingMin: 7,
+    intro:
+      "El comprador de un inmueble investiga en internet mucho antes de visitar. Una página web profesional para tu inmobiliaria o constructora muestra tus proyectos y propiedades, genera confianza y captura leads calificados que tu equipo puede cerrar. Así se arma.",
+    sections: [
+      {
+        h2: "Por qué una inmobiliaria necesita web propia",
+        body:
+          "Los portales inmobiliarios te dan visibilidad pero cobran por aviso y comparten tu lead con la competencia. Una web propia es tu vitrina completa: muestra todos tus proyectos, capta el lead directo y lo lleva a tu equipo, sin intermediarios.",
+      },
+      {
+        h2: "Qué debe tener la web de una constructora",
+        body:
+          "Pensada para mostrar y para captar:",
+        bullets: [
+          "Catálogo de proyectos y propiedades con fotos, planos y ubicación.",
+          "Ficha por proyecto con precios referenciales y estado (preventa, entrega).",
+          "Formulario de interés y WhatsApp por cada propiedad.",
+          "Sección de la empresa: trayectoria y proyectos entregados (confianza).",
+          "Carga rápida y versión móvil impecable, donde más se navega.",
+        ],
+      },
+      {
+        h2: "Captura leads calificados, no solo visitas",
+        body:
+          "Cada proyecto debe tener su propio botón de contacto con el nombre del inmueble ya cargado, para que tu equipo sepa qué le interesa a cada prospecto. Si manejas muchos leads, tu web puede conectarse con un [sistema a medida o CRM](/desarrollo-de-software-a-medida) para no perder ninguno.",
+      },
+      {
+        h2: "SEO local: aparece por proyecto y por zona",
+        body:
+          "La gente busca departamentos en un distrito específico o proyectos en su ciudad. Con una [web optimizada](/diseno-de-paginas-web) y una página por proyecto y por zona, apareces en esas búsquedas. Nuestra guía para [aparecer en Google](/blog/como-aparecer-en-google-con-tu-pagina-web) aplica igual al rubro inmobiliario.",
+      },
+      {
+        h2: "Cuánto cuesta y cómo empezar",
+        body:
+          "Depende de cuántos proyectos manejes y si necesitas integración con CRM. Te preparamos una cotización a medida y sin costo; revisa qué incluye cada opción en [nuestra página de precios](/precios).",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Puedo cargar y actualizar los proyectos yo mismo?",
+        a: "Sí. La entregamos administrable para que agregues proyectos, propiedades, fotos y estados (preventa, entrega) cuando quieras.",
+      },
+      {
+        q: "¿La web se conecta con un CRM para gestionar leads?",
+        a: "Sí. Podemos integrar tu web con un CRM o un sistema a medida para que cada lead llegue ordenado a tu equipo de ventas.",
+      },
+      {
+        q: "¿Sirve para captar sin depender de los portales?",
+        a: "Sí. La web propia capta leads directos, sin comisión y sin compartirlos con la competencia. Muchos usan ambos: portales para alcance y web propia para captar en serio.",
+      },
+      {
+        q: "¿Cuánto cuesta la web de una inmobiliaria?",
+        a: "Depende del número de proyectos y de las integraciones. Te enviamos una cotización clara y sin costo en menos de 24 horas.",
+      },
+    ],
+    related: [
+      { label: "Diseño de páginas web profesionales", href: "/diseno-de-paginas-web", desc: "Vitrina de proyectos que capta leads calificados." },
+      { label: "Software y CRM a medida", href: "/desarrollo-de-software-a-medida", desc: "Gestiona tus leads y propiedades sin perder ninguno." },
+      { label: "Ver precios y cotizar", href: "/precios", desc: "Qué incluye la web de una inmobiliaria o constructora." },
+    ],
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {

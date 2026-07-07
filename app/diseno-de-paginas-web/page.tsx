@@ -74,10 +74,12 @@ export default function DisenoPaginasWebPage() {
       related={[
         { label: "Tiendas virtuales / ecommerce", href: "/tiendas-virtuales", desc: "¿Quieres vender online? Convierte tu web en una tienda virtual." },
         { label: "Software a medida", href: "/desarrollo-de-software-a-medida", desc: "Automatiza tu operación con un sistema web hecho para ti." },
+        { label: "Precios y cotización", href: "/precios", desc: "Qué define el precio de tu web y qué incluye cada servicio." },
       ]}
       articles={[
         { label: "¿Cuánto cuesta una página web en Perú?", href: "/blog/cuanto-cuesta-una-pagina-web-en-peru", desc: "Qué define el precio de una web profesional y qué debe incluir." },
-        { label: "¿Página web o tienda virtual?", href: "/blog/pagina-web-o-tienda-virtual", desc: "Cuál necesita tu negocio según cómo y qué quieres vender." },
+        { label: "Cómo aparecer en Google con tu página web", href: "/blog/como-aparecer-en-google-con-tu-pagina-web", desc: "Guía práctica de SEO para posicionar tu web en Perú." },
+        { label: "Página web para restaurantes", href: "/blog/pagina-web-para-restaurantes-en-peru", desc: "Carta digital, pedidos y reservas para tu restaurante." },
       ]}
       faqs={[
         {
