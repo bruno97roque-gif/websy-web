@@ -20,6 +20,7 @@ export const MAIN_LINKS: NavLink[] = [
   { label: "Tiendas", href: "/tiendas-virtuales" },
   { label: "Web", href: "/diseno-de-paginas-web" },
   { label: "Software", href: "/desarrollo-de-software-a-medida" },
+  { label: "Precios", href: "/precios" },
   { label: "Blog", href: "/blog" },
   { label: "Nosotros", href: "/nosotros" },
   { label: "Contacto", href: "/contacto" },
@@ -32,5 +33,6 @@ export const SERVICE_SITEMAP: { path: string; priority: number }[] = [
   { path: "/tiendas-virtuales/woocommerce", priority: 0.7 },
   { path: "/diseno-de-paginas-web", priority: 0.9 },
   { path: "/desarrollo-de-software-a-medida", priority: 0.8 },
+  { path: "/precios", priority: 0.9 },
   { path: "/cotizacion", priority: 0.8 },
 ];
