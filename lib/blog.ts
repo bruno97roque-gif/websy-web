@@ -1752,6 +1752,454 @@ export const BLOG_POSTS: BlogPost[] = [
       }
     ]
   },
+
+  {
+    slug: "como-aparecer-en-google-con-tu-pagina-web",
+    title: "Cómo aparecer en Google con tu página web (guía 2026)",
+    h1: "Cómo hacer que tu página web aparezca en Google",
+    description:
+      "¿Tu página web no aparece en Google? Guía práctica 2026 para indexar, elegir palabras clave, optimizar el SEO on-page y ganar posiciones locales en Perú.",
+    excerpt:
+      "Por qué tu web no sale en Google todavía y los pasos concretos para posicionarla y empezar a recibir clientes.",
+    datePublished: "2026-06-30",
+    category: "SEO",
+    readingMin: 8,
+    intro:
+      "Tener una página web no garantiza aparecer en Google: hay que ayudarla a que Google la encuentre, la entienda y confíe en ella. En esta guía verás, en orden, qué hace que una web posicione en Perú y qué puedes hacer tú mismo para empezar a recibir clientes desde el buscador.",
+    sections: [
+      {
+        h2: "Por qué tu página web todavía no aparece en Google",
+        body:
+          "Casi siempre es una de tres razones: Google aún no la ha indexado, el contenido no responde a lo que busca tu cliente, o hay webs más antiguas y con más autoridad para esa búsqueda. Lo bueno es que todas se trabajan. Una web recién publicada puede tardar de días a algunas semanas en empezar a mostrarse, y las posiciones mejoran con contenido y enlaces con el tiempo.",
+      },
+      {
+        h2: "Paso 1: que Google pueda encontrar e indexar tu web",
+        body:
+          "Antes de pensar en posiciones, Google tiene que poder leer tu sitio. Lo mínimo indispensable:",
+        bullets: [
+          "Un sitemap.xml y un robots.txt correctos que no bloqueen el sitio.",
+          "Registrar tu web en Google Search Console y pedir la indexación.",
+          "Contenido en texto real (no todo dentro de imágenes) que Google pueda leer.",
+          "Una sola versión del dominio (con o sin www) para no dividir la fuerza.",
+          "Buena velocidad y versión móvil: una web lenta indexa y posiciona peor.",
+        ],
+      },
+      {
+        h2: "Paso 2: escribe para lo que tu cliente realmente busca",
+        body:
+          "La gente no busca como tú describes tu servicio, busca su problema. Antes de redactar, lista las frases exactas que usaría tu cliente (por ejemplo cuánto cuesta, cerca de mí, en Lima, para mi rubro) y crea una página o artículo para cada intención. Una web con una sola página lo tiene difícil: cada servicio y cada duda frecuente merece su propia URL.",
+      },
+      {
+        h2: "Paso 3: SEO on-page, el que más depende de ti",
+        body:
+          "Es el trabajo dentro de cada página y es donde más rápido se ven mejoras. Un [diseño de páginas web optimizado para SEO](/diseno-de-paginas-web) ya viene con esto resuelto desde el inicio:",
+        bullets: [
+          "Un título (title) y una meta descripción únicos por página, con la palabra clave.",
+          "Un solo H1 y una estructura de encabezados ordenada (H2, H3).",
+          "URLs cortas y descriptivas, sin códigos raros.",
+          "Imágenes livianas con texto alternativo (alt).",
+          "Datos estructurados (schema) para que Google entienda tu negocio.",
+          "Enlaces internos entre tus páginas para repartir autoridad.",
+        ],
+      },
+      {
+        h2: "Paso 4: SEO local, tu mejor palanca en Perú",
+        body:
+          "Si atiendes a clientes de una ciudad o rubro, el SEO local rinde rapidísimo. Optimiza tu ficha de Google (mira nuestra guía de [Google Mi Negocio para empresas en Perú](/blog/google-mi-negocio-para-empresas-en-peru)), consigue reseñas reales, y crea páginas que mencionen tu ciudad y tus servicios. Así apareces en el mapa y en las búsquedas cerca de mí.",
+      },
+      {
+        h2: "Cuánto tarda y qué esperar",
+        body:
+          "El SEO es acumulativo: las primeras señales aparecen en semanas y las buenas posiciones se consolidan en meses de trabajo constante. No es magia ni es instantáneo, pero es el canal más rentable a mediano plazo porque no pagas por cada clic. Si quieres saber qué incluye una web lista para posicionar, revisa [nuestros precios y qué entra en cada servicio](/precios).",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Cuánto tarda una página web nueva en aparecer en Google?",
+        a: "Indexarse puede tomar de pocos días a algunas semanas. Posicionar en los primeros lugares para búsquedas con competencia toma meses de contenido y optimización constante. El SEO local suele dar resultados más rápido.",
+      },
+      {
+        q: "¿Aparecer en Google es gratis?",
+        a: "El posicionamiento orgánico (SEO) no se paga por clic, pero requiere trabajo: una web bien hecha, contenido y optimización. Distinto es Google Ads, donde pagas por cada clic para aparecer arriba de inmediato.",
+      },
+      {
+        q: "¿Necesito un blog para posicionar?",
+        a: "No es obligatorio, pero ayuda mucho. Un blog te permite responder las dudas de tus clientes y crear una página por cada búsqueda, lo que multiplica las puertas de entrada a tu web.",
+      },
+      {
+        q: "¿Ustedes dejan la web lista para Google?",
+        a: "Sí. Cada página que entregamos incluye SEO on-page desde el inicio: títulos, estructura, velocidad y datos estructurados. Pídenos una cotización y te explicamos el alcance.",
+      },
+    ],
+    related: [
+      {
+        label: "Diseño de páginas web optimizadas para SEO",
+        href: "/diseno-de-paginas-web",
+        desc: "Webs listas para Google desde el primer día.",
+      },
+      {
+        label: "Cómo posicionar una tienda virtual en Google",
+        href: "/blog/como-posicionar-una-tienda-virtual-en-google",
+        desc: "SEO aplicado a un ecommerce, paso a paso.",
+      },
+      {
+        label: "Ver precios y qué incluye cada servicio",
+        href: "/precios",
+        desc: "Qué entra en una web pensada para posicionar.",
+      },
+    ],
+  },
+
+  {
+    slug: "como-vender-por-whatsapp-desde-tu-tienda-virtual",
+    title: "Cómo vender por WhatsApp desde tu tienda virtual (Perú)",
+    h1: "Cómo vender por WhatsApp desde tu tienda virtual",
+    description:
+      "Convierte visitas en ventas por WhatsApp: botón directo, catálogo, pedidos y WhatsApp Business integrados a tu tienda virtual. Guía práctica para negocios en Perú.",
+    excerpt:
+      "El canal que más convierte en Perú es WhatsApp. Así lo integras a tu tienda virtual para cerrar más ventas.",
+    datePublished: "2026-07-02",
+    category: "Ecommerce",
+    readingMin: 7,
+    intro:
+      "En Perú mucha gente prefiere cerrar la compra por WhatsApp antes que pagar en línea. Por eso una tienda virtual que vende de verdad no obliga a elegir: muestra el catálogo, permite el pago online y, además, deja escribir por WhatsApp con el pedido listo. Así se ve cómo hacerlo bien.",
+    sections: [
+      {
+        h2: "Por qué WhatsApp vende tanto en Perú",
+        body:
+          "El comprador peruano confía en hablar antes de pagar: pregunta stock, tallas, delivery o si acepta Yape. WhatsApp da esa cercanía y baja la desconfianza. Una tienda que aprovecha ese hábito, en lugar de pelear contra él, convierte muchas más visitas en ventas.",
+      },
+      {
+        h2: "El botón de WhatsApp: dónde y cómo ponerlo",
+        body:
+          "No basta con un ícono flotante. Para que venda, el botón debe llegar con contexto:",
+        bullets: [
+          "Botón flotante siempre visible, sobre todo en el celular.",
+          "Botón en cada producto que ya incluya el nombre del artículo en el mensaje.",
+          "Mensaje pre-escrito tipo Hola, quiero este producto para que el cliente solo envíe.",
+          "Horario de atención claro para fijar expectativas de respuesta.",
+        ],
+      },
+      {
+        h2: "Del catálogo al pedido por WhatsApp, sin fricción",
+        body:
+          "La mejor tienda combina lo automático con lo humano: el cliente arma su carrito en la web y, al finalizar, puede pagar en línea o enviar el pedido completo por WhatsApp con un clic. Ese flujo lo dejamos configurado cuando desarrollamos tu [tienda virtual](/tiendas-virtuales), para que ninguna consulta se pierda.",
+      },
+      {
+        h2: "WhatsApp Business: úsalo como herramienta de venta",
+        body:
+          "La versión Business es gratis y suma funciones que ordenan tus ventas:",
+        bullets: [
+          "Catálogo dentro de WhatsApp con precios y fotos.",
+          "Respuestas rápidas para preguntas repetidas (precio, delivery, pago).",
+          "Etiquetas para separar clientes nuevos, pagados y pendientes.",
+          "Mensaje de bienvenida y de ausencia automáticos.",
+        ],
+      },
+      {
+        h2: "Errores que hacen que pierdas ventas por WhatsApp",
+        body:
+          "Responder tarde, no tener los precios a la mano, o mandar al cliente a un número donde nadie contesta. También perder el historial por usar un WhatsApp personal. Ordena el canal: un número de negocio, respuestas listas y, si el volumen crece, un sistema que centralice los pedidos.",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Puedo vender solo por WhatsApp sin pasarela de pago?",
+        a: "Sí, muchos negocios empiezan así: el cliente elige en la web y coordina pago y envío por WhatsApp (Yape, Plin, transferencia o contra entrega). Más adelante puedes sumar pago en línea sin rehacer la tienda.",
+      },
+      {
+        q: "¿Se puede poner el botón de WhatsApp en cada producto?",
+        a: "Sí. Lo ideal es que el mensaje ya llegue con el nombre del producto, para que tú sepas de inmediato qué quiere el cliente y cierres más rápido.",
+      },
+      {
+        q: "¿WhatsApp Business tiene costo?",
+        a: "La app de WhatsApp Business es gratuita e incluye catálogo, respuestas rápidas y etiquetas. Distinto es la API de WhatsApp, pensada para grandes volúmenes y automatizaciones.",
+      },
+      {
+        q: "¿Ustedes integran WhatsApp a mi tienda?",
+        a: "Sí, es parte de cómo entregamos las tiendas: botón flotante, botón por producto con mensaje pre-armado y enlace directo. Escríbenos y lo dejamos listo.",
+      },
+    ],
+    related: [
+      {
+        label: "Tiendas virtuales que venden",
+        href: "/tiendas-virtuales",
+        desc: "Ecommerce con pagos locales y WhatsApp integrado.",
+      },
+      {
+        label: "Pasarelas de pago para ecommerce en Perú",
+        href: "/blog/pasarelas-de-pago-para-ecommerce-en-peru",
+        desc: "Yape, Plin, tarjeta: qué conviene a tu tienda.",
+      },
+      {
+        label: "Cotiza tu tienda virtual",
+        href: "/cotizacion",
+        desc: "Te la entregamos lista para vender.",
+      },
+    ],
+  },
+
+  {
+    slug: "sistema-de-gestion-para-pymes-cuando-dejar-el-excel",
+    title: "Sistema de gestión para pymes: cuándo dejar el Excel",
+    h1: "Sistema de gestión para pymes: cuándo dejar el Excel",
+    description:
+      "¿El Excel te quedó chico? Señales de que tu pyme necesita un sistema de gestión a medida, qué procesos automatizar primero y cómo migrar sin frenar tu operación.",
+    excerpt:
+      "El Excel funciona hasta que empieza a costarte ventas y horas. Cuándo dar el salto a un sistema propio.",
+    datePublished: "2026-07-03",
+    category: "Software",
+    readingMin: 7,
+    intro:
+      "El Excel es genial para empezar, pero llega un punto en que frena tu negocio: se rompe, se duplica, nadie sabe cuál es la versión buena. Aquí verás las señales claras de que tu pyme necesita un sistema de gestión a medida y cómo dar el paso sin detener tu operación.",
+    sections: [
+      {
+        h2: "Señales de que el Excel te quedó chico",
+        body:
+          "No es cuestión de moda, es cuestión de dolor. Si te pasan varias de estas, ya perdiste el punto:",
+        bullets: [
+          "Varias personas editan el mismo archivo y se pisan los datos.",
+          "Nadie sabe cuál es la versión final ni quién cambió qué.",
+          "Copias y pegas la misma información en tres lugares distintos.",
+          "No puedes saber tu stock o tus ventas del día sin armar el reporte a mano.",
+          "Un error de una celda te desordena todo el mes.",
+        ],
+      },
+      {
+        h2: "Qué es un sistema de gestión a medida",
+        body:
+          "Es un [software a medida](/desarrollo-de-software-a-medida) hecho para tu forma de trabajar: en vez de adaptar tu negocio a un programa genérico, el sistema se adapta a tus procesos. Cada usuario entra con su clave, ve lo que le corresponde, y la información queda en un solo lugar, ordenada y respaldada.",
+      },
+      {
+        h2: "Qué procesos automatizar primero",
+        body:
+          "No hace falta digitalizar todo de golpe. Conviene empezar por lo que más te duele o más plata mueve:",
+        bullets: [
+          "Inventario y stock, para dejar de vender lo que no tienes.",
+          "Ventas y cotizaciones, con historial por cliente.",
+          "Caja e ingresos, para ver el estado del negocio en tiempo real.",
+          "Reportes automáticos, en lugar de armarlos a mano cada mes.",
+        ],
+      },
+      {
+        h2: "A medida vs enlatado: cuál te conviene",
+        body:
+          "Un software enlatado es rápido y barato al inicio, pero te obliga a trabajar como el programa quiere y suele cobrar mensualidad por usuario. Uno a medida cuesta más al comienzo pero crece contigo y es tuyo. Lo desarrollamos con más detalle en [software a medida vs software enlatado](/blog/software-a-medida-vs-software-enlatado).",
+      },
+      {
+        h2: "Cómo migrar sin frenar tu operación",
+        body:
+          "El salto se hace por etapas: primero el módulo más crítico, se prueba con tu equipo, se corrige y recién se suma el siguiente. Migramos tus datos del Excel al sistema para que no empieces de cero, y te capacitamos para que el cambio sea tranquilo. Si quieres estimar el alcance, mira [nuestros precios](/precios) o pide una cotización.",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Cuándo conviene pasar del Excel a un sistema?",
+        a: "Cuando el Excel empieza a costarte tiempo, errores o ventas: varios editando a la vez, reportes armados a mano, o no saber tu stock real. Si eso ya te pasa a diario, un sistema se paga solo.",
+      },
+      {
+        q: "¿Puedo aprovechar los datos que ya tengo en Excel?",
+        a: "Sí. Migramos tu información existente al nuevo sistema para que no pierdas historial ni empieces desde cero.",
+      },
+      {
+        q: "¿Es muy caro un sistema a medida para una pyme?",
+        a: "Depende del alcance. Se puede empezar por un módulo clave y crecer por etapas, para que la inversión acompañe al negocio. Te damos una propuesta según tu caso.",
+      },
+      {
+        q: "¿Mi equipo podrá usarlo sin ser técnico?",
+        a: "Sí. Lo diseñamos para que sea simple y te capacitamos. Cada persona ve solo lo que necesita, con su propio usuario y permisos.",
+      },
+    ],
+    related: [
+      {
+        label: "Desarrollo de software a medida",
+        href: "/desarrollo-de-software-a-medida",
+        desc: "Sistemas hechos para tu forma de trabajar.",
+      },
+      {
+        label: "¿Cuándo una empresa necesita un sistema web?",
+        href: "/blog/cuando-una-empresa-necesita-un-sistema-web",
+        desc: "Señales y beneficios de dar el salto.",
+      },
+      {
+        label: "Cotiza tu sistema",
+        href: "/cotizacion",
+        desc: "Te ayudamos a definir el alcance ideal.",
+      },
+    ],
+  },
+
+  {
+    slug: "pagina-web-para-restaurantes-en-peru",
+    title: "Página web para restaurantes en Perú: carta digital y pedidos",
+    h1: "Página web para restaurantes: carta digital, pedidos y reservas",
+    description:
+      "Tu restaurante necesita más que redes y apps de delivery. Carta digital con QR, pedidos por WhatsApp, reservas y SEO local para aparecer en Google Maps en Perú.",
+    excerpt:
+      "Deja de pagar comisiones altas por cada pedido: una web propia con carta digital y pedidos directos.",
+    datePublished: "2026-07-05",
+    category: "Diseño web",
+    readingMin: 7,
+    intro:
+      "Las apps de delivery te dan pedidos, pero se quedan con una comisión de cada venta y con tus clientes. Una página web propia para tu restaurante te da carta digital, pedidos directos, reservas y presencia en Google Maps, sin pagar comisión por cada plato. Así debería ser.",
+    sections: [
+      {
+        h2: "Por qué tu restaurante necesita web propia",
+        body:
+          "Instagram y las apps de delivery son útiles, pero no son tuyos: cambian las reglas, cobran comisión y no apareces bien en Google cuando alguien busca dónde comer cerca. Una web propia es tu local en internet: siempre disponible, sin comisión por pedido y bajo tu control.",
+      },
+      {
+        h2: "Qué debe tener la web de un restaurante",
+        body:
+          "No es una web bonita y ya: es una herramienta para llenar mesas y recibir pedidos. Lo indispensable:",
+        bullets: [
+          "Carta digital con QR para la mesa, fácil de actualizar precios.",
+          "Botón de pedido por WhatsApp con el plato ya cargado.",
+          "Reservas en línea, para no perder llamadas.",
+          "Fotos que den hambre y carga rápida en el celular.",
+          "Ubicación con Google Maps, horarios y medios de pago (incluido Yape).",
+        ],
+      },
+      {
+        h2: "Carta digital con QR vs apps de delivery",
+        body:
+          "Una carta digital propia se actualiza en segundos y no cobra comisión. Las apps de delivery sirven para captar clientes nuevos, pero conviene que los recurrentes te pidan directo por tu web. Muchos restaurantes usan ambos: apps para descubrimiento y web propia para fidelizar y ahorrar comisiones.",
+      },
+      {
+        h2: "Recibe pedidos y delivery propio",
+        body:
+          "Si quieres ir más allá de la carta, tu web puede convertirse en una pequeña [tienda virtual](/tiendas-virtuales) para pedidos con pago en línea o contra entrega, y coordinar tu propio delivery. Así cada pedido queda contigo, con tus datos y sin intermediarios.",
+      },
+      {
+        h2: "SEO local: aparece cuando buscan dónde comer",
+        body:
+          "La mitad de la batalla es salir en Google cuando alguien busca tu tipo de comida cerca. Con una web optimizada y tu ficha de Google al día, apareces en el mapa y en las búsquedas locales. Te lo dejamos listo cuando hacemos tu [página web](/diseno-de-paginas-web), y puedes profundizar en nuestra guía para [aparecer en Google](/blog/como-aparecer-en-google-con-tu-pagina-web).",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Una web propia reemplaza a las apps de delivery?",
+        a: "No necesariamente. Las apps ayudan a que te descubran clientes nuevos; tu web propia te sirve para que los recurrentes pidan directo, sin comisión, y para aparecer en Google. Lo ideal es combinarlas.",
+      },
+      {
+        q: "¿Puedo actualizar la carta yo mismo?",
+        a: "Sí. Entregamos la carta digital administrable para que cambies platos y precios cuando quieras, sin depender de nadie.",
+      },
+      {
+        q: "¿Sirve para recibir reservas?",
+        a: "Sí, podemos incluir reservas en línea para que no pierdas clientes por llamadas no contestadas y organices mejor tus mesas.",
+      },
+      {
+        q: "¿Cuánto cuesta la página web de un restaurante?",
+        a: "Depende de si quieres solo carta digital o también pedidos y reservas. Te preparamos una cotización a medida y sin costo; puedes ver qué incluye cada opción en nuestra página de precios.",
+      },
+    ],
+    related: [
+      {
+        label: "Diseño de páginas web para negocios",
+        href: "/diseno-de-paginas-web",
+        desc: "Webs que llenan mesas y reciben pedidos.",
+      },
+      {
+        label: "Tiendas virtuales para pedidos online",
+        href: "/tiendas-virtuales",
+        desc: "Pedidos con pago en línea o contra entrega.",
+      },
+      {
+        label: "Ver precios y cotizar",
+        href: "/precios",
+        desc: "Qué incluye la web de un restaurante.",
+      },
+    ],
+  },
+
+  {
+    slug: "google-ads-para-pymes-en-peru-cuanto-invertir",
+    title: "Google Ads para pymes en Perú: cuánto invertir para empezar",
+    h1: "Google Ads para pymes en Perú: cuánto invertir para empezar a vender",
+    description:
+      "Cuánto invertir en Google Ads si tienes una pyme en Perú, qué tipo de campaña elegir, por qué la landing importa tanto como el anuncio y cómo medir tus leads.",
+    excerpt:
+      "Google Ads te trae clientes desde el primer día si lo haces bien. Cuánto invertir y cómo no botar la plata.",
+    datePublished: "2026-07-06",
+    category: "Marketing",
+    readingMin: 8,
+    intro:
+      "Google Ads pone tu negocio arriba de todo justo cuando alguien busca lo que vendes. Para una pyme en Perú es la forma más rápida de conseguir clientes, pero también la más fácil de malgastar. Aquí verás cuánto invertir para empezar, qué campaña elegir y cómo asegurarte de que cada sol traiga leads.",
+    sections: [
+      {
+        h2: "Por qué Google Ads funciona para pymes",
+        body:
+          "A diferencia del SEO, que toma meses, Google Ads te muestra hoy ante quien ya está buscando comprar. Eso lo hace ideal para arrancar, validar qué servicio se vende más y llenar la agenda mientras tu posicionamiento orgánico madura. Pagas por clic, así que el control del gasto está en tus manos.",
+      },
+      {
+        h2: "Cuánto invertir al inicio",
+        body:
+          "No hay una cifra mágica, pero en el mercado peruano muchas pymes arrancan con un presupuesto diario modesto y lo suben según los resultados. La clave no es cuánto gastas, sino el retorno: si cada sol invertido te trae más en ventas, conviene escalar. Empieza con un monto que puedas sostener unas semanas, porque las campañas necesitan datos para optimizarse.",
+      },
+      {
+        h2: "Search, Performance Max o Meta: cuál elegir",
+        body:
+          "Cada uno sirve para algo distinto:",
+        bullets: [
+          "Búsqueda (Search): apareces cuando alguien busca tu servicio. Ideal para captar intención de compra.",
+          "Performance Max: Google reparte tu anuncio en toda su red; útil con buen material y datos.",
+          "Meta (Facebook e Instagram): mejor para generar demanda y recordación, no tanto búsqueda activa.",
+          "Para la mayoría de pymes de servicios, conviene empezar por Search bien segmentado.",
+        ],
+      },
+      {
+        h2: "La landing importa tanto como el anuncio",
+        body:
+          "El error más caro es llevar el clic a una web lenta o confusa: pagas por la visita y la pierdes. Cada campaña necesita una [página web o landing pensada para convertir](/diseno-de-paginas-web): carga rápida, un mensaje claro y un botón de contacto o WhatsApp visible. Sin eso, hasta el mejor anuncio bota la plata.",
+      },
+      {
+        h2: "Cómo medir que te llegan leads de verdad",
+        body:
+          "Si no mides, no sabes qué funciona. Configura el seguimiento de conversiones y GA4 para contar formularios y clics a WhatsApp, no solo visitas. Así sabes cuánto te cuesta cada lead y puedes invertir más en lo que rinde. Es lo primero que dejamos listo cuando armamos una campaña.",
+      },
+      {
+        h2: "SEO y Ads: mejor juntos",
+        body:
+          "Ads te da clientes hoy; el SEO te los da gratis mañana. Lo rentable es combinarlos: usa Ads para vender desde ya y, en paralelo, construye tu posicionamiento orgánico para depender menos de la publicidad. Si quieres ver qué incluye cada servicio, revisa [nuestros precios](/precios) o [pide una cotización](/cotizacion).",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Cuánto debo invertir en Google Ads al mes?",
+        a: "Depende de tu rubro y competencia. Muchas pymes empiezan con un presupuesto diario modesto y lo ajustan según el retorno. Lo importante es sostenerlo unas semanas para que la campaña tenga datos y medir el costo por lead.",
+      },
+      {
+        q: "¿Google Ads o SEO, qué me conviene?",
+        a: "Ads trae clientes de inmediato pero pagas por cada clic; el SEO tarda pero no se paga por clic. Lo ideal es empezar con Ads para vender ya y construir SEO en paralelo para el mediano plazo.",
+      },
+      {
+        q: "¿Por qué necesito una landing y no mi home?",
+        a: "Porque la home habla de todo y dispersa. Una landing enfocada en el servicio del anuncio, con un solo mensaje y un botón claro, convierte mucho mejor el tráfico pagado.",
+      },
+      {
+        q: "¿Ustedes hacen las campañas y la web?",
+        a: "Sí. Podemos crear la landing optimizada, configurar la medición de leads y gestionar la campaña. Escríbenos y te armamos una propuesta según tu presupuesto.",
+      },
+    ],
+    related: [
+      {
+        label: "Páginas web y landings que convierten",
+        href: "/diseno-de-paginas-web",
+        desc: "El destino correcto para tu tráfico de Ads.",
+      },
+      {
+        label: "Ver precios y qué incluye cada servicio",
+        href: "/precios",
+        desc: "Web, landing y medición de leads.",
+      },
+      {
+        label: "Cotiza tu proyecto",
+        href: "/cotizacion",
+        desc: "Propuesta a tu medida en menos de 24 horas.",
+      },
+    ],
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
