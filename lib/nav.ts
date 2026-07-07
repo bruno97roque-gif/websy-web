@@ -11,6 +11,7 @@ export const SERVICE_LINKS: NavLink[] = [
   { label: "Tiendas WooCommerce", href: "/tiendas-virtuales/woocommerce" },
   { label: "Diseño de Páginas Web", href: "/diseno-de-paginas-web" },
   { label: "Software a Medida", href: "/desarrollo-de-software-a-medida" },
+  { label: "Precios", href: "/precios" },
 ];
 
 /** Navegación principal (menú fullscreen). Etiquetas cortas: el menú usa tipografía

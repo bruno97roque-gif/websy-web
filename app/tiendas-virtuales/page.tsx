@@ -86,10 +86,11 @@ export default function TiendasVirtualesPage() {
         { label: "Tiendas Shopify", href: "/tiendas-virtuales/shopify", desc: "Lanza rápido sobre la plataforma líder de ecommerce, con pagos locales." },
         { label: "Tiendas WooCommerce", href: "/tiendas-virtuales/woocommerce", desc: "Tu tienda sobre WordPress, sin mensualidad de plataforma y 100% tuya." },
         { label: "Páginas web profesionales", href: "/diseno-de-paginas-web", desc: "¿Aún no vendes online? Empieza con una web que capte clientes." },
+        { label: "Precios y cotización", href: "/precios", desc: "Qué define el precio de tu tienda y qué incluye cada opción." },
       ]}
       articles={[
         { label: "¿Cuánto cuesta una tienda virtual en Perú?", href: "/blog/cuanto-cuesta-una-tienda-virtual-en-peru", desc: "Qué define el precio de un ecommerce y cómo cotizar sin sorpresas." },
-        { label: "Cómo crear una tienda virtual en Perú", href: "/blog/como-crear-una-tienda-virtual-en-peru", desc: "Guía paso a paso: plataforma, pagos, productos y lanzamiento." },
+        { label: "Cómo vender por WhatsApp desde tu tienda", href: "/blog/como-vender-por-whatsapp-desde-tu-tienda-virtual", desc: "El canal que más convierte en Perú, integrado a tu tienda." },
         { label: "Cómo posicionar tu tienda en Google", href: "/blog/como-posicionar-una-tienda-virtual-en-google", desc: "SEO para ecommerce: que tus clientes te encuentren y compren." },
       ]}
       faqs={[
