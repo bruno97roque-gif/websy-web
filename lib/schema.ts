@@ -41,8 +41,10 @@ export function organizationSchema() {
       },
     ],
     sameAs: [
-      "https://www.instagram.com/websy.pe",
-      "https://www.facebook.com/websy.pe",
+      "https://www.facebook.com/profile.php?id=61580476667281",
+      "https://www.instagram.com/websy.agencia_de_marketing/",
+      "https://www.tiktok.com/@websy.agencia.de.mkt",
+      "https://www.linkedin.com/company/websy-agencia-web/",
     ],
     hasOfferCatalog: {
       "@type": "OfferCatalog",
