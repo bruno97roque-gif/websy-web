@@ -84,6 +84,7 @@ export default function BrandingPage() {
         { label: "Diseño de páginas web", href: "/diseno-de-paginas-web", desc: "Lleva tu nueva identidad a una web que la refleje." },
       ]}
       articles={[
+        { label: "Qué es el branding y por qué tu pyme lo necesita", href: "/blog/que-es-el-branding-y-por-que-tu-pyme-lo-necesita", desc: "Más que un logo: la percepción que hace que te elijan a ti." },
         { label: "Cómo elegir una agencia de desarrollo web", href: "/blog/como-elegir-una-agencia-de-desarrollo-web-en-peru", desc: "Qué mirar antes de confiar tu marca y tu web a una agencia." },
         { label: "Cómo tener presencia online para tu negocio", href: "/blog/como-tener-presencia-online-para-tu-negocio-en-peru", desc: "Los pilares para construir una presencia de marca sólida." },
       ]}

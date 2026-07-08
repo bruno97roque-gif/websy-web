@@ -84,6 +84,7 @@ export default function GoogleAdsPage() {
         { label: "SEO y posicionamiento", href: "/seo", desc: "Combina Ads con SEO para resultados rápidos y sostenidos." },
       ]}
       articles={[
+        { label: "Google Ads vs SEO: cuál conviene", href: "/blog/google-ads-vs-seo-cual-conviene-para-tu-negocio", desc: "Cuándo usar cada uno y por qué combinarlos rinde más." },
         { label: "Google Ads para pymes: cuánto invertir", href: "/blog/google-ads-para-pymes-en-peru-cuanto-invertir", desc: "Cuánto presupuesto necesitas y cómo no desperdiciarlo." },
         { label: "Diferencia entre página web y landing page", href: "/blog/diferencia-entre-pagina-web-y-landing-page", desc: "Por qué tus campañas necesitan una landing, no tu home." },
       ]}

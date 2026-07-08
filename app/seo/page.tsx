@@ -93,6 +93,8 @@ export default function SeoPage() {
         { label: "Diseño de páginas web", href: "/diseno-de-paginas-web", desc: "Una web optimizada para SEO desde su construcción." },
       ]}
       articles={[
+        { label: "¿Cuánto cuesta el SEO en Perú?", href: "/blog/cuanto-cuesta-el-seo-en-peru", desc: "Cómo se cobra el posicionamiento y por qué es inversión, no gasto." },
+        { label: "Cómo migrar tu web sin perder posicionamiento", href: "/blog/como-migrar-tu-pagina-web-sin-perder-posicionamiento-en-google", desc: "Redirecciones 301 y los errores que hunden tu SEO." },
         { label: "Cómo aparecer en Google con tu página web", href: "/blog/como-aparecer-en-google-con-tu-pagina-web", desc: "Guía práctica de SEO para posicionar tu web en Perú." },
         { label: "Google Mi Negocio para empresas en Perú", href: "/blog/google-mi-negocio-para-empresas-en-peru", desc: "Cómo aparecer en el mapa de Google y ganar reseñas." },
         { label: "Cómo posicionar una tienda virtual en Google", href: "/blog/como-posicionar-una-tienda-virtual-en-google", desc: "SEO para ecommerce: fichas, categorías y contenido." },
