@@ -8,8 +8,21 @@
 - [Tiendas WooCommerce](https://websy.com.pe/tiendas-virtuales/woocommerce): tiendas sobre WordPress, sin mensualidad de plataforma y 100% del cliente.
 - [Diseño de páginas web](https://websy.com.pe/diseno-de-paginas-web): páginas web profesionales, responsive y optimizadas para captar clientes.
 - [Software a medida](https://websy.com.pe/desarrollo-de-software-a-medida): sistemas y plataformas hechos a la medida de los procesos del negocio.
+- [SEO y posicionamiento web](https://websy.com.pe/seo): SEO técnico, on-page, de contenidos y local para aparecer en Google sin pagar por cada clic.
+- [Google Ads](https://websy.com.pe/google-ads): gestión de campañas de Google Ads en Perú orientadas a clientes y retorno.
+- [Branding](https://websy.com.pe/branding): identidad de marca, logotipo, manual de marca y aplicaciones.
+- [Mantenimiento web](https://websy.com.pe/mantenimiento-web): soporte, actualizaciones, seguridad y mejoras continuas de tu sitio.
 - [Precios](https://websy.com.pe/precios): qué define el precio de una página web, tienda virtual o software en Perú, qué incluye cada servicio y cómo pedir una cotización gratis en menos de 24 horas.
 - [Cotización](https://websy.com.pe/cotizacion): solicitud de propuesta a medida, respuesta en menos de 24 horas.
+
+## Páginas web por rubro (landings)
+- [Página web para restaurantes](https://websy.com.pe/diseno-de-paginas-web/restaurantes): webs con carta digital, reservas y pedidos, con pagos Yape/Plin.
+- [Página web para clínicas y consultorios](https://websy.com.pe/diseno-de-paginas-web/clinicas): sitios con citas, servicios y confianza para pacientes.
+- [Página web para abogados y estudios jurídicos](https://websy.com.pe/diseno-de-paginas-web/abogados): webs profesionales que transmiten autoridad y captan casos.
+- [Página web para inmobiliarias y constructoras](https://websy.com.pe/diseno-de-paginas-web/inmobiliarias): catálogos de propiedades y proyectos con captación de leads.
+- [Página web para gimnasios](https://websy.com.pe/diseno-de-paginas-web/gimnasios): planes, horarios e inscripciones para captar socios.
+- [Página web para colegios e institutos](https://websy.com.pe/diseno-de-paginas-web/colegios): sitios institucionales con admisión e información para familias.
+- [Página web para hoteles y hospedajes](https://websy.com.pe/diseno-de-paginas-web/hoteles): webs con reservas y pagos para aumentar ocupación directa.
 
 ## Blog — guías de ecommerce, web y software en Perú
 - [Cuánto cuesta una tienda virtual en Perú](https://websy.com.pe/blog/cuanto-cuesta-una-tienda-virtual-en-peru)
@@ -33,6 +46,14 @@
 - [Cómo vender por WhatsApp desde tu tienda virtual](https://websy.com.pe/blog/como-vender-por-whatsapp-desde-tu-tienda-virtual)
 - [Sistema de gestión para pymes: cuándo dejar el Excel](https://websy.com.pe/blog/sistema-de-gestion-para-pymes-cuando-dejar-el-excel)
 - [Google Ads para pymes en Perú: cuánto invertir](https://websy.com.pe/blog/google-ads-para-pymes-en-peru-cuanto-invertir)
+- [Cuánto cuesta un software a medida en Perú](https://websy.com.pe/blog/cuanto-cuesta-un-software-a-medida-en-peru)
+- [Costos de mantenimiento de una página web en Perú](https://websy.com.pe/blog/costos-de-mantenimiento-de-una-pagina-web-en-peru)
+- [Cómo integrar Yape y Plin en tu tienda virtual](https://websy.com.pe/blog/como-integrar-yape-y-plin-en-tu-tienda-virtual)
+- [Izipay o Niubiz: cuál elegir para cobrar con tarjeta](https://websy.com.pe/blog/izipay-o-niubiz-cual-elegir-para-cobrar-con-tarjeta)
+- [Cuánto cuesta el SEO en Perú](https://websy.com.pe/blog/cuanto-cuesta-el-seo-en-peru)
+- [Google Ads vs SEO: cuál conviene para tu negocio](https://websy.com.pe/blog/google-ads-vs-seo-cual-conviene-para-tu-negocio)
+- [Tienda virtual vs marketplace: ¿conviene vender en Mercado Libre?](https://websy.com.pe/blog/tienda-virtual-vs-marketplace-conviene-vender-en-mercadolibre)
+- [Cómo migrar tu página web sin perder posicionamiento en Google](https://websy.com.pe/blog/como-migrar-tu-pagina-web-sin-perder-posicionamiento-en-google)
 
 ## Páginas web por rubro
 - [Página web para restaurantes en Perú](https://websy.com.pe/blog/pagina-web-para-restaurantes-en-peru)
