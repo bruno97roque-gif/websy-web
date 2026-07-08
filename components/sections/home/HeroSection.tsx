@@ -133,7 +133,7 @@ export default function HeroSection() {
           </h1>
 
           <p ref={descRef} style={{ opacity: 0 }}
-            className="font-poppins mb-8 max-w-[480px] text-[14px] leading-[1.8] text-white/100 sm:text-[15px] md:mb-10">
+            className="hw-speakable font-poppins mb-8 max-w-[480px] text-[14px] leading-[1.8] text-white/100 sm:text-[15px] md:mb-10">
             Diseño exclusivo, tecnología de vanguardia y estrategia real para que tu negocio se destaque y convierta.
           </p>
 

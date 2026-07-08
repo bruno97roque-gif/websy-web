@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { pageMeta } from "@/lib/seo";
 import JsonLd from "@/components/seo/JsonLd";
-import { faqPageSchema, breadcrumbSchema, serviceSchema } from "@/lib/schema";
+import { faqPageSchema, breadcrumbSchema, serviceSchema, speakablePageSchema } from "@/lib/schema";
 
 /* ─────────────────────────────────────────────────────────────
    /precios — página de dinero transaccional.
@@ -137,6 +137,7 @@ export default function PreciosPage() {
           }),
           faqPageSchema(faqs),
           breadcrumbSchema(breadcrumb),
+          speakablePageSchema("/precios", ["h1", ".precios-speakable-intro"]),
         ]}
       />
 
@@ -171,7 +172,7 @@ export default function PreciosPage() {
           <h1 style={{ fontFamily: fm, fontSize: "clamp(30px, 5vw, 52px)", fontWeight: 800, lineHeight: 1.08, letterSpacing: "-0.02em", margin: 0, maxWidth: 820 }}>
             ¿Cuánto cuesta tu página web, tienda virtual o software?
           </h1>
-          <p style={{ fontFamily: fp, fontSize: "clamp(16px, 2vw, 19px)", color: "rgba(255,255,255,0.82)", marginTop: 20, maxWidth: 700, lineHeight: 1.6 }}>
+          <p className="precios-speakable-intro" style={{ fontFamily: fp, fontSize: "clamp(16px, 2vw, 19px)", color: "rgba(255,255,255,0.82)", marginTop: 20, maxWidth: 700, lineHeight: 1.6 }}>
             El precio depende de lo que necesitas: secciones, productos, pasarelas de pago e integraciones. En Websy no te tiramos una cifra al aire: hacemos un diagnóstico corto y te enviamos una <strong style={{ color: "#fff" }}>cotización a medida y gratis en menos de 24 horas</strong>, con alcance y tiempos por escrito.
           </p>
 

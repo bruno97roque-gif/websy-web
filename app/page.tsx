@@ -2,6 +2,8 @@ import dynamic from "next/dynamic";
 import HeroSection    from "@/components/sections/home/HeroSection";
 import MarqueeSection from "@/components/sections/home/MarqueeSection";
 import { AnimatedMedia } from "@/components/ui/animated-media";
+import JsonLd from "@/components/seo/JsonLd";
+import { speakablePageSchema } from "@/lib/schema";
 
 /*
  * Secciones below-the-fold: dynamic import para code-splitting.
@@ -16,6 +18,7 @@ const ClientsSection  = dynamic(() => import("@/components/sections/home/Clients
 export default function HomePage() {
   return (
     <>
+      <JsonLd data={speakablePageSchema("/", ["#hero h1", ".hw-speakable"])} />
       {/* ── ALIEN MÓVIL (<768px) ─────────────────────────────────────────
           Wrapper relativo solo con HeroSection.
           Los media queries de móvil se conservan exactamente como estaban.

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import JsonLd from "@/components/seo/JsonLd";
-import { blogPostingSchema, breadcrumbSchema, faqPageSchema } from "@/lib/schema";
+import { blogPostingSchema, breadcrumbSchema, faqPageSchema, howToSchema, BLOG_AUTHOR } from "@/lib/schema";
+import { SITE_URL } from "@/lib/seo";
 import type { BlogPost } from "@/lib/blog";
 
 /* Layout reusable de artículo de blog (BlogPosting + Breadcrumb + FAQPage). */
@@ -103,6 +104,25 @@ export default function ArticleLayout({ post }: { post: BlogPost }) {
   ];
   if (post.faqs && post.faqs.length > 0) schemas.push(faqPageSchema(post.faqs));
 
+  /* HowTo solo para guías genuinamente por pasos: slug "cómo…" y ≥3 secciones
+     con encabezado numerado ("1. …", "2) …"). Evita marcar como HowTo los
+     "cómo" que en realidad son artículos explicativos sin pasos secuenciales. */
+  const numberedRe = /^\s*\d+\s*[.)-]\s*/;
+  const stepSections = post.sections.filter((s) => numberedRe.test(s.h2));
+  if (post.slug.startsWith("como-") && stepSections.length >= 3) {
+    schemas.push(
+      howToSchema({
+        name: post.h1,
+        description: post.description,
+        url: `${SITE_URL}/blog/${post.slug}`,
+        steps: stepSections.map((s) => ({
+          name: s.h2.replace(numberedRe, "").trim(),
+          text: s.body ?? (s.bullets ? s.bullets.join(" ") : s.h2),
+        })),
+      })
+    );
+  }
+
   return (
     <main className="art" style={{ backgroundColor: "#f8f5fc" }}>
       <JsonLd data={schemas} />
@@ -137,7 +157,7 @@ export default function ArticleLayout({ post }: { post: BlogPost }) {
             {post.h1}
           </h1>
           <p style={{ fontFamily: fp, fontSize: 13.5, color: "rgba(255,255,255,0.6)", marginTop: 16 }}>
-            {formatDate(post.datePublished)} · {post.readingMin} min de lectura
+            Por {BLOG_AUTHOR} · {formatDate(post.datePublished)} · {post.readingMin} min de lectura
           </p>
         </div>
       </section>
