@@ -2416,6 +2416,892 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Ver precios y cotizar", href: "/precios", desc: "Qué incluye la web de una inmobiliaria o constructora." },
     ],
   },
+
+  {
+    slug: "cuanto-cuesta-un-software-a-medida-en-peru",
+    title: "Cuánto cuesta un software a medida en Perú (2026)",
+    h1: "¿Cuánto cuesta un software a medida en Perú?",
+    description:
+      "Cuánto cuesta un software a medida en Perú en 2026: qué factores definen el precio, cómo se cotiza por módulos y por qué es una inversión que se paga sola.",
+    excerpt:
+      "El precio de un software a medida no es un número fijo. Esto es lo que realmente define cuánto invertir.",
+    datePublished: "2026-07-07",
+    dateModified: "2026-07-07",
+    category: "Software",
+    readingMin: 7,
+    intro:
+      "El costo de un software a medida en Perú depende del problema que resuelve, no de una lista de precios. Cuántos módulos y usuarios, qué integraciones necesita y qué tan complejo es tu proceso definen la inversión. Aquí verás qué mueve el precio y cómo cotizar sin sorpresas.",
+    sections: [
+      {
+        h2: "Por qué no existe un precio de lista",
+        body:
+          "Un software a medida se construye para tu operación, así que su precio sale del alcance, no de un catálogo. No es lo mismo un sistema para controlar el stock de un almacén que una plataforma con varios módulos, roles de usuario, reportes e integraciones con SUNAT y pagos. Por eso, cualquiera que te dé una cifra cerrada sin entender tu proceso probablemente te cobre de más o entregue de menos. Lo serio es un diagnóstico corto y luego una propuesta con alcance, etapas y tiempos.",
+      },
+      {
+        h2: "Qué factores definen el precio",
+        body:
+          "Estos son los que más pesan en una cotización real de desarrollo a medida:",
+        bullets: [
+          "Cantidad de módulos: ventas, inventario, clientes, reportes, cada uno suma.",
+          "Número de usuarios y roles con permisos distintos.",
+          "Integraciones: facturación electrónica SUNAT, pasarelas de pago, courier o WhatsApp.",
+          "Complejidad de las reglas de tu negocio (descuentos, aprobaciones, cálculos).",
+          "Si necesitas versión web, móvil o ambas, y en cuántas sedes se usará.",
+        ],
+      },
+      {
+        h2: "Se cotiza por módulos y por etapas",
+        body:
+          "La forma más sana de invertir es no hacerlo todo de golpe. Se define un primer alcance con lo que más te urge (por ejemplo, ventas e inventario) y se suman módulos por etapas, a medida que el sistema demuestra su valor. Así distribuyes la inversión, ves resultados rápido y evitas pagar por funciones que quizá no uses. Un [software a medida](/desarrollo-de-software-a-medida) bien planificado crece contigo, no se compra de una sola vez y se abandona.",
+      },
+      {
+        h2: "A medida vs software enlatado",
+        body:
+          "Un software enlatado cuesta menos al inicio, pero te obliga a adaptar tu forma de trabajar a él y suele cobrar licencias mensuales por usuario para siempre. El software a medida cuesta más al inicio, pero se ajusta exacto a tu operación y es tuyo. Si tu proceso es estándar, quizá te baste una herramienta del mercado; si es particular y ningún programa te calza, lo a medida termina siendo más rentable. Lo vemos a fondo en [software a medida vs enlatado](/blog/software-a-medida-vs-software-enlatado).",
+      },
+      {
+        h2: "Costos que no son solo el desarrollo",
+        body:
+          "Además del desarrollo inicial, considera el hosting o servidor donde vivirá el sistema, y el mantenimiento y soporte para correcciones, respaldos y mejoras. No son grandes, pero conviene tenerlos claros desde el inicio para que el sistema siga estable y seguro. Una cotización seria los detalla en lugar de esconderlos como 'extras' que aparecen después.",
+      },
+      {
+        h2: "Es inversión, no gasto",
+        body:
+          "La pregunta correcta no es solo cuánto cuesta, sino cuánto te ahorra o te hace ganar. Un sistema que elimina horas de trabajo manual, reduce errores de stock y te da reportes para decidir se paga solo en pocos meses. Cuando el software ordena tu operación y libera a tu equipo de tareas repetitivas, deja de ser un costo y pasa a ser una ventaja frente a la competencia.",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Un software a medida tiene costos mensuales?",
+        a: "No cobramos licencia por usuario como el software enlatado. Solo pagas el hosting o servidor y, si lo deseas, un plan de mantenimiento y soporte para respaldos, correcciones y mejoras.",
+      },
+      {
+        q: "¿Puedo empezar con poco e ir creciendo?",
+        a: "Sí, es lo recomendable. Arrancamos con el módulo que más te urge y sumamos los demás por etapas, según el sistema demuestra su valor. Así distribuyes la inversión.",
+      },
+      {
+        q: "¿Cuánto demora desarrollar un software a medida?",
+        a: "Depende del alcance. Un primer módulo funcional puede estar en algunas semanas; una plataforma con varios módulos e integraciones toma más. Te damos un cronograma antes de empezar.",
+      },
+      {
+        q: "¿Cómo obtengo el precio para mi caso?",
+        a: "Cuéntanos qué proceso quieres ordenar o automatizar por WhatsApp o el formulario y, tras un diagnóstico corto, te enviamos una propuesta con alcance, etapas y tiempos, sin compromiso.",
+      },
+    ],
+    related: [
+      { label: "Desarrollo de software a medida", href: "/desarrollo-de-software-a-medida", desc: "Sistemas hechos para tu operación, no plantillas." },
+      { label: "Software a medida vs enlatado", href: "/blog/software-a-medida-vs-software-enlatado", desc: "Cuándo conviene desarrollar a medida." },
+      { label: "Cotiza tu sistema", href: "/cotizacion", desc: "Propuesta con alcance y tiempos en menos de 24 horas." },
+    ],
+  },
+
+  {
+    slug: "costos-de-mantenimiento-de-una-pagina-web-en-peru",
+    title: "Costos de mantenimiento de una página web en Perú (2026)",
+    h1: "¿Cuánto cuesta mantener una página web en Perú?",
+    description:
+      "Costos de mantenimiento de una página web en Perú: hosting, dominio, seguridad, respaldos y actualizaciones. Qué incluye y por qué no mantenerla sale más caro.",
+    excerpt:
+      "Una web no termina cuando se publica. Esto es lo que cuesta mantenerla viva, segura y funcionando.",
+    datePublished: "2026-07-07",
+    dateModified: "2026-07-07",
+    category: "Web",
+    readingMin: 6,
+    intro:
+      "Una página web no es un pago único: como cualquier activo, necesita mantenimiento para seguir segura, rápida y funcionando. En Perú los costos recurrentes son bajos si sabes qué incluyen. Aquí verás en qué se compone el mantenimiento web y por qué descuidarlo termina saliendo más caro.",
+    sections: [
+      {
+        h2: "Los costos fijos: hosting y dominio",
+        body:
+          "Toda web necesita dos cosas para estar en línea: un dominio (tu dirección, como tunegocio.pe) que se renueva cada año, y un hosting (el espacio donde vive la web) que se paga mensual o anual. Son los costos base y suelen ser modestos. El dominio .pe es económico y el hosting varía según el tráfico y el tipo de sitio: una web informativa pesa menos que una tienda virtual con muchos productos. Puedes profundizar en [cuánto cuesta una página web](/blog/cuanto-cuesta-una-pagina-web-en-peru) para entender la inversión inicial.",
+      },
+      {
+        h2: "Qué incluye un buen mantenimiento",
+        body:
+          "Mantener una web va más allá de que 'esté prendida'. Un plan de mantenimiento serio cubre lo que la mantiene sana:",
+        bullets: [
+          "Actualizaciones de WordPress, plugins y temas para evitar fallas y hackeos.",
+          "Respaldos periódicos para recuperar la web si algo sale mal.",
+          "Certificado de seguridad (SSL) vigente y monitoreo de que el sitio esté en línea.",
+          "Correcciones de errores y pequeños ajustes de contenido.",
+          "Optimización de velocidad y limpieza de la base de datos.",
+        ],
+      },
+      {
+        h2: "Por qué no mantenerla sale más caro",
+        body:
+          "Una web abandonada es una web en riesgo. Los plugins desactualizados son la puerta de entrada más común para hackeos, y una web caída o infectada puede perder posiciones en Google, ahuyentar clientes y costar mucho más recuperarla que mantenerla. El mantenimiento es como el seguro del auto: parece un gasto hasta el día que lo necesitas. Vale más prevenir con un plan mensual bajo que pagar una emergencia.",
+      },
+      {
+        h2: "¿Necesito mantenimiento si mi web es simple?",
+        body:
+          "Incluso una web sencilla necesita hosting, dominio y SSL vigentes, y respaldos por si acaso. Si es una web estática sin WordPress, el mantenimiento técnico es mínimo. Si tiene WordPress, formularios o una tienda, sí conviene un plan que mantenga todo al día. La regla simple: mientras más funciones y más movimiento tenga tu web, más importa mantenerla.",
+      },
+      {
+        h2: "Mantenimiento y mejoras: no es lo mismo",
+        body:
+          "Conviene separar dos cosas. El mantenimiento mantiene la web funcionando (seguridad, respaldos, actualizaciones). Las mejoras son cambios nuevos: sumar una sección, rediseñar una página o agregar una función. El mantenimiento suele ser un monto fijo mensual; las mejoras se cotizan aparte según el trabajo. Tenerlo claro evita malentendidos sobre qué cubre tu plan.",
+      },
+      {
+        h2: "Cómo lo maneja Websy",
+        body:
+          "Ofrecemos [planes de mantenimiento web](/mantenimiento-web) que cubren hosting, seguridad, respaldos y actualizaciones, para que tú te dediques a tu negocio y no a apagar incendios técnicos. Si prefieres administrar tú mismo, te entregamos la web lista y te explicamos qué renovar. En cualquier caso, sabes qué pagas y qué recibes, sin sorpresas.",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Es obligatorio pagar mantenimiento mensual?",
+        a: "No es obligatorio, pero sí muy recomendable si tu web usa WordPress, formularios o tienda. El hosting, el dominio y el SSL siempre deben renovarse; el plan de mantenimiento además te cubre seguridad, respaldos y actualizaciones.",
+      },
+      {
+        q: "¿Qué pasa si no actualizo mi WordPress?",
+        a: "Con el tiempo aumenta el riesgo de fallas y hackeos, ya que los plugins desactualizados son la vía de entrada más común. Una web infectada puede caer en Google y costar más repararla que mantenerla al día.",
+      },
+      {
+        q: "¿El mantenimiento incluye cambios de diseño o nuevas secciones?",
+        a: "No. El mantenimiento mantiene la web funcionando y segura. Las mejoras (nuevas secciones, rediseños, funciones) se cotizan aparte según el trabajo, para que sepas exactamente qué pagas.",
+      },
+      {
+        q: "¿Cuánto cuesta el mantenimiento de mi web?",
+        a: "Depende del tipo de web y las funciones que tenga. Cuéntanos cómo es tu sitio y te preparamos un plan a tu medida, claro y sin compromiso.",
+      },
+    ],
+    related: [
+      { label: "Mantenimiento web", href: "/mantenimiento-web", desc: "Hosting, seguridad, respaldos y actualizaciones al día." },
+      { label: "¿Cuánto cuesta una página web?", href: "/blog/cuanto-cuesta-una-pagina-web-en-peru", desc: "La inversión inicial y qué incluye." },
+      { label: "Cotiza tu proyecto", href: "/cotizacion", desc: "Web y plan de mantenimiento a tu medida." },
+    ],
+  },
+
+  {
+    slug: "pagina-web-para-gimnasios-en-peru",
+    title: "Página web para gimnasios en Perú: membresías y captación",
+    h1: "Página web para gimnasios: membresías, horarios y captación",
+    description:
+      "Página web para gimnasios y centros fitness en Perú: horarios de clases, planes de membresía, inscripción por WhatsApp y SEO local para llenar tu gimnasio.",
+    excerpt:
+      "Los nuevos socios te buscan en Google antes de entrar. Así debe ser la web de un gimnasio para captarlos.",
+    datePublished: "2026-07-07",
+    dateModified: "2026-07-07",
+    category: "Diseño web",
+    readingMin: 6,
+    intro:
+      "Antes de inscribirse, la gente busca gimnasios cerca en Google, compara horarios y precios y decide en minutos. Si tu gimnasio no aparece o su información no convence, el nuevo socio se va con la competencia. Una página web propia capta esas búsquedas y las convierte en inscripciones.",
+    sections: [
+      {
+        h2: "Por qué tu gimnasio necesita web propia",
+        body:
+          "Instagram muestra tu ambiente, pero no responde lo que el nuevo socio pregunta: qué planes tienes, cuánto cuestan, qué horarios de clases hay y dónde quedas. Una web propia responde todo eso a cualquier hora, aparece en Google Maps cuando buscan 'gimnasio cerca de mí' y capta inscripciones sin depender del algoritmo de las redes. Es tu recepción abierta las 24 horas.",
+      },
+      {
+        h2: "Qué debe tener la web de un gimnasio",
+        body:
+          "No es una web bonita y ya: es una herramienta para llenar tu gimnasio. Lo indispensable:",
+        bullets: [
+          "Planes de membresía claros, con lo que incluye cada uno.",
+          "Horarios de clases (spinning, funcional, yoga) fáciles de actualizar.",
+          "Botón de inscripción o consulta por WhatsApp, directo y visible.",
+          "Fotos reales del local, equipos y clases que transmitan energía.",
+          "Ubicación con Google Maps, horarios de atención y medios de pago (incluido Yape).",
+        ],
+      },
+      {
+        h2: "Muestra tus planes y capta inscripciones",
+        body:
+          "El nuevo socio quiere saber cuánto cuesta y qué incluye antes de ir. Mostrar tus planes de membresía con claridad reduce las preguntas repetidas y filtra a quien sí va a inscribirse. Un botón de WhatsApp con el plan ya cargado, o un formulario de inscripción, convierte esa visita a la web en un socio real. Cuando armamos tu [página web](/diseno-de-paginas-web/gimnasios), la dejamos pensada para captar, no solo para mostrar.",
+      },
+      {
+        h2: "SEO local: aparece cuando buscan gimnasio cerca",
+        body:
+          "La mayoría de socios elige el gimnasio por cercanía. Salir en Google cuando alguien busca 'gimnasio en [tu distrito]' es media batalla ganada. Con una web optimizada y tu ficha de Google al día, apareces en el mapa y en las búsquedas locales de tu zona. Puedes profundizar en cómo [aparecer en Google con tu web](/blog/como-aparecer-en-google-con-tu-pagina-web).",
+      },
+      {
+        h2: "Automatiza inscripciones y control de socios",
+        body:
+          "Si tu gimnasio crece, llevar los socios en un cuaderno o Excel se vuelve un dolor de cabeza. Tu web puede conectarse con un [sistema a medida](/desarrollo-de-software-a-medida) para controlar membresías, vencimientos y pagos, y avisar cuando toca renovar. Así reduces la deserción y sabes al toque quién está al día. Empieza por la web y suma el sistema cuando lo necesites.",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Puedo actualizar los horarios y precios yo mismo?",
+        a: "Sí. Entregamos la web administrable para que cambies horarios de clases, planes y precios cuando quieras, sin depender de nadie ni saber programar.",
+      },
+      {
+        q: "¿La web puede recibir inscripciones o pagos?",
+        a: "Sí. Podemos incluir inscripción y consulta por WhatsApp, y si lo necesitas, pagos en línea o un sistema de control de membresías conectado a la web.",
+      },
+      {
+        q: "¿Sirve para captar socios de mi zona?",
+        a: "Sí. Optimizamos la web para SEO local y tu ficha de Google, de modo que aparezcas cuando busquen gimnasios cerca de tu distrito.",
+      },
+      {
+        q: "¿Cuánto cuesta la web de un gimnasio?",
+        a: "Depende de si quieres solo presencia y captación o también inscripciones y control de socios. Te preparamos una cotización a medida y sin costo en menos de 24 horas.",
+      },
+    ],
+    related: [
+      { label: "Diseño de páginas web para gimnasios", href: "/diseno-de-paginas-web/gimnasios", desc: "Webs que llenan tu gimnasio de socios." },
+      { label: "Software para control de membresías", href: "/desarrollo-de-software-a-medida", desc: "Membresías, vencimientos y pagos ordenados." },
+      { label: "Ver precios y cotizar", href: "/precios", desc: "Qué incluye la web de un gimnasio." },
+    ],
+  },
+
+  {
+    slug: "pagina-web-para-hoteles-y-hospedajes-en-peru",
+    title: "Página web para hoteles y hospedajes en Perú: reservas directas",
+    h1: "Página web para hoteles: reservas directas sin comisión",
+    description:
+      "Página web para hoteles y hospedajes en Perú: reservas directas sin comisión de Booking, motor de reservas, fotos que venden y SEO local para llenar habitaciones.",
+    excerpt:
+      "Booking se queda con una comisión de cada reserva. Una web propia te trae huéspedes directos, sin intermediarios.",
+    datePublished: "2026-07-08",
+    dateModified: "2026-07-08",
+    category: "Diseño web",
+    readingMin: 7,
+    intro:
+      "Las plataformas como Booking o Airbnb te traen huéspedes, pero se quedan con una comisión de cada reserva y con la relación con tu cliente. Una página web propia para tu hotel u hospedaje capta reservas directas, sin comisión, y te da control total. Así debería ser tu presencia online.",
+    sections: [
+      {
+        h2: "Por qué tu hotel necesita web propia",
+        body:
+          "Las OTA (Booking, Expedia, Airbnb) son útiles para que te descubran, pero cobran una comisión alta por cada reserva y controlan a tu huésped. Una web propia te permite recibir reservas directas sin esa comisión, mostrar tu hotel como quieres y fidelizar al huésped para que la próxima vez reserve contigo directo. Muchos hoteles usan ambos: las OTA para alcance y su web propia para captar sin intermediarios y ahorrar comisiones.",
+      },
+      {
+        h2: "Qué debe tener la web de un hotel",
+        body:
+          "La web de un hospedaje vende una experiencia, así que cada detalle cuenta. Lo indispensable:",
+        bullets: [
+          "Galería de fotos profesionales de habitaciones, áreas y entorno.",
+          "Tipos de habitación con precios, servicios y disponibilidad.",
+          "Motor de reservas o botón de reserva y consulta por WhatsApp.",
+          "Ubicación con Google Maps, atractivos cercanos y cómo llegar.",
+          "Carga rápida en el celular y medios de pago (incluido Yape y tarjeta).",
+        ],
+      },
+      {
+        h2: "Reservas directas sin comisión",
+        body:
+          "Cada reserva que entra por tu web es dinero que no compartes con una plataforma. Un motor de reservas o, para empezar, un botón de reserva por WhatsApp con las fechas ya cargadas, convierte la visita en huésped. La clave es que reservar sea fácil y transmita confianza: fotos reales, políticas claras y respuesta rápida. Cuando armamos tu [página web de hotel](/diseno-de-paginas-web/hoteles), la dejamos lista para captar reservas directas.",
+      },
+      {
+        h2: "Fotos y experiencia que venden",
+        body:
+          "En hotelería, la decisión se toma con los ojos. Fotos oscuras o de mala calidad hacen dudar; fotos luminosas y reales de las habitaciones, el desayuno y las vistas cierran la reserva. La web debe cargar rápido en el celular, porque la mayoría busca hospedaje desde el móvil, y mostrar tu propuesta en segundos. Una buena web transmite la sensación de quedarse antes de llegar.",
+      },
+      {
+        h2: "SEO local y turístico: aparece cuando buscan dónde dormir",
+        body:
+          "Los viajeros buscan 'hotel en [ciudad]' u 'hospedaje cerca de [atractivo]' antes de reservar. Salir en Google y en el mapa cuando buscan tu zona te trae reservas directas sin pagar comisión ni publicidad. Con una web optimizada y tu ficha de Google al día, apareces en las búsquedas de tu destino. Aprende más en nuestra guía para [aparecer en Google](/blog/como-aparecer-en-google-con-tu-pagina-web).",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿La web reemplaza a Booking o Airbnb?",
+        a: "No necesariamente. Las OTA ayudan a que te descubran huéspedes nuevos; tu web propia sirve para captar reservas directas sin comisión y fidelizar. Lo ideal es combinarlas.",
+      },
+      {
+        q: "¿Puede tener un motor de reservas?",
+        a: "Sí. Podemos integrar un motor de reservas con disponibilidad y pago en línea, o empezar con reservas y consultas por WhatsApp según el tamaño de tu hospedaje.",
+      },
+      {
+        q: "¿Puedo actualizar precios y disponibilidad yo mismo?",
+        a: "Sí. Entregamos la web administrable para que cambies tarifas, fotos y disponibilidad cuando quieras, sin depender de nadie.",
+      },
+      {
+        q: "¿Cuánto cuesta la web de un hotel u hospedaje?",
+        a: "Depende de si quieres solo presencia o también motor de reservas y pagos. Te preparamos una cotización a medida y sin costo en menos de 24 horas.",
+      },
+    ],
+    related: [
+      { label: "Diseño de páginas web para hoteles", href: "/diseno-de-paginas-web/hoteles", desc: "Reservas directas, sin comisión de intermediarios." },
+      { label: "Cómo aparecer en Google", href: "/blog/como-aparecer-en-google-con-tu-pagina-web", desc: "SEO local para captar viajeros de tu zona." },
+      { label: "Ver precios y cotizar", href: "/precios", desc: "Qué incluye la web de un hotel." },
+    ],
+  },
+
+  {
+    slug: "pagina-web-para-colegios-e-instituciones-educativas-en-peru",
+    title: "Página web para colegios e instituciones educativas en Perú",
+    h1: "Página web para colegios e instituciones educativas",
+    description:
+      "Página web para colegios, academias e instituciones educativas en Perú: proceso de admisión, información para padres, comunicados y SEO local para captar matrículas.",
+    excerpt:
+      "Los padres investigan el colegio en internet antes de matricular. Así debe ser la web de una institución educativa.",
+    datePublished: "2026-07-08",
+    dateModified: "2026-07-08",
+    category: "Diseño web",
+    readingMin: 6,
+    intro:
+      "Antes de matricular a sus hijos, los padres investigan el colegio en internet: propuesta educativa, infraestructura, costos y proceso de admisión. Si tu institución no tiene una web clara y confiable, pierdes matrículas ante colegios que sí la tienen. Una buena web capta padres y comunica con tu comunidad.",
+    sections: [
+      {
+        h2: "Por qué un colegio necesita web propia",
+        body:
+          "Una institución educativa proyecta seriedad, y eso empieza por su presencia online. Los padres buscan el colegio en Google, revisan su propuesta y comparan antes de agendar una visita. Una web propia comunica tu proyecto educativo, muestra tu infraestructura y responde las dudas del proceso de admisión a cualquier hora. Además, es el canal oficial para comunicados, calendario y noticias, mucho más confiable que un grupo de WhatsApp.",
+      },
+      {
+        h2: "Qué debe tener la web de un colegio",
+        body:
+          "La web educativa cumple dos funciones: captar familias nuevas e informar a la comunidad actual. Lo indispensable:",
+        bullets: [
+          "Propuesta educativa, niveles y metodología con claridad.",
+          "Proceso de admisión y matrícula, con formulario o cita por WhatsApp.",
+          "Fotos reales de aulas, laboratorios, patios y actividades.",
+          "Sección de comunicados, noticias y calendario escolar.",
+          "Ubicación con Google Maps, niveles ofrecidos y datos de contacto.",
+        ],
+      },
+      {
+        h2: "Facilita el proceso de admisión",
+        body:
+          "El momento clave es la admisión. Explicar con claridad los pasos, requisitos y fechas reduce las llamadas repetidas y ordena a las familias interesadas. Un formulario de admisión o un botón de cita por WhatsApp convierte al padre que investiga en una visita agendada. Cuando armamos tu [página web para colegios](/diseno-de-paginas-web/colegios), la dejamos pensada para captar matrículas, no solo para informar.",
+      },
+      {
+        h2: "Comunica con padres y comunidad",
+        body:
+          "Una web administrable te permite publicar comunicados, el calendario escolar y noticias sin depender de terceros. Es el canal oficial que los padres consultan cuando dudan de un mensaje que circula por chat. Mantenerla al día transmite orden y confianza, dos cosas que las familias valoran al elegir dónde educar a sus hijos.",
+      },
+      {
+        h2: "SEO local: aparece cuando buscan colegios en tu zona",
+        body:
+          "Muchas familias buscan 'colegios en [distrito]' o 'colegio [tipo] cerca'. Salir en Google y en el mapa cuando investigan tu zona te trae familias interesadas en temporada de admisión. Con una web optimizada y tu ficha de Google al día, apareces en esas búsquedas locales. Puedes profundizar en cómo [aparecer en Google con tu web](/blog/como-aparecer-en-google-con-tu-pagina-web).",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Podemos publicar comunicados y noticias nosotros mismos?",
+        a: "Sí. Entregamos la web administrable para que el equipo publique comunicados, el calendario y noticias cuando lo necesite, sin saber programar.",
+      },
+      {
+        q: "¿La web puede recibir solicitudes de admisión?",
+        a: "Sí. Incluimos formulario de admisión o cita por WhatsApp, y podemos conectar las solicitudes con un sistema para que lleguen ordenadas al equipo de admisión.",
+      },
+      {
+        q: "¿Sirve para captar familias de nuestra zona?",
+        a: "Sí. Optimizamos la web para SEO local y tu ficha de Google, para que aparezcas cuando busquen colegios en tu distrito, sobre todo en temporada de matrícula.",
+      },
+      {
+        q: "¿Cuánto cuesta la web de un colegio o academia?",
+        a: "Depende del número de secciones y funciones (admisión, comunicados, intranet). Te preparamos una cotización a medida y sin costo en menos de 24 horas.",
+      },
+    ],
+    related: [
+      { label: "Diseño de páginas web para colegios", href: "/diseno-de-paginas-web/colegios", desc: "Webs que captan matrículas y comunican con la comunidad." },
+      { label: "Software a medida educativo", href: "/desarrollo-de-software-a-medida", desc: "Admisión, pagos y comunicación en un solo sistema." },
+      { label: "Ver precios y cotizar", href: "/precios", desc: "Qué incluye la web de una institución educativa." },
+    ],
+  },
+
+  {
+    slug: "como-integrar-yape-y-plin-en-tu-tienda-virtual",
+    title: "Cómo integrar Yape y Plin en tu tienda virtual (paso a paso)",
+    h1: "Cómo integrar Yape y Plin en tu tienda virtual",
+    description:
+      "Cómo aceptar Yape y Plin en tu tienda virtual en Perú: opciones de integración, confirmación de pago, ventajas y qué cuidar para no perder ventas.",
+    excerpt:
+      "Yape y Plin son los medios que todos usan en Perú. Así se integran bien en tu tienda para vender más.",
+    datePublished: "2026-07-08",
+    dateModified: "2026-07-08",
+    category: "Pagos",
+    readingMin: 6,
+    intro:
+      "En Perú, si tu tienda virtual no acepta Yape o Plin, pierdes ventas: son los medios que millones usan a diario. Integrarlos bien reduce la fricción y evita que el cliente abandone el carrito. Aquí verás las formas de integrarlos y qué cuidar para que cada pago se confirme sin dolores.",
+    sections: [
+      {
+        h2: "Por qué Yape y Plin son imprescindibles",
+        body:
+          "Yape y Plin son la forma más rápida y familiar de pagar para la mayoría de peruanos: sin tarjeta, sin comisiones para el comprador y en segundos. Una tienda que solo acepta tarjeta deja fuera a un montón de clientes que pagarían al toque con su celular. Ofrecer Yape y Plin no es un extra, es lo mínimo para vender en el mercado peruano. La regla es simple: mientras menos fricción en el pago, más ventas cierras.",
+      },
+      {
+        h2: "Formas de integrar Yape y Plin",
+        body:
+          "Hay varias maneras, de la más simple a la más automática:",
+        bullets: [
+          "Pago manual: muestras tu número o QR, el cliente yapea y sube su comprobante. Simple, pero requiere que confirmes a mano.",
+          "Botón de pago vía pasarela: pasarelas como Izipay, Niubiz o Culqi ya integran Yape y Plin, y confirman el pago automáticamente.",
+          "Checkout con QR dinámico: el sistema genera un QR por cada pedido y detecta el pago, ideal para tiendas con volumen.",
+        ],
+      },
+      {
+        h2: "Confirmación automática: la clave de no perder tiempo",
+        body:
+          "El mayor dolor del pago manual es estar revisando comprobantes uno por uno y confirmando pedidos a mano. Cuando integras Yape y Plin vía pasarela, el pedido se confirma solo al recibir el pago, se envía el correo y el WhatsApp automáticos, y el stock se descuenta. Eso te ahorra horas y evita errores. Si recién empiezas, el pago manual funciona; si ya tienes volumen, la confirmación automática vale cada sol.",
+      },
+      {
+        h2: "Combina Yape y Plin con otros medios",
+        body:
+          "Yape y Plin son imprescindibles, pero no los únicos. Ofrecer también tarjeta (vía Niubiz o Izipay), transferencia y pago contra entrega amplía tu alcance a todo tipo de cliente. Lo ideal es dejar que el comprador elija su método favorito en el checkout. Lo vemos a fondo en nuestra guía de [pasarelas de pago para ecommerce en Perú](/blog/pasarelas-de-pago-para-ecommerce-en-peru).",
+      },
+      {
+        h2: "Qué cuidar al integrar Yape y Plin",
+        body:
+          "Un pago mal integrado genera desconfianza. Cuida que el checkout sea corto y claro, que se muestren los logos de Yape y Plin para dar seguridad, y que la confirmación (correo y WhatsApp) llegue rápido para que el cliente sepa que su pago se recibió. Cuando desarrollamos tu [tienda virtual](/tiendas-virtuales), configuramos estos medios listos para vender, no a medio armar.",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Puedo aceptar Yape y Plin sin una pasarela de pago?",
+        a: "Sí, con pago manual: muestras tu QR o número, el cliente paga y sube el comprobante. Es simple pero debes confirmar a mano. Con una pasarela, la confirmación es automática.",
+      },
+      {
+        q: "¿Yape y Plin cobran comisión al vendedor?",
+        a: "En modo manual (persona a persona) no suele haber comisión, pero implica confirmar a mano. Al integrarlos vía pasarela para cobros automáticos, la pasarela cobra una comisión por transacción.",
+      },
+      {
+        q: "¿La tienda confirma el pedido automáticamente al pagar con Yape?",
+        a: "Si integras Yape y Plin mediante una pasarela, sí: el pedido se confirma solo, se envían las notificaciones y el stock se descuenta. En modo manual, tú confirmas al ver el comprobante.",
+      },
+      {
+        q: "¿Ustedes integran Yape y Plin en mi tienda?",
+        a: "Sí. Configuramos Yape, Plin, tarjeta y otros medios según tu operación, listos para vender. Escríbenos y te recomendamos la mejor combinación para tu negocio.",
+      },
+    ],
+    related: [
+      { label: "Desarrollo de tiendas virtuales", href: "/tiendas-virtuales", desc: "Tienda con Yape, Plin y tarjeta lista para vender." },
+      { label: "Pasarelas de pago en Perú", href: "/blog/pasarelas-de-pago-para-ecommerce-en-peru", desc: "Compara Yape, Plin, Niubiz e Izipay." },
+      { label: "Cotiza tu tienda", href: "/cotizacion", desc: "Integramos tus medios de pago a tu medida." },
+    ],
+  },
+
+  {
+    slug: "izipay-o-niubiz-cual-elegir-para-cobrar-con-tarjeta",
+    title: "Izipay o Niubiz: cuál elegir para cobrar con tarjeta en Perú",
+    h1: "Izipay o Niubiz: ¿cuál conviene para tu tienda?",
+    description:
+      "Izipay o Niubiz para cobrar con tarjeta en tu tienda virtual en Perú: diferencias en integración, medios aceptados y qué considerar para elegir la pasarela correcta.",
+    excerpt:
+      "Las dos pasarelas de tarjetas más usadas de Perú, comparadas para que elijas la correcta para tu tienda.",
+    datePublished: "2026-07-08",
+    dateModified: "2026-07-08",
+    category: "Pagos",
+    readingMin: 6,
+    intro:
+      "Izipay y Niubiz son las dos pasarelas de tarjetas más usadas en Perú para cobrar en una tienda virtual. Ambas aceptan crédito, débito y suelen integrar Yape y Plin, pero difieren en detalles que importan según tu negocio. Aquí las diferencias reales para que elijas sin equivocarte.",
+    sections: [
+      {
+        h2: "Qué hacen Izipay y Niubiz",
+        body:
+          "Ambas son pasarelas de pago: permiten que tu tienda cobre con tarjeta de crédito y débito de forma segura y automática, y hoy también procesan Yape y Plin. Niubiz (antes Visanet) es la más veterana y tiene fuerte presencia con la banca tradicional. Izipay creció rápido y es muy popular entre pymes por su facilidad. Las dos son opciones sólidas y confiables; la mejor depende de tu operación, no de cuál es 'mejor' en abstracto.",
+      },
+      {
+        h2: "Qué mirar al comparar",
+        body:
+          "Más allá de la marca, estos son los puntos que de verdad definen tu elección:",
+        bullets: [
+          "Comisión por transacción y si hay costos fijos mensuales.",
+          "Medios que acepta: crédito, débito, Yape, Plin, cuotas.",
+          "Facilidad de integración con tu tienda (Shopify, WooCommerce o a medida).",
+          "Rapidez del abono del dinero a tu cuenta.",
+          "Soporte y requisitos para afiliarte (RUC, tipo de negocio).",
+        ],
+      },
+      {
+        h2: "Cuándo conviene cada una",
+        body:
+          "No hay una respuesta universal, pero sí guías. Niubiz suele encajar bien si ya trabajas con banca tradicional y quieres una marca reconocida que dé confianza al comprador. Izipay tiende a ser ágil para pymes que quieren afiliarse rápido y sin complicaciones. Lo más sano es comparar la comisión y las condiciones vigentes de cada una para tu rubro, porque cambian. En la cotización te ayudamos a elegir según tu volumen y tu plataforma.",
+      },
+      {
+        h2: "La integración importa tanto como la pasarela",
+        body:
+          "Una gran pasarela mal integrada igual pierde ventas. Lo clave es que el pago se confirme automáticamente, que el checkout sea corto y que el cliente vea los logos que le dan confianza. Cuando desarrollamos tu [tienda virtual](/tiendas-virtuales), integramos la pasarela que elijas de forma que el pedido se confirme solo y el stock se descuente. Puedes revisar el panorama completo en [pasarelas de pago para ecommerce](/blog/pasarelas-de-pago-para-ecommerce-en-peru).",
+      },
+      {
+        h2: "No tienes que elegir solo una",
+        body:
+          "Muchas tiendas ofrecen tarjeta vía una pasarela y, además, Yape y Plin, transferencia y pago contra entrega. Mientras más medios ofrezcas (sin saturar el checkout), menos ventas pierdes. La decisión Izipay o Niubiz define tu procesador de tarjetas, pero puedes complementarlo con otros métodos para no dejar a ningún cliente fuera.",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Izipay y Niubiz aceptan Yape y Plin?",
+        a: "Sí, ambas pasarelas hoy procesan Yape y Plin además de tarjeta de crédito y débito, lo que te permite ofrecer los medios más usados en Perú desde una sola integración.",
+      },
+      {
+        q: "¿Cuál cobra menos comisión?",
+        a: "Las comisiones varían según tu rubro, volumen y las condiciones vigentes de cada pasarela, por lo que conviene comparar al momento de afiliarte. En la cotización te orientamos según tu caso.",
+      },
+      {
+        q: "¿Puedo cambiar de pasarela más adelante?",
+        a: "Sí. Se puede cambiar o sumar otra pasarela después, aunque implica reconfigurar la integración. Por eso conviene elegir bien desde el inicio según tu proyección.",
+      },
+      {
+        q: "¿Ustedes integran la pasarela en mi tienda?",
+        a: "Sí. Integramos Izipay, Niubiz u otra según tu plataforma y volumen, con confirmación automática del pago. Cuéntanos tu caso y te recomendamos la mejor opción.",
+      },
+    ],
+    related: [
+      { label: "Desarrollo de tiendas virtuales", href: "/tiendas-virtuales", desc: "Tienda con la pasarela correcta, lista para cobrar." },
+      { label: "Pasarelas de pago en Perú", href: "/blog/pasarelas-de-pago-para-ecommerce-en-peru", desc: "El panorama completo: Yape, Plin, Niubiz e Izipay." },
+      { label: "Cómo aceptar pagos con tarjeta", href: "/blog/como-aceptar-pagos-con-tarjeta-en-tu-web-peru", desc: "Qué necesitas para cobrar con tarjeta en tu web." },
+    ],
+  },
+
+  {
+    slug: "cuanto-cuesta-el-seo-en-peru",
+    title: "Cuánto cuesta el SEO en Perú (2026): precios y qué incluye",
+    h1: "¿Cuánto cuesta el SEO en Perú?",
+    description:
+      "Cuánto cuesta el SEO en Perú en 2026: modelos de cobro, qué incluye un servicio serio de posicionamiento y por qué es una inversión de mediano plazo, no un gasto.",
+    excerpt:
+      "El SEO no se cobra igual que una web. Aquí cómo se cobra, qué incluye y por qué es inversión, no gasto.",
+    datePublished: "2026-07-08",
+    dateModified: "2026-07-08",
+    category: "SEO",
+    readingMin: 7,
+    intro:
+      "El SEO en Perú no se cobra como una página web: es un trabajo continuo, no un pago único. Su precio depende de la competencia de tus palabras clave y del alcance del trabajo. Aquí verás cómo se cobra el posicionamiento, qué debe incluir un servicio serio y por qué es una inversión de mediano plazo.",
+    sections: [
+      {
+        h2: "Por qué el SEO no se cobra como una web",
+        body:
+          "Una página web se entrega una vez; el SEO es un proceso continuo. Google cambia, la competencia se mueve y el contenido se debe alimentar mes a mes. Por eso el SEO suele cobrarse como un servicio recurrente (mensual) o por proyecto, no como un pago único. Quien te promete 'posicionar tu web' con un solo pago y para siempre no entiende cómo funciona o te está vendiendo humo. El posicionamiento se mantiene mientras se trabaja.",
+      },
+      {
+        h2: "Qué factores definen el precio",
+        body:
+          "El costo del SEO varía según el esfuerzo que exige tu mercado:",
+        bullets: [
+          "Competencia de tus palabras clave: rankear 'abogado en Lima' cuesta más que un nicho pequeño.",
+          "Estado actual de tu web (velocidad, estructura, contenido existente).",
+          "Cuánto contenido nuevo hay que crear cada mes.",
+          "Si necesitas SEO local, nacional o para una tienda con muchos productos.",
+          "Trabajo de enlaces (backlinks) y autoridad, que toma tiempo y recursos.",
+        ],
+      },
+      {
+        h2: "Qué debe incluir un servicio serio de SEO",
+        body:
+          "Un servicio de [SEO y posicionamiento](/seo) serio no es 'poner palabras clave'. Debe incluir una auditoría técnica (velocidad, indexación, estructura), optimización on-page, creación de contenido que atraiga búsquedas, mejora del enlazado interno y trabajo de autoridad, además de reportes claros de avance. Si una propuesta no explica qué se hace cada mes ni cómo se mide, desconfía. El buen SEO se nota en el tráfico y los contactos, no en promesas.",
+      },
+      {
+        h2: "Modelos de cobro más comunes",
+        body:
+          "En Perú verás tres formas: mensualidad fija (lo más común, ideal para trabajo continuo), pago por proyecto (para una optimización puntual o auditoría) y, con menos frecuencia, cobro por resultados (arriesgado si no está bien definido qué es un 'resultado'). Para la mayoría de negocios, la mensualidad con objetivos claros es lo más sano: mantiene el trabajo constante y permite ajustar la estrategia con datos reales.",
+      },
+      {
+        h2: "SEO vs Google Ads: no compiten",
+        body:
+          "El SEO tarda meses pero no pagas por cada clic; Google Ads trae clientes hoy pero pagas por visita. No son rivales: lo rentable es combinarlos, usar Ads para vender desde ya y construir SEO en paralelo para depender menos de la publicidad. Lo vemos a fondo en [Google Ads vs SEO](/blog/google-ads-vs-seo-cual-conviene-para-tu-negocio).",
+      },
+      {
+        h2: "Es inversión de mediano plazo, no gasto",
+        body:
+          "El SEO no da resultados la primera semana, y ahí está su valor: el tráfico que construyes no se apaga cuando dejas de pagar clics, como en Ads. Un buen posicionamiento sigue trayendo clientes mes a mes, y con el tiempo baja tu costo de captación. Pensar el SEO como inversión (no como gasto mensual a recortar) es lo que separa a los negocios que crecen en Google de los que dependen para siempre de la publicidad.",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿En cuánto tiempo veo resultados de SEO?",
+        a: "El SEO es progresivo: los primeros movimientos suelen verse en semanas y los resultados sólidos en algunos meses, según la competencia de tus palabras clave. No es inmediato, pero es duradero.",
+      },
+      {
+        q: "¿El SEO se paga una sola vez?",
+        a: "No. El SEO es un trabajo continuo porque Google y la competencia cambian. Se suele cobrar mensual o por proyecto. El posicionamiento se mantiene mientras se sigue trabajando.",
+      },
+      {
+        q: "¿Conviene más el SEO o Google Ads?",
+        a: "Depende de tu urgencia. Ads trae clientes de inmediato pagando por clic; el SEO tarda pero es más rentable a mediano plazo. Lo ideal es empezar con Ads y construir SEO en paralelo.",
+      },
+      {
+        q: "¿Cuánto costaría el SEO para mi negocio?",
+        a: "Depende de tu rubro, competencia y el estado de tu web. Cuéntanos tu caso y te preparamos una propuesta con alcance y objetivos claros, sin compromiso.",
+      },
+    ],
+    related: [
+      { label: "SEO y posicionamiento web", href: "/seo", desc: "Posiciona tu negocio en Google de forma sostenible." },
+      { label: "Google Ads vs SEO", href: "/blog/google-ads-vs-seo-cual-conviene-para-tu-negocio", desc: "Cuál conviene y por qué se complementan." },
+      { label: "Cómo aparecer en Google", href: "/blog/como-aparecer-en-google-con-tu-pagina-web", desc: "Las bases para posicionar tu web." },
+    ],
+  },
+
+  {
+    slug: "que-es-el-branding-y-por-que-tu-pyme-lo-necesita",
+    title: "Qué es el branding y por qué tu pyme lo necesita en Perú",
+    h1: "Qué es el branding y por qué tu pyme lo necesita",
+    description:
+      "Qué es el branding y por qué tu pyme en Perú lo necesita: más que un logo, es la percepción de tu marca. Cómo una identidad sólida te ayuda a vender más y cobrar mejor.",
+    excerpt:
+      "El branding no es solo un logo bonito: es cómo te percibe tu cliente y por qué te elige a ti y no al de al lado.",
+    datePublished: "2026-07-08",
+    dateModified: "2026-07-08",
+    category: "Marketing",
+    readingMin: 6,
+    intro:
+      "Branding no es solo tu logo: es todo lo que tu cliente siente y piensa cuando ve tu marca. Para una pyme en Perú, un branding sólido es lo que te hace ver profesional, generar confianza y cobrar mejor que la competencia. Aquí qué es realmente y por qué tu negocio lo necesita.",
+    sections: [
+      {
+        h2: "Branding no es lo mismo que logo",
+        body:
+          "Mucha gente cree que branding es 'el logo', pero el logo es solo una parte. El branding es la percepción completa de tu marca: los colores, la tipografía, el tono con que hablas, cómo se ve tu web, tus redes y hasta cómo respondes por WhatsApp. Es la personalidad de tu negocio y la promesa que transmites. Un logo lindo sobre una marca sin identidad se siente vacío; el branding le da coherencia y sentido a todo.",
+      },
+      {
+        h2: "Por qué una pyme lo necesita",
+        body:
+          "En un mercado con mucha competencia, el branding es lo que hace que te elijan a ti. Estos son los beneficios concretos:",
+        bullets: [
+          "Confianza: una marca cuidada se percibe seria y profesional.",
+          "Diferenciación: destacas frente a competidores que se ven todos iguales.",
+          "Precio: una marca sólida puede cobrar más sin espantar al cliente.",
+          "Recordación: la gente recuerda y recomienda marcas con identidad clara.",
+          "Coherencia: todo tu negocio comunica lo mismo, de la web a la tarjeta.",
+        ],
+      },
+      {
+        h2: "Qué incluye un trabajo de branding",
+        body:
+          "Un [servicio de branding](/branding) va más allá del logo. Suele incluir el diseño del logo y sus variantes, la paleta de colores, la tipografía, y un manual de marca que define cómo usar todo de forma consistente. En algunos casos suma el naming (nombre), el tono de comunicación y aplicaciones como tarjetas, redes o empaques. El objetivo es que tu marca se vea igual de profesional en todos lados, no distinta en cada pieza.",
+      },
+      {
+        h2: "Branding y tu página web van de la mano",
+        body:
+          "Tu web es donde más gente ve tu marca, así que el branding y el diseño web deben conversar. De poco sirve un logo bonito si tu [página web](/diseno-de-paginas-web) usa otros colores y se ve improvisada. Cuando la identidad y la web están alineadas, el cliente percibe una marca sólida y confía más. Por eso conviene definir el branding antes o junto con la web, no después y por separado.",
+      },
+      {
+        h2: "El branding es una inversión, no un lujo",
+        body:
+          "Muchas pymes dejan el branding 'para cuando crezcan', pero es justo al revés: una marca sólida ayuda a crecer más rápido. No hace falta un presupuesto enorme para empezar; incluso un branding básico bien hecho (logo, colores, tipografía y su uso coherente) transforma cómo te percibe el mercado. Es una inversión que se nota en la confianza que generas y en lo que puedes cobrar.",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿El branding es solo el logo?",
+        a: "No. El logo es una parte. El branding incluye colores, tipografía, tono de comunicación y cómo se ve tu marca en la web, redes y todo punto de contacto. Es la percepción completa de tu negocio.",
+      },
+      {
+        q: "¿Una pyme pequeña necesita branding?",
+        a: "Sí, y quizá más que una grande, porque le ayuda a verse profesional y competir. No necesitas un gran presupuesto: un branding básico bien hecho ya transforma cómo te percibe el mercado.",
+      },
+      {
+        q: "¿Puedo hacer el branding junto con mi página web?",
+        a: "Sí, y es lo ideal. Definir la identidad junto con la web asegura que todo se vea coherente y profesional. Podemos hacer branding y web como un proyecto integrado.",
+      },
+      {
+        q: "¿Cuánto cuesta un trabajo de branding?",
+        a: "Depende del alcance: desde un logo con paleta y tipografía hasta un manual de marca completo. Cuéntanos qué necesitas y te preparamos una propuesta a tu medida.",
+      },
+    ],
+    related: [
+      { label: "Branding e identidad de marca", href: "/branding", desc: "Marca sólida que genera confianza y te diferencia." },
+      { label: "Diseño de páginas web", href: "/diseno-de-paginas-web", desc: "Una web alineada con tu identidad de marca." },
+      { label: "Cotiza tu proyecto", href: "/cotizacion", desc: "Branding y web como proyecto integrado." },
+    ],
+  },
+
+  {
+    slug: "google-ads-vs-seo-cual-conviene-para-tu-negocio",
+    title: "Google Ads vs SEO: cuál conviene para tu negocio en Perú",
+    h1: "Google Ads vs SEO: ¿cuál conviene para tu negocio?",
+    description:
+      "Google Ads vs SEO en Perú: diferencias en velocidad, costo y durabilidad. Cuándo usar cada uno y por qué combinarlos es la estrategia más rentable para captar clientes.",
+    excerpt:
+      "Uno trae clientes hoy pagando; el otro los trae gratis pero tarda. La verdad es que se complementan.",
+    datePublished: "2026-07-08",
+    dateModified: "2026-07-08",
+    category: "Marketing",
+    readingMin: 7,
+    intro:
+      "Google Ads y SEO son las dos formas de aparecer en Google, pero funcionan distinto: Ads te pone arriba hoy pagando por cada clic; el SEO te posiciona con el tiempo sin pagar por visita. No son rivales. Aquí verás las diferencias reales y cuándo conviene cada uno para tu negocio en Perú.",
+    sections: [
+      {
+        h2: "La diferencia de fondo",
+        body:
+          "Cuando buscas algo en Google, ves dos tipos de resultados: los anuncios (arriba, marcados como 'patrocinado') y los orgánicos (debajo, que no se pagan). Google Ads te lleva a los primeros: pagas por cada clic y apareces de inmediato. El SEO trabaja los segundos: no pagas por clic, pero toma tiempo y esfuerzo ganar esas posiciones. Uno es alquilar tu lugar en Google; el otro es construir uno propio que se queda contigo.",
+      },
+      {
+        h2: "Velocidad: Ads gana de inmediato",
+        body:
+          "Si necesitas clientes esta semana, Google Ads es tu opción: enciendes la campaña y empiezas a aparecer ante quien ya busca lo que vendes. El SEO no funciona así: sus resultados llegan en semanas o meses. Por eso Ads es ideal para lanzar un negocio, validar qué servicio se vende más o llenar la agenda mientras tu posicionamiento orgánico madura. La inmediatez es la gran ventaja de la publicidad.",
+      },
+      {
+        h2: "Costo y durabilidad: SEO gana a largo plazo",
+        body:
+          "Con Ads, el día que dejas de pagar, dejas de aparecer: el tráfico se apaga. Con SEO, el posicionamiento que construyes sigue trayendo visitas mes a mes sin pagar por clic. Por eso el SEO baja tu costo de captación con el tiempo, mientras que en Ads cada cliente siempre tiene un precio. Piénsalo así: Ads es alquiler y SEO es propiedad. Ambos cuestan, pero uno construye un activo.",
+      },
+      {
+        h2: "La landing y la medición son clave en ambos",
+        body:
+          "Traer visitas no basta: hay que convertirlas. En Ads, cada campaña necesita una [landing o web pensada para convertir](/diseno-de-paginas-web) y medición de leads, o botas la plata. En SEO, necesitas una web rápida y bien estructurada para que Google te posicione. En los dos casos, sin una buena web de destino y sin medir tus contactos, ni el mejor anuncio ni el mejor ranking sirven. Lo vemos en [Google Ads para pymes](/blog/google-ads-para-pymes-en-peru-cuanto-invertir).",
+      },
+      {
+        h2: "La respuesta real: combínalos",
+        body:
+          "No es Ads o SEO, es Ads y SEO. La estrategia más rentable usa [Google Ads](/google-ads) para vender desde ya y, en paralelo, construye [SEO](/seo) para depender menos de la publicidad con el tiempo. Así tienes clientes hoy y una base que crece sola mañana. Muchos negocios que solo hacen Ads quedan atrapados pagando para siempre; los que suman SEO reducen ese costo año a año.",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Qué da resultados más rápido, Ads o SEO?",
+        a: "Google Ads, sin duda: apareces apenas enciendes la campaña. El SEO tarda semanas o meses, pero sus resultados son más duraderos y no dependen de seguir pagando por clic.",
+      },
+      {
+        q: "¿Cuál es más barato a largo plazo?",
+        a: "El SEO, porque el tráfico que construyes no se apaga al dejar de pagar, como sí ocurre con Ads. Con el tiempo, el SEO baja tu costo de captación mientras que en Ads cada cliente siempre cuesta.",
+      },
+      {
+        q: "¿Puedo hacer solo uno de los dos?",
+        a: "Sí, pero no es lo ideal. Solo Ads te deja pagando para siempre; solo SEO te deja sin clientes al inicio mientras madura. Combinarlos te da resultados hoy y sostenibilidad mañana.",
+      },
+      {
+        q: "¿Ustedes manejan Ads y SEO?",
+        a: "Sí. Podemos crear la landing, configurar la campaña y la medición de leads, y trabajar tu posicionamiento en paralelo. Cuéntanos tu objetivo y te armamos una propuesta según tu presupuesto.",
+      },
+    ],
+    related: [
+      { label: "Google Ads", href: "/google-ads", desc: "Clientes desde el primer día con campañas medidas." },
+      { label: "SEO y posicionamiento", href: "/seo", desc: "Tráfico que crece y no depende de pagar por clic." },
+      { label: "Google Ads para pymes", href: "/blog/google-ads-para-pymes-en-peru-cuanto-invertir", desc: "Cuánto invertir y cómo no botar la plata." },
+    ],
+  },
+
+  {
+    slug: "tienda-virtual-vs-marketplace-conviene-vender-en-mercadolibre",
+    title: "Tienda virtual vs marketplace: ¿conviene vender en Mercado Libre?",
+    h1: "Tienda virtual vs marketplace: ¿cuál te conviene?",
+    description:
+      "Tienda virtual propia vs marketplace como Mercado Libre en Perú: comisiones, control, marca y clientes. Cuándo conviene cada uno y por qué muchos usan ambos.",
+    excerpt:
+      "Mercado Libre te da alcance pero se queda con tu comisión y tu cliente. Cuándo conviene tu tienda propia.",
+    datePublished: "2026-07-08",
+    dateModified: "2026-07-08",
+    category: "Ecommerce",
+    readingMin: 7,
+    intro:
+      "Vender en un marketplace como Mercado Libre te da alcance inmediato, pero cobra comisión por cada venta y se queda con la relación con tu cliente. Una tienda virtual propia te da control y marca, aunque debes atraer tu propio tráfico. Aquí las diferencias reales para decidir dónde vender en Perú.",
+    sections: [
+      {
+        h2: "Qué es cada uno",
+        body:
+          "Un marketplace (Mercado Libre, Falabella, Linio) es una plataforma donde muchos vendedores publican en un mismo sitio; tú alquilas un espacio en su vitrina. Una tienda virtual propia es tu ecommerce, con tu dominio, tu marca y tus reglas. En el marketplace aprovechas el tráfico que ya tienen; en tu tienda propia, ese tráfico lo construyes tú, pero todo lo que vendes queda contigo. Son dos modelos distintos, con ventajas opuestas.",
+      },
+      {
+        h2: "Ventajas del marketplace",
+        body:
+          "Los marketplaces tienen puntos fuertes reales, sobre todo al empezar:",
+        bullets: [
+          "Tráfico inmediato: millones ya entran a comprar cada día.",
+          "Confianza prestada: el comprador confía en la plataforma.",
+          "Sin necesidad de atraer visitas al inicio.",
+          "Logística y pagos ya resueltos por la plataforma.",
+        ],
+      },
+      {
+        h2: "El costo oculto del marketplace",
+        body:
+          "Todo ese alcance tiene un precio. El marketplace cobra una comisión por cada venta (que puede ser alta), te pone a competir por precio junto a decenas de vendedores del mismo producto, y se queda con los datos de tu cliente: no sabes quién te compró para venderle otra vez. Además, no construyes marca propia: el cliente recuerda 'lo compré en Mercado Libre', no tu negocio. Vendes, pero no creces como marca.",
+      },
+      {
+        h2: "Ventajas de tu tienda virtual propia",
+        body:
+          "Una [tienda virtual propia](/tiendas-virtuales) te da lo que el marketplace no: cero comisión por venta a la plataforma, control total de tu marca y tu diseño, y los datos de tus clientes para fidelizarlos y venderles de nuevo. Compites por valor y experiencia, no solo por precio. La contra es que debes atraer tu propio tráfico con SEO, redes o [Google Ads](/google-ads), pero cada cliente que ganas es tuyo de verdad.",
+      },
+      {
+        h2: "La respuesta para la mayoría: usa ambos",
+        body:
+          "No tienes que elegir uno solo. La estrategia más común y sana es usar el marketplace para que te descubran clientes nuevos y tu tienda propia para vender con tu marca, fidelizar y ahorrar comisiones con los recurrentes. Muchos negocios peruanos arrancan en Mercado Libre y, cuando validan que venden, montan su tienda propia para dejar de depender de la comisión. Lo ideal es tener presencia en ambos y llevar poco a poco al cliente a comprarte directo.",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Mercado Libre cobra comisión por venta?",
+        a: "Sí. Los marketplaces cobran una comisión por cada venta, que puede ser significativa. En tu tienda propia no pagas esa comisión a una plataforma; solo asumes hosting, dominio y la pasarela de pago.",
+      },
+      {
+        q: "¿Puedo vender en Mercado Libre y tener mi tienda a la vez?",
+        a: "Sí, y es lo más recomendable. Usa el marketplace para que te descubran y tu tienda propia para fidelizar y ahorrar comisiones con los clientes recurrentes. Muchos negocios combinan ambos.",
+      },
+      {
+        q: "¿En mi tienda propia tendré tráfico como en el marketplace?",
+        a: "No al inicio: en tu tienda debes atraer visitas con SEO, redes o Google Ads. La ventaja es que cada cliente que ganas es tuyo, con sus datos, y no pagas comisión por venta.",
+      },
+      {
+        q: "¿Ustedes crean tiendas virtuales propias?",
+        a: "Sí. Desarrollamos tu tienda con tu marca, pagos peruanos y optimizada para atraer tráfico. Cuéntanos qué vendes y te preparamos una cotización a tu medida.",
+      },
+    ],
+    related: [
+      { label: "Desarrollo de tiendas virtuales", href: "/tiendas-virtuales", desc: "Tu tienda propia, con tu marca y sin comisión por venta." },
+      { label: "Ventajas de tener una tienda virtual", href: "/blog/ventajas-de-tener-una-tienda-virtual", desc: "Por qué vender con tienda propia rinde más." },
+      { label: "Cómo posicionar tu tienda en Google", href: "/blog/como-posicionar-una-tienda-virtual-en-google", desc: "Atrae tu propio tráfico sin depender del marketplace." },
+    ],
+  },
+
+  {
+    slug: "como-migrar-tu-pagina-web-sin-perder-posicionamiento-en-google",
+    title: "Cómo migrar tu página web sin perder posicionamiento en Google",
+    h1: "Cómo migrar tu web sin perder posicionamiento en Google",
+    description:
+      "Cómo migrar o rediseñar tu página web en Perú sin perder posicionamiento en Google: redirecciones 301, estructura de URLs, contenido y los errores que hunden tu SEO.",
+    excerpt:
+      "Rediseñar o cambiar de web puede hundir tu tráfico si se hace mal. Así se migra sin perder tus posiciones.",
+    datePublished: "2026-07-08",
+    dateModified: "2026-07-08",
+    category: "SEO",
+    readingMin: 7,
+    intro:
+      "Rediseñar o cambiar de plataforma tu página web puede disparar tu negocio o hundir el tráfico que tanto costó construir. El error más común es migrar sin plan y perder de golpe las posiciones en Google. Aquí verás cómo migrar tu web cuidando el SEO y qué errores evitar a toda costa.",
+    sections: [
+      {
+        h2: "Por qué una migración puede hundir tu SEO",
+        body:
+          "Google conoce tu web actual: sabe qué URLs tienes, qué contenido hay en cada una y qué posición merecen. Cuando migras (cambias de plataforma, rediseñas o mueves de dominio) y esas URLs cambian o desaparecen sin avisar, Google encuentra páginas rotas y pierde el rastro de lo que ya valoraba. El resultado es una caída de tráfico que puede tardar meses en recuperarse. La buena noticia: se evita con un plan de migración cuidado.",
+      },
+      {
+        h2: "Las redirecciones 301: lo más importante",
+        body:
+          "Si una URL cambia, hay que decirle a Google a dónde fue: eso es una redirección 301 (permanente). Sin ellas, cada página vieja que Google visita da error 404 y pierdes el posicionamiento que tenía. Antes de migrar hay que listar todas las URLs actuales y mapear cada una a su equivalente nueva. Es el paso que más se descuida y el que más tráfico salva. Si tu web tiene muchas páginas o un blog, este mapeo es imprescindible.",
+      },
+      {
+        h2: "Qué revisar antes de migrar",
+        body:
+          "Una migración segura empieza con una lista de verificación:",
+        bullets: [
+          "Inventario de todas las URLs actuales y su tráfico (con Search Console).",
+          "Mapa de redirecciones 301 de cada URL vieja a la nueva.",
+          "Conservar títulos, textos y contenido que ya posicionan.",
+          "Mantener o mejorar la velocidad y la versión móvil.",
+          "Revisar que el sitemap y el robots.txt no bloqueen la web nueva.",
+        ],
+      },
+      {
+        h2: "Errores que arruinan una migración",
+        body:
+          "Los más caros: lanzar la web nueva sin redirecciones (todo cae en 404), cambiar todas las URLs sin necesidad, dejar la web bloqueada a Google por un ajuste de 'en construcción' que nadie quitó, o borrar contenido que traía tráfico pensando que 'no servía'. También olvidar avisar el cambio en Search Console. Cada uno de estos errores, por sí solo, puede tumbar tu posicionamiento. Por eso una migración no se improvisa un viernes por la tarde.",
+      },
+      {
+        h2: "Después de migrar: monitorea",
+        body:
+          "La migración no termina al publicar. Los días siguientes hay que revisar en Search Console que Google esté indexando la web nueva, cazar errores 404 que se hayan escapado y confirmar que el tráfico se mantiene. Si algo cae, se corrige a tiempo antes de que se vuelva un problema grande. Un buen monitoreo posterior es lo que convierte una migración de riesgosa a segura.",
+      },
+      {
+        h2: "Cómo lo maneja Websy",
+        body:
+          "Cuando rediseñamos o migramos una web, tratamos el SEO como prioridad, no como algo que se ve al final. Mapeamos las redirecciones, conservamos el contenido que posiciona y monitoreamos tras el lanzamiento. Si tu web actual ya tiene tráfico, migrar bien es la diferencia entre crecer o empezar de cero. Puedes ver qué incluye nuestro servicio de [SEO](/seo) o de [diseño de páginas web](/diseno-de-paginas-web).",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Voy a perder posiciones si rediseño mi web?",
+        a: "No si se hace bien. El riesgo aparece cuando cambian las URLs sin redirecciones 301 o se borra contenido que posiciona. Con un plan de migración cuidado, puedes rediseñar y hasta mejorar tu SEO.",
+      },
+      {
+        q: "¿Qué es una redirección 301 y por qué importa?",
+        a: "Es una redirección permanente que le dice a Google que una URL se mudó a otra dirección. Sin ellas, las páginas viejas dan error 404 y pierdes el posicionamiento que tenían. Son el paso clave de toda migración.",
+      },
+      {
+        q: "¿Cuánto tarda recuperarse si una migración salió mal?",
+        a: "Depende del daño, pero puede tomar varios meses recuperar el tráfico perdido. Por eso conviene invertir en hacerlo bien la primera vez, con redirecciones y monitoreo posterior.",
+      },
+      {
+        q: "¿Ustedes migran mi web cuidando el SEO?",
+        a: "Sí. Mapeamos redirecciones, conservamos el contenido que posiciona y monitoreamos tras el lanzamiento para que no pierdas tráfico. Cuéntanos cómo es tu web actual y te orientamos.",
+      },
+    ],
+    related: [
+      { label: "SEO y posicionamiento web", href: "/seo", desc: "Migra y crece sin perder tus posiciones en Google." },
+      { label: "Diseño de páginas web", href: "/diseno-de-paginas-web", desc: "Rediseños que cuidan tu tráfico y tu SEO." },
+      { label: "Cómo aparecer en Google", href: "/blog/como-aparecer-en-google-con-tu-pagina-web", desc: "Las bases del posicionamiento web." },
+    ],
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
