@@ -8,6 +8,8 @@ export type NavLink = { label: string; href: string };
 export const SERVICE_LINKS: NavLink[] = [
   { label: "Tiendas Virtuales", href: "/tiendas-virtuales" },
   { label: "Tiendas Shopify", href: "/tiendas-virtuales/shopify" },
+  { label: "Migrar a Shopify", href: "/tiendas-virtuales/shopify/migracion" },
+  { label: "Costos de una Tienda Shopify", href: "/tiendas-virtuales/shopify/costos" },
   { label: "Tiendas WooCommerce", href: "/tiendas-virtuales/woocommerce" },
   { label: "Diseño de Páginas Web", href: "/diseno-de-paginas-web" },
   { label: "Software a Medida", href: "/desarrollo-de-software-a-medida" },
@@ -45,7 +47,9 @@ export const MAIN_LINKS: NavLink[] = [
 /** URLs nuevas de esta ola, para el sitemap. */
 export const SERVICE_SITEMAP: { path: string; priority: number }[] = [
   { path: "/tiendas-virtuales", priority: 0.9 },
-  { path: "/tiendas-virtuales/shopify", priority: 0.7 },
+  { path: "/tiendas-virtuales/shopify", priority: 0.9 },
+  { path: "/tiendas-virtuales/shopify/migracion", priority: 0.8 },
+  { path: "/tiendas-virtuales/shopify/costos", priority: 0.8 },
   { path: "/tiendas-virtuales/woocommerce", priority: 0.7 },
   { path: "/diseno-de-paginas-web", priority: 0.9 },
   { path: "/desarrollo-de-software-a-medida", priority: 0.8 },
