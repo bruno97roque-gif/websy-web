@@ -3902,6 +3902,603 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Ver precios y cotizar", href: "/precios", desc: "Qué incluye la web de una clínica dental." },
     ],
   },
+
+  /* ── Cluster Shopify ─────────────────────────────────────────── */
+  {
+    slug: "como-crear-una-tienda-shopify-en-peru-paso-a-paso",
+    title: "Cómo crear una tienda Shopify en Perú: guía paso a paso (2026)",
+    h1: "Cómo crear una tienda Shopify en Perú (paso a paso)",
+    description:
+      "Guía paso a paso para crear una tienda Shopify en Perú: cuenta, tema, productos, pagos con Yape, Plin, Niubiz e Izipay, envíos y lanzamiento para empezar a vender.",
+    excerpt:
+      "Cada paso para montar tu tienda Shopify en Perú: desde la cuenta hasta el lanzamiento, con pagos locales configurados.",
+    datePublished: "2026-07-08",
+    dateModified: "2026-07-08",
+    category: "Ecommerce",
+    readingMin: 8,
+    intro:
+      "Crear una tienda Shopify en Perú sigue un orden claro: abrir la cuenta, elegir y personalizar el tema, cargar tus productos, configurar los pagos locales (Yape, Plin, Niubiz, Izipay), definir envíos y lanzar. En esta guía recorremos cada paso para que tu tienda quede lista para vender, no solo montada.",
+    sections: [
+      {
+        h2: "1. Crea tu cuenta y elige el plan de Shopify",
+        body:
+          "Regístrate en Shopify y elige el plan según el tamaño de tu operación. Puedes empezar con un plan básico y subir cuando crezcas. Ten a mano tu logo, tu marca y una idea clara de tu catálogo. Recuerda que el plan mensual de Shopify es un costo aparte del desarrollo; lo explicamos en la guía de [cuánto cuesta una tienda Shopify](/tiendas-virtuales/shopify/costos).",
+      },
+      {
+        h2: "2. Elige y personaliza un tema a tu marca",
+        body:
+          "El tema es la base del diseño. Elige uno ligero y rápido, y personalízalo con tus colores, tu logo y tu tipografía. Evita instalar decenas de apps que lo vuelvan lento: la velocidad es la que hace o rompe una venta.",
+        bullets: [
+          "Prioriza un tema rápido antes que uno recargado de efectos.",
+          "Ajusta colores, logo y tipografía a tu identidad de marca.",
+          "Cuida la versión móvil: ahí compra la mayoría en Perú.",
+        ],
+      },
+      {
+        h2: "3. Carga tus productos y organiza colecciones",
+        body:
+          "Sube cada producto con buenas fotos, una descripción única y sus variantes (talla, color) si aplica. Agrupa en colecciones ordenadas para que el cliente encuentre rápido lo que busca. Escribe títulos y descripciones pensando también en Google.",
+        bullets: [
+          "Fotos claras y de buen peso para que carguen rápido.",
+          "Descripciones únicas, no copiadas del proveedor.",
+          "Variantes con stock independiente por talla y color.",
+        ],
+      },
+      {
+        h2: "4. Configura los pagos que usan tus clientes",
+        body:
+          "En Perú una tienda vende cuando acepta los medios reales: Yape y Plin para pagos inmediatos, tarjeta con Niubiz o Izipay, y transferencia o pago contra entrega. Te contamos cómo hacerlo en [vender con Yape y Plin en Shopify](/blog/como-vender-con-yape-y-plin-en-shopify).",
+      },
+      {
+        h2: "5. Define envíos, impuestos y notificaciones",
+        body:
+          "Configura tarifas de envío por zona, los impuestos que correspondan y las notificaciones automáticas de pedido por correo. Un cliente que sabe cuánto y cuándo llega su compra confía más y abandona menos el carrito.",
+      },
+      {
+        h2: "6. Revisa, lanza y optimiza",
+        body:
+          "Antes de publicar, prueba el checkout completo como si fueras cliente, revisa el móvil y conecta tu WhatsApp para dudas. Después de lanzar, mide qué se ve y qué se vende, y ajusta. Si prefieres que lo hagamos por ti, somos [agencia Shopify en Perú](/tiendas-virtuales/shopify) y entregamos la tienda optimizada para vender.",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Necesito saber programar para crear una tienda Shopify?",
+        a: "No. Shopify está pensado para usarse sin programar. Puedes montar tu tienda con el editor visual; y si quieres un diseño a medida y optimizado para vender, nosotros lo desarrollamos por ti.",
+      },
+      {
+        q: "¿Cuánto demora crear una tienda Shopify?",
+        a: "Una tienda estándar bien hecha suele estar lista en 3 a 5 semanas, según la cantidad de productos e integraciones. Hacerla apurada y sin optimizar suele salir cara después.",
+      },
+      {
+        q: "¿Shopify acepta Yape y Plin en Perú?",
+        a: "Sí. Se pueden configurar Yape y Plin, además de tarjeta con Niubiz o Izipay y transferencia. Lo detallamos en nuestra guía de pagos locales en Shopify.",
+      },
+      {
+        q: "¿Me conviene hacerla yo o con una agencia?",
+        a: "Si tienes tiempo y pocos productos, puedes empezar solo. Si quieres una tienda rápida, con SEO y optimizada para convertir, una agencia especialista te ahorra errores y acelera tus ventas.",
+      },
+    ],
+    related: [
+      { label: "Agencia Shopify Perú", href: "/tiendas-virtuales/shopify", desc: "La creamos por ti, optimizada para vender." },
+      { label: "Cuánto cuesta una tienda Shopify", href: "/tiendas-virtuales/shopify/costos", desc: "Qué define el precio y en qué inviertes." },
+      { label: "Vender con Yape y Plin en Shopify", href: "/blog/como-vender-con-yape-y-plin-en-shopify", desc: "Cómo aceptar pagos locales en tu tienda." },
+    ],
+  },
+
+  {
+    slug: "como-vender-con-yape-y-plin-en-shopify",
+    title: "Cómo vender con Yape y Plin en Shopify (Perú)",
+    h1: "Cómo vender con Yape y Plin en tu tienda Shopify",
+    description:
+      "Cómo aceptar Yape y Plin en Shopify en Perú: opciones para cobrar con billeteras y tarjeta (Niubiz, Izipay), reducir el abandono de carrito y no perder ventas.",
+    excerpt:
+      "Yape y Plin son casi obligatorios para vender en Perú. Así los integras en tu tienda Shopify sin perder ventas.",
+    datePublished: "2026-07-08",
+    dateModified: "2026-07-08",
+    category: "Pagos",
+    readingMin: 6,
+    intro:
+      "En Perú, muchas ventas se caen porque la tienda no acepta Yape o Plin. Shopify permite cobrar con billeteras y tarjeta si lo configuras bien: billeteras locales, pasarelas como Niubiz o Izipay, y opciones manuales. Aquí ves cómo aceptarlos y qué cuidar para no perder compras en el checkout.",
+    sections: [
+      {
+        h2: "Por qué Yape y Plin son imprescindibles en Perú",
+        body:
+          "Son la forma más rápida y familiar de pagar para millones de peruanos. Si el cliente llega al checkout y no encuentra Yape o Plin, muchas veces abandona la compra. Ofrecerlos reduce la fricción y sube tu conversión.",
+      },
+      {
+        h2: "Opciones para aceptar Yape y Plin en Shopify",
+        bullets: [
+          "Pasarelas que integran billeteras y tarjeta en un solo checkout.",
+          "Niubiz o Izipay para tarjeta de crédito y débito con confirmación automática.",
+          "Método de pago manual (transferencia/QR) para casos puntuales, siempre con confirmación clara.",
+        ],
+      },
+      {
+        h2: "Tarjeta con Niubiz o Izipay, en el mismo checkout",
+        body:
+          "Además de las billeteras, necesitas aceptar tarjeta para no perder al cliente que paga con crédito o débito. Niubiz e Izipay son las más usadas en Perú y permiten cobros automáticos y seguros dentro de Shopify.",
+      },
+      {
+        h2: "Cómo evitar perder ventas en el pago",
+        bullets: [
+          "Muestra los logos de pago (Yape, Plin, tarjeta) para dar confianza.",
+          "Mantén el checkout corto: cada paso extra pierde ventas.",
+          "Confirma cada pedido automáticamente por correo y WhatsApp.",
+          "Prueba el flujo de pago completo antes de lanzar.",
+        ],
+      },
+      {
+        h2: "Confianza: el detalle que cierra la compra",
+        body:
+          "Un checkout que se ve seguro, con candado HTTPS, políticas claras de envío y devolución y datos de contacto visibles, convierte más. La gente paga cuando siente que del otro lado hay un negocio serio.",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Se puede aceptar Yape y Plin directamente en Shopify?",
+        a: "Sí, mediante pasarelas y configuraciones que integran billeteras locales, además de tarjeta con Niubiz o Izipay. Configuramos la combinación que mejor se adapte a tu negocio.",
+      },
+      {
+        q: "¿Puedo ofrecer Yape, Plin y tarjeta a la vez?",
+        a: "Sí, y es lo recomendable: mientras más medios ofreces, menos ventas pierdes. Lo ideal es que el cliente elija su método favorito en un checkout corto.",
+      },
+      {
+        q: "¿Los pagos se confirman solos?",
+        a: "Con pasarelas de tarjeta y billeteras integradas, la confirmación es automática. Si usas un método manual (transferencia/QR), conviene un flujo claro de verificación para no demorar el despacho.",
+      },
+      {
+        q: "¿Ustedes configuran los pagos por mí?",
+        a: "Sí. Como agencia Shopify en Perú dejamos tus pagos locales listos y probados, junto con el resto de la tienda optimizada para vender.",
+      },
+    ],
+    related: [
+      { label: "Agencia Shopify Perú", href: "/tiendas-virtuales/shopify", desc: "Tienda con pagos Yape, Plin, Niubiz e Izipay listos." },
+      { label: "Cómo crear una tienda Shopify", href: "/blog/como-crear-una-tienda-shopify-en-peru-paso-a-paso", desc: "La guía completa, paso a paso." },
+      { label: "Cotiza tu tienda Shopify", href: "/tiendas-virtuales/shopify/costos", desc: "Qué define el precio de tu tienda." },
+    ],
+  },
+
+  {
+    slug: "mejores-apps-de-shopify-para-vender-mas-en-peru",
+    title: "Las mejores apps de Shopify para vender más en Perú (2026)",
+    h1: "Mejores apps de Shopify para vender más en Perú",
+    description:
+      "Las apps de Shopify que de verdad ayudan a vender en Perú: pagos locales, WhatsApp, reseñas, SEO, envíos y recuperación de carrito, sin llenar tu tienda de apps que la vuelven lenta.",
+    excerpt:
+      "No necesitas 30 apps. Estas son las categorías de apps de Shopify que sí mueven tus ventas en Perú.",
+    datePublished: "2026-07-08",
+    dateModified: "2026-07-08",
+    category: "Ecommerce",
+    readingMin: 6,
+    intro:
+      "El error más común en Shopify es instalar decenas de apps que ralentizan la tienda y matan las ventas. La clave no es cantidad, sino elegir pocas apps que sumen de verdad: pagos locales, WhatsApp, reseñas, SEO y recuperación de carrito. Aquí las categorías que sí valen la pena en Perú.",
+    sections: [
+      {
+        h2: "Menos apps, más velocidad (y más ventas)",
+        body:
+          "Cada app suma código que puede volver lenta tu tienda. Una tienda lenta pierde ventas y ranking. Por eso instalamos solo lo necesario y priorizamos la velocidad, que es parte de tener una [tienda optimizada para vender](/tiendas-virtuales/shopify).",
+      },
+      {
+        h2: "Pagos y billeteras locales",
+        body:
+          "Lo primero: apps o pasarelas que integren Yape, Plin y tarjeta (Niubiz, Izipay). Sin los medios de pago que usa el peruano, ninguna otra app importa.",
+      },
+      {
+        h2: "WhatsApp y atención al cliente",
+        bullets: [
+          "Botón de WhatsApp para resolver dudas antes de la compra.",
+          "Notificaciones de pedido por WhatsApp para dar confianza.",
+          "Chat o preguntas frecuentes para reducir consultas repetidas.",
+        ],
+      },
+      {
+        h2: "Reseñas y prueba social",
+        body:
+          "Las reseñas reales de clientes suben la confianza y la conversión. Una app de reseñas bien puesta ayuda a que el visitante indeciso se decida, siempre con opiniones auténticas.",
+      },
+      {
+        h2: "SEO, envíos y recuperación de carrito",
+        bullets: [
+          "SEO: apps para editar metatítulos, datos estructurados y redirecciones.",
+          "Envíos: cálculo de tarifas por zona y seguimiento del pedido.",
+          "Carrito abandonado: recordatorios por correo o WhatsApp para recuperar ventas.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Cuántas apps debería instalar en mi tienda Shopify?",
+        a: "Las mínimas necesarias. Cada app suma peso y puede volver lenta la tienda. Es mejor pocas apps bien elegidas (pagos, WhatsApp, reseñas, SEO) que decenas que ralentizan y no aportan.",
+      },
+      {
+        q: "¿Las apps de Shopify tienen costo?",
+        a: "Algunas son gratuitas y otras cobran una mensualidad. Conviene considerar ese costo recurrente al calcular el mantenimiento de tu tienda.",
+      },
+      {
+        q: "¿Una app soluciona mi problema de ventas?",
+        a: "No por sí sola. Las apps ayudan, pero vender depende sobre todo de una tienda rápida, con buenos productos, pagos locales y SEO. La app es complemento, no la base.",
+      },
+      {
+        q: "¿Ustedes eligen las apps por mí?",
+        a: "Sí. Seleccionamos solo las apps que tu negocio necesita y las configuramos para que sumen sin sacrificar velocidad.",
+      },
+    ],
+    related: [
+      { label: "Agencia Shopify Perú", href: "/tiendas-virtuales/shopify", desc: "Tienda optimizada, con solo las apps que suman." },
+      { label: "Cómo posicionar tu tienda Shopify en Google", href: "/blog/como-posicionar-una-tienda-shopify-en-google-peru", desc: "SEO para que te encuentren compradores." },
+      { label: "Cuánto cuesta una tienda Shopify", href: "/tiendas-virtuales/shopify/costos", desc: "Incluye el costo recurrente de las apps." },
+    ],
+  },
+
+  {
+    slug: "tienda-shopify-para-ropa-y-moda-en-peru",
+    title: "Tienda Shopify para ropa y moda en Perú: cómo vender online",
+    h1: "Tienda Shopify para ropa y moda en Perú",
+    description:
+      "Cómo armar una tienda Shopify para ropa y moda en Perú: tallas y colores, fotos que venden, pagos con Yape y Plin y política de cambios para vender más y devolver menos.",
+    excerpt:
+      "Vender ropa online tiene sus reglas: tallas, fotos y cambios. Así se arma una tienda Shopify de moda que vende.",
+    datePublished: "2026-07-08",
+    dateModified: "2026-07-08",
+    category: "Ecommerce",
+    readingMin: 6,
+    intro:
+      "La moda vende muy bien online en Perú, pero tiene detalles propios: variantes de talla y color, fotos que despiertan el deseo y una política de cambios clara. Shopify maneja todo eso sin problema si se configura bien. Aquí ves qué necesita una tienda Shopify de ropa para vender desde el primer día.",
+    sections: [
+      {
+        h2: "Tallas, colores y variantes bien organizadas",
+        body:
+          "Cada prenda debe tener sus tallas y colores como variantes con stock independiente. Así el cliente elige exacto lo que quiere, tú controlas qué se vende más y evitas vender lo agotado.",
+      },
+      {
+        h2: "Fotos que venden moda",
+        bullets: [
+          "Imágenes claras de cada prenda y color.",
+          "Fotos de la prenda puesta, no solo en plano.",
+          "Tabla de tallas para reducir dudas y cambios.",
+          "Fotos ligeras y optimizadas para que la tienda cargue rápido.",
+        ],
+      },
+      {
+        h2: "Pagos y envíos pensados para moda",
+        body:
+          "Acepta Yape, Plin y tarjeta para no perder ventas, y define envíos claros por zona. En ropa, la confianza en el envío y el cambio es lo que cierra la compra.",
+      },
+      {
+        h2: "Política de cambios que da confianza",
+        body:
+          "En moda, la duda 'y si no me queda' frena la compra. Una política de cambios y devoluciones clara y visible convierte a ese cliente indeciso. Explícala en el producto y en el checkout.",
+      },
+      {
+        h2: "Colecciones y campañas para vender más",
+        bullets: [
+          "Colecciones por temporada, categoría o novedad.",
+          "Destacados de 'lo más vendido' y 'nuevos ingresos'.",
+          "Conexión con Instagram y WhatsApp para cerrar ventas.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Shopify maneja tallas y colores con stock por separado?",
+        a: "Sí. Configuramos variantes (talla, color) con su propio stock, para que controles cada combinación y no vendas lo agotado.",
+      },
+      {
+        q: "¿Puedo conectar mi Instagram con la tienda?",
+        a: "Sí. Shopify se integra con Instagram y WhatsApp, para que lleves tus seguidores directo a la compra.",
+      },
+      {
+        q: "¿Cómo reduzco las devoluciones de ropa?",
+        a: "Con buenas fotos, tabla de tallas, descripciones claras y una política de cambios visible. Cuanta más información das, menos sorpresas y menos devoluciones.",
+      },
+      {
+        q: "¿Cuánto cuesta una tienda Shopify de ropa?",
+        a: "Depende del número de productos, variantes y diseño. Te preparamos una cotización a medida; puedes ver qué define el precio en nuestra guía de costos de una tienda Shopify.",
+      },
+    ],
+    related: [
+      { label: "Agencia Shopify Perú", href: "/tiendas-virtuales/shopify", desc: "Tu tienda de moda, optimizada para vender." },
+      { label: "Tienda Shopify de belleza y cosmética", href: "/blog/tienda-shopify-para-productos-de-belleza-y-cosmetica", desc: "Otro rubro que vende muy bien online." },
+      { label: "Cuánto cuesta una tienda Shopify", href: "/tiendas-virtuales/shopify/costos", desc: "Qué define el precio de tu tienda de ropa." },
+    ],
+  },
+
+  {
+    slug: "tienda-shopify-para-productos-de-belleza-y-cosmetica",
+    title: "Tienda Shopify para belleza y cosmética en Perú",
+    h1: "Tienda Shopify para productos de belleza y cosmética",
+    description:
+      "Cómo vender belleza y cosmética con una tienda Shopify en Perú: catálogo por línea, kits, fichas que generan confianza, pagos locales y contenido para atraer compradores.",
+    excerpt:
+      "Skincare, maquillaje y cuidado personal venden online con la tienda correcta. Así se arma en Shopify.",
+    datePublished: "2026-07-08",
+    dateModified: "2026-07-08",
+    category: "Ecommerce",
+    readingMin: 6,
+    intro:
+      "La belleza y la cosmética son de los rubros que más crecen en ecommerce en Perú. Skincare, maquillaje, cabello y cuidado personal venden bien si la tienda transmite confianza y facilita la recompra. Aquí ves cómo armar una tienda Shopify de belleza que convierte visitas en clientas frecuentes.",
+    sections: [
+      {
+        h2: "Catálogo por línea y tipo de producto",
+        body:
+          "Organiza tu tienda por líneas (rostro, cabello, cuerpo, maquillaje) y por necesidad (hidratación, anti-edad, acné). Un catálogo ordenado ayuda a la clienta a encontrar rápido lo que busca y a descubrir productos que combinan.",
+      },
+      {
+        h2: "Fichas que generan confianza",
+        bullets: [
+          "Ingredientes, modo de uso y beneficios claros.",
+          "Fotos reales del producto y su textura.",
+          "Reseñas auténticas de clientas.",
+          "Indicaciones y advertencias donde correspondan.",
+        ],
+      },
+      {
+        h2: "Kits, packs y recompra",
+        body:
+          "En belleza la recompra es clave. Arma kits y packs (rutina completa, set de regalo), y facilita volver a comprar lo que se acaba. Un buen pack sube el ticket promedio y fideliza.",
+      },
+      {
+        h2: "Pagos locales y envíos cuidados",
+        body:
+          "Acepta Yape, Plin y tarjeta con Niubiz o Izipay, y cuida el envío: los cosméticos requieren empaque protegido. Un pedido que llega bien empacado genera reseñas positivas y recompra.",
+      },
+      {
+        h2: "Contenido que atrae compradoras",
+        body:
+          "Un blog o guías ('cómo armar tu rutina', 'qué serum para tu piel') atrae a quien investiga antes de comprar y la acerca a tus productos. Es SEO que además educa y vende. Podemos dejar tu tienda lista para eso como tu [agencia Shopify en Perú](/tiendas-virtuales/shopify).",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Shopify sirve para vender cosméticos y skincare?",
+        a: "Sí. Permite organizar catálogos por línea, armar kits, manejar variantes y aceptar pagos locales. Es una plataforma ideal para el rubro belleza.",
+      },
+      {
+        q: "¿Puedo vender kits o packs de productos?",
+        a: "Sí. Configuramos kits y packs para subir el ticket promedio y facilitar la compra de rutinas completas.",
+      },
+      {
+        q: "¿Cómo genero confianza en cosmética?",
+        a: "Con fichas completas (ingredientes, uso, beneficios), fotos reales, reseñas auténticas y una política de cambios clara. La confianza es lo que convierte en un rubro sensible como belleza.",
+      },
+      {
+        q: "¿Cuánto cuesta una tienda Shopify de belleza?",
+        a: "Depende del tamaño del catálogo y el diseño. Te damos una cotización a medida; revisa qué define el precio en nuestra guía de costos.",
+      },
+    ],
+    related: [
+      { label: "Agencia Shopify Perú", href: "/tiendas-virtuales/shopify", desc: "Tu tienda de belleza, optimizada para vender." },
+      { label: "Tienda Shopify para ropa y moda", href: "/blog/tienda-shopify-para-ropa-y-moda-en-peru", desc: "Otro rubro fuerte en ecommerce." },
+      { label: "Cuánto cuesta una tienda Shopify", href: "/tiendas-virtuales/shopify/costos", desc: "Qué define el precio de tu tienda." },
+    ],
+  },
+
+  {
+    slug: "shopify-para-pymes-en-peru-vale-la-pena",
+    title: "Shopify para pymes en Perú: ¿vale la pena? (2026)",
+    h1: "Shopify para pymes en Perú: ¿vale la pena?",
+    description:
+      "¿Vale la pena Shopify para una pyme en Perú? Ventajas, costos reales, cuándo conviene frente a WooCommerce o marketplaces y cómo empezar sin sobreinvertir.",
+    excerpt:
+      "Si tienes una pyme y evalúas Shopify, esto es lo que debes sopesar antes de invertir: pros, costos y cuándo conviene.",
+    datePublished: "2026-07-08",
+    dateModified: "2026-07-08",
+    category: "Ecommerce",
+    readingMin: 6,
+    intro:
+      "Para una pyme peruana, Shopify puede ser la forma más rápida de empezar a vender online sin pelearse con servidores. Pero tiene una mensualidad y no siempre es la única opción. Aquí ves cuándo Shopify vale la pena para una pyme, cuánto implica de verdad y cuándo conviene mirar otras alternativas.",
+    sections: [
+      {
+        h2: "Qué gana una pyme con Shopify",
+        bullets: [
+          "Lanza rápido y sin preocuparte por hosting ni seguridad.",
+          "Panel simple: administras la tienda sin saber programar.",
+          "Escala en campañas (Cyber, Navidad) sin caídas.",
+          "Pagos locales (Yape, Plin, tarjeta) listos para Perú.",
+        ],
+      },
+      {
+        h2: "Los costos reales para una pyme",
+        body:
+          "Shopify tiene tres costos: el plan mensual, el desarrollo de la tienda y las comisiones de pago. Para una pyme lo importante es dimensionar bien y no sobreinvertir al inicio. Desglosamos cada parte en la guía de [cuánto cuesta una tienda Shopify](/tiendas-virtuales/shopify/costos).",
+      },
+      {
+        h2: "Shopify vs WooCommerce vs marketplace",
+        bullets: [
+          "Shopify: rapidez y cero dolores técnicos, con mensualidad.",
+          "WooCommerce: sin mensualidad de plataforma, más control, requiere mantenimiento.",
+          "Marketplace (Mercado Libre): tráfico inmediato, pero comisiones y sin marca propia.",
+        ],
+      },
+      {
+        h2: "Cuándo SÍ conviene Shopify para tu pyme",
+        body:
+          "Si quieres tu propia tienda con marca, vender directo sin comisiones de marketplace, lanzar rápido y no lidiar con servidores, Shopify encaja muy bien. Es ideal para pymes que ya venden por redes o WhatsApp y quieren dar el salto a un canal propio.",
+      },
+      {
+        h2: "Cómo empezar sin sobreinvertir",
+        body:
+          "Empieza con un plan acorde a tu tamaño, un catálogo acotado y una tienda optimizada para vender, y crece por etapas según los resultados. No necesitas todo de golpe: necesitas vender bien desde el inicio.",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Shopify es muy caro para una pyme?",
+        a: "Tiene una mensualidad, pero para muchas pymes se paga con las ventas que habilita. La clave es dimensionar bien el plan y el desarrollo, y no sobreinvertir al inicio.",
+      },
+      {
+        q: "¿Conviene más Shopify o WooCommerce para una pyme?",
+        a: "Depende. Shopify te ahorra tiempo y preocupaciones técnicas; WooCommerce evita la mensualidad de plataforma a cambio de mantenimiento. En la cotización te recomendamos la correcta para tu caso.",
+      },
+      {
+        q: "¿Puedo empezar pequeño y crecer?",
+        a: "Sí. Lo recomendable es lanzar con lo esencial y escalar por etapas: más productos, más integraciones y más campañas según crece tu negocio.",
+      },
+      {
+        q: "¿Vale la pena si ya vendo por WhatsApp e Instagram?",
+        a: "Mucho. Una tienda Shopify te da un canal propio, ordena tus ventas y te hace ver más profesional, sin dejar de usar redes y WhatsApp para cerrar.",
+      },
+    ],
+    related: [
+      { label: "Agencia Shopify Perú", href: "/tiendas-virtuales/shopify", desc: "Tu tienda de pyme, optimizada para vender." },
+      { label: "Cuánto cuesta una tienda Shopify", href: "/tiendas-virtuales/shopify/costos", desc: "Los costos reales, sin sorpresas." },
+      { label: "Shopify vs WooCommerce", href: "/blog/shopify-vs-woocommerce", desc: "Compara las dos plataformas líderes." },
+    ],
+  },
+
+  {
+    slug: "errores-comunes-al-crear-una-tienda-shopify",
+    title: "Errores comunes al crear una tienda Shopify (y cómo evitarlos)",
+    h1: "Errores comunes al crear una tienda Shopify",
+    description:
+      "Los errores más comunes al crear una tienda Shopify en Perú: exceso de apps, tienda lenta, sin SEO, pagos incompletos, mal móvil y fichas pobres. Cómo evitarlos y vender más.",
+    excerpt:
+      "Estos errores hunden las ventas de muchas tiendas Shopify. Detéctalos a tiempo y evita perder clientes.",
+    datePublished: "2026-07-08",
+    dateModified: "2026-07-08",
+    category: "Ecommerce",
+    readingMin: 6,
+    intro:
+      "Muchas tiendas Shopify no venden no por falta de tráfico, sino por errores evitables: exceso de apps que la vuelven lenta, cero SEO, pagos incompletos o un móvil descuidado. Aquí están los errores más comunes al crear una tienda Shopify en Perú y cómo evitarlos para no dejar ventas sobre la mesa.",
+    sections: [
+      {
+        h2: "Instalar demasiadas apps y volverla lenta",
+        body:
+          "Cada app suma código. Una tienda cargada de apps carga lento, y una tienda lenta pierde ventas y ranking. El error es creer que más apps = más ventas. La solución: solo las apps necesarias y un tema ligero.",
+      },
+      {
+        h2: "No configurar pagos locales completos",
+        body:
+          "Si falta Yape, Plin o tarjeta, pierdes ventas en el checkout. El error clásico es lanzar con un solo medio de pago. Configura las pasarelas locales completas, como explicamos en [vender con Yape y Plin en Shopify](/blog/como-vender-con-yape-y-plin-en-shopify).",
+      },
+      {
+        h2: "Olvidar el SEO desde el inicio",
+        bullets: [
+          "Fichas con títulos y descripciones copiados del proveedor.",
+          "Categorías vacías, sin texto que Google entienda.",
+          "Sin metatítulos ni datos estructurados.",
+          "URLs desordenadas y sin redirecciones al migrar.",
+        ],
+      },
+      {
+        h2: "Descuidar la experiencia móvil",
+        body:
+          "La mayoría compra desde el celular. Una tienda que se ve mal o es difícil de usar en el móvil pierde ventas aunque el producto sea bueno. Siempre hay que probar la tienda en el celular antes de lanzar.",
+      },
+      {
+        h2: "Fichas pobres y poca confianza",
+        bullets: [
+          "Fotos de baja calidad o muy pesadas.",
+          "Descripciones cortas que no responden dudas.",
+          "Sin información de envíos, tiempos ni devoluciones.",
+          "Sin datos de contacto ni WhatsApp visibles.",
+        ],
+      },
+      {
+        h2: "Lanzar y no medir ni mejorar",
+        body:
+          "El último error es dejar la tienda igual para siempre. Una tienda que vende se ajusta con datos: qué se ve, qué se vende, dónde se cae el checkout. Medir y mejorar es parte de tener una tienda viva.",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Por qué mi tienda Shopify no vende aunque tiene visitas?",
+        a: "Suele ser por velocidad lenta, pagos incompletos, mal móvil o poca confianza en las fichas. Son errores frecuentes y evitables; revisarlos uno a uno normalmente recupera ventas.",
+      },
+      {
+        q: "¿Cuántas apps son demasiadas?",
+        a: "No hay número mágico, pero si tu tienda carga lento por las apps, ya son demasiadas. Mejor pocas apps útiles que muchas que ralentizan.",
+      },
+      {
+        q: "¿Puedo corregir estos errores en una tienda ya lanzada?",
+        a: "Sí. Hacemos auditorías de tiendas Shopify existentes: optimizamos velocidad, SEO, pagos y conversión sin empezar de cero.",
+      },
+      {
+        q: "¿Cómo evito estos errores desde el inicio?",
+        a: "Trabajando con una tienda optimizada para vender desde el lanzamiento: rápida, con SEO, pagos locales y buena experiencia móvil. Eso es lo que entregamos como agencia Shopify en Perú.",
+      },
+    ],
+    related: [
+      { label: "Agencia Shopify Perú", href: "/tiendas-virtuales/shopify", desc: "Una tienda sin estos errores, lista para vender." },
+      { label: "Cómo posicionar tu tienda en Google", href: "/blog/como-posicionar-una-tienda-shopify-en-google-peru", desc: "Corrige el error de no hacer SEO." },
+      { label: "Migrar a Shopify sin perder SEO", href: "/tiendas-virtuales/shopify/migracion", desc: "Si tu tienda actual está mal armada." },
+    ],
+  },
+
+  {
+    slug: "como-posicionar-una-tienda-shopify-en-google-peru",
+    title: "Cómo posicionar una tienda Shopify en Google (Perú)",
+    h1: "Cómo posicionar una tienda Shopify en Google",
+    description:
+      "SEO para Shopify en Perú: cómo posicionar tu tienda en Google con fichas optimizadas, categorías con texto, velocidad, contenido y datos estructurados para atraer compradores.",
+    excerpt:
+      "Tener una tienda Shopify no basta si nadie la encuentra. Así se posiciona en Google, paso a paso.",
+    datePublished: "2026-07-08",
+    dateModified: "2026-07-08",
+    category: "SEO",
+    readingMin: 7,
+    intro:
+      "Una tienda Shopify invisible en Google no vende. El SEO para Shopify hace que tus productos aparezcan cuando alguien busca lo que ofreces, con intención de comprar. Estos son los pasos para posicionar tu tienda Shopify en Perú: fichas optimizadas, categorías con texto, velocidad, contenido y datos estructurados.",
+    sections: [
+      {
+        h2: "1. Optimiza las fichas de producto",
+        bullets: [
+          "Títulos y descripciones únicas con la palabra que la gente busca.",
+          "Nada de textos copiados del proveedor: Google los ignora.",
+          "Imágenes con texto alternativo (alt) y buen peso para cargar rápido.",
+          "Metatítulo y meta descripción editados en cada producto.",
+        ],
+      },
+      {
+        h2: "2. Dale texto a tus categorías y colecciones",
+        body:
+          "Las páginas de colección son de las que más posicionan en ecommerce, pero suelen estar vacías. Agrégales un texto propio que explique qué encuentra el cliente ahí: Google lo usa para entender y rankear tu tienda.",
+      },
+      {
+        h2: "3. Cuida la velocidad y el móvil",
+        body:
+          "La velocidad es factor de ranking y de ventas. Un tema ligero, imágenes optimizadas y pocas apps hacen que la tienda cargue en segundos. Y como la mayoría busca y compra desde el celular, el móvil manda.",
+      },
+      {
+        h2: "4. Suma contenido que atraiga antes de la compra",
+        body:
+          "Un blog que responde dudas ('cuál elegir', 'cómo cuidar', 'cuánto cuesta') atrae visitas que aún no compran y las acerca a tus productos. Es la diferencia entre esperar clientes y salir a buscarlos.",
+      },
+      {
+        h2: "5. Datos estructurados y arquitectura",
+        body:
+          "Marcar productos, precios y preguntas con datos estructurados ayuda a que Google muestre tu tienda con más detalle (rich results). Una arquitectura ordenada de URLs y enlaces internos también facilita el posicionamiento.",
+      },
+      {
+        h2: "6. Enlaces internos y autoridad",
+        body:
+          "Enlaza tus fichas desde el blog y las colecciones, y consigue menciones de otros sitios con el tiempo. Todo esto suma autoridad. Si quieres una tienda optimizada para SEO desde el inicio, somos [agencia Shopify en Perú](/tiendas-virtuales/shopify) y la entregamos lista para posicionar.",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Shopify es bueno para SEO?",
+        a: "Sí, Shopify tiene buenas bases de SEO, pero hay que trabajarlo: fichas y categorías optimizadas, velocidad, contenido y datos estructurados. La plataforma ayuda, pero el posicionamiento depende de cómo la optimices.",
+      },
+      {
+        q: "¿En cuánto tiempo veo resultados de SEO?",
+        a: "El SEO es progresivo: los primeros movimientos suelen verse en semanas y los resultados sólidos en algunos meses, según la competencia de tus palabras clave.",
+      },
+      {
+        q: "¿Necesito un blog para posicionar mi tienda?",
+        a: "Ayuda mucho. Un blog que responde dudas atrae visitas que aún no compran y las lleva hacia tus productos, ampliando el tráfico más allá de las búsquedas de compra directa.",
+      },
+      {
+        q: "¿Ustedes hacen el SEO de mi tienda Shopify?",
+        a: "Sí. Entregamos la tienda optimizada para SEO desde el inicio y podemos encargarnos del trabajo continuo de posicionamiento.",
+      },
+    ],
+    related: [
+      { label: "Agencia Shopify Perú", href: "/tiendas-virtuales/shopify", desc: "Tienda optimizada para SEO desde el inicio." },
+      { label: "Mejores apps de Shopify", href: "/blog/mejores-apps-de-shopify-para-vender-mas-en-peru", desc: "Incluye apps de SEO que sí sirven." },
+      { label: "Migrar a Shopify sin perder SEO", href: "/tiendas-virtuales/shopify/migracion", desc: "Cambia de plataforma sin perder ranking." },
+    ],
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
