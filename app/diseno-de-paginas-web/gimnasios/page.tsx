@@ -84,6 +84,7 @@ export default function PaginaWebGimnasiosPage() {
         { label: "Cotiza tu web de gimnasio", href: "/cotizacion", desc: "Cuéntanos de tu gimnasio y te enviamos una propuesta en 24 h." },
       ]}
       articles={[
+        { label: "Página web para gimnasios en Perú", href: "/blog/pagina-web-para-gimnasios-en-peru", desc: "Membresías, horarios y captación de socios desde tu web." },
         { label: "Cómo tener presencia online para tu negocio", href: "/blog/como-tener-presencia-online-para-tu-negocio-en-peru", desc: "Los pilares para que tu negocio local exista y crezca en internet." },
         { label: "Cómo aparecer en Google con tu página web", href: "/blog/como-aparecer-en-google-con-tu-pagina-web", desc: "Guía práctica de SEO para ganar socios de tu zona." },
       ]}

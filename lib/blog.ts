@@ -2462,7 +2462,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Costos que no son solo el desarrollo",
         body:
-          "Además del desarrollo inicial, considera el hosting o servidor donde vivirá el sistema, y el mantenimiento y soporte para correcciones, respaldos y mejoras. No son grandes, pero conviene tenerlos claros desde el inicio para que el sistema siga estable y seguro. Una cotización seria los detalla en lugar de esconderlos como 'extras' que aparecen después.",
+          "Además del desarrollo inicial, considera el hosting o servidor donde vivirá el sistema, y el [mantenimiento y soporte](/mantenimiento-web) para correcciones, respaldos y mejoras. No son grandes, pero conviene tenerlos claros desde el inicio para que el sistema siga estable y seguro. Una cotización seria los detalla en lugar de esconderlos como 'extras' que aparecen después.",
       },
       {
         h2: "Es inversión, no gasto",
@@ -2858,6 +2858,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     related: [
       { label: "Desarrollo de tiendas virtuales", href: "/tiendas-virtuales", desc: "Tienda con Yape, Plin y tarjeta lista para vender." },
+      { label: "SEO y posicionamiento web", href: "/seo", desc: "De nada sirve integrar Yape si nadie llega a tu tienda: atrae compradores." },
       { label: "Pasarelas de pago en Perú", href: "/blog/pasarelas-de-pago-para-ecommerce-en-peru", desc: "Compara Yape, Plin, Niubiz e Izipay." },
       { label: "Cotiza tu tienda", href: "/cotizacion", desc: "Integramos tus medios de pago a tu medida." },
     ],
@@ -2931,6 +2932,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     related: [
       { label: "Desarrollo de tiendas virtuales", href: "/tiendas-virtuales", desc: "Tienda con la pasarela correcta, lista para cobrar." },
+      { label: "SEO para tu tienda virtual", href: "/seo", desc: "Atrae compradores a tu tienda para que esos pagos ocurran." },
       { label: "Pasarelas de pago en Perú", href: "/blog/pasarelas-de-pago-para-ecommerce-en-peru", desc: "El panorama completo: Yape, Plin, Niubiz e Izipay." },
       { label: "Cómo aceptar pagos con tarjeta", href: "/blog/como-aceptar-pagos-con-tarjeta-en-tu-web-peru", desc: "Qué necesitas para cobrar con tarjeta en tu web." },
     ],
@@ -3300,6 +3302,604 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "SEO y posicionamiento web", href: "/seo", desc: "Migra y crece sin perder tus posiciones en Google." },
       { label: "Diseño de páginas web", href: "/diseno-de-paginas-web", desc: "Rediseños que cuidan tu tráfico y tu SEO." },
       { label: "Cómo aparecer en Google", href: "/blog/como-aparecer-en-google-con-tu-pagina-web", desc: "Las bases del posicionamiento web." },
+    ],
+  },
+
+  {
+    slug: "seo-local-en-peru-como-salir-primero-en-tu-ciudad",
+    title: "SEO local en Perú: cómo salir primero en tu ciudad o distrito",
+    h1: "SEO local en Perú: cómo salir primero en tu zona",
+    description:
+      "SEO local en Perú: cómo aparecer primero en Google y en el mapa cuando buscan tu servicio en tu distrito. Ficha de Google, reseñas, NAP y páginas por zona.",
+    excerpt:
+      "La mayoría busca servicios 'cerca de mí'. Así logras que tu negocio aparezca primero en tu ciudad o distrito.",
+    datePublished: "2026-07-08",
+    dateModified: "2026-07-08",
+    category: "SEO Local",
+    readingMin: 7,
+    intro:
+      "Cuando alguien busca un servicio en su zona, Google le muestra un mapa con tres negocios y luego los resultados de siempre. Salir en ese paquete local es lo que llena tu agenda. El SEO local trabaja tu ficha de Google y tu web para que aparezcas primero cuando buscan lo que ofreces en tu ciudad o distrito.",
+    sections: [
+      {
+        h2: "Qué es el SEO local y por qué importa",
+        body:
+          "El SEO local es el trabajo de posicionamiento enfocado en tu zona geográfica. No compites contra todo el país, sino contra los negocios de tu distrito. Cuando alguien busca 'gasfitero en Surco' o 'dentista cerca de mí', Google prioriza negocios cercanos y bien reseñados. Para cualquier negocio que atiende a un área (clínicas, restaurantes, talleres, estudios), es el SEO de mayor retorno: quien busca así ya quiere comprar y está a pocos minutos de ti.",
+      },
+      {
+        h2: "Tu ficha de Google Business Profile: el corazón del SEO local",
+        body:
+          "Antes que tu web, lo que aparece en el mapa es tu ficha de Google (antes Google Mi Negocio). Una ficha completa y optimizada es la base de todo:",
+        bullets: [
+          "Categoría correcta, horarios, teléfono y dirección exactos.",
+          "Fotos reales y recientes del local, el equipo y el trabajo.",
+          "Descripción con las palabras que tus clientes buscan.",
+          "Servicios y productos cargados, con precios si aplica.",
+          "Publicaciones y novedades para mantenerla activa.",
+        ],
+      },
+      {
+        h2: "Reseñas: el factor que más mueve el mapa",
+        body:
+          "Las reseñas son uno de los factores que más pesan en el paquete local. Un negocio con reseñas recientes, numerosas y respondidas transmite confianza y Google lo premia con mejor posición. La clave no es inventarlas nunca, sino pedirlas de forma sistemática a tus clientes satisfechos y responder todas, buenas y malas, con educación. Un flujo constante de reseñas reales es de lo más rentable que puedes trabajar en SEO local.",
+      },
+      {
+        h2: "NAP consistente: que tus datos coincidan en todas partes",
+        body:
+          "NAP significa Nombre, Dirección y Teléfono (Name, Address, Phone). Google confía más en negocios cuyos datos son idénticos en su web, su ficha, redes sociales y directorios. Si tu dirección aparece distinta en cada sitio, Google duda de cuál es la real y te posiciona peor. Revisa que tu NAP sea exactamente igual en todos lados, hasta en la forma de escribir la dirección.",
+      },
+      {
+        h2: "Tu web también trabaja el SEO local",
+        body:
+          "La ficha manda en el mapa, pero tu web refuerza todo. Incluir tu ciudad y distrito en títulos y contenido, crear páginas por zona o por servicio local, y marcar tu negocio con datos estructurados (LocalBusiness) le dice a Google dónde operas. Una web rápida y clara, enlazada con tu ficha, multiplica tus opciones de salir primero. Nuestro servicio de [SEO](/seo) trabaja ficha y web juntas para dominar tu mercado local.",
+      },
+      {
+        h2: "Mide y sostén tu posición",
+        body:
+          "El SEO local no es de una sola vez. Hay que revisar en qué búsquedas apareces, cuántas llamadas y visitas trae tu ficha, y seguir sumando reseñas y contenido. La competencia también trabaja, así que mantener la ficha activa y la web al día es lo que sostiene tu lugar en el mapa mes a mes.",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Qué es más importante para el SEO local, la ficha o la web?",
+        a: "La ficha de Google Business Profile manda en el paquete local del mapa, pero la web la refuerza. Lo ideal es trabajar ambas juntas: ficha completa con reseñas y una web optimizada con tu zona y datos estructurados.",
+      },
+      {
+        q: "¿Cómo consigo más reseñas sin inventarlas?",
+        a: "Pídelas de forma sistemática a tus clientes satisfechos, facilitándoles el enlace directo a tu ficha, y responde todas con educación. Nunca compres ni inventes reseñas: Google las detecta y penaliza.",
+      },
+      {
+        q: "¿En cuánto tiempo veo resultados en SEO local?",
+        a: "Una ficha bien optimizada puede mostrar mejoras en pocas semanas, sobre todo si sumas reseñas. Consolidar posiciones frente a la competencia toma algunos meses de trabajo constante.",
+      },
+      {
+        q: "¿Sirve el SEO local si tengo varias sedes?",
+        a: "Sí. Cada sede necesita su propia ficha optimizada y, si es posible, una página por ubicación en tu web. Así apareces en el mapa de cada zona donde atiendes.",
+      },
+    ],
+    related: [
+      { label: "SEO y posicionamiento web", href: "/seo", desc: "SEO local y técnico para aparecer primero en tu zona." },
+      { label: "Google Mi Negocio para empresas", href: "/blog/google-mi-negocio-para-empresas-en-peru", desc: "Cómo optimizar tu ficha y ganar reseñas." },
+      { label: "Cómo aparecer en Google", href: "/blog/como-aparecer-en-google-con-tu-pagina-web", desc: "Las bases del posicionamiento web." },
+    ],
+  },
+
+  {
+    slug: "seo-on-page-checklist-para-tu-pagina-web",
+    title: "SEO on-page: la checklist para tu página web (2026)",
+    h1: "SEO on-page: la checklist para tu página web",
+    description:
+      "Checklist de SEO on-page para tu página web en Perú: títulos, meta descripciones, encabezados, URLs, imágenes, enlazado interno y contenido para posicionar en Google.",
+    excerpt:
+      "El SEO on-page es lo que sí controlas de tu web. Esta checklist cubre lo esencial para posicionar mejor.",
+    datePublished: "2026-07-08",
+    dateModified: "2026-07-08",
+    category: "SEO",
+    readingMin: 7,
+    intro:
+      "El SEO on-page es todo lo que optimizas dentro de tu propia web para que Google la entienda y la posicione. A diferencia de los enlaces externos, aquí tú tienes el control total. Esta checklist reúne lo esencial (títulos, contenido, estructura y velocidad) para que cada página compita por las búsquedas que te interesan.",
+    sections: [
+      {
+        h2: "Títulos y meta descripciones que ganan el clic",
+        body:
+          "El título (title tag) es lo primero que Google y el usuario leen. Cada página debe tener un título único, con la palabra clave al inicio y un largo que no se corte en los resultados. La meta descripción no posiciona directamente, pero bien escrita gana clics. Piensa en ambos como el anuncio gratuito de tu página en Google: claros, específicos y con una razón para entrar.",
+      },
+      {
+        h2: "Encabezados y estructura del contenido",
+        body:
+          "Un solo H1 por página con el tema principal, y H2/H3 que organicen el contenido en secciones lógicas. Esta jerarquía ayuda a Google a entender de qué trata la página y facilita la lectura. Un texto ordenado por encabezados, con párrafos cortos y listas, se lee mejor y tiene más opciones de aparecer en fragmentos destacados y en respuestas de IA.",
+      },
+      {
+        h2: "URLs, imágenes y datos que Google entiende",
+        body:
+          "Los detalles técnicos on-page suman más de lo que parece:",
+        bullets: [
+          "URLs cortas, legibles y con la palabra clave (nada de '?id=123').",
+          "Imágenes comprimidas, en formato moderno y con texto alternativo (alt) descriptivo.",
+          "Datos estructurados (schema) para artículos, productos, FAQ o negocio local.",
+          "Un solo H1 y encabezados en orden, sin saltos.",
+          "Metadatos de Open Graph para que se vea bien al compartir.",
+        ],
+      },
+      {
+        h2: "Contenido que responde la intención de búsqueda",
+        body:
+          "De nada sirve optimizar la forma si el contenido no responde lo que la persona buscaba. Antes de escribir, entiende qué quiere quien busca esa palabra (informarse, comparar o comprar) y dale exactamente eso. Un contenido completo, útil y actualizado, que cubre el tema mejor que la competencia, es la base del SEO on-page. La técnica ayuda, pero el contenido es el que convence a Google y al lector.",
+      },
+      {
+        h2: "Enlazado interno: conecta tus páginas",
+        body:
+          "Los enlaces internos reparten autoridad entre tus páginas y le muestran a Google la relación entre tus temas. Desde tus artículos, enlaza a tus páginas de servicio con un texto de anclaje descriptivo (no 'clic aquí'). Una buena estructura de enlaces internos hace que tus páginas de dinero, como [SEO](/seo) o tus servicios, reciban el empuje de todo tu contenido de apoyo.",
+      },
+      {
+        h2: "Velocidad y móvil: la base que Google exige",
+        body:
+          "Una página lenta o difícil de usar en el celular pierde posiciones y visitas, por muy buen contenido que tenga. Optimiza imágenes, evita scripts innecesarios y asegúrate de que todo se vea y funcione bien en móvil. Los Core Web Vitals (velocidad de carga, interactividad y estabilidad visual) son parte del ranking: cuidarlos es parte inseparable del SEO on-page moderno.",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Qué es lo primero que debo optimizar en SEO on-page?",
+        a: "Empieza por los títulos y el contenido: un título único por página con tu palabra clave y un contenido que responda de verdad la intención de búsqueda. Sobre esa base, ajusta URLs, imágenes, datos estructurados y velocidad.",
+      },
+      {
+        q: "¿Cuántas veces debo repetir la palabra clave?",
+        a: "No hay un número mágico ni conviene forzarla. Úsala de forma natural en el título, un encabezado y a lo largo del texto donde tenga sentido. Escribir para la persona, no para repetir la palabra, es lo que hoy posiciona.",
+      },
+      {
+        q: "¿El SEO on-page es suficiente para posicionar?",
+        a: "Es la base indispensable, pero se complementa con SEO técnico (velocidad, indexación) y de autoridad (enlaces). Una web con buen on-page parte con ventaja, pero en rubros competidos también necesita los otros pilares.",
+      },
+      {
+        q: "¿Ustedes optimizan el SEO on-page de mi web?",
+        a: "Sí. Auditamos y optimizamos títulos, contenido, estructura, datos estructurados, enlazado y velocidad de tu web. Cuéntanos tu caso y te preparamos una propuesta a tu medida.",
+      },
+    ],
+    related: [
+      { label: "SEO y posicionamiento web", href: "/seo", desc: "SEO técnico, on-page y de contenidos en un solo servicio." },
+      { label: "Cómo aparecer en Google", href: "/blog/como-aparecer-en-google-con-tu-pagina-web", desc: "Guía práctica para posicionar tu web en Perú." },
+      { label: "Cuánto cuesta el SEO en Perú", href: "/blog/cuanto-cuesta-el-seo-en-peru", desc: "Cómo se cobra el posicionamiento y qué incluye." },
+    ],
+  },
+
+  {
+    slug: "como-estructurar-una-campana-de-google-ads-para-servicios",
+    title: "Cómo estructurar una campaña de Google Ads para servicios en Perú",
+    h1: "Cómo estructurar una campaña de Google Ads para servicios",
+    description:
+      "Guía paso a paso para estructurar una campaña de Google Ads para negocios de servicios en Perú: objetivo, estructura de cuenta, palabras clave, anuncios y conversiones.",
+    excerpt:
+      "Una campaña de Ads bien estructurada rinde el doble con el mismo presupuesto. Así se arma paso a paso.",
+    datePublished: "2026-07-08",
+    dateModified: "2026-07-08",
+    category: "Marketing",
+    readingMin: 8,
+    intro:
+      "En Google Ads, la estructura lo es todo: una campaña ordenada llega a la persona correcta y rinde el doble con el mismo presupuesto, mientras que una mal armada quema plata. Si vendes servicios (clínica, estudio, taller, agencia), esta guía te lleva paso a paso por cómo estructurar una campaña que traiga contactos reales.",
+    sections: [
+      {
+        h2: "1. Define un objetivo y una conversión clara",
+        body:
+          "Antes de tocar Google Ads, decide qué es un resultado para ti: una llamada, un formulario enviado o un mensaje de WhatsApp. Sin una conversión definida y medida, no sabrás si la campaña funciona. Para servicios, casi siempre el objetivo es generar leads (contactos), no ventas directas. Todo lo demás se construye sobre esta decisión.",
+      },
+      {
+        h2: "2. Ordena la cuenta: campañas y grupos de anuncios",
+        body:
+          "La estructura clásica es cuenta, campañas y grupos de anuncios. Crea una campaña por línea de servicio o por objetivo, y dentro, grupos de anuncios por tema específico. Así controlas presupuesto y mensaje por cada servicio:",
+        bullets: [
+          "Una campaña por servicio principal (ej. 'blefaroplastia', 'rinoplastia').",
+          "Grupos de anuncios por variante o intención dentro de cada servicio.",
+          "Presupuesto asignado según lo que más te interesa vender.",
+          "Segmentación geográfica a tu zona real de atención.",
+        ],
+      },
+      {
+        h2: "3. Elige palabras clave y concordancias con cabeza",
+        body:
+          "Cada grupo de anuncios debe girar en torno a pocas palabras clave muy relacionadas. Usa concordancias (amplia, de frase, exacta) según cuánto control quieras, y desde el día uno arma tu lista de palabras clave negativas para no pagar por búsquedas que no te sirven. Empezar con concordancia de frase y exacta suele dar leads más limpios que la amplia sin control.",
+      },
+      {
+        h2: "4. Escribe anuncios que hablen de tu servicio",
+        body:
+          "El anuncio debe repetir la palabra que la persona buscó, dejar clara tu propuesta y terminar con una acción (llama, cotiza, agenda). Aprovecha todos los titulares y descripciones disponibles y suma extensiones (llamada, ubicación, enlaces). Un anuncio relevante mejora tu Quality Score, y un mejor Quality Score te hace pagar menos por cada clic.",
+      },
+      {
+        h2: "5. Manda el clic a una landing, no a tu home",
+        body:
+          "El error más caro es llevar los anuncios a la página de inicio. Cada campaña necesita una [landing pensada para convertir](/diseno-de-paginas-web): un solo objetivo, el mensaje que promete el anuncio, prueba de confianza y un formulario o botón de WhatsApp visible. Una buena landing puede duplicar tus contactos con el mismo gasto en clics.",
+      },
+      {
+        h2: "6. Mide, optimiza y no la dejes sola",
+        body:
+          "Una campaña se gestiona, no se enciende y se olvida. Revisa qué palabras traen leads y cuáles solo gastan, suma negativas, pausa lo que no rinde y sube presupuesto a lo que sí. Con la conversión bien medida en GA4, sabrás tu costo por contacto real y podrás mejorarlo mes a mes. Ese trabajo constante es lo que separa una campaña rentable de una que solo gasta. En [Google Ads](/google-ads) montamos y optimizamos tu campaña de punta a punta.",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Cuántas campañas necesito para empezar?",
+        a: "Para la mayoría de negocios de servicios, empezar con una o dos campañas bien enfocadas en tus servicios principales es más que suficiente. Es mejor pocas campañas bien optimizadas que muchas desordenadas.",
+      },
+      {
+        q: "¿Por qué no debo enviar los anuncios a mi página de inicio?",
+        a: "Porque la home tiene muchos mensajes y distrae. Una landing con un solo objetivo, alineada al anuncio y con un formulario claro, convierte mucho más. Es uno de los ajustes que más leads gana.",
+      },
+      {
+        q: "¿Qué son las palabras clave negativas y por qué importan?",
+        a: "Son términos por los que no quieres aparecer (por ejemplo 'gratis' o 'empleo'). Añadirlas evita pagar clics de gente que no va a contratarte, y es de lo que más ahorra presupuesto en campañas de servicios.",
+      },
+      {
+        q: "¿Ustedes estructuran y manejan mi campaña de Google Ads?",
+        a: "Sí. Definimos objetivo, estructura, palabras clave, anuncios, landing y medición de conversiones, y optimizamos la campaña mes a mes. Cuéntanos tu servicio y tu presupuesto y te armamos una propuesta.",
+      },
+    ],
+    related: [
+      { label: "Google Ads", href: "/google-ads", desc: "Campañas medidas que traen contactos, no solo clics." },
+      { label: "Google Ads vs SEO", href: "/blog/google-ads-vs-seo-cual-conviene-para-tu-negocio", desc: "Cuándo conviene cada uno y por qué se complementan." },
+      { label: "Google Ads para pymes", href: "/blog/google-ads-para-pymes-en-peru-cuanto-invertir", desc: "Cuánto invertir al mes y cómo no botar la plata." },
+    ],
+  },
+
+  {
+    slug: "palabras-clave-negativas-en-google-ads",
+    title: "Palabras clave negativas en Google Ads: deja de botar la plata",
+    h1: "Palabras clave negativas: deja de botar la plata en Ads",
+    description:
+      "Qué son las palabras clave negativas en Google Ads y cómo usarlas para dejar de pagar clics inútiles en Perú. Listas, niveles y ejemplos para no desperdiciar tu presupuesto.",
+    excerpt:
+      "Cada clic que no te sirve es plata perdida. Las palabras clave negativas son el freno que casi nadie usa bien.",
+    datePublished: "2026-07-08",
+    dateModified: "2026-07-08",
+    category: "Marketing",
+    readingMin: 6,
+    intro:
+      "Si tu campaña de Google Ads gasta rápido y trae pocos contactos útiles, el problema suele estar en las palabras clave negativas: los términos por los que NO quieres aparecer. Bien usadas, dejan de pagar clics inútiles y bajan tu costo por contacto. Aquí qué son, cómo armarlas y por qué son el ajuste que más plata ahorra.",
+    sections: [
+      {
+        h2: "Qué son las palabras clave negativas",
+        body:
+          "Una palabra clave negativa le dice a Google: 'no muestres mi anuncio cuando la búsqueda incluya este término'. Por ejemplo, si vendes cirugía estética y añades 'gratis' o 'precio bajo' como negativas, tu anuncio no aparece ante quien busca eso, evitando clics de gente que jamás va a contratarte. Son un filtro que enfoca tu presupuesto en las búsquedas que sí valen.",
+      },
+      {
+        h2: "Por qué son las que más ahorran",
+        body:
+          "En una campaña sin negativas, pagas por búsquedas que no imaginabas: gente buscando trabajo, cursos, definiciones o cosas gratis. Cada uno de esos clics es plata que no vuelve. Las negativas cortan ese sangrado y hacen que tu presupuesto se gaste solo en quien tiene intención real. Es, muchas veces, el cambio que más mejora la rentabilidad de una cuenta.",
+      },
+      {
+        h2: "Negativas típicas que casi todos deberían añadir",
+        body:
+          "Hay términos que rara vez traen clientes y conviene bloquear desde el inicio:",
+        bullets: [
+          "'Gratis', 'gratuito' y variantes, si tú cobras por el servicio.",
+          "'Empleo', 'trabajo', 'vacantes', 'sueldo' (buscan empleo, no comprarte).",
+          "'Curso', 'cómo hacer', 'tutorial' (buscan aprender, no contratar).",
+          "'Barato' o 'económico', si no compites por precio.",
+          "Marcas o servicios que no ofreces, para no atraer al público equivocado.",
+        ],
+      },
+      {
+        h2: "Usa el informe de términos de búsqueda",
+        body:
+          "La mejor fuente de negativas es el informe de términos de búsqueda: la lista real de lo que la gente tecleó antes de ver tu anuncio. Revísalo seguido, sobre todo al inicio, y convierte en negativa todo término que no tenga que ver con lo que vendes. Es un trabajo continuo: mientras más depuras, más limpio queda tu tráfico y más baja tu costo por contacto.",
+      },
+      {
+        h2: "Listas de negativas y niveles",
+        body:
+          "Puedes añadir negativas a nivel de grupo de anuncios, de campaña o como lista compartida entre campañas. Una lista de negativas compartida te ahorra repetir el mismo trabajo en cada campaña. Organizarlas bien evita que, sin querer, bloquees búsquedas que sí te servían. En [Google Ads](/google-ads) mantenemos tus negativas al día como parte de la optimización.",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Cada cuánto debo revisar las palabras clave negativas?",
+        a: "Al inicio, varias veces por semana usando el informe de términos de búsqueda. Cuando la cuenta madura, una revisión semanal o quincenal suele bastar para mantener el tráfico limpio.",
+      },
+      {
+        q: "¿Puedo bloquear demasiado con las negativas?",
+        a: "Sí, por eso hay que tener cuidado. Si añades negativas muy amplias, puedes dejar fuera búsquedas que sí te servían. Conviene revisar el impacto y usar la concordancia adecuada en cada negativa.",
+      },
+      {
+        q: "¿Las negativas mejoran mi Quality Score?",
+        a: "De forma indirecta, sí. Al evitar clics irrelevantes, tus anuncios se muestran a gente más afín, mejora la tasa de clic relevante y eso ayuda al Quality Score, lo que a su vez baja el costo por clic.",
+      },
+      {
+        q: "¿Ustedes gestionan las negativas de mi campaña?",
+        a: "Sí. La depuración de términos y el manejo de listas de negativas es parte de nuestra optimización mensual de Google Ads, para que tu presupuesto se gaste solo en quien te puede contratar.",
+      },
+    ],
+    related: [
+      { label: "Google Ads", href: "/google-ads", desc: "Campañas optimizadas que no botan tu presupuesto." },
+      { label: "Cómo estructurar una campaña de Ads", href: "/blog/como-estructurar-una-campana-de-google-ads-para-servicios", desc: "Arma tu campaña de servicios paso a paso." },
+      { label: "Google Ads para pymes", href: "/blog/google-ads-para-pymes-en-peru-cuanto-invertir", desc: "Cuánto invertir y cómo medir tus resultados." },
+    ],
+  },
+
+  {
+    slug: "cuanto-cuesta-un-logo-profesional-en-peru",
+    title: "Cuánto cuesta un logo profesional en Perú (2026)",
+    h1: "¿Cuánto cuesta un logo profesional en Perú?",
+    description:
+      "Cuánto cuesta un logo profesional en Perú en 2026: qué define el precio, qué diferencia un logo barato de uno hecho con estrategia y qué debe incluir una entrega seria.",
+    excerpt:
+      "Un logo no es solo un dibujo bonito. Esto define su precio y qué debe incluir un trabajo serio.",
+    datePublished: "2026-07-08",
+    dateModified: "2026-07-08",
+    category: "Marketing",
+    readingMin: 6,
+    intro:
+      "El precio de un logo en Perú va desde unos pocos soles en una plantilla hasta una inversión seria por un diseño estratégico. La diferencia no es el dibujo, sino el proceso y lo que recibes. Aquí verás qué define el costo de un logo profesional y por qué el más barato suele salir caro.",
+    sections: [
+      {
+        h2: "Por qué hay tanta diferencia de precio",
+        body:
+          "Un logo puede costar casi nada en un banco de plantillas o bastante más con un diseñador que investiga tu negocio. La diferencia está en el proceso: un logo barato suele ser un ícono genérico que muchos ya usan; un logo profesional nace de entender tu marca, tu público y tu competencia, y se diseña para durar y diferenciarte. Pagas por la estrategia y la originalidad, no por el archivo.",
+      },
+      {
+        h2: "Qué factores definen el precio",
+        body:
+          "Estos son los que más pesan en la cotización de un logo:",
+        bullets: [
+          "El proceso: plantilla lista vs. diseño original con investigación.",
+          "Cantidad de propuestas y rondas de revisión incluidas.",
+          "Variantes entregadas (horizontal, vertical, ícono, versión en negativo).",
+          "Formatos y archivos editables que recibes.",
+          "Si viene solo o dentro de un trabajo de branding completo.",
+        ],
+      },
+      {
+        h2: "Qué debe incluir un logo bien entregado",
+        body:
+          "Un logo profesional no es un solo archivo JPG. Una entrega seria incluye el logo en sus variantes (principal, secundaria, ícono), en formatos vectoriales (que no se pixelan al ampliar) y de mapa de bits, versiones para fondo claro y oscuro, y una guía mínima de uso (colores, tipografía y espacios). Si te entregan una sola imagen y nada más, tarde o temprano tendrás problemas para usarla bien.",
+      },
+      {
+        h2: "El logo es una parte del branding, no todo",
+        body:
+          "El logo es la punta visible de tu marca, pero solo funciona dentro de un sistema. Los colores, la tipografía y el tono de tu comunicación son los que, junto al logo, hacen que tu negocio se vea coherente y profesional. Por eso muchas veces conviene pensar en [branding](/branding) y no solo en un logo suelto: una identidad completa rinde mucho más que un dibujo aislado.",
+      },
+      {
+        h2: "Por qué el logo barato sale caro",
+        body:
+          "Un logo genérico o copiado te obliga a rehacerlo cuando tu negocio crece, puede coincidir con el de otra empresa y no transmite nada propio. Rehacer tu identidad más adelante, cambiar letreros, empaques y redes, cuesta más que haberlo hecho bien desde el inicio. Un buen logo es una inversión que acompaña tu marca por años; el más barato suele ser el más caro a la larga.",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Puedo usar un logo hecho con plantilla o inteligencia artificial?",
+        a: "Para empezar puede servir, pero suelen ser genéricos, difíciles de registrar y a veces coinciden con otras marcas. Si tu negocio va en serio, conviene un logo original pensado para diferenciarte y durar.",
+      },
+      {
+        q: "¿En qué formatos debo recibir mi logo?",
+        a: "Como mínimo en versión vectorial (que no pierde calidad al ampliar) y en imagen para web y redes, con variantes para fondo claro y oscuro. Así podrás usarlo en cualquier tamaño y soporte sin que se vea mal.",
+      },
+      {
+        q: "¿Conviene hacer solo el logo o el branding completo?",
+        a: "Depende de tu etapa. Un logo con colores y tipografía puede ser suficiente para arrancar, pero un branding completo (con manual de marca) te da coherencia en todo. Podemos empezar por el logo y crecer desde ahí.",
+      },
+      {
+        q: "¿Cuánto costaría mi logo?",
+        a: "Depende del proceso, las variantes y si va solo o con branding. Cuéntanos sobre tu negocio y te preparamos una propuesta a tu medida, sin compromiso.",
+      },
+    ],
+    related: [
+      { label: "Branding e identidad de marca", href: "/branding", desc: "Logo, colores, tipografía y manual de marca coherentes." },
+      { label: "Qué es el branding", href: "/blog/que-es-el-branding-y-por-que-tu-pyme-lo-necesita", desc: "Por qué tu marca es mucho más que un logo." },
+      { label: "Cotiza tu proyecto", href: "/cotizacion", desc: "Logo o branding completo a tu medida." },
+    ],
+  },
+
+  {
+    slug: "manual-de-marca-que-es-y-por-que-tu-negocio-lo-necesita",
+    title: "Manual de marca: qué es y por qué tu negocio lo necesita",
+    h1: "Manual de marca: qué es y por qué lo necesitas",
+    description:
+      "Qué es un manual de marca y por qué tu negocio en Perú lo necesita: reglas de logo, colores, tipografía y tono que hacen que tu marca se vea coherente en todos lados.",
+    excerpt:
+      "Un manual de marca evita que tu negocio se vea distinto en cada pieza. Esto es lo que incluye y para qué sirve.",
+    datePublished: "2026-07-08",
+    dateModified: "2026-07-08",
+    category: "Marketing",
+    readingMin: 6,
+    intro:
+      "Un manual de marca es el documento que define cómo debe verse y comunicarse tu marca en todos lados: logo, colores, tipografía y tono. Sin él, cada pieza que hace una persona distinta sale diferente y tu negocio se ve improvisado. Aquí qué incluye un manual de marca y por qué le da coherencia y valor a tu negocio.",
+    sections: [
+      {
+        h2: "Qué es un manual de marca",
+        body:
+          "Es la guía que reúne las reglas de tu identidad visual y de comunicación. Explica cómo usar el logo, qué colores y tipografías son los oficiales, cuánto espacio dejar alrededor del logo, qué no hacer y con qué tono hablarle a tu público. En pocas palabras, es el instructivo para que tu marca se vea y suene igual, la use quien la use.",
+      },
+      {
+        h2: "Qué incluye normalmente",
+        body:
+          "El alcance varía, pero un manual de marca útil suele cubrir:",
+        bullets: [
+          "Uso correcto del logo y sus variantes, con lo que está prohibido hacer.",
+          "Paleta de colores oficial con sus códigos exactos.",
+          "Tipografías principales y secundarias y cómo aplicarlas.",
+          "Espacios mínimos, tamaños y versiones para fondo claro y oscuro.",
+          "Tono de comunicación y ejemplos de aplicación (web, redes, papelería).",
+        ],
+      },
+      {
+        h2: "Por qué tu negocio lo necesita",
+        body:
+          "Sin un manual, cada proveedor, diseñador o community manager interpreta tu marca a su manera y el resultado es un negocio que se ve distinto en cada canal. Eso resta profesionalismo y confunde al cliente. Con un manual, todos usan los mismos colores, el mismo logo y el mismo tono, y tu marca se percibe sólida y coherente. Esa coherencia es justamente lo que hace que una marca se sienta profesional.",
+      },
+      {
+        h2: "Coherencia que se traduce en confianza",
+        body:
+          "Las marcas que se ven iguales en su web, sus redes, su local y sus empaques transmiten orden y seriedad, y eso genera confianza para comprar. Un manual de marca es lo que sostiene esa coherencia con el tiempo, incluso cuando cambian las personas que trabajan tu comunicación. Es la memoria visual de tu negocio.",
+      },
+      {
+        h2: "El manual es parte de un branding completo",
+        body:
+          "El manual de marca no vive solo: es el resultado ordenado de un trabajo de [branding](/branding). Primero se define la identidad (logo, colores, tipografía, tono) y luego se documenta en el manual para que se aplique de forma consistente. Si además tienes una [página web](/diseno-de-paginas-web) alineada a ese manual, tu marca se ve impecable en el canal donde más gente la ve.",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Un negocio pequeño necesita un manual de marca?",
+        a: "Aunque sea básico, sí ayuda. Incluso un manual corto con logo, colores, tipografía y su uso evita que tu marca se vea distinta en cada pieza y te ahorra correcciones. No hace falta un documento enorme para ganar coherencia.",
+      },
+      {
+        q: "¿Cuál es la diferencia entre un logo y un manual de marca?",
+        a: "El logo es un elemento; el manual de marca es el conjunto de reglas para usar el logo y toda tu identidad (colores, tipografía, tono) de forma coherente. El manual asegura que tu marca se aplique bien en todos lados.",
+      },
+      {
+        q: "¿El manual de marca sirve si cambio de diseñador?",
+        a: "Sí, justamente para eso. Con el manual, cualquier diseñador o proveedor nuevo puede aplicar tu marca correctamente sin reinventarla, manteniendo la coherencia con lo que ya tienes.",
+      },
+      {
+        q: "¿Ustedes crean el manual de marca de mi negocio?",
+        a: "Sí, como parte de nuestro servicio de branding. Definimos tu identidad y la documentamos en un manual claro para que tu marca se vea consistente en web, redes y todo punto de contacto.",
+      },
+    ],
+    related: [
+      { label: "Branding e identidad de marca", href: "/branding", desc: "Identidad y manual de marca para verte profesional." },
+      { label: "Qué es el branding", href: "/blog/que-es-el-branding-y-por-que-tu-pyme-lo-necesita", desc: "Por qué tu pyme necesita una marca sólida." },
+      { label: "Cuánto cuesta un logo profesional", href: "/blog/cuanto-cuesta-un-logo-profesional-en-peru", desc: "Qué define el precio de un logo bien hecho." },
+    ],
+  },
+
+  {
+    slug: "cuanto-cuesta-un-hosting-y-un-dominio-pe-en-peru",
+    title: "Cuánto cuesta un hosting y un dominio .pe en Perú (2026)",
+    h1: "¿Cuánto cuesta un hosting y un dominio .pe?",
+    description:
+      "Cuánto cuesta un hosting y un dominio .pe en Perú en 2026: qué es cada uno, de qué depende el precio, tipos de hosting y qué necesita tu web o tienda virtual.",
+    excerpt:
+      "Hosting y dominio son los costos base de toda web. Aquí qué son, cuánto cuestan y cuál necesita tu negocio.",
+    datePublished: "2026-07-08",
+    dateModified: "2026-07-08",
+    category: "Web",
+    readingMin: 6,
+    intro:
+      "Toda página web necesita dos cosas para estar en línea: un dominio (tu dirección en internet) y un hosting (donde vive la web). Son los costos base de cualquier proyecto y, por suerte, suelen ser modestos. Aquí verás qué es cada uno, de qué depende su precio y cuál conviene según tu web o tienda virtual.",
+    sections: [
+      {
+        h2: "Qué es el dominio y qué es el hosting",
+        body:
+          "El dominio es tu dirección en internet, como tunegocio.pe: se alquila por año y es único. El hosting es el espacio en un servidor donde se guardan los archivos de tu web para que esté disponible 24/7. Uno sin el otro no sirve: el dominio dice dónde estás y el hosting guarda lo que la gente ve. Ambos se renuevan y son la base sobre la que corre tu página.",
+      },
+      {
+        h2: "Cuánto cuesta un dominio .pe",
+        body:
+          "El dominio .pe (el de Perú) es económico y se paga por año. También puedes optar por .com.pe, .com u otras extensiones, con precios similares y renovación anual. El costo es bajo comparado con lo que aporta: una dirección profesional y propia. Lo importante es que el dominio esté a tu nombre, no al del proveedor, para que sea de verdad tuyo.",
+      },
+      {
+        h2: "De qué depende el precio del hosting",
+        body:
+          "El hosting varía según lo que tu web exige:",
+        bullets: [
+          "Tipo de sitio: una web informativa pesa menos que una tienda con muchos productos.",
+          "Tráfico esperado: más visitas requieren más recursos.",
+          "Tipo de hosting: compartido (más económico) o VPS/dedicado (más potente).",
+          "Recursos: espacio en disco, memoria y velocidad del servidor.",
+          "Extras: correos corporativos, certificado SSL y respaldos incluidos.",
+        ],
+      },
+      {
+        h2: "Qué hosting necesita tu proyecto",
+        body:
+          "Para una web informativa o corporativa, un hosting compartido de calidad suele bastar y es lo más económico. Para una tienda virtual con catálogo grande, mucho tráfico o un sistema a medida, conviene un hosting con más recursos (VPS) para que todo cargue rápido y estable. La regla simple: mientras más movimiento y funciones tenga tu web, mejor debe ser el hosting que la sostiene.",
+      },
+      {
+        h2: "Hosting, dominio y mantenimiento van juntos",
+        body:
+          "El hosting y el dominio son costos fijos, pero no los únicos: mantener la web segura, respaldada y actualizada también importa. Muchos negocios prefieren un plan que junte hosting, SSL, respaldos y actualizaciones para no estar pendientes de renovaciones ni de fallas. Así funciona nuestro servicio de [mantenimiento web](/mantenimiento-web): tú te enfocas en tu negocio y nosotros mantenemos tu web en línea. Puedes ver el panorama completo de costos en nuestra guía de [precios](/precios).",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿El dominio y el hosting se pagan una sola vez?",
+        a: "No. Ambos se renuevan: el dominio por año y el hosting mensual o anual, según el plan. Son costos recurrentes bajos, pero hay que mantenerlos al día para que la web no se caiga.",
+      },
+      {
+        q: "¿Conviene un dominio .pe o .com?",
+        a: "Si tu negocio es local y quieres reforzar que eres de Perú, el .pe o .com.pe funciona muy bien. El .com es más internacional. Muchos negocios registran ambos y redirigen uno al otro para proteger su marca.",
+      },
+      {
+        q: "¿El hosting incluye el certificado de seguridad (SSL)?",
+        a: "Depende del proveedor y el plan. Muchos incluyen un SSL básico gratuito, suficiente para la mayoría de webs. Es indispensable tenerlo: sin SSL, el navegador marca tu sitio como 'no seguro'.",
+      },
+      {
+        q: "¿Ustedes se encargan del hosting y el dominio de mi web?",
+        a: "Sí. Configuramos el dominio y el hosting adecuados para tu proyecto y, si quieres, los mantenemos con un plan que incluye seguridad, respaldos y actualizaciones. Cuéntanos qué necesitas y te orientamos.",
+      },
+    ],
+    related: [
+      { label: "Mantenimiento web", href: "/mantenimiento-web", desc: "Hosting, seguridad, respaldos y actualizaciones al día." },
+      { label: "Costos de mantenimiento de una web", href: "/blog/costos-de-mantenimiento-de-una-pagina-web-en-peru", desc: "Qué incluye mantener tu web viva y segura." },
+      { label: "Ver precios y cotizar", href: "/precios", desc: "El panorama completo de la inversión en tu web." },
+    ],
+  },
+
+  {
+    slug: "pagina-web-para-dentistas-y-clinicas-dentales-en-peru",
+    title: "Página web para dentistas y clínicas dentales en Perú",
+    h1: "Página web para dentistas y clínicas dentales",
+    description:
+      "Página web para dentistas y clínicas dentales en Perú: reserva de citas, tratamientos, confianza con casos reales y SEO local para captar pacientes de tu zona.",
+    excerpt:
+      "Los pacientes eligen a su dentista por internet. Así debe ser la web de un consultorio o clínica dental.",
+    datePublished: "2026-07-08",
+    dateModified: "2026-07-08",
+    category: "Diseño web",
+    readingMin: 6,
+    intro:
+      "Antes de sentarse en el sillón, el paciente busca a su dentista en Google: revisa tratamientos, ubicación, reseñas y precios. Si tu consultorio o clínica dental no aparece o no transmite confianza, el paciente elige a otro. Una página web bien hecha capta esas búsquedas y las convierte en citas.",
+    sections: [
+      {
+        h2: "Por qué un dentista necesita web propia",
+        body:
+          "En salud, la confianza lo decide todo, y hoy esa confianza empieza en internet. El paciente quiere saber qué tratamientos ofreces, dónde quedas, si atiendes su caso y qué opinan otros pacientes, antes de llamar. Una web propia responde todo eso a cualquier hora, te posiciona en Google frente a otras clínicas de tu zona y capta citas sin depender solo de las redes o de recomendaciones.",
+      },
+      {
+        h2: "Qué debe tener la web de una clínica dental",
+        body:
+          "La web de un dentista debe generar confianza y facilitar la cita. Lo indispensable:",
+        bullets: [
+          "Tratamientos claros (ortodoncia, implantes, blanqueamiento, etc.).",
+          "Reserva o consulta de cita por WhatsApp, visible en todo momento.",
+          "Fotos reales del consultorio, el equipo y casos (con consentimiento).",
+          "Ubicación con Google Maps, horarios y medios de pago (incluido Yape).",
+          "Carga rápida en el celular, donde la mayoría busca su dentista.",
+        ],
+      },
+      {
+        h2: "Facilita la reserva de citas",
+        body:
+          "El paciente que ya te encontró quiere agendar sin complicarse. Un botón de WhatsApp con el tratamiento cargado, un formulario de cita o incluso un sistema de reservas convierte al visitante en paciente. Mientras más fácil sea agendar, menos pacientes pierdes en el camino. Cuando armamos tu [página web para clínicas](/diseno-de-paginas-web/clinicas), la dejamos pensada para captar citas, no solo para informar.",
+      },
+      {
+        h2: "Transmite confianza con contenido real",
+        body:
+          "En odontología, mostrar es convencer. Fotos reales del consultorio limpio y moderno, la presentación del equipo con sus especialidades, y casos de antes y después (siempre con consentimiento del paciente) generan la confianza que cierra la cita. Un blog que responde dudas comunes ('duele un implante', 'cuánto dura una ortodoncia') además atrae pacientes que investigan antes de decidir.",
+      },
+      {
+        h2: "SEO local: aparece cuando buscan dentista cerca",
+        body:
+          "La mayoría de pacientes busca 'dentista en [su distrito]' o 'clínica dental cerca de mí'. Salir en Google y en el mapa cuando investigan tu zona te trae pacientes nuevos sin pagar publicidad. Con una web optimizada y tu ficha de Google al día, apareces en esas búsquedas locales. Puedes profundizar en cómo [aparecer en Google con tu web](/blog/como-aparecer-en-google-con-tu-pagina-web).",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿La web puede recibir reservas de citas?",
+        a: "Sí. Incluimos reserva y consulta por WhatsApp, formulario de cita o, si lo necesitas, un sistema de reservas con horarios. Así el paciente agenda fácil y a ti te llegan las citas ordenadas.",
+      },
+      {
+        q: "¿Puedo mostrar casos de antes y después?",
+        a: "Sí, siempre con el consentimiento del paciente. Los casos reales generan mucha confianza. Diseñamos galerías cuidadas para presentarlos de forma profesional y ética.",
+      },
+      {
+        q: "¿Sirve para captar pacientes de mi zona?",
+        a: "Sí. Optimizamos la web para SEO local y tu ficha de Google, de modo que aparezcas cuando busquen dentistas o clínicas dentales en tu distrito.",
+      },
+      {
+        q: "¿Cuánto cuesta la web de un dentista o clínica dental?",
+        a: "Depende de si quieres solo presencia y captación o también reservas y contenido. Te preparamos una cotización a tu medida y sin costo en menos de 24 horas.",
+      },
+    ],
+    related: [
+      { label: "Diseño de páginas web para clínicas", href: "/diseno-de-paginas-web/clinicas", desc: "Webs de salud que generan confianza y captan citas." },
+      { label: "Página web para clínicas y consultorios", href: "/blog/pagina-web-para-clinicas-y-consultorios-medicos", desc: "Buenas prácticas para webs del sector salud." },
+      { label: "Ver precios y cotizar", href: "/precios", desc: "Qué incluye la web de una clínica dental." },
     ],
   },
 ];

@@ -85,6 +85,7 @@ export default function PaginaWebColegiosPage() {
         { label: "Cotiza tu web educativa", href: "/cotizacion", desc: "Cuéntanos de tu colegio o instituto y te respondemos en 24 h." },
       ]}
       articles={[
+        { label: "Página web para colegios e instituciones educativas", href: "/blog/pagina-web-para-colegios-e-instituciones-educativas-en-peru", desc: "Admisión, comunicados y captación de matrículas." },
         { label: "Cómo tener presencia online para tu negocio", href: "/blog/como-tener-presencia-online-para-tu-negocio-en-peru", desc: "Los pilares para que tu institución exista y crezca en internet." },
         { label: "Cómo aparecer en Google con tu página web", href: "/blog/como-aparecer-en-google-con-tu-pagina-web", desc: "Guía práctica de SEO para captar matrículas en tu zona." },
       ]}

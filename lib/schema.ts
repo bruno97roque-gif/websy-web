@@ -10,6 +10,12 @@ const ORG_ID = `${SITE_URL}/#organization`;
 const WEBSITE_ID = `${SITE_URL}/#website`;
 const LOGO_URL = `${SITE_URL}/icons/logo-dark.webp`;
 
+/* Autor editorial del blog. Se usa como author de los BlogPosting y en la
+   firma visible del artículo. Es la Organization (marca Websy): las personas
+   del equipo aún figuran con datos de placeholder en /nosotros, así que no
+   atribuimos autoría a un individuo concreto para no falsear el E-E-A-T. */
+export const BLOG_AUTHOR = SITE_NAME;
+
 export function organizationSchema() {
   return {
     "@context": "https://schema.org",
@@ -30,7 +36,25 @@ export function organizationSchema() {
       addressCountry: "PE",
     },
     geo: { "@type": "GeoCoordinates", latitude: -12.0464, longitude: -77.0428 },
-    areaServed: { "@type": "Country", name: "Perú" },
+    areaServed: [
+      { "@type": "Country", name: "Perú" },
+      { "@type": "City", name: "Lima" },
+      { "@type": "AdministrativeArea", name: "Miraflores" },
+      { "@type": "AdministrativeArea", name: "San Isidro" },
+      { "@type": "AdministrativeArea", name: "Santiago de Surco" },
+      { "@type": "AdministrativeArea", name: "San Borja" },
+      { "@type": "AdministrativeArea", name: "La Molina" },
+      { "@type": "AdministrativeArea", name: "Barranco" },
+    ],
+    knowsAbout: [
+      "Diseño y desarrollo web",
+      "Tiendas virtuales y ecommerce",
+      "Software a medida",
+      "SEO y posicionamiento web",
+      "Google Ads",
+      "Branding e identidad de marca",
+      "Mantenimiento web",
+    ],
     priceRange: "$$",
     openingHoursSpecification: [
       {
@@ -50,11 +74,31 @@ export function organizationSchema() {
       "@type": "OfferCatalog",
       name: "Servicios Websy",
       itemListElement: [
-        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Branding" } },
-        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Diseño Web" } },
-        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Tienda Virtual" } },
-        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Google Ads & SEO" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Diseño y desarrollo web", url: `${SITE_URL}/diseno-de-paginas-web` } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Tiendas virtuales", url: `${SITE_URL}/tiendas-virtuales` } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Software a medida", url: `${SITE_URL}/desarrollo-de-software-a-medida` } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "SEO y posicionamiento web", url: `${SITE_URL}/seo` } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Google Ads", url: `${SITE_URL}/google-ads` } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Branding", url: `${SITE_URL}/branding` } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Mantenimiento web", url: `${SITE_URL}/mantenimiento-web` } },
       ],
+    },
+  };
+}
+
+/**
+ * WebPage con SpeakableSpecification (GEO / asistentes de voz e IA).
+ * cssSelector apunta al H1 y a la intro citable de la página.
+ */
+export function speakablePageSchema(path: string, cssSelector: string[]) {
+  const url = path === "/" ? SITE_URL : `${SITE_URL}${path}`;
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    url,
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector,
     },
   };
 }
@@ -197,7 +241,38 @@ export function blogPostingSchema({
     dateModified: dateModified ?? datePublished,
     inLanguage: "es-PE",
     image: image ?? `${SITE_URL}/og-image.png`,
-    author: { "@id": ORG_ID, name: SITE_NAME },
+    author: { "@type": "Organization", "@id": ORG_ID, name: BLOG_AUTHOR, url: SITE_URL },
     publisher: { "@id": ORG_ID },
+  };
+}
+
+/**
+ * HowTo para artículos que son una guía real por pasos (secciones numeradas).
+ * Se usa solo cuando el post es un "cómo…" genuinamente secuencial.
+ */
+export function howToSchema({
+  name,
+  description,
+  url,
+  steps,
+}: {
+  name: string;
+  description: string;
+  url: string;
+  steps: { name: string; text: string }[];
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name,
+    description,
+    inLanguage: "es-PE",
+    mainEntityOfPage: { "@type": "WebPage", "@id": url },
+    step: steps.map((s, i) => ({
+      "@type": "HowToStep",
+      position: i + 1,
+      name: s.name,
+      text: s.text,
+    })),
   };
 }

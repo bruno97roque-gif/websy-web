@@ -84,6 +84,7 @@ export default function PaginaWebHotelesPage() {
         { label: "Cotiza tu web de hotel", href: "/cotizacion", desc: "Cuéntanos de tu hotel u hospedaje y te respondemos en 24 h." },
       ]}
       articles={[
+        { label: "Página web para hoteles y hospedajes", href: "/blog/pagina-web-para-hoteles-y-hospedajes-en-peru", desc: "Reservas directas sin comisión de intermediarios." },
         { label: "Cómo aparecer en Google con tu página web", href: "/blog/como-aparecer-en-google-con-tu-pagina-web", desc: "Guía práctica de SEO para captar viajeros que buscan tu destino." },
         { label: "Cómo tener presencia online para tu negocio", href: "/blog/como-tener-presencia-online-para-tu-negocio-en-peru", desc: "Los pilares para que tu hospedaje exista y venda en internet." },
       ]}
