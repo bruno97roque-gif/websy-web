@@ -11,7 +11,22 @@ export const SERVICE_LINKS: NavLink[] = [
   { label: "Tiendas WooCommerce", href: "/tiendas-virtuales/woocommerce" },
   { label: "Diseño de Páginas Web", href: "/diseno-de-paginas-web" },
   { label: "Software a Medida", href: "/desarrollo-de-software-a-medida" },
+  { label: "SEO y Posicionamiento", href: "/seo" },
+  { label: "Google Ads", href: "/google-ads" },
+  { label: "Branding", href: "/branding" },
+  { label: "Mantenimiento Web", href: "/mantenimiento-web" },
   { label: "Precios", href: "/precios" },
+];
+
+/** Landings de diseño web por rubro (hijas del pilar /diseno-de-paginas-web). */
+export const RUBRO_LINKS: NavLink[] = [
+  { label: "Web para Restaurantes", href: "/diseno-de-paginas-web/restaurantes" },
+  { label: "Web para Clínicas", href: "/diseno-de-paginas-web/clinicas" },
+  { label: "Web para Abogados", href: "/diseno-de-paginas-web/abogados" },
+  { label: "Web para Inmobiliarias", href: "/diseno-de-paginas-web/inmobiliarias" },
+  { label: "Web para Gimnasios", href: "/diseno-de-paginas-web/gimnasios" },
+  { label: "Web para Colegios", href: "/diseno-de-paginas-web/colegios" },
+  { label: "Web para Hoteles", href: "/diseno-de-paginas-web/hoteles" },
 ];
 
 /** Navegación principal (menú fullscreen). Etiquetas cortas: el menú usa tipografía
@@ -36,4 +51,17 @@ export const SERVICE_SITEMAP: { path: string; priority: number }[] = [
   { path: "/desarrollo-de-software-a-medida", priority: 0.8 },
   { path: "/precios", priority: 0.9 },
   { path: "/cotizacion", priority: 0.8 },
+  // Nuevos pilares de servicio.
+  { path: "/seo", priority: 0.9 },
+  { path: "/google-ads", priority: 0.9 },
+  { path: "/branding", priority: 0.9 },
+  { path: "/mantenimiento-web", priority: 0.9 },
+  // Silo de diseño web por rubro (hijas de /diseno-de-paginas-web).
+  { path: "/diseno-de-paginas-web/restaurantes", priority: 0.8 },
+  { path: "/diseno-de-paginas-web/clinicas", priority: 0.8 },
+  { path: "/diseno-de-paginas-web/abogados", priority: 0.8 },
+  { path: "/diseno-de-paginas-web/inmobiliarias", priority: 0.8 },
+  { path: "/diseno-de-paginas-web/gimnasios", priority: 0.8 },
+  { path: "/diseno-de-paginas-web/colegios", priority: 0.8 },
+  { path: "/diseno-de-paginas-web/hoteles", priority: 0.8 },
 ];

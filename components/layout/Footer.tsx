@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { SERVICE_LINKS } from "@/lib/nav";
+import { SERVICE_LINKS, RUBRO_LINKS } from "@/lib/nav";
 
 const navLinks = [
   { label: "Inicio", href: "/" },
@@ -151,6 +151,34 @@ export default function Footer() {
                 fontSize: 13,
                 fontWeight: 400,
                 color: "#6b6478",
+                textDecoration: "none",
+              }}
+            >
+              {label}
+            </Link>
+          ))}
+        </nav>
+
+        {/* ── Diseño web por rubro (enlazado del silo) ── */}
+        <nav
+          aria-label="Páginas web por rubro"
+          style={{
+            marginTop: 16,
+            display: "flex",
+            flexWrap: "wrap",
+            gap: "8px 22px",
+            justifyContent: "center",
+          }}
+        >
+          {RUBRO_LINKS.map(({ label, href }) => (
+            <Link
+              key={href}
+              href={href}
+              style={{
+                fontFamily: "var(--font-poppins, sans-serif)",
+                fontSize: 12.5,
+                fontWeight: 400,
+                color: "#8a8397",
                 textDecoration: "none",
               }}
             >
