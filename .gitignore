@@ -38,6 +38,11 @@ yarn-error.log*
 # env files (can opt-in for committing if needed)
 .env*
 
+# credenciales locales (GSC / GA4) — nunca commitear
+.websy_gsc.json
+.websy_ga4.json
+.websy_*.json
+
 # vercel
 .vercel
 
