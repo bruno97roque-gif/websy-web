@@ -24,6 +24,154 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "como-hacer-que-tu-pagina-web-aparezca-en-google-peru",
+    title: "Cómo Hacer que tu Página Web Aparezca en Google (2026)",
+    h1: "Cómo hacer que tu página web aparezca en Google",
+    description:
+      "Guía 2026 para Perú: cómo dar de alta tu página web en Google, indexarla en Search Console, enviar tu sitemap y por qué aún no apareces. Pasos claros para salir en Google.",
+    excerpt:
+      "Tu web está en línea pero no aparece en Google. Aquí los pasos reales para darla de alta, indexarla y empezar a posicionar en Perú.",
+    datePublished: "2026-07-23",
+    dateModified: "2026-07-23",
+    category: "SEO",
+    readingMin: 7,
+    intro:
+      "Publicaste tu página web pero al buscar tu negocio en Google no aparece. Es normal: estar en línea no es lo mismo que estar indexado. Aquí verás, paso a paso, cómo dar de alta tu web en Google, indexarla, enviar tu sitemap y por qué a veces tarda en salir.",
+    sections: [
+      {
+        h2: "Estar en línea no es lo mismo que aparecer en Google",
+        body:
+          "Cuando subes tu web ya está disponible para quien escriba tu dirección exacta. Pero para salir en los resultados de búsqueda, Google primero tiene que descubrir tu sitio, rastrearlo e indexarlo (guardarlo en su índice). Recién ahí puede mostrarlo cuando alguien busca. Ese proceso no es automático ni inmediato: hay que ayudarlo, y eso es justo lo que verás aquí.",
+      },
+      {
+        h2: "Paso 1: Da de alta tu web en Google Search Console",
+        body:
+          "Google Search Console es la herramienta gratuita y oficial para decirle a Google que tu web existe. Verificas que el sitio es tuyo, y desde ahí puedes pedir la indexación de tus páginas, ver por qué búsquedas apareces y detectar errores. Es el primer paso obligatorio: sin Search Console, estás a ciegas.",
+        bullets: [
+          "Crea una propiedad con tu dominio (por ejemplo, tunegocio.pe).",
+          "Verifica la propiedad con el método que te indique Google.",
+          "Usa 'Inspección de URL' para pedir la indexación de tu home y páginas clave.",
+        ],
+      },
+      {
+        h2: "Paso 2: Envía tu sitemap",
+        body:
+          "El sitemap es un archivo (normalmente sitemap.xml) que lista todas las páginas de tu web para que Google las encuentre de un tirón. Las webs profesionales lo generan solas. Envíalo desde Search Console en la sección 'Sitemaps'. Así Google descubre todo tu contenido sin depender de que llegue enlace por enlace. Si tu web no tiene sitemap, es señal de que le falta base técnica de SEO.",
+      },
+      {
+        h2: "Paso 3: Por qué tu web todavía no aparece",
+        body:
+          "Que Google la haya indexado no garantiza salir arriba. Las razones más comunes por las que una web nueva no aparece (o aparece muy abajo) son:",
+        bullets: [
+          "Es reciente: Google necesita semanas para confiar en un dominio nuevo.",
+          "No tiene contenido suficiente ni las palabras que la gente busca.",
+          "Falta autoridad: casi ningún otro sitio la enlaza todavía.",
+          "Problemas técnicos: bloqueos en robots.txt, etiqueta noindex o velocidad muy baja.",
+          "Compites contra sitios grandes ya posicionados para esa búsqueda.",
+        ],
+      },
+      {
+        h2: "Paso 4: De 'aparecer' a 'posicionar' (que te encuentren y te contraten)",
+        body:
+          "Salir en Google es solo el arranque. Para que tu web te traiga clientes tiene que posicionar para las búsquedas correctas (tu servicio + tu ciudad), tener contenido útil, buena velocidad y señales de confianza como reseñas y tu ficha de Google Mi Negocio. Eso es SEO, y es un trabajo continuo. Si prefieres que lo hagamos por ti —desde lo técnico hasta el contenido que atrae a tu cliente— revisa nuestro [servicio de SEO en Perú](/seo). Y si tu web aún no está lista o necesita una base sólida, empieza por un [diseño web optimizado para SEO](/diseno-de-paginas-web).",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Cuánto tarda una web nueva en aparecer en Google?",
+        a: "La indexación puede tardar desde unos días hasta un par de semanas. Posicionar bien para búsquedas competitivas toma más: normalmente varios meses de trabajo de SEO constante, sobre todo en un dominio nuevo.",
+      },
+      {
+        q: "¿Tengo que pagar para aparecer en Google?",
+        a: "No para los resultados orgánicos: aparecer e indexarse es gratis. Lo que 'cuesta' es el trabajo de SEO para posicionar arriba. Aparte existe Google Ads (publicidad pagada), que te muestra de inmediato sin depender del posicionamiento.",
+      },
+      {
+        q: "¿Cómo sé si Google ya indexó mi página?",
+        a: "Busca en Google 'site:tudominio.pe'. Si aparecen tus páginas, están indexadas. También lo confirmas en Search Console con la Inspección de URL.",
+      },
+      {
+        q: "Mi web aparece pero muy abajo, ¿qué hago?",
+        a: "Es lo esperable al inicio. Hay que reforzar contenido enfocado en lo que busca tu cliente, mejorar velocidad y señales locales (Google Mi Negocio, reseñas) y ganar enlaces. Es justo lo que trabaja nuestro servicio de SEO.",
+      },
+    ],
+    related: [
+      { label: "Servicio de SEO en Perú", href: "/seo", desc: "Posicionamos tu web para que te encuentren y te contraten." },
+      { label: "Google Mi Negocio para empresas", href: "/blog/google-mi-negocio-para-empresas-en-peru", desc: "Aparece en el mapa y capta clientes locales." },
+      { label: "Diseño de páginas web", href: "/diseno-de-paginas-web", desc: "Una web con base técnica lista para posicionar." },
+    ],
+  },
+  {
+    slug: "como-posicionar-tu-tienda-online-en-google-peru",
+    title: "Cómo Posicionar tu Tienda Online en Google (Perú 2026)",
+    h1: "Cómo posicionar tu tienda online en Google",
+    description:
+      "Guía 2026 para Perú: cómo posicionar tu tienda virtual en Google. SEO para e-commerce, fichas de producto, categorías, velocidad y contenido para vender más sin depender solo de ads.",
+    excerpt:
+      "Tu tienda online no vende si nadie la encuentra. Aquí cómo posicionarla en Google en Perú: SEO de productos, categorías y contenido.",
+    datePublished: "2026-07-23",
+    dateModified: "2026-07-23",
+    category: "Tiendas virtuales",
+    readingMin: 7,
+    intro:
+      "Tener una tienda online no sirve de nada si nadie la encuentra. Posicionar tu e-commerce en Google es lo que te trae ventas todos los días sin pagar por cada clic. Aquí verás cómo hacerlo en Perú: desde las fichas de producto y las categorías hasta la velocidad y el contenido que atrae compradores.",
+    sections: [
+      {
+        h2: "Por qué el SEO es clave para una tienda virtual",
+        body:
+          "La publicidad pagada trae ventas mientras pagas; el SEO trae ventas de forma sostenida. Una tienda bien posicionada aparece cuando alguien busca exactamente lo que vendes, con intención de comprar. En un e-commerce el SEO no es una sola página: son decenas de productos y categorías que pueden rankear cada uno por su búsqueda. Ese es el gran potencial de una tienda optimizada.",
+      },
+      {
+        h2: "Optimiza tus fichas de producto",
+        body:
+          "Cada producto es una oportunidad de rankear. Para eso, la ficha necesita:",
+        bullets: [
+          "Un título claro con el nombre real del producto (como lo busca la gente).",
+          "Descripción propia y útil, no la copiada del proveedor (Google penaliza el contenido duplicado).",
+          "Fotos de calidad con texto alternativo (alt) descriptivo.",
+          "URL limpia y datos estructurados de producto (precio, stock, reseñas).",
+        ],
+      },
+      {
+        h2: "Las categorías son tus páginas más potentes",
+        body:
+          "Las páginas de categoría (por ejemplo 'zapatillas para correr') suelen tener más búsquedas que un producto individual y son las que más tráfico capturan. Dales un título y un texto propio que explique la categoría, no solo un listado de productos. Una buena arquitectura de categorías, bien enlazada, es la columna vertebral del SEO de tu tienda.",
+      },
+      {
+        h2: "Velocidad, móvil y confianza",
+        body:
+          "En Perú la mayoría compra desde el celular: si tu tienda carga lento, pierdes ventas y posiciones. Google prioriza las tiendas rápidas y aptas para móvil. Súmale señales de confianza (pagos locales como Yape y Plin, envíos claros, reseñas) y no solo posicionas mejor: conviertes más. Velocidad y confianza van de la mano con las ventas.",
+      },
+      {
+        h2: "Contenido que atrae compradores",
+        body:
+          "Un blog con guías de compra ('cómo elegir…', 'mejores… 2026') atrae a gente en fase de investigación y la lleva a tus productos. Es la forma de captar tráfico que aún no busca tu marca pero sí lo que vendes. Si quieres una tienda construida y optimizada para vender desde el día uno —con SEO, pagos locales y velocidad— revisa nuestro servicio de [tiendas virtuales](/tiendas-virtuales). Y para el trabajo de posicionamiento continuo, nuestro [servicio de SEO](/seo) lleva tu catálogo a la primera página.",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Cuánto tarda en posicionar una tienda online?",
+        a: "Las primeras mejoras se ven en semanas, pero posicionar categorías y productos competitivos toma varios meses de trabajo constante. Un dominio nuevo tarda más; por eso conviene empezar cuanto antes.",
+      },
+      {
+        q: "¿SEO o Google Ads para mi tienda?",
+        a: "Lo ideal es combinar: Ads te da ventas inmediatas mientras el SEO madura, y el SEO te da ventas sostenidas sin pagar por clic. A largo plazo, el SEO baja tu costo de adquisición.",
+      },
+      {
+        q: "¿Sirve el SEO si vendo también por redes o marketplaces?",
+        a: "Sí. Tu tienda propia posicionada en Google es un canal que no depende de algoritmos ajenos ni de comisiones. Complementa muy bien a redes y marketplaces, y la marca queda tuya.",
+      },
+      {
+        q: "¿Ustedes optimizan tiendas ya existentes?",
+        a: "Sí. Auditamos tu tienda (Shopify, WooCommerce u otra), corregimos lo técnico y trabajamos el SEO de productos y categorías. Cuéntanos qué plataforma usas y te orientamos.",
+      },
+    ],
+    related: [
+      { label: "Tiendas virtuales", href: "/tiendas-virtuales", desc: "Creamos tu e-commerce optimizado para vender." },
+      { label: "Servicio de SEO en Perú", href: "/seo", desc: "Llevamos tu catálogo a la primera página de Google." },
+      { label: "Cómo integrar Yape y Plin en tu tienda", href: "/blog/como-integrar-yape-y-plin-en-tu-tienda-virtual", desc: "Pagos locales que aumentan tus ventas." },
+    ],
+  },
+  {
     slug: "cuanto-cuesta-una-tienda-virtual-en-peru",
     title: "Cuánto cuesta una tienda virtual en Perú (2026)",
     h1: "¿Cuánto cuesta una tienda virtual en Perú?",
