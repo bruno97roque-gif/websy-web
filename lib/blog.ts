@@ -1636,9 +1636,9 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "google-mi-negocio-para-empresas-en-peru",
-    title: "Google Mi Negocio (Business Profile) para empresas en Perú",
+    title: "Google Mi Negocio 2026: Cómo Registrar tu Empresa Gratis",
     h1: "Google Mi Negocio para empresas en Perú",
-    description: "Guía de Google Mi Negocio (Google Business Profile) para empresas en Perú: cómo crear y verificar tu ficha, reseñas, fotos y SEO local para aparecer en el mapa.",
+    description: "Cómo registrar tu empresa gratis en Google Mi Negocio (Business Profile) en Perú: crear y verificar tu ficha paso a paso, reseñas, fotos y SEO local para aparecer en el mapa.",
     excerpt: "Cómo crear, verificar y optimizar tu ficha de Google Mi Negocio para aparecer en el mapa y captar clientes locales en Perú.",
     datePublished: "2026-06-25",
     dateModified: "2026-06-25",
@@ -1689,7 +1689,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         h2: "Fotos, publicaciones y cómo se complementa con tu web",
-        body: "Una ficha con buenas fotos de tu local, productos o equipo genera más clics que una vacía. Las publicaciones (novedades, promociones, eventos) mantienen la ficha activa. Y todo esto rinde más cuando tu web refuerza las mismas señales: una página clara, con tu dirección, tu rubro y contenido local, le confirma a Google que eres relevante para esas búsquedas. La ficha y la web trabajan juntas en el SEO local.",
+        body: "Una ficha con buenas fotos de tu local, productos o equipo genera más clics que una vacía. Las publicaciones (novedades, promociones, eventos) mantienen la ficha activa. Y todo esto rinde más cuando tu web refuerza las mismas señales: una página clara, con tu dirección, tu rubro y contenido local, le confirma a Google que eres relevante para esas búsquedas. La ficha y la web trabajan juntas en el SEO local. Si prefieres que configuremos y optimicemos tu ficha de Google por ti, revisa nuestro [servicio de SEO local en Perú](/seo).",
         bullets: [
           "Sube fotos reales de tu local, productos, equipo y trabajos.",
           "Publica novedades y promociones para mantener la ficha viva.",
