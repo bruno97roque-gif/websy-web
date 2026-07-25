@@ -205,7 +205,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "¿Por qué nadie da un precio cerrado por teléfono?",
         body:
-          "Porque un precio serio sale de entender tu negocio. Lo correcto es un diagnóstico corto (qué vendes, cuántos productos, cómo cobras) y luego una propuesta con alcance y tiempos. Desconfía de quien te tira una cifra sin preguntar nada: o te cobra de más o te entrega de menos.",
+          "Porque un precio serio sale de entender tu negocio. Lo correcto es un diagnóstico corto (qué vendes, cuántos productos, cómo cobras) y luego una propuesta con alcance y tiempos. Puedes ver cómo estructuramos la inversión en nuestra página de [precios](/precios) y todo lo que incluye el [desarrollo de tiendas virtuales](/tiendas-virtuales). Desconfía de quien te tira una cifra sin preguntar nada: o te cobra de más o te entrega de menos.",
       },
     ],
     faqs: [
@@ -344,10 +344,10 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "pasarelas-de-pago-para-ecommerce-en-peru",
-    title: "Pasarelas de pago para ecommerce en Perú: Yape, Plin, Niubiz e Izipay",
+    title: "Pasarelas de Pago en Perú 2026: Yape, Plin, Niubiz o Izipay",
     h1: "Las mejores pasarelas de pago para ecommerce en Perú",
     description:
-      "Guía de pasarelas de pago para tu tienda virtual en Perú: cómo aceptar Yape, Plin, tarjetas con Niubiz o Izipay y transferencia para vender más.",
+      "Guía 2026 de pasarelas de pago para tu tienda virtual en Perú: cómo aceptar Yape, Plin y tarjetas con Niubiz o Izipay, y cuál conviene según tu tipo de negocio.",
     excerpt:
       "Cómo aceptar Yape, Plin y tarjetas en tu tienda virtual y cuál pasarela conviene según tu negocio.",
     datePublished: "2026-06-19",
@@ -394,7 +394,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "pagina-web-o-tienda-virtual",
-    title: "Página web o tienda virtual: ¿cuál necesita tu negocio?",
+    title: "Página Web o Tienda Virtual en 2026: ¿cuál necesitas?",
     h1: "Página web o tienda virtual: ¿cuál necesitas?",
     description:
       "¿Página web o tienda virtual? Diferencias claras para decidir qué necesita tu negocio en Perú según tus objetivos de venta y presencia online.",
@@ -468,7 +468,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Una web es inversión, no gasto",
         body:
-          "La pregunta no es solo cuánto cuesta, sino cuántos clientes te puede traer. Una web pensada para captar contactos se paga sola; una hecha solo 'para tenerla' rara vez genera retorno.",
+          "La pregunta no es solo cuánto cuesta, sino cuántos clientes te puede traer. Una web pensada para captar contactos se paga sola; una hecha solo 'para tenerla' rara vez genera retorno. Mira todo lo que incluye nuestro [diseño de páginas web](/diseno-de-paginas-web) y cómo estructuramos la inversión en [precios](/precios).",
       },
     ],
     faqs: [
@@ -684,7 +684,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "cuanto-cuesta-una-tienda-en-shopify",
-    title: "Cuánto cuesta una tienda en Shopify en Perú",
+    title: "Cuánto Cuesta una Tienda Shopify en Perú 2026 (en soles)",
     h1: "¿Cuánto cuesta una tienda en Shopify?",
     description:
       "Cuánto cuesta una tienda en Shopify en Perú: el plan mensual, el desarrollo, las comisiones y qué incluye, para que sepas cuánto invertir en tu ecommerce.",
@@ -808,7 +808,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "No tienes que hacerlo todo de golpe",
         body:
-          "Lo recomendable es empezar por lo que más te urge (inventario, ventas o clientes) e ir sumando módulos por etapas, según el sistema demuestra su valor.",
+          "Lo recomendable es empezar por lo que más te urge —un [sistema de inventario](/sistemas/inventario), un [sistema de ventas y facturación](/sistemas/ventas-y-facturacion) o un [sistema de gestión (ERP/CRM)](/sistemas/gestion-erp-crm)— e ir sumando módulos por etapas, según el sistema demuestra su valor.",
       },
     ],
     faqs: [
@@ -853,7 +853,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Cuándo conviene un sistema de inventario",
         body:
-          "Si manejas muchos productos, varias sedes o vendes por varios canales, un sistema de inventario conectado a tu tienda te ahorra descuadres y horas de trabajo manual.",
+          "Si manejas muchos productos, varias sedes o vendes por varios canales, un [sistema de inventario](/sistemas/inventario) conectado a tu tienda te ahorra descuadres y horas de trabajo manual.",
       },
     ],
     faqs: [
@@ -1627,7 +1627,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         h2: "Cómo Websy integra la facturación en tu tienda",
-        body: "En Websy desarrollamos tiendas virtuales en Shopify y WooCommerce, y diseñamos páginas web y software a medida. Podemos conectar tu tienda con tu plataforma de facturación para que el comprobante se genere automáticamente al confirmarse el pago, con opción de boleta o factura en el checkout. Si quieres dejar de emitir comprobantes a mano, cuéntanos tu caso y te orientamos según tu volumen de ventas."
+        body: "En Websy desarrollamos tiendas virtuales en Shopify y WooCommerce, y diseñamos páginas web y [software a medida](/desarrollo-de-software-a-medida). Si tu operación lo necesita, desarrollamos un [sistema de ventas y facturación](/sistemas/ventas-y-facturacion) que emite comprobantes conectado a tu inventario. Podemos conectar tu tienda con tu plataforma de facturación para que el comprobante se genere automáticamente al confirmarse el pago, con opción de boleta o factura en el checkout. Si quieres dejar de emitir comprobantes a mano, cuéntanos tu caso y te orientamos según tu volumen de ventas."
       }
     ],
     faqs: [
@@ -3014,10 +3014,10 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "izipay-o-niubiz-cual-elegir-para-cobrar-con-tarjeta",
-    title: "Izipay o Niubiz: cuál elegir para cobrar con tarjeta en Perú",
+    title: "Izipay o Niubiz en 2026: ¿cuál conviene para tu tienda?",
     h1: "Izipay o Niubiz: ¿cuál conviene para tu tienda?",
     description:
-      "Izipay o Niubiz para cobrar con tarjeta en tu tienda virtual en Perú: diferencias en integración, medios aceptados y qué considerar para elegir la pasarela correcta.",
+      "Izipay o Niubiz en Perú (2026): comparamos integración, medios aceptados, requisitos y facilidad de uso para que elijas la pasarela de tarjetas correcta para tu tienda.",
     excerpt:
       "Las dos pasarelas de tarjetas más usadas de Perú, comparadas para que elijas la correcta para tu tienda.",
     datePublished: "2026-07-08",
@@ -3834,7 +3834,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "manual-de-marca-que-es-y-por-que-tu-negocio-lo-necesita",
-    title: "Manual de marca: qué es y por qué tu negocio lo necesita",
+    title: "Manual de Marca: qué es, qué incluye y para qué sirve",
     h1: "Manual de marca: qué es y por qué lo necesitas",
     description:
       "Qué es un manual de marca y por qué tu negocio en Perú lo necesita: reglas de logo, colores, tipografía y tono que hacen que tu marca se vea coherente en todos lados.",
@@ -3907,10 +3907,10 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "cuanto-cuesta-un-hosting-y-un-dominio-pe-en-peru",
-    title: "Cuánto cuesta un hosting y un dominio .pe en Perú (2026)",
+    title: "Cuánto Cuesta un Hosting y Dominio .pe en Perú 2026",
     h1: "¿Cuánto cuesta un hosting y un dominio .pe?",
     description:
-      "Cuánto cuesta un hosting y un dominio .pe en Perú en 2026: qué es cada uno, de qué depende el precio, tipos de hosting y qué necesita tu web o tienda virtual.",
+      "Cuánto cuesta un hosting y un dominio .pe en Perú en 2026: precios reales en soles, de qué depende cada costo y qué necesita de verdad tu web o tienda para arrancar.",
     excerpt:
       "Hosting y dominio son los costos base de toda web. Aquí qué son, cuánto cuestan y cuál necesita tu negocio.",
     datePublished: "2026-07-08",
