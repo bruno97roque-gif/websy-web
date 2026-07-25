@@ -13,6 +13,9 @@ export const SERVICE_LINKS: NavLink[] = [
   { label: "Tiendas WooCommerce", href: "/tiendas-virtuales/woocommerce" },
   { label: "Diseño de Páginas Web", href: "/diseno-de-paginas-web" },
   { label: "Software a Medida", href: "/desarrollo-de-software-a-medida" },
+  { label: "Sistema de Inventario", href: "/sistemas/inventario" },
+  { label: "Sistema de Ventas y Facturación", href: "/sistemas/ventas-y-facturacion" },
+  { label: "Sistema de Gestión (ERP / CRM)", href: "/sistemas/gestion-erp-crm" },
   { label: "SEO y Posicionamiento", href: "/seo" },
   { label: "Google Ads", href: "/google-ads" },
   { label: "Branding", href: "/branding" },
@@ -53,6 +56,10 @@ export const SERVICE_SITEMAP: { path: string; priority: number }[] = [
   { path: "/tiendas-virtuales/woocommerce", priority: 0.7 },
   { path: "/diseno-de-paginas-web", priority: 0.9 },
   { path: "/desarrollo-de-software-a-medida", priority: 0.8 },
+  // Silo de software por tipo de sistema (hijas de /desarrollo-de-software-a-medida).
+  { path: "/sistemas/inventario", priority: 0.8 },
+  { path: "/sistemas/ventas-y-facturacion", priority: 0.8 },
+  { path: "/sistemas/gestion-erp-crm", priority: 0.8 },
   { path: "/precios", priority: 0.9 },
   { path: "/cotizacion", priority: 0.8 },
   // Nuevos pilares de servicio.
