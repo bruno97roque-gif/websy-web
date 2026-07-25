@@ -193,8 +193,8 @@ export default function QuienesSomos() {
 
           <p ref={descRef} style={{ opacity: 0 }}
             className="font-poppins mb-9 text-[15px] leading-[1.85] text-[#6b6478]">
-            En Websy combinamos diseño de alto impacto, tecnología moderna y estrategia digital
-            para construir presencias online que realmente generan resultados. Trabajamos contigo, no solo para ti.
+            Como agencia de desarrollo web en Lima, Perú, en Websy combinamos diseño de alto impacto, tecnología moderna y estrategia digital
+            para construir páginas web, tiendas virtuales y software a medida que realmente generan resultados. Trabajamos contigo, no solo para ti.
           </p>
 
           {/* ── Accordion ── */}

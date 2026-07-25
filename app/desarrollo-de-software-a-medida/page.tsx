@@ -56,8 +56,10 @@ export default function SoftwareAMedidaPage() {
         },
       ]}
       related={[
+        { label: "Sistema de inventario y stock", href: "/sistemas/inventario", desc: "Controla entradas, salidas y multi-almacén en tiempo real." },
+        { label: "Sistema de ventas y facturación", href: "/sistemas/ventas-y-facturacion", desc: "Vende y emite comprobantes electrónicos en un solo flujo." },
+        { label: "Sistema de gestión (ERP / CRM)", href: "/sistemas/gestion-erp-crm", desc: "Centraliza operación, clientes y reportes de tu empresa." },
         { label: "Tiendas virtuales / ecommerce", href: "/tiendas-virtuales", desc: "¿Tu sistema necesita vender online? Súmale una tienda virtual." },
-        { label: "Diseño de páginas web", href: "/diseno-de-paginas-web", desc: "La cara pública de tu negocio, optimizada para captar clientes." },
         { label: "Precios y cotización", href: "/precios", desc: "Qué define el precio de tu sistema y cómo empezar por etapas." },
       ]}
       articles={[

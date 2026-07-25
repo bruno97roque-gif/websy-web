@@ -24,6 +24,154 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "como-hacer-que-tu-pagina-web-aparezca-en-google-peru",
+    title: "Cómo Hacer que tu Página Web Aparezca en Google (2026)",
+    h1: "Cómo hacer que tu página web aparezca en Google",
+    description:
+      "Guía 2026 para Perú: cómo dar de alta tu página web en Google, indexarla en Search Console, enviar tu sitemap y por qué aún no apareces. Pasos claros para salir en Google.",
+    excerpt:
+      "Tu web está en línea pero no aparece en Google. Aquí los pasos reales para darla de alta, indexarla y empezar a posicionar en Perú.",
+    datePublished: "2026-07-23",
+    dateModified: "2026-07-23",
+    category: "SEO",
+    readingMin: 7,
+    intro:
+      "Publicaste tu página web pero al buscar tu negocio en Google no aparece. Es normal: estar en línea no es lo mismo que estar indexado. Aquí verás, paso a paso, cómo dar de alta tu web en Google, indexarla, enviar tu sitemap y por qué a veces tarda en salir.",
+    sections: [
+      {
+        h2: "Estar en línea no es lo mismo que aparecer en Google",
+        body:
+          "Cuando subes tu web ya está disponible para quien escriba tu dirección exacta. Pero para salir en los resultados de búsqueda, Google primero tiene que descubrir tu sitio, rastrearlo e indexarlo (guardarlo en su índice). Recién ahí puede mostrarlo cuando alguien busca. Ese proceso no es automático ni inmediato: hay que ayudarlo, y eso es justo lo que verás aquí.",
+      },
+      {
+        h2: "Paso 1: Da de alta tu web en Google Search Console",
+        body:
+          "Google Search Console es la herramienta gratuita y oficial para decirle a Google que tu web existe. Verificas que el sitio es tuyo, y desde ahí puedes pedir la indexación de tus páginas, ver por qué búsquedas apareces y detectar errores. Es el primer paso obligatorio: sin Search Console, estás a ciegas.",
+        bullets: [
+          "Crea una propiedad con tu dominio (por ejemplo, tunegocio.pe).",
+          "Verifica la propiedad con el método que te indique Google.",
+          "Usa 'Inspección de URL' para pedir la indexación de tu home y páginas clave.",
+        ],
+      },
+      {
+        h2: "Paso 2: Envía tu sitemap",
+        body:
+          "El sitemap es un archivo (normalmente sitemap.xml) que lista todas las páginas de tu web para que Google las encuentre de un tirón. Las webs profesionales lo generan solas. Envíalo desde Search Console en la sección 'Sitemaps'. Así Google descubre todo tu contenido sin depender de que llegue enlace por enlace. Si tu web no tiene sitemap, es señal de que le falta base técnica de SEO.",
+      },
+      {
+        h2: "Paso 3: Por qué tu web todavía no aparece",
+        body:
+          "Que Google la haya indexado no garantiza salir arriba. Las razones más comunes por las que una web nueva no aparece (o aparece muy abajo) son:",
+        bullets: [
+          "Es reciente: Google necesita semanas para confiar en un dominio nuevo.",
+          "No tiene contenido suficiente ni las palabras que la gente busca.",
+          "Falta autoridad: casi ningún otro sitio la enlaza todavía.",
+          "Problemas técnicos: bloqueos en robots.txt, etiqueta noindex o velocidad muy baja.",
+          "Compites contra sitios grandes ya posicionados para esa búsqueda.",
+        ],
+      },
+      {
+        h2: "Paso 4: De 'aparecer' a 'posicionar' (que te encuentren y te contraten)",
+        body:
+          "Salir en Google es solo el arranque. Para que tu web te traiga clientes tiene que posicionar para las búsquedas correctas (tu servicio + tu ciudad), tener contenido útil, buena velocidad y señales de confianza como reseñas y tu ficha de Google Mi Negocio. Eso es SEO, y es un trabajo continuo. Si prefieres que lo hagamos por ti —desde lo técnico hasta el contenido que atrae a tu cliente— revisa nuestro [servicio de SEO en Perú](/seo). Y si tu web aún no está lista o necesita una base sólida, empieza por un [diseño web optimizado para SEO](/diseno-de-paginas-web).",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Cuánto tarda una web nueva en aparecer en Google?",
+        a: "La indexación puede tardar desde unos días hasta un par de semanas. Posicionar bien para búsquedas competitivas toma más: normalmente varios meses de trabajo de SEO constante, sobre todo en un dominio nuevo.",
+      },
+      {
+        q: "¿Tengo que pagar para aparecer en Google?",
+        a: "No para los resultados orgánicos: aparecer e indexarse es gratis. Lo que 'cuesta' es el trabajo de SEO para posicionar arriba. Aparte existe Google Ads (publicidad pagada), que te muestra de inmediato sin depender del posicionamiento.",
+      },
+      {
+        q: "¿Cómo sé si Google ya indexó mi página?",
+        a: "Busca en Google 'site:tudominio.pe'. Si aparecen tus páginas, están indexadas. También lo confirmas en Search Console con la Inspección de URL.",
+      },
+      {
+        q: "Mi web aparece pero muy abajo, ¿qué hago?",
+        a: "Es lo esperable al inicio. Hay que reforzar contenido enfocado en lo que busca tu cliente, mejorar velocidad y señales locales (Google Mi Negocio, reseñas) y ganar enlaces. Es justo lo que trabaja nuestro servicio de SEO.",
+      },
+    ],
+    related: [
+      { label: "Servicio de SEO en Perú", href: "/seo", desc: "Posicionamos tu web para que te encuentren y te contraten." },
+      { label: "Google Mi Negocio para empresas", href: "/blog/google-mi-negocio-para-empresas-en-peru", desc: "Aparece en el mapa y capta clientes locales." },
+      { label: "Diseño de páginas web", href: "/diseno-de-paginas-web", desc: "Una web con base técnica lista para posicionar." },
+    ],
+  },
+  {
+    slug: "como-posicionar-tu-tienda-online-en-google-peru",
+    title: "Cómo Posicionar tu Tienda Online en Google (Perú 2026)",
+    h1: "Cómo posicionar tu tienda online en Google",
+    description:
+      "Guía 2026 para Perú: cómo posicionar tu tienda virtual en Google. SEO para e-commerce, fichas de producto, categorías, velocidad y contenido para vender más sin depender solo de ads.",
+    excerpt:
+      "Tu tienda online no vende si nadie la encuentra. Aquí cómo posicionarla en Google en Perú: SEO de productos, categorías y contenido.",
+    datePublished: "2026-07-23",
+    dateModified: "2026-07-23",
+    category: "Tiendas virtuales",
+    readingMin: 7,
+    intro:
+      "Tener una tienda online no sirve de nada si nadie la encuentra. Posicionar tu e-commerce en Google es lo que te trae ventas todos los días sin pagar por cada clic. Aquí verás cómo hacerlo en Perú: desde las fichas de producto y las categorías hasta la velocidad y el contenido que atrae compradores.",
+    sections: [
+      {
+        h2: "Por qué el SEO es clave para una tienda virtual",
+        body:
+          "La publicidad pagada trae ventas mientras pagas; el SEO trae ventas de forma sostenida. Una tienda bien posicionada aparece cuando alguien busca exactamente lo que vendes, con intención de comprar. En un e-commerce el SEO no es una sola página: son decenas de productos y categorías que pueden rankear cada uno por su búsqueda. Ese es el gran potencial de una tienda optimizada.",
+      },
+      {
+        h2: "Optimiza tus fichas de producto",
+        body:
+          "Cada producto es una oportunidad de rankear. Para eso, la ficha necesita:",
+        bullets: [
+          "Un título claro con el nombre real del producto (como lo busca la gente).",
+          "Descripción propia y útil, no la copiada del proveedor (Google penaliza el contenido duplicado).",
+          "Fotos de calidad con texto alternativo (alt) descriptivo.",
+          "URL limpia y datos estructurados de producto (precio, stock, reseñas).",
+        ],
+      },
+      {
+        h2: "Las categorías son tus páginas más potentes",
+        body:
+          "Las páginas de categoría (por ejemplo 'zapatillas para correr') suelen tener más búsquedas que un producto individual y son las que más tráfico capturan. Dales un título y un texto propio que explique la categoría, no solo un listado de productos. Una buena arquitectura de categorías, bien enlazada, es la columna vertebral del SEO de tu tienda.",
+      },
+      {
+        h2: "Velocidad, móvil y confianza",
+        body:
+          "En Perú la mayoría compra desde el celular: si tu tienda carga lento, pierdes ventas y posiciones. Google prioriza las tiendas rápidas y aptas para móvil. Súmale señales de confianza (pagos locales como Yape y Plin, envíos claros, reseñas) y no solo posicionas mejor: conviertes más. Velocidad y confianza van de la mano con las ventas.",
+      },
+      {
+        h2: "Contenido que atrae compradores",
+        body:
+          "Un blog con guías de compra ('cómo elegir…', 'mejores… 2026') atrae a gente en fase de investigación y la lleva a tus productos. Es la forma de captar tráfico que aún no busca tu marca pero sí lo que vendes. Si quieres una tienda construida y optimizada para vender desde el día uno —con SEO, pagos locales y velocidad— revisa nuestro servicio de [tiendas virtuales](/tiendas-virtuales). Y para el trabajo de posicionamiento continuo, nuestro [servicio de SEO](/seo) lleva tu catálogo a la primera página.",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Cuánto tarda en posicionar una tienda online?",
+        a: "Las primeras mejoras se ven en semanas, pero posicionar categorías y productos competitivos toma varios meses de trabajo constante. Un dominio nuevo tarda más; por eso conviene empezar cuanto antes.",
+      },
+      {
+        q: "¿SEO o Google Ads para mi tienda?",
+        a: "Lo ideal es combinar: Ads te da ventas inmediatas mientras el SEO madura, y el SEO te da ventas sostenidas sin pagar por clic. A largo plazo, el SEO baja tu costo de adquisición.",
+      },
+      {
+        q: "¿Sirve el SEO si vendo también por redes o marketplaces?",
+        a: "Sí. Tu tienda propia posicionada en Google es un canal que no depende de algoritmos ajenos ni de comisiones. Complementa muy bien a redes y marketplaces, y la marca queda tuya.",
+      },
+      {
+        q: "¿Ustedes optimizan tiendas ya existentes?",
+        a: "Sí. Auditamos tu tienda (Shopify, WooCommerce u otra), corregimos lo técnico y trabajamos el SEO de productos y categorías. Cuéntanos qué plataforma usas y te orientamos.",
+      },
+    ],
+    related: [
+      { label: "Tiendas virtuales", href: "/tiendas-virtuales", desc: "Creamos tu e-commerce optimizado para vender." },
+      { label: "Servicio de SEO en Perú", href: "/seo", desc: "Llevamos tu catálogo a la primera página de Google." },
+      { label: "Cómo integrar Yape y Plin en tu tienda", href: "/blog/como-integrar-yape-y-plin-en-tu-tienda-virtual", desc: "Pagos locales que aumentan tus ventas." },
+    ],
+  },
+  {
     slug: "cuanto-cuesta-una-tienda-virtual-en-peru",
     title: "Cuánto cuesta una tienda virtual en Perú (2026)",
     h1: "¿Cuánto cuesta una tienda virtual en Perú?",
@@ -57,7 +205,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "¿Por qué nadie da un precio cerrado por teléfono?",
         body:
-          "Porque un precio serio sale de entender tu negocio. Lo correcto es un diagnóstico corto (qué vendes, cuántos productos, cómo cobras) y luego una propuesta con alcance y tiempos. Desconfía de quien te tira una cifra sin preguntar nada: o te cobra de más o te entrega de menos.",
+          "Porque un precio serio sale de entender tu negocio. Lo correcto es un diagnóstico corto (qué vendes, cuántos productos, cómo cobras) y luego una propuesta con alcance y tiempos. Puedes ver cómo estructuramos la inversión en nuestra página de [precios](/precios) y todo lo que incluye el [desarrollo de tiendas virtuales](/tiendas-virtuales). Desconfía de quien te tira una cifra sin preguntar nada: o te cobra de más o te entrega de menos.",
       },
     ],
     faqs: [
@@ -196,10 +344,10 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "pasarelas-de-pago-para-ecommerce-en-peru",
-    title: "Pasarelas de pago para ecommerce en Perú: Yape, Plin, Niubiz e Izipay",
+    title: "Pasarelas de Pago en Perú 2026: Yape, Plin, Niubiz o Izipay",
     h1: "Las mejores pasarelas de pago para ecommerce en Perú",
     description:
-      "Guía de pasarelas de pago para tu tienda virtual en Perú: cómo aceptar Yape, Plin, tarjetas con Niubiz o Izipay y transferencia para vender más.",
+      "Guía 2026 de pasarelas de pago para tu tienda virtual en Perú: cómo aceptar Yape, Plin y tarjetas con Niubiz o Izipay, y cuál conviene según tu tipo de negocio.",
     excerpt:
       "Cómo aceptar Yape, Plin y tarjetas en tu tienda virtual y cuál pasarela conviene según tu negocio.",
     datePublished: "2026-06-19",
@@ -246,7 +394,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "pagina-web-o-tienda-virtual",
-    title: "Página web o tienda virtual: ¿cuál necesita tu negocio?",
+    title: "Página Web o Tienda Virtual en 2026: ¿cuál necesitas?",
     h1: "Página web o tienda virtual: ¿cuál necesitas?",
     description:
       "¿Página web o tienda virtual? Diferencias claras para decidir qué necesita tu negocio en Perú según tus objetivos de venta y presencia online.",
@@ -320,7 +468,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Una web es inversión, no gasto",
         body:
-          "La pregunta no es solo cuánto cuesta, sino cuántos clientes te puede traer. Una web pensada para captar contactos se paga sola; una hecha solo 'para tenerla' rara vez genera retorno.",
+          "La pregunta no es solo cuánto cuesta, sino cuántos clientes te puede traer. Una web pensada para captar contactos se paga sola; una hecha solo 'para tenerla' rara vez genera retorno. Mira todo lo que incluye nuestro [diseño de páginas web](/diseno-de-paginas-web) y cómo estructuramos la inversión en [precios](/precios).",
       },
     ],
     faqs: [
@@ -536,7 +684,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "cuanto-cuesta-una-tienda-en-shopify",
-    title: "Cuánto cuesta una tienda en Shopify en Perú",
+    title: "Cuánto Cuesta una Tienda Shopify en Perú 2026 (en soles)",
     h1: "¿Cuánto cuesta una tienda en Shopify?",
     description:
       "Cuánto cuesta una tienda en Shopify en Perú: el plan mensual, el desarrollo, las comisiones y qué incluye, para que sepas cuánto invertir en tu ecommerce.",
@@ -660,7 +808,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "No tienes que hacerlo todo de golpe",
         body:
-          "Lo recomendable es empezar por lo que más te urge (inventario, ventas o clientes) e ir sumando módulos por etapas, según el sistema demuestra su valor.",
+          "Lo recomendable es empezar por lo que más te urge —un [sistema de inventario](/sistemas/inventario), un [sistema de ventas y facturación](/sistemas/ventas-y-facturacion) o un [sistema de gestión (ERP/CRM)](/sistemas/gestion-erp-crm)— e ir sumando módulos por etapas, según el sistema demuestra su valor.",
       },
     ],
     faqs: [
@@ -705,7 +853,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Cuándo conviene un sistema de inventario",
         body:
-          "Si manejas muchos productos, varias sedes o vendes por varios canales, un sistema de inventario conectado a tu tienda te ahorra descuadres y horas de trabajo manual.",
+          "Si manejas muchos productos, varias sedes o vendes por varios canales, un [sistema de inventario](/sistemas/inventario) conectado a tu tienda te ahorra descuadres y horas de trabajo manual.",
       },
     ],
     faqs: [
@@ -1479,7 +1627,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         h2: "Cómo Websy integra la facturación en tu tienda",
-        body: "En Websy desarrollamos tiendas virtuales en Shopify y WooCommerce, y diseñamos páginas web y software a medida. Podemos conectar tu tienda con tu plataforma de facturación para que el comprobante se genere automáticamente al confirmarse el pago, con opción de boleta o factura en el checkout. Si quieres dejar de emitir comprobantes a mano, cuéntanos tu caso y te orientamos según tu volumen de ventas."
+        body: "En Websy desarrollamos tiendas virtuales en Shopify y WooCommerce, y diseñamos páginas web y [software a medida](/desarrollo-de-software-a-medida). Si tu operación lo necesita, desarrollamos un [sistema de ventas y facturación](/sistemas/ventas-y-facturacion) que emite comprobantes conectado a tu inventario. Podemos conectar tu tienda con tu plataforma de facturación para que el comprobante se genere automáticamente al confirmarse el pago, con opción de boleta o factura en el checkout. Si quieres dejar de emitir comprobantes a mano, cuéntanos tu caso y te orientamos según tu volumen de ventas."
       }
     ],
     faqs: [
@@ -1636,9 +1784,9 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "google-mi-negocio-para-empresas-en-peru",
-    title: "Google Mi Negocio (Business Profile) para empresas en Perú",
+    title: "Google Mi Negocio 2026: Cómo Registrar tu Empresa Gratis",
     h1: "Google Mi Negocio para empresas en Perú",
-    description: "Guía de Google Mi Negocio (Google Business Profile) para empresas en Perú: cómo crear y verificar tu ficha, reseñas, fotos y SEO local para aparecer en el mapa.",
+    description: "Cómo registrar tu empresa gratis en Google Mi Negocio (Business Profile) en Perú: crear y verificar tu ficha paso a paso, reseñas, fotos y SEO local para aparecer en el mapa.",
     excerpt: "Cómo crear, verificar y optimizar tu ficha de Google Mi Negocio para aparecer en el mapa y captar clientes locales en Perú.",
     datePublished: "2026-06-25",
     dateModified: "2026-06-25",
@@ -1689,7 +1837,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         h2: "Fotos, publicaciones y cómo se complementa con tu web",
-        body: "Una ficha con buenas fotos de tu local, productos o equipo genera más clics que una vacía. Las publicaciones (novedades, promociones, eventos) mantienen la ficha activa. Y todo esto rinde más cuando tu web refuerza las mismas señales: una página clara, con tu dirección, tu rubro y contenido local, le confirma a Google que eres relevante para esas búsquedas. La ficha y la web trabajan juntas en el SEO local.",
+        body: "Una ficha con buenas fotos de tu local, productos o equipo genera más clics que una vacía. Las publicaciones (novedades, promociones, eventos) mantienen la ficha activa. Y todo esto rinde más cuando tu web refuerza las mismas señales: una página clara, con tu dirección, tu rubro y contenido local, le confirma a Google que eres relevante para esas búsquedas. La ficha y la web trabajan juntas en el SEO local. Si prefieres que configuremos y optimicemos tu ficha de Google por ti, revisa nuestro [servicio de SEO local en Perú](/seo).",
         bullets: [
           "Sube fotos reales de tu local, productos, equipo y trabajos.",
           "Publica novedades y promociones para mantener la ficha viva.",
@@ -2866,10 +3014,10 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "izipay-o-niubiz-cual-elegir-para-cobrar-con-tarjeta",
-    title: "Izipay o Niubiz: cuál elegir para cobrar con tarjeta en Perú",
+    title: "Izipay o Niubiz en 2026: ¿cuál conviene para tu tienda?",
     h1: "Izipay o Niubiz: ¿cuál conviene para tu tienda?",
     description:
-      "Izipay o Niubiz para cobrar con tarjeta en tu tienda virtual en Perú: diferencias en integración, medios aceptados y qué considerar para elegir la pasarela correcta.",
+      "Izipay o Niubiz en Perú (2026): comparamos integración, medios aceptados, requisitos y facilidad de uso para que elijas la pasarela de tarjetas correcta para tu tienda.",
     excerpt:
       "Las dos pasarelas de tarjetas más usadas de Perú, comparadas para que elijas la correcta para tu tienda.",
     datePublished: "2026-07-08",
@@ -3686,7 +3834,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "manual-de-marca-que-es-y-por-que-tu-negocio-lo-necesita",
-    title: "Manual de marca: qué es y por qué tu negocio lo necesita",
+    title: "Manual de Marca: qué es, qué incluye y para qué sirve",
     h1: "Manual de marca: qué es y por qué lo necesitas",
     description:
       "Qué es un manual de marca y por qué tu negocio en Perú lo necesita: reglas de logo, colores, tipografía y tono que hacen que tu marca se vea coherente en todos lados.",
@@ -3759,10 +3907,10 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "cuanto-cuesta-un-hosting-y-un-dominio-pe-en-peru",
-    title: "Cuánto cuesta un hosting y un dominio .pe en Perú (2026)",
+    title: "Cuánto Cuesta un Hosting y Dominio .pe en Perú 2026",
     h1: "¿Cuánto cuesta un hosting y un dominio .pe?",
     description:
-      "Cuánto cuesta un hosting y un dominio .pe en Perú en 2026: qué es cada uno, de qué depende el precio, tipos de hosting y qué necesita tu web o tienda virtual.",
+      "Cuánto cuesta un hosting y un dominio .pe en Perú en 2026: precios reales en soles, de qué depende cada costo y qué necesita de verdad tu web o tienda para arrancar.",
     excerpt:
       "Hosting y dominio son los costos base de toda web. Aquí qué son, cuánto cuestan y cuál necesita tu negocio.",
     datePublished: "2026-07-08",
