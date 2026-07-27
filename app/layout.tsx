@@ -13,6 +13,7 @@ import CookieBanner from "@/components/ui/CookieBanner";
 import ContactSection from "@/components/sections/home/ContactSection";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import LeadTracker from "@/components/analytics/LeadTracker";
 import { AnimatedMedia } from "@/components/ui/animated-media";
 import { SITE_URL } from "@/lib/seo";
 import JsonLd from "@/components/seo/JsonLd";
@@ -150,6 +151,8 @@ export default function RootLayout({
         <Footer />
         <WhatsappButton />
         <CookieBanner />
+        {/* Registra en GA4 los clics a WhatsApp / tel / email que ya existen */}
+        <LeadTracker />
         {/* Vercel Analytics — registra visitas y eventos */}
         <Analytics />
         {/* Vercel Speed Insights — mide Core Web Vitals reales */}
