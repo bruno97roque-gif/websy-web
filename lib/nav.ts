@@ -11,6 +11,7 @@ export const SERVICE_LINKS: NavLink[] = [
   { label: "Migrar a Shopify", href: "/tiendas-virtuales/shopify/migracion" },
   { label: "Costos de una Tienda Shopify", href: "/tiendas-virtuales/shopify/costos" },
   { label: "Tiendas WooCommerce", href: "/tiendas-virtuales/woocommerce" },
+  { label: "Desarrollo Web", href: "/desarrollo-web" },
   { label: "Diseño de Páginas Web", href: "/diseno-de-paginas-web" },
   { label: "Software a Medida", href: "/desarrollo-de-software-a-medida" },
   { label: "Sistema de Inventario", href: "/sistemas/inventario" },
@@ -54,6 +55,7 @@ export const SERVICE_SITEMAP: { path: string; priority: number }[] = [
   { path: "/tiendas-virtuales/shopify/migracion", priority: 0.8 },
   { path: "/tiendas-virtuales/shopify/costos", priority: 0.8 },
   { path: "/tiendas-virtuales/woocommerce", priority: 0.7 },
+  { path: "/desarrollo-web", priority: 0.9 },
   { path: "/diseno-de-paginas-web", priority: 0.9 },
   { path: "/desarrollo-de-software-a-medida", priority: 0.8 },
   // Silo de software por tipo de sistema (hijas de /desarrollo-de-software-a-medida).
