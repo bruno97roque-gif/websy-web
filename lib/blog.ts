@@ -1169,7 +1169,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         h2: "Cómo trabaja Websy",
-        body: "En Websy buscamos que el cliente quede dueño de su proyecto. Entregamos páginas web y tiendas virtuales autoadministrables, con alcance y cronograma definidos desde el inicio, y dejamos el dominio y los accesos a tu nombre. Acompañamos después del lanzamiento y dejamos la web lista para SEO y para integraciones útiles en Perú como WhatsApp, facturación electrónica SUNAT y pasarelas de pago. Si estás evaluando opciones, conversemos sin compromiso."
+        body: "En Websy buscamos que el cliente quede dueño de su proyecto. Como [agencia de desarrollo web en Lima](/desarrollo-web), entregamos páginas web y tiendas virtuales autoadministrables, con alcance y cronograma definidos desde el inicio, y dejamos el dominio y los accesos a tu nombre. Acompañamos después del lanzamiento y dejamos la web lista para SEO y para integraciones útiles en Perú como WhatsApp, facturación electrónica SUNAT y pasarelas de pago. Si estás evaluando opciones, conversemos sin compromiso."
       }
     ],
     faqs: [
@@ -1837,7 +1837,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         h2: "Fotos, publicaciones y cómo se complementa con tu web",
-        body: "Una ficha con buenas fotos de tu local, productos o equipo genera más clics que una vacía. Las publicaciones (novedades, promociones, eventos) mantienen la ficha activa. Y todo esto rinde más cuando tu web refuerza las mismas señales: una página clara, con tu dirección, tu rubro y contenido local, le confirma a Google que eres relevante para esas búsquedas. La ficha y la web trabajan juntas en el SEO local. Si prefieres que configuremos y optimicemos tu ficha de Google por ti, revisa nuestro [servicio de SEO local en Perú](/seo).",
+        body: "Una ficha con buenas fotos de tu local, productos o equipo genera más clics que una vacía. Las publicaciones (novedades, promociones, eventos) mantienen la ficha activa. Y todo esto rinde más cuando tu web refuerza las mismas señales: una página clara, con tu dirección, tu rubro y contenido local, le confirma a Google que eres relevante para esas búsquedas. La ficha y la web trabajan juntas en el SEO local. Si prefieres que configuremos y optimicemos tu ficha de Google por ti, revisa nuestro [servicio de SEO local en Perú](/seo). Y si tu página todavía no sale en los resultados, empieza por esta [guía para aparecer en Google con tu página web](/blog/como-aparecer-en-google-con-tu-pagina-web).",
         bullets: [
           "Sube fotos reales de tu local, productos, equipo y trabajos.",
           "Publica novedades y promociones para mantener la ficha viva.",
@@ -2309,7 +2309,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "SEO y Ads: mejor juntos",
         body:
-          "Ads te da clientes hoy; el SEO te los da gratis mañana. Lo rentable es combinarlos: usa Ads para vender desde ya y, en paralelo, construye tu posicionamiento orgánico para depender menos de la publicidad. Si quieres ver qué incluye cada servicio, revisa [nuestros precios](/precios) o [pide una cotización](/cotizacion).",
+          "Ads te da clientes hoy; el SEO te los da gratis mañana. Lo rentable es combinarlos: usa Ads para vender desde ya y, en paralelo, construye tu posicionamiento orgánico para depender menos de la publicidad. Si prefieres que un equipo gestione tus campañas, revisa nuestro servicio de [gestión de Google Ads en Perú](/google-ads); también puedes ver [nuestros precios](/precios) o [pedir una cotización](/cotizacion).",
       },
     ],
     faqs: [
@@ -2351,8 +2351,8 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "pagina-web-para-clinicas-y-consultorios-medicos",
-    title: "Página web para clínicas y consultorios médicos en Perú",
-    h1: "Página web para clínicas y consultorios médicos",
+    title: "Qué debe tener la página web de una clínica o consultorio en Perú",
+    h1: "Qué debe tener la página web de una clínica o consultorio",
     description:
       "Página web para clínicas y consultorios en Perú: reserva de citas, información de especialidades, confianza al paciente y SEO local para aparecer en Google.",
     excerpt:
@@ -2393,7 +2393,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Cuánto cuesta y cómo empezar",
         body:
-          "Depende de si necesitas solo presencia y contacto o también reserva de citas en línea. Te preparamos una cotización a medida y sin costo; puedes ver qué incluye cada opción en [nuestra página de precios](/precios).",
+          "Depende de si necesitas solo presencia y contacto o también reserva de citas en línea. En Websy hacemos [diseño de páginas web para clínicas y consultorios](/diseno-de-paginas-web/clinicas): te preparamos una cotización a medida y sin costo, y puedes ver qué incluye cada opción en [nuestra página de precios](/precios).",
       },
     ],
     faqs: [
@@ -2869,8 +2869,8 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "pagina-web-para-colegios-e-instituciones-educativas-en-peru",
-    title: "Página web para colegios e instituciones educativas en Perú",
-    h1: "Página web para colegios e instituciones educativas",
+    title: "Qué debe tener la página web de un colegio para captar matrículas",
+    h1: "Qué debe tener la página web de un colegio",
     description:
       "Página web para colegios, academias e instituciones educativas en Perú: proceso de admisión, información para padres, comunicados y SEO local para captar matrículas.",
     excerpt:
