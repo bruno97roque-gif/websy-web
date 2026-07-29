@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect } from "react";
 import { ShimmerButton } from "@/components/ui/shimmer-button";
 import { AnimatedMedia } from "@/components/ui/animated-media";
+import { trackLead } from "@/lib/analytics";
 
 /* ── Estado del formulario ── */
 type Status = "idle" | "loading" | "success" | "error";
@@ -33,6 +34,9 @@ export default function ContactSection() {
         setStatus("error");
         return;
       }
+
+      // Lead capturado: registra la conversión en GA4
+      trackLead("form", { servicio: String(data.servicio || "sin_especificar") });
 
       setStatus("success");
       form.reset();
