@@ -4647,6 +4647,291 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Migrar a Shopify sin perder SEO", href: "/tiendas-virtuales/shopify/migracion", desc: "Cambia de plataforma sin perder ranking." },
     ],
   },
+  {
+    slug: "necesito-una-app-movil-o-una-pagina-web-para-mi-negocio",
+    title: "¿Necesito una App Móvil o una Página Web para mi Negocio? (2026)",
+    h1: "¿App móvil o página web? Qué necesita tu negocio",
+    description:
+      "¿App o página web para tu negocio en Perú? Diferencias reales, cuándo conviene cada una y cómo decidir sin gastar de más. Guía práctica 2026 para empresas y pymes.",
+    excerpt:
+      "Antes de invertir en una app, lee esto. Para la mayoría de negocios en Perú una página web rinde más y cuesta menos. Aquí cómo saber qué necesitas de verdad.",
+    datePublished: "2026-07-27",
+    dateModified: "2026-07-27",
+    category: "Software",
+    readingMin: 7,
+    intro:
+      "Para la mayoría de negocios en Perú, la respuesta es empezar por una página web: cuesta menos, aparece en Google y llega a más gente sin que nadie descargue nada. Una app móvil conviene cuando necesitas uso frecuente, notificaciones o funciones que el navegador no ofrece. Aquí te ayudamos a decidir sin gastar de más.",
+    sections: [
+      {
+        h2: "La diferencia real entre una app y una página web",
+        body:
+          "Una página web se abre en el navegador (Chrome, Safari) desde cualquier celular o computadora, sin instalar nada, y Google puede mostrarla en sus resultados. Una app móvil se descarga desde Play Store o App Store y vive en el teléfono del usuario. Esa diferencia lo cambia todo: alcance, costo y para qué sirve cada una.",
+        bullets: [
+          "Web: la encuentran en Google, entran con un clic, funciona en todos los dispositivos.",
+          "App: hay que convencer al usuario de descargarla, pero luego la tiene siempre a mano.",
+          "Web: un solo desarrollo sirve para todos. App: normalmente Android y iPhone requieren más trabajo.",
+        ],
+      },
+      {
+        h2: "Cuándo te conviene una página web (la mayoría de los casos)",
+        body:
+          "Si tu objetivo es que te encuentren clientes nuevos, mostrar tus servicios, generar cotizaciones o vender en línea, una página web es el camino: es lo que la gente busca en Google y lo que puede posicionar. La gran mayoría de pymes y empresas empieza (y crece) con una web bien hecha. Si aún no la tienes o quieres renovarla, revisa nuestro [diseño de páginas web en Perú](/diseno-de-paginas-web); y si vas a vender productos, una [tienda virtual](/tiendas-virtuales) es la base.",
+      },
+      {
+        h2: "Cuándo tiene sentido una app móvil",
+        body:
+          "Una app se justifica cuando el usuario va a volver muchas veces y necesitas algo que la web no da tan bien: notificaciones push, uso sin internet, acceso al hardware del teléfono (cámara, GPS, sensores) o una experiencia muy rápida para un público fiel. Delivery con seguimiento, fidelización, apps internas para tu equipo o plataformas de uso diario son buenos candidatos.",
+        bullets: [
+          "Los usuarios entran a diario o varias veces por semana.",
+          "Necesitas enviar notificaciones o trabajar sin conexión.",
+          "Requieres cámara, GPS u otras funciones del dispositivo.",
+          "Ya tienes una base de clientes fieles que descargará la app.",
+        ],
+      },
+      {
+        h2: "La opción intermedia: la aplicación web (PWA)",
+        body:
+          "No siempre hay que elegir. Una aplicación web a medida (o PWA) se comporta como una app —se puede instalar desde el navegador y enviar notificaciones— pero sin depender de las tiendas y con un solo desarrollo para todos los dispositivos. Es una gran forma de tener lo mejor de ambos mundos con menos costo. Ese tipo de plataformas es parte de nuestro [desarrollo de software y aplicaciones a medida](/desarrollo-de-software-a-medida).",
+      },
+      {
+        h2: "Cómo decidir sin equivocarte",
+        body:
+          "Antes de invertir, responde: ¿mi prioridad es que me encuentren clientes nuevos, o dar servicio a clientes que ya tengo y vuelven seguido? Si es lo primero, empieza por la web. Si es lo segundo y de uso frecuente, evalúa una app o una PWA. Y si no estás seguro, lo más rentable es partir de una web sólida y sumar la app cuando el negocio lo pida. ¿Quieres que analicemos tu caso? [Solicita una cotización sin compromiso](/cotizacion) y te decimos qué te conviene.",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Una app aparece en Google como una página web?",
+        a: "No de la misma forma. Las páginas web posicionan en la búsqueda de Google; las apps se encuentran sobre todo dentro de Play Store o App Store. Por eso, para captar clientes nuevos que te buscan, la web suele rendir mucho más.",
+      },
+      {
+        q: "¿Cuánto cuesta una app frente a una página web?",
+        a: "Depende del alcance, pero una app suele requerir más trabajo que una web equivalente, sobre todo si debe funcionar en Android y iPhone. Lo mejor es definir qué necesitas y pedir una cotización: así comparas con números reales y no de forma general.",
+      },
+      {
+        q: "¿Puedo empezar con una web y hacer la app más adelante?",
+        a: "Sí, y suele ser lo más inteligente. Una web bien construida valida tu idea, te trae clientes y, cuando el volumen lo justifique, se puede desarrollar la app o convertir parte de la web en una aplicación (PWA).",
+      },
+    ],
+    related: [
+      { label: "Software y aplicaciones a medida", href: "/desarrollo-de-software-a-medida", desc: "Plataformas y aplicaciones web hechas para tu operación." },
+      { label: "Diseño de páginas web en Perú", href: "/diseno-de-paginas-web", desc: "La base para que te encuentren y te contraten." },
+      { label: "App nativa, híbrida o web: cuál elegir", href: "/blog/aplicacion-nativa-hibrida-o-web-cual-elegir", desc: "Si ya decidiste una app, este es el siguiente paso." },
+    ],
+  },
+  {
+    slug: "aplicacion-nativa-hibrida-o-web-cual-elegir",
+    title: "Aplicación Nativa, Híbrida o Web (PWA): Cuál Elegir en 2026",
+    h1: "App nativa, híbrida o web: cuál conviene para tu proyecto",
+    description:
+      "Nativa, híbrida o PWA: diferencias, ventajas y qué determina el costo y el plazo de una app en Perú. Aprende a elegir el tipo de aplicación correcto para tu negocio.",
+    excerpt:
+      "No todas las apps se hacen igual. Nativa, híbrida o web: cada camino cambia el costo, el plazo y el rendimiento. Aquí cuál conviene según tu proyecto.",
+    datePublished: "2026-07-27",
+    dateModified: "2026-07-27",
+    category: "Software",
+    readingMin: 7,
+    intro:
+      "Cuando decides hacer una app, la siguiente pregunta es qué tipo: nativa, híbrida o web (PWA). No hay una mejor en absoluto; hay una mejor para tu caso. La elección define el rendimiento, el costo y el tiempo de desarrollo. Aquí te explicamos las tres en simple para que elijas con criterio.",
+    sections: [
+      {
+        h2: "Los tres caminos para crear una app",
+        body:
+          "Toda aplicación cae en una de tres categorías. La nativa se desarrolla específicamente para Android o para iPhone. La híbrida (o multiplataforma) usa una sola base de código para ambos sistemas. La web/PWA corre en el navegador y se puede instalar sin pasar por las tiendas. Entender la diferencia te evita pagar de más o quedarte corto.",
+      },
+      {
+        h2: "App nativa: máximo rendimiento",
+        body:
+          "Se construye con las herramientas propias de cada sistema. Ofrece la mejor velocidad y el acceso más completo al teléfono (cámara, sensores, notificaciones). La contraparte: normalmente implica dos desarrollos (Android e iOS), así que suele costar y tomar más tiempo. Conviene cuando el rendimiento es crítico o usas funciones avanzadas del dispositivo.",
+      },
+      {
+        h2: "App híbrida o multiplataforma: equilibrio",
+        body:
+          "Con un solo código llegas a Android e iPhone a la vez, lo que reduce costo y plazo frente a la nativa manteniendo una buena experiencia. Es la opción más común para negocios que quieren estar en ambas tiendas sin duplicar la inversión. Para la mayoría de proyectos comerciales es el punto de equilibrio entre costo y calidad.",
+      },
+      {
+        h2: "Aplicación web y PWA: la más ágil",
+        body:
+          "Una PWA es una aplicación que vive en el navegador pero se instala y envía notificaciones como una app, sin depender de Play Store ni App Store. Es la vía más rápida y económica de llegar a todos los dispositivos con un solo desarrollo, e ideal para validar una idea o para plataformas de gestión. Este tipo de soluciones forma parte de nuestro [desarrollo de software y aplicaciones a medida](/desarrollo-de-software-a-medida).",
+        bullets: [
+          "Un solo desarrollo para todos los dispositivos.",
+          "No requiere aprobación de las tiendas de apps.",
+          "Se actualiza al instante para todos los usuarios.",
+          "Menor costo de arranque para salir al mercado.",
+        ],
+      },
+      {
+        h2: "Qué determina el costo y el plazo (y cómo elegir)",
+        body:
+          "Más que el tipo de app, el precio lo definen las funciones: cuántas pantallas, si hay pagos, integraciones con otros sistemas, panel de administración y si debe funcionar sin internet. Nuestra recomendación práctica: si buscas rapidez y presupuesto ajustado, empieza por una PWA; si necesitas máximo rendimiento y funciones avanzadas, evalúa nativa o híbrida. Cuéntanos qué quieres lograr y [te preparamos una cotización a medida](/cotizacion), sin compromiso.",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Qué tipo de app es más barata?",
+        a: "Por lo general la web/PWA, porque es un solo desarrollo para todos los dispositivos y no pasa por las tiendas. La híbrida queda en un punto medio y la nativa suele ser la de mayor inversión por requerir Android e iOS por separado.",
+      },
+      {
+        q: "¿Una PWA se puede instalar en el celular?",
+        a: "Sí. Desde el navegador el usuario puede agregarla a la pantalla de inicio y usarla como una app, incluso con notificaciones. La diferencia es que no necesita descargarse desde Play Store ni App Store.",
+      },
+      {
+        q: "¿Cuál me conviene si aún estoy validando mi idea?",
+        a: "La web/PWA. Te permite salir al mercado más rápido y con menos inversión, medir si la gente la usa y, si funciona, escalar luego a una app híbrida o nativa.",
+      },
+    ],
+    related: [
+      { label: "Software y aplicaciones a medida", href: "/desarrollo-de-software-a-medida", desc: "Desarrollamos la aplicación al tipo y necesidad de tu negocio." },
+      { label: "¿App móvil o página web?", href: "/blog/necesito-una-app-movil-o-una-pagina-web-para-mi-negocio", desc: "Primero decide si realmente necesitas una app." },
+      { label: "Sistema de gestión (ERP/CRM)", href: "/sistemas/gestion-erp-crm", desc: "Cuando tu app es en realidad una plataforma interna." },
+    ],
+  },
+  {
+    slug: "pagina-web-a-medida-vs-plantilla-wordpress-wix",
+    title: "Página Web a Medida vs Plantilla (WordPress, Wix): Qué Conviene",
+    h1: "Página web a medida vs plantilla: qué conviene para tu empresa",
+    description:
+      "Plantilla (WordPress, Wix) o web a medida: diferencias en diseño, velocidad, SEO y crecimiento. Descubre qué conviene a tu empresa en Perú antes de invertir.",
+    excerpt:
+      "Una plantilla es rápida y barata; una web a medida es única y escalable. Aquí las diferencias reales en SEO, velocidad y crecimiento para que elijas bien.",
+    datePublished: "2026-07-27",
+    dateModified: "2026-07-27",
+    category: "Diseño web",
+    readingMin: 7,
+    intro:
+      "Al crear tu página web tienes dos caminos: una plantilla prearmada (WordPress, Wix, plantillas de Shopify) o un desarrollo a medida. La plantilla es más rápida y económica de arrancar; la web a medida es única, más veloz y crece contigo. Aquí ves las diferencias reales en diseño, SEO y rendimiento para decidir con criterio.",
+    sections: [
+      {
+        h2: "Qué es una plantilla y qué es una web a medida",
+        body:
+          "Una plantilla es un diseño ya hecho que rellenas con tu contenido: sales rápido y a bajo costo, pero compartes estructura con miles de sitios y dependes de lo que la plantilla permita. Una web a medida se diseña y programa desde cero para tu marca y tus objetivos: control total del diseño, la velocidad y las funciones. Cada una encaja en un momento distinto del negocio.",
+      },
+      {
+        h2: "Ventajas y límites de las plantillas",
+        body:
+          "Las plantillas sirven para empezar con poco presupuesto o para proyectos simples. El problema aparece al crecer: suelen cargar más lento por el código de más, se parecen a la competencia y te topas con límites cuando necesitas algo específico. Muchas empresas terminan rehaciendo el sitio al poco tiempo, gastando dos veces.",
+        bullets: [
+          "A favor: costo inicial bajo y puesta en marcha rápida.",
+          "En contra: diseño genérico y poco diferenciado.",
+          "En contra: más lentas por el peso extra que arrastran.",
+          "En contra: límites al querer funciones o integraciones a medida.",
+        ],
+      },
+      {
+        h2: "Cuándo vale la pena una web a medida",
+        body:
+          "Cuando tu web es un canal serio de clientes y quieres diferenciarte, cargar rápido y no chocar con límites, el desarrollo a medida rinde más. Cada elemento existe por una razón —convertir visitas en contactos— y el sitio está preparado para crecer. Así trabajamos en Websy: revisa nuestro [diseño de páginas web a medida](/diseno-de-paginas-web), y si tu proyecto incluye funciones complejas, lo abordamos como [software a medida](/desarrollo-de-software-a-medida).",
+      },
+      {
+        h2: "El impacto en SEO y velocidad (donde más se nota)",
+        body:
+          "Google premia los sitios rápidos y bien construidos. Una plantilla cargada de funciones que no usas suele pesar de más y perjudicar la velocidad, un factor directo de posicionamiento. Una web a medida se optimiza desde el código para cargar rápido y darle a Google una base limpia. Si quieres que además atraiga clientes por búsqueda, súmale nuestro [servicio de SEO en Perú](/seo).",
+      },
+      {
+        h2: "Cómo decidir según tu momento",
+        body:
+          "Si estás validando una idea con presupuesto mínimo, una plantilla puede servir para arrancar. Si tu web es clave para vender, transmitir profesionalismo y crecer, invierte en un desarrollo a medida y evita rehacerlo en un año. ¿No sabes en qué punto estás? [Cuéntanos tu proyecto](/cotizacion) y te recomendamos el camino más rentable, sin compromiso.",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Una web con plantilla posiciona en Google?",
+        a: "Puede posicionar, pero parte con desventaja si carga lento o tiene código de más. La velocidad y una base técnica limpia influyen en el ranking, y ahí una web a medida bien optimizada suele rendir mejor.",
+      },
+      {
+        q: "¿Es mucho más cara una web a medida?",
+        a: "El costo inicial es mayor que el de una plantilla, pero evita rehacer el sitio al crecer y suele convertir mejor. Conviene verlo como inversión: define tus objetivos y pide una cotización para comparar con números reales.",
+      },
+      {
+        q: "¿Puedo migrar de una plantilla a una web a medida sin perder mi posicionamiento?",
+        a: "Sí, con una migración planificada (redirecciones y estructura cuidada) se conserva el SEO ganado. Es justamente lo que se debe evitar improvisar para no perder tráfico.",
+      },
+    ],
+    related: [
+      { label: "Diseño de páginas web en Perú", href: "/diseno-de-paginas-web", desc: "Webs a medida, rápidas y pensadas para convertir." },
+      { label: "Software a medida", href: "/desarrollo-de-software-a-medida", desc: "Cuando tu web necesita funciones a medida." },
+      { label: "Cuánto cuesta una página web en Perú", href: "/blog/cuanto-cuesta-una-pagina-web-en-peru", desc: "Qué factores definen el precio de tu web." },
+    ],
+  },
+  {
+    slug: "como-automatizar-los-procesos-de-tu-empresa",
+    title: "Cómo Automatizar los Procesos de tu Empresa con un Sistema a Medida",
+    h1: "Cómo automatizar los procesos de tu empresa",
+    description:
+      "Deja las hojas de cálculo y el trabajo manual: qué procesos automatizar (inventario, ventas, facturación, reportes) y cómo un sistema a medida ahorra horas cada semana.",
+    excerpt:
+      "Si tu equipo pierde horas en tareas manuales y errores de Excel, es momento de automatizar. Aquí qué procesos delegar a un sistema y por dónde empezar.",
+    datePublished: "2026-07-27",
+    dateModified: "2026-07-27",
+    category: "Software",
+    readingMin: 7,
+    intro:
+      "Automatizar es dejar que un sistema haga el trabajo repetitivo que hoy hace tu equipo a mano: registrar ventas, controlar stock, emitir comprobantes o armar reportes. El resultado son menos errores, menos horas perdidas y datos al instante para decidir. Aquí ves qué procesos conviene automatizar primero y cómo empezar sin frenar tu operación.",
+    sections: [
+      {
+        h2: "Señales de que tu empresa ya necesita automatizar",
+        body:
+          "No hace falta ser una gran empresa. Si te identificas con varias de estas señales, la automatización ya te ahorraría dinero: tu información vive en varios Excel que nadie termina de cuadrar, cometes errores por cargar datos a mano, no sabes tu stock real en el momento, o dependes de una sola persona que 'sabe cómo va todo'. Eso frena el crecimiento y cuesta caro.",
+        bullets: [
+          "Reprocesas datos entre planillas que no se hablan entre sí.",
+          "Errores de digitación en ventas, stock o facturación.",
+          "No tienes reportes al día para decidir.",
+          "El equipo repite las mismas tareas manuales cada día.",
+        ],
+      },
+      {
+        h2: "Qué procesos se pueden automatizar",
+        body:
+          "Casi cualquier tarea repetitiva y basada en reglas es candidata. Los que más impacto dan de arranque suelen ser el control de inventario, las ventas y la facturación, y los reportes de gestión. Cada uno se puede resolver con un módulo a medida que encaja con tu forma de trabajar.",
+        bullets: [
+          "Inventario y stock en tiempo real, incluso multi-almacén: ver [sistema de inventario](/sistemas/inventario).",
+          "Ventas y facturación electrónica en un solo flujo: ver [ventas y facturación](/sistemas/ventas-y-facturacion).",
+          "Clientes, seguimiento y gestión con un [ERP/CRM a medida](/sistemas/gestion-erp-crm).",
+          "Reportes automáticos y alertas para no revisar todo a mano.",
+        ],
+      },
+      {
+        h2: "Cómo funciona un sistema a medida",
+        body:
+          "A diferencia de un software enlatado, un sistema a medida se construye alrededor de tu proceso real: se adapta a cómo trabajas, no al revés. Es una plataforma web segura a la que tu equipo accede desde cualquier dispositivo, sin instalar nada, y que puede integrarse con las herramientas que ya usas. Así se ve nuestro [desarrollo de software a medida](/desarrollo-de-software-a-medida).",
+      },
+      {
+        h2: "Los beneficios que vas a notar",
+        body:
+          "Automatizar no es un lujo tecnológico: es recuperar tiempo y reducir pérdidas. Lo que las empresas notan primero es que el equipo deja de apagar incendios y se enfoca en vender y atender.",
+        bullets: [
+          "Horas recuperadas cada semana al eliminar tareas manuales.",
+          "Menos errores costosos en stock, cobros y comprobantes.",
+          "Decisiones con datos reales y al día, no con suposiciones.",
+          "Una operación que puede crecer sin duplicar personal.",
+        ],
+      },
+      {
+        h2: "Por dónde empezar",
+        body:
+          "No hace falta automatizar todo de golpe. Lo más rentable es empezar por el proceso que hoy te genera más errores o te quita más tiempo, y crecer desde ahí. Si nos cuentas cómo trabajas, identificamos ese primer paso y [te preparamos una propuesta a medida](/cotizacion), sin compromiso.",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿La automatización es solo para empresas grandes?",
+        a: "No. Muchas pymes son las que más ganan, porque cada hora y cada error pesan más. Se puede empezar por un solo proceso (por ejemplo, inventario o facturación) con una inversión acorde al tamaño del negocio.",
+      },
+      {
+        q: "¿Tengo que cambiar todos mis sistemas actuales?",
+        a: "No necesariamente. Un sistema a medida puede integrarse con herramientas que ya usas y reemplazar solo lo que hoy haces a mano. La idea es sumar orden, no complicarte la operación.",
+      },
+      {
+        q: "¿Cuánto tiempo toma implementar un sistema así?",
+        a: "Depende del alcance, pero se puede arrancar por módulos para ver resultados pronto y seguir ampliando. Lo definimos contigo según qué proceso automatizar primero.",
+      },
+    ],
+    related: [
+      { label: "Software a medida", href: "/desarrollo-de-software-a-medida", desc: "Sistemas web que automatizan tu operación." },
+      { label: "Sistema de inventario y stock", href: "/sistemas/inventario", desc: "Controla entradas, salidas y almacenes en tiempo real." },
+      { label: "Cuándo dejar el Excel", href: "/blog/sistema-de-gestion-para-pymes-cuando-dejar-el-excel", desc: "Las señales de que tu negocio ya superó las planillas." },
+    ],
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
