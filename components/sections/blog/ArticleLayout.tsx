@@ -3,6 +3,7 @@ import JsonLd from "@/components/seo/JsonLd";
 import { blogPostingSchema, breadcrumbSchema, faqPageSchema, howToSchema, BLOG_AUTHOR } from "@/lib/schema";
 import { SITE_URL } from "@/lib/seo";
 import type { BlogPost } from "@/lib/blog";
+import ArticleView from "@/components/analytics/ArticleView";
 
 /* Layout reusable de artículo de blog (BlogPosting + Breadcrumb + FAQPage). */
 
@@ -126,10 +127,16 @@ export default function ArticleLayout({ post }: { post: BlogPost }) {
   return (
     <main className="art" style={{ backgroundColor: "#f8f5fc" }}>
       <JsonLd data={schemas} />
+      <ArticleView
+        categoria={post.category}
+        minutos={post.readingMin}
+        slug={post.slug}
+      />
       <style dangerouslySetInnerHTML={{ __html: ART_CSS }} />
 
       {/* HERO */}
       <section
+        data-track-location="blog_hero"
         style={{
           background:
             "radial-gradient(1200px 600px at 80% -10%, #5a2470 0%, transparent 55%), linear-gradient(135deg, #291231 0%, #180a1e 100%)",
@@ -165,7 +172,7 @@ export default function ArticleLayout({ post }: { post: BlogPost }) {
       <div style={{ height: 4, background: `linear-gradient(90deg, ${ORANGE} 0%, #e07010 100%)` }} />
 
       {/* CUERPO */}
-      <article style={{ padding: "52px 24px 24px" }}>
+      <article data-track-location="blog_cuerpo" style={{ padding: "52px 24px 24px" }}>
         <div style={{ maxWidth: 760, margin: "0 auto" }}>
           {/* Intro destacada (citable) */}
           <p style={{ fontFamily: fp, fontSize: "clamp(17px, 2vw, 20px)", color: PURPLE, lineHeight: 1.65, fontWeight: 500, margin: "0 0 44px", paddingLeft: 20, borderLeft: `3px solid ${ORANGE}` }}>
@@ -196,7 +203,7 @@ export default function ArticleLayout({ post }: { post: BlogPost }) {
 
       {/* FAQ */}
       {post.faqs && post.faqs.length > 0 && (
-        <section style={{ padding: "20px 24px 8px" }}>
+        <section data-track-location="blog_faq" style={{ padding: "20px 24px 8px" }}>
           <div style={{ maxWidth: 760, margin: "0 auto" }}>
             <h2 className="art-h2" style={{ fontFamily: fm, fontSize: "clamp(20px, 2.6vw, 26px)", fontWeight: 700, color: PURPLE, marginBottom: 18 }}>
               Preguntas frecuentes
@@ -215,7 +222,7 @@ export default function ArticleLayout({ post }: { post: BlogPost }) {
 
       {/* RELACIONADOS */}
       {post.related && post.related.length > 0 && (
-        <section style={{ padding: "36px 24px 8px" }}>
+        <section data-track-location="blog_relacionados" style={{ padding: "36px 24px 8px" }}>
           <div style={{ maxWidth: 760, margin: "0 auto" }}>
             <p style={{ fontFamily: fp, fontSize: 12, fontWeight: 600, textTransform: "uppercase", letterSpacing: "3px", color: "#d2760f", marginBottom: 14 }}>
               Te puede servir
@@ -235,7 +242,7 @@ export default function ArticleLayout({ post }: { post: BlogPost }) {
       )}
 
       {/* CTA cierre */}
-      <section style={{ padding: "36px 24px 72px" }}>
+      <section data-track-location="blog_cta_cierre" style={{ padding: "36px 24px 72px" }}>
         <div style={{ maxWidth: 760, margin: "0 auto", background: PURPLE, borderRadius: 20, padding: "40px 32px", textAlign: "center" }}>
           <h2 style={{ fontFamily: fm, fontSize: "clamp(20px, 3vw, 28px)", fontWeight: 800, color: "#fff", margin: 0 }}>
             ¿Tienes un proyecto en <span style={{ color: ORANGE }}>mente</span>?

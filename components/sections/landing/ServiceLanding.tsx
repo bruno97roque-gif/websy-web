@@ -77,6 +77,7 @@ export default function ServiceLanding({
 
       {/* ── HERO ── */}
       <section
+        data-track-location="landing_hero"
         style={{
           background:
             "radial-gradient(1200px 600px at 80% -10%, #5a2470 0%, transparent 55%), linear-gradient(135deg, #291231 0%, #180a1e 100%)",
@@ -141,7 +142,7 @@ export default function ServiceLanding({
 
       {/* ── STATS ── */}
       {stats && stats.length > 0 && (
-        <section style={{ background: PURPLE, padding: "0 24px" }}>
+        <section data-track-location="landing_stats" style={{ background: PURPLE, padding: "0 24px" }}>
           <div style={{ maxWidth: 920, margin: "0 auto", display: "grid", gridTemplateColumns: `repeat(${Math.min(stats.length, 4)}, 1fr)`, gap: 1, background: "rgba(255,255,255,0.08)" }}>
             {stats.map((s) => (
               <div key={s.label} style={{ background: PURPLE, padding: "26px 16px", textAlign: "center" }}>
@@ -154,7 +155,7 @@ export default function ServiceLanding({
       )}
 
       {/* ── SECCIONES ── */}
-      <section style={{ padding: "64px 24px 32px" }}>
+      <section data-track-location="landing_secciones" style={{ padding: "64px 24px 32px" }}>
         <div style={{ maxWidth: 860, margin: "0 auto", display: "flex", flexDirection: "column", gap: 44 }}>
           {sections.map((sec) => (
             <div key={sec.h2}>
@@ -181,7 +182,7 @@ export default function ServiceLanding({
 
       {/* ── RELACIONADOS (enlazado en silo) ── */}
       {related && related.length > 0 && (
-        <section style={{ padding: "12px 24px 8px" }}>
+        <section data-track-location="landing_relacionados" style={{ padding: "12px 24px 8px" }}>
           <div style={{ maxWidth: 860, margin: "0 auto" }}>
             <div style={{ display: "grid", gap: 14, gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))" }}>
               {related.map((r) => (
@@ -203,7 +204,7 @@ export default function ServiceLanding({
 
       {/* ── ARTÍCULOS DEL BLOG (página de dinero → blog) ── */}
       {articles && articles.length > 0 && (
-        <section style={{ padding: "28px 24px 8px" }}>
+        <section data-track-location="landing_articulos" style={{ padding: "28px 24px 8px" }}>
           <div style={{ maxWidth: 860, margin: "0 auto" }}>
             <p style={{ fontFamily: fp, fontSize: 12, fontWeight: 600, textTransform: "uppercase", letterSpacing: "3px", color: "#d2760f", marginBottom: 14 }}>
               Sigue aprendiendo en el blog
@@ -227,7 +228,7 @@ export default function ServiceLanding({
       )}
 
       {/* ── FAQ ── */}
-      <section style={{ padding: "20px 24px 72px" }}>
+      <section data-track-location="landing_faq" style={{ padding: "20px 24px 72px" }}>
         <div style={{ maxWidth: 860, margin: "0 auto" }}>
           <p style={{ fontFamily: fp, fontSize: 12, fontWeight: 600, textTransform: "uppercase", letterSpacing: "3px", color: "#d2760f", marginBottom: 10 }}>
             Preguntas frecuentes

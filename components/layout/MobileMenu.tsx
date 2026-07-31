@@ -136,6 +136,7 @@ export default function MobileMenu({
         />
 
         <button
+          type="button"
           onClick={onClose}
           aria-label="Cerrar menú"
           className="group flex h-10 w-10 items-center justify-center rounded-full border border-white/20 transition-all duration-300 hover:border-[#F18C1B] hover:bg-[#F18C1B]/10"

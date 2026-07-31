@@ -14,6 +14,7 @@ import ContactSection from "@/components/sections/home/ContactSection";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import TrackingProvider from "@/components/analytics/TrackingProvider";
+import WebVitals from "@/components/analytics/WebVitals";
 import {
   GoogleTagManagerHead,
   GoogleTagManagerNoScript,
@@ -163,6 +164,8 @@ export default function RootLayout({
         <CookieBanner />
         {/* Medición completa: WhatsApp, formulario, redes, CTA, FAQ, scroll… */}
         <TrackingProvider />
+        {/* Core Web Vitals reales → GA4, para cruzar velocidad con conversión */}
+        <WebVitals />
         {/* Vercel Analytics — registra visitas y eventos */}
         <Analytics />
         {/* Vercel Speed Insights — mide Core Web Vitals reales */}

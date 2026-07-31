@@ -78,6 +78,7 @@ function Lightbox({
 
       {/* ── Prev button ── */}
       <button
+        type="button"
         onClick={(e) => { e.stopPropagation(); goPrev(); }}
         disabled={isFirst}
         aria-label="Anterior"
@@ -99,6 +100,7 @@ function Lightbox({
 
       {/* ── Next button ── */}
       <button
+        type="button"
         onClick={(e) => { e.stopPropagation(); goNext(); }}
         disabled={isLast}
         aria-label="Siguiente"
@@ -171,6 +173,7 @@ function Lightbox({
 
         {/* ── Close button top-right INSIDE image ── */}
         <button
+          type="button"
           onClick={(e) => { e.stopPropagation(); onClose(); }}
           aria-label="Cerrar"
           style={{
@@ -197,6 +200,7 @@ function Lightbox({
         }}>
           {items.map((_, i) => (
             <button
+              type="button"
               key={i}
               onClick={(e) => { e.stopPropagation(); onChangeIndex(i); }}
               style={{
