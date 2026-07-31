@@ -70,8 +70,25 @@ export function getPageType(pathname?: string): string {
   if (p.startsWith("/tiendas-virtuales")) return "servicio_ecommerce";
   if (p.startsWith("/sistemas/")) return "servicio_software";
   if (p === "/terminos" || p === "/politicas-de-privacidad") return "legal";
-  return "servicio";
+
+  // Solo se consideran "servicio" las rutas que existen de verdad. Antes
+  // cualquier URL inventada devolvía "servicio" y los 404 se confundían con
+  // páginas reales en los informes.
+  if (RUTAS_DE_SERVICIO.has(p)) return "servicio";
+  return "desconocida";
 }
+
+/** Landings de servicio que existen (app/…/page.tsx). */
+const RUTAS_DE_SERVICIO = new Set([
+  "/servicios",
+  "/desarrollo-web",
+  "/desarrollo-de-software-a-medida",
+  "/diseno-de-paginas-web",
+  "/seo",
+  "/google-ads",
+  "/branding",
+  "/mantenimiento-web",
+]);
 
 function pageContext(): EventParams {
   if (typeof window === "undefined") return {};

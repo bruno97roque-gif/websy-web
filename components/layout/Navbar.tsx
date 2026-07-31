@@ -3,6 +3,7 @@
 import { useEffect, useState, useCallback } from "react";
 import Link from "next/link";
 import MobileMenu from "./MobileMenu";
+import { trackEvent } from "@/lib/analytics";
 
 export default function Navbar() {
   const [solid,    setSolid]    = useState(false);
@@ -50,8 +51,16 @@ export default function Navbar() {
 
           {/* Botón hamburguesa */}
           <button
+            type="button"
             aria-label={menuOpen ? "Cerrar menú" : "Abrir menú"}
-            onClick={() => setMenuOpen((v) => !v)}
+            onClick={() => {
+              setMenuOpen((v) => {
+                // Abrir el menú es intención de navegar: si luego no pulsa
+                // ningún enlace, es que no encontró lo que buscaba.
+                if (!v) trackEvent("menu_open", { cta_location: "menu" });
+                return !v;
+              });
+            }}
             className="flex items-center justify-center rounded-lg p-1.5 transition-opacity hover:opacity-70"
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}

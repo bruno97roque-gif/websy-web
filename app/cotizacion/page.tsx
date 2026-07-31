@@ -62,6 +62,7 @@ export default function CotizacionPage() {
 
       {/* HERO */}
       <section
+        data-track-location="cotizacion_hero"
         style={{
           background:
             "radial-gradient(1200px 600px at 80% -10%, #5a2470 0%, transparent 55%), linear-gradient(135deg, #291231 0%, #180a1e 100%)",
@@ -93,7 +94,7 @@ export default function CotizacionPage() {
       <div style={{ height: 4, background: `linear-gradient(90deg, ${ORANGE} 0%, #e07010 100%)` }} />
 
       {/* PASOS */}
-      <section style={{ padding: "60px 24px 20px" }}>
+      <section data-track-location="cotizacion_pasos" style={{ padding: "60px 24px 20px" }}>
         <div style={{ maxWidth: 920, margin: "0 auto" }}>
           <h2 style={{ fontFamily: fm, fontSize: "clamp(22px, 3vw, 30px)", fontWeight: 700, color: PURPLE, marginBottom: 28 }}>
             Cómo funciona
@@ -113,7 +114,7 @@ export default function CotizacionPage() {
       </section>
 
       {/* QUÉ COTIZAMOS */}
-      <section style={{ padding: "28px 24px 12px" }}>
+      <section data-track-location="cotizacion_que" style={{ padding: "28px 24px 12px" }}>
         <div style={{ maxWidth: 920, margin: "0 auto" }}>
           <h2 style={{ fontFamily: fm, fontSize: "clamp(20px, 3vw, 26px)", fontWeight: 700, color: PURPLE, marginBottom: 16 }}>
             ¿Qué quieres cotizar?
@@ -129,7 +130,7 @@ export default function CotizacionPage() {
       </section>
 
       {/* FAQ precios */}
-      <section style={{ padding: "36px 24px 28px" }}>
+      <section data-track-location="cotizacion_faq" style={{ padding: "36px 24px 28px" }}>
         <div style={{ maxWidth: 860, margin: "0 auto" }}>
           <h2 style={{ fontFamily: fm, fontSize: "clamp(22px, 3vw, 30px)", fontWeight: 700, color: PURPLE, marginBottom: 22 }}>
             Sobre precios y presupuestos
