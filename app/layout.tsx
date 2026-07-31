@@ -13,7 +13,9 @@ import CookieBanner from "@/components/ui/CookieBanner";
 import ContactSection from "@/components/sections/home/ContactSection";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import LeadTracker from "@/components/analytics/LeadTracker";
+import TrackingProvider from "@/components/analytics/TrackingProvider";
+import GoogleTagManager from "@/components/analytics/GoogleTagManager";
+import { GA4_MEASUREMENT_ID, USES_GTM } from "@/lib/analytics";
 import { AnimatedMedia } from "@/components/ui/animated-media";
 import { SITE_URL } from "@/lib/seo";
 import JsonLd from "@/components/seo/JsonLd";
@@ -151,28 +153,36 @@ export default function RootLayout({
         <Footer />
         <WhatsappButton />
         <CookieBanner />
-        {/* Registra en GA4 los clics a WhatsApp / tel / email que ya existen */}
-        <LeadTracker />
+        {/* Medición completa: WhatsApp, formulario, redes, CTA, FAQ, scroll… */}
+        <TrackingProvider />
         {/* Vercel Analytics — registra visitas y eventos */}
         <Analytics />
         {/* Vercel Speed Insights — mide Core Web Vitals reales */}
         <SpeedInsights />
 
-        {/* Google Analytics (GA4 / gtag.js) — ID G-KTWZ5KEZR7.
-            Requiere googletagmanager.com en script-src y google-analytics.com
-            en connect-src/img-src de la CSP (ya añadidos en next.config.ts). */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-KTWZ5KEZR7"
-          strategy="afterInteractive"
-        />
-        <Script id="ga4-gtag-init" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-KTWZ5KEZR7');
-          `}
-        </Script>
+        {/* Medición de Google. Dos modos excluyentes para no duplicar hits:
+            · Con NEXT_PUBLIC_GTM_ID → manda Google Tag Manager (el tag de GA4
+              vive dentro del contenedor).
+            · Sin esa variable → gtag.js directo, como hasta ahora.
+            La CSP de next.config.ts ya permite googletagmanager.com. */}
+        <GoogleTagManager />
+
+        {!USES_GTM && (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${GA4_MEASUREMENT_ID}`}
+              strategy="afterInteractive"
+            />
+            <Script id="ga4-gtag-init" strategy="afterInteractive">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${GA4_MEASUREMENT_ID}');
+              `}
+            </Script>
+          </>
+        )}
       </body>
     </html>
   );

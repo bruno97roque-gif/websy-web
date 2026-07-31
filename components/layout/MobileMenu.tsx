@@ -93,6 +93,9 @@ export default function MobileMenu({
       ref={overlayRef}
       className="fixed inset-0 z-[950] flex-col bg-[#291231]"
       style={{ display: "none" }}
+      /* Etiqueta de medición: marca todos los clics de aquí como "menu".
+         No afecta al diseño; solo permite separarlos en los informes. */
+      data-track-location="menu"
     >
       {/* ── Particles background ── */}
       <Particles

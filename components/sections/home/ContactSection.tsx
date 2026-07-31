@@ -3,7 +3,7 @@
 import { useState, useRef, useEffect } from "react";
 import { ShimmerButton } from "@/components/ui/shimmer-button";
 import { AnimatedMedia } from "@/components/ui/animated-media";
-import { trackLead } from "@/lib/analytics";
+import { trackLead, trackEvent } from "@/lib/analytics";
 
 /* ── Estado del formulario ── */
 type Status = "idle" | "loading" | "success" | "error";
@@ -12,6 +12,34 @@ export default function ContactSection() {
   const [status,  setStatus]  = useState<Status>("idle");
   const [errMsg,  setErrMsg]  = useState<string>("");
 
+  /* ── Medición del embudo del formulario ──────────────────────
+     Solo se registra el NOMBRE del campo y si quedó relleno.
+     Nunca el contenido que escribe el usuario (nada de PII).      */
+  const started        = useRef(false);
+  const fieldsTouched  = useRef<Set<string>>(new Set());
+
+  const handleFormFocus = (e: React.FocusEvent<HTMLFormElement>) => {
+    const field = (e.target as HTMLElement).getAttribute?.("name");
+    if (!field || field === "website") return; // honeypot: se ignora
+    if (!started.current) {
+      started.current = true;
+      trackEvent("form_start", { form_name: "contacto", first_field: field });
+    }
+  };
+
+  const handleFormBlur = (e: React.FocusEvent<HTMLFormElement>) => {
+    const el = e.target as unknown as HTMLInputElement | HTMLTextAreaElement;
+    const field = el.getAttribute?.("name");
+    if (!field || field === "website" || fieldsTouched.current.has(field)) return;
+    if (!el.value?.trim()) return; // lo dejó vacío: aún no está completo
+    fieldsTouched.current.add(field);
+    trackEvent("form_field_complete", {
+      form_name: "contacto",
+      field_name: field,
+      fields_completed: fieldsTouched.current.size,
+    });
+  };
+
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setStatus("loading");
@@ -19,6 +47,12 @@ export default function ContactSection() {
 
     const form = e.currentTarget;
     const data = Object.fromEntries(new FormData(form));
+
+    trackEvent("form_submit", {
+      form_name: "contacto",
+      servicio: String(data.servicio || "sin_especificar"),
+      fields_completed: fieldsTouched.current.size,
+    });
 
     try {
       const res = await fetch("/api/contact", {
@@ -30,19 +64,38 @@ export default function ContactSection() {
       const json = await res.json();
 
       if (!res.ok) {
-        setErrMsg(json.error ?? "Error al enviar. Intenta de nuevo.");
+        const message = json.error ?? "Error al enviar. Intenta de nuevo.";
+        // Un envío que falla es un lead PERDIDO: hay que verlo en los informes.
+        trackEvent("form_submit_error", {
+          form_name: "contacto",
+          error_type: "respuesta_servidor",
+          error_message: String(message).slice(0, 100),
+          status_code: res.status,
+        });
+        setErrMsg(message);
         setStatus("error");
         return;
       }
 
       // Lead capturado: registra la conversión en GA4
-      trackLead("form", { servicio: String(data.servicio || "sin_especificar") });
+      trackLead("form", {
+        servicio: String(data.servicio || "sin_especificar"),
+        cta_location: "formulario_contacto",
+        fields_completed: fieldsTouched.current.size,
+      });
 
       setStatus("success");
       form.reset();
+      started.current = false;
+      fieldsTouched.current = new Set();
       // Vuelve a idle tras 5 s
       setTimeout(() => setStatus("idle"), 5000);
     } catch {
+      trackEvent("form_submit_error", {
+        form_name: "contacto",
+        error_type: "sin_conexion",
+        error_message: "fetch fallido en el cliente",
+      });
       setErrMsg("Sin conexión. Verifica tu internet e intenta de nuevo.");
       setStatus("error");
     }
@@ -95,7 +148,12 @@ export default function ContactSection() {
 
           {/* ── RIGHT — formulario — móvil: segundo, desktop: columna derecha ── */}
           <div className="order-2 rounded-[24px] md:order-2 border border-[#F18C1B]/50 bg-white/[0.06] p-8 shadow-[0_8px_60px_rgba(0,0,0,0.4),inset_0_1px_0_rgba(255,255,255,0.06)] md:px-12 md:py-14">
-            <form onSubmit={handleSubmit} noValidate>
+            <form
+              onSubmit={handleSubmit}
+              onFocus={handleFormFocus}
+              onBlur={handleFormBlur}
+              noValidate
+            >
 
               {/* ── Honeypot anti-spam (oculto para humanos, los bots lo llenan) ── */}
               <input
@@ -240,7 +298,12 @@ function ServiceSelect({ name }: { name: string }) {
             <button
               key={opt}
               type="button"
-              onClick={() => { setSelected(opt); setOpen(false); }}
+              onClick={() => {
+                setSelected(opt);
+                setOpen(false);
+                // Qué servicio pide la gente: se lee directo en los informes.
+                trackEvent("form_service_select", { form_name: "contacto", servicio: opt });
+              }}
               className="flex w-full items-center gap-3 px-4 py-3 font-poppins text-[14px] transition-colors hover:bg-[#F18C1B]/10"
               style={{ color: selected === opt ? "#F18C1B" : "rgba(255,255,255,0.85)" }}
             >

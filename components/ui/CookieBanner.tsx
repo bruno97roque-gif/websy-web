@@ -2,8 +2,38 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { trackEvent } from "@/lib/analytics";
 
 const COOKIE_KEY = "websy_cookies_consent";
+
+/**
+ * Aplica la decisión del visitante a la medición (Consent Mode v2) y la
+ * registra como evento. Hasta ahora "Rechazar" guardaba la preferencia pero
+ * no tenía ningún efecto sobre GA4; con esto sí lo tiene.
+ */
+function applyConsent(decision: "accepted" | "rejected") {
+  if (typeof window === "undefined") return;
+  const value = decision === "accepted" ? "granted" : "denied";
+  try {
+    window.dataLayer = window.dataLayer || [];
+    // Formato nativo de gtag (objeto `arguments`): lo entienden tanto
+    // gtag.js como Tag Manager.
+    function gtag(...args: unknown[]) {
+      // eslint-disable-next-line prefer-rest-params
+      window.dataLayer!.push(arguments as unknown as Record<string, unknown>);
+      void args;
+    }
+    gtag("consent", "update", {
+      ad_storage: value,
+      ad_user_data: value,
+      ad_personalization: value,
+      analytics_storage: value,
+    });
+  } catch {
+    /* sin dataLayer no hacemos nada */
+  }
+  trackEvent("cookie_consent", { consent_decision: decision });
+}
 
 export default function CookieBanner() {
   // null = sin decisión aún (banner visible), "accepted" | "rejected" = ya decidió
@@ -17,11 +47,13 @@ export default function CookieBanner() {
   const handleAccept = () => {
     localStorage.setItem(COOKIE_KEY, "accepted");
     setConsent("accepted");
+    applyConsent("accepted");
   };
 
   const handleReject = () => {
     localStorage.setItem(COOKIE_KEY, "rejected");
     setConsent("rejected");
+    applyConsent("rejected");
   };
 
   // Si ya hay decisión guardada, no renderizar nada
