@@ -25,17 +25,17 @@ export const GTM_CONTAINER_ID = process.env.NEXT_PUBLIC_GTM_ID ?? "GTM-M2HQHMZ8"
 export const USES_GTM = GTM_CONTAINER_ID.startsWith("GTM-");
 
 /**
- * Quién envía los eventos a GA4.
+ * Quién envía los eventos a GA4. Ahora los envía Google Tag Manager.
  *
- * `false` → los envía gtag.js directamente (situación actual, ya verificada).
- * `true`  → los envía el contenedor de GTM y gtag.js deja de cargarse.
+ * El contenedor GTM-M2HQHMZ8 ya tiene publicada (versión 2 "Medición completa
+ * v1") la etiqueta de configuración de GA4 y una etiqueta de evento que
+ * reenvía los 32 eventos del sitio con sus 36 parámetros. Desde ese momento
+ * gtag.js sobra: si siguiera cargándose, cada evento llegaría DOS veces a GA4.
  *
- * Se mantiene en `false` hasta que el contenedor tenga publicadas sus etiquetas
- * de GA4. Ponerlo en `true` antes dejaría el sitio SIN medición: GTM cargaría
- * pero no habría nada dentro que reenviara los eventos. El dataLayer se llena
- * igual en ambos casos, así que GTM ya puede depurarse desde hoy.
+ * Se puede volver atrás sin desplegar poniendo NEXT_PUBLIC_GA4_VIA_GTM=0 en
+ * Vercel, por si alguna vez hay que dejar el contenedor fuera de juego.
  */
-export const GA4_VIA_GTM = process.env.NEXT_PUBLIC_GA4_VIA_GTM === "1";
+export const GA4_VIA_GTM = process.env.NEXT_PUBLIC_GA4_VIA_GTM !== "0";
 
 declare global {
   interface Window {
