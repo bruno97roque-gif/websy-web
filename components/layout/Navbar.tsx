@@ -19,6 +19,7 @@ export default function Navbar() {
   return (
     <>
       <nav
+        data-track-location="menu"
         className={`fixed left-0 right-0 top-0 z-[900] transition-all duration-400 ${
           solid && !menuOpen
             ? "border-b border-[#e4e2ea] bg-white/94 shadow-[0_2px_32px_rgba(41,18,49,.06)] backdrop-blur-[18px]"

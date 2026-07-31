@@ -39,9 +39,12 @@ const securityHeaders = [
       // Imágenes: propio dominio + data URIs + beacons de Google Analytics
       "img-src 'self' data: blob: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com",
       // Conexiones: propio dominio + APIs externas + envío de hits a Google Analytics GA4
-      "connect-src 'self' https://api.resend.com https://script.google.com https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com",
-      // Frames: ninguno (no embebemos iframes)
-      "frame-src 'none'",
+      // + Tag Assistant (modo Vista previa de Google Tag Manager)
+      "connect-src 'self' https://api.resend.com https://script.google.com https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com https://tagassistant.google.com",
+      // Frames: solo los de Google Tag Manager (iframe <noscript> del contenedor
+      // y la ventana de depuración de Tag Assistant). Sin esto GTM no se puede
+      // depurar y el fallback sin JavaScript queda bloqueado.
+      "frame-src https://www.googletagmanager.com https://tagassistant.google.com",
       // Objects: ninguno
       "object-src 'none'",
       // Base: sólo propio dominio

@@ -36,7 +36,13 @@ export default function CTABanner({
   );
 
   return (
-    <section className={`px-8 py-10 md:px-[72px] md:py-[40px] ${className}`} style={{ backgroundColor: "#ffffff" }}>
+    <section
+      className={`px-8 py-10 md:px-[72px] md:py-[40px] ${className}`}
+      style={{ backgroundColor: "#ffffff" }}
+      /* Etiqueta de medición: separa en los informes los leads que salen
+         de este banner (aparece al pie de todas las páginas). */
+      data-track-location="cta_banner"
+    >
       <div style={{ maxWidth: 1600, margin: "0 auto" }}>
         <div style={{ position: "relative", overflow: "hidden", borderRadius: 20, backgroundImage: "url('/images/fondo-tarjeta-footer.webp')", backgroundSize: "cover", backgroundPosition: "center", backgroundColor: "#1c0a30" }}>
 
