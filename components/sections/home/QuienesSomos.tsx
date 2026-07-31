@@ -135,6 +135,7 @@ export default function QuienesSomos() {
             <div className="absolute bottom-5 left-1/2 z-20 flex -translate-x-1/2 items-center gap-3">
               {/* Prev */}
               <button
+                type="button"
                 onClick={() => swiperRef.current?.slidePrev()}
                 aria-label="Anterior"
                 className="flex h-10 w-10 items-center justify-center rounded-full bg-white/90 shadow-[0_4px_16px_rgba(0,0,0,.18)] backdrop-blur-sm transition-all duration-200 hover:scale-110 hover:bg-white"
@@ -151,6 +152,7 @@ export default function QuienesSomos() {
 
               {/* Next */}
               <button
+                type="button"
                 onClick={() => swiperRef.current?.slideNext()}
                 aria-label="Siguiente"
                 className="flex h-10 w-10 items-center justify-center rounded-full bg-[#F18C1B] shadow-[0_4px_18px_rgba(241,140,27,.45)] transition-all duration-200 hover:scale-110 hover:shadow-[0_6px_24px_rgba(241,140,27,.60)]"

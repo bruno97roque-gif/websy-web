@@ -61,6 +61,7 @@ export default function CookieBanner() {
 
   return (
     <div
+      data-track-location="cookie_banner"
       role="dialog"
       aria-label="Aviso de cookies"
       style={{

@@ -16,22 +16,59 @@ export default function ContactSection() {
      Solo se registra el NOMBRE del campo y si quedó relleno.
      Nunca el contenido que escribe el usuario (nada de PII).      */
   const started        = useRef(false);
+  const enviado        = useRef(false);
   const fieldsTouched  = useRef<Set<string>>(new Set());
+  const ultimoCampo    = useRef<string>("");
 
   const handleFormFocus = (e: React.FocusEvent<HTMLFormElement>) => {
-    const field = (e.target as HTMLElement).getAttribute?.("name");
+    const el = e.target as HTMLElement;
+    // El selector de servicio es un <button> sin name: sin este respaldo, abrir
+    // el desplegable como primera acción no contaba como inicio del formulario.
+    const field = el.getAttribute?.("name") || el.getAttribute?.("data-field") || "";
     if (!field || field === "website") return; // honeypot: se ignora
+    ultimoCampo.current = field;
     if (!started.current) {
       started.current = true;
       trackEvent("form_start", { form_name: "contacto", first_field: field });
     }
   };
 
+  /**
+   * Abandono: empezó a rellenar y se fue sin enviar. Es el dato que explica
+   * por qué hay muchas visitas y casi ningún lead, y hasta ahora se perdía.
+   */
+  useEffect(() => {
+    const avisar = () => {
+      if (!started.current || enviado.current) return;
+      started.current = false; // no repetir en la misma sesión de página
+      trackEvent("form_abandon", {
+        form_name: "contacto",
+        fields_completed: fieldsTouched.current.size,
+        field_name: ultimoCampo.current,
+      });
+    };
+    const onVisibility = () => {
+      if (document.visibilityState === "hidden") avisar();
+    };
+    window.addEventListener("pagehide", avisar);
+    document.addEventListener("visibilitychange", onVisibility);
+    return () => {
+      avisar(); // cambio de ruta dentro del sitio
+      window.removeEventListener("pagehide", avisar);
+      document.removeEventListener("visibilitychange", onVisibility);
+    };
+  }, []);
+
   const handleFormBlur = (e: React.FocusEvent<HTMLFormElement>) => {
     const el = e.target as unknown as HTMLInputElement | HTMLTextAreaElement;
     const field = el.getAttribute?.("name");
     if (!field || field === "website" || fieldsTouched.current.has(field)) return;
-    if (!el.value?.trim()) return; // lo dejó vacío: aún no está completo
+    // Un campo que se deja vacío es justo el que delata dónde se atascan:
+    // se guarda como "último campo" para el evento de abandono.
+    if (!el.value?.trim()) {
+      ultimoCampo.current = field;
+      return;
+    }
     fieldsTouched.current.add(field);
     trackEvent("form_field_complete", {
       form_name: "contacto",
@@ -78,6 +115,7 @@ export default function ContactSection() {
       }
 
       // Lead capturado: registra la conversión en GA4
+      enviado.current = true;
       trackLead("form", {
         servicio: String(data.servicio || "sin_especificar"),
         cta_location: "formulario_contacto",
@@ -278,6 +316,8 @@ function ServiceSelect({ name }: { name: string }) {
       <button
         type="button"
         onClick={() => setOpen((o) => !o)}
+        /* Sin name, el foco aquí no contaba como inicio del formulario. */
+        data-field="servicio"
         className="flex w-full items-center justify-between rounded-[10px] border border-[#F18C1B]/40 bg-white/[0.06] px-4 py-3.5 font-poppins text-[14px] outline-none transition-colors focus:border-[#F18C1B]"
         style={{ color: selected ? "white" : "rgba(255,255,255,0.35)" }}
       >

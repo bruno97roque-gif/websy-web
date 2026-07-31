@@ -143,6 +143,7 @@ export default function PreciosPage() {
 
       {/* ── HERO ── */}
       <section
+        data-track-location="precios_hero"
         style={{
           background:
             "radial-gradient(1200px 600px at 80% -10%, #5a2470 0%, transparent 55%), linear-gradient(135deg, #291231 0%, #180a1e 100%)",
@@ -190,7 +191,7 @@ export default function PreciosPage() {
       <div style={{ height: 4, background: `linear-gradient(90deg, ${ORANGE} 0%, #e07010 100%)` }} />
 
       {/* ── TIERS ── */}
-      <section style={{ padding: "64px 24px 24px" }}>
+      <section data-track-location="precios_tiers" style={{ padding: "64px 24px 24px" }}>
         <div style={{ maxWidth: 1100, margin: "0 auto" }}>
           <h2 style={{ fontFamily: fm, fontSize: "clamp(22px, 3vw, 32px)", fontWeight: 800, color: PURPLE, textAlign: "center", marginBottom: 8 }}>
             Precios según lo que necesitas
@@ -241,7 +242,7 @@ export default function PreciosPage() {
       </section>
 
       {/* ── FACTORES + INCLUYE SIEMPRE ── */}
-      <section style={{ padding: "40px 24px 8px" }}>
+      <section data-track-location="precios_factores" style={{ padding: "40px 24px 8px" }}>
         <div style={{ maxWidth: 860, margin: "0 auto", display: "grid", gap: 44, gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))" }}>
           <div>
             <h2 style={{ fontFamily: fm, fontSize: "clamp(20px, 2.6vw, 26px)", fontWeight: 700, color: PURPLE, marginBottom: 14, lineHeight: 1.2 }}>
@@ -273,7 +274,7 @@ export default function PreciosPage() {
       </section>
 
       {/* ── ARTÍCULOS DE PRECIO (long-tail) ── */}
-      <section style={{ padding: "36px 24px 8px" }}>
+      <section data-track-location="precios_articulos" style={{ padding: "36px 24px 8px" }}>
         <div style={{ maxWidth: 860, margin: "0 auto" }}>
           <p style={{ fontFamily: fp, fontSize: 12, fontWeight: 600, textTransform: "uppercase", letterSpacing: "3px", color: "#d2760f", marginBottom: 14 }}>
             Guías de precios en el blog
@@ -296,7 +297,7 @@ export default function PreciosPage() {
       </section>
 
       {/* ── FAQ ── */}
-      <section style={{ padding: "36px 24px 72px" }}>
+      <section data-track-location="precios_faq" style={{ padding: "36px 24px 72px" }}>
         <div style={{ maxWidth: 860, margin: "0 auto" }}>
           <p style={{ fontFamily: fp, fontSize: 12, fontWeight: 600, textTransform: "uppercase", letterSpacing: "3px", color: "#d2760f", marginBottom: 10 }}>
             Preguntas frecuentes sobre precios

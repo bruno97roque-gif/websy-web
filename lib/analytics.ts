@@ -18,11 +18,24 @@
 
 export const GA4_MEASUREMENT_ID = "G-KTWZ5KEZR7";
 
-/** ID del contenedor de Google Tag Manager (GTM-XXXXXXX). Vacío = aún sin GTM. */
-export const GTM_CONTAINER_ID = process.env.NEXT_PUBLIC_GTM_ID ?? "";
+/** ID del contenedor de Google Tag Manager de Websy. */
+export const GTM_CONTAINER_ID = process.env.NEXT_PUBLIC_GTM_ID ?? "GTM-M2HQHMZ8";
 
-/** true cuando el sitio ya sirve el contenedor de GTM. */
+/** true cuando el sitio sirve el contenedor de GTM. */
 export const USES_GTM = GTM_CONTAINER_ID.startsWith("GTM-");
+
+/**
+ * Quién envía los eventos a GA4.
+ *
+ * `false` → los envía gtag.js directamente (situación actual, ya verificada).
+ * `true`  → los envía el contenedor de GTM y gtag.js deja de cargarse.
+ *
+ * Se mantiene en `false` hasta que el contenedor tenga publicadas sus etiquetas
+ * de GA4. Ponerlo en `true` antes dejaría el sitio SIN medición: GTM cargaría
+ * pero no habría nada dentro que reenviara los eventos. El dataLayer se llena
+ * igual en ambos casos, así que GTM ya puede depurarse desde hoy.
+ */
+export const GA4_VIA_GTM = process.env.NEXT_PUBLIC_GA4_VIA_GTM === "1";
 
 declare global {
   interface Window {
@@ -57,8 +70,25 @@ export function getPageType(pathname?: string): string {
   if (p.startsWith("/tiendas-virtuales")) return "servicio_ecommerce";
   if (p.startsWith("/sistemas/")) return "servicio_software";
   if (p === "/terminos" || p === "/politicas-de-privacidad") return "legal";
-  return "servicio";
+
+  // Solo se consideran "servicio" las rutas que existen de verdad. Antes
+  // cualquier URL inventada devolvía "servicio" y los 404 se confundían con
+  // páginas reales en los informes.
+  if (RUTAS_DE_SERVICIO.has(p)) return "servicio";
+  return "desconocida";
 }
+
+/** Landings de servicio que existen (app/…/page.tsx). */
+const RUTAS_DE_SERVICIO = new Set([
+  "/servicios",
+  "/desarrollo-web",
+  "/desarrollo-de-software-a-medida",
+  "/diseno-de-paginas-web",
+  "/seo",
+  "/google-ads",
+  "/branding",
+  "/mantenimiento-web",
+]);
 
 function pageContext(): EventParams {
   if (typeof window === "undefined") return {};
@@ -97,7 +127,7 @@ export function trackEvent(name: string, params: EventParams = {}): void {
     /* dataLayer bloqueado por alguna extensión: no rompemos la página */
   }
 
-  if (!USES_GTM) {
+  if (!GA4_VIA_GTM) {
     try {
       window.gtag?.("event", name, payload);
     } catch {
