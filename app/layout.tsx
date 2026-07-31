@@ -14,8 +14,11 @@ import ContactSection from "@/components/sections/home/ContactSection";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import TrackingProvider from "@/components/analytics/TrackingProvider";
-import GoogleTagManager from "@/components/analytics/GoogleTagManager";
-import { GA4_MEASUREMENT_ID, USES_GTM } from "@/lib/analytics";
+import {
+  GoogleTagManagerHead,
+  GoogleTagManagerNoScript,
+} from "@/components/analytics/GoogleTagManager";
+import { GA4_MEASUREMENT_ID, GA4_VIA_GTM } from "@/lib/analytics";
 import { AnimatedMedia } from "@/components/ui/animated-media";
 import { SITE_URL } from "@/lib/seo";
 import JsonLd from "@/components/seo/JsonLd";
@@ -123,6 +126,9 @@ export default function RootLayout({
   return (
     <html lang="es-PE" className="scroll-smooth">
       <head>
+        {/* Google Tag Manager — lo más arriba posible, antes que nada más,
+            para no perder interacciones de los primeros segundos. */}
+        <GoogleTagManagerHead />
         {/* JSON-LD global: Organization + WebSite */}
         <JsonLd data={[organizationSchema(), websiteSchema()]} />
         {/* Preconnect a fuentes para mejorar LCP */}
@@ -132,6 +138,8 @@ export default function RootLayout({
       <body
         className={`${montserrat.variable} ${poppins.variable} cursor-none overflow-x-hidden bg-white text-[#1a1020] antialiased`}
       >
+        {/* Google Tag Manager — respaldo sin JavaScript, justo al abrir <body> */}
+        <GoogleTagManagerNoScript />
         <LoadingScreen />
         <SmoothScroll />
         <CustomCursor />
@@ -160,14 +168,11 @@ export default function RootLayout({
         {/* Vercel Speed Insights — mide Core Web Vitals reales */}
         <SpeedInsights />
 
-        {/* Medición de Google. Dos modos excluyentes para no duplicar hits:
-            · Con NEXT_PUBLIC_GTM_ID → manda Google Tag Manager (el tag de GA4
-              vive dentro del contenedor).
-            · Sin esa variable → gtag.js directo, como hasta ahora.
-            La CSP de next.config.ts ya permite googletagmanager.com. */}
-        <GoogleTagManager />
-
-        {!USES_GTM && (
+        {/* GA4. Mientras GA4_VIA_GTM sea false lo envía gtag.js; cuando el
+            contenedor de GTM tenga sus etiquetas publicadas se pone a true y
+            este bloque desaparece, quedando GTM como emisor único. Nunca hay
+            duplicados porque son excluyentes. */}
+        {!GA4_VIA_GTM && (
           <>
             <Script
               src={`https://www.googletagmanager.com/gtag/js?id=${GA4_MEASUREMENT_ID}`}
