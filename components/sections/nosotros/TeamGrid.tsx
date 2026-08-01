@@ -113,16 +113,22 @@ function CometSVG() {
 }
 
 const TEAM = [
-  { name: "Bruno",       surname: "Roque",      role: "Puesto",               tag: "Co-Fundador",  Planet: SaturnSVG, img: "/images/prueba-empleado-1.webp" },
-  { name: "Debora",      surname: "Santa María", role: "Puesto",              tag: "Co-Fundadora", Planet: MoonSVG,   img: "/images/prueba-empleado-1.webp" },
-  { name: "Luis",        surname: "Diestra",    role: "Developer Full Stack",  tag: "Equipo",       Planet: RocketSVG, img: "/images/luis-developer.webp"    },
-  { name: "Ada",         surname: "",           role: "Brand Designer",        tag: "Equipo",       Planet: NebulaSVG, img: "/images/ada-diseñadora.webp"    },
-  { name: "Gimena",      surname: "",           role: "Sales Manager",         tag: "Equipo",       Planet: CometSVG,  img: "/images/gimena-comercial.webp"  },
-  { name: "Juan Carlos", surname: "Huapaya",    role: "Brand Designer",        tag: "Equipo",       Planet: NebulaSVG, img: "/images/Juancarlos.webp"        },
-  { name: "Aaron",       surname: "Jauregui",   role: "Developer Full Stack",  tag: "Equipo",       Planet: RocketSVG, img: "/images/Aaron.webp"             },
-  { name: "Julio",       surname: "",           role: "Asistente Administrativo", tag: "Equipo",    Planet: MoonSVG,   img: "/images/prueba-empleado-1.webp" },
-  { name: "Rubid",       surname: "Camacho",    role: "Ingeniera de Sistemas", tag: "Equipo",       Planet: NebulaSVG, img: "/images/prueba-empleado-1.webp" },
-  { name: "Por confirmar", surname: "",         role: "Marketing",             tag: "Equipo",       Planet: CometSVG,  img: "/images/prueba-empleado-1.webp" },
+  // Gerentes
+  { name: "Bruno",         surname: "Roque",      role: "Co-Fundador",              tag: "Gerencia",   Planet: SaturnSVG, img: "/images/prueba-empleado-1.webp" },
+  { name: "Debora",        surname: "Santa María", role: "Co-Fundadora",            tag: "Gerencia",   Planet: MoonSVG,   img: "/images/prueba-empleado-1.webp" },
+  // Ventas
+  { name: "Gimena",        surname: "",           role: "Sales Manager",             tag: "Ventas",     Planet: CometSVG,  img: "/images/gimena-comercial.webp"  },
+  // Ingenieros
+  { name: "Luis",          surname: "Diestra",    role: "Developer Full Stack",      tag: "Tecnología", Planet: RocketSVG, img: "/images/luis-developer.webp"    },
+  { name: "Aaron",         surname: "Jauregui",   role: "Developer Full Stack",      tag: "Tecnología", Planet: RocketSVG, img: "/images/Aaron.webp"             },
+  { name: "Rubid",         surname: "Camacho",    role: "Ingeniera de Sistemas",     tag: "Tecnología", Planet: NebulaSVG, img: "/images/prueba-empleado-1.webp" },
+  // Diseñadores
+  { name: "Ada",           surname: "",           role: "Brand Designer",            tag: "Diseño",     Planet: NebulaSVG, img: "/images/ada-diseñadora.webp"    },
+  { name: "Juan Carlos",   surname: "Huapaya",    role: "Brand Designer",            tag: "Diseño",     Planet: NebulaSVG, img: "/images/Juancarlos.webp"        },
+  // Marketing
+  { name: "Por confirmar", surname: "",           role: "Marketing",                 tag: "Marketing",  Planet: CometSVG,  img: "/images/prueba-empleado-1.webp" },
+  // Administrativo
+  { name: "Julio",         surname: "",           role: "Asistente Administrativo",  tag: "Equipo",     Planet: MoonSVG,   img: "/images/prueba-empleado-1.webp" },
 ];
 
 type TeamMember = typeof TEAM[0];
@@ -145,7 +151,7 @@ function Card({
       className="group flex flex-col items-center text-center"
     >
       <div
-        className="relative mb-4 w-full overflow-hidden rounded-[24px] aspect-[3/4]"
+        className="relative mb-4 w-full overflow-hidden rounded-[24px] aspect-[3/4] [transform:translateZ(0)] will-change-transform"
         style={{ backgroundColor: "#ffffff" }}
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}
