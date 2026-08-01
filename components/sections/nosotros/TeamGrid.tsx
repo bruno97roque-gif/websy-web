@@ -120,6 +120,9 @@ const TEAM = [
   { name: "Gimena",      surname: "",           role: "Sales Manager",         tag: "Equipo",       Planet: CometSVG,  img: "/images/gimena-comercial.webp"  },
   { name: "Juan Carlos", surname: "Huapaya",    role: "Brand Designer",        tag: "Equipo",       Planet: NebulaSVG, img: "/images/Juancarlos.webp"        },
   { name: "Aaron",       surname: "Jauregui",   role: "Developer Full Stack",  tag: "Equipo",       Planet: RocketSVG, img: "/images/Aaron.webp"             },
+  { name: "Julio",       surname: "",           role: "Asistente Administrativo", tag: "Equipo",    Planet: MoonSVG,   img: "/images/prueba-empleado-1.webp" },
+  { name: "Rubid",       surname: "Camacho",    role: "Ingeniera de Sistemas", tag: "Equipo",       Planet: NebulaSVG, img: "/images/prueba-empleado-1.webp" },
+  { name: "Por confirmar", surname: "",         role: "Marketing",             tag: "Equipo",       Planet: CometSVG,  img: "/images/prueba-empleado-1.webp" },
 ];
 
 type TeamMember = typeof TEAM[0];
@@ -223,23 +226,11 @@ export default function TeamGrid() {
           ))}
         </div>
 
-        {/* Desktop: fila 1 (5 cols) + fila 2 centrada (2) */}
-        <div className="hidden lg:block">
-          <div className="grid grid-cols-5 gap-6">
-            {TEAM.slice(0, 5).map((member, i) => (
-              <Card key={`${member.name}-${i}`} member={member} index={i} cardsRef={cardsRef} />
-            ))}
-          </div>
-          <div className="mt-6 flex justify-center gap-6">
-            {TEAM.slice(5).map((member, idx) => {
-              const i = idx + 5;
-              return (
-                <div key={`${member.name}-${i}`} style={{ width: "calc(20% - 12px)" }}>
-                  <Card member={member} index={i} cardsRef={cardsRef} />
-                </div>
-              );
-            })}
-          </div>
+        {/* Desktop: grid 5 cols, 2 filas de 5 */}
+        <div className="hidden lg:grid lg:grid-cols-5 lg:gap-6">
+          {TEAM.map((member, i) => (
+            <Card key={`${member.name}-${i}`} member={member} index={i} cardsRef={cardsRef} />
+          ))}
         </div>
 
       </div>
