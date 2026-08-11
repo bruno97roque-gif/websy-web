@@ -121,14 +121,14 @@ const TEAM = [
   // Ingenieros
   { name: "Luis",          surname: "Diestra",    role: "Developer Full Stack",      tag: "Tecnología", Planet: RocketSVG, img: "/images/luis-developer.webp"    },
   { name: "Aaron",         surname: "Jauregui",   role: "Developer Full Stack",      tag: "Tecnología", Planet: RocketSVG, img: "/images/Aaron.webp"             },
-  { name: "Rubid",         surname: "Camacho",    role: "Ingeniera de Sistemas",     tag: "Tecnología", Planet: NebulaSVG, img: "/images/prueba-empleado-1.webp" },
+  { name: "Rubid",         surname: "Camacho",    role: "Ingeniera de Sistemas",     tag: "Tecnología", Planet: NebulaSVG, img: "/images/Rubid.png"             },
   // Diseñadores
   { name: "Ada",           surname: "",           role: "Brand Designer",            tag: "Diseño",     Planet: NebulaSVG, img: "/images/ada-diseñadora.webp"    },
   { name: "Juan Carlos",   surname: "Huapaya",    role: "Brand Designer",            tag: "Diseño",     Planet: NebulaSVG, img: "/images/Juancarlos.webp"        },
   // Marketing
   { name: "Por confirmar", surname: "",           role: "Marketing",                 tag: "Marketing",  Planet: CometSVG,  img: "/images/prueba-empleado-1.webp" },
   // Administrativo
-  { name: "Julio",         surname: "",           role: "Asistente Administrativo",  tag: "Equipo",     Planet: MoonSVG,   img: "/images/prueba-empleado-1.webp" },
+  { name: "Julio",         surname: "",           role: "Asistente Administrativo",  tag: "Equipo",     Planet: MoonSVG,   img: "/images/julio-asistente.png"   },
 ];
 
 type TeamMember = typeof TEAM[0];
