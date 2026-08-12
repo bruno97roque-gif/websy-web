@@ -6,7 +6,7 @@ export const metadata: Metadata = pageMeta({
   path: "/sistemas/ventas-y-facturacion",
   title: "Sistema de Ventas y Facturación Electrónica en Perú",
   description:
-    "Desarrollo de sistemas de ventas y facturación para empresas en Perú, con integración a facturación electrónica. Registra ventas, emite comprobantes y controla tu caja.",
+    "Sistemas de ventas y facturación a medida para empresas en Perú, con facturación electrónica. Registra ventas, emite comprobantes y controla tu caja.",
 });
 
 export default function SistemaVentasFacturacionPage() {

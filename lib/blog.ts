@@ -25,10 +25,10 @@ export type BlogPost = {
 export const BLOG_POSTS: BlogPost[] = [
   {
     slug: "como-hacer-que-tu-pagina-web-aparezca-en-google-peru",
-    title: "Dar de Alta tu Web en Google Search Console e Indexarla",
+    title: "Dar de alta tu web en Search Console e indexarla",
     h1: "Cómo dar de alta tu web en Google Search Console e indexarla",
     description:
-      "Cómo dar de alta tu web en Google Search Console paso a paso: verificar el dominio, enviar el sitemap, pedir la indexación de una URL y qué hacer si Google la descubre pero no la indexa.",
+      "Cómo dar de alta tu web en Google Search Console: verificar el dominio, enviar el sitemap y pedir la indexación de una URL, paso a paso.",
     excerpt:
       "Tu web está en línea pero no aparece en Google. Aquí los pasos reales para darla de alta, indexarla y empezar a posicionar en Perú.",
     datePublished: "2026-07-23",
@@ -102,10 +102,10 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "como-posicionar-tu-tienda-online-en-google-peru",
-    title: "SEO para Tiendas Online: Fichas de Producto y Categorías",
+    title: "SEO para tiendas online: fichas y categorías",
     h1: "SEO para tiendas online: cómo optimizar fichas de producto y categorías",
     description:
-      "Cómo optimizar las fichas de producto y las páginas de categoría de tu tienda online en Perú: títulos, descripciones únicas, texto en categorías y los errores que dejan tu catálogo invisible en Google.",
+      "Cómo optimizar fichas de producto y páginas de categoría de tu tienda online en Perú: títulos, descripciones únicas y los errores que la dejan invisible.",
     excerpt:
       "Tu tienda online no vende si nadie la encuentra. Aquí cómo posicionarla en Google en Perú: SEO de productos, categorías y contenido.",
     datePublished: "2026-07-23",
@@ -231,7 +231,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "como-crear-una-tienda-virtual-en-peru",
-    title: "Cómo crear una tienda virtual en Perú: guía paso a paso",
+    title: "Cómo crear una tienda virtual en Perú (paso a paso)",
     h1: "Cómo crear una tienda virtual en Perú (paso a paso)",
     description:
       "Guía para crear una tienda virtual en Perú: qué necesitas, qué plataforma elegir, cómo cobrar con Yape, Plin y tarjeta, y cómo lanzarla para vender.",
@@ -345,7 +345,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "pasarelas-de-pago-para-ecommerce-en-peru",
-    title: "Pasarelas de Pago en Perú 2026: Yape, Plin, Niubiz o Izipay",
+    title: "Pasarelas de pago en Perú: Yape, Plin y Niubiz",
     h1: "Las mejores pasarelas de pago para ecommerce en Perú",
     description:
       "Guía 2026 de pasarelas de pago para tu tienda virtual en Perú: cómo aceptar Yape, Plin y tarjetas con Niubiz o Izipay, y cuál conviene según tu tipo de negocio.",
@@ -396,7 +396,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "pagina-web-o-tienda-virtual",
-    title: "Página Web o Tienda Virtual en 2026: ¿cuál necesitas?",
+    title: "Página web o tienda virtual: ¿cuál necesitas?",
     h1: "Página web o tienda virtual: ¿cuál necesitas?",
     description:
       "¿Página web o tienda virtual? Diferencias claras para decidir qué necesita tu negocio en Perú según tus objetivos de venta y presencia online.",
@@ -492,7 +492,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "como-posicionar-una-tienda-virtual-en-google",
-    title: "Cómo posicionar una tienda virtual en Google (SEO para ecommerce)",
+    title: "Cómo posicionar una tienda virtual en Google",
     h1: "Cómo posicionar una tienda virtual en Google",
     description:
       "SEO para ecommerce: cómo posicionar tu tienda virtual en Google con fichas optimizadas, categorías, contenido y velocidad para atraer compradores.",
@@ -542,7 +542,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "pagina-web-sistema-web-y-software-a-medida",
-    title: "Página web, sistema web y software a medida: diferencias",
+    title: "Página web, sistema web y software: diferencias",
     h1: "Página web, sistema web y software a medida: ¿qué necesitas?",
     description:
       "Diferencias entre página web, sistema web y software a medida para empresas en Perú: para qué sirve cada uno y cuándo conviene desarrollarlo.",
@@ -591,10 +591,10 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "que-necesita-una-tienda-virtual-para-vender",
-    title: "Qué necesita una tienda virtual para vender de verdad",
+    title: "Qué necesita una tienda virtual para vender",
     h1: "¿Qué necesita una tienda virtual para vender?",
     description:
-      "Más allá del catálogo: qué necesita una tienda virtual en Perú para vender de verdad. Pagos, confianza, velocidad, SEO y los detalles que convierten visitas en ventas.",
+      "Más allá del catálogo: qué necesita una tienda virtual en Perú para vender de verdad. Pagos, confianza, velocidad y SEO que convierten visitas en ventas.",
     excerpt:
       "No basta con subir productos. Estos son los elementos que separan una tienda que vende de una que solo existe.",
     datePublished: "2026-06-19",
@@ -688,10 +688,10 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "cuanto-cuesta-una-tienda-en-shopify",
-    title: "Cuánto Cobra Shopify al Mes en Perú: Planes y Comisiones",
+    title: "Cuánto cobra Shopify al mes en Perú (2026)",
     h1: "¿Cuánto cobra Shopify al mes? Planes y comisiones en Perú",
     description:
-      "Cuánto cobra Shopify al mes en Perú: precio de cada plan, comisión por venta según la pasarela y qué gastos recurrentes se suman. Lo que paga tu tienda todos los meses, aparte del desarrollo.",
+      "Cuánto cobra Shopify al mes en Perú: precio de cada plan, comisión por venta según la pasarela y qué gastos recurrentes se suman al desarrollo.",
     excerpt:
       "El plan mensual es solo una parte. Esto es lo que realmente compone el costo de una tienda Shopify.",
     datePublished: "2026-06-19",
@@ -875,7 +875,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "tienda-virtual-para-vender-ropa",
-    title: "Tienda virtual para vender ropa en Perú: guía para empezar",
+    title: "Tienda virtual para vender ropa en Perú",
     h1: "Tienda virtual para vender ropa: cómo empezar",
     description:
       "Cómo crear una tienda virtual para vender ropa en Perú: tallas y colores, fotos, pagos con Yape y Plin, y todo lo que necesita tu tienda de moda para vender.",
@@ -1124,7 +1124,7 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: "como-elegir-una-agencia-de-desarrollo-web-en-peru",
     title: "Cómo elegir una agencia de desarrollo web en Perú",
     h1: "Cómo elegir una agencia de desarrollo web en Perú",
-    description: "Cómo elegir una agencia de desarrollo web en Perú: qué revisar, qué preguntar y las señales de alerta para que tu inversión no termine en un sitio que no puedes administrar.",
+    description: "Cómo elegir una agencia de desarrollo web en Perú: qué revisar, qué preguntar y las señales de alerta antes de firmar tu proyecto.",
     excerpt: "Guía honesta para elegir una agencia de desarrollo web en Perú sin terminar amarrado ni perder tu inversión.",
     datePublished: "2026-06-22",
     dateModified: "2026-08-11",
@@ -1228,7 +1228,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "cuanto-cuesta-una-aplicacion-movil-en-peru",
-    title: "Cuánto cuesta una aplicación móvil en Perú: guía de precios 2026",
+    title: "Cuánto cuesta una aplicación móvil en Perú",
     h1: "¿Cuánto cuesta una aplicación móvil en Perú?",
     description: "Descubre cuánto cuesta una aplicación móvil en Perú: qué define el precio, app nativa vs híbrida, mantenimiento, tiendas y por qué empezar con un MVP.",
     excerpt: "El precio de una app depende de plataformas, funciones, backend e integraciones; un MVP bien planeado reduce el riesgo y el costo inicial.",
@@ -1343,7 +1343,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "software-a-medida-vs-software-enlatado",
-    title: "Software a medida vs software enlatado: cuál conviene a tu negocio",
+    title: "Software a medida vs software enlatado",
     h1: "Software a medida vs software enlatado: ¿cuál elegir?",
     description: "Software a medida vs software enlatado: diferencias, ventajas, costos a corto y largo plazo, y cómo saber cuándo tu negocio ya necesita una solución propia.",
     excerpt: "El software enlatado es rápido y económico al inicio; el software a medida se ajusta a tus procesos y crece contigo cuando tu negocio se vuelve único.",
@@ -1459,7 +1459,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "como-tener-presencia-online-para-tu-negocio-en-peru",
-    title: "Cómo tener presencia online para tu negocio en Perú: guía práctica",
+    title: "Cómo tener presencia online para tu negocio",
     h1: "Cómo tener presencia online para tu negocio en Perú",
     description: "Aprende cómo tener presencia online para tu negocio en Perú: web propia, ficha de Google, redes y tienda online, paso a paso y de menos a más.",
     excerpt: "Una buena presencia online combina web propia, ficha de Google y redes; no dependas solo de redes sociales que no controlas.",
@@ -1575,7 +1575,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "facturacion-electronica-sunat-para-tu-tienda-online",
-    title: "Facturación electrónica SUNAT para tu tienda online en Perú",
+    title: "Facturación electrónica SUNAT en tu tienda online",
     h1: "Facturación electrónica SUNAT para tu tienda online",
     description: "Guía de facturación electrónica SUNAT para tu tienda online en Perú: boleta vs factura, cómo integrarla al confirmar el pago y por qué tu ecommerce la necesita.",
     excerpt: "Qué es la facturación electrónica SUNAT, boleta vs factura y cómo integrarla a tu tienda online para emitir comprobantes automáticos.",
@@ -1794,9 +1794,9 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "google-mi-negocio-para-empresas-en-peru",
-    title: "Google Mi Negocio 2026: Cómo Registrar tu Empresa Gratis",
+    title: "Google Mi Negocio: registra tu empresa gratis",
     h1: "Google Mi Negocio para empresas en Perú",
-    description: "Cómo registrar tu empresa gratis en Google Mi Negocio (Business Profile) en Perú: crear y verificar tu ficha paso a paso, reseñas, fotos y SEO local para aparecer en el mapa.",
+    description: "Cómo registrar tu empresa gratis en Google Mi Negocio en Perú: crear y verificar tu ficha paso a paso, reseñas, fotos y SEO local para salir en el mapa.",
     excerpt: "Cómo crear, verificar y optimizar tu ficha de Google Mi Negocio para aparecer en el mapa y captar clientes locales en Perú.",
     datePublished: "2026-06-25",
     dateModified: "2026-06-25",
@@ -1913,7 +1913,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "como-aparecer-en-google-con-tu-pagina-web",
-    title: "Cómo aparecer en Google con tu página web (guía 2026)",
+    title: "Cómo aparecer en Google con tu página web",
     h1: "Cómo hacer que tu página web aparezca en Google",
     description:
       "¿Tu página web no aparece en Google? Guía práctica 2026 para indexar, elegir palabras clave, optimizar el SEO on-page y ganar posiciones locales en Perú.",
@@ -2010,7 +2010,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "como-vender-por-whatsapp-desde-tu-tienda-virtual",
-    title: "Cómo vender por WhatsApp desde tu tienda virtual (Perú)",
+    title: "Cómo vender por WhatsApp desde tu tienda virtual",
     h1: "Cómo vender por WhatsApp desde tu tienda virtual",
     description:
       "Convierte visitas en ventas por WhatsApp: botón directo, catálogo, pedidos y WhatsApp Business integrados a tu tienda virtual. Guía práctica para negocios en Perú.",
@@ -2189,7 +2189,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "pagina-web-para-restaurantes-en-peru",
-    title: "Página web para restaurantes en Perú: carta digital y pedidos",
+    title: "Página web para restaurantes en Perú",
     h1: "Página web para restaurantes: carta digital, pedidos y reservas",
     description:
       "Tu restaurante necesita más que redes y apps de delivery. Carta digital con QR, pedidos por WhatsApp, reservas y SEO local para aparecer en Google Maps en Perú.",
@@ -2274,7 +2274,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "google-ads-para-pymes-en-peru-cuanto-invertir",
-    title: "Google Ads para pymes en Perú: cuánto invertir para empezar",
+    title: "Google Ads para pymes en Perú: cuánto invertir",
     h1: "Google Ads para pymes en Perú: cuánto invertir para empezar a vender",
     description:
       "Cuánto invertir en Google Ads si tienes una pyme en Perú, qué tipo de campaña elegir, por qué la landing importa tanto como el anuncio y cómo medir tus leads.",
@@ -2362,7 +2362,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "pagina-web-para-clinicas-y-consultorios-medicos",
-    title: "Qué debe tener la página web de una clínica o consultorio en Perú",
+    title: "Qué debe tener la web de una clínica en Perú",
     h1: "Qué debe tener la página web de una clínica o consultorio",
     description:
       "Página web para clínicas y consultorios en Perú: reserva de citas, información de especialidades, confianza al paciente y SEO local para aparecer en Google.",
@@ -2507,7 +2507,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "pagina-web-para-inmobiliarias-y-constructoras",
-    title: "Página web para inmobiliarias y constructoras en Perú",
+    title: "Página web para inmobiliarias y constructoras",
     h1: "Página web para inmobiliarias y constructoras",
     description:
       "Página web para inmobiliarias y constructoras en Perú: catálogo de proyectos y propiedades, captación de leads, WhatsApp y SEO local para aparecer en Google.",
@@ -2660,7 +2660,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "costos-de-mantenimiento-de-una-pagina-web-en-peru",
-    title: "Costos de mantenimiento de una página web en Perú (2026)",
+    title: "Costos de mantenimiento de una web en Perú",
     h1: "¿Cuánto cuesta mantener una página web en Perú?",
     description:
       "Costos de mantenimiento de una página web en Perú: hosting, dominio, seguridad, respaldos y actualizaciones. Qué incluye y por qué no mantenerla sale más caro.",
@@ -2738,7 +2738,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "pagina-web-para-gimnasios-en-peru",
-    title: "Página web para gimnasios en Perú: membresías y captación",
+    title: "Página web para gimnasios en Perú",
     h1: "Página web para gimnasios: membresías, horarios y captación",
     description:
       "Página web para gimnasios y centros fitness en Perú: horarios de clases, planes de membresía, inscripción por WhatsApp y SEO local para llenar tu gimnasio.",
@@ -2811,7 +2811,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "pagina-web-para-hoteles-y-hospedajes-en-peru",
-    title: "Página web para hoteles y hospedajes en Perú: reservas directas",
+    title: "Página web para hoteles y hospedajes en Perú",
     h1: "Página web para hoteles: reservas directas sin comisión",
     description:
       "Página web para hoteles y hospedajes en Perú: reservas directas sin comisión de Booking, motor de reservas, fotos que venden y SEO local para llenar habitaciones.",
@@ -2884,7 +2884,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "pagina-web-para-colegios-e-instituciones-educativas-en-peru",
-    title: "Qué debe tener la página web de un colegio para captar matrículas",
+    title: "Qué debe tener la web de un colegio en Perú",
     h1: "Qué debe tener la página web de un colegio",
     description:
       "Página web para colegios, academias e instituciones educativas en Perú: proceso de admisión, información para padres, comunicados y SEO local para captar matrículas.",
@@ -2957,7 +2957,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "como-integrar-yape-y-plin-en-tu-tienda-virtual",
-    title: "Cómo integrar Yape y Plin en tu tienda virtual (paso a paso)",
+    title: "Cómo integrar Yape y Plin en tu tienda virtual",
     h1: "Cómo integrar Yape y Plin en tu tienda virtual",
     description:
       "Cómo aceptar Yape y Plin en tu tienda virtual en Perú: opciones de integración, confirmación de pago, ventajas y qué cuidar para no perder ventas.",
@@ -3029,10 +3029,10 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "izipay-o-niubiz-cual-elegir-para-cobrar-con-tarjeta",
-    title: "Izipay o Niubiz en 2026: ¿cuál conviene para tu tienda?",
+    title: "Izipay o Niubiz: cuál conviene para tu tienda",
     h1: "Izipay o Niubiz: ¿cuál conviene para tu tienda?",
     description:
-      "Izipay o Niubiz en Perú (2026): comparamos integración, medios aceptados, requisitos y facilidad de uso para que elijas la pasarela de tarjetas correcta para tu tienda.",
+      "Izipay o Niubiz en Perú: comparamos integración, medios aceptados, requisitos y facilidad de uso para elegir la pasarela correcta para tu tienda.",
     excerpt:
       "Las dos pasarelas de tarjetas más usadas de Perú, comparadas para que elijas la correcta para tu tienda.",
     datePublished: "2026-07-08",
@@ -3103,7 +3103,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "cuanto-cuesta-el-seo-en-peru",
-    title: "Cuánto cuesta el SEO en Perú (2026): precios y qué incluye",
+    title: "Cuánto cuesta el SEO en Perú: precios reales",
     h1: "¿Cuánto cuesta el SEO en Perú?",
     description:
       "Cuánto cuesta el SEO en Perú en 2026: modelos de cobro, qué incluye un servicio serio de posicionamiento y por qué es una inversión de mediano plazo, no un gasto.",
@@ -3181,10 +3181,10 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "que-es-el-branding-y-por-que-tu-pyme-lo-necesita",
-    title: "Qué es el branding y por qué tu pyme lo necesita en Perú",
+    title: "Qué es el branding y por qué tu pyme lo necesita",
     h1: "Qué es el branding y por qué tu pyme lo necesita",
     description:
-      "Qué es el branding y por qué tu pyme en Perú lo necesita: más que un logo, es la percepción de tu marca. Cómo una identidad sólida te ayuda a vender más y cobrar mejor.",
+      "Qué es el branding y por qué tu pyme en Perú lo necesita: más que un logo, es cómo te perciben. Cómo una identidad sólida te ayuda a cobrar mejor.",
     excerpt:
       "El branding no es solo un logo bonito: es cómo te percibe tu cliente y por qué te elige a ti y no al de al lado.",
     datePublished: "2026-07-08",
@@ -3254,10 +3254,10 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "google-ads-vs-seo-cual-conviene-para-tu-negocio",
-    title: "Google Ads vs SEO: cuál conviene para tu negocio en Perú",
+    title: "Google Ads vs SEO: cuál conviene a tu negocio",
     h1: "Google Ads vs SEO: ¿cuál conviene para tu negocio?",
     description:
-      "Google Ads vs SEO en Perú: diferencias en velocidad, costo y durabilidad. Cuándo usar cada uno y por qué combinarlos es la estrategia más rentable para captar clientes.",
+      "Google Ads vs SEO en Perú: diferencias en velocidad, costo y durabilidad. Cuándo usar cada uno y por qué combinarlos capta más clientes.",
     excerpt:
       "Uno trae clientes hoy pagando; el otro los trae gratis pero tarda. La verdad es que se complementan.",
     datePublished: "2026-07-08",
@@ -3320,7 +3320,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "tienda-virtual-vs-marketplace-conviene-vender-en-mercadolibre",
-    title: "Tienda virtual vs marketplace: ¿conviene vender en Mercado Libre?",
+    title: "Tienda virtual vs Mercado Libre: ¿cuál conviene?",
     h1: "Tienda virtual vs marketplace: ¿cuál te conviene?",
     description:
       "Tienda virtual propia vs marketplace como Mercado Libre en Perú: comisiones, control, marca y clientes. Cuándo conviene cada uno y por qué muchos usan ambos.",
@@ -3392,7 +3392,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "como-migrar-tu-pagina-web-sin-perder-posicionamiento-en-google",
-    title: "Cómo migrar tu página web sin perder posicionamiento en Google",
+    title: "Migrar tu web sin perder posicionamiento",
     h1: "Cómo migrar tu web sin perder posicionamiento en Google",
     description:
       "Cómo migrar o rediseñar tu página web en Perú sin perder posicionamiento en Google: redirecciones 301, estructura de URLs, contenido y los errores que hunden tu SEO.",
@@ -3470,7 +3470,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "seo-local-en-peru-como-salir-primero-en-tu-ciudad",
-    title: "SEO local en Perú: cómo salir primero en tu ciudad o distrito",
+    title: "SEO local en Perú: salir primero en tu ciudad",
     h1: "SEO local en Perú: cómo salir primero en tu zona",
     description:
       "SEO local en Perú: cómo aparecer primero en Google y en el mapa cuando buscan tu servicio en tu distrito. Ficha de Google, reseñas, NAP y páginas por zona.",
@@ -3551,7 +3551,7 @@ export const BLOG_POSTS: BlogPost[] = [
     title: "SEO on-page: la checklist para tu página web (2026)",
     h1: "SEO on-page: la checklist para tu página web",
     description:
-      "Checklist de SEO on-page para tu página web en Perú: títulos, meta descripciones, encabezados, URLs, imágenes, enlazado interno y contenido para posicionar en Google.",
+      "Checklist de SEO on-page para tu web en Perú: títulos, meta descripciones, encabezados, URLs, imágenes y enlazado interno para posicionar en Google.",
     excerpt:
       "El SEO on-page es lo que sí controlas de tu web. Esta checklist cubre lo esencial para posicionar mejor.",
     datePublished: "2026-07-08",
@@ -3626,10 +3626,10 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "como-estructurar-una-campana-de-google-ads-para-servicios",
-    title: "Cómo estructurar una campaña de Google Ads para servicios en Perú",
+    title: "Estructurar una campaña de Google Ads paso a paso",
     h1: "Cómo estructurar una campaña de Google Ads para servicios",
     description:
-      "Guía paso a paso para estructurar una campaña de Google Ads para negocios de servicios en Perú: objetivo, estructura de cuenta, palabras clave, anuncios y conversiones.",
+      "Guía paso a paso para estructurar una campaña de Google Ads de servicios en Perú: objetivo, estructura de cuenta, palabras clave y conversiones.",
     excerpt:
       "Una campaña de Ads bien estructurada rinde el doble con el mismo presupuesto. Así se arma paso a paso.",
     datePublished: "2026-07-08",
@@ -3703,10 +3703,10 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "palabras-clave-negativas-en-google-ads",
-    title: "Palabras clave negativas en Google Ads: deja de botar la plata",
+    title: "Palabras clave negativas en Google Ads",
     h1: "Palabras clave negativas: deja de botar la plata en Ads",
     description:
-      "Qué son las palabras clave negativas en Google Ads y cómo usarlas para dejar de pagar clics inútiles en Perú. Listas, niveles y ejemplos para no desperdiciar tu presupuesto.",
+      "Qué son las palabras clave negativas en Google Ads y cómo usarlas para dejar de pagar clics inútiles en Perú. Listas, niveles y ejemplos prácticos.",
     excerpt:
       "Cada clic que no te sirve es plata perdida. Las palabras clave negativas son el freno que casi nadie usa bien.",
     datePublished: "2026-07-08",
@@ -3779,7 +3779,7 @@ export const BLOG_POSTS: BlogPost[] = [
     title: "Cuánto cuesta un logo profesional en Perú (2026)",
     h1: "¿Cuánto cuesta un logo profesional en Perú?",
     description:
-      "Cuánto cuesta un logo profesional en Perú en 2026: qué define el precio, qué diferencia un logo barato de uno hecho con estrategia y qué debe incluir una entrega seria.",
+      "Cuánto cuesta un logo profesional en Perú: qué define el precio, qué diferencia un logo barato de uno con estrategia y qué debe incluir la entrega.",
     excerpt:
       "Un logo no es solo un dibujo bonito. Esto define su precio y qué debe incluir un trabajo serio.",
     datePublished: "2026-07-08",
@@ -3849,10 +3849,10 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "manual-de-marca-que-es-y-por-que-tu-negocio-lo-necesita",
-    title: "Manual de Marca: qué es, qué incluye y para qué sirve",
+    title: "Manual de marca: qué es y qué incluye",
     h1: "Manual de marca: qué es y por qué lo necesitas",
     description:
-      "Qué es un manual de marca y por qué tu negocio en Perú lo necesita: reglas de logo, colores, tipografía y tono que hacen que tu marca se vea coherente en todos lados.",
+      "Qué es un manual de marca y por qué tu negocio en Perú lo necesita: reglas de logo, colores, tipografía y tono para verte coherente en todos lados.",
     excerpt:
       "Un manual de marca evita que tu negocio se vea distinto en cada pieza. Esto es lo que incluye y para qué sirve.",
     datePublished: "2026-07-08",
@@ -3995,7 +3995,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "pagina-web-para-dentistas-y-clinicas-dentales-en-peru",
-    title: "Página web para dentistas y clínicas dentales en Perú",
+    title: "Página web para dentistas y clínicas dentales",
     h1: "Página web para dentistas y clínicas dentales",
     description:
       "Página web para dentistas y clínicas dentales en Perú: reserva de citas, tratamientos, confianza con casos reales y SEO local para captar pacientes de tu zona.",
@@ -4069,7 +4069,7 @@ export const BLOG_POSTS: BlogPost[] = [
   /* ── Cluster Shopify ─────────────────────────────────────────── */
   {
     slug: "como-crear-una-tienda-shopify-en-peru-paso-a-paso",
-    title: "Cómo crear una tienda Shopify en Perú: guía paso a paso (2026)",
+    title: "Cómo crear una tienda Shopify en Perú paso a paso",
     h1: "Cómo crear una tienda Shopify en Perú (paso a paso)",
     description:
       "Guía paso a paso para crear una tienda Shopify en Perú: cuenta, tema, productos, pagos con Yape, Plin, Niubiz e Izipay, envíos y lanzamiento para empezar a vender.",
@@ -4223,10 +4223,10 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "mejores-apps-de-shopify-para-vender-mas-en-peru",
-    title: "Las mejores apps de Shopify para vender más en Perú (2026)",
+    title: "Las mejores apps de Shopify para vender en Perú",
     h1: "Mejores apps de Shopify para vender más en Perú",
     description:
-      "Las apps de Shopify que de verdad ayudan a vender en Perú: pagos locales, WhatsApp, reseñas, SEO, envíos y recuperación de carrito, sin llenar tu tienda de apps que la vuelven lenta.",
+      "Las apps de Shopify que de verdad ayudan a vender en Perú: pagos locales, WhatsApp, reseñas, SEO y envíos, sin volver lenta tu tienda.",
     excerpt:
       "No necesitas 30 apps. Estas son las categorías de apps de Shopify que sí mueven tus ventas en Perú.",
     datePublished: "2026-07-08",
@@ -4295,10 +4295,10 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "tienda-shopify-para-ropa-y-moda-en-peru",
-    title: "Tienda Shopify para ropa y moda en Perú: cómo vender online",
+    title: "Tienda Shopify para ropa y moda en Perú",
     h1: "Tienda Shopify para ropa y moda en Perú",
     description:
-      "Cómo armar una tienda Shopify para ropa y moda en Perú: tallas y colores, fotos que venden, pagos con Yape y Plin y política de cambios para vender más y devolver menos.",
+      "Cómo armar una tienda Shopify de ropa y moda en Perú: tallas y colores, fotos que venden, pagos con Yape y Plin y política de cambios clara.",
     excerpt:
       "Vender ropa online tiene sus reglas: tallas, fotos y cambios. Así se arma una tienda Shopify de moda que vende.",
     datePublished: "2026-07-08",
@@ -4371,7 +4371,7 @@ export const BLOG_POSTS: BlogPost[] = [
     title: "Tienda Shopify para belleza y cosmética en Perú",
     h1: "Tienda Shopify para productos de belleza y cosmética",
     description:
-      "Cómo vender belleza y cosmética con una tienda Shopify en Perú: catálogo por línea, kits, fichas que generan confianza, pagos locales y contenido para atraer compradores.",
+      "Cómo vender belleza y cosmética con Shopify en Perú: catálogo por línea, kits, fichas que generan confianza, pagos locales y contenido que atrae.",
     excerpt:
       "Skincare, maquillaje y cuidado personal venden online con la tienda correcta. Así se arma en Shopify.",
     datePublished: "2026-07-08",
@@ -4511,10 +4511,10 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "errores-comunes-al-crear-una-tienda-shopify",
-    title: "Errores comunes al crear una tienda Shopify (y cómo evitarlos)",
+    title: "Errores comunes al crear una tienda Shopify",
     h1: "Errores comunes al crear una tienda Shopify",
     description:
-      "Los errores más comunes al crear una tienda Shopify en Perú: exceso de apps, tienda lenta, sin SEO, pagos incompletos, mal móvil y fichas pobres. Cómo evitarlos y vender más.",
+      "Los errores más comunes al crear una tienda Shopify en Perú: exceso de apps, tienda lenta, sin SEO, pagos incompletos y fichas pobres. Cómo evitarlos.",
     excerpt:
       "Estos errores hunden las ventas de muchas tiendas Shopify. Detéctalos a tiempo y evita perder clientes.",
     datePublished: "2026-07-08",
@@ -4593,7 +4593,7 @@ export const BLOG_POSTS: BlogPost[] = [
     title: "Cómo posicionar una tienda Shopify en Google (Perú)",
     h1: "Cómo posicionar una tienda Shopify en Google",
     description:
-      "SEO para Shopify en Perú: cómo posicionar tu tienda en Google con fichas optimizadas, categorías con texto, velocidad, contenido y datos estructurados para atraer compradores.",
+      "SEO para Shopify en Perú: cómo posicionar tu tienda en Google con fichas optimizadas, categorías con texto, velocidad y datos estructurados.",
     excerpt:
       "Tener una tienda Shopify no basta si nadie la encuentra. Así se posiciona en Google, paso a paso.",
     datePublished: "2026-07-08",
@@ -4664,7 +4664,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "necesito-una-app-movil-o-una-pagina-web-para-mi-negocio",
-    title: "¿Necesito una App Móvil o una Página Web para mi Negocio? (2026)",
+    title: "¿App móvil o página web para tu negocio?",
     h1: "¿App móvil o página web? Qué necesita tu negocio",
     description:
       "¿App o página web para tu negocio en Perú? Diferencias reales, cuándo conviene cada una y cómo decidir sin gastar de más. Guía práctica 2026 para empresas y pymes.",
@@ -4736,7 +4736,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "aplicacion-nativa-hibrida-o-web-cual-elegir",
-    title: "Aplicación Nativa, Híbrida o Web (PWA): Cuál Elegir en 2026",
+    title: "App nativa, híbrida o web (PWA): cuál elegir",
     h1: "App nativa, híbrida o web: cuál conviene para tu proyecto",
     description:
       "Nativa, híbrida o PWA: diferencias, ventajas y qué determina el costo y el plazo de una app en Perú. Aprende a elegir el tipo de aplicación correcto para tu negocio.",
@@ -4803,7 +4803,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "pagina-web-a-medida-vs-plantilla-wordpress-wix",
-    title: "Página Web a Medida vs Plantilla (WordPress, Wix): Qué Conviene",
+    title: "Web a medida vs plantilla (WordPress, Wix)",
     h1: "Página web a medida vs plantilla: qué conviene para tu empresa",
     description:
       "Plantilla (WordPress, Wix) o web a medida: diferencias en diseño, velocidad, SEO y crecimiento. Descubre qué conviene a tu empresa en Perú antes de invertir.",
@@ -4870,10 +4870,10 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "como-automatizar-los-procesos-de-tu-empresa",
-    title: "Cómo Automatizar los Procesos de tu Empresa con un Sistema a Medida",
+    title: "Cómo automatizar los procesos de tu empresa",
     h1: "Cómo automatizar los procesos de tu empresa",
     description:
-      "Deja las hojas de cálculo y el trabajo manual: qué procesos automatizar (inventario, ventas, facturación, reportes) y cómo un sistema a medida ahorra horas cada semana.",
+      "Deja las hojas de cálculo: qué procesos automatizar (inventario, ventas, facturación, reportes) y cómo un sistema a medida ahorra horas cada semana.",
     excerpt:
       "Si tu equipo pierde horas en tareas manuales y errores de Excel, es momento de automatizar. Aquí qué procesos delegar a un sistema y por dónde empezar.",
     datePublished: "2026-07-27",

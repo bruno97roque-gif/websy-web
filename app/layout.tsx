@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     template: "%s | Websy",
   },
   description:
-    "Agencia de tecnología y desarrollo de software en Lima, Perú. Creamos páginas web, aplicaciones a medida, tiendas online y branding para que tu negocio se destaque en el mundo digital.",
+    "Agencia de tecnología y desarrollo de software en Lima, Perú. Páginas web, tiendas virtuales, sistemas a medida y branding para que tu negocio venda más.",
   keywords: [
     "agencia de tecnología Lima",
     "desarrollo de software Perú",

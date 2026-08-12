@@ -10,7 +10,7 @@ export const metadata: Metadata = pageMeta({
   path: "/servicios",
   title: "Servicios: web, tiendas online, software, SEO y Ads",
   description:
-    "Servicios de Websy en Perú: diseño de páginas web, tiendas virtuales, software a medida, SEO, Google Ads, branding y mantenimiento web. Cotiza gratis en menos de 24 horas.",
+    "Servicios de Websy en Perú: páginas web, tiendas virtuales, software a medida, SEO, Google Ads, branding y mantenimiento. Cotiza gratis en menos de 24 horas.",
 });
 
 const PURPLE = "#291231";

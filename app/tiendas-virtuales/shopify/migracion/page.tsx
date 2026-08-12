@@ -6,7 +6,7 @@ export const metadata: Metadata = pageMeta({
   path: "/tiendas-virtuales/shopify/migracion",
   title: "Migrar a Shopify en Perú sin perder ventas",
   description:
-    "Migramos tu tienda a Shopify en Perú sin perder posicionamiento: desde WooCommerce, Wix, Tiendanube y más. Conservamos productos, clientes y SEO con redirecciones 301. Cotiza en 24 h.",
+    "Migramos tu tienda a Shopify en Perú sin perder posicionamiento: desde WooCommerce, Wix o Tiendanube, conservando productos, clientes y SEO con 301.",
 });
 
 export default function MigracionShopifyPage() {
