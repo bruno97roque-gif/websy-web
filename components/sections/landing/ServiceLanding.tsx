@@ -31,6 +31,8 @@ export type ServiceLandingProps = {
   faqs: LandingFaq[];
   serviceName: string;
   serviceDescription: string;
+  /** Sustituye el Service del JSON-LD. Para páginas que no son un servicio (p. ej. /contacto). */
+  pageSchema?: Record<string, unknown>;
 };
 
 const PURPLE = "#291231";
@@ -64,12 +66,13 @@ export default function ServiceLanding({
   faqs,
   serviceName,
   serviceDescription,
+  pageSchema,
 }: ServiceLandingProps) {
   return (
     <main style={{ backgroundColor: "#f8f5fc" }}>
       <JsonLd
         data={[
-          serviceSchema({ name: serviceName, description: serviceDescription, slug }),
+          pageSchema ?? serviceSchema({ name: serviceName, description: serviceDescription, slug }),
           faqPageSchema(faqs),
           breadcrumbSchema(breadcrumb),
         ]}

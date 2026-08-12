@@ -4,7 +4,7 @@ import ServiceLanding from "@/components/sections/landing/ServiceLanding";
 
 export const metadata: Metadata = pageMeta({
   path: "/google-ads",
-  title: "Gestión de Google Ads en Perú: campañas que traen clientes",
+  title: "Agencia de Google Ads en Perú: campañas que venden",
   description:
     "Gestión de campañas de Google Ads en Perú: Búsqueda, Display, Shopping y YouTube. Landing pages que convierten, optimización de presupuesto y reportes claros.",
 });

@@ -48,33 +48,65 @@ export const MAIN_LINKS: NavLink[] = [
   { label: "Contacto", href: "/contacto" },
 ];
 
-/** URLs nuevas de esta ola, para el sitemap. */
-export const SERVICE_SITEMAP: { path: string; priority: number }[] = [
-  { path: "/tiendas-virtuales", priority: 0.9 },
-  { path: "/tiendas-virtuales/shopify", priority: 0.9 },
-  { path: "/tiendas-virtuales/shopify/migracion", priority: 0.8 },
-  { path: "/tiendas-virtuales/shopify/costos", priority: 0.8 },
-  { path: "/tiendas-virtuales/woocommerce", priority: 0.7 },
-  { path: "/desarrollo-web", priority: 0.9 },
-  { path: "/diseno-de-paginas-web", priority: 0.9 },
-  { path: "/desarrollo-de-software-a-medida", priority: 0.8 },
+export type SitemapEntry = {
+  path: string;
+  priority: number;
+  lastModified: string;
+  /** Solo cuando la cadencia real no se deduce de la prioridad (p. ej. el índice del blog). */
+  changeFrequency?: "weekly" | "monthly" | "yearly";
+};
+
+/**
+ * IMPORTANTE — `lastModified` se escribe A MANO, con la fecha real (YYYY-MM-DD) en que
+ * cambió el contenido de esa página. NO usar `new Date()` aquí ni en app/sitemap.ts.
+ *
+ * Por qué: hasta el 11-ago-2026 el sitemap generaba la fecha en cada petición, así que
+ * las 31 URLs estáticas declaraban "modificada hace un segundo" cada vez que Google
+ * descargaba el archivo. Comprobado el 11-ago con dos descargas separadas 32 minutos:
+ * la fecha había cambiado en ambas. Cuando el lastmod nunca coincide con un cambio real,
+ * Google deja de fiarse de él y de usarlo para priorizar el rastreo del sitio entero.
+ * El resultado se veía en Search Console: 24 de 97 URLs sin rastrear nunca, y una sola
+ * página rastreada en los primeros 11 días de agosto.
+ *
+ * Regla al editar una página: sube su fecha aquí, y solo esa.
+ */
+export const SERVICE_SITEMAP: SitemapEntry[] = [
+  { path: "/tiendas-virtuales", priority: 0.9, lastModified: "2026-08-11" },
+  { path: "/tiendas-virtuales/shopify", priority: 0.9, lastModified: "2026-07-31" },
+  { path: "/tiendas-virtuales/shopify/migracion", priority: 0.8, lastModified: "2026-07-31" },
+  { path: "/tiendas-virtuales/shopify/costos", priority: 0.8, lastModified: "2026-08-11" },
+  { path: "/tiendas-virtuales/woocommerce", priority: 0.7, lastModified: "2026-07-31" },
+  { path: "/desarrollo-web", priority: 0.9, lastModified: "2026-08-11" },
+  { path: "/diseno-de-paginas-web", priority: 0.9, lastModified: "2026-08-11" },
+  { path: "/desarrollo-de-software-a-medida", priority: 0.8, lastModified: "2026-08-11" },
   // Silo de software por tipo de sistema (hijas de /desarrollo-de-software-a-medida).
-  { path: "/sistemas/inventario", priority: 0.8 },
-  { path: "/sistemas/ventas-y-facturacion", priority: 0.8 },
-  { path: "/sistemas/gestion-erp-crm", priority: 0.8 },
-  { path: "/precios", priority: 0.9 },
-  { path: "/cotizacion", priority: 0.8 },
+  { path: "/sistemas/inventario", priority: 0.8, lastModified: "2026-08-11" },
+  { path: "/sistemas/ventas-y-facturacion", priority: 0.8, lastModified: "2026-08-11" },
+  { path: "/sistemas/gestion-erp-crm", priority: 0.8, lastModified: "2026-08-11" },
+  { path: "/precios", priority: 0.9, lastModified: "2026-08-11" },
+  { path: "/cotizacion", priority: 0.8, lastModified: "2026-07-31" },
   // Nuevos pilares de servicio.
-  { path: "/seo", priority: 0.9 },
-  { path: "/google-ads", priority: 0.9 },
-  { path: "/branding", priority: 0.9 },
-  { path: "/mantenimiento-web", priority: 0.9 },
+  { path: "/seo", priority: 0.9, lastModified: "2026-08-11" },
+  { path: "/google-ads", priority: 0.9, lastModified: "2026-08-11" },
+  { path: "/branding", priority: 0.9, lastModified: "2026-07-31" },
+  { path: "/mantenimiento-web", priority: 0.9, lastModified: "2026-07-31" },
   // Silo de diseño web por rubro (hijas de /diseno-de-paginas-web).
-  { path: "/diseno-de-paginas-web/restaurantes", priority: 0.8 },
-  { path: "/diseno-de-paginas-web/clinicas", priority: 0.8 },
-  { path: "/diseno-de-paginas-web/abogados", priority: 0.8 },
-  { path: "/diseno-de-paginas-web/inmobiliarias", priority: 0.8 },
-  { path: "/diseno-de-paginas-web/gimnasios", priority: 0.8 },
-  { path: "/diseno-de-paginas-web/colegios", priority: 0.8 },
-  { path: "/diseno-de-paginas-web/hoteles", priority: 0.8 },
+  { path: "/diseno-de-paginas-web/restaurantes", priority: 0.8, lastModified: "2026-07-31" },
+  { path: "/diseno-de-paginas-web/clinicas", priority: 0.8, lastModified: "2026-07-31" },
+  { path: "/diseno-de-paginas-web/abogados", priority: 0.8, lastModified: "2026-08-11" },
+  { path: "/diseno-de-paginas-web/inmobiliarias", priority: 0.8, lastModified: "2026-07-31" },
+  { path: "/diseno-de-paginas-web/gimnasios", priority: 0.8, lastModified: "2026-07-31" },
+  { path: "/diseno-de-paginas-web/colegios", priority: 0.8, lastModified: "2026-07-31" },
+  { path: "/diseno-de-paginas-web/hoteles", priority: 0.8, lastModified: "2026-07-31" },
+];
+
+/** Páginas fijas (institucionales). Misma regla de `lastModified` que arriba. */
+export const FIXED_SITEMAP: SitemapEntry[] = [
+  { path: "", priority: 1, lastModified: "2026-08-11" },
+  { path: "/servicios", priority: 0.7, lastModified: "2026-08-11" },
+  { path: "/nosotros", priority: 0.6, lastModified: "2026-07-31" },
+  { path: "/contacto", priority: 0.6, lastModified: "2026-08-11" },
+  { path: "/blog", priority: 0.7, lastModified: "2026-08-11", changeFrequency: "weekly" },
+  { path: "/terminos", priority: 0.3, lastModified: "2026-03-06" },
+  { path: "/politicas-de-privacidad", priority: 0.3, lastModified: "2026-03-06" },
 ];

@@ -4,7 +4,7 @@ import ServiceLanding from "@/components/sections/landing/ServiceLanding";
 
 export const metadata: Metadata = pageMeta({
   path: "/tiendas-virtuales/shopify/migracion",
-  title: "Migrar a Shopify en Perú · Desde WooCommerce, Wix o Tiendanube",
+  title: "Migrar a Shopify en Perú sin perder ventas",
   description:
     "Migramos tu tienda a Shopify en Perú sin perder posicionamiento: desde WooCommerce, Wix, Tiendanube y más. Conservamos productos, clientes y SEO con redirecciones 301. Cotiza en 24 h.",
 });

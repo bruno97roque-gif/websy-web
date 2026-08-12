@@ -25,18 +25,18 @@ export type BlogPost = {
 export const BLOG_POSTS: BlogPost[] = [
   {
     slug: "como-hacer-que-tu-pagina-web-aparezca-en-google-peru",
-    title: "Cómo Hacer que tu Página Web Aparezca en Google (2026)",
-    h1: "Cómo hacer que tu página web aparezca en Google",
+    title: "Dar de Alta tu Web en Google Search Console e Indexarla",
+    h1: "Cómo dar de alta tu web en Google Search Console e indexarla",
     description:
-      "Guía 2026 para Perú: cómo dar de alta tu página web en Google, indexarla en Search Console, enviar tu sitemap y por qué aún no apareces. Pasos claros para salir en Google.",
+      "Cómo dar de alta tu web en Google Search Console paso a paso: verificar el dominio, enviar el sitemap, pedir la indexación de una URL y qué hacer si Google la descubre pero no la indexa.",
     excerpt:
       "Tu web está en línea pero no aparece en Google. Aquí los pasos reales para darla de alta, indexarla y empezar a posicionar en Perú.",
     datePublished: "2026-07-23",
-    dateModified: "2026-07-23",
+    dateModified: "2026-08-11",
     category: "SEO",
     readingMin: 7,
     intro:
-      "Publicaste tu página web pero al buscar tu negocio en Google no aparece. Es normal: estar en línea no es lo mismo que estar indexado. Aquí verás, paso a paso, cómo dar de alta tu web en Google, indexarla, enviar tu sitemap y por qué a veces tarda en salir.",
+      "Publicaste tu página web pero al buscar tu negocio en Google no aparece. Es normal: estar en línea no es lo mismo que estar indexado. Esta guía cubre solo el trámite técnico —dar de alta el dominio en Search Console, enviar el sitemap y pedir la indexación—; si lo que buscas es la visión completa, empieza por [cómo aparecer en Google con tu página web](/blog/como-aparecer-en-google-con-tu-pagina-web).",
     sections: [
       {
         h2: "Estar en línea no es lo mismo que aparecer en Google",
@@ -102,14 +102,14 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "como-posicionar-tu-tienda-online-en-google-peru",
-    title: "Cómo Posicionar tu Tienda Online en Google (Perú 2026)",
-    h1: "Cómo posicionar tu tienda online en Google",
+    title: "SEO para Tiendas Online: Fichas de Producto y Categorías",
+    h1: "SEO para tiendas online: cómo optimizar fichas de producto y categorías",
     description:
-      "Guía 2026 para Perú: cómo posicionar tu tienda virtual en Google. SEO para e-commerce, fichas de producto, categorías, velocidad y contenido para vender más sin depender solo de ads.",
+      "Cómo optimizar las fichas de producto y las páginas de categoría de tu tienda online en Perú: títulos, descripciones únicas, texto en categorías y los errores que dejan tu catálogo invisible en Google.",
     excerpt:
       "Tu tienda online no vende si nadie la encuentra. Aquí cómo posicionarla en Google en Perú: SEO de productos, categorías y contenido.",
     datePublished: "2026-07-23",
-    dateModified: "2026-07-23",
+    dateModified: "2026-08-11",
     category: "Tiendas virtuales",
     readingMin: 7,
     intro:
@@ -180,6 +180,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Qué define realmente el precio de una tienda virtual en Perú y cómo saber cuánto invertir según tu negocio.",
     datePublished: "2026-06-19",
+    dateModified: "2026-08-11",
     category: "Ecommerce",
     readingMin: 6,
     intro:
@@ -200,7 +201,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Qué debería incluir una tienda bien hecha",
         body:
-          "Una tienda virtual no termina cuando 'se ve bonita'. Para que venda, debería entregarse con diseño responsive, catálogo cargado, pagos configurados, optimización SEO básica de fichas y categorías, y capacitación para que tú la administres. Si una cotización no incluye esto, probablemente termines pagando 'extras' después.",
+          "Una tienda virtual no termina cuando 'se ve bonita'. Para que venda, debería entregarse con diseño responsive, catálogo cargado, [pagos configurados](/blog/pasarelas-de-pago-para-ecommerce-en-peru), optimización SEO básica de fichas y categorías, y capacitación para que tú la administres. Al presupuesto hay que sumarle el [hosting y el dominio](/blog/cuanto-cuesta-un-hosting-y-un-dominio-pe-en-peru), que son anuales. Si una cotización no incluye esto, probablemente termines pagando 'extras' después.",
       },
       {
         h2: "¿Por qué nadie da un precio cerrado por teléfono?",
@@ -351,6 +352,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Cómo aceptar Yape, Plin y tarjetas en tu tienda virtual y cuál pasarela conviene según tu negocio.",
     datePublished: "2026-06-19",
+    dateModified: "2026-08-11",
     category: "Ecommerce",
     readingMin: 5,
     intro:
@@ -364,12 +366,12 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Tarjetas con Niubiz o Izipay",
         body:
-          "Para vender a quien paga con crédito o débito necesitas una pasarela de tarjetas. Niubiz e Izipay son las más usadas en Perú; conectarlas da confianza y permite cobros automáticos y seguros.",
+          "Para vender a quien paga con crédito o débito necesitas una pasarela de tarjetas. Niubiz e Izipay son las más usadas en Perú; conectarlas da confianza y permite cobros automáticos y seguros. Si dudas entre las dos, lo comparamos a fondo en [Izipay o Niubiz: cuál conviene para tu tienda](/blog/izipay-o-niubiz-cual-elegir-para-cobrar-con-tarjeta); y para las billeteras, en [cómo integrar Yape y Plin en tu tienda virtual](/blog/como-integrar-yape-y-plin-en-tu-tienda-virtual).",
       },
       {
         h2: "Transferencia y pago contra entrega",
         body:
-          "Sumar transferencia bancaria o pago contra entrega amplía tu alcance a clientes que aún prefieren esas opciones. Lo ideal es ofrecer varias y dejar que el cliente elija.",
+          "Sumar transferencia bancaria o pago contra entrega amplía tu alcance a clientes que aún prefieren esas opciones. Lo ideal es ofrecer varias y dejar que el cliente elija. Nosotros dejamos las pasarelas integradas y probadas cuando desarrollamos tu [tienda virtual](/tiendas-virtuales), sea en [Shopify](/tiendas-virtuales/shopify) o en [WooCommerce](/tiendas-virtuales/woocommerce).",
       },
       {
         h2: "Qué cuidar al integrar pagos",
@@ -446,6 +448,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Qué factores definen el precio de una página web profesional y qué debe incluir una cotización seria.",
     datePublished: "2026-06-19",
+    dateModified: "2026-08-11",
     category: "Web",
     readingMin: 5,
     intro:
@@ -463,7 +466,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Qué debe incluir una web bien hecha",
         body:
-          "Diseño responsive, panel administrable para editar tú mismo, formulario y WhatsApp para recibir contactos, optimización SEO on-page, y hosting, dominio y certificado de seguridad. Una web que no incluye SEO ni es administrable suele salir 'barata' y costar caro después.",
+          "Diseño responsive, panel administrable para editar tú mismo, formulario y WhatsApp para recibir contactos, optimización SEO on-page, y hosting, dominio y certificado de seguridad. Esos dos últimos se pagan aparte y todos los años: tenemos los precios reales en soles en [cuánto cuesta un hosting y un dominio .pe en Perú](/blog/cuanto-cuesta-un-hosting-y-un-dominio-pe-en-peru). Una web que no incluye SEO ni es administrable suele salir 'barata' y costar caro después.",
       },
       {
         h2: "Una web es inversión, no gasto",
@@ -595,6 +598,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "No basta con subir productos. Estos son los elementos que separan una tienda que vende de una que solo existe.",
     datePublished: "2026-06-19",
+    dateModified: "2026-08-11",
     category: "Ecommerce",
     readingMin: 5,
     intro:
@@ -617,7 +621,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Velocidad y móvil",
         body:
-          "La mayoría compra desde el celular. Una tienda lenta o difícil de usar en el móvil pierde ventas aunque tenga buenos productos.",
+          "La mayoría compra desde el celular. Una tienda lenta o difícil de usar en el móvil pierde ventas aunque tenga buenos productos. Y en Perú, buena parte de esas compras se pagan con billetera: conviene tener [Yape y Plin integrados desde el primer día](/blog/como-integrar-yape-y-plin-en-tu-tienda-virtual).",
       },
       {
         h2: "Que la encuentren en Google",
@@ -684,13 +688,14 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "cuanto-cuesta-una-tienda-en-shopify",
-    title: "Cuánto Cuesta una Tienda Shopify en Perú 2026 (en soles)",
-    h1: "¿Cuánto cuesta una tienda en Shopify?",
+    title: "Cuánto Cobra Shopify al Mes en Perú: Planes y Comisiones",
+    h1: "¿Cuánto cobra Shopify al mes? Planes y comisiones en Perú",
     description:
-      "Cuánto cuesta una tienda en Shopify en Perú: el plan mensual, el desarrollo, las comisiones y qué incluye, para que sepas cuánto invertir en tu ecommerce.",
+      "Cuánto cobra Shopify al mes en Perú: precio de cada plan, comisión por venta según la pasarela y qué gastos recurrentes se suman. Lo que paga tu tienda todos los meses, aparte del desarrollo.",
     excerpt:
       "El plan mensual es solo una parte. Esto es lo que realmente compone el costo de una tienda Shopify.",
     datePublished: "2026-06-19",
+    dateModified: "2026-08-11",
     category: "Ecommerce",
     readingMin: 5,
     intro:
@@ -704,7 +709,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "El desarrollo y diseño de la tienda",
         body:
-          "Es la inversión en montar tu tienda: diseño a tu marca, carga de productos, configuración de pagos y envíos. Se cotiza según el alcance y se paga una vez (más mejoras futuras si las necesitas).",
+          "Es la inversión en montar tu tienda: diseño a tu marca, carga de productos, configuración de pagos y envíos. Se cotiza según el alcance y se paga una vez (más mejoras futuras si las necesitas). Tenemos el desglose completo, con rangos por nivel de inversión, en [cuánto cuesta una tienda Shopify en Perú](/tiendas-virtuales/shopify/costos); y si prefieres delegarlo, así trabajamos como [agencia Shopify en Perú](/tiendas-virtuales/shopify).",
       },
       {
         h2: "Comisiones de pago",
@@ -1024,7 +1029,7 @@ export const BLOG_POSTS: BlogPost[] = [
     description: "¿Cuál es la diferencia entre página web y landing page? Conoce el objetivo, la estructura y cuándo usar cada una en tus campañas de Google Ads o Meta Ads en Perú.",
     excerpt: "Qué distingue a una página web de una landing page y cómo elegir la indicada para tu negocio o campaña.",
     datePublished: "2026-06-21",
-    dateModified: "2026-06-21",
+    dateModified: "2026-08-11",
     category: "Páginas Web",
     readingMin: 6,
     intro: "La diferencia entre una página web y una landing page está en su objetivo. Una página web informa sobre tu negocio y suele tener varias secciones para posicionarte en Google. Una landing page es una sola página enfocada en una acción concreta, ideal para campañas de Google Ads o Meta Ads. No compiten: se complementan.",
@@ -1072,7 +1077,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         h2: "Cómo se complementan en una campaña peruana",
-        body: "Lo ideal es combinarlas. Por ejemplo, una clínica o tienda en Lima mantiene su página web para posicionarse en Google y generar confianza, y cuando lanza una promoción crea una landing page específica para su campaña en Meta Ads o Google Ads. Así el tráfico pagado llega a una página optimizada para convertir, mientras la web sigue captando consultas orgánicas y derivando contactos por WhatsApp."
+        body: "Lo ideal es combinarlas. Por ejemplo, una clínica o tienda en Lima mantiene su página web para posicionarse en Google y generar confianza, y cuando lanza una promoción crea una landing page específica para su campaña en Meta Ads o Google Ads. Así el tráfico pagado llega a una página optimizada para convertir, mientras la web sigue captando consultas orgánicas y derivando contactos por WhatsApp. Nosotros construimos las dos: mira cómo trabajamos como [agencia de desarrollo web en Lima](/desarrollo-web) y qué incluye [la gestión de tus campañas de Google Ads](/google-ads)."
       }
     ],
     faqs: [
@@ -1122,7 +1127,7 @@ export const BLOG_POSTS: BlogPost[] = [
     description: "Cómo elegir una agencia de desarrollo web en Perú: qué revisar, qué preguntar y las señales de alerta para que tu inversión no termine en un sitio que no puedes administrar.",
     excerpt: "Guía honesta para elegir una agencia de desarrollo web en Perú sin terminar amarrado ni perder tu inversión.",
     datePublished: "2026-06-22",
-    dateModified: "2026-06-22",
+    dateModified: "2026-08-11",
     category: "Agencia Web",
     readingMin: 7,
     intro: "Para elegir una agencia de desarrollo web en Perú, revisa su portafolio, confirma que la web sea autoadministrable, que el dominio y el código queden a tu nombre, y que el soporte post-venta esté por escrito. Desconfía de precios cerrados sin diagnóstico y de propuestas sin contrato. El acompañamiento es tan importante como el sitio.",
@@ -1200,6 +1205,11 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     related: [
       {
+        label: "Agencia de desarrollo web en Lima",
+        href: "/desarrollo-web",
+        desc: "Cómo trabajamos: alcance cerrado, cronograma y accesos a tu nombre."
+      },
+      {
         label: "Desarrollo de software a medida",
         href: "/desarrollo-de-software-a-medida",
         desc: "Sistemas y software a la medida de tu negocio en Perú."
@@ -1223,7 +1233,7 @@ export const BLOG_POSTS: BlogPost[] = [
     description: "Descubre cuánto cuesta una aplicación móvil en Perú: qué define el precio, app nativa vs híbrida, mantenimiento, tiendas y por qué empezar con un MVP.",
     excerpt: "El precio de una app depende de plataformas, funciones, backend e integraciones; un MVP bien planeado reduce el riesgo y el costo inicial.",
     datePublished: "2026-06-20",
-    dateModified: "2026-06-20",
+    dateModified: "2026-08-11",
     category: "Software",
     readingMin: 7,
     intro: "El costo de una aplicación móvil en Perú no es un número fijo: depende de las plataformas (iOS, Android), de si es nativa o híbrida, de las funciones, del backend y de las integraciones. Una app sencilla cuesta mucho menos que una con pagos, mapas y panel administrativo. Por eso conviene definir bien el alcance antes de cotizar.",
@@ -1284,7 +1294,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         h2: "Por qué conviene empezar con un MVP",
-        body: "Un MVP (Producto Mínimo Viable) es la primera versión funcional de tu app, con solo lo esencial para validar la idea con usuarios reales. Es la forma más inteligente y económica de empezar, porque reduces el riesgo de invertir mucho en funciones que nadie usará. Lanzas, mides, aprendes y luego inviertes en lo que de verdad genera valor. En Websy podemos ayudarte a definir el alcance de tu MVP y desarrollarlo a medida."
+        body: "Un MVP (Producto Mínimo Viable) es la primera versión funcional de tu app, con solo lo esencial para validar la idea con usuarios reales. Es la forma más inteligente y económica de empezar, porque reduces el riesgo de invertir mucho en funciones que nadie usará. Lanzas, mides, aprendes y luego inviertes en lo que de verdad genera valor. En Websy podemos ayudarte a definir el alcance de tu MVP y desarrollarlo como parte de nuestro [desarrollo de software a medida](/desarrollo-de-software-a-medida)."
       }
     ],
     faqs: [
@@ -1454,7 +1464,7 @@ export const BLOG_POSTS: BlogPost[] = [
     description: "Aprende cómo tener presencia online para tu negocio en Perú: web propia, ficha de Google, redes y tienda online, paso a paso y de menos a más.",
     excerpt: "Una buena presencia online combina web propia, ficha de Google y redes; no dependas solo de redes sociales que no controlas.",
     datePublished: "2026-06-23",
-    dateModified: "2026-06-23",
+    dateModified: "2026-08-11",
     category: "Marketing Digital",
     readingMin: 6,
     intro: "Tener presencia online en Perú significa que tus clientes te encuentren y confíen en ti cuando te buscan en Google, redes o WhatsApp. No basta con tener un Instagram: lo ideal es combinar una web propia, una ficha de Google y redes activas, y sumar una tienda online si vendes. Aquí te explicamos cómo construirla de menos a más.",
@@ -1516,7 +1526,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         h2: "El siguiente paso para tu negocio",
-        body: "Tener presencia online sólida es un proceso, pero empieza por lo más importante: una web propia bien hecha que sea tu centro de operaciones digital. Desde ahí conectas tu ficha de Google, tus redes, tu WhatsApp y, si vendes, tu tienda online. En Websy diseñamos páginas web y tiendas virtuales pensadas para el mercado peruano, y podemos ayudarte a dar el primer paso o a profesionalizar lo que ya tienes."
+        body: "Tener presencia online sólida es un proceso, pero empieza por lo más importante: una web propia bien hecha que sea tu centro de operaciones digital. Desde ahí conectas tu ficha de Google, tus redes, tu WhatsApp y, si vendes, tu tienda online. Como [agencia de desarrollo web en Lima](/desarrollo-web) diseñamos páginas web y [tiendas virtuales](/tiendas-virtuales) pensadas para el mercado peruano, y podemos ayudarte a dar el primer paso o a profesionalizar lo que ya tienes."
       }
     ],
     faqs: [
@@ -2186,6 +2196,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Deja de pagar comisiones altas por cada pedido: una web propia con carta digital y pedidos directos.",
     datePublished: "2026-07-05",
+    dateModified: "2026-08-11",
     category: "Diseño web",
     readingMin: 7,
     intro:
@@ -2221,7 +2232,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "SEO local: aparece cuando buscan dónde comer",
         body:
-          "La mitad de la batalla es salir en Google cuando alguien busca tu tipo de comida cerca. Con una web optimizada y tu ficha de Google al día, apareces en el mapa y en las búsquedas locales. Te lo dejamos listo cuando hacemos tu [página web](/diseno-de-paginas-web), y puedes profundizar en nuestra guía para [aparecer en Google](/blog/como-aparecer-en-google-con-tu-pagina-web).",
+          "La mitad de la batalla es salir en Google cuando alguien busca tu tipo de comida cerca. Con una web optimizada y tu ficha de Google al día, apareces en el mapa y en las búsquedas locales. Te lo dejamos listo cuando hacemos tu [página web para restaurantes](/diseno-de-paginas-web/restaurantes), y puedes profundizar en nuestra guía para [aparecer en Google](/blog/como-aparecer-en-google-con-tu-pagina-web).",
       },
     ],
     faqs: [
@@ -2430,6 +2441,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Un cliente con un problema legal busca y elige rápido. Tu web debe transmitir autoridad y facilitar el contacto.",
     datePublished: "2026-06-28",
+    dateModified: "2026-08-11",
     category: "Diseño web",
     readingMin: 6,
     intro:
@@ -2465,7 +2477,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Cuánto cuesta y cómo empezar",
         body:
-          "Según tengas un abogado independiente o un estudio con varias áreas, el alcance cambia. Te damos una cotización clara y sin costo; mira qué incluye cada servicio en [nuestros precios](/precios).",
+          "Según tengas un abogado independiente o un estudio con varias áreas, el alcance cambia. Te damos una cotización clara y sin costo; mira qué incluye cada servicio en [nuestros precios](/precios). Si quieres ver el detalle de cómo trabajamos este rubro en concreto, revisa nuestro servicio de [páginas web para abogados y estudios jurídicos](/diseno-de-paginas-web/abogados).",
       },
     ],
     faqs: [
@@ -2502,6 +2514,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Vender un inmueble empieza en Google. Tu web debe mostrar proyectos y capturar leads calificados.",
     datePublished: "2026-07-01",
+    dateModified: "2026-08-11",
     category: "Diseño web",
     readingMin: 7,
     intro:
@@ -2537,7 +2550,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Cuánto cuesta y cómo empezar",
         body:
-          "Depende de cuántos proyectos manejes y si necesitas integración con CRM. Te preparamos una cotización a medida y sin costo; revisa qué incluye cada opción en [nuestra página de precios](/precios).",
+          "Depende de cuántos proyectos manejes y si necesitas integración con CRM. Te preparamos una cotización a medida y sin costo; revisa qué incluye cada opción en [nuestra página de precios](/precios) o el detalle de nuestras [páginas web para inmobiliarias y constructoras](/diseno-de-paginas-web/inmobiliarias).",
       },
     ],
     faqs: [
@@ -2574,7 +2587,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "El precio de un software a medida no es un número fijo. Esto es lo que realmente define cuánto invertir.",
     datePublished: "2026-07-07",
-    dateModified: "2026-07-07",
+    dateModified: "2026-08-11",
     category: "Software",
     readingMin: 7,
     intro:
@@ -2615,7 +2628,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Es inversión, no gasto",
         body:
-          "La pregunta correcta no es solo cuánto cuesta, sino cuánto te ahorra o te hace ganar. Un sistema que elimina horas de trabajo manual, reduce errores de stock y te da reportes para decidir se paga solo en pocos meses. Cuando el software ordena tu operación y libera a tu equipo de tareas repetitivas, deja de ser un costo y pasa a ser una ventaja frente a la competencia.",
+          "La pregunta correcta no es solo cuánto cuesta, sino cuánto te ahorra o te hace ganar. Un sistema que elimina horas de trabajo manual, reduce errores de stock y te da reportes para decidir se paga solo en pocos meses. Cuando el software ordena tu operación y libera a tu equipo de tareas repetitivas, deja de ser un costo y pasa a ser una ventaja frente a la competencia. Si ya sabes qué necesitas resolver, mira el detalle y los rangos de cada tipo de sistema: [control de inventario](/sistemas/inventario), [ventas y facturación electrónica](/sistemas/ventas-y-facturacion) o un [sistema de gestión ERP/CRM](/sistemas/gestion-erp-crm).",
       },
     ],
     faqs: [
@@ -2638,6 +2651,8 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     related: [
       { label: "Desarrollo de software a medida", href: "/desarrollo-de-software-a-medida", desc: "Sistemas hechos para tu operación, no plantillas." },
+      { label: "Sistema de inventario", href: "/sistemas/inventario", desc: "Control de stock, kardex y alertas de reposición." },
+      { label: "Sistema de ventas y facturación", href: "/sistemas/ventas-y-facturacion", desc: "Ventas, comprobantes y facturación electrónica SUNAT." },
       { label: "Software a medida vs enlatado", href: "/blog/software-a-medida-vs-software-enlatado", desc: "Cuándo conviene desarrollar a medida." },
       { label: "Cotiza tu sistema", href: "/cotizacion", desc: "Propuesta con alcance y tiempos en menos de 24 horas." },
     ],
@@ -3021,7 +3036,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Las dos pasarelas de tarjetas más usadas de Perú, comparadas para que elijas la correcta para tu tienda.",
     datePublished: "2026-07-08",
-    dateModified: "2026-07-08",
+    dateModified: "2026-08-11",
     category: "Pagos",
     readingMin: 6,
     intro:
@@ -3057,7 +3072,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "No tienes que elegir solo una",
         body:
-          "Muchas tiendas ofrecen tarjeta vía una pasarela y, además, Yape y Plin, transferencia y pago contra entrega. Mientras más medios ofrezcas (sin saturar el checkout), menos ventas pierdes. La decisión Izipay o Niubiz define tu procesador de tarjetas, pero puedes complementarlo con otros métodos para no dejar a ningún cliente fuera.",
+          "Muchas tiendas ofrecen tarjeta vía una pasarela y, además, [Yape y Plin integrados en el checkout](/blog/como-integrar-yape-y-plin-en-tu-tienda-virtual), transferencia y pago contra entrega. Mientras más medios ofrezcas (sin saturar el checkout), menos ventas pierdes. La decisión Izipay o Niubiz define tu procesador de tarjetas, pero puedes complementarlo con otros métodos para no dejar a ningún cliente fuera.",
       },
     ],
     faqs: [
@@ -4503,7 +4518,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Estos errores hunden las ventas de muchas tiendas Shopify. Detéctalos a tiempo y evita perder clientes.",
     datePublished: "2026-07-08",
-    dateModified: "2026-07-08",
+    dateModified: "2026-08-11",
     category: "Ecommerce",
     readingMin: 6,
     intro:
@@ -4545,7 +4560,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Lanzar y no medir ni mejorar",
         body:
-          "El último error es dejar la tienda igual para siempre. Una tienda que vende se ajusta con datos: qué se ve, qué se vende, dónde se cae el checkout. Medir y mejorar es parte de tener una tienda viva.",
+          "El último error es dejar la tienda igual para siempre. Una tienda que vende se ajusta con datos: qué se ve, qué se vende, dónde se cae el checkout. Medir y mejorar es parte de tener una tienda viva. Si prefieres no pelearte con estos errores, nosotros montamos y optimizamos tu tienda como [agencia Shopify en Perú](/tiendas-virtuales/shopify).",
       },
     ],
     faqs: [

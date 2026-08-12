@@ -4,7 +4,7 @@ import ServiceLanding from "@/components/sections/landing/ServiceLanding";
 
 export const metadata: Metadata = pageMeta({
   path: "/tiendas-virtuales/shopify",
-  title: "Agencia Shopify Perú · Crear Tienda Shopify Optimizada para Vender",
+  title: "Agencia Shopify Perú: tiendas hechas para vender",
   description:
     "Agencia Shopify en Perú: creamos tu tienda Shopify optimizada para vender, con velocidad, SEO, CRO y pagos locales (Yape, Plin, Niubiz, Izipay). Desarrollo, migración y soporte. Cotiza en 24 h.",
 });

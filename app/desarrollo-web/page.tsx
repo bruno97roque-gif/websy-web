@@ -4,7 +4,7 @@ import ServiceLanding from "@/components/sections/landing/ServiceLanding";
 
 export const metadata: Metadata = pageMeta({
   path: "/desarrollo-web",
-  title: "Agencia de Desarrollo Web en Lima, Perú: webs que venden",
+  title: "Agencia de Desarrollo Web en Lima, Perú",
   description:
     "Agencia de desarrollo web en Lima, Perú. Creamos páginas web, tiendas virtuales y sistemas web a medida: administrables, responsive y optimizadas para Google, con soporte directo por WhatsApp. Cotiza gratis en 24 h.",
 });

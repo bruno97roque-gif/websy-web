@@ -15,7 +15,7 @@ import { faqPageSchema, breadcrumbSchema, serviceSchema, speakablePageSchema } f
 
 export const metadata: Metadata = pageMeta({
   path: "/precios",
-  title: "Precios: cuánto cuesta una página web, tienda virtual o software en Perú",
+  title: "Precios: cuánto cuesta tu web, tienda o software",
   description:
     "¿Cuánto cuesta una página web, tienda virtual o software a medida en Perú? Qué define el precio, qué incluye cada servicio y cómo pedir tu cotización gratis en menos de 24 horas.",
 });
