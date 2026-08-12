@@ -4,7 +4,7 @@ import ServiceLanding from "@/components/sections/landing/ServiceLanding";
 
 export const metadata: Metadata = pageMeta({
   path: "/sistemas/gestion-erp-crm",
-  title: "Sistema de Gestión Empresarial: ERP y CRM a Medida en Perú",
+  title: "Sistema de gestión ERP y CRM a medida en Perú",
   description:
     "Desarrollo de sistemas de gestión empresarial (ERP) y CRM a medida en Perú. Integra ventas, clientes, procesos e intranet en una sola plataforma para tu empresa.",
 });

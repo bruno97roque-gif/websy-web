@@ -4,7 +4,7 @@ import ServiceLanding from "@/components/sections/landing/ServiceLanding";
 
 export const metadata: Metadata = pageMeta({
   path: "/diseno-de-paginas-web/clinicas",
-  title: "Páginas web para clínicas y consultorios médicos en Perú",
+  title: "Páginas web para clínicas y consultorios médicos",
   description:
     "Diseño de páginas web para clínicas, consultorios y médicos en Perú: citas online, servicios, equipo médico, confianza y SEO local para captar más pacientes.",
 });
