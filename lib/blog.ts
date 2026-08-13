@@ -32,7 +32,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Tu web está en línea pero no aparece en Google. Aquí los pasos reales para darla de alta, indexarla y empezar a posicionar en Perú.",
     datePublished: "2026-07-23",
-    dateModified: "2026-08-11",
+    dateModified: "2026-08-12",
     category: "SEO",
     readingMin: 7,
     intro:
@@ -109,7 +109,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Tu tienda online no vende si nadie la encuentra. Aquí cómo posicionarla en Google en Perú: SEO de productos, categorías y contenido.",
     datePublished: "2026-07-23",
-    dateModified: "2026-08-11",
+    dateModified: "2026-08-12",
     category: "Tiendas virtuales",
     readingMin: 7,
     intro:
@@ -180,7 +180,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Qué define realmente el precio de una tienda virtual en Perú y cómo saber cuánto invertir según tu negocio.",
     datePublished: "2026-06-19",
-    dateModified: "2026-08-11",
+    dateModified: "2026-08-12",
     category: "Ecommerce",
     readingMin: 6,
     intro:
@@ -240,6 +240,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Todo lo que necesitas para crear tu tienda online en Perú: plataforma, pagos, productos y lanzamiento.",
     datePublished: "2026-06-19",
+    dateModified: "2026-08-12",
     category: "Ecommerce",
     readingMin: 7,
     intro:
@@ -300,6 +301,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Comparativa clara entre Shopify y WooCommerce para elegir la plataforma correcta según tu negocio.",
     datePublished: "2026-06-19",
+    dateModified: "2026-08-12",
     category: "Ecommerce",
     readingMin: 6,
     intro:
@@ -358,7 +360,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Cómo aceptar Yape, Plin y tarjetas en tu tienda virtual y cuál pasarela conviene según tu negocio.",
     datePublished: "2026-06-19",
-    dateModified: "2026-08-11",
+    dateModified: "2026-08-12",
     category: "Ecommerce",
     readingMin: 5,
     intro:
@@ -412,6 +414,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Cuándo te basta una página web y cuándo necesitas una tienda virtual para vender online.",
     datePublished: "2026-06-19",
+    dateModified: "2026-08-12",
     category: "Web",
     readingMin: 5,
     intro:
@@ -457,7 +460,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Qué factores definen el precio de una página web profesional y qué debe incluir una cotización seria.",
     datePublished: "2026-06-19",
-    dateModified: "2026-08-11",
+    dateModified: "2026-08-12",
     category: "Web",
     readingMin: 5,
     intro:
@@ -510,6 +513,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Las claves de SEO para que tu tienda virtual aparezca en Google y atraiga clientes que ya quieren comprar.",
     datePublished: "2026-06-19",
+    dateModified: "2026-08-12",
     category: "SEO",
     readingMin: 6,
     intro:
@@ -563,6 +567,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Una guía simple para entender la diferencia entre una web, un sistema web y un software a medida.",
     datePublished: "2026-06-19",
+    dateModified: "2026-08-12",
     category: "Software",
     readingMin: 5,
     intro:
@@ -614,7 +619,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "No basta con subir productos. Estos son los elementos que separan una tienda que vende de una que solo existe.",
     datePublished: "2026-06-19",
-    dateModified: "2026-08-11",
+    dateModified: "2026-08-12",
     category: "Ecommerce",
     readingMin: 5,
     intro:
@@ -668,6 +673,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Por qué una tienda virtual deja de ser opcional: vende sola, llega más lejos y trabaja por ti las 24 horas.",
     datePublished: "2026-06-19",
+    dateModified: "2026-08-12",
     category: "Ecommerce",
     readingMin: 4,
     intro:
@@ -715,7 +721,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "El plan mensual es solo una parte. Esto es lo que realmente compone el costo de una tienda Shopify.",
     datePublished: "2026-06-19",
-    dateModified: "2026-08-11",
+    dateModified: "2026-08-12",
     category: "Ecommerce",
     readingMin: 5,
     intro:
@@ -768,6 +774,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Por qué muchos negocios eligen WooCommerce: control total, sin mensualidad de plataforma y listo para crecer.",
     datePublished: "2026-06-19",
+    dateModified: "2026-08-12",
     category: "Ecommerce",
     readingMin: 4,
     intro:
@@ -815,6 +822,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Si reconoces estas señales, tu negocio probablemente ya necesita un sistema web a medida.",
     datePublished: "2026-06-19",
+    dateModified: "2026-08-12",
     category: "Software",
     readingMin: 5,
     intro:
@@ -864,6 +872,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Vender lo que no tienes ahuyenta clientes. Así se controla bien el stock de una tienda online.",
     datePublished: "2026-06-19",
+    dateModified: "2026-08-12",
     category: "Ecommerce",
     readingMin: 5,
     intro:
@@ -911,6 +920,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Vender ropa online tiene sus reglas: tallas, fotos y devoluciones. Así se arma una tienda de moda que vende.",
     datePublished: "2026-06-19",
+    dateModified: "2026-08-12",
     category: "Ecommerce",
     readingMin: 5,
     intro:
@@ -959,7 +969,7 @@ export const BLOG_POSTS: BlogPost[] = [
     description: "¿Cuánto tiempo toma hacer una página web? Conoce los plazos reales por tipo de web (landing, corporativa, con blog) y qué factores aceleran o retrasan tu proyecto.",
     excerpt: "Plazos reales para crear una página web en Perú según su tipo y complejidad, y cómo evitar que tu proyecto se retrase.",
     datePublished: "2026-06-20",
-    dateModified: "2026-06-20",
+    dateModified: "2026-08-12",
     category: "Páginas Web",
     readingMin: 6,
     intro: "El tiempo para hacer una página web en Perú depende del tipo y la complejidad: una landing simple puede estar lista en 1 a 2 semanas, una web corporativa en 2 a 4 semanas, y un proyecto con blog, multidioma o funciones avanzadas toma más. El factor que más influye es la rapidez con que el cliente entrega contenido y aprobaciones.",
@@ -1061,7 +1071,7 @@ export const BLOG_POSTS: BlogPost[] = [
     description: "¿Cuál es la diferencia entre página web y landing page? Conoce el objetivo, la estructura y cuándo usar cada una en tus campañas de Google Ads o Meta Ads en Perú.",
     excerpt: "Qué distingue a una página web de una landing page y cómo elegir la indicada para tu negocio o campaña.",
     datePublished: "2026-06-21",
-    dateModified: "2026-08-11",
+    dateModified: "2026-08-12",
     category: "Páginas Web",
     readingMin: 6,
     intro: "La diferencia entre una página web y una landing page está en su objetivo. Una página web informa sobre tu negocio y suele tener varias secciones para posicionarte en Google. Una landing page es una sola página enfocada en una acción concreta, ideal para campañas de Google Ads o Meta Ads. No compiten: se complementan.",
@@ -1160,7 +1170,7 @@ export const BLOG_POSTS: BlogPost[] = [
     description: "Cómo elegir una agencia de desarrollo web en Perú: qué revisar, qué preguntar y las señales de alerta antes de firmar tu proyecto.",
     excerpt: "Guía honesta para elegir una agencia de desarrollo web en Perú sin terminar amarrado ni perder tu inversión.",
     datePublished: "2026-06-22",
-    dateModified: "2026-08-11",
+    dateModified: "2026-08-12",
     category: "Agencia Web",
     readingMin: 7,
     intro: "Para elegir una agencia de desarrollo web en Perú, revisa su portafolio, confirma que la web sea autoadministrable, que el dominio y el código queden a tu nombre, y que el soporte post-venta esté por escrito. Desconfía de precios cerrados sin diagnóstico y de propuestas sin contrato. El acompañamiento es tan importante como el sitio.",
@@ -1266,7 +1276,7 @@ export const BLOG_POSTS: BlogPost[] = [
     description: "Descubre cuánto cuesta una aplicación móvil en Perú: qué define el precio, app nativa vs híbrida, mantenimiento, tiendas y por qué empezar con un MVP.",
     excerpt: "El precio de una app depende de plataformas, funciones, backend e integraciones; un MVP bien planeado reduce el riesgo y el costo inicial.",
     datePublished: "2026-06-20",
-    dateModified: "2026-08-11",
+    dateModified: "2026-08-12",
     category: "Software",
     readingMin: 7,
     intro: "El costo de una aplicación móvil en Perú no es un número fijo: depende de las plataformas (iOS, Android), de si es nativa o híbrida, de las funciones, del backend y de las integraciones. Una app sencilla cuesta mucho menos que una con pagos, mapas y panel administrativo. Por eso conviene definir bien el alcance antes de cotizar.",
@@ -1382,7 +1392,7 @@ export const BLOG_POSTS: BlogPost[] = [
     description: "Software a medida vs software enlatado: diferencias, ventajas, costos a corto y largo plazo, y cómo saber cuándo tu negocio ya necesita una solución propia.",
     excerpt: "El software enlatado es rápido y económico al inicio; el software a medida se ajusta a tus procesos y crece contigo cuando tu negocio se vuelve único.",
     datePublished: "2026-06-21",
-    dateModified: "2026-06-21",
+    dateModified: "2026-08-12",
     category: "Software",
     readingMin: 7,
     intro: "El software enlatado es un producto listo para usar que sirve para muchos negocios a la vez, mientras que el software a medida se construye específicamente para tu empresa y tus procesos. El primero es rápido y económico al inicio; el segundo se adapta a ti y escala contigo. La decisión correcta depende de cuán únicos sean tus procesos.",
@@ -1499,7 +1509,7 @@ export const BLOG_POSTS: BlogPost[] = [
     description: "Aprende cómo tener presencia online para tu negocio en Perú: web propia, ficha de Google, redes y tienda online, paso a paso y de menos a más.",
     excerpt: "Una buena presencia online combina web propia, ficha de Google y redes; no dependas solo de redes sociales que no controlas.",
     datePublished: "2026-06-23",
-    dateModified: "2026-08-11",
+    dateModified: "2026-08-12",
     category: "Marketing Digital",
     readingMin: 6,
     intro: "Tener presencia online en Perú significa que tus clientes te encuentren y confíen en ti cuando te buscan en Google, redes o WhatsApp. No basta con tener un Instagram: lo ideal es combinar una web propia, una ficha de Google y redes activas, y sumar una tienda online si vendes. Aquí te explicamos cómo construirla de menos a más.",
@@ -1615,7 +1625,7 @@ export const BLOG_POSTS: BlogPost[] = [
     description: "Guía de facturación electrónica SUNAT para tu tienda online en Perú: boleta vs factura, cómo integrarla al confirmar el pago y por qué tu ecommerce la necesita.",
     excerpt: "Qué es la facturación electrónica SUNAT, boleta vs factura y cómo integrarla a tu tienda online para emitir comprobantes automáticos.",
     datePublished: "2026-06-22",
-    dateModified: "2026-06-22",
+    dateModified: "2026-08-12",
     category: "Ecommerce",
     readingMin: 7,
     intro: "La facturación electrónica es el sistema de la SUNAT que permite emitir boletas y facturas digitales con validez tributaria. Para tu tienda online no es opcional: te ordena, genera confianza en el comprador y te mantiene en regla. Lo ideal es integrarla a tu ecommerce para que el comprobante se emita solo, al confirmarse el pago.",
@@ -1835,7 +1845,7 @@ export const BLOG_POSTS: BlogPost[] = [
     description: "Cómo registrar tu empresa gratis en Google Mi Negocio en Perú: crear y verificar tu ficha paso a paso, reseñas, fotos y SEO local para salir en el mapa.",
     excerpt: "Cómo crear, verificar y optimizar tu ficha de Google Mi Negocio para aparecer en el mapa y captar clientes locales en Perú.",
     datePublished: "2026-06-25",
-    dateModified: "2026-06-25",
+    dateModified: "2026-08-12",
     category: "SEO Local",
     readingMin: 7,
     intro: "Google Mi Negocio, hoy llamado Google Business Profile, es tu ficha gratuita en Google y Maps. Para empresas en Perú es decisiva: cuando alguien busca tu servicio cerca, esa ficha decide si apareces en el mapa y recibes la llamada. Bien optimizada con datos consistentes y reseñas, atrae clientes locales sin pagar publicidad.",
@@ -1958,6 +1968,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Por qué tu web no sale en Google todavía y los pasos concretos para posicionarla y empezar a recibir clientes.",
     datePublished: "2026-06-30",
+    dateModified: "2026-08-12",
     category: "SEO",
     readingMin: 8,
     intro:
@@ -2057,6 +2068,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "El canal que más convierte en Perú es WhatsApp. Así lo integras a tu tienda virtual para cerrar más ventas.",
     datePublished: "2026-07-02",
+    dateModified: "2026-08-12",
     category: "Ecommerce",
     readingMin: 7,
     intro:
@@ -2237,7 +2249,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Deja de pagar comisiones altas por cada pedido: una web propia con carta digital y pedidos directos.",
     datePublished: "2026-07-05",
-    dateModified: "2026-08-11",
+    dateModified: "2026-08-12",
     category: "Diseño web",
     readingMin: 7,
     intro:
@@ -2324,6 +2336,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Google Ads te trae clientes desde el primer día si lo haces bien. Cuánto invertir y cómo no botar la plata.",
     datePublished: "2026-07-06",
+    dateModified: "2026-08-12",
     category: "Marketing",
     readingMin: 8,
     intro:
@@ -2414,6 +2427,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Los pacientes buscan y eligen su médico en Google. Así debe ser la web de una clínica o consultorio.",
     datePublished: "2026-06-26",
+    dateModified: "2026-08-12",
     category: "Diseño web",
     readingMin: 6,
     intro:
@@ -2488,7 +2502,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Un cliente con un problema legal busca y elige rápido. Tu web debe transmitir autoridad y facilitar el contacto.",
     datePublished: "2026-06-28",
-    dateModified: "2026-08-11",
+    dateModified: "2026-08-12",
     category: "Diseño web",
     readingMin: 6,
     intro:
@@ -2563,7 +2577,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Vender un inmueble empieza en Google. Tu web debe mostrar proyectos y capturar leads calificados.",
     datePublished: "2026-07-01",
-    dateModified: "2026-08-11",
+    dateModified: "2026-08-12",
     category: "Diseño web",
     readingMin: 7,
     intro:
@@ -2718,7 +2732,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Una web no termina cuando se publica. Esto es lo que cuesta mantenerla viva, segura y funcionando.",
     datePublished: "2026-07-07",
-    dateModified: "2026-07-07",
+    dateModified: "2026-08-12",
     category: "Web",
     readingMin: 6,
     intro:
@@ -2796,7 +2810,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Los nuevos socios te buscan en Google antes de entrar. Así debe ser la web de un gimnasio para captarlos.",
     datePublished: "2026-07-07",
-    dateModified: "2026-07-07",
+    dateModified: "2026-08-12",
     category: "Diseño web",
     readingMin: 6,
     intro:
@@ -2871,7 +2885,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Booking se queda con una comisión de cada reserva. Una web propia te trae huéspedes directos, sin intermediarios.",
     datePublished: "2026-07-08",
-    dateModified: "2026-07-08",
+    dateModified: "2026-08-12",
     category: "Diseño web",
     readingMin: 7,
     intro:
@@ -2946,7 +2960,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Los padres investigan el colegio en internet antes de matricular. Así debe ser la web de una institución educativa.",
     datePublished: "2026-07-08",
-    dateModified: "2026-07-08",
+    dateModified: "2026-08-12",
     category: "Diseño web",
     readingMin: 6,
     intro:
@@ -3021,7 +3035,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Yape y Plin son los medios que todos usan en Perú. Así se integran bien en tu tienda para vender más.",
     datePublished: "2026-07-08",
-    dateModified: "2026-07-08",
+    dateModified: "2026-08-12",
     category: "Pagos",
     readingMin: 6,
     intro:
@@ -3093,7 +3107,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Las dos pasarelas de tarjetas más usadas de Perú, comparadas para que elijas la correcta para tu tienda.",
     datePublished: "2026-07-08",
-    dateModified: "2026-08-11",
+    dateModified: "2026-08-12",
     category: "Pagos",
     readingMin: 6,
     intro:
@@ -3167,7 +3181,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "El SEO no se cobra igual que una web. Aquí cómo se cobra, qué incluye y por qué es inversión, no gasto.",
     datePublished: "2026-07-08",
-    dateModified: "2026-07-08",
+    dateModified: "2026-08-12",
     category: "SEO",
     readingMin: 7,
     intro:
@@ -3247,7 +3261,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "El branding no es solo un logo bonito: es cómo te percibe tu cliente y por qué te elige a ti y no al de al lado.",
     datePublished: "2026-07-08",
-    dateModified: "2026-07-08",
+    dateModified: "2026-08-12",
     category: "Marketing",
     readingMin: 6,
     intro:
@@ -3321,7 +3335,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Uno trae clientes hoy pagando; el otro los trae gratis pero tarda. La verdad es que se complementan.",
     datePublished: "2026-07-08",
-    dateModified: "2026-07-08",
+    dateModified: "2026-08-12",
     category: "Marketing",
     readingMin: 7,
     intro:
@@ -3388,7 +3402,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Mercado Libre te da alcance pero se queda con tu comisión y tu cliente. Cuándo conviene tu tienda propia.",
     datePublished: "2026-07-08",
-    dateModified: "2026-07-08",
+    dateModified: "2026-08-12",
     category: "Ecommerce",
     readingMin: 7,
     intro:
@@ -3460,7 +3474,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Rediseñar o cambiar de web puede hundir tu tráfico si se hace mal. Así se migra sin perder tus posiciones.",
     datePublished: "2026-07-08",
-    dateModified: "2026-07-08",
+    dateModified: "2026-08-12",
     category: "SEO",
     readingMin: 7,
     intro:
@@ -3538,7 +3552,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "La mayoría busca servicios 'cerca de mí'. Así logras que tu negocio aparezca primero en tu ciudad o distrito.",
     datePublished: "2026-07-08",
-    dateModified: "2026-07-08",
+    dateModified: "2026-08-12",
     category: "SEO Local",
     readingMin: 7,
     intro:
@@ -3616,7 +3630,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "El SEO on-page es lo que sí controlas de tu web. Esta checklist cubre lo esencial para posicionar mejor.",
     datePublished: "2026-07-08",
-    dateModified: "2026-07-08",
+    dateModified: "2026-08-12",
     category: "SEO",
     readingMin: 7,
     intro:
@@ -3694,7 +3708,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Una campaña de Ads bien estructurada rinde el doble con el mismo presupuesto. Así se arma paso a paso.",
     datePublished: "2026-07-08",
-    dateModified: "2026-07-08",
+    dateModified: "2026-08-12",
     category: "Marketing",
     readingMin: 8,
     intro:
@@ -3771,7 +3785,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Cada clic que no te sirve es plata perdida. Las palabras clave negativas son el freno que casi nadie usa bien.",
     datePublished: "2026-07-08",
-    dateModified: "2026-07-08",
+    dateModified: "2026-08-12",
     category: "Marketing",
     readingMin: 6,
     intro:
@@ -3844,7 +3858,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Un logo no es solo un dibujo bonito. Esto define su precio y qué debe incluir un trabajo serio.",
     datePublished: "2026-07-08",
-    dateModified: "2026-07-08",
+    dateModified: "2026-08-12",
     category: "Marketing",
     readingMin: 6,
     intro:
@@ -3917,7 +3931,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Un manual de marca evita que tu negocio se vea distinto en cada pieza. Esto es lo que incluye y para qué sirve.",
     datePublished: "2026-07-08",
-    dateModified: "2026-07-08",
+    dateModified: "2026-08-12",
     category: "Marketing",
     readingMin: 6,
     intro:
@@ -4064,7 +4078,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Los pacientes eligen a su dentista por internet. Así debe ser la web de un consultorio o clínica dental.",
     datePublished: "2026-07-08",
-    dateModified: "2026-07-08",
+    dateModified: "2026-08-12",
     category: "Diseño web",
     readingMin: 6,
     intro:
@@ -4139,7 +4153,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Cada paso para montar tu tienda Shopify en Perú: desde la cuenta hasta el lanzamiento, con pagos locales configurados.",
     datePublished: "2026-07-08",
-    dateModified: "2026-07-08",
+    dateModified: "2026-08-12",
     category: "Ecommerce",
     readingMin: 8,
     intro:
@@ -4293,7 +4307,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "No necesitas 30 apps. Estas son las categorías de apps de Shopify que sí mueven tus ventas en Perú.",
     datePublished: "2026-07-08",
-    dateModified: "2026-07-08",
+    dateModified: "2026-08-12",
     category: "Ecommerce",
     readingMin: 6,
     intro:
@@ -4365,7 +4379,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Vender ropa online tiene sus reglas: tallas, fotos y cambios. Así se arma una tienda Shopify de moda que vende.",
     datePublished: "2026-07-08",
-    dateModified: "2026-07-08",
+    dateModified: "2026-08-12",
     category: "Ecommerce",
     readingMin: 6,
     intro:
@@ -4438,7 +4452,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Skincare, maquillaje y cuidado personal venden online con la tienda correcta. Así se arma en Shopify.",
     datePublished: "2026-07-08",
-    dateModified: "2026-07-08",
+    dateModified: "2026-08-12",
     category: "Ecommerce",
     readingMin: 6,
     intro:
@@ -4581,7 +4595,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Estos errores hunden las ventas de muchas tiendas Shopify. Detéctalos a tiempo y evita perder clientes.",
     datePublished: "2026-07-08",
-    dateModified: "2026-08-11",
+    dateModified: "2026-08-12",
     category: "Ecommerce",
     readingMin: 6,
     intro:
@@ -4660,7 +4674,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Tener una tienda Shopify no basta si nadie la encuentra. Así se posiciona en Google, paso a paso.",
     datePublished: "2026-07-08",
-    dateModified: "2026-07-08",
+    dateModified: "2026-08-12",
     category: "SEO",
     readingMin: 7,
     intro:
@@ -4734,7 +4748,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Antes de invertir en una app, lee esto. Para la mayoría de negocios en Perú una página web rinde más y cuesta menos. Aquí cómo saber qué necesitas de verdad.",
     datePublished: "2026-07-27",
-    dateModified: "2026-07-27",
+    dateModified: "2026-08-12",
     category: "Software",
     readingMin: 7,
     intro:
@@ -4806,7 +4820,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "No todas las apps se hacen igual. Nativa, híbrida o web: cada camino cambia el costo, el plazo y el rendimiento. Aquí cuál conviene según tu proyecto.",
     datePublished: "2026-07-27",
-    dateModified: "2026-07-27",
+    dateModified: "2026-08-12",
     category: "Software",
     readingMin: 7,
     intro:
@@ -4873,7 +4887,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Una plantilla es rápida y barata; una web a medida es única y escalable. Aquí las diferencias reales en SEO, velocidad y crecimiento para que elijas bien.",
     datePublished: "2026-07-27",
-    dateModified: "2026-07-27",
+    dateModified: "2026-08-12",
     category: "Diseño web",
     readingMin: 7,
     intro:
@@ -4941,7 +4955,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Si tu equipo pierde horas en tareas manuales y errores de Excel, es momento de automatizar. Aquí qué procesos delegar a un sistema y por dónde empezar.",
     datePublished: "2026-07-27",
-    dateModified: "2026-07-27",
+    dateModified: "2026-08-12",
     category: "Software",
     readingMin: 7,
     intro:
@@ -5009,6 +5023,652 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Software a medida", href: "/desarrollo-de-software-a-medida", desc: "Sistemas web que automatizan tu operación." },
       { label: "Sistema de inventario y stock", href: "/sistemas/inventario", desc: "Controla entradas, salidas y almacenes en tiempo real." },
       { label: "Cuándo dejar el Excel", href: "/blog/sistema-de-gestion-para-pymes-cuando-dejar-el-excel", desc: "Las señales de que tu negocio ya superó las planillas." },
+    ],
+  },
+  {
+    slug: "como-pasar-de-vender-por-whatsapp-a-una-tienda-virtual",
+    title: "De vender por WhatsApp a tener tienda virtual",
+    h1: "Cómo pasar de vender por WhatsApp a una tienda virtual en Perú",
+    description:
+      "Cuándo conviene dejar de vender solo por WhatsApp y cómo hacer el cambio a una tienda virtual sin perder los clientes que ya te escriben.",
+    excerpt:
+      "Vender por WhatsApp funciona hasta que deja de funcionar. Estas son las señales y el camino para dar el salto sin perder a nadie.",
+    datePublished: "2026-08-12",
+    dateModified: "2026-08-12",
+    category: "Ecommerce",
+    readingMin: 7,
+    intro:
+      "No hay que elegir entre WhatsApp y tienda virtual: la tienda se encarga del catálogo, el precio y el cobro, y WhatsApp se queda con lo que mejor hace, que es cerrar dudas y dar confianza. El momento de dar el paso llega cuando pasas más tiempo copiando precios que vendiendo.",
+    sections: [
+      {
+        h2: "Las señales de que WhatsApp ya se te quedó corto",
+        body:
+          "Ninguna tiene que ver con el tamaño del negocio, sino con el tiempo que te come la operación:",
+        bullets: [
+          "Repites el mismo precio veinte veces al día y aun así alguien pregunta por uno que ya subió.",
+          "Pierdes pedidos porque el mensaje llegó de madrugada y respondiste a las nueve.",
+          "Cobras con capturas de Yape que hay que revisar una por una para saber quién pagó.",
+          "Tienes stock apartado en la cabeza y vendes algo que ya no está.",
+          "Cuando te vas de viaje o te enfermas, el negocio se detiene.",
+        ],
+      },
+      {
+        h2: "Qué se lleva la tienda y qué se queda en WhatsApp",
+        body:
+          "El error más común es montar la tienda y apagar el WhatsApp. En Perú el chat sigue siendo el canal donde se cierra la venta, sobre todo en tickets altos. El reparto que funciona es este: la tienda muestra el catálogo con precio y disponibilidad reales, cobra con Yape, Plin, Niubiz o Izipay y deja el pedido registrado; WhatsApp resuelve la duda puntual, recupera al que dejó el carrito y atiende la posventa. Puedes ver el detalle de esa integración en [cómo vender por WhatsApp desde tu tienda virtual](/blog/como-vender-por-whatsapp-desde-tu-tienda-virtual).",
+      },
+      {
+        h2: "Qué necesitas tener listo antes de abrir",
+        bullets: [
+          "El catálogo real: qué vendes, en qué variantes y a qué precio, con las fotos de cada uno.",
+          "El stock inicial contado, no estimado. La tienda hereda el descuadre que ya tengas.",
+          "Cómo vas a cobrar: pasarela de tarjetas, Yape y Plin, o ambas.",
+          "Cómo vas a entregar: courier, delivery propio o recojo en tienda, y a qué zonas.",
+          "Quién responde y en qué horario, para no prometer una atención que no vas a sostener.",
+        ],
+      },
+      {
+        h2: "El orden que evita quedarte a medias",
+        body:
+          "Conviene abrir con poco y bien antes que con todo y mal. Primero se sube el catálogo completo aunque el diseño sea sobrio; después se conectan los pagos y se hace una compra de prueba de verdad, pagando con tu propia tarjeta y con Yape, para ver el flujo como lo ve el cliente; luego se define el envío y se prueba un pedido real de punta a punta. Recién ahí se anuncia. Abrir una tienda que no cobra bien es peor que no tenerla: quema la confianza de quien ya te compraba por chat.",
+      },
+      {
+        h2: "Cómo mudas a los clientes que ya te escriben",
+        body:
+          "No hace falta anunciarlo como un cambio de sistema. Lo que funciona es dejar de escribir precios en el chat y empezar a mandar el enlace del producto: el cliente ve la ficha, el precio vigente y la disponibilidad, y decide sin esperar tu respuesta. En dos semanas el hábito cambia solo. Añade el enlace de la tienda al estado de WhatsApp, a la biografía de Instagram y a tu ficha de Google Mi Negocio, que es donde te busca quien todavía no te conoce.",
+      },
+      {
+        h2: "Qué gana el negocio, más allá de la comodidad",
+        body:
+          "Una tienda deja rastro: sabes qué se ve y no se compra, qué se agrega al carrito y se abandona, y de dónde llega la gente. Eso es lo que no te da el chat, y es lo que después permite decidir con datos en qué invertir. Si estás evaluando plataformas, compara en [Shopify vs WooCommerce](/blog/shopify-vs-woocommerce); si quieres ver qué incluye el desarrollo, revisa nuestro servicio de [tiendas virtuales](/tiendas-virtuales).",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Tengo que dejar de vender por WhatsApp?",
+        a: "No, y no conviene. WhatsApp sigue siendo el canal donde se resuelven dudas y se cierra la venta en Perú. Lo que cambia es que el catálogo, el precio y el cobro dejan de vivir en el chat.",
+      },
+      {
+        q: "¿Puedo cobrar con Yape y Plin en una tienda virtual?",
+        a: "Sí. Se integran mediante una pasarela que los acepta, y el pedido queda registrado y conciliado automáticamente, sin revisar capturas una por una.",
+      },
+      {
+        q: "¿Qué pasa con los clientes que no saben comprar en línea?",
+        a: "Se les sigue atendiendo por chat. La diferencia es que les mandas el enlace del producto en vez de escribir el precio, y si prefieren, tú mismo generas el pedido desde el panel.",
+      },
+      {
+        q: "¿Necesito muchos productos para que valga la pena?",
+        a: "No. Con pocos productos pero con variantes, stock y cobro en línea ya se justifica: lo que se gana no es catálogo, es tiempo y pedidos que antes se perdían fuera de horario.",
+      },
+    ],
+    related: [
+      { label: "Tiendas virtuales", href: "/tiendas-virtuales", desc: "Desarrollamos tu tienda autoadministrable con pagos locales." },
+      { label: "Cómo crear una tienda virtual en Perú (paso a paso)", href: "/blog/como-crear-una-tienda-virtual-en-peru", desc: "La guía completa para montarla desde cero." },
+      { label: "Cómo integrar Yape y Plin en tu tienda virtual", href: "/blog/como-integrar-yape-y-plin-en-tu-tienda-virtual", desc: "Los pagos que más se usan en Perú, conectados a tu tienda." },
+    ],
+  },
+  {
+    slug: "reducir-el-abandono-de-carrito-en-tu-tienda-virtual",
+    title: "Cómo reducir el abandono de carrito en tu tienda",
+    h1: "Checkout: cómo reducir el abandono de carrito en tu tienda virtual",
+    description:
+      "Por qué se abandona el carrito en las tiendas peruanas y qué cambiar en el checkout —costo de envío, pagos, formulario— para recuperar esas ventas.",
+    excerpt:
+      "La mayoría de carritos se pierde en el último paso, y casi siempre por lo mismo: sorpresas de precio y fricción al pagar.",
+    datePublished: "2026-08-12",
+    dateModified: "2026-08-12",
+    category: "Ecommerce",
+    readingMin: 7,
+    intro:
+      "Cuando alguien llega al carrito ya decidió comprar: si no termina, el problema es del checkout, no del producto. Las causas se repiten —el costo del envío aparece tarde, falta su forma de pago o el formulario pide demasiado— y todas se corrigen sin tocar el catálogo.",
+    sections: [
+      {
+        h2: "Por qué se abandona un carrito en Perú",
+        bullets: [
+          "El envío aparece recién al final y cambia el precio que el cliente ya había aceptado.",
+          "No está su forma de pago: mucha gente paga con Yape o Plin, no con tarjeta.",
+          "El formulario pide datos que no hacen falta para entregar el pedido.",
+          "Obliga a crear una cuenta antes de comprar.",
+          "No dice cuándo llega, y sin fecha el cliente prefiere preguntar por WhatsApp… y ahí se enfría.",
+          "La tarjeta se rechaza y el mensaje de error no explica qué hacer.",
+        ],
+      },
+      {
+        h2: "Enseña el costo de envío antes del carrito",
+        body:
+          "Es la corrección que más devuelve. Si el envío depende del distrito, pon un calculador en la ficha del producto o una tabla visible por zona; si tienes envío gratis a partir de un monto, dilo en el carrito con cuánto falta para alcanzarlo. Lo que hunde la conversión no es que el envío cueste: es enterarse tarde.",
+      },
+      {
+        h2: "Ofrece la forma de pago que tu cliente ya usa",
+        body:
+          "En Perú conviven la tarjeta, las billeteras y la transferencia. Una tienda que solo acepta tarjeta deja fuera a una parte grande de sus compradores. Lo razonable es cubrir tarjeta con una pasarela —[Izipay o Niubiz](/blog/izipay-o-niubiz-cual-elegir-para-cobrar-con-tarjeta), según el caso— y sumar [Yape y Plin](/blog/como-integrar-yape-y-plin-en-tu-tienda-virtual) para el resto. Y muéstralo antes: los logos de los medios aceptados en la ficha del producto reducen el abandono porque responden la duda antes de que aparezca.",
+      },
+      {
+        h2: "Quita todo lo que no necesitas para entregar",
+        bullets: [
+          "Permite comprar como invitado; la cuenta se ofrece después de pagar, no antes.",
+          "Pide solo lo que usarás: nombre, teléfono, dirección, referencia y correo.",
+          "Autocompleta lo que puedas y valida el teléfono y el correo en el momento, no al enviar.",
+          "Un solo paso o pasos visibles con progreso: la incertidumbre también hace abandonar.",
+          "Deja el resumen del pedido siempre a la vista, con el total final ya calculado.",
+        ],
+      },
+      {
+        h2: "Di cuándo llega y qué pasa si algo sale mal",
+        body:
+          "Dos textos cortos sostienen la conversión mejor que cualquier descuento: el plazo de entrega por zona y la política de cambios. No hace falta prometer 24 horas; hace falta ser claro. Lo mismo con la seguridad del pago: decir con qué pasarela se procesa y que la tienda no guarda los datos de la tarjeta despeja la desconfianza de quien compra por primera vez.",
+      },
+      {
+        h2: "Recupera al que se fue",
+        body:
+          "Un carrito abandonado no está perdido. Si el cliente dejó su correo o su teléfono, un recordatorio a las pocas horas recupera una parte, sobre todo si resuelve la duda que lo frenó (el envío, el plazo, el medio de pago) en vez de solo insistir. En Perú el recordatorio por WhatsApp suele funcionar mejor que el correo, siempre que sea uno y no una cadena.",
+      },
+      {
+        h2: "Mide dónde se cae la gente",
+        body:
+          "Sin medición se optimiza a ciegas. Hay que saber cuántos llegan al carrito, cuántos inician el checkout y cuántos pagan; el escalón donde se desploma el número es el que hay que arreglar primero. Si tu tienda todavía no lo mide, es la primera tarea, y es parte de lo que dejamos configurado en nuestro servicio de [tiendas virtuales](/tiendas-virtuales).",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Cuál es la causa más común de abandono?",
+        a: "El costo de envío que aparece al final. El cliente ya tenía un precio en la cabeza y el total cambia en el último paso, que es justo cuando menos tolerancia hay.",
+      },
+      {
+        q: "¿Conviene obligar a registrarse para comprar?",
+        a: "No. La cuenta se ofrece después de pagar, cuando el cliente ya obtuvo algo a cambio. Obligar antes de la compra es una de las fricciones que más carritos cuesta.",
+      },
+      {
+        q: "¿Sirve mandar un recordatorio por WhatsApp?",
+        a: "Sí, si es uno solo y resuelve la duda concreta que frenó la compra. Insistir varias veces con el mismo mensaje genera bloqueos y quema el canal.",
+      },
+      {
+        q: "¿Cuántos pasos debe tener un checkout?",
+        a: "Los menos posibles, y con el progreso visible. Un paso único funciona bien en catálogos simples; en tiendas con varias opciones de envío es preferible dos o tres pasos claros que uno larguísimo.",
+      },
+    ],
+    related: [
+      { label: "Tiendas virtuales", href: "/tiendas-virtuales", desc: "Tiendas con checkout pensado para convertir, no solo para cobrar." },
+      { label: "Qué necesita una tienda virtual para vender", href: "/blog/que-necesita-una-tienda-virtual-para-vender", desc: "Más allá del catálogo: lo que hace que una tienda venda." },
+      { label: "Pasarelas de pago en Perú: Yape, Plin y Niubiz", href: "/blog/pasarelas-de-pago-para-ecommerce-en-peru", desc: "Qué opciones existen y cuál conviene a tu caso." },
+    ],
+  },
+  {
+    slug: "envios-y-courier-para-tu-tienda-virtual-en-peru",
+    title: "Envíos para tu tienda virtual: Olva, Shalom y más",
+    h1: "Envíos y courier para tu tienda virtual en Perú: cómo elegir",
+    description:
+      "Cómo resolver los envíos de tu tienda online en Perú: courier a provincia, delivery en Lima, cuánto cobrar por el envío y qué mostrar antes del carrito.",
+    excerpt:
+      "El envío decide más ventas que el diseño de la tienda. Cómo elegir entre courier, delivery propio y recojo, y qué cobrar por cada uno.",
+    datePublished: "2026-08-12",
+    dateModified: "2026-08-12",
+    category: "Ecommerce",
+    readingMin: 8,
+    intro:
+      "En Perú el envío se resuelve casi siempre con tres piezas: un courier para provincias, un delivery propio o tercerizado para Lima y el recojo en tienda para quien vive cerca. Lo importante no es cuál eliges, sino que el cliente conozca el costo y el plazo antes de llegar al carrito.",
+    sections: [
+      {
+        h2: "Las tres formas de entregar, y cuándo usa cada una",
+        bullets: [
+          "Courier a nivel nacional (Olva, Shalom y similares): imprescindible para vender fuera de Lima. Se despacha en agencia y el cliente recoge o recibe según el servicio contratado.",
+          "Delivery en Lima: propio o con una app de mensajería. Es el que permite entregar el mismo día y el que más se valora en productos de consumo rápido.",
+          "Recojo en tienda o en punto: cuesta cero, es el que menos fricción tiene y conviene ofrecerlo siempre que tengas un local o un punto fijo.",
+        ],
+      },
+      {
+        h2: "Qué mirar al elegir courier",
+        body:
+          "El precio por kilo es lo que primero se compara y casi nunca es lo que decide. Pesa más la cobertura real en los distritos y provincias a los que vendes, si te dan número de seguimiento para pasarle al cliente, cómo manejan un producto dañado o perdido, y si recogen en tu local o tienes que llevar los paquetes a agencia. Ese último punto es el que suele romper la operación de un negocio pequeño: llevar cinco paquetes diarios a una agencia consume más tiempo del que parece.",
+      },
+      {
+        h2: "Cuánto cobrar por el envío",
+        body:
+          "Hay tres esquemas y los tres funcionan; lo que no funciona es no decidir:",
+        bullets: [
+          "Tarifa por zona: la más honesta y la más fácil de sostener. Requiere una tabla por distrito o por región, visible antes del carrito.",
+          "Envío gratis a partir de un monto: sube el ticket promedio, pero el umbral tiene que cubrir de verdad tu costo o te comes el margen.",
+          "Envío incluido en el precio: simplifica el checkout y funciona cuando el peso es parejo. Con productos de tamaños muy distintos, se vuelve injusto para el cliente de la ciudad cercana.",
+        ],
+      },
+      {
+        h2: "Qué debe ver el cliente, y cuándo",
+        body:
+          "El costo y el plazo de envío tienen que estar disponibles antes del checkout, no dentro de él. En la ficha del producto basta con un calculador por distrito o un enlace a la tabla de zonas. Después de la compra, lo que sostiene la confianza es el número de seguimiento y un aviso cuando el paquete sale: la mayoría de reclamos no son por demora, son por silencio. Esa fricción de última hora es la misma que explica buena parte del [abandono de carrito](/blog/reducir-el-abandono-de-carrito-en-tu-tienda-virtual).",
+      },
+      {
+        h2: "Cómo se conecta con la tienda",
+        body:
+          "El objetivo es no volver a copiar direcciones a mano. Según la plataforma, se puede automatizar el cálculo de tarifa por distrito, generar la etiqueta de envío desde el pedido y devolver el número de seguimiento al cliente sin intervención. Lo mínimo razonable es que el pedido registre distrito, referencia y teléfono en campos separados: es lo que después evita las llamadas del repartidor.",
+      },
+      {
+        h2: "Provincia: lo que cambia respecto a Lima",
+        body:
+          "Vender a provincia suele exigir pago adelantado, plazos más largos y una explicación clara de si el cliente recoge en agencia o recibe en su puerta, porque no es lo mismo y ahí nacen la mayoría de los malentendidos. También conviene revisar qué productos no acepta el courier (líquidos, aerosoles, frágiles sin embalaje especial) antes de publicarlos, no después de la primera venta.",
+      },
+      {
+        h2: "Antes de escalar, ordena el stock",
+        body:
+          "Los problemas de envío que parecen del courier muchas veces son de inventario: se vendió algo que no estaba. Si te pasa seguido, lo que toca no es cambiar de courier sino conectar el stock con la tienda, como se explica en [cómo controlar el inventario en una tienda online](/blog/como-controlar-inventario-en-una-tienda-online) y en nuestro [sistema de inventario](/sistemas/inventario).",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Conviene ofrecer envío gratis?",
+        a: "Solo con un monto mínimo que cubra tu costo real. El envío gratis sin umbral funciona como promoción puntual, no como política permanente, salvo que el margen del producto lo permita.",
+      },
+      {
+        q: "¿Qué courier es mejor para provincias?",
+        a: "Depende de tu zona de venta más que del nombre. Compara cobertura real en esos destinos, si recogen en tu local, el seguimiento que entregan y cómo responden ante un paquete perdido.",
+      },
+      {
+        q: "¿Debo cobrar el envío por peso o por zona?",
+        a: "Por zona es más simple de comunicar y de sostener. Por peso tiene sentido cuando vendes productos de tamaños muy distintos y el costo real varía mucho entre uno y otro.",
+      },
+      {
+        q: "¿Qué hago si el cliente no recoge el paquete en agencia?",
+        a: "Defínelo antes de vender y ponlo en tus condiciones: quién asume el retorno y en qué plazo se reintegra. La mayoría de disputas se evita teniéndolo escrito y visible.",
+      },
+    ],
+    related: [
+      { label: "Tiendas virtuales", href: "/tiendas-virtuales", desc: "Tiendas con envíos, stock y pagos resueltos desde el inicio." },
+      { label: "Cómo reducir el abandono de carrito", href: "/blog/reducir-el-abandono-de-carrito-en-tu-tienda-virtual", desc: "El envío es la primera causa de carritos perdidos." },
+      { label: "Cómo controlar el inventario en una tienda online", href: "/blog/como-controlar-inventario-en-una-tienda-online", desc: "Para no vender lo que ya no tienes." },
+    ],
+  },
+  {
+    slug: "culqi-vs-mercado-pago-en-peru",
+    title: "Culqi o Mercado Pago: cuál conviene en Perú",
+    h1: "Culqi vs Mercado Pago en Perú: comisiones, integración y cuál elegir",
+    description:
+      "Comparación práctica entre Culqi y Mercado Pago para cobrar en línea en Perú: comisiones, medios aceptados, integración y en qué caso gana cada una.",
+    excerpt:
+      "Dos pasarelas muy usadas en Perú, con lógicas distintas. Qué mirar antes de elegir y en qué escenario conviene cada una.",
+    datePublished: "2026-08-12",
+    dateModified: "2026-08-12",
+    category: "Pagos",
+    readingMin: 8,
+    intro:
+      "Culqi y Mercado Pago resuelven lo mismo —cobrar con tarjeta en tu web— pero se eligen por motivos distintos: Culqi es una pasarela peruana pensada para integrarse a tu propia tienda, y Mercado Pago llega con el ecosistema de Mercado Libre y con enlaces de cobro que funcionan incluso sin web. La decisión depende de dónde vendes y de quién te compra.",
+    sections: [
+      {
+        h2: "Qué hay que comparar de verdad",
+        body:
+          "La comisión es lo primero que se mira y rara vez es lo que más pesa. Antes de decidir conviene poner sobre la mesa estos seis puntos, porque son los que después cuestan dinero o tiempo:",
+        bullets: [
+          "Comisión por transacción y si cambia según el medio de pago o el plazo de depósito.",
+          "Cuándo cae el dinero en tu cuenta, que es lo que define tu flujo de caja.",
+          "Qué medios acepta: tarjetas, cuotas, billeteras y transferencias.",
+          "Requisitos de alta: RUC, tipo de empresa, documentación y tiempos de aprobación.",
+          "Cómo se integra: módulo listo para tu plataforma o desarrollo a medida.",
+          "Qué pasa con los contracargos y las devoluciones, y cuánto acompañamiento tienes ahí.",
+        ],
+      },
+      {
+        h2: "Cuándo encaja mejor Culqi",
+        body:
+          "Culqi es peruana y está pensada para integrarse dentro de tu propio checkout: el cliente paga sin salir de tu tienda, que es lo que menos fricción genera y lo que mejor sostiene la marca. Encaja cuando ya tienes tienda propia, quieres controlar la experiencia de pago de punta a punta y necesitas soporte y facturación local. Al ser una integración, exige un poco más de trabajo técnico inicial, que es justamente lo que resolvemos en el desarrollo.",
+      },
+      {
+        h2: "Cuándo encaja mejor Mercado Pago",
+        body:
+          "Mercado Pago gana cuando el negocio ya vive en el ecosistema de Mercado Libre o cuando necesitas cobrar sin tener una tienda montada: los enlaces de pago permiten cobrar por WhatsApp o redes el mismo día. También suma la confianza de una marca que el comprador reconoce, algo que pesa en clientes que compran por primera vez. A cambio, el flujo de pago suele sacar al cliente de tu sitio y la experiencia es menos tuya.",
+      },
+      {
+        h2: "Lo que ninguna de las dos resuelve sola",
+        body:
+          "En Perú, una parte importante de los clientes no paga con tarjeta: paga con [Yape o Plin](/blog/como-integrar-yape-y-plin-en-tu-tienda-virtual). Elegir pasarela no te exime de cubrir esa vía, y las tiendas que mejor convierten suelen ofrecer ambas cosas. Si tu ticket es alto y tu cliente es empresa, además vas a necesitar factura electrónica: eso lo resuelve tu [sistema de ventas y facturación](/sistemas/ventas-y-facturacion), no la pasarela.",
+      },
+      {
+        h2: "Cómo decidir en cinco minutos",
+        bullets: [
+          "¿Vendes hoy dentro de Mercado Libre o necesitas cobrar sin web? Mercado Pago.",
+          "¿Tienes tienda propia y quieres que el cliente pague sin salir de ella? Culqi.",
+          "¿Tu cliente pide cuotas sin intereses? Compara qué ofrece cada una en tu rubro antes de firmar.",
+          "¿Te importa cuándo cae la plata? Es el criterio que más cambia la operación diaria de un negocio pequeño.",
+          "¿No estás seguro? Empieza por la que puedas activar antes y deja la integración lista para sumar la otra: no son excluyentes.",
+        ],
+      },
+      {
+        h2: "Antes de firmar, prueba el flujo completo",
+        body:
+          "Con la pasarela elegida, haz una compra real con tu propia tarjeta y otra con billetera, y sigue el dinero hasta tu cuenta. Ahí aparecen las sorpresas que ningún cuadro comparativo muestra: el correo de confirmación que no llega, el comprobante que no se emite, el pedido que queda en 'pendiente'. Si comparas también con las opciones de tarjeta presencial y en línea, mira [Izipay o Niubiz](/blog/izipay-o-niubiz-cual-elegir-para-cobrar-con-tarjeta) y el panorama completo en [pasarelas de pago en Perú](/blog/pasarelas-de-pago-para-ecommerce-en-peru).",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Cuál cobra menos comisión, Culqi o Mercado Pago?",
+        a: "Las tarifas cambian con el tiempo y según el plan, el medio de pago y el plazo de depósito, así que conviene pedir la vigente a cada una antes de decidir. En la práctica, la diferencia de comisión suele pesar menos que cuándo recibes el dinero y qué medios aceptas.",
+      },
+      {
+        q: "¿Puedo tener las dos al mismo tiempo?",
+        a: "Sí. No son excluyentes y muchas tiendas conviven con más de una pasarela para cubrir más medios de pago. El costo de tenerlas es la integración, no una exclusividad.",
+      },
+      {
+        q: "¿Necesito RUC para usarlas?",
+        a: "Para operar formalmente y emitir comprobantes, sí. Cada pasarela tiene sus propios requisitos de alta y documentación, y conviene revisarlos antes de comprometer una fecha de lanzamiento.",
+      },
+      {
+        q: "¿Sirven para cobrar por WhatsApp?",
+        a: "Mercado Pago permite generar enlaces de cobro que puedes enviar por chat sin tener tienda. Con Culqi también se puede, integrada a tu tienda o a una página de pago propia.",
+      },
+    ],
+    related: [
+      { label: "Pasarelas de pago en Perú", href: "/blog/pasarelas-de-pago-para-ecommerce-en-peru", desc: "El panorama completo: Yape, Plin, Niubiz e Izipay." },
+      { label: "Tiendas virtuales", href: "/tiendas-virtuales", desc: "Integramos la pasarela que elijas a tu tienda." },
+      { label: "Izipay o Niubiz: cuál conviene para tu tienda", href: "/blog/izipay-o-niubiz-cual-elegir-para-cobrar-con-tarjeta", desc: "La otra decisión de pagos que toca tomar en Perú." },
+    ],
+  },
+  {
+    slug: "sistema-de-reservas-y-citas-a-medida",
+    title: "Sistema de reservas y citas a medida",
+    h1: "Sistema de reservas y citas a medida para tu negocio",
+    description:
+      "Cuándo conviene un sistema de reservas y citas propio en vez de una app de agenda: qué debe resolver, cómo evita cruces y cómo se conecta con WhatsApp y tu web.",
+    excerpt:
+      "Agendar por WhatsApp funciona hasta que se cruzan dos citas. Qué resuelve un sistema de reservas propio y cuándo se justifica.",
+    datePublished: "2026-08-12",
+    dateModified: "2026-08-12",
+    category: "Software",
+    readingMin: 7,
+    intro:
+      "Un sistema de reservas se justifica cuando tu agenda es tu inventario: si una hora no se ocupa, no se recupera. Lo que resuelve no es 'anotar citas', sino evitar cruces, reducir las ausencias y dejar de perder solicitudes fuera del horario de atención.",
+    sections: [
+      {
+        h2: "Qué negocios lo necesitan",
+        bullets: [
+          "Clínicas, consultorios y centros dentales, donde cada profesional tiene su propia agenda y sus propios horarios.",
+          "Spas, barberías y centros de estética, con servicios de distinta duración y varios espacios.",
+          "Talleres y servicios técnicos, donde la cita depende de la disponibilidad de un puesto o de un técnico.",
+          "Canchas, salas y espacios que se alquilan por hora.",
+          "Consultores y profesionales independientes que venden su tiempo.",
+        ],
+      },
+      {
+        h2: "Lo que una agenda compartida no resuelve",
+        body:
+          "El calendario compartido funciona mientras haya una sola persona anotando. El problema empieza cuando dos personas responden mensajes a la vez, cuando el cliente escribe a medianoche o cuando hay que saber si la sala está libre además del profesional. Ahí aparecen los cruces, las esperas y las llamadas para reprogramar, que es tiempo que nadie factura.",
+      },
+      {
+        h2: "Qué debe hacer un sistema de reservas",
+        bullets: [
+          "Mostrar solo los horarios realmente disponibles, cruzando profesional, servicio, duración y espacio.",
+          "Impedir la doble reserva del mismo bloque, aunque dos personas confirmen al mismo tiempo.",
+          "Enviar confirmación y recordatorio automáticos, que es lo que más reduce las ausencias.",
+          "Permitir reprogramar o cancelar sin llamar, con las reglas que tú definas.",
+          "Registrar el historial del cliente: qué se atendió, cuándo y con quién.",
+          "Cobrar o pedir un adelanto cuando la ausencia te cuesta dinero.",
+        ],
+      },
+      {
+        h2: "A medida o una app de agenda",
+        body:
+          "Una app de agenda estándar resuelve el caso simple y es más rápida de activar. Un sistema a medida se justifica cuando tu regla de disponibilidad no cabe en un formulario: servicios que ocupan dos recursos a la vez, profesionales con horarios distintos por sede, paquetes de sesiones, convenios o precios por tipo de cliente. También cuando necesitas que la reserva converse con el resto de tu operación —facturación, historial, caja— en vez de vivir aparte. Es la misma decisión que se analiza en [software a medida vs software enlatado](/blog/software-a-medida-vs-software-enlatado).",
+      },
+      {
+        h2: "Cómo se conecta con WhatsApp y con tu web",
+        body:
+          "En Perú la reserva casi siempre empieza en un chat o en Instagram. Lo práctico no es pelear contra eso, sino que el enlace de reserva viva donde ya está el cliente: en el botón de WhatsApp, en la biografía de Instagram, en tu ficha de Google Mi Negocio y en la página del servicio dentro de tu web. La confirmación y el recordatorio también pueden salir por WhatsApp, que es donde se leen.",
+      },
+      {
+        h2: "Cómo se construye",
+        body:
+          "Primero se modela la disponibilidad real, que es la parte difícil: horarios, excepciones, feriados, duración por servicio y recursos compartidos. Luego el flujo de reserva del cliente, después el panel interno de quien atiende y al final las integraciones. Puedes ver el enfoque completo en [desarrollo de software a medida](/desarrollo-de-software-a-medida), y si tu negocio además factura por cada atención, junto al [sistema de ventas y facturación](/sistemas/ventas-y-facturacion).",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Puede el cliente reservar sin llamar ni escribir?",
+        a: "Sí, y es el punto. El sistema muestra los horarios libres reales y confirma en el momento, incluso de madrugada o en feriado, que es cuando se pierden más solicitudes.",
+      },
+      {
+        q: "¿Cómo se evitan las ausencias?",
+        a: "Con recordatorio automático antes de la cita y, cuando la ausencia te cuesta dinero, con un adelanto o una política de cancelación aplicada por el propio sistema.",
+      },
+      {
+        q: "¿Sirve si tengo varias sedes o varios profesionales?",
+        a: "Sí. Cada profesional y cada sede tiene su horario y sus servicios, y la disponibilidad se calcula cruzando ambos para que no se ofrezca un bloque imposible.",
+      },
+      {
+        q: "¿Se integra con Google Calendar?",
+        a: "Se puede. Es habitual sincronizar la agenda para que quien atiende vea sus citas donde ya trabaja, sin duplicar el registro en dos sitios.",
+      },
+    ],
+    related: [
+      { label: "Software a medida", href: "/desarrollo-de-software-a-medida", desc: "Desarrollamos el sistema alrededor de tu forma de trabajar." },
+      { label: "Sistema de gestión (ERP / CRM)", href: "/sistemas/gestion-erp-crm", desc: "Cuando la reserva es solo una parte de la operación." },
+      { label: "Qué debe tener la web de una clínica en Perú", href: "/blog/pagina-web-para-clinicas-y-consultorios-medicos", desc: "El caso donde la reserva en línea más se nota." },
+    ],
+  },
+  {
+    slug: "crm-a-medida-vs-crm-enlatado",
+    title: "CRM a medida o enlatado: cuál conviene a tu pyme",
+    h1: "CRM a medida vs CRM enlatado: cuál conviene a tu pyme",
+    description:
+      "Diferencias reales entre un CRM enlatado y uno a medida para una pyme peruana: costo por usuario, adaptación a tu proceso de venta y cuándo conviene cada uno.",
+    excerpt:
+      "El CRM que nadie usa es el más caro de todos. Cómo elegir entre uno enlatado y uno hecho a tu proceso.",
+    datePublished: "2026-08-12",
+    dateModified: "2026-08-12",
+    category: "Software",
+    readingMin: 7,
+    intro:
+      "Un CRM enlatado se activa en un día y te obliga a vender como él espera; uno a medida se construye sobre cómo vende tu equipo y es tuyo. La pregunta correcta no es cuál es mejor, sino cuánto de tu proceso comercial estás dispuesto a cambiar para encajar en una plantilla.",
+    sections: [
+      {
+        h2: "Qué problema resuelve un CRM, en concreto",
+        bullets: [
+          "Que el seguimiento no dependa de la memoria ni del celular de un vendedor.",
+          "Que sepas en qué etapa está cada oportunidad y hace cuánto no se la toca.",
+          "Que al irse alguien del equipo, sus clientes y sus conversaciones se queden en la empresa.",
+          "Que puedas responder con datos por qué se ganó o se perdió una venta.",
+          "Que la cotización enviada, el correo y la llamada vivan en el mismo lugar que el contacto.",
+        ],
+      },
+      {
+        h2: "Dónde gana el enlatado",
+        body:
+          "Si tu proceso de venta es estándar —contacto, cotización, seguimiento, cierre— y tu equipo es pequeño, un CRM de mercado es la opción sensata: arranca rápido, no requiere desarrollo y trae integraciones listas. El costo entra por suscripción mensual, normalmente por usuario, y las funciones avanzadas suelen estar en los planes altos.",
+      },
+      {
+        h2: "Dónde gana el a medida",
+        bullets: [
+          "Cuando tu proceso comercial es justo lo que te diferencia y el enlatado te obliga a renunciar a él.",
+          "Cuando la venta depende de datos que ningún CRM genérico tiene: metraje, ficha técnica, historial de servicio, saldo de la obra.",
+          "Cuando el equipo crece y el precio por usuario se convierte en el gasto que más sube sin que tú vendas más.",
+          "Cuando necesitas que el CRM converse con tu facturación, tu inventario o tu tienda, y esa integración solo existe en el plan más caro.",
+          "Cuando tus datos de clientes son un activo y no quieres que vivan en una plataforma que puede cambiar reglas o precios.",
+        ],
+      },
+      {
+        h2: "El costo que no aparece en la comparación",
+        body:
+          "El CRM más caro es el que el equipo no usa. Cualquiera de los dos caminos fracasa igual si el vendedor tiene que registrar a mano lo que ya escribió en WhatsApp. Por eso la pregunta técnica que más define el resultado no es 'qué funciones tiene', sino 'cuántos clics le cuesta a mi vendedor dejar registrada una gestión'. Un sistema propio puede optimizar justo ese paso; uno enlatado, solo hasta donde su plantilla lo permita.",
+      },
+      {
+        h2: "Un camino intermedio que funciona",
+        body:
+          "No hay que elegir el día uno. Muchas pymes arrancan con un CRM de mercado para ordenar lo básico y, cuando el proceso ya está claro y el costo por usuario empieza a doler, migran a un sistema propio que replica lo que sí funcionó y arregla lo que estorbaba. Llegar a ese punto con el proceso probado es lo que hace barato el desarrollo a medida: se construye sobre certezas, no sobre supuestos.",
+      },
+      {
+        h2: "Cómo lo abordamos",
+        body:
+          "Levantamos el proceso con quien vende, no solo con la gerencia; definimos el alcance por escrito; desarrollamos por módulos con entregas revisables y migramos los contactos que ya tienes. El detalle está en [sistema de gestión (ERP / CRM)](/sistemas/gestion-erp-crm), y la comparación general entre ambos enfoques, en [software a medida vs software enlatado](/blog/software-a-medida-vs-software-enlatado).",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Un CRM a medida sale más caro?",
+        a: "Al inicio sí, porque se paga el desarrollo. La comparación honesta es contra la suscripción mensual por usuario a varios años, incluyendo el plan que necesitas para las integraciones. Con equipos que crecen, el punto de equilibrio suele llegar antes de lo que se cree.",
+      },
+      {
+        q: "¿Puedo migrar mis contactos del CRM que uso hoy?",
+        a: "Sí. Se exporta lo que tengas, se limpian duplicados y se carga al sistema nuevo con su historial, para arrancar con datos reales.",
+      },
+      {
+        q: "¿El CRM puede registrar lo que pasa en WhatsApp?",
+        a: "Se puede integrar para que la gestión quede registrada sin que el vendedor la copie a mano, que es la principal causa de que un CRM se abandone.",
+      },
+      {
+        q: "¿Conviene empezar por el CRM o por el ERP?",
+        a: "Por donde hoy pierdes dinero de forma medible. Si se te enfrían clientes, por el CRM; si el descuadre está en stock o en facturación, por ahí. Empezar por todo a la vez es la forma más común de no terminar nada.",
+      },
+    ],
+    related: [
+      { label: "Sistema de gestión (ERP / CRM)", href: "/sistemas/gestion-erp-crm", desc: "Desarrollamos el CRM alrededor de tu proceso de venta." },
+      { label: "Software a medida vs software enlatado", href: "/blog/software-a-medida-vs-software-enlatado", desc: "La comparación completa, más allá del CRM." },
+      { label: "Sistema de gestión para pymes: cuándo dejar el Excel", href: "/blog/sistema-de-gestion-para-pymes-cuando-dejar-el-excel", desc: "Las señales de que la hoja de cálculo ya no da más." },
+    ],
+  },
+  {
+    slug: "sistema-de-punto-de-venta-pos-a-medida",
+    title: "Sistema de punto de venta (POS) a medida",
+    h1: "Sistema de punto de venta (POS) a medida para tu negocio",
+    description:
+      "Qué debe tener un punto de venta en Perú: cobro rápido, pago combinado con Yape y tarjeta, comprobantes SUNAT, cierre de caja y stock conectado.",
+    excerpt:
+      "Un POS se juzga en la hora punta. Qué debe resolver, qué exige SUNAT y cuándo conviene uno hecho a tu medida.",
+    datePublished: "2026-08-12",
+    dateModified: "2026-08-12",
+    category: "Software",
+    readingMin: 7,
+    intro:
+      "Un punto de venta se mide por una sola cosa: cuántos segundos tarda en cobrar cuando hay cola. Todo lo demás —reportes, stock, comprobantes— importa, pero si la pantalla de cobro es lenta o confusa, el equipo termina anotando en papel y el sistema deja de servir.",
+    sections: [
+      {
+        h2: "Qué tiene que resolver la pantalla de cobro",
+        bullets: [
+          "Buscar el producto por código, por nombre o con lector de código de barras, sin cambiar de pantalla.",
+          "Aceptar pago combinado: parte en efectivo, parte con Yape o Plin y parte con tarjeta, en la misma venta.",
+          "Aplicar descuentos con la autorización de quien corresponda, y dejar registro de quién lo autorizó.",
+          "Emitir boleta o factura electrónica en el momento, con consulta de DNI o RUC para no tipear.",
+          "Funcionar con el teclado, sin depender del mouse: en caja, cada clic cuesta.",
+        ],
+      },
+      {
+        h2: "Lo que exige SUNAT y dónde se complica",
+        body:
+          "Emitir comprobantes electrónicos es obligatorio para la mayoría de negocios, y la parte que suele fallar no es emitir: es todo lo que viene alrededor. Series y numeración correlativa por caja sin saltos, notas de crédito para anulaciones y devoluciones, y el respaldo de los XML y CDR de cada comprobante, que es lo que se pide en una fiscalización. Cuando esto vive en un portal aparte del sistema de ventas, alguien termina cuadrando dos fuentes a fin de mes. El detalle está en [facturación electrónica SUNAT](/blog/facturacion-electronica-sunat-para-tu-tienda-online).",
+      },
+      {
+        h2: "El cierre de caja, que es donde aparecen los problemas",
+        body:
+          "Un buen cierre no es un total: es la comparación entre lo que el sistema registró y lo que el cajero contó, separado por medio de pago, con la diferencia documentada y firmada. Ese solo reporte resuelve la mayoría de las discusiones internas y es la razón por la que muchos negocios ordenan la caja antes que cualquier otra cosa.",
+      },
+      {
+        h2: "Conectado con el stock, o no sirve",
+        body:
+          "Un POS que no descuenta inventario obliga a llevar dos verdades. Al conectarlo, cada venta actualiza el stock, la reposición deja de ser una corazonada y el inventario físico deja de ser un día perdido. Si vendes además en línea, el stock tiene que ser el mismo para tienda y web; esa es la causa más común de vender lo que ya no existe. Lo abordamos en el [sistema de inventario](/sistemas/inventario).",
+      },
+      {
+        h2: "Qué pasa si se cae el internet",
+        body:
+          "Es la pregunta que hay que hacer antes de comprar cualquier sistema, no después del primer corte. La respuesta razonable es que la venta se registre igual y el comprobante electrónico se envíe cuando vuelva la conexión, con la operación identificada para que nada se duplique. Definirlo antes de desarrollar evita el escenario peor: una caja detenida con clientes esperando.",
+      },
+      {
+        h2: "Enlatado o a medida",
+        body:
+          "Para un negocio de mostrador con productos simples, un POS de mercado cumple. El desarrollo a medida se justifica cuando tu venta tiene reglas propias —combos, precios por tipo de cliente, venta al crédito, varias sedes con precios distintos, servicios además de productos— o cuando necesitas que la caja converse con el resto de tus sistemas. Puedes ver el enfoque en [sistema de ventas y facturación](/sistemas/ventas-y-facturacion).",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿El POS puede emitir boletas y facturas electrónicas?",
+        a: "Sí, integrándolo con un proveedor de facturación electrónica. La emisión ocurre dentro del mismo flujo de la venta, sin pasar por un portal aparte.",
+      },
+      {
+        q: "¿Necesito comprar hardware especial?",
+        a: "No necesariamente. Al ser un sistema web funciona desde una computadora o tablet con navegador; el lector de códigos y la impresora térmica se suman según cómo trabajes.",
+      },
+      {
+        q: "¿Sirve para varias cajas y varias sedes?",
+        a: "Sí. Cada caja tiene su propia serie y su propio cierre, y los reportes se consolidan por sede y por empresa.",
+      },
+      {
+        q: "¿Puede vender al crédito o a cuenta corriente?",
+        a: "Sí, si tu negocio lo necesita. Es justamente el tipo de regla que los sistemas de mercado suelen no cubrir bien y que se resuelve en un desarrollo a medida.",
+      },
+    ],
+    related: [
+      { label: "Sistema de ventas y facturación", href: "/sistemas/ventas-y-facturacion", desc: "Vende, factura y cuadra la caja en un solo flujo." },
+      { label: "Sistema de inventario", href: "/sistemas/inventario", desc: "Para que cada venta descuente stock de verdad." },
+      { label: "Facturación electrónica SUNAT", href: "/blog/facturacion-electronica-sunat-para-tu-tienda-online", desc: "Qué exige SUNAT y cómo integrarlo sin trabajo doble." },
+    ],
+  },
+  {
+    slug: "landing-page-para-google-ads",
+    title: "Landing page para Google Ads: la clave del retorno",
+    h1: "Landing page para Google Ads: lo que casi nadie optimiza",
+    description:
+      "Por qué enviar tus campañas de Google Ads a la home desperdicia presupuesto y cómo debe ser la landing page que convierte el clic pagado en cliente.",
+    excerpt:
+      "Pagas por cada clic y lo mandas a una página que no responde lo que se buscó. Ahí se va la mitad del presupuesto.",
+    datePublished: "2026-08-12",
+    dateModified: "2026-08-12",
+    category: "Marketing",
+    readingMin: 7,
+    intro:
+      "En Google Ads pagas por el clic aunque el visitante se vaya en dos segundos. La landing es el único tramo del embudo donde puedes mejorar el resultado sin subir la inversión, y es justamente el que casi nadie toca: la mayoría de campañas siguen apuntando a la home.",
+    sections: [
+      {
+        h2: "Por qué la home es una mala landing",
+        body:
+          "La home está hecha para presentar la empresa entera: tiene menú, varios servicios y muchas salidas. Quien buscó una cosa concreta y hace clic en tu anuncio llega ahí y tiene que volver a buscar. Cada opción extra es una oportunidad de irse. Una landing hace lo contrario: repite la promesa del anuncio, la desarrolla y ofrece una sola acción.",
+      },
+      {
+        h2: "La regla que más rendimiento devuelve",
+        body:
+          "Lo que se buscó, lo que dice el anuncio y lo que se lee al llegar tienen que ser la misma cosa. Si el término fue 'sistema de inventario para ferretería' y la landing habla de 'soluciones tecnológicas integrales', el visitante no reconoce su problema y se va. Esa coherencia además influye en lo que Google cobra por cada clic: una página que responde a la búsqueda mejora la experiencia medida y tiende a abaratar la campaña.",
+      },
+      {
+        h2: "Qué debe tener la página, en orden",
+        bullets: [
+          "Un titular que repita literalmente lo que se buscó, no un eslogan.",
+          "Una frase que diga qué obtiene y en cuánto tiempo, sin adjetivos.",
+          "La acción principal visible sin bajar: formulario corto o botón de WhatsApp.",
+          "Prueba: casos, logos, reseñas reales o datos verificables. Sin esto, todo lo anterior es promesa.",
+          "Las tres objeciones que siempre aparecen, respondidas: precio, plazo y qué pasa después.",
+          "Un solo camino. Sin menú completo ni enlaces que lleven a explorar el resto del sitio.",
+        ],
+      },
+      {
+        h2: "El formulario: cada campo cuesta contactos",
+        body:
+          "Pide lo mínimo para poder responder. En Perú, teléfono y nombre suelen bastar, y el resto se pregunta en la conversación. Cada campo adicional reduce el número de envíos, y campos como 'rubro' o 'presupuesto estimado' filtran menos de lo que cuestan. Si necesitas calificar, hazlo con una pregunta de opción múltiple, no con un texto libre.",
+      },
+      {
+        h2: "Velocidad y móvil, que es donde llega el clic",
+        body:
+          "La mayor parte del tráfico pagado en Perú llega desde el celular. Una landing pesada convierte peor por una razón simple: la gente se va antes de verla. Imágenes livianas, nada de animaciones que retrasen el contenido y el botón de acción al alcance del pulgar. Es la diferencia entre pagar por un clic y comprar una visita real.",
+      },
+      {
+        h2: "Sin medición, no hay optimización",
+        body:
+          "Hay que registrar como conversión el envío del formulario, el clic a WhatsApp y la llamada, y llevarlo a Google Ads. Sin eso, la campaña optimiza hacia clics baratos en vez de hacia clientes, que es el error más caro y más común. El detalle de cómo estructurar la cuenta está en [cómo estructurar una campaña de Google Ads](/blog/como-estructurar-una-campana-de-google-ads-para-servicios), y lo que hay que excluir, en [palabras clave negativas](/blog/palabras-clave-negativas-en-google-ads). Si prefieres que lo llevemos nosotros, revisa nuestro servicio de [Google Ads](/google-ads).",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Cuál es la diferencia entre una landing page y una página web?",
+        a: "La página web presenta a la empresa y tiene muchas salidas; la landing persigue una sola acción y quita todo lo que distraiga. Está desarrollado en [diferencia entre página web y landing page](/blog/diferencia-entre-pagina-web-y-landing-page).",
+      },
+      {
+        q: "¿Necesito una landing por cada campaña?",
+        a: "Una por cada intención de búsqueda distinta. Si vendes tres servicios muy diferentes, tres landings rinden mucho más que una genérica para todos.",
+      },
+      {
+        q: "¿La landing mejora el costo por clic?",
+        a: "Puede hacerlo. Google evalúa la experiencia de la página de destino y su relevancia respecto a la búsqueda; una página coherente y rápida tiende a mejorar esa evaluación y a abaratar el clic.",
+      },
+      {
+        q: "¿Sirve mandar el tráfico de Ads a WhatsApp directamente?",
+        a: "Funciona para captar, pero pierdes la posibilidad de explicar y de medir. Lo habitual es una landing corta con el botón de WhatsApp como acción principal: capturas el contacto y además sabes qué campaña lo trajo.",
+      },
+    ],
+    related: [
+      { label: "Google Ads", href: "/google-ads", desc: "Gestionamos campañas orientadas a clientes, no a clics." },
+      { label: "Diferencia entre página web y landing page", href: "/blog/diferencia-entre-pagina-web-y-landing-page", desc: "Cuál necesitas según lo que quieras conseguir." },
+      { label: "Google Ads para pymes en Perú: cuánto invertir", href: "/blog/google-ads-para-pymes-en-peru-cuanto-invertir", desc: "Qué presupuesto tiene sentido para empezar." },
     ],
   },
 ];

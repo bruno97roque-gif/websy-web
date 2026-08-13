@@ -85,14 +85,14 @@ export const SERVICE_SITEMAP: SitemapEntry[] = [
   { path: "/diseno-de-paginas-web", priority: 0.9, lastModified: "2026-08-11" },
   { path: "/desarrollo-de-software-a-medida", priority: 0.8, lastModified: "2026-08-11" },
   // Silo de software por tipo de sistema (hijas de /desarrollo-de-software-a-medida).
-  { path: "/sistemas/inventario", priority: 0.8, lastModified: "2026-08-11" },
-  { path: "/sistemas/ventas-y-facturacion", priority: 0.8, lastModified: "2026-08-11" },
-  { path: "/sistemas/gestion-erp-crm", priority: 0.8, lastModified: "2026-08-11" },
+  { path: "/sistemas/inventario", priority: 0.8, lastModified: "2026-08-12" },
+  { path: "/sistemas/ventas-y-facturacion", priority: 0.8, lastModified: "2026-08-12" },
+  { path: "/sistemas/gestion-erp-crm", priority: 0.8, lastModified: "2026-08-12" },
   { path: "/precios", priority: 0.9, lastModified: "2026-08-11" },
   { path: "/cotizacion", priority: 0.8, lastModified: "2026-07-31" },
   // Nuevos pilares de servicio.
   { path: "/seo", priority: 0.9, lastModified: "2026-08-11" },
-  { path: "/google-ads", priority: 0.9, lastModified: "2026-08-11" },
+  { path: "/google-ads", priority: 0.9, lastModified: "2026-08-12" },
   { path: "/branding", priority: 0.9, lastModified: "2026-07-31" },
   { path: "/mantenimiento-web", priority: 0.9, lastModified: "2026-07-31" },
   // Silo de diseño web por rubro (hijas de /diseno-de-paginas-web).
@@ -108,7 +108,7 @@ export const SERVICE_SITEMAP: SitemapEntry[] = [
 /** Páginas fijas (institucionales). Misma regla de `lastModified` que arriba. */
 export const FIXED_SITEMAP: SitemapEntry[] = [
   { path: "", priority: 1, lastModified: "2026-08-11" },
-  { path: "/servicios", priority: 0.7, lastModified: "2026-08-11" },
+  { path: "/servicios", priority: 0.7, lastModified: "2026-08-12" },
   { path: "/nosotros", priority: 0.6, lastModified: "2026-07-31" },
   { path: "/contacto", priority: 0.6, lastModified: "2026-08-11" },
   { path: "/blog", priority: 0.7, lastModified: "2026-08-11", changeFrequency: "weekly" },
