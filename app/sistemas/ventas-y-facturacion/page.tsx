@@ -54,6 +54,46 @@ export default function SistemaVentasFacturacionPage() {
             "Acceso web desde caja, oficina o de manera remota.",
           ],
         },
+        {
+          h2: "Qué exige SUNAT y qué resuelve el sistema",
+          body:
+            "En Perú, emitir comprobantes electrónicos no es opcional para la mayoría de empresas, y el problema rara vez es la norma: es el trabajo doble. Se vende en un sistema, se factura en el portal del proveedor y alguien cuadra los dos a fin de mes. Al integrar la emisión dentro del mismo flujo de venta, el comprobante sale en el momento y con los datos correctos.",
+          bullets: [
+            "Boletas y facturas electrónicas emitidas desde la misma pantalla de venta.",
+            "Notas de crédito y de débito para anulaciones y devoluciones, sin rehacer la venta.",
+            "Series y numeración correlativa por sede o por caja, sin saltos.",
+            "Consulta de RUC y DNI para completar los datos del cliente sin tipear.",
+            "Respaldo de los XML y CDR de cada comprobante, que es lo que se te pedirá en una fiscalización.",
+            "Reporte de ventas por periodo, listo para entregar a tu contador.",
+          ],
+        },
+        {
+          h2: "Cómo se comporta cuando hay cola en caja",
+          body:
+            "Un sistema de ventas se juzga en la hora punta. Por eso se diseña para que la operación más frecuente —cobrar— se haga con el mínimo de pasos: búsqueda por código, por nombre o por lector de código de barras; cobro combinado en efectivo, tarjeta, Yape o Plin en la misma venta; y cierre de caja que compara lo registrado con lo contado en físico y deja la diferencia documentada. Si el internet se cae, la caja no debería detenerse: definimos contigo qué operaciones siguen disponibles y cómo se sincronizan al volver la conexión.",
+        },
+        {
+          h2: "Cómo es el proceso de desarrollo",
+          body:
+            "Primero se mapea cómo cobras hoy, incluidos los casos raros que nadie documenta: la venta al crédito, el descuento que autoriza el dueño, la devolución del cliente frecuente. Luego se define el alcance por escrito, se desarrolla por módulos con avances revisables, se integra la facturación electrónica con tu proveedor y se capacita a cajeros y administración antes de salir en vivo. Si además necesitas ordenar el stock, conviene verlo junto con el [sistema de inventario](/sistemas/inventario); si lo que buscas es ordenar clientes y procesos, mira el [sistema de gestión ERP o CRM](/sistemas/gestion-erp-crm).",
+        },
+      ]}
+      articles={[
+        {
+          label: "Facturación electrónica SUNAT para tu tienda online",
+          href: "/blog/facturacion-electronica-sunat-para-tu-tienda-online",
+          desc: "Boleta o factura, qué exige SUNAT y cómo integrarla sin trabajo doble.",
+        },
+        {
+          label: "Cuándo una empresa necesita un sistema web",
+          href: "/blog/cuando-una-empresa-necesita-un-sistema-web",
+          desc: "Las señales de que tu operación ya no cabe en hojas de cálculo.",
+        },
+        {
+          label: "Cuánto cuesta un software a medida en Perú",
+          href: "/blog/cuanto-cuesta-un-software-a-medida-en-peru",
+          desc: "Qué define el precio de un sistema y cómo se estructura la inversión.",
+        },
       ]}
       related={[
         { label: "Software a medida", href: "/desarrollo-de-software-a-medida", desc: "Vuelve al pilar y mira todos los sistemas que desarrollamos." },
@@ -71,6 +111,18 @@ export default function SistemaVentasFacturacionPage() {
         {
           q: "¿Sirve para varias sedes o cajas?",
           a: "Sí. Maneja varias cajas y sedes con usuarios y permisos, y te consolida los reportes.",
+        },
+        {
+          q: "¿Puedo cobrar con Yape, Plin y tarjeta en la misma venta?",
+          a: "Sí. La venta admite pago combinado: una parte en efectivo, otra con Yape o Plin y otra con tarjeta, y el cierre de caja los separa por medio de pago para que cuadres sin calculadora.",
+        },
+        {
+          q: "¿Qué pasa si se cae el internet en plena venta?",
+          a: "Se define contigo antes de desarrollar. Lo habitual es que la venta se registre igual y el comprobante electrónico se envíe en cuanto vuelve la conexión, para que la caja no se detenga.",
+        },
+        {
+          q: "¿Puedo seguir usando mi proveedor de facturación electrónica actual?",
+          a: "Sí, si expone una API. Nos integramos con el proveedor que ya tienes contratado; si aún no tienes uno, te explicamos las opciones y sus diferencias antes de decidir.",
         },
       ]}
       serviceName="Sistema de ventas y facturación"
