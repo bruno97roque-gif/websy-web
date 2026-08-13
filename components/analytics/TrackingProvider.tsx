@@ -45,7 +45,31 @@ const TERCEROS = /googletagmanager\.com|google-analytics\.com|_vercel\/(insights
 
 /** Elementos que SÍ son interactivos: un clic aquí nunca es un clic muerto. */
 const INTERACTIVOS =
-  "a[href], button, [role='button'], input, select, textarea, label, details, summary, [onclick], [data-track-location]";
+  "a[href], button, [role='button'], input, select, textarea, label, details, summary, [onclick], [data-clickable], [data-track-location]";
+
+/**
+ * Cursores que delatan un elemento pensado para pulsarse.
+ *
+ * Hace falta porque `[onclick]` del selector de arriba solo casa con el
+ * ATRIBUTO HTML, y React nunca lo escribe: engancha el listener en la raíz del
+ * árbol. Resultado: cualquier `<div onClick={…}>` —la galería de /nosotros, el
+ * carrusel de la home— se contaba como clic muerto aunque funcionara
+ * perfectamente, y la métrica dejaba de servir para decidir nada.
+ */
+const CURSORES_PULSABLES = new Set(["pointer", "grab", "grabbing", "zoom-in", "zoom-out"]);
+
+/** ¿El elemento o alguno de sus padres cercanos se comporta como pulsable? */
+function pareceInteractivo(el: Element | null): boolean {
+  let n: Element | null = el;
+  for (let i = 0; n && i < 5; i += 1, n = n.parentElement) {
+    try {
+      if (CURSORES_PULSABLES.has(getComputedStyle(n).cursor)) return true;
+    } catch {
+      /* getComputedStyle falla en nodos ya desconectados del documento */
+    }
+  }
+  return false;
+}
 
 /** Texto corto y limpio de un elemento, para saber QUÉ se pulsó. */
 function labelOf(el: Element | null): string {
@@ -201,6 +225,7 @@ export default function TrackingProvider() {
 
       /* 1.c — Clics muertos: parecía pulsable y no lo era */
       if (target.closest(INTERACTIVOS)) return;
+      if (pareceInteractivo(target)) return;
       const ahora = Date.now();
       const mismo = ultimoClic.current.el === target && ahora - ultimoClic.current.t < 2000;
       ultimoClic.current = { el: target, n: mismo ? ultimoClic.current.n + 1 : 1, t: ahora };

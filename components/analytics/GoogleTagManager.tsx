@@ -1,4 +1,4 @@
-import { GTM_CONTAINER_ID, USES_GTM } from "@/lib/analytics";
+import { GTM_CONTAINER_ID, MEDICION_FORZADA, USES_GTM } from "@/lib/analytics";
 
 /**
  * Contenedor de Google Tag Manager, instalado como manda Google:
@@ -29,11 +29,13 @@ gtag('consent','default',{
   functionality_storage:'granted',
   security_storage:'granted'
 });
+if(${MEDICION_FORZADA ? "true" : "/(^|\\.)websy\\.com\\.pe$/.test(location.hostname)"}){
 (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','${GTM_CONTAINER_ID}');`.trim();
+})(window,document,'script','dataLayer','${GTM_CONTAINER_ID}');
+}`.trim();
 
   return <script id="gtm-init" dangerouslySetInnerHTML={{ __html: codigo }} />;
 }
