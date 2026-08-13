@@ -14,6 +14,7 @@ import { speakablePageSchema } from "@/lib/schema";
 const QuienesSomos    = dynamic(() => import("@/components/sections/home/QuienesSomos"));
 const ServicesSection = dynamic(() => import("@/components/sections/home/ServicesSection"));
 const ClientsSection  = dynamic(() => import("@/components/sections/home/ClientsSection"));
+const QueHacemos      = dynamic(() => import("@/components/sections/home/QueHacemos"));
 
 export default function HomePage() {
   return (
@@ -91,6 +92,7 @@ export default function HomePage() {
 
       <QuienesSomos />
       <ServicesSection />
+      <QueHacemos />
       <ClientsSection />
     </>
   );

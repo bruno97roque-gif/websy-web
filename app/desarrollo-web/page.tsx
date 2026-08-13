@@ -72,6 +72,23 @@ export default function DesarrolloWebPage() {
           body:
             "De nada sirve una web bonita que nadie encuentra. Por eso todo lo que desarrollamos sale optimizado para buscadores: estructura correcta de títulos y encabezados, velocidad de carga, versión móvil impecable y contenido pensado para lo que tu cliente busca en Google. Si además quieres trabajar el posicionamiento de forma continua o acelerar con publicidad, el mismo equipo gestiona tu SEO y tus campañas de Google Ads.",
         },
+        {
+          h2: "Una agencia de desarrollo web en Lima, con clientes en todo el Perú",
+          body:
+            "Trabajamos desde Lima y atendemos proyectos en todo el país. En la práctica, la reunión inicial y el seguimiento se hacen por videollamada y WhatsApp, así que da igual si estás en San Isidro, en Arequipa o en Piura: el proceso es el mismo y no encarece el proyecto. Lo que sí cambia cuando el cliente es peruano son las integraciones que damos por sentadas y que una agencia de fuera suele cobrar aparte:",
+          bullets: [
+            "Pagos locales: Yape, Plin, Niubiz, Izipay, Culqi y Mercado Pago.",
+            "Facturación electrónica válida para SUNAT, con boletas, facturas y notas de crédito.",
+            "Envíos con los couriers que se usan aquí y cálculo de tarifa por distrito.",
+            "WhatsApp como canal principal de contacto, medido para saber cuántos leads trae.",
+            "Contenido y SEO en el español que se busca en Perú, no en un neutro que nadie escribe.",
+          ],
+        },
+        {
+          h2: "Qué te llevas al terminar el proyecto",
+          body:
+            "Esto es lo que más conviene preguntar antes de contratar a cualquiera, porque es donde se nota la diferencia meses después. Con nosotros el dominio y el hosting quedan a tu nombre, no al de la agencia; la web es administrable por ti, así que cambiar un texto o subir un producto no depende de que alguien te conteste; recibes capacitación grabada del panel; y el alcance, los plazos y lo que incluye cada etapa van por escrito desde el inicio. Si estás comparando proveedores, la lista completa de qué revisar está en [cómo elegir una agencia de desarrollo web en Perú](/blog/como-elegir-una-agencia-de-desarrollo-web-en-peru).",
+        },
       ]}
       related={[
         { label: "Diseño de páginas web", href: "/diseno-de-paginas-web", desc: "Webs corporativas profesionales, administrables y optimizadas." },
