@@ -1,7 +1,7 @@
 import Link from "next/link";
 import JsonLd from "@/components/seo/JsonLd";
 import { blogPostingSchema, breadcrumbSchema, faqPageSchema, howToSchema, BLOG_AUTHOR } from "@/lib/schema";
-import { SITE_URL } from "@/lib/seo";
+import { SITE_URL, ogUrl } from "@/lib/seo";
 import type { BlogPost } from "@/lib/blog";
 import ArticleView from "@/components/analytics/ArticleView";
 
@@ -96,6 +96,7 @@ export default function ArticleLayout({ post }: { post: BlogPost }) {
       description: post.description,
       datePublished: post.datePublished,
       dateModified: post.dateModified,
+      image: `${SITE_URL}${ogUrl(post.title, post.category)}`,
     }),
     breadcrumbSchema([
       { name: "Inicio", path: "/" },
@@ -170,6 +171,24 @@ export default function ArticleLayout({ post }: { post: BlogPost }) {
       </section>
 
       <div style={{ height: 4, background: `linear-gradient(90deg, ${ORANGE} 0%, #e07010 100%)` }} />
+
+      {/* PORTADA — imagen propia del artículo, generada con su título.
+          Ningún artículo tenía imagen: las que cargaban eran el logo y la
+          interfaz. Sin portada no hay Discover ni miniatura en el resultado
+          móvil, y la tarjeta al compartir era siempre la misma. */}
+      <figure style={{ margin: 0, padding: "40px 24px 0" }}>
+        <div style={{ maxWidth: 760, margin: "0 auto" }}>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={ogUrl(post.title, post.category)}
+            alt={post.h1}
+            width={1200}
+            height={630}
+            loading="eager"
+            style={{ width: "100%", height: "auto", borderRadius: 16, display: "block" }}
+          />
+        </div>
+      </figure>
 
       {/* CUERPO */}
       <article data-track-location="blog_cuerpo" style={{ padding: "52px 24px 24px" }}>
