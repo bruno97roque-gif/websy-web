@@ -5,7 +5,7 @@ import { contactPageSchema } from "@/lib/schema";
 
 export const metadata: Metadata = pageMeta({
   path: "/contacto",
-  title: "Contacto — Websy, agencia web en Lima",
+  title: "Contacto: agencia web en Lima, Perú",
   description:
     "Contacta con Websy, agencia de desarrollo web en Lima, Perú. WhatsApp +51 940 549 322, ventas@websy.com.pe. Respondemos en menos de 24 horas, de lunes a viernes.",
 });

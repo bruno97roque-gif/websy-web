@@ -4,7 +4,7 @@ import ServiceLanding from "@/components/sections/landing/ServiceLanding";
 
 export const metadata: Metadata = pageMeta({
   path: "/diseno-de-paginas-web/abogados",
-  title: "Páginas web para abogados y estudios jurídicos en Perú",
+  title: "Páginas web para abogados y estudios en Perú",
   description:
     "Diseño de páginas web para abogados y estudios jurídicos en Perú: áreas de práctica, casos, confianza profesional, captación de clientes y SEO local.",
 });

@@ -54,6 +54,53 @@ export default function SistemaInventarioPage() {
             "Usuarios con permisos por rol (almacén, ventas, gerencia).",
           ],
         },
+        {
+          h2: "Cuándo tu negocio ya necesita dejar el Excel",
+          body:
+            "No todas las empresas necesitan un sistema desde el primer día. La señal de que llegó el momento no es el tamaño, sino la frecuencia con la que el stock del papel deja de coincidir con el del almacén. Si te reconoces en dos o más de estas situaciones, el Excel ya te está costando dinero:",
+          bullets: [
+            "Vendes un producto y al ir a despacharlo descubres que no queda.",
+            "Dos personas editan el mismo archivo y ninguna sabe cuál es la versión buena.",
+            "Haces inventario físico y el descuadre te toma un día entero de explicar.",
+            "Compras de más 'por si acaso' porque nadie confía en el número que aparece.",
+            "Manejas más de un almacén o un punto de venta y los cuadras a mano.",
+            "Necesitas saber cuánto vale tu inventario y tienes que armarlo desde cero cada vez.",
+          ],
+        },
+        {
+          h2: "Qué información te entrega el día a día",
+          body:
+            "Un sistema de inventario no sirve solo para registrar: sirve para decidir. Estos son los datos que deja a la mano y que en una hoja de cálculo cuesta días reconstruir.",
+          bullets: [
+            "Kardex por producto: cada entrada, salida y ajuste, con fecha, motivo y responsable.",
+            "Rotación: qué se mueve, qué está parado y desde cuándo, para no volver a comprarlo.",
+            "Valorización del inventario a la fecha, para tu contabilidad y para saber cuánto tienes inmovilizado.",
+            "Stock mínimo y punto de reposición por producto, con aviso antes de quedarte sin nada.",
+            "Trazabilidad por lote o serie, cuando el rubro lo exige (alimentos, farmacia, repuestos).",
+          ],
+        },
+        {
+          h2: "Cómo es el proceso de desarrollo",
+          body:
+            "Un sistema a medida se construye sobre cómo trabaja tu empresa, así que el trabajo empieza mirando el proceso real, no un catálogo de funciones. El orden que seguimos es siempre el mismo: primero entendemos cómo entra y sale la mercadería hoy —incluidos los atajos que usa el equipo—, luego definimos el alcance por escrito, después desarrollamos por módulos para que puedas ver avances y corregir a tiempo, y al final migramos tu stock actual y capacitamos a quien lo va a usar. Puedes ver el detalle en [cómo se cotiza y planifica un software a medida](/desarrollo-de-software-a-medida) y, si tu caso empieza por la facturación, en el [sistema de ventas y facturación](/sistemas/ventas-y-facturacion).",
+        },
+      ]}
+      articles={[
+        {
+          label: "Cómo controlar el inventario en una tienda online",
+          href: "/blog/como-controlar-inventario-en-una-tienda-online",
+          desc: "Por qué el stock se descuadra cuando vendes por varios canales y cómo evitarlo.",
+        },
+        {
+          label: "Sistema de gestión para pymes: cuándo dejar el Excel",
+          href: "/blog/sistema-de-gestion-para-pymes-cuando-dejar-el-excel",
+          desc: "Las señales de que tu hoja de cálculo ya te está costando plata.",
+        },
+        {
+          label: "Cuánto cuesta un software a medida en Perú",
+          href: "/blog/cuanto-cuesta-un-software-a-medida-en-peru",
+          desc: "Qué define el precio de un sistema y cómo se estructura la inversión.",
+        },
       ]}
       related={[
         { label: "Software a medida", href: "/desarrollo-de-software-a-medida", desc: "Vuelve al pilar y mira todos los sistemas que desarrollamos." },
@@ -71,6 +118,18 @@ export default function SistemaInventarioPage() {
         {
           q: "¿Necesito instalar algo?",
           a: "No. Es un sistema web: accedes desde el navegador en computadora, tablet o celular, sin instalar programas.",
+        },
+        {
+          q: "¿Puedo migrar el inventario que ya tengo en Excel?",
+          a: "Sí, y es parte del trabajo. Tomamos tu hoja de cálculo actual, ordenamos los productos, corregimos duplicados y cargamos el stock inicial para que arranques con datos reales y no desde cero.",
+        },
+        {
+          q: "¿Qué pasa si mañana cambia mi forma de trabajar?",
+          a: "Al ser a medida, el sistema se modifica. Si abres una sede, agregas una línea de productos o cambias el flujo de despacho, se ajusta el módulo correspondiente sin rehacer todo.",
+        },
+        {
+          q: "¿Quién puede ver y modificar el stock?",
+          a: "Los que tú decidas. Se crean usuarios con permisos por rol: almacén registra movimientos, ventas solo consulta disponibilidad y gerencia ve los reportes. Cada movimiento queda registrado con su responsable.",
         },
       ]}
       serviceName="Sistema de inventario y control de stock"

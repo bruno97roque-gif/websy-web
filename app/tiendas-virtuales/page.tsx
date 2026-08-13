@@ -6,7 +6,7 @@ export const metadata: Metadata = pageMeta({
   path: "/tiendas-virtuales",
   title: "Desarrollo de Tiendas Virtuales en Perú",
   description:
-    "Desarrollo y diseño de tiendas virtuales para empresas en Lima y todo el Perú. Ecommerce autoadministrable con pasarela de pago (Yape, Plin, Niubiz, Izipay) y control de stock.",
+    "Desarrollo de tiendas virtuales para empresas en Lima y todo el Perú. Ecommerce autoadministrable con Yape, Plin, Niubiz e Izipay y control de stock.",
 });
 
 export default function TiendasVirtualesPage() {

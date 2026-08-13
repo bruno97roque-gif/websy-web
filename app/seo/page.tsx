@@ -4,7 +4,7 @@ import ServiceLanding from "@/components/sections/landing/ServiceLanding";
 
 export const metadata: Metadata = pageMeta({
   path: "/seo",
-  title: "Servicio de SEO en Perú: posicionamiento web en Google",
+  title: "Servicio de SEO en Perú: posicionamiento web",
   description:
     "Servicio de SEO y posicionamiento web en Perú: SEO on-page, técnico, de contenidos y local para aparecer en Google, atraer clientes y crecer de forma sostenida.",
 });

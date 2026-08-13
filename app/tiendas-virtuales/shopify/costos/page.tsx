@@ -6,7 +6,7 @@ export const metadata: Metadata = pageMeta({
   path: "/tiendas-virtuales/shopify/costos",
   title: "Cuánto cuesta una tienda Shopify en Perú (2026)",
   description:
-    "¿Cuánto cuesta una tienda Shopify en Perú? Qué define el precio, plan mensual de Shopify vs desarrollo, qué incluye cada nivel, rangos referenciales y costos recurrentes. Cotiza gratis en 24 h.",
+    "¿Cuánto cuesta una tienda Shopify en Perú? Qué define el precio, plan mensual de Shopify frente al desarrollo y qué costos recurrentes se suman cada mes.",
 });
 
 export default function CostosShopifyPage() {

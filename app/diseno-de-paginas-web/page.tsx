@@ -6,7 +6,7 @@ export const metadata: Metadata = pageMeta({
   path: "/diseno-de-paginas-web",
   title: "Diseño de Páginas Web en Lima, Perú",
   description:
-    "Diseño y desarrollo de páginas web para empresas en Lima y Perú. Páginas web profesionales, administrables, responsive y optimizadas para SEO, con hosting, dominio y WhatsApp.",
+    "Diseño y desarrollo de páginas web para empresas en Lima y Perú: profesionales, administrables, responsive y optimizadas para SEO. Cotiza gratis en 24 h.",
 });
 
 export default function DisenoPaginasWebPage() {

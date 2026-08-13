@@ -4,7 +4,7 @@ import ServiceLanding from "@/components/sections/landing/ServiceLanding";
 
 export const metadata: Metadata = pageMeta({
   path: "/diseno-de-paginas-web/inmobiliarias",
-  title: "Páginas web para inmobiliarias y constructoras en Perú",
+  title: "Páginas web para inmobiliarias en Perú",
   description:
     "Diseño de páginas web para inmobiliarias y constructoras en Perú: catálogo de propiedades y proyectos, filtros de búsqueda, captación de leads y SEO.",
 });

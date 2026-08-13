@@ -113,11 +113,35 @@ function clean(params: EventParams): EventParams {
 ───────────────────────────────────────────────────────────── */
 
 /**
+ * Solo se mide el sitio de verdad.
+ *
+ * Cada despliegue de prueba de Vercel vive en su propio subdominio
+ * (`websy-xxxx-….vercel.app`) y hasta ahora enviaba sesiones a la misma
+ * propiedad de GA4 que producción, así que los informes contaban visitas que
+ * no eran de nadie. Con esto, previsualizaciones y `localhost` dejan de
+ * ensuciar el dato.
+ *
+ * Para depurar la medición en un entorno de pruebas, basta con poner
+ * NEXT_PUBLIC_MEDICION_FORZAR=1 en ese despliegue.
+ */
+export const MEDICION_FORZADA = process.env.NEXT_PUBLIC_MEDICION_FORZAR === "1";
+
+/** Host de producción (con o sin www). Cualquier otro no se mide. */
+export const HOST_MEDIDO = /(^|\.)websy\.com\.pe$/;
+
+export function medicionActiva(): boolean {
+  if (MEDICION_FORZADA) return true;
+  if (typeof window === "undefined") return false;
+  return HOST_MEDIDO.test(window.location.hostname);
+}
+
+/**
  * Registra un evento. Va siempre al dataLayer (GTM) y, mientras no haya
  * contenedor de GTM, también por gtag.js directo a GA4.
  */
 export function trackEvent(name: string, params: EventParams = {}): void {
   if (typeof window === "undefined") return;
+  if (!medicionActiva()) return;
   const payload = clean({ ...pageContext(), ...params });
 
   try {
