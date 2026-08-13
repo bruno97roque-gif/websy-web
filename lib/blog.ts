@@ -226,6 +226,8 @@ export const BLOG_POSTS: BlogPost[] = [
     related: [
       { label: "Desarrollo de tiendas virtuales", href: "/tiendas-virtuales", desc: "Mira todo lo que incluye nuestro servicio de ecommerce." },
       { label: "Cotiza tu tienda virtual", href: "/cotizacion", desc: "Recibe un presupuesto a tu medida en menos de 24 horas." },
+      { label: "Ventajas de WooCommerce para negocios en Perú", href: "/blog/ventajas-de-woocommerce-para-negocios", desc: "Por qué muchos negocios eligen WooCommerce: control total, sin mensualidad de plataforma y listo para…" },
+      { label: "Facturación electrónica SUNAT en tu tienda online", href: "/blog/facturacion-electronica-sunat-para-tu-tienda-online", desc: "Qué es la facturación electrónica SUNAT, boleta vs factura y cómo integrarla a tu tienda online para…" },
     ],
   },
 
@@ -285,6 +287,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Desarrollo de tiendas virtuales", href: "/tiendas-virtuales", desc: "Nosotros la creamos por ti, lista para vender." },
       { label: "Tiendas Shopify", href: "/tiendas-virtuales/shopify", desc: "Lanza rápido con la plataforma líder." },
       { label: "Tiendas WooCommerce", href: "/tiendas-virtuales/woocommerce", desc: "Tu tienda en WordPress, 100% tuya." },
+      { label: "Cómo vender por WhatsApp desde tu tienda virtual", href: "/blog/como-vender-por-whatsapp-desde-tu-tienda-virtual", desc: "El canal que más convierte en Perú es WhatsApp." },
     ],
   },
 
@@ -340,6 +343,9 @@ export const BLOG_POSTS: BlogPost[] = [
     related: [
       { label: "Tiendas Shopify", href: "/tiendas-virtuales/shopify", desc: "Desarrollo y migración sobre Shopify." },
       { label: "Tiendas WooCommerce", href: "/tiendas-virtuales/woocommerce", desc: "Tu tienda sobre WordPress, sin mensualidad." },
+      { label: "SEO para tiendas online: fichas y categorías", href: "/blog/como-posicionar-tu-tienda-online-en-google-peru", desc: "Tu tienda online no vende si nadie la encuentra." },
+      { label: "Cuánto cuesta una tienda virtual en Perú (2026)", href: "/blog/cuanto-cuesta-una-tienda-virtual-en-peru", desc: "Qué define realmente el precio de una tienda virtual en Perú y cómo saber cuánto invertir según tu…" },
+      { label: "Cuánto cobra Shopify al mes en Perú (2026)", href: "/blog/cuanto-cuesta-una-tienda-en-shopify", desc: "El plan mensual es solo una parte. Esto es lo que realmente compone el costo de una tienda Shopify." },
     ],
   },
 
@@ -391,6 +397,9 @@ export const BLOG_POSTS: BlogPost[] = [
     related: [
       { label: "Desarrollo de tiendas virtuales", href: "/tiendas-virtuales", desc: "Tienda con pagos Yape, Plin, Niubiz e Izipay." },
       { label: "Cotiza tu tienda", href: "/cotizacion", desc: "Te ayudamos a elegir e integrar tus pasarelas." },
+      { label: "SEO para tiendas online: fichas y categorías", href: "/blog/como-posicionar-tu-tienda-online-en-google-peru", desc: "Tu tienda online no vende si nadie la encuentra." },
+      { label: "Qué necesita una tienda virtual para vender", href: "/blog/que-necesita-una-tienda-virtual-para-vender", desc: "No basta con subir productos. Estos son los elementos que separan una tienda que vende de una que solo…" },
+      { label: "Cuánto cobra Shopify al mes en Perú (2026)", href: "/blog/cuanto-cuesta-una-tienda-en-shopify", desc: "El plan mensual es solo una parte. Esto es lo que realmente compone el costo de una tienda Shopify." },
     ],
   },
 
@@ -471,7 +480,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Una web es inversión, no gasto",
         body:
-          "La pregunta no es solo cuánto cuesta, sino cuántos clientes te puede traer. Una web pensada para captar contactos se paga sola; una hecha solo 'para tenerla' rara vez genera retorno. Mira todo lo que incluye nuestro [diseño de páginas web](/diseno-de-paginas-web) y cómo estructuramos la inversión en [precios](/precios).",
+          "La pregunta no es solo cuánto cuesta, sino cuántos clientes te puede traer. Una web pensada para captar contactos se paga sola; una hecha solo 'para tenerla' rara vez genera retorno. Mira todo lo que incluye nuestro [diseño de páginas web](/diseno-de-paginas-web) y cómo estructuramos la inversión en [precios](/precios). Si prefieres hablarlo antes de pedir número, escríbenos desde [contacto](/contacto).",
       },
     ],
     faqs: [
@@ -487,6 +496,8 @@ export const BLOG_POSTS: BlogPost[] = [
     related: [
       { label: "Diseño de páginas web", href: "/diseno-de-paginas-web", desc: "Webs profesionales optimizadas para captar clientes." },
       { label: "Cotiza tu página web", href: "/cotizacion", desc: "Presupuesto a tu medida en menos de 24 horas." },
+      { label: "¿Cuánto tiempo toma hacer una página web?", href: "/blog/cuanto-tiempo-toma-hacer-una-pagina-web", desc: "Plazos reales para crear una página web en Perú según su tipo y complejidad, y cómo evitar que tu…" },
+      { label: "Diferencia entre página web y landing page", href: "/blog/diferencia-entre-pagina-web-y-landing-page", desc: "Qué distingue a una página web de una landing page y cómo elegir la indicada para tu negocio o campaña." },
     ],
   },
 
@@ -537,6 +548,9 @@ export const BLOG_POSTS: BlogPost[] = [
     related: [
       { label: "Desarrollo de tiendas virtuales", href: "/tiendas-virtuales", desc: "Tiendas optimizadas para SEO desde el inicio." },
       { label: "Diseño de páginas web", href: "/diseno-de-paginas-web", desc: "Webs rápidas y listas para posicionar." },
+      { label: "Dar de alta tu web en Search Console e indexarla", href: "/blog/como-hacer-que-tu-pagina-web-aparezca-en-google-peru", desc: "Tu web está en línea pero no aparece en Google." },
+      { label: "Cómo elegir una agencia de desarrollo web en Perú", href: "/blog/como-elegir-una-agencia-de-desarrollo-web-en-peru", desc: "Guía honesta para elegir una agencia de desarrollo web en Perú sin terminar amarrado ni perder tu…" },
+      { label: "Migrar tu web sin perder posicionamiento", href: "/blog/como-migrar-tu-pagina-web-sin-perder-posicionamiento-en-google", desc: "Rediseñar o cambiar de web puede hundir tu tráfico si se hace mal." },
     ],
   },
 
@@ -587,6 +601,8 @@ export const BLOG_POSTS: BlogPost[] = [
     related: [
       { label: "Software a medida", href: "/desarrollo-de-software-a-medida", desc: "Sistemas que automatizan tu operación." },
       { label: "Diseño de páginas web", href: "/diseno-de-paginas-web", desc: "La presencia online que capta tus clientes." },
+      { label: "Cuánto cuesta una aplicación móvil en Perú", href: "/blog/cuanto-cuesta-una-aplicacion-movil-en-peru", desc: "El precio de una app depende de plataformas, funciones, backend e integraciones; un MVP bien planeado…" },
+      { label: "Cuánto cuesta un software a medida en Perú (2026)", href: "/blog/cuanto-cuesta-un-software-a-medida-en-peru", desc: "El precio de un software a medida no es un número fijo. Esto es lo que realmente define cuánto invertir." },
     ],
   },
   {
@@ -638,6 +654,8 @@ export const BLOG_POSTS: BlogPost[] = [
     related: [
       { label: "Desarrollo de tiendas virtuales", href: "/tiendas-virtuales", desc: "Una tienda lista para vender, no a medio armar." },
       { label: "Pasarelas de pago en Perú", href: "/blog/pasarelas-de-pago-para-ecommerce-en-peru", desc: "Cómo aceptar Yape, Plin y tarjetas." },
+      { label: "Cómo controlar el inventario en una tienda online", href: "/blog/como-controlar-inventario-en-una-tienda-online", desc: "Vender lo que no tienes ahuyenta clientes. Así se controla bien el stock de una tienda online." },
+      { label: "Cómo vender por WhatsApp desde tu tienda virtual", href: "/blog/como-vender-por-whatsapp-desde-tu-tienda-virtual", desc: "El canal que más convierte en Perú es WhatsApp." },
     ],
   },
 
@@ -683,6 +701,8 @@ export const BLOG_POSTS: BlogPost[] = [
     related: [
       { label: "Desarrollo de tiendas virtuales", href: "/tiendas-virtuales", desc: "Empieza a vender online con una tienda a tu medida." },
       { label: "Página web o tienda virtual", href: "/blog/pagina-web-o-tienda-virtual", desc: "¿Cuál necesitas primero? Te ayudamos a decidir." },
+      { label: "Cómo controlar el inventario en una tienda online", href: "/blog/como-controlar-inventario-en-una-tienda-online", desc: "Vender lo que no tienes ahuyenta clientes. Así se controla bien el stock de una tienda online." },
+      { label: "Tienda virtual vs Mercado Libre: ¿cuál conviene?", href: "/blog/tienda-virtual-vs-marketplace-conviene-vender-en-mercadolibre", desc: "Mercado Libre te da alcance pero se queda con tu comisión y tu cliente." },
     ],
   },
 
@@ -733,6 +753,9 @@ export const BLOG_POSTS: BlogPost[] = [
     related: [
       { label: "Agencia Shopify Perú", href: "/tiendas-virtuales/shopify", desc: "Desarrollamos y migramos tu tienda Shopify." },
       { label: "Shopify vs WooCommerce", href: "/blog/shopify-vs-woocommerce", desc: "Compara antes de decidir tu plataforma." },
+      { label: "Cuánto cuesta una tienda virtual en Perú (2026)", href: "/blog/cuanto-cuesta-una-tienda-virtual-en-peru", desc: "Qué define realmente el precio de una tienda virtual en Perú y cómo saber cuánto invertir según tu…" },
+      { label: "Qué necesita una tienda virtual para vender", href: "/blog/que-necesita-una-tienda-virtual-para-vender", desc: "No basta con subir productos. Estos son los elementos que separan una tienda que vende de una que solo…" },
+      { label: "Ventajas de WooCommerce para negocios en Perú", href: "/blog/ventajas-de-woocommerce-para-negocios", desc: "Por qué muchos negocios eligen WooCommerce: control total, sin mensualidad de plataforma y listo para…" },
     ],
   },
 
@@ -778,6 +801,8 @@ export const BLOG_POSTS: BlogPost[] = [
     related: [
       { label: "Desarrollo WooCommerce Perú", href: "/tiendas-virtuales/woocommerce", desc: "Tu tienda sobre WordPress, 100% tuya." },
       { label: "Shopify vs WooCommerce", href: "/blog/shopify-vs-woocommerce", desc: "Compara las dos plataformas líderes." },
+      { label: "Tienda virtual para vender ropa en Perú", href: "/blog/tienda-virtual-para-vender-ropa", desc: "Vender ropa online tiene sus reglas: tallas, fotos y devoluciones." },
+      { label: "Tienda virtual vs Mercado Libre: ¿cuál conviene?", href: "/blog/tienda-virtual-vs-marketplace-conviene-vender-en-mercadolibre", desc: "Mercado Libre te da alcance pero se queda con tu comisión y tu cliente." },
     ],
   },
 
@@ -825,6 +850,8 @@ export const BLOG_POSTS: BlogPost[] = [
     related: [
       { label: "Software a medida", href: "/desarrollo-de-software-a-medida", desc: "Sistemas que automatizan tu operación." },
       { label: "Web, sistema y software: diferencias", href: "/blog/pagina-web-sistema-web-y-software-a-medida", desc: "Entiende qué necesitas exactamente." },
+      { label: "Cuánto cuesta una aplicación móvil en Perú", href: "/blog/cuanto-cuesta-una-aplicacion-movil-en-peru", desc: "El precio de una app depende de plataformas, funciones, backend e integraciones; un MVP bien planeado…" },
+      { label: "Cuánto cuesta un software a medida en Perú (2026)", href: "/blog/cuanto-cuesta-un-software-a-medida-en-peru", desc: "El precio de un software a medida no es un número fijo. Esto es lo que realmente define cuánto invertir." },
     ],
   },
 
@@ -870,6 +897,8 @@ export const BLOG_POSTS: BlogPost[] = [
     related: [
       { label: "Software a medida", href: "/desarrollo-de-software-a-medida", desc: "Sistemas de inventario y stock en tiempo real, hechos a tu medida." },
       { label: "Desarrollo de tiendas virtuales", href: "/tiendas-virtuales", desc: "Tiendas con control de stock integrado." },
+      { label: "Tienda virtual para vender ropa en Perú", href: "/blog/tienda-virtual-para-vender-ropa", desc: "Vender ropa online tiene sus reglas: tallas, fotos y devoluciones." },
+      { label: "Shopify para pymes en Perú: ¿vale la pena? (2026)", href: "/blog/shopify-para-pymes-en-peru-vale-la-pena", desc: "Si tienes una pyme y evalúas Shopify, esto es lo que debes sopesar antes de invertir: pros, costos y…" },
     ],
   },
 
@@ -919,6 +948,8 @@ export const BLOG_POSTS: BlogPost[] = [
     related: [
       { label: "Desarrollo de tiendas virtuales", href: "/tiendas-virtuales", desc: "Tu tienda de moda lista para vender." },
       { label: "Cómo crear una tienda virtual", href: "/blog/como-crear-una-tienda-virtual-en-peru", desc: "La guía paso a paso para empezar." },
+      { label: "Facturación electrónica SUNAT en tu tienda online", href: "/blog/facturacion-electronica-sunat-para-tu-tienda-online", desc: "Qué es la facturación electrónica SUNAT, boleta vs factura y cómo integrarla a tu tienda online para…" },
+      { label: "Shopify para pymes en Perú: ¿vale la pena? (2026)", href: "/blog/shopify-para-pymes-en-peru-vale-la-pena", desc: "Si tienes una pyme y evalúas Shopify, esto es lo que debes sopesar antes de invertir: pros, costos y…" },
     ],
   },
   {
@@ -1019,7 +1050,8 @@ export const BLOG_POSTS: BlogPost[] = [
         label: "Solicita tu cotización",
         href: "/cotizacion",
         desc: "Cuéntanos tu proyecto y recibe un cronograma con plazos claros."
-      }
+      },
+      { label: "Diferencia entre página web y landing page", href: "/blog/diferencia-entre-pagina-web-y-landing-page", desc: "Qué distingue a una página web de una landing page y cómo elegir la indicada para tu negocio o campaña." },
     ]
   },
   {
@@ -1117,7 +1149,8 @@ export const BLOG_POSTS: BlogPost[] = [
         label: "Solicita tu cotización",
         href: "/cotizacion",
         desc: "Te ayudamos a elegir entre web y landing según tu campaña."
-      }
+      },
+      { label: "¿Cuánto tiempo toma hacer una página web?", href: "/blog/cuanto-tiempo-toma-hacer-una-pagina-web", desc: "Plazos reales para crear una página web en Perú según su tipo y complejidad, y cómo evitar que tu…" },
     ]
   },
   {
@@ -1174,7 +1207,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         h2: "Cómo trabaja Websy",
-        body: "En Websy buscamos que el cliente quede dueño de su proyecto. Como [agencia de desarrollo web en Lima](/desarrollo-web), entregamos páginas web y tiendas virtuales autoadministrables, con alcance y cronograma definidos desde el inicio, y dejamos el dominio y los accesos a tu nombre. Acompañamos después del lanzamiento y dejamos la web lista para SEO y para integraciones útiles en Perú como WhatsApp, facturación electrónica SUNAT y pasarelas de pago. Si estás evaluando opciones, conversemos sin compromiso."
+        body: "En Websy buscamos que el cliente quede dueño de su proyecto. Como [agencia de desarrollo web en Lima](/desarrollo-web), entregamos páginas web y tiendas virtuales autoadministrables, con alcance y cronograma definidos desde el inicio, y dejamos el dominio y los accesos a tu nombre. Acompañamos después del lanzamiento y dejamos la web lista para SEO y para integraciones útiles en Perú como WhatsApp, facturación electrónica SUNAT y pasarelas de pago. Si estás evaluando opciones, conversemos sin compromiso: en [contacto](/contacto) están el teléfono, el correo y el horario de atención."
       }
     ],
     faqs: [
@@ -1338,7 +1371,8 @@ export const BLOG_POSTS: BlogPost[] = [
         label: "Cotiza tu proyecto",
         href: "/cotizacion",
         desc: "Cuéntanos tu idea y recibe una estimación clara para tu app."
-      }
+      },
+      { label: "Cómo automatizar los procesos de tu empresa", href: "/blog/como-automatizar-los-procesos-de-tu-empresa", desc: "Si tu equipo pierde horas en tareas manuales y errores de Excel, es momento de automatizar." },
     ]
   },
   {
@@ -1454,7 +1488,8 @@ export const BLOG_POSTS: BlogPost[] = [
         label: "Cotiza tu sistema a medida",
         href: "/cotizacion",
         desc: "Cuéntanos tus procesos y te decimos qué solución te conviene."
-      }
+      },
+      { label: "Cómo automatizar los procesos de tu empresa", href: "/blog/como-automatizar-los-procesos-de-tu-empresa", desc: "Si tu equipo pierde horas en tareas manuales y errores de Excel, es momento de automatizar." },
     ]
   },
   {
@@ -1677,7 +1712,8 @@ export const BLOG_POSTS: BlogPost[] = [
         label: "Cotiza tu proyecto",
         href: "/cotizacion",
         desc: "Cuéntanos tu caso y te orientamos sin compromiso."
-      }
+      },
+      { label: "Errores comunes al crear una tienda Shopify", href: "/blog/errores-comunes-al-crear-una-tienda-shopify", desc: "Estos errores hunden las ventas de muchas tiendas Shopify. Detéctalos a tiempo y evita perder clientes." },
     ]
   },
   {
@@ -1857,7 +1893,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         h2: "Errores comunes y cómo Websy te ayuda",
-        body: "Muchos negocios pierden clientes por errores evitables: categoría mal elegida, datos inconsistentes, ficha sin verificar o sin fotos, y una web que no acompaña. En Websy diseñamos páginas web pensadas para el SEO local: con tu NAP consistente, contenido orientado a tu zona y la coherencia que tu ficha necesita para posicionar. Si quieres que tu negocio destaque en el mapa de Google, cuéntanos tu caso y lo cotizamos.",
+        body: "Muchos negocios pierden clientes por errores evitables: categoría mal elegida, datos inconsistentes, ficha sin verificar o sin fotos, y una web que no acompaña. En Websy diseñamos páginas web pensadas para el SEO local: con tu NAP consistente, contenido orientado a tu zona y la coherencia que tu ficha necesita para posicionar. Si quieres que tu negocio destaque en el mapa de Google, cuéntanos tu caso desde [contacto](/contacto) y lo cotizamos, o revisa primero nuestro [servicio de SEO local en Perú](/seo).",
         bullets: [
           "Categoría equivocada que te hace aparecer en búsquedas que no son tuyas.",
           "NAP inconsistente entre ficha, web y directorios.",
@@ -1907,7 +1943,9 @@ export const BLOG_POSTS: BlogPost[] = [
         label: "Cotiza tu página web",
         href: "/cotizacion",
         desc: "Te ayudamos a destacar en el mapa de Google."
-      }
+      },
+      { label: "Cómo elegir una agencia de desarrollo web en Perú", href: "/blog/como-elegir-una-agencia-de-desarrollo-web-en-peru", desc: "Guía honesta para elegir una agencia de desarrollo web en Perú sin terminar amarrado ni perder tu…" },
+      { label: "SEO local en Perú: salir primero en tu ciudad", href: "/blog/seo-local-en-peru-como-salir-primero-en-tu-ciudad", desc: "La mayoría busca servicios 'cerca de mí'. Así logras que tu negocio aparezca primero en tu ciudad o…" },
     ]
   },
 
@@ -2005,6 +2043,8 @@ export const BLOG_POSTS: BlogPost[] = [
         href: "/precios",
         desc: "Qué entra en una web pensada para posicionar.",
       },
+      { label: "Dar de alta tu web en Search Console e indexarla", href: "/blog/como-hacer-que-tu-pagina-web-aparezca-en-google-peru", desc: "Tu web está en línea pero no aparece en Google." },
+      { label: "SEO on-page: la checklist para tu página web (2026)", href: "/blog/seo-on-page-checklist-para-tu-pagina-web", desc: "El SEO on-page es lo que sí controlas de tu web. Esta checklist cubre lo esencial para posicionar mejor." },
     ],
   },
 
@@ -2094,6 +2134,7 @@ export const BLOG_POSTS: BlogPost[] = [
         href: "/cotizacion",
         desc: "Te la entregamos lista para vender.",
       },
+      { label: "Errores comunes al crear una tienda Shopify", href: "/blog/errores-comunes-al-crear-una-tienda-shopify", desc: "Estos errores hunden las ventas de muchas tiendas Shopify. Detéctalos a tiempo y evita perder clientes." },
     ],
   },
 
@@ -2269,6 +2310,8 @@ export const BLOG_POSTS: BlogPost[] = [
         href: "/precios",
         desc: "Qué incluye la web de un restaurante.",
       },
+      { label: "Página web para estudios de abogados en Perú", href: "/blog/pagina-web-para-estudios-de-abogados", desc: "Un cliente con un problema legal busca y elige rápido." },
+      { label: "Página web para hoteles y hospedajes en Perú", href: "/blog/pagina-web-para-hoteles-y-hospedajes-en-peru", desc: "Booking se queda con una comisión de cada reserva." },
     ],
   },
 
@@ -2357,6 +2400,8 @@ export const BLOG_POSTS: BlogPost[] = [
         href: "/cotizacion",
         desc: "Propuesta a tu medida en menos de 24 horas.",
       },
+      { label: "SEO local en Perú: salir primero en tu ciudad", href: "/blog/seo-local-en-peru-como-salir-primero-en-tu-ciudad", desc: "La mayoría busca servicios 'cerca de mí'. Así logras que tu negocio aparezca primero en tu ciudad o…" },
+      { label: "Palabras clave negativas en Google Ads", href: "/blog/palabras-clave-negativas-en-google-ads", desc: "Cada clic que no te sirve es plata perdida. Las palabras clave negativas son el freno que casi nadie…" },
     ],
   },
 
@@ -2429,6 +2474,8 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Diseño de páginas web para negocios", href: "/diseno-de-paginas-web", desc: "Webs que transmiten confianza y captan pacientes." },
       { label: "Cómo aparecer en Google", href: "/blog/como-aparecer-en-google-con-tu-pagina-web", desc: "SEO local para que te encuentren en tu ciudad." },
       { label: "Ver precios y cotizar", href: "/precios", desc: "Qué incluye la web de una clínica o consultorio." },
+      { label: "Página web para restaurantes en Perú", href: "/blog/pagina-web-para-restaurantes-en-peru", desc: "Deja de pagar comisiones altas por cada pedido: una web propia con carta digital y pedidos directos." },
+      { label: "Qué debe tener la web de un colegio en Perú", href: "/blog/pagina-web-para-colegios-e-instituciones-educativas-en-peru", desc: "Los padres investigan el colegio en internet antes de matricular." },
     ],
   },
 
@@ -2502,6 +2549,8 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Diseño de páginas web profesionales", href: "/diseno-de-paginas-web", desc: "Webs que proyectan autoridad y captan consultas." },
       { label: "Cómo aparecer en Google", href: "/blog/como-aparecer-en-google-con-tu-pagina-web", desc: "SEO para que te encuentren clientes con intención." },
       { label: "Ver precios y cotizar", href: "/precios", desc: "Qué incluye la web de un estudio de abogados." },
+      { label: "Página web para restaurantes en Perú", href: "/blog/pagina-web-para-restaurantes-en-peru", desc: "Deja de pagar comisiones altas por cada pedido: una web propia con carta digital y pedidos directos." },
+      { label: "Qué debe tener la web de un colegio en Perú", href: "/blog/pagina-web-para-colegios-e-instituciones-educativas-en-peru", desc: "Los padres investigan el colegio en internet antes de matricular." },
     ],
   },
 
@@ -2575,6 +2624,8 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Diseño de páginas web profesionales", href: "/diseno-de-paginas-web", desc: "Vitrina de proyectos que capta leads calificados." },
       { label: "Software y CRM a medida", href: "/desarrollo-de-software-a-medida", desc: "Gestiona tus leads y propiedades sin perder ninguno." },
       { label: "Ver precios y cotizar", href: "/precios", desc: "Qué incluye la web de una inmobiliaria o constructora." },
+      { label: "Página web para estudios de abogados en Perú", href: "/blog/pagina-web-para-estudios-de-abogados", desc: "Un cliente con un problema legal busca y elige rápido." },
+      { label: "Página web para dentistas y clínicas dentales", href: "/blog/pagina-web-para-dentistas-y-clinicas-dentales-en-peru", desc: "Los pacientes eligen a su dentista por internet. Así debe ser la web de un consultorio o clínica dental." },
     ],
   },
 
@@ -2806,6 +2857,8 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Diseño de páginas web para gimnasios", href: "/diseno-de-paginas-web/gimnasios", desc: "Webs que llenan tu gimnasio de socios." },
       { label: "Software para control de membresías", href: "/desarrollo-de-software-a-medida", desc: "Membresías, vencimientos y pagos ordenados." },
       { label: "Ver precios y cotizar", href: "/precios", desc: "Qué incluye la web de un gimnasio." },
+      { label: "Página web para inmobiliarias y constructoras", href: "/blog/pagina-web-para-inmobiliarias-y-constructoras", desc: "Vender un inmueble empieza en Google. Tu web debe mostrar proyectos y capturar leads calificados." },
+      { label: "Página web para dentistas y clínicas dentales", href: "/blog/pagina-web-para-dentistas-y-clinicas-dentales-en-peru", desc: "Los pacientes eligen a su dentista por internet. Así debe ser la web de un consultorio o clínica dental." },
     ],
   },
 
@@ -2879,6 +2932,8 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Diseño de páginas web para hoteles", href: "/diseno-de-paginas-web/hoteles", desc: "Reservas directas, sin comisión de intermediarios." },
       { label: "Cómo aparecer en Google", href: "/blog/como-aparecer-en-google-con-tu-pagina-web", desc: "SEO local para captar viajeros de tu zona." },
       { label: "Ver precios y cotizar", href: "/precios", desc: "Qué incluye la web de un hotel." },
+      { label: "Página web para inmobiliarias y constructoras", href: "/blog/pagina-web-para-inmobiliarias-y-constructoras", desc: "Vender un inmueble empieza en Google. Tu web debe mostrar proyectos y capturar leads calificados." },
+      { label: "Web a medida vs plantilla (WordPress, Wix)", href: "/blog/pagina-web-a-medida-vs-plantilla-wordpress-wix", desc: "Una plantilla es rápida y barata; una web a medida es única y escalable." },
     ],
   },
 
@@ -2952,6 +3007,8 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Diseño de páginas web para colegios", href: "/diseno-de-paginas-web/colegios", desc: "Webs que captan matrículas y comunican con la comunidad." },
       { label: "Software a medida educativo", href: "/desarrollo-de-software-a-medida", desc: "Admisión, pagos y comunicación en un solo sistema." },
       { label: "Ver precios y cotizar", href: "/precios", desc: "Qué incluye la web de una institución educativa." },
+      { label: "Página web para gimnasios en Perú", href: "/blog/pagina-web-para-gimnasios-en-peru", desc: "Los nuevos socios te buscan en Google antes de entrar." },
+      { label: "Web a medida vs plantilla (WordPress, Wix)", href: "/blog/pagina-web-a-medida-vs-plantilla-wordpress-wix", desc: "Una plantilla es rápida y barata; una web a medida es única y escalable." },
     ],
   },
 
@@ -3176,6 +3233,8 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "SEO y posicionamiento web", href: "/seo", desc: "Posiciona tu negocio en Google de forma sostenible." },
       { label: "Google Ads vs SEO", href: "/blog/google-ads-vs-seo-cual-conviene-para-tu-negocio", desc: "Cuál conviene y por qué se complementan." },
       { label: "Cómo aparecer en Google", href: "/blog/como-aparecer-en-google-con-tu-pagina-web", desc: "Las bases para posicionar tu web." },
+      { label: "Migrar tu web sin perder posicionamiento", href: "/blog/como-migrar-tu-pagina-web-sin-perder-posicionamiento-en-google", desc: "Rediseñar o cambiar de web puede hundir tu tráfico si se hace mal." },
+      { label: "SEO on-page: la checklist para tu página web (2026)", href: "/blog/seo-on-page-checklist-para-tu-pagina-web", desc: "El SEO on-page es lo que sí controlas de tu web. Esta checklist cubre lo esencial para posicionar mejor." },
     ],
   },
 
@@ -3249,6 +3308,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Branding e identidad de marca", href: "/branding", desc: "Marca sólida que genera confianza y te diferencia." },
       { label: "Diseño de páginas web", href: "/diseno-de-paginas-web", desc: "Una web alineada con tu identidad de marca." },
       { label: "Cotiza tu proyecto", href: "/cotizacion", desc: "Branding y web como proyecto integrado." },
+      { label: "Manual de marca: qué es y qué incluye", href: "/blog/manual-de-marca-que-es-y-por-que-tu-negocio-lo-necesita", desc: "Un manual de marca evita que tu negocio se vea distinto en cada pieza." },
     ],
   },
 
@@ -3315,6 +3375,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Google Ads", href: "/google-ads", desc: "Clientes desde el primer día con campañas medidas." },
       { label: "SEO y posicionamiento", href: "/seo", desc: "Tráfico que crece y no depende de pagar por clic." },
       { label: "Google Ads para pymes", href: "/blog/google-ads-para-pymes-en-peru-cuanto-invertir", desc: "Cuánto invertir y cómo no botar la plata." },
+      { label: "Manual de marca: qué es y qué incluye", href: "/blog/manual-de-marca-que-es-y-por-que-tu-negocio-lo-necesita", desc: "Un manual de marca evita que tu negocio se vea distinto en cada pieza." },
     ],
   },
 
@@ -3917,6 +3978,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Branding e identidad de marca", href: "/branding", desc: "Identidad y manual de marca para verte profesional." },
       { label: "Qué es el branding", href: "/blog/que-es-el-branding-y-por-que-tu-pyme-lo-necesita", desc: "Por qué tu pyme necesita una marca sólida." },
       { label: "Cuánto cuesta un logo profesional", href: "/blog/cuanto-cuesta-un-logo-profesional-en-peru", desc: "Qué define el precio de un logo bien hecho." },
+      { label: "Palabras clave negativas en Google Ads", href: "/blog/palabras-clave-negativas-en-google-ads", desc: "Cada clic que no te sirve es plata perdida. Las palabras clave negativas son el freno que casi nadie…" },
     ],
   },
 
@@ -4063,6 +4125,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Diseño de páginas web para clínicas", href: "/diseno-de-paginas-web/clinicas", desc: "Webs de salud que generan confianza y captan citas." },
       { label: "Página web para clínicas y consultorios", href: "/blog/pagina-web-para-clinicas-y-consultorios-medicos", desc: "Buenas prácticas para webs del sector salud." },
       { label: "Ver precios y cotizar", href: "/precios", desc: "Qué incluye la web de una clínica dental." },
+      { label: "Página web para gimnasios en Perú", href: "/blog/pagina-web-para-gimnasios-en-peru", desc: "Los nuevos socios te buscan en Google antes de entrar." },
     ],
   },
 
@@ -4866,6 +4929,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Diseño de páginas web en Perú", href: "/diseno-de-paginas-web", desc: "Webs a medida, rápidas y pensadas para convertir." },
       { label: "Software a medida", href: "/desarrollo-de-software-a-medida", desc: "Cuando tu web necesita funciones a medida." },
       { label: "Cuánto cuesta una página web en Perú", href: "/blog/cuanto-cuesta-una-pagina-web-en-peru", desc: "Qué factores definen el precio de tu web." },
+      { label: "Página web para hoteles y hospedajes en Perú", href: "/blog/pagina-web-para-hoteles-y-hospedajes-en-peru", desc: "Booking se queda con una comisión de cada reserva." },
     ],
   },
   {
