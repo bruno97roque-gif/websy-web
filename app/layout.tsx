@@ -74,6 +74,9 @@ export const metadata: Metadata = {
   publisher: "Websy",
   alternates: {
     canonical: "/",
+    types: {
+      "application/rss+xml": [{ url: "/rss.xml", title: "Blog de Websy" }],
+    },
   },
   openGraph: {
     type: "website",
