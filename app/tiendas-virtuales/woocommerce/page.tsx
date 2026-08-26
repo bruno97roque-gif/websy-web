@@ -62,6 +62,8 @@ export default function WooCommercePage() {
       ]}
       articles={[
         { label: "Ventajas de WooCommerce para negocios", href: "/blog/ventajas-de-woocommerce-para-negocios", desc: "Por qué WooCommerce te da control total y costos más flexibles." },
+        { label: "Cómo cobrar con Izipay en tu web", href: "/blog/como-cobrar-con-izipay-en-tu-pagina-web", desc: "Enlace de pago o integración completa: cuál te conviene." },
+        { label: "Cómo conectar Niubiz paso a paso", href: "/blog/como-conectar-niubiz-a-tu-tienda-virtual", desc: "Afiliación, credenciales y pruebas antes de cobrar." },
         { label: "Shopify vs WooCommerce", href: "/blog/shopify-vs-woocommerce", desc: "Cuál conviene según tu negocio, presupuesto y forma de vender." },
       ]}
       faqs={[

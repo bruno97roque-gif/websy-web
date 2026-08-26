@@ -86,6 +86,8 @@ export default function MantenimientoWebPage() {
       articles={[
         { label: "Costos de mantenimiento de una página web", href: "/blog/costos-de-mantenimiento-de-una-pagina-web-en-peru", desc: "Hosting, seguridad y respaldos: qué incluye y por qué importa." },
         { label: "Cómo aparecer en Google con tu página web", href: "/blog/como-aparecer-en-google-con-tu-pagina-web", desc: "La velocidad y el buen mantenimiento también posicionan." },
+        { label: "Certificado SSL: qué es y por qué lo necesitas", href: "/blog/certificado-ssl-que-es-y-por-que-tu-web-lo-necesita", desc: "El candado del navegador y qué pasa cuando vence." },
+        { label: "Cómo elegir un hosting en Perú", href: "/blog/como-elegir-un-hosting-en-peru", desc: "Velocidad, respaldos y la letra pequeña de la renovación." },
         { label: "Cómo elegir una agencia de desarrollo web", href: "/blog/como-elegir-una-agencia-de-desarrollo-web-en-peru", desc: "Por qué el soporte post-lanzamiento es tan importante como el diseño." },
       ]}
       faqs={[

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { pageMeta } from "@/lib/seo";
+import JsonLd from "@/components/seo/JsonLd";
+import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = pageMeta({
   path: "/politicas-de-privacidad",
@@ -14,6 +16,7 @@ const UPDATED = "01 de marzo de 2025";
 export default function PoliticasPage() {
   return (
     <main style={{ backgroundColor: "#f8f5fc", minHeight: "100vh", paddingTop: 100 }}>
+      <JsonLd data={breadcrumbSchema([{ name: "Inicio", path: "/" }, { name: "Políticas de Privacidad", path: "/politicas-de-privacidad" }])} />
 
       {/* Header */}
       <div style={{ backgroundColor: "#291231", padding: "60px 32px" }}>

@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { ShimmerButton } from "@/components/ui/shimmer-button";
 
 interface CTABannerProps {
@@ -26,6 +26,19 @@ export default function CTABanner({
   buttonHref = "/servicios",
   className = "",
 }: CTABannerProps) {
+  // Este banner va en el layout, o sea en las 111 páginas. Antes montaba la
+  // maquetación de móvil Y la de escritorio a la vez, así que la animación se
+  // descargaba dos veces aunque el CSS escondiera una. Ahora solo se monta la
+  // que toca, con el mismo corte de 768px que usa el CSS.
+  const [anchura, setAnchura] = useState<"sinSaber" | "movil" | "escritorio">("sinSaber");
+  useEffect(() => {
+    const anchas = window.matchMedia("(min-width: 768px)");
+    const aplicar = () => setAnchura(anchas.matches ? "escritorio" : "movil");
+    aplicar();
+    anchas.addEventListener("change", aplicar);
+    return () => anchas.removeEventListener("change", aplicar);
+  }, []);
+
   const isExternal = buttonHref?.startsWith("http");
 
 
@@ -54,7 +67,7 @@ export default function CTABanner({
 
             {/* Alien */}
             <div style={{ flexShrink: 0, display: "flex", alignItems: "flex-end", paddingLeft: 140 }}>
-              {image ?? placeholder}
+              {anchura === "escritorio" ? (image ?? placeholder) : placeholder}
             </div>
 
             {/* Texto */}
@@ -120,7 +133,7 @@ export default function CTABanner({
             {/* Alien más pequeño */}
             <div style={{ display: "flex", justifyContent: "center", width: "100%" }}>
               <div style={{ width: 130 }}>
-                {image ?? placeholder}
+                {anchura === "movil" ? (image ?? placeholder) : placeholder}
               </div>
             </div>
 

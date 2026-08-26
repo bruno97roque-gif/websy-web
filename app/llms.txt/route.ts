@@ -34,6 +34,11 @@ const INSTITUCIONALES: { href: string; label: string; desc: string }[] = [
   { href: "/nosotros", label: "Nosotros", desc: "el equipo de Websy y cómo trabaja la agencia." },
   { href: "/contacto", label: "Contacto", desc: "teléfono, correo, horario y formulario de contacto." },
   { href: "/blog", label: "Blog", desc: "guías de ecommerce, web, software, SEO y pagos en Perú." },
+  {
+    href: "/cotizacion",
+    label: "Cotización",
+    desc: "formulario para pedir una cotización sin costo, con respuesta en menos de 24 horas.",
+  },
   { href: "/terminos", label: "Términos y condiciones", desc: "condiciones del servicio." },
   {
     href: "/politicas-de-privacidad",

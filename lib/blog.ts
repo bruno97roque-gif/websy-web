@@ -481,7 +481,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Qué debe incluir una web bien hecha",
         body:
-          "Diseño responsive, panel administrable para editar tú mismo, formulario y WhatsApp para recibir contactos, optimización SEO on-page, y hosting, dominio y certificado de seguridad. Esos dos últimos se pagan aparte y todos los años: tenemos los precios reales en soles en [cuánto cuesta un hosting y un dominio .pe en Perú](/blog/cuanto-cuesta-un-hosting-y-un-dominio-pe-en-peru). Una web que no incluye SEO ni es administrable suele salir 'barata' y costar caro después.",
+          "Diseño responsive, panel administrable para editar tú mismo, formulario y WhatsApp para recibir contactos, optimización SEO on-page, y hosting, dominio y [certificado de seguridad](/blog/certificado-ssl-que-es-y-por-que-tu-web-lo-necesita). Esos dos últimos se pagan aparte y todos los años: tenemos los precios reales en soles en [cuánto cuesta un hosting y un dominio .pe en Perú](/blog/cuanto-cuesta-un-hosting-y-un-dominio-pe-en-peru). Una web que no incluye SEO ni es administrable suele salir 'barata' y costar caro después.",
       },
       {
         h2: "Una web es inversión, no gasto",
@@ -2766,7 +2766,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "¿Necesito mantenimiento si mi web es simple?",
         body:
-          "Incluso una web sencilla necesita hosting, dominio y SSL vigentes, y respaldos por si acaso. Si es una web estática sin WordPress, el mantenimiento técnico es mínimo. Si tiene WordPress, formularios o una tienda, sí conviene un plan que mantenga todo al día. La regla simple: mientras más funciones y más movimiento tenga tu web, más importa mantenerla.",
+          "Incluso una web sencilla necesita hosting, dominio y [certificado SSL](/blog/certificado-ssl-que-es-y-por-que-tu-web-lo-necesita) vigentes, y respaldos por si acaso. Si es una web estática sin WordPress, el mantenimiento técnico es mínimo. Si tiene WordPress, formularios o una tienda, sí conviene un plan que mantenga todo al día. La regla simple: mientras más funciones y más movimiento tenga tu web, más importa mantenerla.",
       },
       {
         h2: "Mantenimiento y mejoras: no es lo mismo",
@@ -4060,7 +4060,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         q: "¿El hosting incluye el certificado de seguridad (SSL)?",
-        a: "Depende del proveedor y el plan. Muchos incluyen un SSL básico gratuito, suficiente para la mayoría de webs. Es indispensable tenerlo: sin SSL, el navegador marca tu sitio como 'no seguro'.",
+        a: "Depende del proveedor y el plan. Muchos incluyen un SSL básico gratuito, suficiente para la mayoría de webs. Es indispensable tenerlo: sin SSL, el navegador marca tu sitio como 'no seguro'. Lo explicamos entero en [qué es un certificado SSL y por qué tu web lo necesita](/blog/certificado-ssl-que-es-y-por-que-tu-web-lo-necesita).",
       },
       {
         q: "¿Ustedes se encargan del hosting y el dominio de mi web?",
@@ -5687,7 +5687,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "Qué mirar antes de contratar un hosting en Perú: velocidad, soporte real, respaldos, certificado SSL y los cobros que aparecen en la renovación.",
     excerpt:
       "El hosting barato sale caro cuando la web se cae un lunes de campaña. Esto es lo que hay que mirar antes de contratar.",
-    datePublished: "2026-08-18",
+    datePublished: "2026-08-26",
     category: "Web",
     readingMin: 7,
     intro:
@@ -5762,7 +5762,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "Cómo registrar un dominio .pe o .com.pe en Perú: dónde comprarlo, qué documentos piden, cuánto tarda y cómo apuntarlo a tu hosting.",
     excerpt:
       "Registrar un .pe tiene sus reglas propias. Aquí está el trámite completo, de la búsqueda del nombre a la web funcionando.",
-    datePublished: "2026-08-20",
+    datePublished: "2026-08-26",
     category: "Web",
     readingMin: 6,
     intro:
@@ -5781,7 +5781,7 @@ export const BLOG_POSTS: BlogPost[] = [
           ".com.pe — la más habitual para empresas peruanas. Deja claro que operas en Perú y transmite formalidad.",
           ".pe — más corta y moderna. Buena para marcas que quieren un nombre breve, aunque suele costar más.",
           ".com — la internacional. Tiene sentido si vendes fuera de Perú, pero es la más difícil de conseguir libre.",
-          ".org.pe / .net.pe — para organizaciones y proyectos sin fines de lucro; no las uses para una empresa comercial.",
+          ".org.pe — pensada para organizaciones sin fines de lucro. .net.pe es para empresas que prestan servicios de internet, y .nom.pe para personas a título individual. Ninguna encaja con una empresa comercial corriente.",
         ],
       },
       {
@@ -5802,7 +5802,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Qué hacer si el nombre que querías está ocupado",
         body:
-          "Antes de inventar un nombre raro con guiones o números, prueba variantes con sentido: sumar la ciudad, el rubro o una palabra corta que ya uses en tu marca. Evita los guiones y las cifras, porque se pierden cuando alguien dicta la dirección por teléfono. Y si el dominio está ocupado pero sin usar, a veces se puede comprar al titular, aunque el precio lo pone él.",
+          "Antes de inventar un nombre raro con guiones o números, prueba variantes con sentido: sumar la ciudad, el rubro o una palabra corta que ya uses en tu marca. Evita los guiones y las cifras, porque se pierden cuando alguien dicta la dirección por teléfono. Si el nombre te lo estás jugando junto con el resto de la identidad, conviene resolverlo a la vez que el [diseño de tu página web](/diseno-de-paginas-web). Y si el dominio está ocupado pero sin usar, a veces se puede comprar al titular, aunque el precio lo pone él.",
       },
     ],
     faqs: [
@@ -5838,7 +5838,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "Cómo afiliarte a Niubiz y conectarlo a tu tienda online en Perú: requisitos, credenciales, pruebas antes de salir a producción y errores frecuentes.",
     excerpt:
       "Afiliación, credenciales y pruebas: el camino completo para empezar a cobrar con tarjeta usando Niubiz.",
-    datePublished: "2026-08-21",
+    datePublished: "2026-08-26",
     category: "Pagos",
     readingMin: 7,
     intro:
@@ -5855,7 +5855,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "Antes de tocar nada técnico hay que afiliarse como comercio. Te van a pedir los datos formales de tu negocio y una cuenta bancaria a nombre de la empresa donde depositar lo cobrado. Ten a mano lo básico:",
         bullets: [
           "RUC activo y datos de la empresa tal como figuran en SUNAT.",
-          "Cuenta bancaria de la empresa (no personal) para las liquidaciones.",
+          "Cuenta bancaria a nombre del mismo titular con el que te afilias: si te afilias con el RUC de la empresa, la cuenta debe ser de la empresa. Los datos tienen que coincidir o el abono no sale.",
           "La dirección de tu web, que suele revisarse antes de aprobar.",
           "Descripción de qué vendes: hay rubros con condiciones distintas.",
         ],
@@ -5888,7 +5888,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         q: "¿Necesito RUC para cobrar con Niubiz?",
-        a: "Sí. La afiliación como comercio se hace con los datos formales del negocio y las liquidaciones se depositan en una cuenta bancaria a nombre de la empresa.",
+        a: "Sí, necesitas RUC activo. Puedes afiliarte como empresa o como persona natural con negocio; lo que no cambia es que la cuenta bancaria donde recibes el dinero debe estar a nombre del mismo titular que declaraste.",
       },
       {
         q: "¿Puedo probar el cobro sin gastar dinero real?",
@@ -5915,7 +5915,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "Cómo integrar Izipay en tu web o tienda virtual en Perú: afiliación, botón de pago o integración completa, pruebas y qué revisar antes de activarlo.",
     excerpt:
       "Desde el botón de pago más simple hasta la integración completa en tu checkout: las dos formas y cuál te conviene.",
-    datePublished: "2026-08-22",
+    datePublished: "2026-08-26",
     category: "Pagos",
     readingMin: 6,
     intro:
@@ -5937,7 +5937,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "Como toda pasarela formal, Izipay verifica el negocio antes de habilitarte:",
         bullets: [
           "RUC activo y datos de la empresa como figuran en SUNAT.",
-          "Cuenta bancaria de la empresa para recibir las liquidaciones.",
+          "Cuenta bancaria cuyo titular coincida con el documento con el que te afiliaste. Si no coincide, el dinero no se abona.",
           "La web o el canal donde vas a cobrar, que suele revisarse.",
           "El rubro de tu negocio: algunos tienen condiciones particulares.",
         ],
@@ -5965,7 +5965,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         q: "¿Necesito RUC para usar Izipay?",
-        a: "Para la afiliación como comercio sí: se usan los datos formales del negocio y una cuenta bancaria de la empresa donde se depositan los cobros.",
+        a: "Sí, la afiliación como comercio se hace con RUC activo. Puede ser el de una empresa o el de una persona natural con negocio, siempre que la cuenta bancaria donde recibes los cobros sea del mismo titular.",
       },
       {
         q: "¿El enlace de pago descuenta el stock de mi tienda?",
@@ -5991,7 +5991,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "Lo que hace falta para vender por internet en Perú: RUC, comprobantes electrónicos, medios de pago, envíos y la web. Checklist para empezar en orden.",
     excerpt:
       "RUC, comprobantes, cobros, envíos y web. El checklist completo, en el orden que conviene hacerlo.",
-    datePublished: "2026-08-24",
+    datePublished: "2026-08-26",
     category: "Ecommerce",
     readingMin: 8,
     intro:
@@ -6073,7 +6073,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "Qué es un certificado SSL, por qué Chrome marca tu web como no segura sin él, cuánto cuesta y cómo comprobar que está bien instalado.",
     excerpt:
       "Es el candado del navegador. Sin él Chrome avisa a tus visitantes de que tu sitio no es seguro, y Google lo nota.",
-    datePublished: "2026-08-25",
+    datePublished: "2026-08-26",
     category: "Web",
     readingMin: 5,
     intro:

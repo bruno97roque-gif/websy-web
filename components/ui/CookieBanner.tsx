@@ -62,6 +62,7 @@ export default function CookieBanner() {
   return (
     <div
       data-track-location="cookie_banner"
+      className="cookie-banner"
       role="dialog"
       aria-label="Aviso de cookies"
       style={{
@@ -153,6 +154,12 @@ export default function CookieBanner() {
         @keyframes cookieSlideUp {
           from { opacity: 0; transform: translateX(-50%) translateY(30px); }
           to   { opacity: 1; transform: translateX(-50%) translateY(0); }
+        }
+        /* En móvil el banner ocupa casi todo el ancho y tapaba por completo el
+           botón flotante de WhatsApp, que es el CTA que más leads trae. Se sube
+           lo justo para dejarlo a la vista mientras el aviso sigue en pantalla. */
+        @media (max-width: 767px) {
+          .cookie-banner { bottom: 96px !important; }
         }
       `}</style>
     </div>

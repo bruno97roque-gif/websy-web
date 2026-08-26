@@ -101,7 +101,6 @@ export const metadata: Metadata = {
     description:
       "Diseño exclusivo, tecnología de vanguardia y estrategia real para que tu negocio se destaque y convierta.",
     images: ["/og-image.png"],
-    creator: "@websy_pe", // ← cambia al usuario real de Twitter/X si tienen
   },
   robots: {
     index: true,
@@ -140,7 +139,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>
       <body
-        className={`${montserrat.variable} ${poppins.variable} cursor-none overflow-x-hidden bg-white text-[#1a1020] antialiased`}
+        className={`${montserrat.variable} ${poppins.variable} md:cursor-none overflow-x-hidden bg-white text-[#1a1020] antialiased`}
       >
         {/* Google Tag Manager — respaldo sin JavaScript, justo al abrir <body> */}
         <GoogleTagManagerNoScript />
