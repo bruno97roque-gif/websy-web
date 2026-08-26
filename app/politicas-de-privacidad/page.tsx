@@ -6,7 +6,7 @@ export const metadata: Metadata = pageMeta({
   path: "/politicas-de-privacidad",
   title: "Políticas de Privacidad",
   description:
-    "Políticas de privacidad y tratamiento de datos personales de Websy, conforme a la Ley N° 29733 de Perú.",
+    "Políticas de privacidad y tratamiento de datos personales de Websy, agencia de desarrollo web en Lima, conforme a la Ley N° 29733 de protección de datos del Perú.",
 });
 
 const UPDATED = "01 de marzo de 2025";

@@ -14,14 +14,26 @@ export const SITE_NAME = "Websy";
 export const SITE_LOCALE = "es_PE";
 export const DEFAULT_OG_IMAGE = "/og-image.png"; // 1200×630, resuelto contra metadataBase
 
+/**
+ * Portada 1200×630 propia de cada página, generada en /og con su título.
+ *
+ * Antes las 97 URLs compartían `og-image.png`: compartir cualquier artículo
+ * por WhatsApp enseñaba siempre la misma tarjeta genérica.
+ */
+export function ogUrl(titulo: string, kicker = "Websy"): string {
+  return `/og?t=${encodeURIComponent(titulo)}&k=${encodeURIComponent(kicker)}`;
+}
+
 type PageMetaInput = {
   /** path con barra inicial, p. ej. "/servicios" ("/" = home) */
   path: string;
   /** título SIN el sufijo de marca (el template "%s | Websy" lo agrega) */
   title: string;
   description: string;
-  /** imagen OG específica de la página (por defecto la global) */
+  /** imagen OG específica de la página (por defecto, una generada con el título) */
   ogImage?: string;
+  /** línea superior de la portada generada (categoría del artículo, sección…) */
+  ogKicker?: string;
 };
 
 /**
@@ -29,9 +41,15 @@ type PageMetaInput = {
  * Open Graph. Resuelve la canibalización (todas heredaban canonical "/")
  * y el OG duplicado (todas heredaban el de la home).
  */
-export function pageMeta({ path, title, description, ogImage }: PageMetaInput): Metadata {
+export function pageMeta({
+  path,
+  title,
+  description,
+  ogImage,
+  ogKicker,
+}: PageMetaInput): Metadata {
   const url = path === "/" ? SITE_URL : `${SITE_URL}${path}`;
-  const image = ogImage ?? DEFAULT_OG_IMAGE;
+  const image = ogImage ?? ogUrl(title, ogKicker ?? "Websy");
   return {
     title,
     description,

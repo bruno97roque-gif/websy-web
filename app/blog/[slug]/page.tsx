@@ -22,6 +22,7 @@ export async function generateMetadata({
     path: `/blog/${post.slug}`,
     title: post.title,
     description: post.description,
+    ogKicker: post.category,
   });
 }
 

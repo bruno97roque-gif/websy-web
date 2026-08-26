@@ -276,3 +276,31 @@ export function howToSchema({
     })),
   };
 }
+
+/**
+ * Listado del blog. Le dice a Google que /blog es el archivo del sitio y qué
+ * artículos contiene, en vez de dejar que lo deduzca de los enlaces sueltos.
+ * Solo declara los que ya existen en BLOG_POSTS: nada inventado.
+ */
+export function blogListSchema(
+  posts: { slug: string; title: string; datePublished: string }[]
+) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "@id": `${SITE_URL}/blog#blog`,
+    url: `${SITE_URL}/blog`,
+    name: "Blog de Websy",
+    description:
+      "Guías de diseño web, tiendas virtuales, software a medida y posicionamiento en Google para negocios en Perú.",
+    inLanguage: "es-PE",
+    publisher: { "@id": ORG_ID },
+    blogPost: posts.map((p) => ({
+      "@type": "BlogPosting",
+      headline: p.title,
+      url: `${SITE_URL}/blog/${p.slug}`,
+      datePublished: p.datePublished,
+      author: { "@id": ORG_ID },
+    })),
+  };
+}

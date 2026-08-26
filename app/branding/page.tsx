@@ -6,7 +6,7 @@ export const metadata: Metadata = pageMeta({
   path: "/branding",
   title: "Branding y diseño de identidad de marca en Perú",
   description:
-    "Servicio de branding en Perú: diseño de logotipo, identidad visual, manual de marca y estrategia. Construimos una marca sólida, coherente y memorable para tu negocio.",
+    "Branding en Perú: diseño de logotipo, identidad visual, manual de marca y estrategia. Construimos una marca sólida, coherente y memorable para tu negocio.",
 });
 
 export default function BrandingPage() {

@@ -77,6 +77,23 @@ export default function GoogleAdsPage() {
             "Reportes claros de inversión, leads y costo por resultado.",
           ],
         },
+        {
+          h2: "Cuánto cuesta gestionar Google Ads en Perú",
+          body:
+            "Son dos costos distintos y conviene no mezclarlos. El primero es la inversión publicitaria: el dinero que le pagas a Google por los clics, que sale de tu tarjeta y es tuyo. El segundo es la gestión: el trabajo de armar la cuenta, elegir las palabras, escribir los anuncios, medir las conversiones y optimizar cada semana. Quien te cobra un solo número por todo suele estar quedándose con una parte de tu presupuesto de medios sin decírtelo.",
+          bullets: [
+            "La inversión en medios se paga directo a Google, con tu propia tarjeta y tu propia cuenta.",
+            "La cuenta de Google Ads queda a tu nombre: si mañana cambias de agencia, te llevas el histórico, que es lo que hace que las campañas rindan más con el tiempo.",
+            "El costo de gestión depende del número de campañas, de si hay ecommerce con catálogo, de cuántos idiomas o sedes cubres y de la frecuencia de reporte.",
+            "El costo por clic no lo fija la agencia: lo fija tu competencia. En rubros disputados —abogados, clínicas, inmobiliarias— el clic vale varias veces más que en otros.",
+            "Un presupuesto demasiado pequeño repartido en muchas campañas no aprende: es preferible concentrarlo en lo que ya sabes que se busca con intención de compra.",
+          ],
+        },
+        {
+          h2: "Qué recibes cada mes",
+          body:
+            "La gestión de campañas se ve poco y por eso conviene decir en qué consiste: revisión de términos de búsqueda reales para sumar negativas y dejar de pagar clics inútiles, ajuste de pujas y presupuestos según lo que convierte, nuevos anuncios a prueba contra los que ya funcionan, y un reporte que responde a una sola pregunta: cuánto invertiste, cuántos contactos entraron y a qué costo salió cada uno. Si quieres el detalle de cuánto presupuesto tiene sentido para empezar, está en la guía de [Google Ads para pymes en Perú](/blog/google-ads-para-pymes-en-peru-cuanto-invertir); y si dudas entre pagar por clics o trabajar el posicionamiento, en [Google Ads vs SEO](/blog/google-ads-vs-seo-cual-conviene-para-tu-negocio).",
+        },
       ]}
       related={[
         { label: "Nuestros servicios", href: "/servicios", desc: "Conoce todo lo que hacemos: web, ecommerce, software, SEO y más." },
