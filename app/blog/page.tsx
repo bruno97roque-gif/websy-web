@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { pageMeta } from "@/lib/seo";
 import JsonLd from "@/components/seo/JsonLd";
-import { breadcrumbSchema } from "@/lib/schema";
+import { breadcrumbSchema, blogListSchema } from "@/lib/schema";
 import { BLOG_POSTS } from "@/lib/blog";
 
 export const metadata: Metadata = pageMeta({
@@ -34,6 +34,7 @@ export default function BlogIndexPage() {
           { name: "Blog", path: "/blog" },
         ])}
       />
+      <JsonLd data={blogListSchema(posts)} />
 
       {/* HERO */}
       <section
