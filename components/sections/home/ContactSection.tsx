@@ -175,8 +175,9 @@ export default function ContactSection() {
             {/* GIF — solo visible en desktop dentro de la columna izquierda */}
             <div className="hidden md:flex md:justify-start">
               <AnimatedMedia
+                soloEn="escritorio"
                 webmSrc="/images/vaca-alien.webm"
-                gifSrc="/images/vaca-alien-mobile.gif"
+                gifSrc="/images/vaca-alien-mobile.webp"
                 className="h-auto w-[500px] object-contain drop-shadow-2xl"
                 aria-hidden="true"
               />
@@ -279,8 +280,9 @@ export default function ContactSection() {
           {/* GIF — solo móvil, después del formulario (order-3) */}
           <div className="order-3 flex justify-center md:hidden">
             <AnimatedMedia
+              soloEn="movil"
               webmSrc="/images/vaca-alien.webm"
-              gifSrc="/images/vaca-alien-mobile.gif"
+              gifSrc="/images/vaca-alien-mobile.webp"
               className="h-auto w-[240px] object-contain drop-shadow-2xl"
               aria-hidden="true"
             />

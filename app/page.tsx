@@ -52,8 +52,9 @@ export default function HomePage() {
         `}</style>
         <div className="hw-alien">
           <AnimatedMedia
+            soloEn="movil"
             webmSrc="/images/hero-alien-float.webm"
-            gifSrc="/images/hero-alien-float-mobile.gif"
+            gifSrc="/images/hero-alien-float-mobile.webp"
             aria-hidden="true"
           />
         </div>
@@ -80,8 +81,9 @@ export default function HomePage() {
         <div className="pointer-events-none absolute bottom-full left-0 right-0 z-[30] hidden translate-y-[43px] md:block">
           <div className="mx-auto w-full max-w-[1600px] pl-[92px]">
             <AnimatedMedia
+              soloEn="escritorio"
               webmSrc="/images/hero-alien-float.webm"
-              gifSrc="/images/hero-alien-float-mobile.gif"
+              gifSrc="/images/hero-alien-float-mobile.webp"
               aria-hidden="true"
               className="h-[140px] w-auto lg:h-[160px] xl:h-[190px] 2xl:h-[220px]"
             />
