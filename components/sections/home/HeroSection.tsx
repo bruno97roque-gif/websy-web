@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { OrbitingCircles } from "@/components/ui/orbiting-circles";
 import { ShimmerButton } from "@/components/ui/shimmer-button";
@@ -30,6 +30,18 @@ function OrangeIcon({
 
 /* ─── Main Component ─── */
 export default function HeroSection() {
+  // El fondo en vídeo solo se monta en pantallas anchas: en móvil el degradado hace
+  // el mismo papel y nos ahorramos 2,4 MB de descarga en cada visita.
+  const [fondoConVideo, setFondoConVideo] = useState(false);
+
+  useEffect(() => {
+    const anchas = window.matchMedia("(min-width: 768px)");
+    const aplicar = () => setFondoConVideo(anchas.matches);
+    aplicar();
+    anchas.addEventListener("change", aplicar);
+    return () => anchas.removeEventListener("change", aplicar);
+  }, []);
+
   const pillRef     = useRef<HTMLDivElement>(null);
   const titleRef    = useRef<HTMLHeadingElement>(null);
   const descRef     = useRef<HTMLParagraphElement>(null);
@@ -61,14 +73,20 @@ export default function HeroSection() {
       {/* ── VIDEO BG — hidden on mobile to save bandwidth on slow devices ── */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-br from-[#180a1e] via-[#291231] to-[#3d1248]" />
-        {/* Video solo en md+ (tablets/desktop). En móvil queda el gradiente como fondo. */}
-        <video
-          autoPlay muted loop playsInline
-          className="hidden md:block absolute inset-0 h-full w-full object-cover"
-          style={{ willChange: "transform" }}
-        >
-          <source src="/video/Hero-Bg.webm" type="video/webm" />
-        </video>
+        {/* Video solo en md+ (tablets/desktop). En móvil queda el gradiente como fondo.
+            Ojo: esconderlo con `hidden md:block` NO evitaba la descarga — el móvil se
+            bajaba el vídeo entero igual. Por eso ahora ni se pinta salvo en pantalla
+            ancha, y con `preload="none"` para que no compita con el texto del hero. */}
+        {fondoConVideo && (
+          <video
+            autoPlay muted loop playsInline
+            preload="none"
+            className="hidden md:block absolute inset-0 h-full w-full object-cover"
+            style={{ willChange: "transform" }}
+          >
+            <source src="/video/Hero-Bg.webm" type="video/webm" />
+          </video>
+        )}
       </div>
 
       {/* ── GROUND IMAGE ── */}
@@ -184,7 +202,7 @@ export default function HeroSection() {
                   <OrangeIcon src="/icons/icono6-circle.webp" imgSize={40} circleSize={66} />
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
-                    src="/icons/remplazo-de-cohete-ovni.gif"
+                    src="/icons/remplazo-de-cohete-ovni.webp"
                     alt=""
                     className="h-[90px] w-[90px] object-contain drop-shadow-[0_2px_14px_rgba(0,0,0,.6)]"
                     draggable={false}

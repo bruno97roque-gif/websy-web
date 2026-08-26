@@ -228,7 +228,7 @@ export default function NosotrosHero() {
         <AnimatedMedia
           ref={alienImgRef}
           webmSrc="/images/alien-floating.webm"
-          gifSrc="/images/alien-floating-mobile.gif"
+          gifSrc="/images/alien-floating-mobile.webp"
           aria-hidden="true"
           className="h-auto w-[260px] animate-[floatY_6s_ease-in-out_infinite] object-contain drop-shadow-2xl sm:w-[280px] md:w-[320px]"
           style={{ pointerEvents: "none" }}

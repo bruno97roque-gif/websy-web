@@ -153,7 +153,7 @@ export default function RootLayout({
           image={
             <AnimatedMedia
               webmSrc="/images/alien-saludando.webm"
-              gifSrc="/images/alien-saludando-mobile.gif"
+              gifSrc="/images/alien-saludando-mobile.webp"
               aria-hidden="true"
               className="w-[170px] object-contain md:w-[320px]"
             />
