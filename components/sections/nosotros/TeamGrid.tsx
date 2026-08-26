@@ -112,10 +112,12 @@ function CometSVG() {
   );
 }
 
-const TEAM = [
+// `img` es opcional a propósito: quien no tenga foto propia sale con sus
+// iniciales, nunca con la foto de otra persona.
+const TEAM: { name: string; surname: string; role: string; tag: string; Planet: () => React.JSX.Element; img?: string }[] = [
   // Gerentes
-  { name: "Bruno",         surname: "Roque",      role: "Co-Fundador",              tag: "Gerencia",   Planet: SaturnSVG, img: "/images/prueba-empleado-1.webp" },
-  { name: "Debora",        surname: "Santa María", role: "Co-Fundadora",            tag: "Gerencia",   Planet: MoonSVG,   img: "/images/prueba-empleado-1.webp" },
+  { name: "Bruno",         surname: "Roque",      role: "Co-Fundador",              tag: "Gerencia",   Planet: SaturnSVG },
+  { name: "Debora",        surname: "Santa María", role: "Co-Fundadora",            tag: "Gerencia",   Planet: MoonSVG },
   // Ventas
   { name: "Gimena",        surname: "",           role: "Sales Manager",             tag: "Ventas",     Planet: CometSVG,  img: "/images/gimena-comercial.webp"  },
   // Ingenieros
@@ -125,8 +127,6 @@ const TEAM = [
   // Diseñadores
   { name: "Ada",           surname: "",           role: "Brand Designer",            tag: "Diseño",     Planet: NebulaSVG, img: "/images/ada-diseñadora.webp"    },
   { name: "Juan Carlos",   surname: "Huapaya",    role: "Brand Designer",            tag: "Diseño",     Planet: NebulaSVG, img: "/images/juan-carlos-esta-si-es.webp"        },
-  // Marketing
-  { name: "Por confirmar", surname: "",           role: "Marketing",                 tag: "Marketing",  Planet: CometSVG,  img: "/images/prueba-empleado-1.webp" },
   // Administrativo
   { name: "Julio",         surname: "",           role: "Asistente Administrativo",  tag: "Equipo",     Planet: MoonSVG,   img: "/images/julio-asistente.webp"   },
 ];
@@ -154,13 +154,30 @@ function Card({
         className="relative mb-4 w-full overflow-hidden rounded-[24px] aspect-[3/4] [transform:translateZ(0)] will-change-transform"
         style={{ backgroundColor: "#ffffff" }}
       >
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src={member.img}
-          alt={member.name}
-          className="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
-          draggable={false}
-        />
+        {member.img ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            src={member.img}
+            alt={`${member.name}${member.surname ? ` ${member.surname}` : ""}`}
+            loading="lazy"
+            decoding="async"
+            className="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+            draggable={false}
+          />
+        ) : (
+          /* Sin foto propia todavía: iniciales sobre el morado de marca.
+             Antes se rellenaba con la foto de otra persona del equipo, que es
+             peor que no tener foto. */
+          <div
+            className="flex h-full w-full items-center justify-center bg-[#291231]"
+            aria-label={`${member.name}${member.surname ? ` ${member.surname}` : ""}`}
+          >
+            <span className="font-montserrat text-[44px] font-bold leading-none tracking-tight text-[#F18C1B]">
+              {member.name.charAt(0)}
+              {member.surname ? member.surname.charAt(0) : ""}
+            </span>
+          </div>
+        )}
 
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#291231]/60 via-transparent to-transparent" />
 

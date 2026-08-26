@@ -1,4 +1,5 @@
 import { SITE_URL, SITE_NAME } from "@/lib/seo";
+import { SERVICE_LINKS, RUBRO_LINKS } from "@/lib/nav";
 
 /* ─────────────────────────────────────────────────────────────
    Builders de JSON-LD (Schema.org).
@@ -129,23 +130,25 @@ export function breadcrumbSchema(items: { name: string; path: string }[]) {
 }
 
 export function servicesSchema() {
-  const services = [
-    { name: "Branding", desc: "Identidad de marca, logotipo y manual visual." },
-    { name: "Diseño y Desarrollo Web", desc: "Páginas web a medida, rápidas y optimizadas." },
-    { name: "Tiendas Online", desc: "E-commerce listo para vender con pasarela de pago." },
-    { name: "Google Ads & SEO", desc: "Posicionamiento y campañas para captar clientes." },
-  ];
+  // Sale de la misma lista que alimenta el menú, el pie y el sitemap, así que el
+  // listado no se queda viejo cuando se añade un servicio. Antes eran cuatro
+  // nombres escritos a mano, sin `url`, y uno de ellos ("Google Ads & SEO") ni
+  // siquiera existía como página: son dos, /google-ads y /seo.
+  const services = [...SERVICE_LINKS, ...RUBRO_LINKS];
   return {
     "@context": "https://schema.org",
     "@type": "ItemList",
     name: "Servicios de Websy",
+    numberOfItems: services.length,
     itemListElement: services.map((s, i) => ({
       "@type": "ListItem",
       position: i + 1,
+      url: `${SITE_URL}${s.href}`,
       item: {
         "@type": "Service",
-        name: s.name,
+        name: s.label,
         description: s.desc,
+        url: `${SITE_URL}${s.href}`,
         provider: { "@id": ORG_ID },
         areaServed: { "@type": "Country", name: "Perú" },
       },

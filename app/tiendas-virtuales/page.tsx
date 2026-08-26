@@ -91,6 +91,8 @@ export default function TiendasVirtualesPage() {
       articles={[
         { label: "¿Cuánto cuesta una tienda virtual en Perú?", href: "/blog/cuanto-cuesta-una-tienda-virtual-en-peru", desc: "Qué define el precio de un ecommerce y cómo cotizar sin sorpresas." },
         { label: "Cómo vender por WhatsApp desde tu tienda", href: "/blog/como-vender-por-whatsapp-desde-tu-tienda-virtual", desc: "El canal que más convierte en Perú, integrado a tu tienda." },
+        { label: "Qué necesito para vender online en Perú", href: "/blog/que-necesito-para-vender-online-en-peru", desc: "RUC, comprobantes, medios de pago y envíos: el checklist completo." },
+        { label: "Cómo conectar Niubiz a tu tienda", href: "/blog/como-conectar-niubiz-a-tu-tienda-virtual", desc: "Afiliación, credenciales y las pruebas antes de cobrar de verdad." },
         { label: "Cómo posicionar tu tienda en Google", href: "/blog/como-posicionar-una-tienda-virtual-en-google", desc: "SEO para ecommerce: que tus clientes te encuentren y compren." },
       ]}
       faqs={[

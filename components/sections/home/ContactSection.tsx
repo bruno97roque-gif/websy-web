@@ -218,18 +218,25 @@ export default function ContactSection() {
 
               {/* Servicio de interés */}
               <div className="mb-5 flex flex-col gap-2">
-                <label className="font-montserrat text-[11px] font-bold uppercase tracking-[1.5px] text-white">
+                <span
+                  id="etiqueta-servicio"
+                  className="font-montserrat text-[11px] font-bold uppercase tracking-[1.5px] text-white"
+                >
                   Servicio de interés
-                </label>
+                </span>
                 <ServiceSelect name="servicio" />
               </div>
 
               {/* Cuéntanos tu proyecto */}
               <div className="mb-7 flex flex-col gap-2">
-                <label className="font-montserrat text-[11px] font-bold uppercase tracking-[1.5px] text-white">
+                <label
+                  htmlFor="campo-proyecto"
+                  className="font-montserrat text-[11px] font-bold uppercase tracking-[1.5px] text-white"
+                >
                   Cuéntanos tu proyecto <span className="text-[#F18C1B]">*</span>
                 </label>
                 <textarea
+                  id="campo-proyecto"
                   name="proyecto"
                   rows={7}
                   required
@@ -317,6 +324,7 @@ function ServiceSelect({ name }: { name: string }) {
       {/* Trigger */}
       <button
         type="button"
+        aria-labelledby="etiqueta-servicio"
         onClick={() => setOpen((o) => !o)}
         /* Sin name, el foco aquí no contaba como inicio del formulario. */
         data-field="servicio"
@@ -379,10 +387,14 @@ function FormField({
 }) {
   return (
     <div className="flex flex-col gap-2">
-      <label className="font-montserrat text-[11px] font-bold uppercase tracking-[1.5px] text-white">
+      <label
+        htmlFor={`campo-${name}`}
+        className="font-montserrat text-[11px] font-bold uppercase tracking-[1.5px] text-white"
+      >
         {label}{required && <span className="ml-1 text-[#F18C1B]">*</span>}
       </label>
       <input
+        id={`campo-${name}`}
         type={type}
         name={name}
         placeholder={placeholder}

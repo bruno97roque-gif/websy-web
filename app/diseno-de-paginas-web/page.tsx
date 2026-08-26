@@ -79,6 +79,8 @@ export default function DisenoPaginasWebPage() {
       articles={[
         { label: "¿Cuánto cuesta una página web en Perú?", href: "/blog/cuanto-cuesta-una-pagina-web-en-peru", desc: "Qué define el precio de una web profesional y qué debe incluir." },
         { label: "Cómo aparecer en Google con tu página web", href: "/blog/como-aparecer-en-google-con-tu-pagina-web", desc: "Guía práctica de SEO para posicionar tu web en Perú." },
+        { label: "Cómo elegir un hosting en Perú", href: "/blog/como-elegir-un-hosting-en-peru", desc: "Dónde alojar tu web para que cargue rápido y no se caiga." },
+        { label: "Cómo comprar un dominio .pe", href: "/blog/como-comprar-un-dominio-pe-paso-a-paso", desc: "El trámite completo, y a nombre de quién debe quedar." },
         { label: "Página web para restaurantes", href: "/blog/pagina-web-para-restaurantes-en-peru", desc: "Carta digital, pedidos y reservas para tu restaurante." },
       ]}
       faqs={[

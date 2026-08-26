@@ -21,6 +21,12 @@ interface AnimatedMediaProps {
   /** Ruta del WebP animado o GIF (para móvil / iOS) */
   gifSrc: string;
   /**
+   * `true` solo para la animación que se ve al abrir la página (la del hero).
+   * Las demás van al pie y no deben competir por el ancho de banda con el
+   * contenido que el visitante sí está mirando.
+   */
+  prioritaria?: boolean;
+  /**
    * Cuando la misma animación se pinta dos veces (una maquetación para móvil y otra
    * para escritorio) y el CSS esconde una, hay que decir aquí a cuál pertenece cada
    * copia. Sin esto la copia escondida se descarga igual: pesa lo mismo aunque no
@@ -40,7 +46,7 @@ function isMobileOrIOS(): boolean {
 
 const AnimatedMedia = forwardRef<HTMLVideoElement | HTMLImageElement, AnimatedMediaProps>(
   function AnimatedMedia(
-    { webmSrc, gifSrc, soloEn, className, style, draggable = false, ...rest },
+    { webmSrc, gifSrc, soloEn, prioritaria = false, className, style, draggable = false, ...rest },
     ref
   ) {
     const [dispositivo, setDispositivo] = useState<"sinSaber" | "movil" | "escritorio">(
@@ -74,8 +80,9 @@ const AnimatedMedia = forwardRef<HTMLVideoElement | HTMLImageElement, AnimatedMe
           ref={ref as React.Ref<HTMLImageElement>}
           src={gifSrc}
           alt=""
-          loading="eager"
-          fetchPriority="high"
+          loading={prioritaria ? "eager" : "lazy"}
+          fetchPriority={prioritaria ? "high" : "auto"}
+          decoding={prioritaria ? "sync" : "async"}
           className={className}
           style={style}
           draggable={draggable}

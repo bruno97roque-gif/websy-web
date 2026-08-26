@@ -53,6 +53,7 @@ export default function HomePage() {
         <div className="hw-alien">
           <AnimatedMedia
             soloEn="movil"
+            prioritaria
             webmSrc="/images/hero-alien-float.webm"
             gifSrc="/images/hero-alien-float-mobile.webp"
             aria-hidden="true"
@@ -82,6 +83,7 @@ export default function HomePage() {
           <div className="mx-auto w-full max-w-[1600px] pl-[92px]">
             <AnimatedMedia
               soloEn="escritorio"
+              prioritaria
               webmSrc="/images/hero-alien-float.webm"
               gifSrc="/images/hero-alien-float-mobile.webp"
               aria-hidden="true"

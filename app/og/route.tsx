@@ -15,6 +15,10 @@ import { ImageResponse } from "next/og";
  */
 
 export const runtime = "edge";
+// La portada la piden los buscadores y las redes por cada una de las 111 URLs.
+// Sin esto se volvía a dibujar el PNG en cada petición (x-vercel-cache: MISS
+// siempre). El dibujo solo cambia si cambia el título, así que se puede cachear.
+export const revalidate = 31536000;
 
 const MORADO = "#291231";
 const NARANJA = "#F18C1B";
