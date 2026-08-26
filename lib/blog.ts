@@ -289,7 +289,8 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Tiendas Shopify", href: "/tiendas-virtuales/shopify", desc: "Lanza rápido con la plataforma líder." },
       { label: "Tiendas WooCommerce", href: "/tiendas-virtuales/woocommerce", desc: "Tu tienda en WordPress, 100% tuya." },
       { label: "Cómo vender por WhatsApp desde tu tienda virtual", href: "/blog/como-vender-por-whatsapp-desde-tu-tienda-virtual", desc: "El canal que más convierte en Perú es WhatsApp." },
-    ],
+          { label: "Qué necesito para vender online en Perú", href: "/blog/que-necesito-para-vender-online-en-peru", desc: "RUC, comprobantes, pagos y envíos: el checklist." },
+],
   },
 
   {
@@ -402,7 +403,9 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "SEO para tiendas online: fichas y categorías", href: "/blog/como-posicionar-tu-tienda-online-en-google-peru", desc: "Tu tienda online no vende si nadie la encuentra." },
       { label: "Qué necesita una tienda virtual para vender", href: "/blog/que-necesita-una-tienda-virtual-para-vender", desc: "No basta con subir productos. Estos son los elementos que separan una tienda que vende de una que solo…" },
       { label: "Cuánto cobra Shopify al mes en Perú (2026)", href: "/blog/cuanto-cuesta-una-tienda-en-shopify", desc: "El plan mensual es solo una parte. Esto es lo que realmente compone el costo de una tienda Shopify." },
-    ],
+          { label: "Cómo conectar Niubiz paso a paso", href: "/blog/como-conectar-niubiz-a-tu-tienda-virtual", desc: "El proceso real de integración." },
+      { label: "Cómo cobrar con Izipay", href: "/blog/como-cobrar-con-izipay-en-tu-pagina-web", desc: "Desde el enlace de pago hasta el checkout." },
+],
   },
 
   {
@@ -3169,7 +3172,9 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "SEO para tu tienda virtual", href: "/seo", desc: "Atrae compradores a tu tienda para que esos pagos ocurran." },
       { label: "Pasarelas de pago en Perú", href: "/blog/pasarelas-de-pago-para-ecommerce-en-peru", desc: "El panorama completo: Yape, Plin, Niubiz e Izipay." },
       { label: "Cómo aceptar pagos con tarjeta", href: "/blog/como-aceptar-pagos-con-tarjeta-en-tu-web-peru", desc: "Qué necesitas para cobrar con tarjeta en tu web." },
-    ],
+          { label: "Cómo conectar Niubiz paso a paso", href: "/blog/como-conectar-niubiz-a-tu-tienda-virtual", desc: "Afiliación, credenciales y pruebas antes de cobrar." },
+      { label: "Cómo cobrar con Izipay en tu web", href: "/blog/como-cobrar-con-izipay-en-tu-pagina-web", desc: "Enlace de pago o integración completa." },
+],
   },
 
   {
@@ -4066,7 +4071,9 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Mantenimiento web", href: "/mantenimiento-web", desc: "Hosting, seguridad, respaldos y actualizaciones al día." },
       { label: "Costos de mantenimiento de una web", href: "/blog/costos-de-mantenimiento-de-una-pagina-web-en-peru", desc: "Qué incluye mantener tu web viva y segura." },
       { label: "Ver precios y cotizar", href: "/precios", desc: "El panorama completo de la inversión en tu web." },
-    ],
+          { label: "Cómo elegir un hosting en Perú", href: "/blog/como-elegir-un-hosting-en-peru", desc: "Velocidad, soporte y la letra pequeña de la renovación." },
+      { label: "Cómo comprar un dominio .pe", href: "/blog/como-comprar-un-dominio-pe-paso-a-paso", desc: "El trámite completo, paso a paso." },
+],
   },
 
   {
@@ -5669,6 +5676,462 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Google Ads", href: "/google-ads", desc: "Gestionamos campañas orientadas a clientes, no a clics." },
       { label: "Diferencia entre página web y landing page", href: "/blog/diferencia-entre-pagina-web-y-landing-page", desc: "Cuál necesitas según lo que quieras conseguir." },
       { label: "Google Ads para pymes en Perú: cuánto invertir", href: "/blog/google-ads-para-pymes-en-peru-cuanto-invertir", desc: "Qué presupuesto tiene sentido para empezar." },
+    ],
+  },
+
+  {
+    slug: "como-elegir-un-hosting-en-peru",
+    title: "Cómo elegir un hosting en Perú sin equivocarte",
+    h1: "Cómo elegir un hosting en Perú sin equivocarte",
+    description:
+      "Qué mirar antes de contratar un hosting en Perú: velocidad, soporte real, respaldos, certificado SSL y los cobros que aparecen en la renovación.",
+    excerpt:
+      "El hosting barato sale caro cuando la web se cae un lunes de campaña. Esto es lo que hay que mirar antes de contratar.",
+    datePublished: "2026-08-18",
+    category: "Web",
+    readingMin: 7,
+    intro:
+      "Elegir hosting no es elegir el más barato: es elegir el que aguanta cuando tu web recibe visitas de verdad. Lo que decide la factura final no es el precio del primer año, sino la velocidad, el soporte cuando algo falla y cuánto sube la renovación. Aquí están los seis puntos que conviene revisar antes de pagar, y las trampas más comunes del mercado peruano.",
+    sections: [
+      {
+        h2: "Velocidad: dónde está el servidor importa",
+        body:
+          "Si tus clientes están en Perú y el servidor está en Europa, cada visita paga el viaje de ida y vuelta. Busca proveedores con servidores en Sudamérica o Estados Unidos (Miami suele dar buena latencia hacia Lima), o que usen una red de distribución de contenido, que sirve tu web desde el punto más cercano al visitante. Google usa la velocidad como criterio de posicionamiento, así que esto no es solo comodidad: afecta a cuánto te encuentran.",
+      },
+      {
+        h2: "Soporte: la pregunta que casi nadie hace",
+        body:
+          "Antes de contratar, escribe al soporte con una consulta cualquiera y mira cuánto tardan en responder. Ese es el tiempo que vas a esperar el día que tu web se caiga. Fíjate en si atienden en español, en qué horario y por qué canal: un chat que responde en minutos vale más que un formulario que contesta en dos días.",
+      },
+      {
+        h2: "Respaldos: quién los hace y cada cuánto",
+        body:
+          "Un respaldo (copia de seguridad) es lo que te salva cuando algo se rompe o alguien entra donde no debe. Pregunta tres cosas concretas: cada cuánto se hacen, cuántos días se guardan y si restaurar tiene costo. Hay proveedores que hacen la copia pero cobran por devolvértela. Y confirma que puedas descargarla tú: un respaldo al que solo el proveedor tiene acceso no es del todo tuyo.",
+      },
+      {
+        h2: "Certificado SSL y correo corporativo",
+        body:
+          "El certificado SSL es lo que hace que tu web aparezca como segura (el candado del navegador) y hoy es obligatorio: sin él, Chrome avisa al visitante de que el sitio no es seguro. Casi todos los planes lo incluyen gratis mediante Let's Encrypt; si te lo quieren cobrar aparte, es una señal. Mira también cuántas cuentas de correo con tu dominio incluye, porque escribir desde una dirección con tu propio dominio da otra imagen.",
+      },
+      {
+        h2: "La letra pequeña de la renovación",
+        body:
+          "Es la trampa más común: el primer año está de oferta y la renovación cuesta bastante más. Antes de contratar, busca el precio de renovación, no el de entrada, y compáralo entre proveedores. Revisa también si el dominio va incluido solo el primer año y si migrar tu web fuera tiene costo. Lo desglosamos en la guía de [cuánto cuesta un hosting y un dominio .pe en Perú](/blog/cuanto-cuesta-un-hosting-y-un-dominio-pe-en-peru).",
+      },
+      {
+        h2: "Compartido, VPS o gestionado: cuál te toca",
+        body:
+          "Un hosting compartido reparte un servidor entre muchas webs: es lo más barato y suficiente para una web institucional o un blog. Un VPS te reserva recursos propios y aguanta más visitas, tiene sentido para tiendas con catálogo grande o sistemas a medida. El gestionado cuesta más pero el proveedor se encarga de actualizaciones y seguridad. Si no tienes a nadie que administre el servidor, el gestionado sale más barato que un VPS mal cuidado.",
+      },
+      {
+        h2: "Y si prefieres no ocuparte de esto",
+        body:
+          "La mayoría de negocios no quiere elegir servidores, quiere una web que funcione. Cuando desarrollamos tu [página web](/diseno-de-paginas-web) o tu [tienda virtual](/tiendas-virtuales) dejamos el alojamiento configurado, con el certificado activo y los respaldos andando, para que no tengas que aprender de infraestructura para vender.",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿El hosting más barato sirve para empezar?",
+        a: "Para una web sencilla con pocas visitas, sí. El problema aparece cuando creces: si el plan barato no aguanta y el proveedor no tiene a dónde subirte, tendrás que migrar. Antes de contratar, mira qué planes superiores ofrece.",
+      },
+      {
+        q: "¿Necesito un hosting peruano si mis clientes están en Perú?",
+        a: "No necesariamente. Lo que importa es la latencia, no la bandera. Un servidor en Miami con red de distribución suele responder tan rápido o más que uno local. Lo que sí conviene es que el soporte atienda en español y en tu horario.",
+      },
+      {
+        q: "¿El dominio y el hosting se contratan en el mismo sitio?",
+        a: "Pueden ir juntos o por separado. Tenerlos separados da más libertad para cambiar de proveedor sin mover el dominio, pero exige configurar los DNS a mano. Si no quieres complicarte, contratarlos juntos es más simple.",
+      },
+      {
+        q: "¿Qué pasa si me quedo sin espacio o sin transferencia?",
+        a: "Depende del proveedor: unos te suspenden la web hasta que amplíes el plan y otros te cobran el excedente. Pregúntalo antes, porque enterarte el día que tu web deja de cargar es el peor momento.",
+      },
+    ],
+    related: [
+      { label: "Cuánto cuesta un hosting y un dominio .pe", href: "/blog/cuanto-cuesta-un-hosting-y-un-dominio-pe-en-peru", desc: "Los precios reales y qué incluye cada plan." },
+      { label: "Mantenimiento y soporte web", href: "/mantenimiento-web", desc: "Nos ocupamos del hosting, los respaldos y las actualizaciones." },
+      { label: "Diseño de páginas web", href: "/diseno-de-paginas-web", desc: "Tu web lista y alojada, sin que tengas que elegir servidores." },
+    ],
+  },
+
+  {
+    slug: "como-comprar-un-dominio-pe-paso-a-paso",
+    title: "Cómo comprar un dominio .pe paso a paso",
+    h1: "Cómo comprar un dominio .pe paso a paso",
+    description:
+      "Cómo registrar un dominio .pe o .com.pe en Perú: dónde comprarlo, qué documentos piden, cuánto tarda y cómo apuntarlo a tu hosting.",
+    excerpt:
+      "Registrar un .pe tiene sus reglas propias. Aquí está el trámite completo, de la búsqueda del nombre a la web funcionando.",
+    datePublished: "2026-08-20",
+    category: "Web",
+    readingMin: 6,
+    intro:
+      "Comprar un dominio .pe se hace en cuatro pasos: comprobar que esté libre, elegir la extensión correcta, registrarlo con los datos de tu empresa y apuntarlo a tu hosting. El trámite en sí toma minutos; lo que suele demorar es que el cambio se propague por internet. Aquí está el proceso completo y las decisiones que conviene no improvisar.",
+    sections: [
+      {
+        h2: "Paso 1: comprueba que el nombre esté libre",
+        body:
+          "Antes de enamorarte de un nombre, verifica que nadie lo tenga. Cualquier registrador te deja buscarlo desde su portada, y también puedes consultarlo en el registro oficial de dominios .pe. Búscalo con todas las extensiones a la vez: puede estar libre el .com.pe y ocupado el .pe. Y revisa de paso que el nombre esté disponible en redes sociales, para que tu marca sea la misma en todos lados.",
+      },
+      {
+        h2: "Paso 2: elige entre .pe, .com.pe y .com",
+        body:
+          "Cada extensión dice algo distinto sobre tu negocio:",
+        bullets: [
+          ".com.pe — la más habitual para empresas peruanas. Deja claro que operas en Perú y transmite formalidad.",
+          ".pe — más corta y moderna. Buena para marcas que quieren un nombre breve, aunque suele costar más.",
+          ".com — la internacional. Tiene sentido si vendes fuera de Perú, pero es la más difícil de conseguir libre.",
+          ".org.pe / .net.pe — para organizaciones y proyectos sin fines de lucro; no las uses para una empresa comercial.",
+        ],
+      },
+      {
+        h2: "Paso 3: regístralo a nombre de tu empresa, no del técnico",
+        body:
+          "Este es el error que más caro sale. Muchos negocios descubren años después que su dominio está registrado a nombre del programador que les hizo la web, y recuperarlo puede ser un lío. Registra el dominio con el RUC y los datos de tu empresa, y con un correo al que tengas acceso siempre. Si alguien te hace la web, que lo registre a tu nombre y te entregue el usuario y la clave del panel.",
+      },
+      {
+        h2: "Paso 4: apunta el dominio a tu hosting",
+        body:
+          "Tener el dominio no basta: hay que decirle a dónde apuntar. Eso se hace cambiando los DNS (los servidores de nombres) desde el panel del registrador, poniendo los que te dé tu proveedor de hosting. El cambio no es instantáneo: puede tardar desde unos minutos hasta 48 horas en verse en todo el mundo, según cómo tengas configurados los tiempos de caché. Si en ese rato tu web se ve a ratos sí y a ratos no, es normal.",
+      },
+      {
+        h2: "Renovación: el descuido que tumba webs",
+        body:
+          "Los dominios se alquilan, no se compran para siempre: hay que renovarlos cada año. Si se vence, la web y los correos dejan de funcionar de golpe, y pasado un plazo cualquiera puede quedárselo. Activa la renovación automática y confirma que la tarjeta guardada siga vigente. Vale la pena anotar la fecha de vencimiento en un calendario aparte, porque el aviso suele llegar a un correo que nadie revisa.",
+      },
+      {
+        h2: "Qué hacer si el nombre que querías está ocupado",
+        body:
+          "Antes de inventar un nombre raro con guiones o números, prueba variantes con sentido: sumar la ciudad, el rubro o una palabra corta que ya uses en tu marca. Evita los guiones y las cifras, porque se pierden cuando alguien dicta la dirección por teléfono. Y si el dominio está ocupado pero sin usar, a veces se puede comprar al titular, aunque el precio lo pone él.",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Necesito RUC para comprar un dominio .pe?",
+        a: "Para registrarlo a nombre de una empresa se usan los datos de la empresa, incluido el RUC. Una persona natural también puede registrar un .pe con su documento de identidad. Lo importante es que el titular seas tú o tu empresa, no un tercero.",
+      },
+      {
+        q: "¿Cuánto tarda en funcionar un dominio recién comprado?",
+        a: "El registro es casi inmediato. Lo que tarda es la propagación de los DNS cuando lo apuntas a tu hosting: normalmente unas horas, y hasta 48 en el peor caso. Durante ese tiempo puede verse desde unos dispositivos y desde otros no.",
+      },
+      {
+        q: "¿Puedo cambiar de hosting sin perder el dominio?",
+        a: "Sí, y es una de las ventajas de tenerlos separados. Solo cambias los DNS del dominio para que apunten al nuevo proveedor. El dominio sigue siendo tuyo, no pertenece al hosting.",
+      },
+      {
+        q: "¿Conviene comprar varias extensiones del mismo nombre?",
+        a: "Si tu marca es conocida, registrar el .com.pe y el .pe evita que otro los use. Una queda como la principal y las demás redirigen a ella. Para un negocio que recién empieza, con una basta.",
+      },
+    ],
+    related: [
+      { label: "Cuánto cuesta un hosting y un dominio .pe", href: "/blog/cuanto-cuesta-un-hosting-y-un-dominio-pe-en-peru", desc: "Los precios de cada extensión y del alojamiento." },
+      { label: "Cómo elegir un hosting en Perú", href: "/blog/como-elegir-un-hosting-en-peru", desc: "Dónde alojar la web a la que apuntará tu dominio." },
+      { label: "Diseño de páginas web", href: "/diseno-de-paginas-web", desc: "Dominio, hosting y web: lo dejamos andando." },
+    ],
+  },
+
+  {
+    slug: "como-conectar-niubiz-a-tu-tienda-virtual",
+    title: "Cómo conectar Niubiz a tu tienda virtual",
+    h1: "Cómo conectar Niubiz a tu tienda virtual paso a paso",
+    description:
+      "Cómo afiliarte a Niubiz y conectarlo a tu tienda online en Perú: requisitos, credenciales, pruebas antes de salir a producción y errores frecuentes.",
+    excerpt:
+      "Afiliación, credenciales y pruebas: el camino completo para empezar a cobrar con tarjeta usando Niubiz.",
+    datePublished: "2026-08-21",
+    category: "Pagos",
+    readingMin: 7,
+    intro:
+      "Conectar Niubiz a tu tienda pasa por tres etapas: afiliarte como comercio, obtener tus credenciales de integración y probar el cobro antes de activarlo de verdad. Lo que más demora no es la parte técnica, sino la afiliación comercial. Aquí está el recorrido completo y el paso que casi nadie hace y que evita el peor error posible.",
+    sections: [
+      {
+        h2: "Qué es Niubiz y cuándo conviene",
+        body:
+          "Niubiz es la pasarela de pagos con más recorrido en el mercado peruano y la que muchos clientes reconocen al ver el logo en el checkout. Procesa tarjetas de crédito y débito, Visa y Mastercard, y en la mayoría de comercios también resuelve pagos con billeteras. Si tu público es de un rango de edad amplio o vendes tickets altos, esa familiaridad ayuda a que el comprador confíe y termine la compra.",
+      },
+      {
+        h2: "Paso 1: la afiliación comercial",
+        body:
+          "Antes de tocar nada técnico hay que afiliarse como comercio. Te van a pedir los datos formales de tu negocio y una cuenta bancaria a nombre de la empresa donde depositar lo cobrado. Ten a mano lo básico:",
+        bullets: [
+          "RUC activo y datos de la empresa tal como figuran en SUNAT.",
+          "Cuenta bancaria de la empresa (no personal) para las liquidaciones.",
+          "La dirección de tu web, que suele revisarse antes de aprobar.",
+          "Descripción de qué vendes: hay rubros con condiciones distintas.",
+        ],
+      },
+      {
+        h2: "Paso 2: credenciales de prueba y de producción",
+        body:
+          "Aprobada la afiliación te entregan dos juegos de credenciales: uno de pruebas y uno de producción. Los de pruebas sirven para simular compras con tarjetas de prueba, sin mover dinero real. Los de producción son los que cobran de verdad. Guárdalos como guardas la clave del banco, y no los dejes escritos dentro del código de la web: van en la configuración del servidor, donde no queden expuestos.",
+      },
+      {
+        h2: "Paso 3: prueba el cobro antes de anunciarlo",
+        body:
+          "Este es el paso que se salta la mayoría y el que evita el peor error de un ecommerce: que el checkout diga «pago aprobado» sin haber cobrado nada. Haz una compra completa de punta a punta con las credenciales de pruebas, y después una compra real de monto pequeño con las de producción. Comprueba tres cosas: que el pedido quede registrado, que el correo de confirmación llegue y que el cobro aparezca en el panel de Niubiz. Si alguna falla, todavía estás a tiempo.",
+      },
+      {
+        h2: "Errores frecuentes al integrar",
+        body:
+          "Los que más se repiten: dejar las credenciales de prueba en producción (el checkout parece funcionar pero nunca cobra); no configurar la URL de respuesta, con lo que el pedido no se marca como pagado aunque el cliente sí pagó; y no manejar el caso de la tarjeta rechazada, que deja al comprador en una pantalla en blanco sin saber qué pasó. Los tres se detectan probando antes de salir.",
+      },
+      {
+        h2: "Niubiz, Izipay o las dos",
+        body:
+          "No estás obligado a elegir una sola. Muchas tiendas ofrecen más de un medio para que el cliente use el que prefiere, y sumar [Yape y Plin](/blog/como-integrar-yape-y-plin-en-tu-tienda-virtual) cubre a quien no quiere sacar la tarjeta. Si aún estás decidiendo, comparamos las dos en [Izipay o Niubiz](/blog/izipay-o-niubiz-cual-elegir-para-cobrar-con-tarjeta) y repasamos el resto de opciones en la guía de [pasarelas de pago](/blog/pasarelas-de-pago-para-ecommerce-en-peru).",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Cuánto tarda la afiliación a Niubiz?",
+        a: "Depende de tu rubro y de que la documentación esté completa; la parte comercial es la que marca el ritmo, no la técnica. Conviene iniciarla apenas empieces a construir la tienda, para que las credenciales estén listas cuando la web lo esté.",
+      },
+      {
+        q: "¿Necesito RUC para cobrar con Niubiz?",
+        a: "Sí. La afiliación como comercio se hace con los datos formales del negocio y las liquidaciones se depositan en una cuenta bancaria a nombre de la empresa.",
+      },
+      {
+        q: "¿Puedo probar el cobro sin gastar dinero real?",
+        a: "Sí, para eso están las credenciales de prueba y las tarjetas de prueba: simulan una compra completa sin mover un sol. Es el paso obligado antes de activar producción.",
+      },
+      {
+        q: "¿Qué pasa si el cliente cierra la ventana en pleno pago?",
+        a: "Por eso importa configurar bien la URL de respuesta y revisar el estado del pedido contra el panel de la pasarela. Bien integrado, un pago que se completó queda registrado aunque el navegador se haya cerrado.",
+      },
+    ],
+    related: [
+      { label: "Izipay o Niubiz: cuál elegir", href: "/blog/izipay-o-niubiz-cual-elegir-para-cobrar-con-tarjeta", desc: "La comparación entre las dos pasarelas." },
+      { label: "Pasarelas de pago en Perú", href: "/blog/pasarelas-de-pago-para-ecommerce-en-peru", desc: "Todas las opciones del mercado peruano." },
+      { label: "Desarrollo de tiendas virtuales", href: "/tiendas-virtuales", desc: "Integramos y probamos tus medios de pago." },
+      { label: "Cotiza tu tienda", href: "/cotizacion", desc: "Te decimos qué necesitas para empezar a cobrar." },
+    ],
+  },
+
+  {
+    slug: "como-cobrar-con-izipay-en-tu-pagina-web",
+    title: "Cómo cobrar con Izipay en tu página web",
+    h1: "Cómo cobrar con Izipay en tu página web paso a paso",
+    description:
+      "Cómo integrar Izipay en tu web o tienda virtual en Perú: afiliación, botón de pago o integración completa, pruebas y qué revisar antes de activarlo.",
+    excerpt:
+      "Desde el botón de pago más simple hasta la integración completa en tu checkout: las dos formas y cuál te conviene.",
+    datePublished: "2026-08-22",
+    category: "Pagos",
+    readingMin: 6,
+    intro:
+      "Izipay se puede usar de dos maneras: con un botón o enlace de pago que generas y compartes, o integrado dentro del checkout de tu web. La primera funciona sin programar nada y sirve para empezar hoy; la segunda da una experiencia de compra continua y confirma los pedidos sola. Aquí está cuándo conviene cada una y cómo dejarla andando.",
+    sections: [
+      {
+        h2: "Opción A: enlace o botón de pago (sin programar)",
+        body:
+          "Es la vía rápida. Desde el panel de Izipay generas un enlace de cobro por un monto y se lo mandas al cliente por WhatsApp, o pones un botón en tu web. El comprador paga en una página de Izipay y tú ves el cobro en tu panel. No necesitas desarrollo, así que puedes empezar a cobrar el mismo día. La contra: cada pedido lo confirmas a mano, y a partir de cierto volumen eso se vuelve trabajo.",
+      },
+      {
+        h2: "Opción B: integración en tu checkout",
+        body:
+          "Aquí el pago ocurre dentro de tu web, sin que el cliente sienta que lo mandan a otro sitio, y el pedido se marca como pagado solo. Requiere desarrollo y credenciales de integración, pero es lo que necesitas si vendes con catálogo, manejas stock o quieres que la confirmación por correo y WhatsApp salga automática. Es el camino natural cuando ya tienes una [tienda virtual](/tiendas-virtuales) andando.",
+      },
+      {
+        h2: "Lo que piden para afiliarte",
+        body:
+          "Como toda pasarela formal, Izipay verifica el negocio antes de habilitarte:",
+        bullets: [
+          "RUC activo y datos de la empresa como figuran en SUNAT.",
+          "Cuenta bancaria de la empresa para recibir las liquidaciones.",
+          "La web o el canal donde vas a cobrar, que suele revisarse.",
+          "El rubro de tu negocio: algunos tienen condiciones particulares.",
+        ],
+      },
+      {
+        h2: "Pruébalo antes de anunciarlo",
+        body:
+          "Da igual la opción que elijas: haz una compra real de monto pequeño antes de abrir el cobro al público, y comprueba que el dinero aparezca en tu panel y que el pedido quede registrado de tu lado. Un checkout que muestra «pagado» sin haber cobrado es el fallo más caro de una tienda, y solo se detecta probando. Si integras dentro del checkout, prueba también qué ve el cliente cuando la tarjeta se rechaza.",
+      },
+      {
+        h2: "Cuándo pasar del enlace a la integración",
+        body:
+          "Mientras hagas pocas ventas al día, el enlace de pago sobra. La señal para dar el salto es cuando empiezas a perder tiempo confirmando pagos a mano, se te traspapela algún pedido o quieres que el stock se descuente solo. Ahí la integración se paga sola. Lo mismo pasa si necesitas emitir comprobantes automáticos, algo que vemos en la guía de [facturación electrónica para tu tienda](/blog/facturacion-electronica-sunat-para-tu-tienda-online).",
+      },
+      {
+        h2: "Combínalo con los medios que ya usa tu cliente",
+        body:
+          "La tarjeta no es el único medio, ni el más usado en Perú. Ofrecer también [Yape y Plin](/blog/como-integrar-yape-y-plin-en-tu-tienda-virtual) cubre a quien paga desde el celular sin sacar la tarjeta, y dejar que el comprador elija en el checkout reduce el abandono. Si quieres ver todas las opciones lado a lado, están en la guía de [pasarelas de pago para ecommerce en Perú](/blog/pasarelas-de-pago-para-ecommerce-en-peru).",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Puedo cobrar con Izipay sin tener una tienda virtual?",
+        a: "Sí. Con un enlace de pago puedes cobrar desde WhatsApp, Instagram o un botón en tu web actual, sin desarrollar una tienda. Es la forma más rápida de empezar a aceptar tarjeta.",
+      },
+      {
+        q: "¿Necesito RUC para usar Izipay?",
+        a: "Para la afiliación como comercio sí: se usan los datos formales del negocio y una cuenta bancaria de la empresa donde se depositan los cobros.",
+      },
+      {
+        q: "¿El enlace de pago descuenta el stock de mi tienda?",
+        a: "No. El enlace cobra, pero no habla con tu catálogo: el pedido y el stock los manejas tú. Para que el stock se descuente solo hace falta la integración dentro del checkout.",
+      },
+      {
+        q: "¿Puedo tener Izipay y Niubiz al mismo tiempo?",
+        a: "Sí, y muchas tiendas lo hacen para que el cliente elija. Implica mantener dos afiliaciones y dos paneles, así que conviene si el volumen lo justifica.",
+      },
+    ],
+    related: [
+      { label: "Izipay o Niubiz: cuál elegir", href: "/blog/izipay-o-niubiz-cual-elegir-para-cobrar-con-tarjeta", desc: "La comparación entre las dos." },
+      { label: "Cómo conectar Niubiz", href: "/blog/como-conectar-niubiz-a-tu-tienda-virtual", desc: "El mismo camino, con la otra pasarela." },
+      { label: "Desarrollo de tiendas virtuales", href: "/tiendas-virtuales", desc: "Tu tienda con los medios de pago probados." },
+    ],
+  },
+
+  {
+    slug: "que-necesito-para-vender-online-en-peru",
+    title: "Qué necesito para vender online en Perú",
+    h1: "Qué necesito para vender online en Perú",
+    description:
+      "Lo que hace falta para vender por internet en Perú: RUC, comprobantes electrónicos, medios de pago, envíos y la web. Checklist para empezar en orden.",
+    excerpt:
+      "RUC, comprobantes, cobros, envíos y web. El checklist completo, en el orden que conviene hacerlo.",
+    datePublished: "2026-08-24",
+    category: "Ecommerce",
+    readingMin: 8,
+    intro:
+      "Para vender online en Perú necesitas cinco cosas: un negocio formalizado con RUC, una forma de emitir comprobantes, medios de pago que tu cliente ya use, una solución de envíos y un sitio donde ocurra la venta. No hace falta tenerlo todo perfecto el primer día, pero sí en este orden: lo legal primero, porque las pasarelas de pago te lo van a pedir.",
+    sections: [
+      {
+        h2: "1. RUC y régimen tributario",
+        body:
+          "Es el primer paso y el que condiciona todo lo demás: sin RUC activo no vas a poder afiliarte a ninguna pasarela de pago formal ni emitir comprobantes. Puedes vender como persona natural con negocio o constituir una empresa; el régimen que te toque depende de tus ingresos proyectados y de si vas a tener trabajadores. Esa elección conviene consultarla con un contador, porque cambia cuánto pagas y qué declaras.",
+      },
+      {
+        h2: "2. Comprobantes electrónicos",
+        body:
+          "Toda venta necesita su comprobante: boleta para consumidor final, factura para quien tiene RUC y quiere usar el crédito fiscal. En Perú la emisión es electrónica, y tienes dos caminos: emitir desde los sistemas de SUNAT, que es gratis pero manual, o usar un proveedor que lo automatice y se conecte con tu tienda. Si esperas volumen, automatizarlo desde el inicio evita horas de trabajo repetido. Lo detallamos en la guía de [facturación electrónica para tu tienda online](/blog/facturacion-electronica-sunat-para-tu-tienda-online).",
+      },
+      {
+        h2: "3. Medios de pago que tu cliente ya usa",
+        body:
+          "Aquí manda la costumbre del comprador peruano, no tu preferencia:",
+        bullets: [
+          "Yape y Plin — los más usados en el día a día; no ofrecerlos cuesta ventas.",
+          "Tarjeta de crédito y débito, vía Niubiz o Izipay, sobre todo en tickets altos.",
+          "Transferencia bancaria, habitual en ventas entre empresas.",
+          "Pago contra entrega, que da confianza a quien compra por primera vez, aunque sube el riesgo de rechazo del pedido.",
+        ],
+      },
+      {
+        h2: "4. Envíos: acuerda antes de vender",
+        body:
+          "Define cómo vas a entregar antes de la primera venta, no después. Para Lima suele funcionar un servicio de mensajería propio o por aplicación; para provincias, una empresa de transporte con cobertura nacional. Dos decisiones que conviene dejar cerradas: quién paga el envío (incluirlo en el precio suele convertir mejor que cobrarlo aparte) y qué pasa con las devoluciones. Lo vemos en la guía de [envíos y courier para tu tienda virtual](/blog/envios-y-courier-para-tu-tienda-virtual-en-peru).",
+      },
+      {
+        h2: "5. Dónde ocurre la venta",
+        body:
+          "Puedes empezar vendiendo por WhatsApp o Instagram, y mucha gente lo hace. El límite aparece pronto: no hay catálogo ordenado, respondes el mismo precio veinte veces al día y nada queda registrado. Una [tienda virtual](/tiendas-virtuales) cobra sola, descuenta stock y te deja el pedido armado. Si ya estás en ese punto, lo contamos en [cómo pasar de vender por WhatsApp a una tienda virtual](/blog/como-pasar-de-vender-por-whatsapp-a-una-tienda-virtual).",
+      },
+      {
+        h2: "6. Que te encuentren",
+        body:
+          "Una tienda sin visitas no vende, y la publicidad pagada deja de traer clientes el día que dejas de pagarla. Aparecer en Google por lo que tu cliente busca es lo que sostiene las ventas en el tiempo. Empieza por lo básico: una ficha de Google Business para tu negocio y contenido que responda las dudas reales de tus compradores. Está desarrollado en [cómo posicionar tu tienda online en Google Perú](/blog/como-posicionar-tu-tienda-online-en-google-peru).",
+      },
+      {
+        h2: "El orden importa",
+        body:
+          "Si tuviéramos que resumirlo: formaliza primero, porque sin RUC las pasarelas no te habilitan; resuelve comprobantes y pagos en paralelo, que es lo que más demora por trámites; y recién entonces construye la tienda, que es lo que se ve pero no lo que bloquea. Muchos negocios lo hacen al revés, terminan la web y descubren que no pueden cobrar hasta dentro de varias semanas.",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Puedo vender online sin RUC?",
+        a: "Vender por redes sin formalizar es común, pero te deja fuera de las pasarelas de pago serias y no puedes emitir comprobantes. En cuanto quieras cobrar con tarjeta o vender a empresas, el RUC deja de ser opcional.",
+      },
+      {
+        q: "¿Necesito una tienda virtual o me alcanza con Instagram?",
+        a: "Para empezar y validar si tu producto se vende, las redes alcanzan. El problema llega con el volumen: sin catálogo ni cobro automático pasas el día respondiendo precios y confirmando pagos a mano.",
+      },
+      {
+        q: "¿Tengo que emitir boleta por cada venta online?",
+        a: "Sí, toda venta necesita su comprobante. Boleta para consumidor final y factura para quien tiene RUC. Automatizar la emisión desde la tienda ahorra mucho trabajo si tienes volumen.",
+      },
+      {
+        q: "¿Qué conviene primero, la web o los medios de pago?",
+        a: "Los medios de pago, porque dependen de trámites que toman tiempo. La web la controlas tú; la afiliación a una pasarela, no. Iniciar ambas cosas a la vez es lo ideal.",
+      },
+    ],
+    related: [
+      { label: "Cómo crear una tienda virtual en Perú", href: "/blog/como-crear-una-tienda-virtual-en-peru", desc: "El paso a paso de montar la tienda." },
+      { label: "Pasarelas de pago en Perú", href: "/blog/pasarelas-de-pago-para-ecommerce-en-peru", desc: "Qué medio de cobro te conviene." },
+      { label: "Desarrollo de tiendas virtuales", href: "/tiendas-virtuales", desc: "Te dejamos la tienda lista para vender." },
+      { label: "Cotiza tu proyecto", href: "/cotizacion", desc: "Te decimos qué necesitas según lo que vendes." },
+    ],
+  },
+
+  {
+    slug: "certificado-ssl-que-es-y-por-que-tu-web-lo-necesita",
+    title: "Certificado SSL: qué es y por qué tu web lo necesita",
+    h1: "Certificado SSL: qué es y por qué tu web lo necesita",
+    description:
+      "Qué es un certificado SSL, por qué Chrome marca tu web como no segura sin él, cuánto cuesta y cómo comprobar que está bien instalado.",
+    excerpt:
+      "Es el candado del navegador. Sin él Chrome avisa a tus visitantes de que tu sitio no es seguro, y Google lo nota.",
+    datePublished: "2026-08-25",
+    category: "Web",
+    readingMin: 5,
+    intro:
+      "Un certificado SSL cifra lo que viaja entre tu web y quien la visita, para que nadie pueda leerlo por el camino. Es lo que hace que la dirección empiece por «https» y aparezca el candado. Sin él, Chrome muestra un aviso de «no es seguro» antes de que el visitante vea tu contenido. Hoy es gratis en casi cualquier hosting, así que no tenerlo no se justifica.",
+    sections: [
+      {
+        h2: "Qué pasa si tu web no lo tiene",
+        body:
+          "Tres cosas, todas malas. El navegador avisa al visitante de que el sitio no es seguro, y mucha gente se va antes de leer nada. Los formularios pierden credibilidad justo donde pides datos o pagos. Y Google considera la seguridad como un factor de posicionamiento, así que estar sin cifrar juega en contra frente a competidores que sí lo tienen. Si vendes online, además, ninguna pasarela de pago seria te va a habilitar sin él.",
+      },
+      {
+        h2: "Cuánto cuesta (spoiler: normalmente nada)",
+        body:
+          "La mayoría de proveedores incluye certificados gratuitos de Let's Encrypt, que se renuevan solos y cifran exactamente igual que uno de pago. Los certificados pagados existen para casos concretos: validación extendida de la organización, garantías comerciales o cobertura de muchos subdominios. Para una web de empresa o una tienda, el gratuito hace el trabajo. Si tu hosting te lo quiere cobrar aparte, es una señal sobre ese proveedor.",
+      },
+      {
+        h2: "Cómo comprobar que está bien puesto",
+        body:
+          "No basta con verlo instalado en el panel: hay que mirar la web real. Tres comprobaciones rápidas:",
+        bullets: [
+          "Abre tu web y confirma que aparece el candado y la dirección empieza por https.",
+          "Escribe la dirección con http:// a mano y comprueba que te redirige sola a https.",
+          "Prueba también la versión con y sin «www»: las dos deben acabar en https y en la misma dirección.",
+        ],
+      },
+      {
+        h2: "El error del contenido mixto",
+        body:
+          "Es el fallo más común después de instalar el certificado: la página carga por https pero alguna imagen, tipografía o script sigue pidiéndose por http. El navegador lo detecta y quita el candado, o directamente bloquea ese recurso. Suele pasar tras migrar una web antigua, y se arregla corrigiendo esas direcciones en el contenido. Si el candado no aparece pese a tener el certificado activo, este es el sospechoso número uno.",
+      },
+      {
+        h2: "La renovación, otra vez",
+        body:
+          "Los certificados vencen. Los de Let's Encrypt se renuevan automáticamente cada pocos meses si el hosting está bien configurado, pero conviene comprobar de vez en cuando que la renovación está ocurriendo. Un certificado vencido es peor que no tener ninguno: el navegador muestra una pantalla de advertencia a pantalla completa que muy pocos visitantes se atreven a saltar. Es parte de lo que cubrimos en [mantenimiento y soporte web](/mantenimiento-web).",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿El SSL gratis protege igual que uno de pago?",
+        a: "El cifrado es el mismo. Lo que cambia son las garantías comerciales y el nivel de validación de la organización, que importan en casos concretos. Para una web de empresa o una tienda, el gratuito cumple.",
+      },
+      {
+        q: "¿Tener SSL me hace subir en Google?",
+        a: "Por sí solo no te sube puestos, pero no tenerlo sí resta: la seguridad es uno de los factores que Google considera, y el aviso de «no seguro» ahuyenta visitantes, lo que empeora tus señales.",
+      },
+      {
+        q: "¿Por qué mi web tiene certificado pero no sale el candado?",
+        a: "Casi siempre es contenido mixto: algún recurso de la página se sigue cargando por http. Hay que localizar esas direcciones y corregirlas para que todo cargue por https.",
+      },
+      {
+        q: "¿Necesito SSL si mi web no vende ni pide datos?",
+        a: "Sí. El aviso de «no seguro» lo ve el visitante igual, aunque tu web sea solo informativa, y afecta a la confianza y al posicionamiento.",
+      },
+    ],
+    related: [
+      { label: "Cómo elegir un hosting en Perú", href: "/blog/como-elegir-un-hosting-en-peru", desc: "El certificado debería venir incluido." },
+      { label: "Mantenimiento y soporte web", href: "/mantenimiento-web", desc: "Vigilamos que el certificado no venza." },
+      { label: "Checklist SEO on-page", href: "/blog/seo-on-page-checklist-para-tu-pagina-web", desc: "Lo demás que Google mira en tu web." },
     ],
   },
 ];
