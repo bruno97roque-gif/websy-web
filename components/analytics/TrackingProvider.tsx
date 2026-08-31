@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
 import { trackEvent, trackLead, getPageType, type LeadMethod } from "@/lib/analytics";
+import { registrar as registrarPropio, engancharSalida } from "@/lib/wtrack";
 
 /**
  * Medición completa del sitio con un solo componente.
@@ -147,6 +148,11 @@ export default function TrackingProvider() {
   const salidaEnviada = useRef(false);
   const waPendiente = useRef<{ t: number; location: string; intent: string } | null>(null);
 
+  /* ── 0. La copia propia vacía su cola al irse la pestaña ── */
+  useEffect(() => {
+    engancharSalida();
+  }, []);
+
   /* ── 1. Clics ── */
   useEffect(() => {
     const onClick = (e: MouseEvent) => {
@@ -172,12 +178,25 @@ export default function TrackingProvider() {
         }
 
         if (method) {
-          const intent = method === "whatsapp" ? waIntent(href) : "";
-          trackLead(method, { ...base, ...(intent ? { wa_intent: intent } : {}) });
-          // WhatsApp abre en pestaña nueva: si vuelve enseguida, no escribió.
+          /* WhatsApp ya NO cuenta como conversión aquí.
+             Desde que existe el modal, pulsar el botón verde solo significa
+             que alguien quiere escribir: la conversión pasa cuando deja su
+             nombre y su teléfono, y esa la registra el propio modal. Contarla
+             en el clic inflaba `generate_lead` con todo el que abría el modal
+             y lo cerraba sin dejar nada.
+             Teléfono y correo sí siguen siendo lead en el clic: ahí no hay
+             ningún paso intermedio donde medir. */
           if (method === "whatsapp") {
+            const intent = waIntent(href);
+            trackEvent("whatsapp_click", {
+              ...base,
+              lead_method: "whatsapp",
+              ...(intent ? { wa_intent: intent } : {}),
+            });
             waPendiente.current = { t: Date.now(), location, intent };
+            return;
           }
+          trackLead(method, base);
           return;
         }
 
@@ -264,6 +283,14 @@ export default function TrackingProvider() {
 
   /* ── 3. Scroll, atención y salida (por ruta) ── */
   useEffect(() => {
+    /* La vista de página va SOLO al almacén propio: en GA4 ya la dispara el
+       contenedor de GTM al cambiar el historial, y mandarla otra vez desde
+       aquí duplicaría todas las sesiones del informe. */
+    registrarPropio("page_view", {
+      page_path: pathname,
+      page_type: getPageType(pathname),
+    });
+
     firedScroll.current = new Set();
     maxScroll.current = 0;
     errores.current = new Set();

@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
+import { COLECTOR, SITIO } from "../w/destino";
 
 // ⚠️ NO instanciar Resend en el módulo global — solo en el handler (runtime)
 // Si se instancia aquí, el build falla porque RESEND_API_KEY no existe en build time
@@ -106,6 +107,32 @@ export async function POST(req: NextRequest) {
         }),
       }).catch(() => null); // No bloquea el flujo si Google Sheets falla
     }
+
+    /* 6 — El lead también entra en el panel de Websy.
+       Va después del correo y sin bloquearlo: si el panel estuviera caído, el
+       formulario sigue llegando al buzón exactamente igual que antes. */
+    void fetch(`${COLECTOR}/api/lead`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        sitio: SITIO,
+        sid: clean(body.sid, 64),
+        canal: "formulario",
+        nombre,
+        telefono: whatsapp === "—" ? null : whatsapp,
+        correo: email,
+        empresa: empresa === "—" ? null : empresa,
+        servicio: servicio === "—" ? null : servicio,
+        mensaje: proyecto,
+        pagina: clean(body.pagina, 300),
+        ubicacion: "formulario_contacto",
+        ctx: {
+          pais: req.headers.get("x-vercel-ip-country") ?? "",
+          ciudad: req.headers.get("x-vercel-ip-city") ?? "",
+        },
+      }),
+      signal: AbortSignal.timeout(5000),
+    }).catch((e) => console.error("[contact/route] panel", e));
 
     return NextResponse.json({ ok: true });
   } catch (err) {
