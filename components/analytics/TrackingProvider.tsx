@@ -146,7 +146,6 @@ export default function TrackingProvider() {
   const inicioPagina = useRef(0);
   const segundosAtencion = useRef(0);
   const salidaEnviada = useRef(false);
-  const waPendiente = useRef<{ t: number; location: string; intent: string } | null>(null);
 
   /* ── 0. La copia propia vacía su cola al irse la pestaña ── */
   useEffect(() => {
@@ -193,7 +192,13 @@ export default function TrackingProvider() {
               lead_method: "whatsapp",
               ...(intent ? { wa_intent: intent } : {}),
             });
-            waPendiente.current = { t: Date.now(), location, intent };
+            /* Ya no se arma el cronómetro de "volvió sin escribir". Desde que
+               existe el modal, este clic NO lleva a WhatsApp: abre una ventana
+               dentro de la propia página. Medir desde aquí daba un falso
+               positivo por cada persona que abre el modal y se lo piensa, y se
+               perdía el caso real —el que sí sale— porque el reloj empezaba
+               antes de tiempo. Quien lo mide bien ahora es el modal, que sabe
+               si WhatsApp llegó a abrirse. */
             return;
           }
           trackLead(method, base);
@@ -375,19 +380,6 @@ export default function TrackingProvider() {
       if (document.visibilityState === "hidden") {
         enviarSalida();
         return;
-      }
-      // Volvió a la pestaña: ¿venía de WhatsApp sin escribir?
-      const wa = waPendiente.current;
-      if (wa) {
-        const fuera = Math.round((Date.now() - wa.t) / 1000);
-        waPendiente.current = null;
-        if (fuera <= 20) {
-          trackEvent("whatsapp_bounce_back", {
-            cta_location: wa.location,
-            wa_intent: wa.intent,
-            seconds: fuera,
-          });
-        }
       }
     };
 

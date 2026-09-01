@@ -1,8 +1,8 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
-import { registrar, registrarLead, marcarLead } from "@/lib/wtrack";
-import { trackLead, trackEvent } from "@/lib/analytics";
+import { registrar, registrarLead, marcarLead, medir } from "@/lib/wtrack";
+import { trackEvent } from "@/lib/analytics";
 
 /**
  * El paso que faltaba antes de WhatsApp.
@@ -45,6 +45,12 @@ export default function WhatsAppModal() {
       // Un clic con Ctrl/Cmd o con el botón central quiere abrir en otra
       // pestaña: eso se respeta y no se interrumpe a nadie.
       if (e.defaultPrevented || e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) return;
+
+      /* En una vista previa de Vercel o en cualquier otro dominio, la medición
+         está apagada y `registrarLead` no llama a nadie. Si aun así se
+         interceptara el clic, se pediría el teléfono para tirarlo a la basura.
+         Fuera del sitio de verdad, el enlace se deja en paz. */
+      if (!medir()) return;
 
       const a = (e.target as Element | null)?.closest?.("a[href]") as HTMLAnchorElement | null;
       if (!a) return;
@@ -135,10 +141,20 @@ export default function WhatsAppModal() {
       if (!focos.length) return;
       const primero = focos[0];
       const ultimo = focos[focos.length - 1];
-      if (e.shiftKey && document.activeElement === primero) {
+      const activo = document.activeElement;
+
+      /* Basta tocar el título o el texto legal —que no son enfocables— para que
+         el foco pase a <body>. Sin esta rama, el siguiente Tab se iba a la
+         página de detrás y quien navega con teclado perdía el modal de vista. */
+      if (!activo || !caja.current.contains(activo)) {
+        e.preventDefault();
+        (e.shiftKey ? ultimo : primero).focus();
+        return;
+      }
+      if (e.shiftKey && activo === primero) {
         e.preventDefault();
         ultimo.focus();
-      } else if (!e.shiftKey && document.activeElement === ultimo) {
+      } else if (!e.shiftKey && activo === ultimo) {
         e.preventDefault();
         primero.focus();
       }
@@ -181,9 +197,14 @@ export default function WhatsAppModal() {
 
     const d = destino.current;
     registrar("wa_modal_enviado", { cta_location: d?.ubicacion, link_text: d?.texto });
-    // Se mantiene el evento de GA4 que ya existía: los informes de siempre
-    // siguen cuadrando y no se rompe ninguna conversión configurada.
-    trackLead("whatsapp", { cta_location: d?.ubicacion ?? "desconocida" });
+    /* La conversión de GA4, con el nombre de siempre para que no se rompa
+       ninguna configuración. NO se usa `trackLead`: ese ayudante emite además
+       `whatsapp_click`, que ya dispara el TrackingProvider en el mismo clic, y
+       cada contacto acababa contado dos veces en la pestaña de eventos. */
+    trackEvent("generate_lead", {
+      lead_method: "whatsapp",
+      cta_location: d?.ubicacion ?? "desconocida",
+    });
 
     // El guardado va con `keepalive`, así que termina aunque nos vayamos a
     // WhatsApp. Se le da hasta 1,2 s para devolver el identificador; pasado
@@ -203,18 +224,31 @@ export default function WhatsAppModal() {
     ]);
 
     const url = urlConNombre(d?.url, nombre);
-    if (resultado.id) {
-      leadAbierto.current = { id: resultado.id, t: Date.now() };
-      marcarLead(resultado.id, { wa_abierto: true });
-    }
-    registrar("wa_abierto", { cta_location: d?.ubicacion });
-
     cerrar("enviado");
+
     // `_blank` en escritorio deja la web abierta detrás; en móvil el sistema
     // se lleva a la app igual. Si el navegador bloquea la ventana, se navega
     // en la misma pestaña para que nadie se quede sin poder escribir.
     const ventana = window.open(url, "_blank", "noopener,noreferrer");
-    if (!ventana) window.location.href = url;
+    const seAbrio = Boolean(ventana);
+    if (!seAbrio) window.location.href = url;
+
+    /* `wa_abierto` solo si WhatsApp se abrió DE VERDAD. Emitirlo siempre hacía
+       que «dejan sus datos» y «abren WhatsApp» fueran el mismo número por
+       construcción, y la cifra de rescatados del panel —los que dejan el
+       teléfono y no llegan a escribir— no podía salir nunca de cero. */
+    if (seAbrio) registrar("wa_abierto", { cta_location: d?.ubicacion });
+
+    /* El identificador puede llegar después de la carrera de 1,2 s. Se espera a
+       la promesa de verdad: si no, en cada guardado lento el lead se quedaba
+       marcado para siempre como «no abrió WhatsApp». */
+    const marcar = (id: number | null) => {
+      if (!id) return;
+      leadAbierto.current = seAbrio ? { id, t: Date.now() } : null;
+      if (seAbrio) marcarLead(id, { wa_abierto: true });
+    };
+    if (resultado.id) marcar(resultado.id);
+    else void guardado.then((r) => marcar(r.id)).catch(() => null);
   }
 
   if (!abierto) return null;
@@ -237,7 +271,9 @@ export default function WhatsAppModal() {
         aria-modal="true"
         aria-labelledby="wa-titulo"
         aria-describedby="wa-texto"
-        className="w-full max-w-[420px] rounded-t-3xl bg-white p-6 shadow-2xl sm:rounded-3xl sm:p-8"
+        /* `max-h` + scroll: en un móvil apaisado o con el teclado abierto, el
+           modal no cabía y el botón de continuar quedaba fuera de la pantalla. */
+        className="max-h-[92dvh] w-full max-w-[420px] overflow-y-auto rounded-t-3xl bg-white p-6 shadow-2xl sm:max-h-[90dvh] sm:rounded-3xl sm:p-8"
       >
         <div className="mb-5 flex items-start gap-3">
           <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#25D366]">

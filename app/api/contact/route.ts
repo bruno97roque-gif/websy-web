@@ -87,31 +87,40 @@ export async function POST(req: NextRequest) {
 
     /* 4 — Enviar email vía Resend (instanciado aquí = solo en runtime, no en build) */
     const resend = new Resend(process.env.RESEND_API_KEY);
-    await resend.emails.send({
+    /* Resend NO lanza cuando falla: devuelve `{ error }`. Sin leerlo, una clave
+       revocada o un dominio sin verificar dejaba al visitante viendo
+       «✓ Mensaje enviado» mientras el correo no salía de ningún sitio. */
+    const { error: fallo } = await resend.emails.send({
       from:    `Websy Contacto <${process.env.FROM_EMAIL ?? "onboarding@resend.dev"}>`,
       to:      [process.env.CONTACT_EMAIL ?? "ventas@websy.com.pe"],
       replyTo: email,
       subject: `✉️ Nuevo contacto: ${nombre} · ${servicio}`,
       html:    buildEmailHtml({ nombre, empresa, email, whatsapp, servicio, proyecto, fecha }),
     });
+    if (fallo) console.error("[contact/route] resend no envió el mensaje:", fallo);
 
     /* 5 — Google Sheets vía Apps Script webhook
        Ver instrucciones en /docs/google-sheets-script.js */
     const webhookUrl = process.env.GOOGLE_SHEETS_WEBHOOK_URL;
     if (webhookUrl) {
+      // Con reloj: `.catch()` atrapa un rechazo, pero no una petición que se
+      // queda colgada, y ahí el visitante se come la espera entera.
       await fetch(webhookUrl, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           fecha, nombre, empresa, email, whatsapp, servicio, proyecto,
         }),
+        signal: AbortSignal.timeout(5000),
       }).catch(() => null); // No bloquea el flujo si Google Sheets falla
     }
 
     /* 6 — El lead también entra en el panel de Websy.
-       Va después del correo y sin bloquearlo: si el panel estuviera caído, el
-       formulario sigue llegando al buzón exactamente igual que antes. */
-    void fetch(`${COLECTOR}/api/lead`, {
+       Con `await` y no con `void`: en una función serverless, lo que queda
+       pendiente después de responder no está garantizado, y este es el ÚNICO
+       camino por el que un lead de formulario llega a la tabla. El reloj de 5 s
+       lo acota, y el `.catch` deja el correo intacto si el panel está caído. */
+    await fetch(`${COLECTOR}/api/lead`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -124,7 +133,7 @@ export async function POST(req: NextRequest) {
         empresa: empresa === "—" ? null : empresa,
         servicio: servicio === "—" ? null : servicio,
         mensaje: proyecto,
-        pagina: clean(body.pagina, 300),
+        pagina: clean(body.pagina, 300) || null,
         ubicacion: "formulario_contacto",
         ctx: {
           pais: req.headers.get("x-vercel-ip-country") ?? "",
@@ -132,7 +141,11 @@ export async function POST(req: NextRequest) {
         },
       }),
       signal: AbortSignal.timeout(5000),
-    }).catch((e) => console.error("[contact/route] panel", e));
+    })
+      .then(async (r) => {
+        if (!r.ok) console.error("[contact/route] el panel rechazó el lead", r.status, await r.text());
+      })
+      .catch((e) => console.error("[contact/route] panel", e));
 
     return NextResponse.json({ ok: true });
   } catch (err) {

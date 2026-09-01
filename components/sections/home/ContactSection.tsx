@@ -99,7 +99,14 @@ export default function ContactSection() {
         // El identificador de sesión enlaza el formulario con todo lo que esa
         // misma persona hizo antes: por dónde entró, qué páginas leyó y cuánto
         // tardó en decidirse. Sin él, el lead llega sin historia.
-        body:    JSON.stringify({ ...data, sid: sesionId() }),
+        // La página va aparte: el formulario vive en el pie de TODAS las
+        // páginas, así que sin esto todos los leads llegaban sin saber desde
+        // cuál se enviaron, que es justo lo que dice qué contenido convierte.
+        body:    JSON.stringify({
+          ...data,
+          sid: sesionId(),
+          pagina: window.location.pathname,
+        }),
       });
 
       const json = await res.json();

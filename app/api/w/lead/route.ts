@@ -103,8 +103,16 @@ export async function POST(req: NextRequest) {
         body: JSON.stringify(carga),
         signal: AbortSignal.timeout(6000),
       });
-      const j = await r.json();
-      id = j?.id ? Number(j.id) : null;
+      const j = await r.json().catch(() => null);
+      /* `fetch` no lanza con un 400 ni con un 500: hay que mirar `r.ok`. Sin
+         esto, un contacto rechazado por el colector (un teléfono con dos
+         números, por ejemplo) se perdía y aquí se contestaba «todo bien» sin
+         dejar ni una línea en los registros. */
+      if (!r.ok) {
+        console.error("[w/lead] el panel rechazó el contacto", r.status, j);
+      } else {
+        id = j?.id ? Number(j.id) : null;
+      }
     } catch (e) {
       console.error("[w/lead] no se pudo guardar en el panel", e);
     }
@@ -178,15 +186,37 @@ async function avisar(c: Carga) {
     dateStyle: "short",
     timeStyle: "short",
   });
-  const tel = (c.telefono ?? "").replace(/\D/g, "");
-  const wa = tel ? `https://wa.me/${tel.length === 9 ? "51" + tel : tel}` : "";
+  const wa = enlaceWhatsApp(c.telefono);
 
-  await resend.emails.send({
+  /* Resend NO lanza cuando falla: devuelve `{ error }`. Si no se lee, una clave
+     revocada o un dominio sin verificar dejaban al equipo sin avisos y sin una
+     sola línea en los registros para enterarse. */
+  const { error } = await resend.emails.send({
     from: `Websy Contacto <${process.env.FROM_EMAIL ?? "onboarding@resend.dev"}>`,
     to: [process.env.CONTACT_EMAIL ?? "ventas@websy.com.pe"],
     subject: `🟢 ${c.nombre ?? "Alguien"} quiere que le escribas por WhatsApp`,
     html: correo(c, fecha, wa),
   });
+  if (error) console.error("[w/lead] resend no envió el aviso:", error);
+}
+
+/**
+ * Enlace a WhatsApp con el número normalizado a formato internacional.
+ *
+ * Antes se le pegaba el 51 solo si tenía exactamente 9 dígitos, así que un
+ * móvil escrito con el cero de tronco («0999 888 777») generaba un enlace que
+ * WhatsApp rechaza — y el aviso llegaba con un botón que no lleva a ninguna
+ * parte, justo cuando hay que responder rápido.
+ */
+function enlaceWhatsApp(bruto: string | null): string {
+  if (!bruto) return "";
+  const crudo = bruto.replace(/[^\d+]/g, "");
+  let d = crudo.startsWith("+") ? crudo.slice(1).replace(/\D/g, "") : crudo.replace(/\D/g, "");
+  if (d.startsWith("0051")) d = d.slice(2);
+  else if (d.startsWith("00")) d = d.slice(2);
+  else if (d.startsWith("0")) d = "51" + d.slice(1);   // cero de tronco peruano
+  else if (d.length === 9 || d.length === 8 || d.length === 7) d = "51" + d;
+  return d.length >= 8 && d.length <= 15 ? `https://wa.me/${d}` : "";
 }
 
 function correo(c: Carga, fecha: string, wa: string): string {

@@ -27,7 +27,7 @@ const RUTA_EVENTOS = "/api/w/ev";
  */
 const HOST_MEDIDO = /(^|\.)websy\.com\.pe$/;
 
-function medir(): boolean {
+export function medir(): boolean {
   if (typeof window === "undefined") return false;
   if (process.env.NEXT_PUBLIC_MEDICION_FORZAR === "1") return true;
   return HOST_MEDIDO.test(window.location.hostname);
@@ -58,6 +58,8 @@ let cola: EventoPendiente[] = [];
 let temporizador: number | null = null;
 let segundos = 0;
 let relojArrancado = false;
+/** El sid con el que se está contando. Si cambia, el reloj vuelve a cero. */
+let sidContando: string | null = null;
 
 /* ── Identificador de sesión ──────────────────────────────────
    Vive en sessionStorage y se renueva tras media hora quieto. No es una
@@ -81,6 +83,12 @@ export function sesionId(): string {
       const [sid, visto] = crudo.split("|");
       if (sid && Number(visto) > ahora - SESION_MS) {
         localStorage.setItem("wsy_sid", `${sid}|${ahora}`);
+        // Otra pestaña puede haber estrenado sesión: si el sid no es el que
+        // veníamos contando, el reloj de esta pestaña no le pertenece.
+        if (sidContando !== sid) {
+          segundos = 0;
+          sidContando = sid;
+        }
         return sid;
       }
     }
@@ -89,6 +97,11 @@ export function sesionId(): string {
     // Contexto de llegada: se guarda una vez, al empezar la sesión, para que
     // el panel sepa por dónde entró aunque después navegue por medio sitio.
     localStorage.setItem("wsy_ctx", JSON.stringify(contextoDeLlegada()));
+    // Sesión nueva, reloj a cero. Sin esto, quien deja la pestaña abierta media
+    // hora y luego vuelve a moverse estrenaba sesión con 35 minutos de atención
+    // ya puestos, y la media de todo el sitio se iba al techo.
+    segundos = 0;
+    sidContando = sid;
     return sid;
   } catch {
     // Navegador con el almacenamiento bloqueado: se mide la página suelta.
@@ -288,7 +301,8 @@ export function marcarLead(id: number, cambio: { wa_abierto?: boolean; wa_vuelta
     void fetch("/api/w/lead", {
       method: "PATCH",
       headers: { "content-type": "application/json" },
-      body: JSON.stringify({ id, ...cambio }),
+      // El sid va siempre: el colector comprueba que el lead es de esta sesión.
+      body: JSON.stringify({ id, sid: sesionId(), ...cambio }),
       keepalive: true,
     }).catch(() => null);
   } catch {
