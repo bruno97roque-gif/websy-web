@@ -7,7 +7,8 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/api/"], // No indexar rutas de API
+        // El panel es privado y se entra con token: fuera del índice.
+        disallow: ["/api/", "/panel"],
       },
     ],
     sitemap: `${SITE_URL}/sitemap.xml`,

@@ -8,7 +8,7 @@
  *
  * Se puede apuntar a otro sitio sin tocar código con COLECTOR_URL en Vercel.
  */
-export const COLECTOR = process.env.COLECTOR_URL ?? "https://websy-panel.vercel.app";
+export const COLECTOR = process.env.COLECTOR_URL ?? "https://websy-panel.vercel.app/panel";
 
 /** Identifica de qué web viene el dato. El colector rechaza cualquier otro. */
 export const SITIO = "websy.com.pe";

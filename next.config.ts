@@ -67,6 +67,22 @@ const nextConfig: NextConfig = {
     minimumCacheTTL: 2592000,
   },
 
+  /* ── El panel de Websy, dentro de websy.com.pe ──────────────
+     `/panel` sirve el colector de medición sin que el visitante salga del
+     dominio. Al ser una reescritura y no una redirección, para el navegador
+     todo es mismo origen: la política de seguridad de arriba
+     (`connect-src 'self'`) sigue valiendo tal cual, sin abrirla a nadie.
+
+     El colector emite sus rutas y sus ficheros ya bajo `/panel` (basePath),
+     así que sus `_next/static` no chocan con los de este sitio. */
+  async rewrites() {
+    const PANEL = "https://websy-panel.vercel.app/panel";
+    return [
+      { source: "/panel", destination: PANEL },
+      { source: "/panel/:ruta*", destination: `${PANEL}/:ruta*` },
+    ];
+  },
+
   async headers() {
     return [
       {
