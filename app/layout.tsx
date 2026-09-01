@@ -10,6 +10,7 @@ import SmoothScroll from "@/components/layout/SmoothScroll";
 import LoadingScreen from "@/components/ui/LoadingScreen";
 import WhatsappButton from "@/components/ui/WhatsappButton";
 import CookieBanner from "@/components/ui/CookieBanner";
+import WhatsAppModal from "@/components/ui/WhatsAppModal";
 import ContactSection from "@/components/sections/home/ContactSection";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -163,6 +164,10 @@ export default function RootLayout({
         />
         <Footer />
         <WhatsappButton />
+        {/* Antes de salir a WhatsApp se piden nombre y teléfono, y se guardan.
+            Engancha TODOS los enlaces de WhatsApp del sitio, no solo el botón
+            flotante: no hay que tocar ni una landing. */}
+        <WhatsAppModal />
         <CookieBanner />
         {/* Medición completa: WhatsApp, formulario, redes, CTA, FAQ, scroll… */}
         <TrackingProvider />

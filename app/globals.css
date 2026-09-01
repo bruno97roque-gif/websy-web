@@ -242,3 +242,10 @@ canvas,
     }
   }
 }
+/* Mientras el modal de WhatsApp está abierto, el aviso de cookies se aparta.
+   En móvil el banner se sitúa justo sobre el botón de continuar y le impedía
+   pulsarlo a quien todavía no había aceptado cookies: es decir, al visitante
+   nuevo. Vuelve solo al cerrar el modal, sin perder la decisión pendiente. */
+body[data-wa-modal] .cookie-banner {
+  display: none !important;
+}

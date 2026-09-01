@@ -4,6 +4,7 @@ import { useState, useRef, useEffect } from "react";
 import { ShimmerButton } from "@/components/ui/shimmer-button";
 import { AnimatedMedia } from "@/components/ui/animated-media";
 import { trackLead, trackEvent } from "@/lib/analytics";
+import { sesionId } from "@/lib/wtrack";
 
 /* ── Estado del formulario ── */
 type Status = "idle" | "loading" | "success" | "error";
@@ -95,7 +96,17 @@ export default function ContactSection() {
       const res = await fetch("/api/contact", {
         method:  "POST",
         headers: { "Content-Type": "application/json" },
-        body:    JSON.stringify(data),
+        // El identificador de sesión enlaza el formulario con todo lo que esa
+        // misma persona hizo antes: por dónde entró, qué páginas leyó y cuánto
+        // tardó en decidirse. Sin él, el lead llega sin historia.
+        // La página va aparte: el formulario vive en el pie de TODAS las
+        // páginas, así que sin esto todos los leads llegaban sin saber desde
+        // cuál se enviaron, que es justo lo que dice qué contenido convierte.
+        body:    JSON.stringify({
+          ...data,
+          sid: sesionId(),
+          pagina: window.location.pathname,
+        }),
       });
 
       const json = await res.json();

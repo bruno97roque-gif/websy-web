@@ -67,12 +67,44 @@ const nextConfig: NextConfig = {
     minimumCacheTTL: 2592000,
   },
 
+  /* ── El panel de Websy, dentro de websy.com.pe ──────────────
+     `/panel` sirve el colector de medición sin que el visitante salga del
+     dominio. Al ser una reescritura y no una redirección, para el navegador
+     todo es mismo origen: la política de seguridad de arriba
+     (`connect-src 'self'`) sigue valiendo tal cual, sin abrirla a nadie.
+
+     El colector emite sus rutas y sus ficheros ya bajo `/panel` (basePath),
+     así que sus `_next/static` no chocan con los de este sitio. */
+  async rewrites() {
+    const PANEL = "https://websy-panel.vercel.app/panel";
+    return [
+      { source: "/panel", destination: PANEL },
+      { source: "/panel/:ruta*", destination: `${PANEL}/:ruta*` },
+    ];
+  },
+
   async headers() {
     return [
       {
         // Aplica a todas las rutas
         source: "/(.*)",
         headers: securityHeaders,
+      },
+      {
+        /* El panel NO se indexa, y no se deja al azar: la cabecera se pone aquí
+           además de en el propio panel, para que siga estando aunque algún día
+           el proxy deje de reenviarla. Con esto son tres señales — robots.txt,
+           esta cabecera y el <meta robots> del HTML — y las tres dicen lo mismo. */
+        source: "/panel/:ruta*",
+        headers: [
+          { key: "X-Robots-Tag", value: "noindex, nofollow, noarchive, nosnippet" },
+        ],
+      },
+      {
+        source: "/panel",
+        headers: [
+          { key: "X-Robots-Tag", value: "noindex, nofollow, noarchive, nosnippet" },
+        ],
       },
       // Nota: Vercel CDN cachea automáticamente los assets estáticos de /public.
       // No se necesita regla extra de Cache-Control para imágenes/video/gif.

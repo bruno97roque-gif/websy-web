@@ -16,6 +16,8 @@
  * el usuario). Del formulario solo viaja el NOMBRE del campo y si se completó.
  */
 
+import { registrar as registrarPropio } from "./wtrack";
+
 export const GA4_MEASUREMENT_ID = "G-KTWZ5KEZR7";
 
 /** ID del contenedor de Google Tag Manager de Websy. */
@@ -143,6 +145,15 @@ export function trackEvent(name: string, params: EventParams = {}): void {
   if (typeof window === "undefined") return;
   if (!medicionActiva()) return;
   const payload = clean({ ...pageContext(), ...params });
+
+  /* Copia propia, por el dominio de Websy. Va la primera a propósito: si una
+     extensión rompe el dataLayer, el dato ya está a salvo. Es lo que hace que
+     el panel vea lo que GA4 pierde por los bloqueadores. */
+  try {
+    registrarPropio(name, payload);
+  } catch {
+    /* la medición propia nunca puede tumbar a la de Google */
+  }
 
   try {
     window.dataLayer = window.dataLayer || [];

@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
 import { trackEvent, trackLead, getPageType, type LeadMethod } from "@/lib/analytics";
+import { registrar as registrarPropio, engancharSalida } from "@/lib/wtrack";
 
 /**
  * Medición completa del sitio con un solo componente.
@@ -145,7 +146,11 @@ export default function TrackingProvider() {
   const inicioPagina = useRef(0);
   const segundosAtencion = useRef(0);
   const salidaEnviada = useRef(false);
-  const waPendiente = useRef<{ t: number; location: string; intent: string } | null>(null);
+
+  /* ── 0. La copia propia vacía su cola al irse la pestaña ── */
+  useEffect(() => {
+    engancharSalida();
+  }, []);
 
   /* ── 1. Clics ── */
   useEffect(() => {
@@ -172,12 +177,31 @@ export default function TrackingProvider() {
         }
 
         if (method) {
-          const intent = method === "whatsapp" ? waIntent(href) : "";
-          trackLead(method, { ...base, ...(intent ? { wa_intent: intent } : {}) });
-          // WhatsApp abre en pestaña nueva: si vuelve enseguida, no escribió.
+          /* WhatsApp ya NO cuenta como conversión aquí.
+             Desde que existe el modal, pulsar el botón verde solo significa
+             que alguien quiere escribir: la conversión pasa cuando deja su
+             nombre y su teléfono, y esa la registra el propio modal. Contarla
+             en el clic inflaba `generate_lead` con todo el que abría el modal
+             y lo cerraba sin dejar nada.
+             Teléfono y correo sí siguen siendo lead en el clic: ahí no hay
+             ningún paso intermedio donde medir. */
           if (method === "whatsapp") {
-            waPendiente.current = { t: Date.now(), location, intent };
+            const intent = waIntent(href);
+            trackEvent("whatsapp_click", {
+              ...base,
+              lead_method: "whatsapp",
+              ...(intent ? { wa_intent: intent } : {}),
+            });
+            /* Ya no se arma el cronómetro de "volvió sin escribir". Desde que
+               existe el modal, este clic NO lleva a WhatsApp: abre una ventana
+               dentro de la propia página. Medir desde aquí daba un falso
+               positivo por cada persona que abre el modal y se lo piensa, y se
+               perdía el caso real —el que sí sale— porque el reloj empezaba
+               antes de tiempo. Quien lo mide bien ahora es el modal, que sabe
+               si WhatsApp llegó a abrirse. */
+            return;
           }
+          trackLead(method, base);
           return;
         }
 
@@ -264,6 +288,14 @@ export default function TrackingProvider() {
 
   /* ── 3. Scroll, atención y salida (por ruta) ── */
   useEffect(() => {
+    /* La vista de página va SOLO al almacén propio: en GA4 ya la dispara el
+       contenedor de GTM al cambiar el historial, y mandarla otra vez desde
+       aquí duplicaría todas las sesiones del informe. */
+    registrarPropio("page_view", {
+      page_path: pathname,
+      page_type: getPageType(pathname),
+    });
+
     firedScroll.current = new Set();
     maxScroll.current = 0;
     errores.current = new Set();
@@ -348,19 +380,6 @@ export default function TrackingProvider() {
       if (document.visibilityState === "hidden") {
         enviarSalida();
         return;
-      }
-      // Volvió a la pestaña: ¿venía de WhatsApp sin escribir?
-      const wa = waPendiente.current;
-      if (wa) {
-        const fuera = Math.round((Date.now() - wa.t) / 1000);
-        waPendiente.current = null;
-        if (fuera <= 20) {
-          trackEvent("whatsapp_bounce_back", {
-            cta_location: wa.location,
-            wa_intent: wa.intent,
-            seconds: fuera,
-          });
-        }
       }
     };
 
