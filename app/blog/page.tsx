@@ -62,7 +62,10 @@ export default function BlogIndexPage() {
 
       {/* LISTADO */}
       <section style={{ padding: "52px 24px 80px" }}>
-        <div style={{ maxWidth: 1040, margin: "0 auto", display: "grid", gap: 22, gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))" }}>
+        {/* `minmax(300px, …)` a secas desbordaba 4 px en un iPhone SE: 300 de
+            tarjeta más el padding lateral no caben en 320. Con `min()` la
+            tarjeta nunca pide más ancho del que hay. */}
+        <div style={{ maxWidth: 1040, margin: "0 auto", display: "grid", gap: 22, gridTemplateColumns: "repeat(auto-fill, minmax(min(300px, 100%), 1fr))" }}>
           {posts.map((p) => (
             <Link
               key={p.slug}

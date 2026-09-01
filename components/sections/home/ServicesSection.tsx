@@ -188,12 +188,16 @@ export default function ServicesSection() {
         {/* ── Header ── */}
         <div className="mb-10 flex items-end justify-between md:mb-[72px]">
           <div>
+            {/* La home compite por «agencia de desarrollo web» y estaba en el
+                puesto 22 sin un solo encabezado que nombrara el servicio: los
+                H2 hablaban de «tu marca» y de «despegar». El tono se queda; la
+                palabra por la que nos buscan, también. */}
             <p className="font-poppins mb-3 text-[11px] font-medium uppercase tracking-[3px] text-[#F18C1B]">
-              Nuestros servicios
+              Servicios de desarrollo web en Perú
             </p>
             <h2 className="font-montserrat text-[clamp(30px,3.5vw,50px)] font-bold leading-[1.08] tracking-tight text-[#291231]">
-              Todo lo que tu marca<br />
-              necesita para <span className="text-[#F18C1B]">despegar</span>
+              Desarrollo web, tiendas y sistemas<br />
+              para que tu marca <span className="text-[#F18C1B]">despegue</span>
             </h2>
           </div>
           <a

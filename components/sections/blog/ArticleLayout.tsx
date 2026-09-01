@@ -3,14 +3,13 @@ import JsonLd from "@/components/seo/JsonLd";
 import { blogPostingSchema, breadcrumbSchema, faqPageSchema, howToSchema, BLOG_AUTHOR } from "@/lib/schema";
 import { SITE_URL, ogUrl } from "@/lib/seo";
 import type { BlogPost } from "@/lib/blog";
+import { ctaDelPost, waHref } from "@/lib/blog-cta";
 import ArticleView from "@/components/analytics/ArticleView";
 
 /* Layout reusable de artículo de blog (BlogPosting + Breadcrumb + FAQPage). */
 
 const PURPLE = "#291231";
 const ORANGE = "#F18C1B";
-const WA_HREF =
-  "https://wa.me/51940549322?text=Hola%2C%20le%C3%AD%20su%20blog%20y%20quiero%20m%C3%A1s%20informaci%C3%B3n.";
 const fp = "var(--font-poppins, sans-serif)";
 const fm = "var(--font-montserrat, sans-serif)";
 
@@ -50,6 +49,31 @@ const ART_CSS = `
 .art-btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 32px rgba(241,140,27,.45)}
 .art-btn-ghost{background:transparent;border:2px solid rgba(255,255,255,.3)}
 .art-btn-ghost:hover{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.6)}
+
+/* Puente a la acción dentro del artículo. Se lee como una nota al margen,
+   no como un anuncio: quien está leyendo sigue leyendo, y quien ya decidió
+   tiene el botón donde está mirando. */
+.art-tabla-marco{margin-top:20px;overflow-x:auto;border:1px solid #ece8f2;border-radius:14px;background:#fff}
+.art-tabla{width:100%;border-collapse:collapse;font-family:${fp};font-size:15px}
+.art-tabla th{text-align:right;font-family:${fm};font-size:12.5px;font-weight:700;letter-spacing:.4px;text-transform:uppercase;color:#7a6882;padding:14px 16px;border-bottom:1px solid #ece8f2;white-space:nowrap}
+.art-tabla th:first-child,.art-tabla td:first-child{text-align:left}
+.art-tabla td{text-align:right;padding:13px 16px;border-bottom:1px solid #f4f0f8;color:#46404f;white-space:nowrap}
+.art-tabla td:first-child{color:${PURPLE};font-weight:600;white-space:normal}
+.art-tabla tr:last-child td{border-bottom:none}
+.art-tabla-nota{font-family:${fp};font-size:13.5px;color:#7a6882;line-height:1.6;margin:10px 2px 0}
+
+.art-puente{background:#fffaf3;border:1px solid #f4dcb8;border-radius:16px;padding:24px 26px}
+.art-puente-t{font-family:${fm};font-size:18px;font-weight:700;color:${PURPLE};margin:0 0 8px;line-height:1.35}
+.art-puente-p{font-family:${fp};font-size:15.5px;color:#5a5365;line-height:1.62;margin:0 0 18px}
+.art-puente-acc{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.art-puente-wa{display:inline-flex;align-items:center;gap:8px;background:${ORANGE};color:${PURPLE};font-family:${fm};font-weight:700;font-size:14px;padding:12px 22px;border-radius:100px;text-decoration:none}
+.art-puente-wa:hover{background:#e07010;color:#fff}
+.art-puente-ver{display:inline-flex;align-items:center;gap:7px;color:${PURPLE};font-family:${fm};font-weight:600;font-size:14px;padding:12px 18px;border-radius:100px;text-decoration:none;border:1px solid #e3d8ea}
+.art-puente-ver:hover{background:#fff;border-color:${ORANGE}}
+@media (max-width:600px){
+  .art-puente{padding:20px 18px}
+  .art-puente-acc a{flex:1 1 100%;justify-content:center}
+}
 `;
 
 function formatDate(iso: string) {
@@ -105,6 +129,12 @@ export default function ArticleLayout({ post }: { post: BlogPost }) {
     ]),
   ];
   if (post.faqs && post.faqs.length > 0) schemas.push(faqPageSchema(post.faqs));
+
+  /* El servicio del que hay que hablarle a quien está leyendo esto, y dónde
+     va el bloque. Con 5 secciones o más entra tras la segunda; con menos, tras
+     la penúltima, para que no quede pegado al CTA de cierre. */
+  const cta = ctaDelPost(post.category, post.slug);
+  const puenteTras = post.sections.length >= 5 ? 1 : Math.max(0, post.sections.length - 2);
 
   /* HowTo solo para guías genuinamente por pasos: slug "cómo…" y ≥3 secciones
      con encabezado numerado ("1. …", "2) …"). Evita marcar como HowTo los
@@ -199,7 +229,7 @@ export default function ArticleLayout({ post }: { post: BlogPost }) {
           </p>
 
           <div style={{ display: "flex", flexDirection: "column", gap: 44 }}>
-            {post.sections.map((sec) => (
+            {post.sections.map((sec, idx) => (
               <div key={sec.h2}>
                 <h2 className="art-h2" style={{ fontFamily: fm, fontSize: "clamp(21px, 2.6vw, 27px)", fontWeight: 700, color: PURPLE, lineHeight: 1.25, marginBottom: 12 }}>
                   {sec.h2}
@@ -207,12 +237,65 @@ export default function ArticleLayout({ post }: { post: BlogPost }) {
                 {sec.body && (
                   <p style={{ fontFamily: fp, fontSize: 16.5, color: "#3f3948", lineHeight: 1.78, margin: 0 }}>{renderRich(sec.body)}</p>
                 )}
+                {sec.table && (
+                  <>
+                    <div className="art-tabla-marco">
+                      <table className="art-tabla">
+                        <thead>
+                          <tr>
+                            {sec.table.cabeceras.map((c, i) => (
+                              <th key={i} scope="col">{c}</th>
+                            ))}
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {sec.table.filas.map((fila, i) => (
+                            <tr key={i}>
+                              {fila.map((celda, j) => (
+                                <td key={j}>{renderRich(celda)}</td>
+                              ))}
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
+                    {sec.table.nota && <p className="art-tabla-nota">{renderRich(sec.table.nota)}</p>}
+                  </>
+                )}
                 {sec.bullets && sec.bullets.length > 0 && (
-                  <ul className={`art-ul${sec.body ? "" : " art-ul--first"}`}>
+                  <ul className={`art-ul${sec.body || sec.table ? "" : " art-ul--first"}`}>
                     {sec.bullets.map((b, i) => (
                       <li key={i}>{renderRich(b)}</li>
                     ))}
                   </ul>
+                )}
+
+                {/* El puente a la acción, a mitad de lectura y hablando del
+                    servicio del que trata el artículo. En artículos largos va
+                    tras la 2ª sección; en los cortos, tras la penúltima, para
+                    que nunca caiga pegado al cierre. */}
+                {idx === puenteTras && (
+                  <div
+                    className="art-puente"
+                    data-track-location="blog_puente"
+                    style={{ marginTop: 34 }}
+                  >
+                    <p className="art-puente-t">{cta.titulo}</p>
+                    <p className="art-puente-p">{cta.texto}</p>
+                    <div className="art-puente-acc">
+                      <a
+                        href={waHref(cta.whatsapp)}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="art-puente-wa"
+                      >
+                        Escríbenos por WhatsApp
+                      </a>
+                      <Link href={cta.href} className="art-puente-ver">
+                        {cta.boton} <span className="art-rel-arrow" style={{ color: ORANGE }}>→</span>
+                      </Link>
+                    </div>
+                  </div>
                 )}
               </div>
             ))}
@@ -264,16 +347,17 @@ export default function ArticleLayout({ post }: { post: BlogPost }) {
       <section data-track-location="blog_cta_cierre" style={{ padding: "36px 24px 72px" }}>
         <div style={{ maxWidth: 760, margin: "0 auto", background: PURPLE, borderRadius: 20, padding: "40px 32px", textAlign: "center" }}>
           <h2 style={{ fontFamily: fm, fontSize: "clamp(20px, 3vw, 28px)", fontWeight: 800, color: "#fff", margin: 0 }}>
-            ¿Tienes un proyecto en <span style={{ color: ORANGE }}>mente</span>?
+            {cta.titulo}
           </h2>
-          <p style={{ fontFamily: fp, fontSize: 15.5, color: "rgba(255,255,255,0.75)", margin: "12px auto 24px", maxWidth: 520 }}>
-            Cuéntanos qué necesitas y te enviamos una propuesta a tu medida en menos de 24 horas.
+          <p style={{ fontFamily: fp, fontSize: 15.5, color: "rgba(255,255,255,0.75)", margin: "12px auto 24px", maxWidth: 540 }}>
+            {cta.texto} Cuéntanos qué necesitas y te respondemos con una propuesta en menos de 24
+            horas.
           </p>
           <div style={{ display: "flex", flexWrap: "wrap", gap: 12, justifyContent: "center" }}>
             <Link href="/cotizacion" className="art-btn art-btn-primary" style={{ display: "inline-flex", alignItems: "center", gap: 9, background: ORANGE, color: PURPLE, fontFamily: fm, fontWeight: 700, fontSize: 14, textTransform: "uppercase", letterSpacing: "0.5px", padding: "14px 28px", borderRadius: 100, textDecoration: "none" }}>
               Cotizar mi proyecto →
             </Link>
-            <a href={WA_HREF} target="_blank" rel="noopener noreferrer" className="art-btn art-btn-ghost" style={{ display: "inline-flex", alignItems: "center", gap: 9, color: "#fff", fontFamily: fm, fontWeight: 700, fontSize: 14, textTransform: "uppercase", letterSpacing: "0.5px", padding: "12px 26px", borderRadius: 100, textDecoration: "none" }}>
+            <a href={waHref(cta.whatsapp)} target="_blank" rel="noopener noreferrer" className="art-btn art-btn-ghost" style={{ display: "inline-flex", alignItems: "center", gap: 9, color: "#fff", fontFamily: fm, fontWeight: 700, fontSize: 14, textTransform: "uppercase", letterSpacing: "0.5px", padding: "12px 26px", borderRadius: 100, textDecoration: "none" }}>
               WhatsApp
             </a>
           </div>
