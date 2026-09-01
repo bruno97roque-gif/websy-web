@@ -90,6 +90,22 @@ const nextConfig: NextConfig = {
         source: "/(.*)",
         headers: securityHeaders,
       },
+      {
+        /* El panel NO se indexa, y no se deja al azar: la cabecera se pone aquí
+           además de en el propio panel, para que siga estando aunque algún día
+           el proxy deje de reenviarla. Con esto son tres señales — robots.txt,
+           esta cabecera y el <meta robots> del HTML — y las tres dicen lo mismo. */
+        source: "/panel/:ruta*",
+        headers: [
+          { key: "X-Robots-Tag", value: "noindex, nofollow, noarchive, nosnippet" },
+        ],
+      },
+      {
+        source: "/panel",
+        headers: [
+          { key: "X-Robots-Tag", value: "noindex, nofollow, noarchive, nosnippet" },
+        ],
+      },
       // Nota: Vercel CDN cachea automáticamente los assets estáticos de /public.
       // No se necesita regla extra de Cache-Control para imágenes/video/gif.
     ];
