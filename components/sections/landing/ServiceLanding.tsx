@@ -12,7 +12,23 @@ import {
    con la paleta de Websy (#291231 / #F18C1B). Server component.
 ───────────────────────────────────────────────────────────── */
 
-export type LandingSection = { h2: string; body?: string; bullets?: string[] };
+/** Tabla de datos dentro de una sección. Los modelos de IA y los fragmentos
+ *  destacados de Google citan tablas antes que párrafos: donde haya cifras
+ *  comparables (planes, comisiones, plazos), va tabla y no lista. */
+export type LandingTable = {
+  cabeceras: string[];
+  filas: string[][];
+  /** De dónde sale el dato y cuándo se comprobó. Obligatorio si son cifras
+   *  de un tercero: un precio sin fecha ni fuente caduca sin avisar. */
+  nota?: string;
+};
+
+export type LandingSection = {
+  h2: string;
+  body?: string;
+  bullets?: string[];
+  table?: LandingTable;
+};
 export type LandingFaq = { q: string; a: string };
 export type LandingStat = { value: string; label: string };
 export type LandingRelated = { label: string; href: string; desc: string };
@@ -42,6 +58,105 @@ const WA_HREF =
 
 const fp = "var(--font-poppins, sans-serif)";
 const fm = "var(--font-montserrat, sans-serif)";
+
+/* Convierte enlaces markdown [texto](/ruta) del cuerpo en enlaces reales.
+   El blog ya lo hacía y las landings de servicio no: los enlaces a otras
+   páginas de dinero se quedaban en texto plano («mira Shopify vs
+   WooCommerce», sin enlace), que es enlazado interno perdido. */
+function renderRich(text: string): React.ReactNode {
+  const re = /\[([^\]]+)\]\(([^)]+)\)/g;
+  const out: React.ReactNode[] = [];
+  let last = 0;
+  let m: RegExpExecArray | null;
+  let i = 0;
+  while ((m = re.exec(text)) !== null) {
+    if (m.index > last) out.push(text.slice(last, m.index));
+    const [, label, href] = m;
+    const style = {
+      color: "#c9640a",
+      textDecoration: "underline",
+      textUnderlineOffset: "2px",
+      fontWeight: 600,
+    } as const;
+    out.push(
+      href.startsWith("/") ? (
+        <Link key={`l${i}`} href={href} style={style}>
+          {label}
+        </Link>
+      ) : (
+        <a key={`l${i}`} href={href} target="_blank" rel="noopener noreferrer" style={style}>
+          {label}
+        </a>
+      ),
+    );
+    last = m.index + m[0].length;
+    i++;
+  }
+  if (last < text.length) out.push(text.slice(last));
+  return out.length > 0 ? out : text;
+}
+
+/* Tabla de datos: se desplaza sola en móvil en vez de romper la página. */
+function Tabla({ t }: { t: LandingTable }) {
+  return (
+    <div style={{ marginTop: 20 }}>
+      <div style={{ overflowX: "auto", borderRadius: 14, border: "1px solid #ece8f2", background: "#fff" }}>
+        <table style={{ width: "100%", borderCollapse: "collapse", fontFamily: fp, fontSize: 15 }}>
+          <thead>
+            <tr>
+              {t.cabeceras.map((c, i) => (
+                <th
+                  key={i}
+                  scope="col"
+                  style={{
+                    textAlign: i === 0 ? "left" : "right",
+                    fontFamily: fm,
+                    fontSize: 12.5,
+                    fontWeight: 700,
+                    letterSpacing: "0.4px",
+                    textTransform: "uppercase",
+                    color: "#7a6882",
+                    padding: "14px 16px",
+                    borderBottom: "1px solid #ece8f2",
+                    whiteSpace: "nowrap",
+                  }}
+                >
+                  {c}
+                </th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {t.filas.map((fila, i) => (
+              <tr key={i}>
+                {fila.map((celda, j) => (
+                  <td
+                    key={j}
+                    style={{
+                      textAlign: j === 0 ? "left" : "right",
+                      padding: "13px 16px",
+                      borderBottom: i === t.filas.length - 1 ? "none" : "1px solid #f4f0f8",
+                      color: j === 0 ? PURPLE : "#46404f",
+                      fontWeight: j === 0 ? 600 : 400,
+                      whiteSpace: j === 0 ? "normal" : "nowrap",
+                    }}
+                  >
+                    {renderRich(celda)}
+                  </td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      {t.nota && (
+        <p style={{ fontFamily: fp, fontSize: 13.5, color: "#7a6882", lineHeight: 1.6, margin: "10px 2px 0" }}>
+          {renderRich(t.nota)}
+        </p>
+      )}
+    </div>
+  );
+}
 
 function Check() {
   return (
@@ -146,9 +261,16 @@ export default function ServiceLanding({
       {/* ── STATS ── */}
       {stats && stats.length > 0 && (
         <section data-track-location="landing_stats" style={{ background: PURPLE, padding: "0 24px" }}>
-          <div style={{ maxWidth: 920, margin: "0 auto", display: "grid", gridTemplateColumns: `repeat(${Math.min(stats.length, 4)}, 1fr)`, gap: 1, background: "rgba(255,255,255,0.08)" }}>
+          {/* `repeat(4, 1fr)` fijo sacaba la cuarta cifra fuera de la pantalla en
+              móvil: las columnas no bajan del ancho de su contenido, así que en
+              un teléfono de 390 px la fila medía 487 y el `scrollWidth` de la
+              página entera se iba a 515. Pasaba en las 28 landings de servicio,
+              justo donde el sitio convierte cuatro veces mejor que en escritorio.
+              Con `auto-fit` y un mínimo relativo, se reparten solas: cuatro en
+              escritorio, dos en el teléfono. */}
+          <div style={{ maxWidth: 920, margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(160px, 100%), 1fr))", gap: 1, background: "rgba(255,255,255,0.08)" }}>
             {stats.map((s) => (
-              <div key={s.label} style={{ background: PURPLE, padding: "26px 16px", textAlign: "center" }}>
+              <div key={s.label} style={{ background: PURPLE, padding: "26px 16px", textAlign: "center", minWidth: 0 }}>
                 <div style={{ fontFamily: fm, fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 800, color: ORANGE, lineHeight: 1 }}>{s.value}</div>
                 <div style={{ fontFamily: fp, fontSize: 13, color: "rgba(255,255,255,0.7)", marginTop: 8 }}>{s.label}</div>
               </div>
@@ -166,14 +288,15 @@ export default function ServiceLanding({
                 {sec.h2}
               </h2>
               {sec.body && (
-                <p style={{ fontFamily: fp, fontSize: 16.5, color: "#46404f", lineHeight: 1.75, margin: 0 }}>{sec.body}</p>
+                <p style={{ fontFamily: fp, fontSize: 16.5, color: "#46404f", lineHeight: 1.75, margin: 0 }}>{renderRich(sec.body)}</p>
               )}
+              {sec.table && <Tabla t={sec.table} />}
               {sec.bullets && sec.bullets.length > 0 && (
-                <ul style={{ listStyle: "none", padding: 0, margin: sec.body ? "18px 0 0" : 0, display: "flex", flexDirection: "column", gap: 12 }}>
+                <ul style={{ listStyle: "none", padding: 0, margin: sec.body || sec.table ? "18px 0 0" : 0, display: "flex", flexDirection: "column", gap: 12 }}>
                   {sec.bullets.map((b, i) => (
                     <li key={i} style={{ display: "flex", gap: 11, fontFamily: fp, fontSize: 16, color: "#46404f", lineHeight: 1.6 }}>
                       <Check />
-                      <span>{b}</span>
+                      <span>{renderRich(b)}</span>
                     </li>
                   ))}
                 </ul>

@@ -2,7 +2,17 @@
 // Data de los artículos del blog (Silo informativo). Cada post alimenta y enlaza
 // a los pilares comerciales. Para sumar artículos, agrega un objeto a BLOG_POSTS.
 
-export type BlogSection = { h2: string; body?: string; bullets?: string[] };
+/** Tabla dentro de un artículo. Verificado en la SERP peruana el 1-sep-2026:
+ *  en las búsquedas de precio, todo lo que Google coloca arriba lleva tabla, y
+ *  el fragmento destacado suele salir de ella. `nota` lleva fuente y fecha. */
+export type BlogTable = { cabeceras: string[]; filas: string[][]; nota?: string };
+
+export type BlogSection = {
+  h2: string;
+  body?: string;
+  bullets?: string[];
+  table?: BlogTable;
+};
 export type BlogFaq = { q: string; a: string };
 export type BlogRelated = { label: string; href: string; desc: string };
 
@@ -717,46 +727,91 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "cuanto-cuesta-una-tienda-en-shopify",
+    /* Este artículo y /tiendas-virtuales/shopify/costos se disputaban las
+       mismas búsquedas. Comprobado en la SERP peruana el 1-sep-2026: para
+       «shopify precios» este sale en el puesto 9 y la página de servicio en el
+       20. No se unifica ni se redirige — se reparte por intención: el que ya
+       rankea se queda con la pregunta de PRECIO y su tabla, y la página de
+       servicio se queda con por qué en Perú sale más caro. */
     title: "Cuánto cobra Shopify al mes en Perú (2026)",
     h1: "¿Cuánto cobra Shopify al mes? Planes y comisiones en Perú",
     description:
-      "Cuánto cobra Shopify al mes en Perú: precio de cada plan, comisión por venta según la pasarela y qué gastos recurrentes se suman al desarrollo.",
+      "Cuánto cobra Shopify al mes en Perú: precio oficial de cada plan en dólares, el recargo por pasarela externa y los gastos que se suman al desarrollo.",
     excerpt:
-      "El plan mensual es solo una parte. Esto es lo que realmente compone el costo de una tienda Shopify.",
+      "Los planes de Shopify van de USD 19 a USD 299 al mes. Esto es lo que pagas de verdad, comisiones peruanas incluidas.",
     datePublished: "2026-06-19",
-    dateModified: "2026-08-12",
+    dateModified: "2026-09-01",
     category: "Ecommerce",
-    readingMin: 5,
+    readingMin: 6,
     intro:
-      "El costo de una tienda en Shopify tiene varias partes: el plan mensual de la plataforma, el desarrollo y diseño, y las comisiones de pago. Aquí desglosamos cada una para que sepas en qué inviertes y evites sorpresas.",
+      "Shopify cobra entre USD 19 y USD 299 al mes según el plan, pagando por año, y no publica tarifa en soles para Perú (precios oficiales comprobados el 1 de septiembre de 2026). A esa mensualidad se le suman el desarrollo de la tienda y las comisiones de cada venta, que en Perú son dos y no una. Aquí está el desglose completo.",
     sections: [
       {
-        h2: "El plan mensual de Shopify",
+        h2: "Cuánto cobra Shopify al mes: precio de cada plan",
         body:
-          "Shopify cobra una mensualidad por usar su plataforma, con distintos niveles según el tamaño de tu operación. Es un costo recurrente y predecible que cubre el alojamiento, la seguridad y el mantenimiento de la plataforma.",
+          "Estos son los planes que Shopify ofrece en Perú y lo que cuesta cada uno. Shopify los cobra en dólares —no hay tarifa en soles— y el precio baja si pagas por año en lugar de mes a mes. La última columna es el recargo que Shopify añade por cobrar con una pasarela que no es la suya, que en Perú es siempre el caso.",
+        table: {
+          cabeceras: ["Plan", "Pago mensual", "Pago anual", "Recargo por pasarela externa"],
+          filas: [
+            ["Basic", "USD 25/mes", "USD 19/mes", "2 %"],
+            ["Grow", "USD 65/mes", "USD 49/mes", "1 %"],
+            ["Advanced", "USD 399/mes", "USD 299/mes", "0,6 %"],
+            ["Plus", "desde USD 2.300/mes", "—", "0,2 %"],
+          ],
+          nota:
+            "Precios oficiales de shopify.com/pe/precios comprobados el 1 de septiembre de 2026. Shopify los fija en dólares y puede cambiarlos sin aviso.",
+        },
       },
       {
-        h2: "El desarrollo y diseño de la tienda",
+        h2: "Qué plan te conviene según lo que vendas",
         body:
-          "Es la inversión en montar tu tienda: diseño a tu marca, carga de productos, configuración de pagos y envíos. Se cotiza según el alcance y se paga una vez (más mejoras futuras si las necesitas). Tenemos el desglose completo, con rangos por nivel de inversión, en [cuánto cuesta una tienda Shopify en Perú](/tiendas-virtuales/shopify/costos); y si prefieres delegarlo, así trabajamos como [agencia Shopify en Perú](/tiendas-virtuales/shopify).",
+          "La diferencia entre planes no está solo en la mensualidad: está en el recargo por venta. En Basic pagas USD 19 al mes y un 2 % de cada venta; en Grow pagas USD 49 y solo un 1 %. Sale a cuenta subir de plan cuando ese punto porcentual que te ahorras supera los USD 30 de diferencia, es decir, a partir de unos USD 3.000 de ventas al mes. Esa cuenta la hacemos contigo antes de montar la tienda.",
       },
       {
-        h2: "Comisiones de pago",
+        h2: "El desarrollo de la tienda, que se paga una vez",
+        body:
+          "Es la inversión en montar tu tienda: diseño a tu marca, carga de productos, configuración de pagos y envíos. Se cotiza según el alcance y se paga una vez (más mejoras futuras si las necesitas). Es la única pieza donde decides cuánto inviertes, porque depende de lo que pidas. Lo cotizamos según lo que necesites: mira [cuánto cuesta una tienda Shopify en Perú](/tiendas-virtuales/shopify/costos), donde está el detalle del proyecto, o cómo trabajamos como [agencia Shopify en Perú](/tiendas-virtuales/shopify).",
+      },
+      {
+        h2: "Por qué en Perú pagas dos comisiones y no una",
+        body:
+          "Aquí está la parte que sorprende a casi todo el mundo. Shopify Payments, la pasarela propia de Shopify, no opera en Perú: su lista oficial de países admitidos incluye 40 países y el único de Latinoamérica es México (comprobado el 1 de septiembre de 2026). Por eso una tienda peruana cobra siempre con una pasarela externa y paga dos comisiones sobre la misma venta.",
         bullets: [
-          "Las pasarelas (tarjeta, Yape, Plin) cobran una comisión por transacción.",
-          "Varía según el método y el proveedor que uses.",
-          "Conviene tenerla en cuenta al fijar tus precios.",
+          "La comisión de tu pasarela: Niubiz, Izipay, Culqi o Mercado Pago, según el contrato que tengas con ellos.",
+          "Más el recargo de Shopify por usar una pasarela externa, que va del 2 % en el plan Basic al 0,2 % en Plus.",
+          "Yape y Plin entran por esa misma pasarela o por un método manual, así que también cuentan en la cuenta.",
+          "Cuanto más vendas, más pesa: es un porcentaje de cada venta, no una cuota fija.",
         ],
+      },
+      {
+        h2: "Los gastos que se repiten cada mes",
+        body:
+          "Son montos pequeños que sumados cambian tu margen. Convienen tenerlos escritos antes de lanzar, no después.",
+        bullets: [
+          "Las apps de terceros que le sumes a la tienda: muchas son de suscripción mensual.",
+          "El dominio propio, que se renueva una vez al año.",
+          "El mantenimiento y soporte, si quieres que alguien esté encima de la tienda.",
+          "La facturación electrónica ante SUNAT, si la integras con tu tienda.",
+        ],
+      },
+      {
+        h2: "Cuál de las cuatro te va a pesar más",
+        body:
+          "Depende de dónde estés. Si recién lanzas y vendes poco, el plan mensual en dólares es lo que más se siente, porque lo pagas vendas o no vendas. Si ya facturas volumen, las comisiones se comen mucho más que el plan: sobre ventas altas, ese 2 % del plan Basic cuesta más que subir al plan Grow, donde el recargo baja al 1 %. Esa cuenta, la de cuándo conviene cambiar de plan, la hacemos contigo en la cotización.",
       },
     ],
     faqs: [
       {
         q: "¿Shopify conviene si recién empiezo?",
-        a: "Sí, si quieres lanzar rápido y sin preocuparte por el servidor. Si buscas evitar la mensualidad, WooCommerce puede ser mejor. Te recomendamos la opción correcta en la cotización.",
+        a: "Sí, si quieres lanzar rápido y sin preocuparte por el servidor. Si buscas evitar la mensualidad en dólares, WooCommerce puede salirte mejor. Te recomendamos la opción correcta en la cotización, según lo que vendas.",
+      },
+      {
+        q: "¿Puedo usar Shopify Payments en Perú y ahorrarme el recargo?",
+        a: "No. Shopify Payments no está disponible en Perú: la lista oficial de países admitidos de Shopify incluye 40 países y el único latinoamericano es México (comprobado el 1 de septiembre de 2026). Toda tienda peruana cobra con una pasarela externa como Niubiz, Izipay, Culqi o Mercado Pago, y por eso paga el recargo adicional de Shopify además de la comisión de su pasarela.",
       },
       {
         q: "¿Cómo sé cuánto me costaría a mí?",
-        a: "Cuéntanos tu proyecto y te enviamos una cotización a medida del desarrollo, sin compromiso, en menos de 24 horas.",
+        a: "Cuéntanos qué vendes, cuántos productos tienes y cómo cobras, y te enviamos una cotización a medida del desarrollo, sin compromiso, en menos de 24 horas.",
       },
     ],
     related: [
@@ -1276,14 +1331,35 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: "cuanto-cuesta-una-aplicacion-movil-en-peru",
     title: "Cuánto cuesta una aplicación móvil en Perú",
     h1: "¿Cuánto cuesta una aplicación móvil en Perú?",
-    description: "Descubre cuánto cuesta una aplicación móvil en Perú: qué define el precio, app nativa vs híbrida, mantenimiento, tiendas y por qué empezar con un MVP.",
-    excerpt: "El precio de una app depende de plataformas, funciones, backend e integraciones; un MVP bien planeado reduce el riesgo y el costo inicial.",
+    description: "Cuánto cuesta una app en Perú: los costos fijos de publicar (Apple 99 USD/año, Google Play 25 USD), las comisiones de las tiendas y qué define el desarrollo.",
+    excerpt: "Publicar cuesta 99 USD al año en Apple y 25 USD una vez en Google Play. El desarrollo es lo que varía, y aquí está por qué.",
     datePublished: "2026-06-20",
-    dateModified: "2026-08-12",
+    dateModified: "2026-09-01",
     category: "Software",
     readingMin: 7,
-    intro: "El costo de una aplicación móvil en Perú no es un número fijo: depende de las plataformas (iOS, Android), de si es nativa o híbrida, de las funciones, del backend y de las integraciones. Una app sencilla cuesta mucho menos que una con pagos, mapas y panel administrativo. Por eso conviene definir bien el alcance antes de cotizar.",
+    /* La intro es el fragmento que Google enseña en la búsqueda, y empezaba
+       diciendo «no es un número fijo» a una consulta que pregunta cuánto:
+       la página estaba en el puesto 3 y perdió 5 de sus 6 clics en agosto de
+       2026 contra dos rivales que publicaron tablas de precios. Ahora abre con
+       las cifras que sí se pueden verificar. */
+    intro: "Publicar una app en Perú tiene dos costos fijos y conocidos: la cuota del Apple Developer Program, 99 USD al año, y el registro en Google Play, 25 USD por única vez (importes oficiales comprobados el 1 de septiembre de 2026). Lo que varía es el desarrollo, y varía mucho: depende de si es para iOS, Android o ambas, de las funciones, del backend y de las integraciones.",
     sections: [
+      {
+        h2: "Los costos fijos: qué cobran Apple y Google por publicar tu app",
+        body:
+          "Estos no dependen de tu proyecto ni de quién te lo desarrolle: los cobran las tiendas y los paga todo el mundo igual. Conviene tenerlos en la cuenta desde el primer día, porque la cuota de Apple se renueva cada año aunque tu app no venda nada.",
+        table: {
+          cabeceras: ["Concepto", "Importe", "Cada cuánto"],
+          filas: [
+            ["Apple Developer Program (App Store)", "USD 99", "Al año"],
+            ["Registro en Google Play Console", "USD 25", "Pago único"],
+            ["Comisión de la App Store sobre ventas dentro de la app", "30 %", "Por venta"],
+            ["Comisión de Google Play sobre el primer millón de USD al año", "15 %", "Por venta"],
+          ],
+          nota:
+            "Importes oficiales de developer.apple.com y support.google.com comprobados el 1 de septiembre de 2026. Apple baja su comisión al 15 % para quien facture menos de un millón de dólares al año e ingrese en su Small Business Program; Google aplica el 15 % sobre el primer millón anual, pero hay que inscribirse en ese tramo, no es automático. Las comisiones solo afectan a lo que se vende dentro de la app.",
+        },
+      },
       {
         h2: "Qué define realmente el precio de una app",
         body: "El presupuesto de una aplicación móvil se arma sumando decisiones técnicas y de negocio. Mientras más plataformas, funciones e integraciones requieras, más horas de desarrollo y, por lo tanto, mayor inversión. Estos son los factores que más mueven la aguja:",
@@ -1317,14 +1393,13 @@ export const BLOG_POSTS: BlogPost[] = [
         ]
       },
       {
-        h2: "Costos que no debes olvidar: mantenimiento y tiendas",
-        body: "El desarrollo es solo el inicio. Una app es un producto vivo que necesita mantenimiento para seguir funcionando con cada actualización de iOS y Android. Considera estos gastos recurrentes:",
+        h2: "Lo que se paga cada mes después de lanzar",
+        body: "El desarrollo es solo el inicio. Una app es un producto vivo: iOS y Android se actualizan dos veces al año y la app tiene que seguirles el paso o deja de funcionar en los teléfonos nuevos. Además de la cuota anual de Apple, estos son los gastos que se repiten:",
         bullets: [
-          "Cuenta de desarrollador de Apple (App Store): suscripción anual obligatoria para publicar en iOS.",
-          "Cuenta de Google Play: pago único de registro para publicar apps Android.",
-          "Servidor/hosting del backend y base de datos: gasto mensual según tráfico y almacenamiento.",
-          "Mantenimiento: corrección de errores, compatibilidad con nuevas versiones de los sistemas operativos y mejoras.",
-          "Comisiones de las tiendas si vendes contenido o suscripciones dentro de la app."
+          "El servidor del backend y la base de datos, si la app guarda información: es un gasto mensual que sube con el tráfico.",
+          "El mantenimiento: corregir errores, mantener la compatibilidad con las versiones nuevas de iOS y Android, y las mejoras que pidan tus usuarios.",
+          "Los servicios de terceros que uses: mapas, notificaciones, pasarelas de pago o mensajería suelen cobrar por volumen.",
+          "La renovación anual de la cuenta de Apple, que se paga aunque la app no venda nada ese año.",
         ]
       },
       {
@@ -1349,8 +1424,12 @@ export const BLOG_POSTS: BlogPost[] = [
         a: "La nativa suele ser más cara porque implica desarrollar por separado para iOS y Android, mientras que la híbrida usa un solo código para ambas plataformas, reduciendo tiempo y costo. La elección depende del rendimiento y la experiencia que necesites."
       },
       {
-        q: "¿Tengo que pagar por publicar mi app en las tiendas?",
-        a: "Sí. Google Play cobra un pago único de registro de desarrollador y la App Store de Apple cobra una suscripción anual. Son costos aparte del desarrollo y necesarios para publicar tu app oficialmente."
+        q: "¿Cuánto cuesta publicar una app en las tiendas?",
+        a: "Publicar en Google Play cuesta 25 dólares por única vez, y publicar en la App Store de Apple cuesta 99 dólares al año, que se renuevan aunque la app no venda nada (importes oficiales comprobados el 1 de septiembre de 2026). Son costos aparte del desarrollo y los cobra cada tienda, no la agencia."
+      },
+      {
+        q: "¿Las tiendas se quedan con una parte de lo que venda mi app?",
+        a: "Solo de lo que se venda dentro de la app. Apple cobra el 30 % de esas ventas, o el 15 % si facturas menos de un millón de dólares al año y te inscribes en su Small Business Program. Google Play cobra el 15 % sobre tu primer millón de dólares anuales, pero ese tramo tampoco es automático: hay que inscribirse. Si tu app vende productos físicos o servicios que se prestan fuera de la app, ese cobro va por tu pasarela de pago."
       },
       {
         q: "¿Puedo aceptar pagos dentro de mi aplicación en Perú?",

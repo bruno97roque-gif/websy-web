@@ -2,11 +2,15 @@ import type { Metadata } from "next";
 import { pageMeta } from "@/lib/seo";
 import ServiceLanding from "@/components/sections/landing/ServiceLanding";
 
+/* Comprobado en la SERP peruana el 1-sep-2026: para «shopify precios» rankean
+   a la vez el artículo del blog (puesto 9) y esta página (puesto 20). No se
+   redirige ni se unifica: el artículo se queda con los precios de la
+   plataforma y esta con el costo del proyecto en Perú, que es otra pregunta. */
 export const metadata: Metadata = pageMeta({
   path: "/tiendas-virtuales/shopify/costos",
   title: "Cuánto cuesta una tienda Shopify en Perú (2026)",
   description:
-    "¿Cuánto cuesta una tienda Shopify en Perú? Qué define el precio, plan mensual de Shopify frente al desarrollo y qué costos recurrentes se suman cada mes.",
+    "Qué define el precio de una tienda Shopify en Perú, por qué aquí se pagan dos comisiones y no una, y qué costos se repiten cada mes. Cotización en 24 h.",
 });
 
 export default function CostosShopifyPage() {
@@ -44,13 +48,35 @@ export default function CostosShopifyPage() {
           ],
         },
         {
+          h2: "Por qué una tienda Shopify sale más cara en Perú que en México",
+          body:
+            "Shopify Payments, la pasarela propia de Shopify, no opera en Perú: su lista oficial de países admitidos incluye 40 países y el único de Latinoamérica es México (comprobado el 1 de septiembre de 2026). Toda tienda peruana cobra por fuerza con una pasarela externa —Niubiz, Izipay, Culqi o Mercado Pago— y eso significa dos comisiones sobre la misma venta, no una.",
+          bullets: [
+            "La comisión de tu pasarela peruana, según el contrato que tengas con Niubiz, Izipay, Culqi o Mercado Pago.",
+            "Más el recargo que Shopify cobra por usar una pasarela que no es la suya: 2 % en el plan Basic, 1 % en Grow, 0,6 % en Advanced y 0,2 % en Plus.",
+            "Ese recargo no es una cuota fija: es un porcentaje de cada venta, así que pesa más cuanto mejor te va.",
+            "Los importes de cada plan están en [cuánto cobra Shopify al mes en Perú](/blog/cuanto-cuesta-una-tienda-en-shopify), con los precios oficiales actualizados.",
+          ],
+        },
+        {
+          h2: "Qué se lleva ese sobrecosto y cómo se compensa",
+          body:
+            "El recargo por pasarela externa no se puede evitar en Perú, pero sí se puede compensar con cómo esté montada la tienda. Es justo donde una tienda bien hecha se paga sola:",
+          bullets: [
+            "Eligiendo bien plan y pasarela: entre un plan y el siguiente, lo que cambia de verdad no es la mensualidad, es el punto porcentual de cada venta.",
+            "Cobrando por Yape y Plin donde conviene, que en Perú son una parte enorme de las ventas.",
+            "Bajando el abandono del carrito: cada venta recuperada paga varios meses de plan.",
+            "Con una tienda rápida y bien indexada, que traiga visitas sin pagar por cada clic. Eso es [SEO para tiendas virtuales](/seo).",
+          ],
+        },
+        {
           h2: "Plan mensual de Shopify vs. desarrollo de la tienda",
           body:
             "Es la confusión más común. Son dos costos distintos y conviene entenderlos por separado antes de cotizar.",
           bullets: [
-            "Plan mensual de Shopify: lo cobra Shopify por usar su plataforma (hosting, seguridad, actualizaciones). Es recurrente y tiene distintos niveles según el tamaño de tu operación.",
+            "Plan mensual de Shopify: lo cobra Shopify por usar su plataforma (hosting, seguridad, actualizaciones). Es recurrente y va en dólares.",
             "Desarrollo de la tienda: es nuestra inversión inicial para montar tu tienda —diseño, carga de productos, pagos, envíos y optimización—. Se paga una vez (más mejoras futuras si las necesitas).",
-            "Comisiones de pago: cada pasarela (tarjeta, Yape, Plin) cobra un porcentaje por transacción. Conviene tenerlo en cuenta al fijar tus precios de venta.",
+            "Comisiones de pago: la de tu pasarela más el recargo de Shopify. Conviene tenerlo en cuenta al fijar tus precios de venta.",
           ],
         },
         {
@@ -64,9 +90,18 @@ export default function CostosShopifyPage() {
           ],
         },
         {
-          h2: "Rangos referenciales (y por qué no damos un precio cerrado)",
+          /* El H2 anterior era «Rangos referenciales (y por qué no damos un
+             precio cerrado)» y debajo no había ni un rango: anunciaba justo lo
+             que no entregaba. En una búsqueda de precio eso es lo peor que
+             puede hacer un encabezado. Ahora dice lo que sí hay. */
+          h2: "Qué te pedimos para darte el precio de tu tienda",
           body:
-            "Un precio serio sale de entender tu negocio, no de una cifra al aire. Por eso hacemos un diagnóstico corto (qué vendes, cuántos productos, cómo cobras) y luego una propuesta con alcance y tiempos. El rango de inversión sube según el diseño sea más a medida, tengas más productos y sumes integraciones. Desconfía de quien te tira un precio sin preguntar nada: o te cobra de más o te entrega de menos. Para ver referencias por servicio, revisa nuestra página de precios.",
+            "Con tres datos tenemos suficiente para ponerle número a tu proyecto, y te lo mandamos en menos de 24 horas. Esto es lo que necesitamos saber:",
+          bullets: [
+            "Qué vendes y cuántos productos tendría la tienda, con sus variantes si las hay (talla, color).",
+            "Cómo quieres cobrar: tarjeta con Niubiz o Izipay, Yape y Plin, transferencia, contra entrega.",
+            "Con qué se tiene que conectar: facturación SUNAT, courier, tu control de stock o tu CRM.",
+          ],
         },
         {
           h2: "Costos recurrentes que debes considerar",
