@@ -4,7 +4,7 @@ import ServiceLanding from "@/components/sections/landing/ServiceLanding";
 
 export const metadata: Metadata = pageMeta({
   path: "/diseno-de-paginas-web/hoteles",
-  title: "Páginas web para hoteles y hospedajes en Perú",
+  title: "Creamos la web de tu hotel u hospedaje",
   description:
     "Diseño de páginas web para hoteles, hostales y hospedajes en Perú: reservas directas, habitaciones y tarifas, galería, pagos con Yape y tarjeta, y SEO turístico.",
 });
@@ -18,8 +18,8 @@ export default function PaginaWebHotelesPage() {
         { name: "Diseño de Páginas Web", path: "/diseno-de-paginas-web" },
         { name: "Hoteles", path: "/diseno-de-paginas-web/hoteles" },
       ]}
-      eyebrow="Páginas web por rubro"
-      h1="Páginas web para hoteles y hospedajes"
+      eyebrow="Servicio · Hoteles y hospedajes"
+      h1="Creamos la página web de tu hotel u hospedaje"
       intro="Diseñamos páginas web para hoteles, hostales, hospedajes y casas de campo en todo el Perú: con reservas directas, habitaciones y tarifas, galería, pagos con Yape, Plin y tarjeta, y SEO turístico. Una web que capta reservas sin depender solo de las comisiones de las OTAs."
       highlights={["Reservas directas", "Habitaciones y tarifas", "Pagos Yape / tarjeta", "SEO turístico", "Multidioma"]}
       stats={[

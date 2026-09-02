@@ -4,7 +4,7 @@ import ServiceLanding from "@/components/sections/landing/ServiceLanding";
 
 export const metadata: Metadata = pageMeta({
   path: "/diseno-de-paginas-web/inmobiliarias",
-  title: "Páginas web para inmobiliarias en Perú",
+  title: "Creamos la web de tu inmobiliaria en Perú",
   description:
     "Diseño de páginas web para inmobiliarias y constructoras en Perú: catálogo de propiedades y proyectos, filtros de búsqueda, captación de leads y SEO.",
 });
@@ -18,8 +18,8 @@ export default function PaginaWebInmobiliariasPage() {
         { name: "Diseño de Páginas Web", path: "/diseno-de-paginas-web" },
         { name: "Inmobiliarias y Constructoras", path: "/diseno-de-paginas-web/inmobiliarias" },
       ]}
-      eyebrow="Páginas web por rubro"
-      h1="Páginas web para inmobiliarias y constructoras"
+      eyebrow="Servicio · Inmobiliarias y constructoras"
+      h1="Creamos la página web de tu inmobiliaria"
       intro="Diseñamos páginas web para inmobiliarias, constructoras y agentes inmobiliarios en Lima y todo el Perú: con catálogo de propiedades, fichas de proyectos, filtros de búsqueda, galerías y captación de leads. Una web que muestra tus inmuebles y agenda visitas de compradores reales."
       highlights={["Catálogo de propiedades", "Fichas de proyectos", "Filtros de búsqueda", "Captación de leads", "SEO"]}
       stats={[

@@ -4,7 +4,7 @@ import ServiceLanding from "@/components/sections/landing/ServiceLanding";
 
 export const metadata: Metadata = pageMeta({
   path: "/diseno-de-paginas-web/abogados",
-  title: "Páginas web para abogados y estudios en Perú",
+  title: "Creamos la web de tu estudio de abogados",
   description:
     "Diseño de páginas web para abogados y estudios jurídicos en Perú: áreas de práctica, casos, confianza profesional, captación de clientes y SEO local.",
 });
@@ -18,8 +18,8 @@ export default function PaginaWebAbogadosPage() {
         { name: "Diseño de Páginas Web", path: "/diseno-de-paginas-web" },
         { name: "Abogados y Estudios Jurídicos", path: "/diseno-de-paginas-web/abogados" },
       ]}
-      eyebrow="Páginas web por rubro"
-      h1="Páginas web para abogados y estudios jurídicos"
+      eyebrow="Servicio · Estudios de abogados"
+      h1="Creamos la página web de tu estudio de abogados"
       intro="Diseñamos páginas web para abogados y estudios jurídicos en Lima y todo el Perú: con áreas de práctica, perfil del abogado, consulta directa y SEO local. Una web sobria y confiable que convierte una búsqueda urgente en una consulta con tu estudio."
       highlights={["Áreas de práctica", "Perfil profesional", "Consulta directa", "SEO local", "Confianza"]}
       stats={[
