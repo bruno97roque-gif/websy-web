@@ -199,7 +199,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Qué define el precio de una tienda virtual",
         body:
-          "Dos tiendas pueden costar muy distinto según su alcance. Estos son los factores que más pesan en una cotización seria: Puedes ver cómo lo resolvemos en [nuestro servicio de WooCommerce](/tiendas-virtuales/woocommerce).",
+          "Dos tiendas pueden costar muy distinto según su alcance. Estos son los factores que más pesan en una cotización seria: Puedes ver cómo lo resolvemos en [nuestro servicio de WooCommerce](/tiendas-virtuales/woocommerce). Lo que un presupuesto no dice también cuesta: [cómo leer una cotización](/blog/como-leer-una-cotizacion-de-pagina-web).",
         bullets: [
           "Cantidad de productos y si tienen variantes (talla, color) o solo fichas simples.",
           "Plataforma elegida: Shopify (con plan mensual) o WooCommerce sobre WordPress (sin mensualidad de plataforma).",
@@ -273,7 +273,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "3. Configura los pagos que usan tus clientes",
         body:
-          "En Perú una tienda vende cuando acepta los medios reales: Yape y Plin para pagos inmediatos, tarjeta de crédito y débito vía Niubiz o Izipay, y transferencia o pago contra entrega según tu operación. Si todavía lo dudas, mira [qué gana un negocio con una tienda virtual](/blog/ventajas-de-tener-una-tienda-virtual).",
+          "En Perú una tienda vende cuando acepta los medios reales: Yape y Plin para pagos inmediatos, tarjeta de crédito y débito vía Niubiz o Izipay, y transferencia o pago contra entrega según tu operación. Si todavía lo dudas, mira [qué gana un negocio con una tienda virtual](/blog/ventajas-de-tener-una-tienda-virtual). Hay tres formas de hacerlo y no cuestan lo mismo: [link de pago, integración por API o agregador](/blog/cobrar-con-yape-link-de-pago-api-o-agregador).",
       },
       {
         h2: "4. Carga productos y prepara el SEO",
@@ -382,17 +382,17 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Yape y Plin: imprescindibles",
         body:
-          "Son la forma más rápida y familiar de pagar para millones de peruanos. Integrarlos en tu tienda reduce la fricción y evita que el cliente abandone el carrito por no encontrar su método. La comparación de esos dos está en [Culqi frente a Mercado Pago en Perú](/blog/culqi-vs-mercado-pago-en-peru).",
+          "Son la forma más rápida y familiar de pagar para millones de peruanos. Integrarlos en tu tienda reduce la fricción y evita que el cliente abandone el carrito por no encontrar su método. La comparación de esos dos está en [Culqi frente a Mercado Pago en Perú](/blog/culqi-vs-mercado-pago-en-peru). La comparación de las tres vías está en [cobrar con Yape: link, API o agregador](/blog/cobrar-con-yape-link-de-pago-api-o-agregador).",
       },
       {
         h2: "Tarjetas con Niubiz o Izipay",
         body:
-          "Para vender a quien paga con crédito o débito necesitas una pasarela de tarjetas. Niubiz e Izipay son las más usadas en Perú; conectarlas da confianza y permite cobros automáticos y seguros. Si dudas entre las dos, lo comparamos a fondo en [Izipay o Niubiz: cuál conviene para tu tienda](/blog/izipay-o-niubiz-cual-elegir-para-cobrar-con-tarjeta); y para las billeteras, en [cómo integrar Yape y Plin en tu tienda virtual](/blog/como-integrar-yape-y-plin-en-tu-tienda-virtual). Ese trámite se automatiza con un [sistema de ventas y facturación electrónica](/sistemas/ventas-y-facturacion).",
+          "Para vender a quien paga con crédito o débito necesitas una pasarela de tarjetas. Niubiz e Izipay son las más usadas en Perú; conectarlas da confianza y permite cobros automáticos y seguros. Si dudas entre las dos, lo comparamos a fondo en [Izipay o Niubiz: cuál conviene para tu tienda](/blog/izipay-o-niubiz-cual-elegir-para-cobrar-con-tarjeta); y para las billeteras, en [cómo integrar Yape y Plin en tu tienda virtual](/blog/como-integrar-yape-y-plin-en-tu-tienda-virtual). Ese trámite se automatiza con un [sistema de ventas y facturación electrónica](/sistemas/ventas-y-facturacion). Los papeles y los plazos están en [afiliarte a una pasarela de pago en Perú](/blog/afiliacion-pasarela-de-pago-peru-requisitos-y-plazos).",
       },
       {
         h2: "Transferencia y pago contra entrega",
         body:
-          "Sumar transferencia bancaria o pago contra entrega amplía tu alcance a clientes que aún prefieren esas opciones. Lo ideal es ofrecer varias y dejar que el cliente elija. Nosotros dejamos las pasarelas integradas y probadas cuando desarrollamos tu [tienda virtual](/tiendas-virtuales), sea en [Shopify](/tiendas-virtuales/shopify) o en [WooCommerce](/tiendas-virtuales/woocommerce). Si aún no cobras con tarjeta, empieza por [cómo aceptar pagos con tarjeta en tu web en Perú](/blog/como-aceptar-pagos-con-tarjeta-en-tu-web-peru).",
+          "Sumar transferencia bancaria o pago contra entrega amplía tu alcance a clientes que aún prefieren esas opciones. Lo ideal es ofrecer varias y dejar que el cliente elija. Nosotros dejamos las pasarelas integradas y probadas cuando desarrollamos tu [tienda virtual](/tiendas-virtuales), sea en [Shopify](/tiendas-virtuales/shopify) o en [WooCommerce](/tiendas-virtuales/woocommerce). Si aún no cobras con tarjeta, empieza por [cómo aceptar pagos con tarjeta en tu web en Perú](/blog/como-aceptar-pagos-con-tarjeta-en-tu-web-peru). Si el abono no te cuadra con lo vendido, la explicación está en [la conciliación de pagos](/blog/conciliacion-de-pagos-por-que-no-cuadra-lo-que-te-depositan).",
       },
       {
         h2: "Qué cuidar al integrar pagos",
@@ -497,12 +497,12 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Qué debe incluir una web bien hecha",
         body:
-          "Diseño responsive, panel administrable para editar tú mismo, formulario y WhatsApp para recibir contactos, optimización SEO on-page, y hosting, dominio y [certificado de seguridad](/blog/certificado-ssl-que-es-y-por-que-tu-web-lo-necesita). Esos dos últimos se pagan aparte y todos los años: tenemos los precios reales en soles en [cuánto cuesta un hosting y un dominio .pe en Perú](/blog/cuanto-cuesta-un-hosting-y-un-dominio-pe-en-peru). Una web que no incluye SEO ni es administrable suele salir 'barata' y costar caro después. Para eso existe el [desarrollo web a medida](/desarrollo-web), que adapta la web a tu proceso y no al revés.",
+          "Diseño responsive, panel administrable para editar tú mismo, formulario y WhatsApp para recibir contactos, optimización SEO on-page, y hosting, dominio y [certificado de seguridad](/blog/certificado-ssl-que-es-y-por-que-tu-web-lo-necesita). Esos dos últimos se pagan aparte y todos los años: tenemos los precios reales en soles en [cuánto cuesta un hosting y un dominio .pe en Perú](/blog/cuanto-cuesta-un-hosting-y-un-dominio-pe-en-peru). Una web que no incluye SEO ni es administrable suele salir 'barata' y costar caro después. Para eso existe el [desarrollo web a medida](/desarrollo-web), que adapta la web a tu proceso y no al revés. Antes de comparar precios, aprende [cómo leer una cotización de página web](/blog/como-leer-una-cotizacion-de-pagina-web).",
       },
       {
         h2: "Una web es inversión, no gasto",
         body:
-          "La pregunta no es solo cuánto cuesta, sino cuántos clientes te puede traer. Una web pensada para captar contactos se paga sola; una hecha solo 'para tenerla' rara vez genera retorno. Mira todo lo que incluye nuestro [diseño de páginas web](/diseno-de-paginas-web) y cómo estructuramos la inversión en [precios](/precios). Si prefieres hablarlo antes de pedir número, escríbenos desde [contacto](/contacto). Los plazos reales están en [cuánto tiempo toma hacer una página web](/blog/cuanto-tiempo-toma-hacer-una-pagina-web).",
+          "La pregunta no es solo cuánto cuesta, sino cuántos clientes te puede traer. Una web pensada para captar contactos se paga sola; una hecha solo 'para tenerla' rara vez genera retorno. Mira todo lo que incluye nuestro [diseño de páginas web](/diseno-de-paginas-web) y cómo estructuramos la inversión en [precios](/precios). Si prefieres hablarlo antes de pedir número, escríbenos desde [contacto](/contacto). Los plazos reales están en [cuánto tiempo toma hacer una página web](/blog/cuanto-tiempo-toma-hacer-una-pagina-web). Antes de firmar conviene saber [qué te entregan cuando acaba el proyecto](/blog/de-quien-es-el-codigo-el-dominio-y-los-accesos).",
       },
     ],
     faqs: [
@@ -652,7 +652,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Pagos que tus clientes ya usan",
         body:
-          "Si el cliente no encuentra su método de pago, se va. Una tienda lista para vender acepta Yape y Plin, tarjeta vía Niubiz o Izipay, y transferencia o pago contra entrega. Esa flexibilidad es la ventaja de [WooCommerce](/tiendas-virtuales/woocommerce) cuando el catálogo crece.",
+          "Si el cliente no encuentra su método de pago, se va. Una tienda lista para vender acepta Yape y Plin, tarjeta vía Niubiz o Izipay, y transferencia o pago contra entrega. Esa flexibilidad es la ventaja de [WooCommerce](/tiendas-virtuales/woocommerce) cuando el catálogo crece. Si aún estás decidiendo cómo integrarlo, compara [link de pago, API o agregador](/blog/cobrar-con-yape-link-de-pago-api-o-agregador).",
       },
       {
         h2: "Confianza visible",
@@ -918,7 +918,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "No tienes que hacerlo todo de golpe",
         body:
-          "Lo recomendable es empezar por lo que más te urge —un [sistema de inventario](/sistemas/inventario), un [sistema de ventas y facturación](/sistemas/ventas-y-facturacion) o un [sistema de gestión (ERP/CRM)](/sistemas/gestion-erp-crm)— e ir sumando módulos por etapas, según el sistema demuestra su valor. Ese caso lo tratamos en [sistemas de reservas y citas a medida](/blog/sistema-de-reservas-y-citas-a-medida).",
+          "Lo recomendable es empezar por lo que más te urge —un [sistema de inventario](/sistemas/inventario), un [sistema de ventas y facturación](/sistemas/ventas-y-facturacion) o un [sistema de gestión (ERP/CRM)](/sistemas/gestion-erp-crm)— e ir sumando módulos por etapas, según el sistema demuestra su valor. Ese caso lo tratamos en [sistemas de reservas y citas a medida](/blog/sistema-de-reservas-y-citas-a-medida). Si el abono no te cuadra con lo vendido, la explicación está en [la conciliación de pagos](/blog/conciliacion-de-pagos-por-que-no-cuadra-lo-que-te-depositan).",
       },
     ],
     faqs: [
@@ -968,7 +968,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Cuándo conviene un sistema de inventario",
         body:
-          "Si manejas muchos productos, varias sedes o vendes por varios canales, un [sistema de inventario](/sistemas/inventario) conectado a tu tienda te ahorra descuadres y horas de trabajo manual. El caso concreto de moda lo tratamos en [tienda virtual para vender ropa](/blog/tienda-virtual-para-vender-ropa).",
+          "Si manejas muchos productos, varias sedes o vendes por varios canales, un [sistema de inventario](/sistemas/inventario) conectado a tu tienda te ahorra descuadres y horas de trabajo manual. El caso concreto de moda lo tratamos en [tienda virtual para vender ropa](/blog/tienda-virtual-para-vender-ropa). Después de cobrar viene cuadrar: [por qué el banco no te deposita lo que vendiste](/blog/conciliacion-de-pagos-por-que-no-cuadra-lo-que-te-depositan).",
       },
     ],
     faqs: [
@@ -1052,7 +1052,7 @@ export const BLOG_POSTS: BlogPost[] = [
     sections: [
       {
         h2: "¿De qué depende el plazo de tu página web?",
-        body: "No todas las páginas web toman lo mismo. El plazo se define por el alcance acordado al inicio del proyecto. Antes de dar una fecha, conviene aclarar cuántas secciones tendrá, quién redacta los textos y qué funciones necesita.",
+        body: "No todas las páginas web toman lo mismo. El plazo se define por el alcance acordado al inicio del proyecto. Antes de dar una fecha, conviene aclarar cuántas secciones tendrá, quién redacta los textos y qué funciones necesita. Las partidas que suelen faltar están en [cómo leer una cotización de página web](/blog/como-leer-una-cotizacion-de-pagina-web).",
         bullets: [
           "Cantidad de páginas o secciones (inicio, nosotros, servicios, contacto, etc.).",
           "Si el contenido (textos, fotos, logo) ya está listo o hay que producirlo.",
@@ -1063,7 +1063,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         h2: "Plazos típicos por tipo de página web",
-        body: "Estos rangos son referenciales y asumen que el contenido se entrega a tiempo. Sirven para planificar tu lanzamiento con expectativas realistas.",
+        body: "Estos rangos son referenciales y asumen que el contenido se entrega a tiempo. Sirven para planificar tu lanzamiento con expectativas realistas. El dominio tiene que quedar a tu nombre: [de quién es el código, el dominio y los accesos](/blog/de-quien-es-el-codigo-el-dominio-y-los-accesos).",
         bullets: [
           "Landing page (una sola página de campaña): 1 a 2 semanas.",
           "Web corporativa de 4 a 6 secciones: 2 a 4 semanas.",
@@ -1174,7 +1174,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         h2: "Objetivo y estructura: las diferencias clave",
-        body: "Aunque ambas viven en internet, cumplen funciones distintas. Entender esto evita gastar de más o lanzar campañas con bajo resultado. Lo desglosamos en [cuánto cuesta un logo profesional en Perú](/blog/cuanto-cuesta-un-logo-profesional-en-peru).",
+        body: "Aunque ambas viven en internet, cumplen funciones distintas. Entender esto evita gastar de más o lanzar campañas con bajo resultado. Lo desglosamos en [cuánto cuesta un logo profesional en Perú](/blog/cuanto-cuesta-un-logo-profesional-en-peru). Antes de comparar precios, aprende [cómo leer una cotización de página web](/blog/como-leer-una-cotizacion-de-pagina-web).",
         bullets: [
           "Página web: informa y posiciona; landing page: convierte una campaña.",
           "La web tiene navegación amplia; la landing concentra todo en una vista.",
@@ -1253,7 +1253,7 @@ export const BLOG_POSTS: BlogPost[] = [
     sections: [
       {
         h2: "Qué revisar antes de contratar",
-        body: "Una buena decisión empieza por verificar puntos concretos, no por el precio más bajo. Estos son los aspectos que más cuidan tu inversión a mediano plazo. Los plazos reales están en [cuánto tiempo toma hacer una página web](/blog/cuanto-tiempo-toma-hacer-una-pagina-web).",
+        body: "Una buena decisión empieza por verificar puntos concretos, no por el precio más bajo. Estos son los aspectos que más cuidan tu inversión a mediano plazo. Los plazos reales están en [cuánto tiempo toma hacer una página web](/blog/cuanto-tiempo-toma-hacer-una-pagina-web). Las partidas que suelen faltar están en [cómo leer una cotización de página web](/blog/como-leer-una-cotizacion-de-pagina-web).",
         bullets: [
           "Portafolio real: webs que puedas visitar y, de ser posible, referencias.",
           "Que la web sea autoadministrable, para que tú edites textos y fotos sin depender de nadie.",
@@ -1293,7 +1293,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         h2: "Cómo trabaja Websy",
-        body: "En Websy buscamos que el cliente quede dueño de su proyecto. Como [agencia de desarrollo web en Lima](/desarrollo-web), entregamos páginas web y tiendas virtuales autoadministrables, con alcance y cronograma definidos desde el inicio, y dejamos el dominio y los accesos a tu nombre. Acompañamos después del lanzamiento y dejamos la web lista para SEO y para integraciones útiles en Perú como WhatsApp, facturación electrónica SUNAT y pasarelas de pago. Si estás evaluando opciones, conversemos sin compromiso: en [contacto](/contacto) están el teléfono, el correo y el horario de atención."
+        body: "En Websy buscamos que el cliente quede dueño de su proyecto. Como [agencia de desarrollo web en Lima](/desarrollo-web), entregamos páginas web y tiendas virtuales autoadministrables, con alcance y cronograma definidos desde el inicio, y dejamos el dominio y los accesos a tu nombre. Acompañamos después del lanzamiento y dejamos la web lista para SEO y para integraciones útiles en Perú como WhatsApp, facturación electrónica SUNAT y pasarelas de pago. Si estás evaluando opciones, conversemos sin compromiso: en [contacto](/contacto) están el teléfono, el correo y el horario de atención. Y cuando termine, asegúrate de [con qué te quedas: código, dominio y accesos](/blog/de-quien-es-el-codigo-el-dominio-y-los-accesos)."
       }
     ],
     faqs: [
@@ -1732,7 +1732,7 @@ export const BLOG_POSTS: BlogPost[] = [
     sections: [
       {
         h2: "¿Qué es la facturación electrónica y por qué la necesita tu ecommerce?",
-        body: "La facturación electrónica es la emisión de comprobantes de pago en formato digital (con validez ante la SUNAT) en lugar del papel tradicional. Si vendes a través de una tienda online en Perú, cada venta debería generar su comprobante. Más allá de la obligación tributaria, tener la facturación integrada ordena tu negocio y le da una imagen profesional al comprador.",
+        body: "La facturación electrónica es la emisión de comprobantes de pago en formato digital (con validez ante la SUNAT) en lugar del papel tradicional. Si vendes a través de una tienda online en Perú, cada venta debería generar su comprobante. Más allá de la obligación tributaria, tener la facturación integrada ordena tu negocio y le da una imagen profesional al comprador. Ese descuadre lo explicamos en [conciliación de pagos](/blog/conciliacion-de-pagos-por-que-no-cuadra-lo-que-te-depositan).",
         bullets: [
           "Cumplimiento: emites comprobantes válidos según las normas vigentes de la SUNAT.",
           "Orden: cada venta queda registrada con su comprobante, sin papeleo manual.",
@@ -1752,7 +1752,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         h2: "¿Cómo se integra la facturación con tu tienda?",
-        body: "El momento ideal para emitir el comprobante es justo cuando se confirma el pago. Cuando la pasarela de pago avisa que la transacción fue aprobada, la tienda envía los datos de la venta al sistema de facturación, que genera la boleta o factura, la reporta a la SUNAT y se la envía al cliente. Todo esto puede ocurrir de forma automática, sin que tú intervengas en cada pedido.",
+        body: "El momento ideal para emitir el comprobante es justo cuando se confirma el pago. Cuando la pasarela de pago avisa que la transacción fue aprobada, la tienda envía los datos de la venta al sistema de facturación, que genera la boleta o factura, la reporta a la SUNAT y se la envía al cliente. Todo esto puede ocurrir de forma automática, sin que tú intervengas en cada pedido. Los papeles y los plazos están en [afiliarte a una pasarela de pago en Perú](/blog/afiliacion-pasarela-de-pago-peru-requisitos-y-plazos).",
         bullets: [
           "El cliente paga y la pasarela confirma la transacción aprobada.",
           "La tienda envía los datos de la venta al servicio de facturación.",
@@ -1840,7 +1840,7 @@ export const BLOG_POSTS: BlogPost[] = [
     sections: [
       {
         h2: "Pasarelas y billeteras disponibles en Perú",
-        body: "Para cobrar con tarjeta de crédito o débito en tu web necesitas una pasarela de pago: el servicio que procesa la transacción de forma segura. En Perú las más conocidas son Niubiz, Izipay, Culqi y Mercado Pago. A eso conviene sumar billeteras digitales muy usadas por el comprador peruano, como Yape y Plin, que muchas veces cierran la venta cuando la persona no quiere ingresar su tarjeta.",
+        body: "Para cobrar con tarjeta de crédito o débito en tu web necesitas una pasarela de pago: el servicio que procesa la transacción de forma segura. En Perú las más conocidas son Niubiz, Izipay, Culqi y Mercado Pago. A eso conviene sumar billeteras digitales muy usadas por el comprador peruano, como Yape y Plin, que muchas veces cierran la venta cuando la persona no quiere ingresar su tarjeta. Si aún estás decidiendo cómo integrarlo, compara [link de pago, API o agregador](/blog/cobrar-con-yape-link-de-pago-api-o-agregador).",
         bullets: [
           "Niubiz: una de las pasarelas más extendidas en el mercado peruano.",
           "Izipay: solución de cobro con presencia fuerte en comercios locales.",
@@ -1861,7 +1861,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         h2: "Qué necesitas para empezar a cobrar",
-        body: "Para activar los pagos online normalmente debes crear una cuenta de comercio con la pasarela elegida y completar un proceso de validación. Cada operador pide documentación del negocio y datos para depositar tus ventas. Una vez aprobada la cuenta, se conectan tus credenciales a la tienda y ya puedes recibir pagos.",
+        body: "Para activar los pagos online normalmente debes crear una cuenta de comercio con la pasarela elegida y completar un proceso de validación. Cada operador pide documentación del negocio y datos para depositar tus ventas. Una vez aprobada la cuenta, se conectan tus credenciales a la tienda y ya puedes recibir pagos. Lo que revisan antes de aprobarte lo detallamos en [requisitos para afiliarte a una pasarela](/blog/afiliacion-pasarela-de-pago-peru-requisitos-y-plazos).",
         bullets: [
           "Una cuenta de comercio con la pasarela que elijas.",
           "Validación de tu negocio (datos y documentación que pida el operador).",
@@ -2177,7 +2177,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Por qué WhatsApp vende tanto en Perú",
         body:
-          "El comprador peruano confía en hablar antes de pagar: pregunta stock, tallas, delivery o si acepta Yape. WhatsApp da esa cercanía y baja la desconfianza. Una tienda que aprovecha ese hábito, en lugar de pelear contra él, convierte muchas más visitas en ventas. El paso a paso está en [cómo aceptar pagos con tarjeta en tu web](/blog/como-aceptar-pagos-con-tarjeta-en-tu-web-peru).",
+          "El comprador peruano confía en hablar antes de pagar: pregunta stock, tallas, delivery o si acepta Yape. WhatsApp da esa cercanía y baja la desconfianza. Una tienda que aprovecha ese hábito, en lugar de pelear contra él, convierte muchas más visitas en ventas. El paso a paso está en [cómo aceptar pagos con tarjeta en tu web](/blog/como-aceptar-pagos-con-tarjeta-en-tu-web-peru). Antes de integrar conviene ver [cuál de las tres formas de cobrar con Yape te conviene](/blog/cobrar-con-yape-link-de-pago-api-o-agregador).",
       },
       {
         h2: "El botón de WhatsApp: dónde y cómo ponerlo",
@@ -2297,7 +2297,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "A medida vs enlatado: cuál te conviene",
         body:
-          "Un software enlatado es rápido y barato al inicio, pero te obliga a trabajar como el programa quiere y suele cobrar mensualidad por usuario. Uno a medida cuesta más al comienzo pero crece contigo y es tuyo. Lo desarrollamos con más detalle en [software a medida vs software enlatado](/blog/software-a-medida-vs-software-enlatado). Si vendes a diario, conviene un [sistema de ventas y facturación](/sistemas/ventas-y-facturacion) que emita solo.",
+          "Un software enlatado es rápido y barato al inicio, pero te obliga a trabajar como el programa quiere y suele cobrar mensualidad por usuario. Uno a medida cuesta más al comienzo pero crece contigo y es tuyo. Lo desarrollamos con más detalle en [software a medida vs software enlatado](/blog/software-a-medida-vs-software-enlatado). Si vendes a diario, conviene un [sistema de ventas y facturación](/sistemas/ventas-y-facturacion) que emita solo. Si el abono no te cuadra con lo vendido, la explicación está en [la conciliación de pagos](/blog/conciliacion-de-pagos-por-que-no-cuadra-lo-que-te-depositan).",
       },
       {
         h2: "Cómo migrar sin frenar tu operación",
@@ -2764,12 +2764,12 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Por qué no existe un precio de lista",
         body:
-          "Un software a medida se construye para tu operación, así que su precio sale del alcance, no de un catálogo. No es lo mismo un sistema para controlar el stock de un almacén que una plataforma con varios módulos, roles de usuario, reportes e integraciones con SUNAT y pagos. Por eso, cualquiera que te dé una cifra cerrada sin entender tu proceso probablemente te cobre de más o entregue de menos. Lo serio es un diagnóstico corto y luego una propuesta con alcance, etapas y tiempos. La agenda deja de ser un problema con [un sistema de reservas a medida](/blog/sistema-de-reservas-y-citas-a-medida).",
+          "Un software a medida se construye para tu operación, así que su precio sale del alcance, no de un catálogo. No es lo mismo un sistema para controlar el stock de un almacén que una plataforma con varios módulos, roles de usuario, reportes e integraciones con SUNAT y pagos. Por eso, cualquiera que te dé una cifra cerrada sin entender tu proceso probablemente te cobre de más o entregue de menos. Lo serio es un diagnóstico corto y luego una propuesta con alcance, etapas y tiempos. La agenda deja de ser un problema con [un sistema de reservas a medida](/blog/sistema-de-reservas-y-citas-a-medida). Después de cobrar viene cuadrar: [por qué el banco no te deposita lo que vendiste](/blog/conciliacion-de-pagos-por-que-no-cuadra-lo-que-te-depositan).",
       },
       {
         h2: "Qué factores definen el precio",
         body:
-          "Estos son los que más pesan en una cotización real de desarrollo a medida: Ese caso lo cubrimos en [sistemas de punto de venta a medida](/blog/sistema-de-punto-de-venta-pos-a-medida).",
+          "Estos son los que más pesan en una cotización real de desarrollo a medida: Ese caso lo cubrimos en [sistemas de punto de venta a medida](/blog/sistema-de-punto-de-venta-pos-a-medida). Para comparar dos presupuestos de forma justa, mira [qué tiene que incluir una cotización](/blog/como-leer-una-cotizacion-de-pagina-web).",
         bullets: [
           "Cantidad de módulos: ventas, inventario, clientes, reportes, cada uno suma.",
           "Número de usuarios y roles con permisos distintos.",
@@ -2844,7 +2844,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Los costos fijos: hosting y dominio",
         body:
-          "Toda web necesita dos cosas para estar en línea: un dominio (tu dirección, como tunegocio.pe) que se renueva cada año, y un hosting (el espacio donde vive la web) que se paga mensual o anual. Son los costos base y suelen ser modestos. El dominio .pe es económico y el hosting varía según el tráfico y el tipo de sitio: una web informativa pesa menos que una tienda virtual con muchos productos. Puedes profundizar en [cuánto cuesta una página web](/blog/cuanto-cuesta-una-pagina-web-en-peru) para entender la inversión inicial.",
+          "Toda web necesita dos cosas para estar en línea: un dominio (tu dirección, como tunegocio.pe) que se renueva cada año, y un hosting (el espacio donde vive la web) que se paga mensual o anual. Son los costos base y suelen ser modestos. El dominio .pe es económico y el hosting varía según el tráfico y el tipo de sitio: una web informativa pesa menos que una tienda virtual con muchos productos. Puedes profundizar en [cuánto cuesta una página web](/blog/cuanto-cuesta-una-pagina-web-en-peru) para entender la inversión inicial. El dominio tiene que quedar a tu nombre: [de quién es el código, el dominio y los accesos](/blog/de-quien-es-el-codigo-el-dominio-y-los-accesos).",
       },
       {
         h2: "Qué incluye un buen mantenimiento",
@@ -2871,7 +2871,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Mantenimiento y mejoras: no es lo mismo",
         body:
-          "Conviene separar dos cosas. El mantenimiento mantiene la web funcionando (seguridad, respaldos, actualizaciones). Las mejoras son cambios nuevos: sumar una sección, rediseñar una página o agregar una función. El mantenimiento suele ser un monto fijo mensual; las mejoras se cotizan aparte según el trabajo. Tenerlo claro evita malentendidos sobre qué cubre tu plan.",
+          "Conviene separar dos cosas. El mantenimiento mantiene la web funcionando (seguridad, respaldos, actualizaciones). Las mejoras son cambios nuevos: sumar una sección, rediseñar una página o agregar una función. El mantenimiento suele ser un monto fijo mensual; las mejoras se cotizan aparte según el trabajo. Tenerlo claro evita malentendidos sobre qué cubre tu plan. Antes de comparar precios, aprende [cómo leer una cotización de página web](/blog/como-leer-una-cotizacion-de-pagina-web).",
       },
       {
         h2: "Cómo lo maneja Websy",
@@ -3147,7 +3147,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Por qué Yape y Plin son imprescindibles",
         body:
-          "Yape y Plin son la forma más rápida y familiar de pagar para la mayoría de peruanos: sin tarjeta, sin comisiones para el comprador y en segundos. Una tienda que solo acepta tarjeta deja fuera a un montón de clientes que pagarían al toque con su celular. Ofrecer Yape y Plin no es un extra, es lo mínimo para vender en el mercado peruano. La regla es simple: mientras menos fricción en el pago, más ventas cierras. Lo explicamos entero en [cómo aceptar pagos con tarjeta](/blog/como-aceptar-pagos-con-tarjeta-en-tu-web-peru).",
+          "Yape y Plin son la forma más rápida y familiar de pagar para la mayoría de peruanos: sin tarjeta, sin comisiones para el comprador y en segundos. Una tienda que solo acepta tarjeta deja fuera a un montón de clientes que pagarían al toque con su celular. Ofrecer Yape y Plin no es un extra, es lo mínimo para vender en el mercado peruano. La regla es simple: mientras menos fricción en el pago, más ventas cierras. Lo explicamos entero en [cómo aceptar pagos con tarjeta](/blog/como-aceptar-pagos-con-tarjeta-en-tu-web-peru). Si aún estás decidiendo cómo integrarlo, compara [link de pago, API o agregador](/blog/cobrar-con-yape-link-de-pago-api-o-agregador).",
       },
       {
         h2: "Formas de integrar Yape y Plin",
@@ -3220,7 +3220,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Qué hacen Izipay y Niubiz",
         body:
-          "Ambas son pasarelas de pago: permiten que tu tienda cobre con tarjeta de crédito y débito de forma segura y automática, y hoy también procesan Yape y Plin. Niubiz (antes Visanet) es la más veterana y tiene fuerte presencia con la banca tradicional. Izipay creció rápido y es muy popular entre pymes por su facilidad. Las dos son opciones sólidas y confiables; la mejor depende de tu operación, no de cuál es 'mejor' en abstracto. El paso a paso está en [cómo aceptar pagos con tarjeta en tu web](/blog/como-aceptar-pagos-con-tarjeta-en-tu-web-peru).",
+          "Ambas son pasarelas de pago: permiten que tu tienda cobre con tarjeta de crédito y débito de forma segura y automática, y hoy también procesan Yape y Plin. Niubiz (antes Visanet) es la más veterana y tiene fuerte presencia con la banca tradicional. Izipay creció rápido y es muy popular entre pymes por su facilidad. Las dos son opciones sólidas y confiables; la mejor depende de tu operación, no de cuál es 'mejor' en abstracto. El paso a paso está en [cómo aceptar pagos con tarjeta en tu web](/blog/como-aceptar-pagos-con-tarjeta-en-tu-web-peru). Hay tres formas de hacerlo y no cuestan lo mismo: [link de pago, integración por API o agregador](/blog/cobrar-con-yape-link-de-pago-api-o-agregador).",
       },
       {
         h2: "Qué mirar al comparar",
@@ -3237,12 +3237,12 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Cuándo conviene cada una",
         body:
-          "No hay una respuesta universal, pero sí guías. Niubiz suele encajar bien si ya trabajas con banca tradicional y quieres una marca reconocida que dé confianza al comprador. Izipay tiende a ser ágil para pymes que quieren afiliarse rápido y sin complicaciones. Lo más sano es comparar la comisión y las condiciones vigentes de cada una para tu rubro, porque cambian. En la cotización te ayudamos a elegir según tu volumen y tu plataforma. Si dudas entre esos dos, mira [Culqi vs Mercado Pago](/blog/culqi-vs-mercado-pago-en-peru).",
+          "No hay una respuesta universal, pero sí guías. Niubiz suele encajar bien si ya trabajas con banca tradicional y quieres una marca reconocida que dé confianza al comprador. Izipay tiende a ser ágil para pymes que quieren afiliarse rápido y sin complicaciones. Lo más sano es comparar la comisión y las condiciones vigentes de cada una para tu rubro, porque cambian. En la cotización te ayudamos a elegir según tu volumen y tu plataforma. Si dudas entre esos dos, mira [Culqi vs Mercado Pago](/blog/culqi-vs-mercado-pago-en-peru). Antes de integrar hay un trámite: [qué piden para afiliarte y cuánto tarda](/blog/afiliacion-pasarela-de-pago-peru-requisitos-y-plazos).",
       },
       {
         h2: "La integración importa tanto como la pasarela",
         body:
-          "Una gran pasarela mal integrada igual pierde ventas. Lo clave es que el pago se confirme automáticamente, que el checkout sea corto y que el cliente vea los logos que le dan confianza. Cuando desarrollamos tu [tienda virtual](/tiendas-virtuales), integramos la pasarela que elijas de forma que el pedido se confirme solo y el stock se descuente. Puedes revisar el panorama completo en [pasarelas de pago para ecommerce](/blog/pasarelas-de-pago-para-ecommerce-en-peru). Todo el ciclo de cobro y comprobante lo cubre nuestro [sistema de ventas y facturación](/sistemas/ventas-y-facturacion).",
+          "Una gran pasarela mal integrada igual pierde ventas. Lo clave es que el pago se confirme automáticamente, que el checkout sea corto y que el cliente vea los logos que le dan confianza. Cuando desarrollamos tu [tienda virtual](/tiendas-virtuales), integramos la pasarela que elijas de forma que el pedido se confirme solo y el stock se descuente. Puedes revisar el panorama completo en [pasarelas de pago para ecommerce](/blog/pasarelas-de-pago-para-ecommerce-en-peru). Todo el ciclo de cobro y comprobante lo cubre nuestro [sistema de ventas y facturación](/sistemas/ventas-y-facturacion). Lo que te depositan nunca es lo que vendiste: [por qué pasa y cómo se cuadra](/blog/conciliacion-de-pagos-por-que-no-cuadra-lo-que-te-depositan).",
       },
       {
         h2: "No tienes que elegir solo una",
@@ -3301,7 +3301,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Qué factores definen el precio",
         body:
-          "El costo del SEO varía según el esfuerzo que exige tu mercado: El desglose anual está en [cuánto cuesta mantener una página web](/blog/costos-de-mantenimiento-de-una-pagina-web-en-peru).",
+          "El costo del SEO varía según el esfuerzo que exige tu mercado: El desglose anual está en [cuánto cuesta mantener una página web](/blog/costos-de-mantenimiento-de-una-pagina-web-en-peru). Lo que un presupuesto no dice también cuesta: [cómo leer una cotización](/blog/como-leer-una-cotizacion-de-pagina-web).",
         bullets: [
           "Competencia de tus palabras clave: rankear 'abogado en Lima' cuesta más que un nicho pequeño.",
           "Estado actual de tu web (velocidad, estructura, contenido existente).",
@@ -3589,7 +3589,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Por qué una migración puede hundir tu SEO",
         body:
-          "Google conoce tu web actual: sabe qué URLs tienes, qué contenido hay en cada una y qué posición merecen. Cuando migras (cambias de plataforma, rediseñas o mueves de dominio) y esas URLs cambian o desaparecen sin avisar, Google encuentra páginas rotas y pierde el rastro de lo que ya valoraba. El resultado es una caída de tráfico que puede tardar meses en recuperarse. La buena noticia: se evita con un plan de migración cuidado.",
+          "Google conoce tu web actual: sabe qué URLs tienes, qué contenido hay en cada una y qué posición merecen. Cuando migras (cambias de plataforma, rediseñas o mueves de dominio) y esas URLs cambian o desaparecen sin avisar, Google encuentra páginas rotas y pierde el rastro de lo que ya valoraba. El resultado es una caída de tráfico que puede tardar meses en recuperarse. La buena noticia: se evita con un plan de migración cuidado. Lo que te llevas al terminar el proyecto está en [de quién es el código y el dominio](/blog/de-quien-es-el-codigo-el-dominio-y-los-accesos).",
       },
       {
         h2: "Las redirecciones 301: lo más importante",
@@ -3978,7 +3978,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Qué factores definen el precio",
         body:
-          "Estos son los que más pesan en la cotización de un logo:",
+          "Estos son los que más pesan en la cotización de un logo: Las partidas que suelen faltar están en [cómo leer una cotización de página web](/blog/como-leer-una-cotizacion-de-pagina-web).",
         bullets: [
           "El proceso: plantilla lista vs. diseño original con investigación.",
           "Cantidad de propuestas y rondas de revisión incluidas.",
@@ -4120,7 +4120,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Qué es el dominio y qué es el hosting",
         body:
-          "El dominio es tu dirección en internet, como tunegocio.pe: se alquila por año y es único. El hosting es el espacio en un servidor donde se guardan los archivos de tu web para que esté disponible 24/7. Uno sin el otro no sirve: el dominio dice dónde estás y el hosting guarda lo que la gente ve. Ambos se renuevan y son la base sobre la que corre tu página. Para elegir bien, mira [cómo elegir un hosting en Perú](/blog/como-elegir-un-hosting-en-peru).",
+          "El dominio es tu dirección en internet, como tunegocio.pe: se alquila por año y es único. El hosting es el espacio en un servidor donde se guardan los archivos de tu web para que esté disponible 24/7. Uno sin el otro no sirve: el dominio dice dónde estás y el hosting guarda lo que la gente ve. Ambos se renuevan y son la base sobre la que corre tu página. Para elegir bien, mira [cómo elegir un hosting en Perú](/blog/como-elegir-un-hosting-en-peru). Lo que te llevas al terminar el proyecto está en [de quién es el código y el dominio](/blog/de-quien-es-el-codigo-el-dominio-y-los-accesos).",
       },
       {
         h2: "Cuánto cuesta un dominio .pe",
@@ -4270,7 +4270,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "1. Crea tu cuenta y elige el plan de Shopify",
         body:
-          "Regístrate en Shopify y elige el plan según el tamaño de tu operación. Puedes empezar con un plan básico y subir cuando crezcas. Ten a mano tu logo, tu marca y una idea clara de tu catálogo. Recuerda que el plan mensual de Shopify es un costo aparte del desarrollo; lo explicamos en la guía de [cuánto cuesta una tienda Shopify](/tiendas-virtuales/shopify/costos). La lista completa está en [qué necesitas para vender online en Perú](/blog/que-necesito-para-vender-online-en-peru).",
+          "Regístrate en Shopify y elige el plan según el tamaño de tu operación. Puedes empezar con un plan básico y subir cuando crezcas. Ten a mano tu logo, tu marca y una idea clara de tu catálogo. Recuerda que el plan mensual de Shopify es un costo aparte del desarrollo; lo explicamos en la guía de [cuánto cuesta una tienda Shopify](/tiendas-virtuales/shopify/costos). La lista completa está en [qué necesitas para vender online en Perú](/blog/que-necesito-para-vender-online-en-peru). Y antes de firmar, mira [qué preguntar a la pasarela](/blog/afiliacion-pasarela-de-pago-peru-requisitos-y-plazos).",
       },
       {
         h2: "2. Elige y personaliza un tema a tu marca",
@@ -4351,7 +4351,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Por qué Yape y Plin son imprescindibles en Perú",
         body:
-          "Son la forma más rápida y familiar de pagar para millones de peruanos. Si el cliente llega al checkout y no encuentra Yape o Plin, muchas veces abandona la compra. Ofrecerlos reduce la fricción y sube tu conversión.",
+          "Son la forma más rápida y familiar de pagar para millones de peruanos. Si el cliente llega al checkout y no encuentra Yape o Plin, muchas veces abandona la compra. Ofrecerlos reduce la fricción y sube tu conversión. La comparación de las tres vías está en [cobrar con Yape: link, API o agregador](/blog/cobrar-con-yape-link-de-pago-api-o-agregador).",
       },
       {
         h2: "Opciones para aceptar Yape y Plin en Shopify",
@@ -4727,7 +4727,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "No configurar pagos locales completos",
         body:
-          "Si falta Yape, Plin o tarjeta, pierdes ventas en el checkout. El error clásico es lanzar con un solo medio de pago. Configura las pasarelas locales completas, como explicamos en [vender con Yape y Plin en Shopify](/blog/como-vender-con-yape-y-plin-en-shopify). El detalle técnico está en [cómo conectar Niubiz a tu tienda virtual](/blog/como-conectar-niubiz-a-tu-tienda-virtual).",
+          "Si falta Yape, Plin o tarjeta, pierdes ventas en el checkout. El error clásico es lanzar con un solo medio de pago. Configura las pasarelas locales completas, como explicamos en [vender con Yape y Plin en Shopify](/blog/como-vender-con-yape-y-plin-en-shopify). El detalle técnico está en [cómo conectar Niubiz a tu tienda virtual](/blog/como-conectar-niubiz-a-tu-tienda-virtual). Antes de integrar hay un trámite: [qué piden para afiliarte y cuánto tarda](/blog/afiliacion-pasarela-de-pago-peru-requisitos-y-plazos).",
       },
       {
         h2: "Olvidar el SEO desde el inicio",
@@ -5018,7 +5018,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Qué es una plantilla y qué es una web a medida",
         body:
-          "Una plantilla es un diseño ya hecho que rellenas con tu contenido: sales rápido y a bajo costo, pero compartes estructura con miles de sitios y dependes de lo que la plantilla permita. Una web a medida se diseña y programa desde cero para tu marca y tus objetivos: control total del diseño, la velocidad y las funciones. Cada una encaja en un momento distinto del negocio. El desglose anual está en [cuánto cuesta mantener una página web](/blog/costos-de-mantenimiento-de-una-pagina-web-en-peru).",
+          "Una plantilla es un diseño ya hecho que rellenas con tu contenido: sales rápido y a bajo costo, pero compartes estructura con miles de sitios y dependes de lo que la plantilla permita. Una web a medida se diseña y programa desde cero para tu marca y tus objetivos: control total del diseño, la velocidad y las funciones. Cada una encaja en un momento distinto del negocio. El desglose anual está en [cuánto cuesta mantener una página web](/blog/costos-de-mantenimiento-de-una-pagina-web-en-peru). Antes de firmar conviene saber [qué te entregan cuando acaba el proyecto](/blog/de-quien-es-el-codigo-el-dominio-y-los-accesos).",
       },
       {
         h2: "Ventajas y límites de las plantillas",
@@ -5044,7 +5044,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Cómo decidir según tu momento",
         body:
-          "Si estás validando una idea con presupuesto mínimo, una plantilla puede servir para arrancar. Si tu web es clave para vender, transmitir profesionalismo y crecer, invierte en un desarrollo a medida y evita rehacerlo en un año. ¿No sabes en qué punto estás? [Cuéntanos tu proyecto](/cotizacion) y te recomendamos el camino más rentable, sin compromiso. Si te falta la marca, empieza por [cuánto cuesta un logo profesional](/blog/cuanto-cuesta-un-logo-profesional-en-peru).",
+          "Si estás validando una idea con presupuesto mínimo, una plantilla puede servir para arrancar. Si tu web es clave para vender, transmitir profesionalismo y crecer, invierte en un desarrollo a medida y evita rehacerlo en un año. ¿No sabes en qué punto estás? [Cuéntanos tu proyecto](/cotizacion) y te recomendamos el camino más rentable, sin compromiso. Si te falta la marca, empieza por [cuánto cuesta un logo profesional](/blog/cuanto-cuesta-un-logo-profesional-en-peru). Para comparar dos presupuestos de forma justa, mira [qué tiene que incluir una cotización](/blog/como-leer-una-cotizacion-de-pagina-web).",
       },
     ],
     faqs: [
@@ -5088,7 +5088,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Señales de que tu empresa ya necesita automatizar",
         body:
-          "No hace falta ser una gran empresa. Si te identificas con varias de estas señales, la automatización ya te ahorraría dinero: tu información vive en varios Excel que nadie termina de cuadrar, cometes errores por cargar datos a mano, no sabes tu stock real en el momento, o dependes de una sola persona que 'sabe cómo va todo'. Eso frena el crecimiento y cuesta caro. Si tu negocio va por citas, mira [el sistema de reservas y citas a medida](/blog/sistema-de-reservas-y-citas-a-medida).",
+          "No hace falta ser una gran empresa. Si te identificas con varias de estas señales, la automatización ya te ahorraría dinero: tu información vive en varios Excel que nadie termina de cuadrar, cometes errores por cargar datos a mano, no sabes tu stock real en el momento, o dependes de una sola persona que 'sabe cómo va todo'. Eso frena el crecimiento y cuesta caro. Si tu negocio va por citas, mira [el sistema de reservas y citas a medida](/blog/sistema-de-reservas-y-citas-a-medida). Lo que te depositan nunca es lo que vendiste: [por qué pasa y cómo se cuadra](/blog/conciliacion-de-pagos-por-que-no-cuadra-lo-que-te-depositan).",
         bullets: [
           "Reprocesas datos entre planillas que no se hablan entre sí.",
           "Errores de digitación en ventas, stock o facturación.",
@@ -5265,7 +5265,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Ofrece la forma de pago que tu cliente ya usa",
         body:
-          "En Perú conviven la tarjeta, las billeteras y la transferencia. Una tienda que solo acepta tarjeta deja fuera a una parte grande de sus compradores. Lo razonable es cubrir tarjeta con una pasarela —[Izipay o Niubiz](/blog/izipay-o-niubiz-cual-elegir-para-cobrar-con-tarjeta), según el caso— y sumar [Yape y Plin](/blog/como-integrar-yape-y-plin-en-tu-tienda-virtual) para el resto. Y muéstralo antes: los logos de los medios aceptados en la ficha del producto reducen el abandono porque responden la duda antes de que aparezca.",
+          "En Perú conviven la tarjeta, las billeteras y la transferencia. Una tienda que solo acepta tarjeta deja fuera a una parte grande de sus compradores. Lo razonable es cubrir tarjeta con una pasarela —[Izipay o Niubiz](/blog/izipay-o-niubiz-cual-elegir-para-cobrar-con-tarjeta), según el caso— y sumar [Yape y Plin](/blog/como-integrar-yape-y-plin-en-tu-tienda-virtual) para el resto. Y muéstralo antes: los logos de los medios aceptados en la ficha del producto reducen el abandono porque responden la duda antes de que aparezca. Antes de integrar conviene ver [cuál de las tres formas de cobrar con Yape te conviene](/blog/cobrar-con-yape-link-de-pago-api-o-agregador).",
       },
       {
         h2: "Quita todo lo que no necesitas para entregar",
@@ -5418,7 +5418,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Qué hay que comparar de verdad",
         body:
-          "La comisión es lo primero que se mira y rara vez es lo que más pesa. Antes de decidir conviene poner sobre la mesa estos seis puntos, porque son los que después cuestan dinero o tiempo:",
+          "La comisión es lo primero que se mira y rara vez es lo que más pesa. Antes de decidir conviene poner sobre la mesa estos seis puntos, porque son los que después cuestan dinero o tiempo: Lo que te depositan nunca es lo que vendiste: [por qué pasa y cómo se cuadra](/blog/conciliacion-de-pagos-por-que-no-cuadra-lo-que-te-depositan).",
         bullets: [
           "Comisión por transacción y si cambia según el medio de pago o el plazo de depósito.",
           "Cuándo cae el dinero en tu cuenta, que es lo que define tu flujo de caja.",
@@ -5441,7 +5441,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Lo que ninguna de las dos resuelve sola",
         body:
-          "En Perú, una parte importante de los clientes no paga con tarjeta: paga con [Yape o Plin](/blog/como-integrar-yape-y-plin-en-tu-tienda-virtual). Elegir pasarela no te exime de cubrir esa vía, y las tiendas que mejor convierten suelen ofrecer ambas cosas. Si tu ticket es alto y tu cliente es empresa, además vas a necesitar factura electrónica: eso lo resuelve tu [sistema de ventas y facturación](/sistemas/ventas-y-facturacion), no la pasarela.",
+          "En Perú, una parte importante de los clientes no paga con tarjeta: paga con [Yape o Plin](/blog/como-integrar-yape-y-plin-en-tu-tienda-virtual). Elegir pasarela no te exime de cubrir esa vía, y las tiendas que mejor convierten suelen ofrecer ambas cosas. Si tu ticket es alto y tu cliente es empresa, además vas a necesitar factura electrónica: eso lo resuelve tu [sistema de ventas y facturación](/sistemas/ventas-y-facturacion), no la pasarela. Hay tres formas de hacerlo y no cuestan lo mismo: [link de pago, integración por API o agregador](/blog/cobrar-con-yape-link-de-pago-api-o-agregador).",
       },
       {
         h2: "Cómo decidir en cinco minutos",
@@ -5456,7 +5456,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Antes de firmar, prueba el flujo completo",
         body:
-          "Con la pasarela elegida, haz una compra real con tu propia tarjeta y otra con billetera, y sigue el dinero hasta tu cuenta. Ahí aparecen las sorpresas que ningún cuadro comparativo muestra: el correo de confirmación que no llega, el comprobante que no se emite, el pedido que queda en 'pendiente'. Si comparas también con las opciones de tarjeta presencial y en línea, mira [Izipay o Niubiz](/blog/izipay-o-niubiz-cual-elegir-para-cobrar-con-tarjeta) y el panorama completo en [pasarelas de pago en Perú](/blog/pasarelas-de-pago-para-ecommerce-en-peru).",
+          "Con la pasarela elegida, haz una compra real con tu propia tarjeta y otra con billetera, y sigue el dinero hasta tu cuenta. Ahí aparecen las sorpresas que ningún cuadro comparativo muestra: el correo de confirmación que no llega, el comprobante que no se emite, el pedido que queda en 'pendiente'. Si comparas también con las opciones de tarjeta presencial y en línea, mira [Izipay o Niubiz](/blog/izipay-o-niubiz-cual-elegir-para-cobrar-con-tarjeta) y el panorama completo en [pasarelas de pago en Perú](/blog/pasarelas-de-pago-para-ecommerce-en-peru). Los papeles y los plazos están en [afiliarte a una pasarela de pago en Perú](/blog/afiliacion-pasarela-de-pago-peru-requisitos-y-plazos).",
       },
     ],
     faqs: [
@@ -5672,7 +5672,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Lo que exige SUNAT y dónde se complica",
         body:
-          "Emitir comprobantes electrónicos es obligatorio para la mayoría de negocios, y la parte que suele fallar no es emitir: es todo lo que viene alrededor. Series y numeración correlativa por caja sin saltos, notas de crédito para anulaciones y devoluciones, y el respaldo de los XML y CDR de cada comprobante, que es lo que se pide en una fiscalización. Cuando esto vive en un portal aparte del sistema de ventas, alguien termina cuadrando dos fuentes a fin de mes. El detalle está en [facturación electrónica SUNAT](/blog/facturacion-electronica-sunat-para-tu-tienda-online).",
+          "Emitir comprobantes electrónicos es obligatorio para la mayoría de negocios, y la parte que suele fallar no es emitir: es todo lo que viene alrededor. Series y numeración correlativa por caja sin saltos, notas de crédito para anulaciones y devoluciones, y el respaldo de los XML y CDR de cada comprobante, que es lo que se pide en una fiscalización. Cuando esto vive en un portal aparte del sistema de ventas, alguien termina cuadrando dos fuentes a fin de mes. El detalle está en [facturación electrónica SUNAT](/blog/facturacion-electronica-sunat-para-tu-tienda-online). Ese descuadre lo explicamos en [conciliación de pagos](/blog/conciliacion-de-pagos-por-que-no-cuadra-lo-que-te-depositan).",
       },
       {
         h2: "El cierre de caja, que es donde aparecen los problemas",
@@ -5828,7 +5828,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Certificado SSL y correo corporativo",
         body:
-          "El certificado SSL es lo que hace que tu web aparezca como segura (el candado del navegador) y hoy es obligatorio: sin él, Chrome avisa al visitante de que el sitio no es seguro. Casi todos los planes lo incluyen gratis mediante Let's Encrypt; si te lo quieren cobrar aparte, es una señal. Mira también cuántas cuentas de correo con tu dominio incluye, porque escribir desde una dirección con tu propio dominio da otra imagen.",
+          "El certificado SSL es lo que hace que tu web aparezca como segura (el candado del navegador) y hoy es obligatorio: sin él, Chrome avisa al visitante de que el sitio no es seguro. Casi todos los planes lo incluyen gratis mediante Let's Encrypt; si te lo quieren cobrar aparte, es una señal. Mira también cuántas cuentas de correo con tu dominio incluye, porque escribir desde una dirección con tu propio dominio da otra imagen. Y cuando termine, asegúrate de [con qué te quedas: código, dominio y accesos](/blog/de-quien-es-el-codigo-el-dominio-y-los-accesos).",
       },
       {
         h2: "La letra pequeña de la renovación",
@@ -5888,7 +5888,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Paso 1: comprueba que el nombre esté libre",
         body:
-          "Antes de enamorarte de un nombre, verifica que nadie lo tenga. Cualquier registrador te deja buscarlo desde su portada, y también puedes consultarlo en el registro oficial de dominios .pe. Búscalo con todas las extensiones a la vez: puede estar libre el .com.pe y ocupado el .pe. Y revisa de paso que el nombre esté disponible en redes sociales, para que tu marca sea la misma en todos lados.",
+          "Antes de enamorarte de un nombre, verifica que nadie lo tenga. Cualquier registrador te deja buscarlo desde su portada, y también puedes consultarlo en el registro oficial de dominios .pe. Búscalo con todas las extensiones a la vez: puede estar libre el .com.pe y ocupado el .pe. Y revisa de paso que el nombre esté disponible en redes sociales, para que tu marca sea la misma en todos lados. El dominio tiene que quedar a tu nombre: [de quién es el código, el dominio y los accesos](/blog/de-quien-es-el-codigo-el-dominio-y-los-accesos).",
       },
       {
         h2: "Paso 2: elige entre .pe, .com.pe y .com",
@@ -5969,7 +5969,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Paso 1: la afiliación comercial",
         body:
-          "Antes de tocar nada técnico hay que afiliarse como comercio. Te van a pedir los datos formales de tu negocio y una cuenta bancaria a nombre de la empresa donde depositar lo cobrado. Ten a mano lo básico:",
+          "Antes de tocar nada técnico hay que afiliarse como comercio. Te van a pedir los datos formales de tu negocio y una cuenta bancaria a nombre de la empresa donde depositar lo cobrado. Ten a mano lo básico: Y antes de firmar, mira [qué preguntar a la pasarela](/blog/afiliacion-pasarela-de-pago-peru-requisitos-y-plazos).",
         bullets: [
           "RUC activo y datos de la empresa tal como figuran en SUNAT.",
           "Cuenta bancaria a nombre del mismo titular con el que te afilias: si te afilias con el RUC de la empresa, la cuenta debe ser de la empresa. Los datos tienen que coincidir o el abono no sale.",
@@ -6051,7 +6051,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Lo que piden para afiliarte",
         body:
-          "Como toda pasarela formal, Izipay verifica el negocio antes de habilitarte:",
+          "Como toda pasarela formal, Izipay verifica el negocio antes de habilitarte: Antes de integrar hay un trámite: [qué piden para afiliarte y cuánto tarda](/blog/afiliacion-pasarela-de-pago-peru-requisitos-y-plazos).",
         bullets: [
           "RUC activo y datos de la empresa como figuran en SUNAT.",
           "Cuenta bancaria cuyo titular coincida con el documento con el que te afiliaste. Si no coincide, el dinero no se abona.",
@@ -6117,7 +6117,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "1. RUC y régimen tributario",
         body:
-          "Es el primer paso y el que condiciona todo lo demás: sin RUC activo no vas a poder afiliarte a ninguna pasarela de pago formal ni emitir comprobantes. Puedes vender como persona natural con negocio o constituir una empresa; el régimen que te toque depende de tus ingresos proyectados y de si vas a tener trabajadores. Esa elección conviene consultarla con un contador, porque cambia cuánto pagas y qué declaras. En Websy montamos [tiendas WooCommerce](/tiendas-virtuales/woocommerce) con los pagos peruanos ya conectados.",
+          "Es el primer paso y el que condiciona todo lo demás: sin RUC activo no vas a poder afiliarte a ninguna pasarela de pago formal ni emitir comprobantes. Puedes vender como persona natural con negocio o constituir una empresa; el régimen que te toque depende de tus ingresos proyectados y de si vas a tener trabajadores. Esa elección conviene consultarla con un contador, porque cambia cuánto pagas y qué declaras. En Websy montamos [tiendas WooCommerce](/tiendas-virtuales/woocommerce) con los pagos peruanos ya conectados. Lo que revisan antes de aprobarte lo detallamos en [requisitos para afiliarte a una pasarela](/blog/afiliacion-pasarela-de-pago-peru-requisitos-y-plazos).",
       },
       {
         h2: "2. Comprobantes electrónicos",
@@ -6204,7 +6204,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Cuánto cuesta (spoiler: normalmente nada)",
         body:
-          "La mayoría de proveedores incluye certificados gratuitos de Let's Encrypt, que se renuevan solos y cifran exactamente igual que uno de pago. Los certificados pagados existen para casos concretos: validación extendida de la organización, garantías comerciales o cobertura de muchos subdominios. Para una web de empresa o una tienda, el gratuito hace el trabajo. Si tu hosting te lo quiere cobrar aparte, es una señal sobre ese proveedor.",
+          "La mayoría de proveedores incluye certificados gratuitos de Let's Encrypt, que se renuevan solos y cifran exactamente igual que uno de pago. Los certificados pagados existen para casos concretos: validación extendida de la organización, garantías comerciales o cobertura de muchos subdominios. Para una web de empresa o una tienda, el gratuito hace el trabajo. Si tu hosting te lo quiere cobrar aparte, es una señal sobre ese proveedor. Y cuando termine, asegúrate de [con qué te quedas: código, dominio y accesos](/blog/de-quien-es-el-codigo-el-dominio-y-los-accesos).",
       },
       {
         h2: "Cómo comprobar que está bien puesto",
@@ -6249,6 +6249,466 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Cómo elegir un hosting en Perú", href: "/blog/como-elegir-un-hosting-en-peru", desc: "El certificado debería venir incluido." },
       { label: "Mantenimiento y soporte web", href: "/mantenimiento-web", desc: "Vigilamos que el certificado no venza." },
       { label: "Checklist SEO on-page", href: "/blog/seo-on-page-checklist-para-tu-pagina-web", desc: "Lo demás que Google mira en tu web." },
+    ],
+  },
+  {
+    slug: "cobrar-con-yape-link-de-pago-api-o-agregador",
+    title: "Cobrar con Yape en tu web: link, API o agregador",
+    h1: "Cobrar con Yape en tu web: link de pago, integración por API o agregador",
+    description:
+      "Las tres formas de cobrar con Yape en una web peruana comparadas: link de pago, integración por API y agregador. Qué cuesta cada una y cuándo conviene.",
+    excerpt:
+      "No hay una sola forma de aceptar Yape en tu web. Hay tres, cuestan distinto y no sirven para lo mismo. Aquí la comparación completa.",
+    datePublished: "2026-09-02",
+    category: "Pagos",
+    readingMin: 8,
+    intro:
+      "Para cobrar con Yape en tu web tienes tres caminos: un link de pago que generas y envías, una integración por API dentro de tu propio checkout, o un agregador que te da las dos cosas junto con tarjetas. El link no necesita programación y se activa el mismo día; la integración por API mantiene al cliente dentro de tu tienda y es la que mejor convierte; el agregador es el punto intermedio y el más común en Perú.",
+    sections: [
+      {
+        h2: "Las tres formas, en una tabla",
+        body:
+          "La diferencia entre las tres no es el precio, es dónde ocurre el pago y cuánto trabajo técnico exige. Esta es la comparación con datos de los proveedores peruanos, verificados en sus webs oficiales el 2 de septiembre de 2026.",
+        table: {
+          cabeceras: ["Forma de cobro", "Necesita programar", "El cliente sale de tu web", "Cuándo conviene"],
+          filas: [
+            ["Link de pago", "No", "Sí, va a una página del proveedor", "Vendes por WhatsApp o redes y aún no tienes tienda"],
+            ["Integración por API", "Sí", "No, paga dentro de tu checkout", "Ya tienes tienda y quieres que el pago no corte la compra"],
+            ["Agregador (checkout alojado)", "Poco: se instala un módulo", "Va y vuelve a tu web", "Quieres Yape y tarjetas sin montar la pasarela tú"],
+          ],
+          nota: "Comparación elaborada con la documentación pública de Culqi e Izipay, consultada el 2 de septiembre de 2026.",
+        },
+      },
+      {
+        h2: "El link de pago: lo más rápido de arrancar",
+        body:
+          "Es un enlace que generas desde el panel del proveedor y le mandas al cliente por WhatsApp, Instagram o correo. Él lo abre, elige Yape o tarjeta y paga. No hace falta web ni programador. Culqi lo llama CulqiLink y lo describe como cobrar por WhatsApp y otras redes sociales sin tener una página web. Izipay tiene su propio link de pago y lo publica con coste de activación S/ 0.",
+        bullets: [
+          "Se activa el mismo día en que te aprueban la afiliación.",
+          "Sirve para cobros a distancia y para ventas por catálogo.",
+          "El cliente ve una página del proveedor, no la tuya: se pierde algo de confianza de marca.",
+          "Cada cobro se genera a mano, así que no escala bien si vendes decenas al día.",
+        ],
+      },
+      {
+        h2: "La integración por API: el pago no saca al cliente de tu tienda",
+        body:
+          "Aquí el formulario de pago vive dentro de tu propia web. El cliente escribe sus datos y confirma en Yape sin abandonar el checkout. Es la que mejor convierte porque no rompe la compra, y la única que te deja controlar el diseño, los mensajes de error y qué pasa después de pagar. A cambio necesita desarrollo: llamadas a la API, gestión de estados y un webhook que reciba la confirmación.",
+        bullets: [
+          "El cliente nunca ve un dominio que no sea el tuyo.",
+          "Puedes mostrar el resumen del pedido junto al pago.",
+          "Necesitas manejar los pagos pendientes de aprobación: Yape confirma en segundos, pero no siempre al instante.",
+          "Es la opción que exige mantenimiento cuando el proveedor cambia su API.",
+        ],
+      },
+      {
+        h2: "El agregador: Yape y tarjetas en el mismo sitio",
+        body:
+          "Un agregador te da un checkout ya montado que acepta varias formas de pago a la vez. Culqi, por ejemplo, publica que acepta Visa, Mastercard, Diners, American Express, Apple Pay, Google Pay, Yape, Plin y BIM desde una sola integración. Para la mayoría de tiendas peruanas es el equilibrio correcto: instalas un módulo, no montas la pasarela desde cero y cubres casi todos los medios de pago del país.",
+      },
+      {
+        h2: "Lo que cuesta cada una",
+        body:
+          "Los proveedores peruanos cobran por transacción, no por mantener la cuenta abierta. Estas son las tarifas que publican en sus propias webs, consultadas el 2 de septiembre de 2026. Conviene comprobarlas antes de firmar porque cambian.",
+        table: {
+          cabeceras: ["Proveedor", "Lo que publica", "Detalle"],
+          filas: [
+            ["Culqi (CulqiLink y CulqiOnline)", "Desde 3,44% por transacción", "Comisión mínima de S/ 3,50 en ventas por debajo de S/ 87,72. Tarjeta internacional 3,44% + 0,20 USD. Inafectas a IGV"],
+            ["Culqi (CulqiFull, POS físico)", "S/ 219 pago único", "Sin cuota mensual"],
+            ["Izipay (link de pago)", "S/ 0 de activación", "Publican 1,99% como comisión más baja, exclusiva para clientes nuevos que cobran con tarjeta desde el móvil"],
+            ["Izipay (izipay web)", "S/ 49,00 al mes", "Incluye tienda online con plan Wix Plus"],
+          ],
+          nota: "Tarifas publicadas por Culqi e Izipay en sus webs oficiales, consultadas el 2 de septiembre de 2026. Niubiz no publica sus comisiones en abierto: hay que pedirlas a su equipo comercial.",
+        },
+      },
+      {
+        h2: "Cuál elegir según cómo vendes hoy",
+        body:
+          "La decisión no depende del tamaño de tu negocio sino de dónde ocurre la venta. Si el pedido nace en un chat, el link de pago te resuelve el 90% de los casos. Si el pedido nace en tu web, cualquier cosa que saque al cliente del checkout te va a costar ventas.",
+        bullets: [
+          "Vendes por WhatsApp o Instagram y no tienes tienda: link de pago.",
+          "Tienes tienda en Shopify o WooCommerce: agregador con módulo, que ya viene resuelto.",
+          "Tienes web a medida y el checkout es tuyo: integración por API.",
+          "Vendes también en local: mira si el proveedor te da POS físico con la misma cuenta, para no conciliar dos sistemas.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Se puede cobrar con Yape en una web sin programar nada?",
+        a: "Sí. El link de pago no necesita desarrollo: lo generas desde el panel del proveedor y lo compartes. La limitación es que el cliente paga en una página del proveedor y que cada cobro se genera manualmente.",
+      },
+      {
+        q: "¿El link de pago manda comprobante automático al cliente?",
+        a: "Los proveedores peruanos envían una constancia de la operación al correo o al número que el cliente registra al pagar. Eso no reemplaza a la boleta o factura electrónica, que sigue siendo obligación tuya emitir ante SUNAT.",
+      },
+      {
+        q: "¿Cuánto tarda en confirmarse un pago con Yape?",
+        a: "Normalmente segundos, pero no siempre es instantáneo. Si integras por API tienes que contemplar el estado pendiente de aprobación y no dar el pedido por cerrado hasta que llegue la confirmación por webhook.",
+      },
+      {
+        q: "¿Conviene tener dos proveedores a la vez?",
+        a: "Solo si uno te cubre algo que el otro no, como el POS físico o un medio de pago concreto. Con dos proveedores duplicas la conciliación y las comisiones mínimas, así que la mayoría de tiendas peruanas gana teniendo uno bien integrado.",
+      },
+    ],
+    related: [
+      { label: "Cómo integrar Yape y Plin en tu tienda virtual", href: "/blog/como-integrar-yape-y-plin-en-tu-tienda-virtual", desc: "El paso a paso de la integración." },
+      { label: "Pasarelas de pago para ecommerce en Perú", href: "/blog/pasarelas-de-pago-para-ecommerce-en-peru", desc: "El panorama completo de proveedores." },
+      { label: "Tiendas virtuales", href: "/tiendas-virtuales", desc: "Montamos la tienda con los pagos ya conectados." },
+    ],
+  },
+  {
+    slug: "afiliacion-pasarela-de-pago-peru-requisitos-y-plazos",
+    title: "Afiliarte a una pasarela de pago en Perú: requisitos",
+    h1: "Afiliarte a una pasarela de pago en Perú: requisitos, papeles y cuánto tarda",
+    description:
+      "Qué piden las pasarelas de pago peruanas para afiliarte, cuánto tarda la aprobación, qué frena una solicitud y qué revisar antes de firmar el contrato.",
+    excerpt:
+      "Antes de integrar hay un trámite. Aquí qué documentos piden, cuánto demora la aprobación y las preguntas que conviene hacer antes de firmar.",
+    datePublished: "2026-09-02",
+    category: "Pagos",
+    readingMin: 7,
+    intro:
+      "Afiliarte a una pasarela de pago en Perú es un trámite comercial, no técnico: presentas los datos de tu negocio, ellos revisan tu actividad y tu cuenta bancaria, y recién ahí te dan las llaves para integrar. El alta suele ser gratuita y la aprobación tarda de unos días a un par de semanas según el rubro. Lo que más retrasa una solicitud es una discrepancia entre el titular de la cuenta y el titular del negocio.",
+    sections: [
+      {
+        h2: "Qué te van a pedir",
+        body:
+          "Los requisitos concretos cambian de un proveedor a otro y conviene confirmarlos con el que elijas, pero el bloque común es siempre el mismo. Prepararlo antes de empezar te ahorra la mitad del tiempo de espera.",
+        bullets: [
+          "Datos de identificación del negocio: RUC si eres empresa, o tu documento si operas como persona natural con negocio.",
+          "Cuenta bancaria a la que quieres recibir los depósitos.",
+          "La dirección web donde vas a cobrar, funcionando y con el certificado de seguridad activo.",
+          "Descripción de qué vendes. Algunos rubros tienen restricciones o requieren revisión adicional.",
+          "En muchos casos, los términos y condiciones y la política de privacidad publicados en tu web.",
+        ],
+      },
+      {
+        h2: "El punto que más solicitudes frena",
+        body:
+          "La cuenta bancaria tiene que coincidir con el titular con el que te afilias. No es que necesites obligatoriamente una cuenta empresarial: si operas como persona natural con negocio, tu cuenta personal a tu nombre sirve. Lo que no funciona es afiliarte con el RUC de una empresa y poner la cuenta de otra persona, aunque sea el socio o el dueño. Ahí es donde se cae el expediente y donde se pierden las semanas.",
+      },
+      {
+        h2: "Tu web también entra en la revisión",
+        body:
+          "El proveedor abre tu sitio antes de aprobarte. No espera un diseño premiado, pero sí que se entienda qué vendes, cuánto cuesta, cómo se entrega y cómo te contactan. Una web a medio hacer o sin políticas publicadas es motivo habitual de observación.",
+        bullets: [
+          "Certificado de seguridad activo: sin HTTPS no hay afiliación.",
+          "Precios visibles y condiciones de entrega claras.",
+          "Términos y condiciones y política de privacidad publicados.",
+          "Un canal de contacto real, no solo un formulario sin respuesta.",
+        ],
+      },
+      {
+        h2: "Qué preguntar antes de firmar",
+        body:
+          "El contrato se firma una vez y se sufre todos los meses. Estas son las preguntas que conviene hacer por escrito, porque las respuestas rara vez están en la web pública del proveedor.",
+        bullets: [
+          "En cuántos días hábiles depositan lo cobrado y si ese plazo cambia según el medio de pago.",
+          "Cuál es la comisión exacta por cada medio: no es la misma para tarjeta, para billetera y para pago internacional.",
+          "Si hay comisión mínima por operación. Culqi, por ejemplo, publica una mínima de S/ 3,50 en ventas por debajo de S/ 87,72: en tickets pequeños eso pesa mucho más que el porcentaje.",
+          "Si existe cuota mensual, coste de mantenimiento o penalidad por bajo volumen.",
+          "Cómo se gestionan las devoluciones y los contracargos, y quién asume el coste.",
+          "Qué soporte tienes cuando el cobro falla un sábado: canal, horario y tiempo de respuesta comprometido.",
+          "Si la integración que te dan sigue soportada, o está por quedar obsoleta.",
+        ],
+      },
+      {
+        h2: "Los plazos reales",
+        body:
+          "La activación del alta suele ser gratuita: Izipay publica la afiliación como gratuita para sus productos virtuales. El tiempo hasta tener las credenciales productivas depende de la revisión de tu negocio, no del papeleo. Si tu rubro es común y los datos cuadran, es cuestión de días; si vendes algo que exige revisión adicional, puede irse a un par de semanas.",
+      },
+      {
+        h2: "Y después de la aprobación",
+        body:
+          "Que te aprueben no significa que estés cobrando. Te entregan credenciales de prueba y de producción, y hay que integrar, probar con montos reales pequeños y comprobar que la confirmación llega bien antes de abrir al público. Ese trabajo es el que solemos hacer nosotros cuando montamos una tienda.",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Necesito una cuenta bancaria de empresa para afiliarme?",
+        a: "No necesariamente. Lo que se exige es que el titular de la cuenta coincida con el titular con el que te afilias. Una persona natural con negocio puede usar su propia cuenta.",
+      },
+      {
+        q: "¿Cuesta algo darse de alta?",
+        a: "El alta suele ser gratuita y el proveedor gana por comisión de transacción. Izipay publica S/ 0 de activación en link de pago y en izipay online. Confirma siempre si hay cuota mensual o mínimos.",
+      },
+      {
+        q: "¿Puedo integrar antes de que me aprueben?",
+        a: "Puedes avanzar en el entorno de pruebas con las credenciales de sandbox, pero no puedes cobrar de verdad hasta tener las credenciales de producción.",
+      },
+      {
+        q: "¿Me pueden rechazar la afiliación?",
+        a: "Sí, sobre todo por rubro restringido, por datos que no cuadran entre el negocio y la cuenta bancaria, o por una web incompleta. En la mayoría de casos se resuelve corrigiendo y volviendo a presentar.",
+      },
+    ],
+    related: [
+      { label: "Izipay o Niubiz: cuál elegir", href: "/blog/izipay-o-niubiz-cual-elegir-para-cobrar-con-tarjeta", desc: "La comparación entre las dos más usadas." },
+      { label: "Cobrar con Yape: link, API o agregador", href: "/blog/cobrar-con-yape-link-de-pago-api-o-agregador", desc: "Las tres vías de integración comparadas." },
+      { label: "Tiendas virtuales", href: "/tiendas-virtuales", desc: "Dejamos la pasarela integrada y probada." },
+    ],
+  },
+  {
+    slug: "conciliacion-de-pagos-por-que-no-cuadra-lo-que-te-depositan",
+    title: "Por qué el banco no te deposita lo que vendiste",
+    h1: "Conciliación de pagos: por qué el banco no te deposita lo que vendiste",
+    description:
+      "Por qué el abono del banco nunca coincide con tus ventas del día: comisiones, retenciones, plazos y pagos pendientes. Cómo conciliar sin volverse loco.",
+    excerpt:
+      "Vendiste S/ 5.000 y te depositaron S/ 4.700. No es un error: es la conciliación. Aquí de dónde sale cada diferencia y cómo se controla.",
+    datePublished: "2026-09-02",
+    category: "Software",
+    readingMin: 7,
+    intro:
+      "Si vendiste S/ 5.000 y el banco te abonó menos, casi nunca es un error. La diferencia sale de cuatro sitios: la comisión de la pasarela, las operaciones que quedaron pendientes de aprobación, las devoluciones del periodo y el desfase entre la fecha de venta y la fecha de abono. Conciliar es cruzar esas cuatro cosas hasta que el importe cuadre, y es lo primero que se descontrola cuando el volumen crece.",
+    sections: [
+      {
+        h2: "De dónde sale cada diferencia",
+        body:
+          "Antes de buscar un culpable conviene entender qué se descuenta y cuándo. Estas son las cuatro causas que explican casi todos los descuadres en una tienda peruana.",
+        table: {
+          cabeceras: ["Causa", "Qué provoca", "Dónde se ve"],
+          filas: [
+            ["Comisión de la pasarela", "El abono llega neto, ya descontada la comisión de cada operación", "En el detalle de liquidación del proveedor"],
+            ["Comisión mínima por operación", "En tickets pequeños te cobran un fijo, no el porcentaje", "Se nota al comparar ventas de bajo importe"],
+            ["Pagos pendientes de aprobación", "La venta figura en tu tienda pero el cobro aún no se ha liquidado", "Estado pendiente en el panel de la pasarela"],
+            ["Desfase de fechas", "Lo vendido el viernes se abona días después, ya en otro corte", "Al comparar por fecha de venta en lugar de fecha de abono"],
+          ],
+        },
+      },
+      {
+        h2: "El error que más descuadres provoca",
+        body:
+          "Comparar las ventas de un día con el depósito de ese mismo día. No cuadran nunca, porque el proveedor liquida por lotes y con desfase. La conciliación se hace contra el reporte de liquidación del proveedor, no contra el extracto bancario a secas: el extracto te dice cuánto entró, el reporte te dice de qué operaciones viene.",
+      },
+      {
+        h2: "Cómo se concilia bien",
+        body:
+          "El método es siempre el mismo, tengas diez ventas al día o mil. Lo que cambia es cuánto puedes hacerlo a mano.",
+        bullets: [
+          "Descarga el reporte de liquidación del proveedor, no solo el extracto del banco.",
+          "Cruza cada operación por su identificador, no por el importe: dos ventas iguales el mismo día se confunden.",
+          "Aparta las pendientes de aprobación: no son un descuadre, son una venta que todavía no liquidó.",
+          "Registra las devoluciones y contracargos del periodo por separado.",
+          "Guarda la comisión como gasto, no la restes de la venta: si no, tu margen aparece más bajo de lo que es.",
+        ],
+      },
+      {
+        h2: "Cuándo deja de poder hacerse a mano",
+        body:
+          "Con pocas ventas al día una hoja de cálculo aguanta. El problema aparece cuando se juntan varias cosas: dos medios de pago con plazos distintos, ventas en local y en web, o devoluciones frecuentes. Ahí la conciliación deja de ser una tarea de fin de mes y pasa a comerse horas cada semana, y es cuando conviene que la haga un sistema en lugar de una persona.",
+        bullets: [
+          "Cuando concilias más de un proveedor de cobro a la vez.",
+          "Cuando vendes por web y por local y necesitas el número consolidado.",
+          "Cuando alguien tiene que pasar las ventas al sistema contable a mano.",
+          "Cuando no sabes, sin abrir tres paneles, cuánto te van a depositar esta semana.",
+        ],
+      },
+      {
+        h2: "Qué resuelve un sistema propio",
+        body:
+          "Un sistema de ventas y facturación conectado a tu pasarela trae las operaciones solo, marca cuáles ya liquidaron, deja las pendientes aparte y emite el comprobante que corresponde. Deja de ser una tarea y pasa a ser una pantalla que miras.",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Por qué me depositan menos de lo que vendí?",
+        a: "Porque el abono llega neto de comisiones, no incluye las operaciones aún pendientes de aprobación y corresponde a un corte de fechas distinto al de tus ventas. Las tres cosas juntas explican casi cualquier diferencia.",
+      },
+      {
+        q: "¿Cada cuánto conviene conciliar?",
+        a: "Semanal si vendes a diario. Dejarlo para fin de mes hace que un descuadre de S/ 20 tarde semanas en detectarse, y para entonces ya nadie recuerda de qué venta venía.",
+      },
+      {
+        q: "¿La comisión de la pasarela lleva IGV?",
+        a: "Depende del proveedor. Culqi publica que sus comisiones son inafectas a IGV. Conviene confirmarlo con el tuyo, porque cambia cómo se registra el gasto.",
+      },
+      {
+        q: "¿Puedo conciliar desde mi tienda de Shopify o WooCommerce?",
+        a: "La tienda te da el detalle de pedidos, pero no el de liquidaciones del banco. Para cuadrar de verdad necesitas cruzar los dos, y eso es lo que hace un sistema de gestión conectado a ambos.",
+      },
+    ],
+    related: [
+      { label: "Sistema de ventas y facturación", href: "/sistemas/ventas-y-facturacion", desc: "Emite el comprobante y cuadra el cobro solo." },
+      { label: "Pasarelas de pago para ecommerce en Perú", href: "/blog/pasarelas-de-pago-para-ecommerce-en-peru", desc: "Qué cobra cada proveedor." },
+      { label: "Cómo automatizar los procesos de tu empresa", href: "/blog/como-automatizar-los-procesos-de-tu-empresa", desc: "Qué tareas dejan de hacerse a mano." },
+    ],
+  },
+  {
+    slug: "como-leer-una-cotizacion-de-pagina-web",
+    title: "Cómo leer una cotización de página web",
+    h1: "Cómo leer una cotización de página web sin llevarte sorpresas",
+    description:
+      "Qué partidas tiene que incluir una cotización de página web, cuáles se esconden y qué preguntar antes de firmar. Guía para comparar presupuestos en Perú.",
+    excerpt:
+      "Dos presupuestos por el mismo trabajo pueden diferir tres veces. Casi siempre la diferencia está en lo que uno de los dos no dice.",
+    datePublished: "2026-09-02",
+    category: "Agencia Web",
+    readingMin: 7,
+    intro:
+      "Una cotización de página web se lee por lo que no dice. Las tres partidas que más encarecen un proyecto después de firmado son el dominio y hosting del primer año, el contenido (textos y fotos) y las rondas de cambios incluidas. Si un presupuesto no las menciona, no es más barato: está incompleto, y la diferencia aparece en la factura del mes siguiente.",
+    sections: [
+      {
+        h2: "Las partidas que tienen que estar",
+        body:
+          "Una cotización completa deja claro qué se entrega y qué no. Si alguna de estas líneas falta, no significa que esté incluida: significa que hay que preguntar.",
+        bullets: [
+          "Cuántas páginas o secciones entra el precio, y qué pasa si hacen falta más.",
+          "Quién pone los textos y las fotos. Es la partida que más proyectos retrasa.",
+          "Dominio y hosting del primer año: si están incluidos, y a nombre de quién quedan.",
+          "Cuántas rondas de cambios entran antes de que empiecen a cobrarse aparte.",
+          "Si la web queda preparada para móvil y con el certificado de seguridad activo.",
+          "Qué se entrega al final: accesos, código, manual de uso.",
+          "Qué pasa después: si hay mantenimiento, cuánto cuesta y qué cubre.",
+        ],
+      },
+      {
+        h2: "Las tres partidas que suelen esconderse",
+        body:
+          "No siempre es mala fe: muchas veces son costes que el proveedor da por supuestos y el cliente no. El resultado es el mismo, así que conviene preguntarlas siempre por escrito.",
+        table: {
+          cabeceras: ["Partida", "Por qué aparece después", "Qué preguntar"],
+          filas: [
+            ["Contenido", "Se asume que el cliente entrega textos y fotos listos", "¿Los textos los escriben ustedes o los pongo yo?"],
+            ["Dominio y hosting", "Se cotiza el diseño, no el alojamiento del año siguiente", "¿Qué pago el segundo año y a quién?"],
+            ["Cambios posteriores", "Las rondas incluidas se agotan antes de terminar", "¿Cuántas rondas entran y qué cuesta la siguiente?"],
+          ],
+        },
+      },
+      {
+        h2: "Por qué dos presupuestos por lo mismo no cuestan lo mismo",
+        body:
+          "Cuando la diferencia entre dos cotizaciones es grande, casi nunca es margen: es alcance. Uno está cotizando una plantilla adaptada y el otro un desarrollo pensado para tu operación. Ninguna de las dos está mal; simplemente no son el mismo producto. La pregunta útil no es cuál es más barato sino cuál de los dos resuelve lo que necesitas dentro de dos años.",
+      },
+      {
+        h2: "Las señales de que un presupuesto va a dar problemas",
+        body:
+          "Hay avisos que se ven antes de firmar y ahorran meses de discusión.",
+        bullets: [
+          "Un precio cerrado dado por teléfono sin haber preguntado qué vendes.",
+          "No aparece ninguna fecha de entrega ni hitos intermedios.",
+          "No dice a nombre de quién queda el dominio.",
+          "No menciona el mantenimiento ni lo que cuesta.",
+          "Promete posiciones concretas en Google: eso nadie lo puede garantizar.",
+        ],
+      },
+      {
+        h2: "Cómo compararlos de forma justa",
+        body:
+          "Pon las dos cotizaciones en una tabla con las mismas filas: páginas, contenido, dominio y hosting del primer y del segundo año, rondas de cambios, plazo, mantenimiento y qué te llevas al terminar. Cuando las dos están rellenas con las mismas filas, la diferencia de precio deja de ser un misterio y se convierte en una decisión.",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Debería elegir siempre la cotización más barata?",
+        a: "Solo si cubre las mismas partidas. Una cotización más barata que no incluye contenido, hosting del segundo año ni rondas de cambios suele terminar costando más que la que sí las incluía.",
+      },
+      {
+        q: "¿Es normal que no me den un precio cerrado por teléfono?",
+        a: "Sí, y es buena señal. El precio depende de cuántas secciones, si hay tienda, si hay integraciones y quién pone el contenido. Un número dado sin preguntar nada suele cambiar después.",
+      },
+      {
+        q: "¿Cuántas rondas de cambios son razonables?",
+        a: "Dos o tres rondas sobre el diseño y una sobre el contenido cubren la mayoría de proyectos. Lo importante no es el número sino que esté escrito y que sepas qué cuesta la siguiente.",
+      },
+      {
+        q: "¿Puedo pedir que me pasen el proyecto a otro proveedor después?",
+        a: "Sí, siempre que el dominio esté a tu nombre y te entreguen los accesos. Conviene dejarlo por escrito antes de empezar, no al final.",
+      },
+    ],
+    related: [
+      { label: "Cómo elegir una agencia de desarrollo web en Perú", href: "/blog/como-elegir-una-agencia-de-desarrollo-web-en-peru", desc: "Los criterios que sí se pueden comprobar." },
+      { label: "De quién es el código, el dominio y los accesos", href: "/blog/de-quien-es-el-codigo-el-dominio-y-los-accesos", desc: "Qué te llevas cuando termina el proyecto." },
+      { label: "Cotizar tu proyecto", href: "/cotizacion", desc: "Cuéntanos qué necesitas y te lo detallamos." },
+    ],
+  },
+  {
+    slug: "de-quien-es-el-codigo-el-dominio-y-los-accesos",
+    title: "De quién es el código, el dominio y los accesos",
+    h1: "Cuando termina el proyecto: de quién es el código, el dominio y los accesos",
+    description:
+      "Qué te llevas cuando termina el desarrollo de tu web: dominio, código, hosting y accesos. Qué dejar por escrito antes de empezar para no quedar atrapado.",
+    excerpt:
+      "La pregunta que casi nadie hace antes de firmar y que decide si dentro de dos años puedes cambiar de proveedor o no.",
+    datePublished: "2026-09-02",
+    category: "Agencia Web",
+    readingMin: 6,
+    intro:
+      "Al terminar un proyecto web deberías quedarte con tres cosas: el dominio registrado a tu nombre, los accesos al hosting y al gestor de contenidos, y el código o la plantilla con la que está hecha la web. Si falta el primero, no eres dueño de tu dirección; si faltan los otros dos, cambiar de proveedor significa rehacerlo todo. Conviene dejarlo por escrito antes de empezar, no al final.",
+    sections: [
+      {
+        h2: "Las tres cosas que tienen que quedar a tu nombre",
+        body:
+          "No es desconfianza, es higiene. Un proveedor serio no tiene problema en ponerlo por escrito, porque no vive de retener a nadie.",
+        table: {
+          cabeceras: ["Qué", "Por qué importa", "Cómo se comprueba"],
+          filas: [
+            ["El dominio", "Es tu dirección. Si está a nombre del proveedor, no puedes mudarte sin su permiso", "El titular del registro tiene que ser tu nombre o el de tu empresa"],
+            ["Los accesos", "Sin ellos no puedes tocar tu propia web ni darle acceso a otro", "Que te entreguen usuario y contraseña del panel y del hosting"],
+            ["El código o la plantilla", "Determina si otro equipo puede continuar el trabajo", "Que quede claro qué tecnología es y si hay licencias asociadas"],
+          ],
+        },
+      },
+      {
+        h2: "El dominio: lo que más problemas da",
+        body:
+          "Es lo más barato del proyecto y lo que más conflictos genera. Cuando el proveedor registra el dominio a su nombre, aunque tú lo hayas pagado, mudarte depende de que él quiera transferirlo. No siempre es intencionado, pero el resultado es el mismo. Pide que se registre a tu nombre desde el primer día y guarda tú las credenciales del registrador.",
+      },
+      {
+        h2: "Qué significa que la web sea a medida o con plantilla",
+        body:
+          "No es una cuestión de calidad sino de continuidad. Con una plantilla comercial, cualquier equipo que la conozca puede seguir; a cambio, esa plantilla suele tener licencia anual y limita hasta dónde puedes llegar. Con un desarrollo a medida no dependes de licencias de terceros, pero el equipo que lo continúe necesita entender ese código. Lo importante es saber cuál de las dos tienes antes de firmar, no después.",
+        bullets: [
+          "Si es plantilla: pregunta qué licencia es, cuánto cuesta renovarla y a nombre de quién está.",
+          "Si es a medida: pregunta si te entregan el código y en qué repositorio queda.",
+          "En ambos casos: pregunta si algún componente depende de una suscripción que caduca.",
+        ],
+      },
+      {
+        h2: "Las licencias que caducan sin avisar",
+        body:
+          "Muchas webs llevan piezas que se pagan aparte: plantillas, plugins de pago, tipografías con licencia comercial, servicios de formularios o de correo. Si esas licencias están a nombre del proveedor y el vínculo se rompe, la web sigue viva pero deja de actualizarse y con el tiempo empieza a fallar. Pide la lista de lo que se paga aparte y con qué frecuencia.",
+      },
+      {
+        h2: "Qué pedir en la entrega",
+        body:
+          "Una entrega ordenada se resuelve en un correo con todo dentro. Si tienes que perseguirlo, es señal de lo que viene después.",
+        bullets: [
+          "Credenciales del registrador del dominio, con el titular a tu nombre.",
+          "Accesos al hosting y al panel de administración de la web.",
+          "Dónde está el código y quién tiene acceso.",
+          "Lista de licencias y suscripciones activas, con su fecha de renovación.",
+          "Accesos a las herramientas de medición: Analytics y Search Console a tu nombre, no al del proveedor.",
+        ],
+      },
+      {
+        h2: "Y si ya estás en la situación contraria",
+        body:
+          "Si tu web actual está a nombre de otro, se puede recuperar: el dominio se transfiere y los accesos se piden por escrito. Lo que no siempre se recupera es el trabajo hecho sobre una plantilla con licencia ajena, y ahí a veces sale más barato rehacer que rescatar. Merece la pena revisarlo antes de que el proveedor deje de responder.",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Puedo pedir el código de mi web?",
+        a: "Sí, y conviene dejarlo escrito antes de empezar. Lo habitual es que el cliente se quede con el código de lo desarrollado para él; lo que no se transfiere son las licencias de terceros, que son de quien las compró.",
+      },
+      {
+        q: "¿Cómo sé a nombre de quién está mi dominio?",
+        a: "Consultando los datos públicos del registro del dominio. Si el titular no eres tú ni tu empresa, pide la transferencia por escrito.",
+      },
+      {
+        q: "¿Y si mi proveedor desaparece?",
+        a: "Con el dominio a tu nombre y los accesos en tu poder, cambiar de equipo es cuestión de días. Sin ellos, puede significar rehacer la web desde cero. Por eso conviene resolverlo al empezar.",
+      },
+      {
+        q: "¿Google Analytics y Search Console también deberían ser míos?",
+        a: "Sí. Son datos de tu negocio. Que el proveedor tenga acceso está bien; que la cuenta sea suya y tú no aparezcas, no.",
+      },
+    ],
+    related: [
+      { label: "Cómo leer una cotización de página web", href: "/blog/como-leer-una-cotizacion-de-pagina-web", desc: "Qué partidas tienen que estar antes de firmar." },
+      { label: "Cómo elegir una agencia de desarrollo web en Perú", href: "/blog/como-elegir-una-agencia-de-desarrollo-web-en-peru", desc: "Criterios comprobables, no promesas." },
+      { label: "Mantenimiento web", href: "/mantenimiento-web", desc: "Quién cuida la web cuando ya está publicada." },
     ],
   },
 ];
