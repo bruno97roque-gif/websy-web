@@ -4,7 +4,7 @@ import ServiceLanding from "@/components/sections/landing/ServiceLanding";
 
 export const metadata: Metadata = pageMeta({
   path: "/diseno-de-paginas-web/restaurantes",
-  title: "Páginas web para restaurantes en Perú",
+  title: "Creamos la web de tu restaurante en Perú",
   description:
     "Diseño de páginas web para restaurantes en Perú: carta digital, reservas, pedidos por WhatsApp, Google Maps y SEO local para que te encuentren y llenen tus mesas.",
 });
@@ -18,8 +18,8 @@ export default function PaginaWebRestaurantesPage() {
         { name: "Diseño de Páginas Web", path: "/diseno-de-paginas-web" },
         { name: "Restaurantes", path: "/diseno-de-paginas-web/restaurantes" },
       ]}
-      eyebrow="Páginas web por rubro"
-      h1="Páginas web para restaurantes en Perú"
+      eyebrow="Servicio · Restaurantes y cafeterías"
+      h1="Creamos la página web de tu restaurante"
       intro="Diseñamos páginas web para restaurantes, cevicherías, pollerías y cafeterías en Lima y todo el Perú: con carta digital, reservas, pedidos por WhatsApp, ubicación en Google Maps y SEO local para que te encuentren cuando alguien busca dónde comer cerca."
       highlights={["Carta digital", "Reservas online", "Pedidos por WhatsApp", "Google Maps", "SEO local"]}
       stats={[

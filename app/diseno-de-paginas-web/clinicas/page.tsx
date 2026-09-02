@@ -4,7 +4,7 @@ import ServiceLanding from "@/components/sections/landing/ServiceLanding";
 
 export const metadata: Metadata = pageMeta({
   path: "/diseno-de-paginas-web/clinicas",
-  title: "Páginas web para clínicas y consultorios médicos",
+  title: "Creamos la web de tu clínica o consultorio",
   description:
     "Diseño de páginas web para clínicas, consultorios y médicos en Perú: citas online, servicios, equipo médico, confianza y SEO local para captar más pacientes.",
 });
@@ -18,8 +18,8 @@ export default function PaginaWebClinicasPage() {
         { name: "Diseño de Páginas Web", path: "/diseno-de-paginas-web" },
         { name: "Clínicas y Consultorios", path: "/diseno-de-paginas-web/clinicas" },
       ]}
-      eyebrow="Páginas web por rubro"
-      h1="Páginas web para clínicas y consultorios médicos"
+      eyebrow="Servicio · Clínicas y consultorios"
+      h1="Creamos la página web de tu clínica o consultorio"
       intro="Diseñamos páginas web para clínicas, consultorios y profesionales de la salud en Lima y todo el Perú: con agenda de citas, servicios, perfil del equipo médico y SEO local. Una web que transmite confianza y convierte búsquedas en pacientes que reservan su cita."
       highlights={["Citas online", "Perfil médico", "Confianza y prestigio", "SEO local", "Responsive"]}
       stats={[

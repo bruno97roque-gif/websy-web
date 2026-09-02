@@ -183,6 +183,11 @@ export function serviceSchema({
 }
 
 /** FAQPage a partir de pares pregunta/respuesta — captura el long-tail e IA. */
+/* Las respuestas se escriben con enlaces markdown, igual que el cuerpo. En el
+   JSON-LD no puede salir la sintaxis: Google leería «[qué es un certificado
+   SSL](/blog/...)» tal cual como respuesta. Se deja solo el texto del enlace. */
+const sinMarkdown = (t: string) => t.replace(/\[([^\]]+)\]\([^)]+\)/g, "$1");
+
 export function faqPageSchema(faqs: { q: string; a: string }[]) {
   return {
     "@context": "https://schema.org",
@@ -190,7 +195,7 @@ export function faqPageSchema(faqs: { q: string; a: string }[]) {
     mainEntity: faqs.map((f) => ({
       "@type": "Question",
       name: f.q,
-      acceptedAnswer: { "@type": "Answer", text: f.a },
+      acceptedAnswer: { "@type": "Answer", text: sinMarkdown(f.a) },
     })),
   };
 }

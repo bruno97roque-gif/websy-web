@@ -4,7 +4,7 @@ import ServiceLanding from "@/components/sections/landing/ServiceLanding";
 
 export const metadata: Metadata = pageMeta({
   path: "/diseno-de-paginas-web/colegios",
-  title: "Páginas web para colegios e institutos en Perú",
+  title: "Creamos la web de tu colegio o instituto",
   description:
     "Diseño de páginas web para colegios, institutos y centros educativos en Perú: admisión y matrícula, niveles y propuesta educativa, comunicación con padres y SEO.",
 });
@@ -18,8 +18,8 @@ export default function PaginaWebColegiosPage() {
         { name: "Diseño de Páginas Web", path: "/diseno-de-paginas-web" },
         { name: "Colegios e Institutos", path: "/diseno-de-paginas-web/colegios" },
       ]}
-      eyebrow="Páginas web por rubro"
-      h1="Páginas web para colegios e institutos"
+      eyebrow="Servicio · Colegios e institutos"
+      h1="Creamos la página web de tu colegio o instituto"
       intro="Diseñamos páginas web para colegios, institutos y centros educativos en Lima y todo el Perú: con proceso de admisión, propuesta educativa, niveles, plana docente y comunicación con los padres. Una web que transmite confianza y capta matrículas durante toda la campaña."
       highlights={["Admisión y matrícula", "Propuesta educativa", "Niveles y grados", "Comunicación con padres", "SEO"]}
       stats={[

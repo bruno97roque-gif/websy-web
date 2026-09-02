@@ -62,6 +62,21 @@ const SEO: CtaServicio = {
   whatsapp: "Hola, quiero posicionar mi web en Google.",
 };
 
+/* Search Console 3-30 ago 2026: el artículo de hosting es el segundo del sitio en
+   impresiones (1.386) y solo saca 5 clics. La SERP verificada el 2-sep son ocho
+   empresas que VENDEN hosting —hostingperu, hosting.com.pe, donweb, punto.pe,
+   planetahosting, godaddy, wnpower, apacheperu— y Websy es la única que no vende
+   hosting. Quien busca eso quiere comprar un plan, no contratar una agencia. No
+   se optimiza para ganar ese clic: se le ofrece la única cosa que sí encaja. */
+const WEB_PUBLICADA: CtaServicio = {
+  titulo: "¿Prefieres no pelearte con el hosting?",
+  texto:
+    "Websy deja la web hecha y publicada: dominio, alojamiento, certificado y correos configurados. Tú no tocas un panel.",
+  href: "/diseno-de-paginas-web",
+  boton: "Ver diseño de páginas web",
+  whatsapp: "Hola, quiero una página web con el hosting y el dominio ya resueltos.",
+};
+
 const ADS: CtaServicio = {
   titulo: "¿Necesitas clientes esta semana, no en tres meses?",
   texto:
@@ -116,6 +131,13 @@ export function ctaDelPost(categoria: string, slug?: string): CtaServicio {
     "google-ads-vs-seo-cual-conviene-para-tu-negocio": ADS,
     "palabras-clave-negativas-en-google-ads": ADS,
     "google-ads-para-pymes-en-peru-cuanto-invertir": ADS,
+    // El racimo de hosting y dominio: intención de comprar un plan, no de
+    // contratar una agencia. Se les ofrece la web ya publicada, no SEO ni web
+    // genérica, que es lo único que resuelve su problema de verdad.
+    "cuanto-cuesta-un-hosting-y-un-dominio-pe-en-peru": WEB_PUBLICADA,
+    "como-elegir-un-hosting-en-peru": WEB_PUBLICADA,
+    "como-comprar-un-dominio-pe-paso-a-paso": WEB_PUBLICADA,
+    "certificado-ssl-que-es-y-por-que-tu-web-lo-necesita": WEB_PUBLICADA,
   };
   if (slug && porSlug[slug]) return porSlug[slug];
   return POR_CATEGORIA[normalizar(categoria)] ?? WEB;

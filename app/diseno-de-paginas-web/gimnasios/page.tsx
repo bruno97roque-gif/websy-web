@@ -4,7 +4,7 @@ import ServiceLanding from "@/components/sections/landing/ServiceLanding";
 
 export const metadata: Metadata = pageMeta({
   path: "/diseno-de-paginas-web/gimnasios",
-  title: "Páginas web para gimnasios y centros fitness en Perú",
+  title: "Creamos la web de tu gimnasio en Perú",
   description:
     "Diseño de páginas web para gimnasios, centros fitness y box de crossfit en Perú: planes y membresías, horarios de clases, inscripción por WhatsApp y SEO local.",
 });
@@ -18,8 +18,8 @@ export default function PaginaWebGimnasiosPage() {
         { name: "Diseño de Páginas Web", path: "/diseno-de-paginas-web" },
         { name: "Gimnasios", path: "/diseno-de-paginas-web/gimnasios" },
       ]}
-      eyebrow="Páginas web por rubro"
-      h1="Páginas web para gimnasios y centros fitness"
+      eyebrow="Servicio · Gimnasios y centros fitness"
+      h1="Creamos la página web de tu gimnasio"
       intro="Diseñamos páginas web para gimnasios, centros fitness, boxes de crossfit y estudios de yoga en Lima y todo el Perú: con planes y membresías, horarios de clases, inscripción por WhatsApp y SEO local. Una web que convierte al que busca 'gym cerca de mí' en un nuevo socio."
       highlights={["Planes y membresías", "Horarios de clases", "Inscripción online", "SEO local", "Responsive"]}
       stats={[
