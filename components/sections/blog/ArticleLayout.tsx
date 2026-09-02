@@ -314,7 +314,10 @@ export default function ArticleLayout({ post }: { post: BlogPost }) {
               {post.faqs.map((f) => (
                 <details key={f.q} className="art-faq">
                   <summary className="art-faq-q">{f.q}</summary>
-                  <p style={{ fontFamily: fp, fontSize: 15.5, color: "#5a5365", lineHeight: 1.7, margin: 0, padding: "0 22px 20px" }}>{f.a}</p>
+                  {/* Las respuestas llevan enlaces markdown como el cuerpo. Sin
+                      esto se veía la sintaxis en crudo: pasaba en el artículo de
+                      hosting, el segundo del sitio en impresiones. */}
+                  <p style={{ fontFamily: fp, fontSize: 15.5, color: "#5a5365", lineHeight: 1.7, margin: 0, padding: "0 22px 20px" }}>{renderRich(f.a)}</p>
                 </details>
               ))}
             </div>
