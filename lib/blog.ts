@@ -2361,7 +2361,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Por qué tu restaurante necesita web propia",
         body:
-          "Instagram y las apps de delivery son útiles, pero no son tuyos: cambian las reglas, cobran comisión y no apareces bien en Google cuando alguien busca dónde comer cerca. Una web propia es tu local en internet: siempre disponible, sin comisión por pedido y bajo tu control. En Websy montamos [páginas web para abogados](/diseno-de-paginas-web/abogados) pensadas para captar consultas.",
+          "Instagram y las apps de delivery son útiles, pero no son tuyos: cambian las reglas, cobran comisión y no apareces bien en Google cuando alguien busca dónde comer cerca. Una web propia es tu local en internet: siempre disponible, sin comisión por pedido y bajo tu control. En Websy montamos [páginas web para restaurantes](/diseno-de-paginas-web/restaurantes) pensadas para captar reservas y pedidos directos.",
       },
       {
         h2: "Qué debe tener la web de un restaurante",
@@ -2539,7 +2539,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Por qué una clínica necesita web propia",
         body:
-          "Las redes sociales ayudan, pero no reemplazan una web: es donde el paciente confirma que eres serio, ve tus especialidades, horarios y ubicación, y decide contactarte. Además, es lo que Google muestra cuando alguien busca tu especialidad en tu ciudad. Si tienes un estudio jurídico, mira cómo trabajamos las [webs para abogados](/diseno-de-paginas-web/abogados).",
+          "Las redes sociales ayudan, pero no reemplazan una web: es donde el paciente confirma que eres serio, ve tus especialidades, horarios y ubicación, y decide contactarte. Además, es lo que Google muestra cuando alguien busca tu especialidad en tu ciudad. Mira cómo trabajamos las [webs para clínicas y consultorios](/diseno-de-paginas-web/clinicas).",
       },
       {
         h2: "Qué debe tener la web de un consultorio",
@@ -2689,7 +2689,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Por qué una inmobiliaria necesita web propia",
         body:
-          "Los portales inmobiliarios te dan visibilidad pero cobran por aviso y comparten tu lead con la competencia. Una web propia es tu vitrina completa: muestra todos tus proyectos, capta el lead directo y lo lleva a tu equipo, sin intermediarios. En Websy montamos [páginas web para abogados](/diseno-de-paginas-web/abogados) pensadas para captar consultas.",
+          "Los portales inmobiliarios te dan visibilidad pero cobran por aviso y comparten tu lead con la competencia. Una web propia es tu vitrina completa: muestra todos tus proyectos, capta el lead directo y lo lleva a tu equipo, sin intermediarios. En Websy montamos [páginas web para inmobiliarias y constructoras](/diseno-de-paginas-web/inmobiliarias) pensadas para captar ese lead directo.",
       },
       {
         h2: "Qué debe tener la web de una constructora",
@@ -3667,7 +3667,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Qué es el SEO local y por qué importa",
         body:
-          "El SEO local es el trabajo de posicionamiento enfocado en tu zona geográfica. No compites contra todo el país, sino contra los negocios de tu distrito. Cuando alguien busca 'gasfitero en Surco' o 'dentista cerca de mí', Google prioriza negocios cercanos y bien reseñados. Para cualquier negocio que atiende a un área (clínicas, restaurantes, talleres, estudios), es el SEO de mayor retorno: quien busca así ya quiere comprar y está a pocos minutos de ti. Ese enfoque es el de nuestras [webs para estudios de abogados](/diseno-de-paginas-web/abogados).",
+          "El SEO local es el trabajo de posicionamiento enfocado en tu zona geográfica. No compites contra todo el país, sino contra los negocios de tu distrito. Cuando alguien busca 'gasfitero en Surco' o 'dentista cerca de mí', Google prioriza negocios cercanos y bien reseñados. Para cualquier negocio que atiende a un área (clínicas, restaurantes, talleres, estudios), es el SEO de mayor retorno: quien busca así ya quiere comprar y está a pocos minutos de ti. Ese enfoque es el que aplicamos en cada [web que diseñamos por rubro](/diseno-de-paginas-web).",
       },
       {
         h2: "Tu ficha de Google Business Profile: el corazón del SEO local",
@@ -3823,7 +3823,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "1. Define un objetivo y una conversión clara",
         body:
-          "Antes de tocar Google Ads, decide qué es un resultado para ti: una llamada, un formulario enviado o un mensaje de WhatsApp. Sin una conversión definida y medida, no sabrás si la campaña funciona. Para servicios, casi siempre el objetivo es generar leads (contactos), no ventas directas. Todo lo demás se construye sobre esta decisión. Así diseñamos las [páginas web para estudios de abogados](/diseno-de-paginas-web/abogados).",
+          "Antes de tocar Google Ads, decide qué es un resultado para ti: una llamada, un formulario enviado o un mensaje de WhatsApp. Sin una conversión definida y medida, no sabrás si la campaña funciona. Para servicios, casi siempre el objetivo es generar leads (contactos), no ventas directas. Todo lo demás se construye sobre esta decisión. Sobre esa decisión construimos la [landing a la que llevas el anuncio](/diseno-de-paginas-web).",
       },
       {
         h2: "2. Ordena la cuenta: campañas y grupos de anuncios",
@@ -4195,7 +4195,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Por qué un dentista necesita web propia",
         body:
-          "En salud, la confianza lo decide todo, y hoy esa confianza empieza en internet. El paciente quiere saber qué tratamientos ofreces, dónde quedas, si atiendes su caso y qué opinan otros pacientes, antes de llamar. Una web propia responde todo eso a cualquier hora, te posiciona en Google frente a otras clínicas de tu zona y capta citas sin depender solo de las redes o de recomendaciones. Ese enfoque es el de nuestras [webs para estudios de abogados](/diseno-de-paginas-web/abogados).",
+          "En salud, la confianza lo decide todo, y hoy esa confianza empieza en internet. El paciente quiere saber qué tratamientos ofreces, dónde quedas, si atiendes su caso y qué opinan otros pacientes, antes de llamar. Una web propia responde todo eso a cualquier hora, te posiciona en Google frente a otras clínicas de tu zona y capta citas sin depender solo de las redes o de recomendaciones. Ese enfoque es el de nuestras [webs para clínicas y consultorios](/diseno-de-paginas-web/clinicas).",
       },
       {
         h2: "Qué debe tener la web de una clínica dental",
