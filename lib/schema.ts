@@ -36,7 +36,6 @@ export function organizationSchema() {
       addressRegion: "Lima",
       addressCountry: "PE",
     },
-    geo: { "@type": "GeoCoordinates", latitude: -12.0464, longitude: -77.0428 },
     areaServed: [
       { "@type": "Country", name: "Perú" },
       { "@type": "City", name: "Lima" },
