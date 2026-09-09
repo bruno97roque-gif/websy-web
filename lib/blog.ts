@@ -4142,7 +4142,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Qué hosting necesita tu proyecto",
         body:
-          "Para una web informativa o corporativa, un hosting compartido de calidad suele bastar y es lo más económico. Para una tienda virtual con catálogo grande, mucho tráfico o un sistema a medida, conviene un hosting con más recursos (VPS) para que todo cargue rápido y estable. La regla simple: mientras más movimiento y funciones tenga tu web, mejor debe ser el hosting que la sostiene.",
+          "Para una web informativa o corporativa, un hosting compartido de calidad suele bastar y es lo más económico. Para una tienda virtual con catálogo grande, mucho tráfico o un sistema a medida, conviene un hosting con más recursos (VPS) para que todo cargue rápido y estable. La regla simple: mientras más movimiento y funciones tenga tu web, mejor debe ser el hosting que la sostiene. Si todavía no tienes la web y estás calculando el total, en [nuestro desarrollo web](/desarrollo-web) el hosting, el dominio y el certificado van incluidos el primer año.",
       },
       {
         h2: "Hosting, dominio y mantenimiento van juntos",
@@ -5838,7 +5838,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Compartido, VPS o gestionado: cuál te toca",
         body:
-          "Un hosting compartido reparte un servidor entre muchas webs: es lo más barato y suficiente para una web institucional o un blog. Un VPS te reserva recursos propios y aguanta más visitas, tiene sentido para tiendas con catálogo grande o sistemas a medida. El gestionado cuesta más pero el proveedor se encarga de actualizaciones y seguridad. Si no tienes a nadie que administre el servidor, el gestionado sale más barato que un VPS mal cuidado.",
+          "Un hosting compartido reparte un servidor entre muchas webs: es lo más barato y suficiente para una web institucional o un blog. Un VPS te reserva recursos propios y aguanta más visitas, tiene sentido para tiendas con catálogo grande o sistemas a medida. El gestionado cuesta más pero el proveedor se encarga de actualizaciones y seguridad. Si no tienes a nadie que administre el servidor, el gestionado sale más barato que un VPS mal cuidado. Cuando el proyecto arranca de cero, lo habitual es que el alojamiento venga resuelto dentro del [desarrollo de la web](/desarrollo-web) y no haya que elegir nada.",
       },
       {
         h2: "Y si prefieres no ocuparte de esto",
@@ -5914,7 +5914,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Renovación: el descuido que tumba webs",
         body:
-          "Los dominios se alquilan, no se compran para siempre: hay que renovarlos cada año. Si se vence, la web y los correos dejan de funcionar de golpe, y pasado un plazo cualquiera puede quedárselo. Activa la renovación automática y confirma que la tarjeta guardada siga vigente. Vale la pena anotar la fecha de vencimiento en un calendario aparte, porque el aviso suele llegar a un correo que nadie revisa.",
+          "Los dominios se alquilan, no se compran para siempre: hay que renovarlos cada año. Si se vence, la web y los correos dejan de funcionar de golpe, y pasado un plazo cualquiera puede quedárselo. Activa la renovación automática y confirma que la tarjeta guardada siga vigente. Vale la pena anotar la fecha de vencimiento en un calendario aparte, porque el aviso suele llegar a un correo que nadie revisa. Si prefieres no llevar tú ese control, es una de las cosas que vigilamos cuando [desarrollamos y acompañamos la web](/desarrollo-web).",
       },
       {
         h2: "Qué hacer si el nombre que querías está ocupado",
@@ -6484,7 +6484,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Cómo se concilia bien",
         body:
-          "El método es siempre el mismo, tengas diez ventas al día o mil. Lo que cambia es cuánto puedes hacerlo a mano.",
+          "El método es siempre el mismo, tengas diez ventas al día o mil. Lo que cambia es cuánto puedes hacerlo a mano. Si vendes con varias pasarelas a la vez, revisa antes [qué comisiones cobra cada una en Perú](/blog/pasarelas-de-pago-para-ecommerce-en-peru).",
         bullets: [
           "Descarga el reporte de liquidación del proveedor, no solo el extracto del banco.",
           "Cruza cada operación por su identificador, no por el importe: dos ventas iguales el mismo día se confunden.",
@@ -6496,7 +6496,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Cuándo deja de poder hacerse a mano",
         body:
-          "Con pocas ventas al día una hoja de cálculo aguanta. El problema aparece cuando se juntan varias cosas: dos medios de pago con plazos distintos, ventas en local y en web, o devoluciones frecuentes. Ahí la conciliación deja de ser una tarea de fin de mes y pasa a comerse horas cada semana, y es cuando conviene que la haga un sistema en lugar de una persona.",
+          "Con pocas ventas al día una hoja de cálculo aguanta. El problema aparece cuando se juntan varias cosas: dos medios de pago con plazos distintos, ventas en local y en web, o devoluciones frecuentes. Ahí la conciliación deja de ser una tarea de fin de mes y pasa a comerse horas cada semana, y es cuando conviene que la haga un sistema en lugar de una persona. Es justo lo que resuelve un [sistema de ventas y facturación](/sistemas/ventas-y-facturacion), y si tu operación no encaja en ninguno de los de catálogo, se construye [a medida](/desarrollo-de-software-a-medida).",
         bullets: [
           "Cuando concilias más de un proveedor de cobro a la vez.",
           "Cuando vendes por web y por local y necesitas el número consolidado.",
@@ -6578,7 +6578,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Por qué dos presupuestos por lo mismo no cuestan lo mismo",
         body:
-          "Cuando la diferencia entre dos cotizaciones es grande, casi nunca es margen: es alcance. Uno está cotizando una plantilla adaptada y el otro un desarrollo pensado para tu operación. Ninguna de las dos está mal; simplemente no son el mismo producto. La pregunta útil no es cuál es más barato sino cuál de los dos resuelve lo que necesitas dentro de dos años.",
+          "Cuando la diferencia entre dos cotizaciones es grande, casi nunca es margen: es alcance. Uno está cotizando una plantilla adaptada y el otro un desarrollo pensado para tu operación. Ninguna de las dos está mal; simplemente no son el mismo producto. La pregunta útil no es cuál es más barato sino cuál de los dos resuelve lo que necesitas dentro de dos años. Así es como definimos el alcance en [nuestro servicio de desarrollo web](/desarrollo-web): por escrito y antes de empezar.",
       },
       {
         h2: "Las señales de que un presupuesto va a dar problemas",
@@ -6595,7 +6595,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Cómo compararlos de forma justa",
         body:
-          "Pon las dos cotizaciones en una tabla con las mismas filas: páginas, contenido, dominio y hosting del primer y del segundo año, rondas de cambios, plazo, mantenimiento y qué te llevas al terminar. Cuando las dos están rellenas con las mismas filas, la diferencia de precio deja de ser un misterio y se convierte en una decisión.",
+          "Pon las dos cotizaciones en una tabla con las mismas filas: páginas, contenido, dominio y hosting del primer y del segundo año, rondas de cambios, plazo, mantenimiento y qué te llevas al terminar. Cuando las dos están rellenas con las mismas filas, la diferencia de precio deja de ser un misterio y se convierte en una decisión. Si quieres una tercera cotización con todas esas partidas ya desglosadas, [cuéntanos qué necesitas](/cotizacion) y te la enviamos en menos de 24 horas.",
       },
     ],
     faqs: [
@@ -6639,7 +6639,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Las tres cosas que tienen que quedar a tu nombre",
         body:
-          "No es desconfianza, es higiene. Un proveedor serio no tiene problema en ponerlo por escrito, porque no vive de retener a nadie.",
+          "No es desconfianza, es higiene. Un proveedor serio no tiene problema en ponerlo por escrito, porque no vive de retener a nadie: en [nuestros proyectos de desarrollo web](/desarrollo-web) el dominio y los accesos quedan a nombre del cliente desde el primer día.",
         table: {
           cabeceras: ["Qué", "Por qué importa", "Cómo se comprueba"],
           filas: [
@@ -6657,7 +6657,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Qué significa que la web sea a medida o con plantilla",
         body:
-          "No es una cuestión de calidad sino de continuidad. Con una plantilla comercial, cualquier equipo que la conozca puede seguir; a cambio, esa plantilla suele tener licencia anual y limita hasta dónde puedes llegar. Con un desarrollo a medida no dependes de licencias de terceros, pero el equipo que lo continúe necesita entender ese código. Lo importante es saber cuál de las dos tienes antes de firmar, no después.",
+          "No es una cuestión de calidad sino de continuidad. Con una plantilla comercial, cualquier equipo que la conozca puede seguir; a cambio, esa plantilla suele tener licencia anual y limita hasta dónde puedes llegar. Con un desarrollo a medida no dependes de licencias de terceros, pero el equipo que lo continúe necesita entender ese código. Lo importante es saber cuál de las dos tienes antes de firmar, no después. La diferencia real entre las dos la explicamos en [web a medida o plantilla](/blog/pagina-web-a-medida-vs-plantilla-wordpress-wix).",
         bullets: [
           "Si es plantilla: pregunta qué licencia es, cuánto cuesta renovarla y a nombre de quién está.",
           "Si es a medida: pregunta si te entregan el código y en qué repositorio queda.",
@@ -6672,7 +6672,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Qué pedir en la entrega",
         body:
-          "Una entrega ordenada se resuelve en un correo con todo dentro. Si tienes que perseguirlo, es señal de lo que viene después.",
+          "Una entrega ordenada se resuelve en un correo con todo dentro. Si tienes que perseguirlo, es señal de lo que viene después. Y si lo que te falta es quién mantenga la web una vez entregada, eso entra en el [mantenimiento web](/mantenimiento-web).",
         bullets: [
           "Credenciales del registrador del dominio, con el titular a tu nombre.",
           "Accesos al hosting y al panel de administración de la web.",
