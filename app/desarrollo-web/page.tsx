@@ -2,11 +2,16 @@ import type { Metadata } from "next";
 import { pageMeta } from "@/lib/seo";
 import ServiceLanding from "@/components/sections/landing/ServiceLanding";
 
+/* 12-sep-2026 · Search Console 13-ago/9-sep: «agencia de desarrollo web» la
+   gana la portada (90 impresiones, puesto 15; del 7 al 10-sep, entre el 5,7 y el
+   10,2) y esta página iba detrás (14 impresiones, puesto 28,7) con el mismo
+   title. No se redirige ni se unifica: esta página se queda con «desarrollo web
+   a medida» y enlaza a la portada con la búsqueda que gana la portada. */
 export const metadata: Metadata = pageMeta({
   path: "/desarrollo-web",
-  title: "Agencia de Desarrollo Web en Lima, Perú",
+  title: "Desarrollo web a medida en Lima, Perú",
   description:
-    "Agencia de desarrollo web en Lima, Perú. Páginas web, tiendas virtuales y sistemas a medida: administrables, responsive y optimizados para Google.",
+    "Desarrollo web a medida en Lima, Perú: páginas, tiendas virtuales y sistemas administrables, responsive y optimizados para Google, con soporte por WhatsApp.",
 });
 
 export default function DesarrolloWebPage() {
@@ -17,8 +22,8 @@ export default function DesarrolloWebPage() {
         { name: "Inicio", path: "/" },
         { name: "Desarrollo Web", path: "/desarrollo-web" },
       ]}
-      eyebrow="Agencia de desarrollo web"
-      h1="Agencia de Desarrollo Web en Lima, Perú"
+      eyebrow="Desarrollo web a medida"
+      h1="Desarrollo web a medida en Lima, Perú"
       intro="Websy es una agencia de desarrollo web en Lima que crea páginas web, tiendas virtuales y sistemas a medida para empresas de todo el Perú. Diseñamos, desarrollamos y optimizamos tu web para Google, la entregamos administrable y te acompañamos después del lanzamiento con soporte directo por WhatsApp."
       highlights={["Páginas web", "Tiendas virtuales", "Sistemas web", "SEO on-page", "Soporte por WhatsApp"]}
       stats={[
@@ -73,9 +78,9 @@ export default function DesarrolloWebPage() {
             "De nada sirve una web bonita que nadie encuentra. Por eso todo lo que desarrollamos sale optimizado para buscadores: estructura correcta de títulos y encabezados, velocidad de carga, versión móvil impecable y contenido pensado para lo que tu cliente busca en Google. Si además quieres trabajar el posicionamiento de forma continua o acelerar con publicidad, el mismo equipo gestiona tu SEO y tus campañas de Google Ads.",
         },
         {
-          h2: "Una agencia de desarrollo web en Lima, con clientes en todo el Perú",
+          h2: "Desarrollo web desde Lima, con clientes en todo el Perú",
           body:
-            "Trabajamos desde Lima y atendemos proyectos en todo el país. En la práctica, la reunión inicial y el seguimiento se hacen por videollamada y WhatsApp, así que da igual si estás en San Isidro, en Arequipa o en Piura: el proceso es el mismo y no encarece el proyecto. Lo que sí cambia cuando el cliente es peruano son las integraciones que damos por sentadas y que una agencia de fuera suele cobrar aparte:",
+            "Como [agencia de desarrollo web](/) trabajamos desde Lima y atendemos proyectos en todo el país. En la práctica, la reunión inicial y el seguimiento se hacen por videollamada y WhatsApp, así que da igual si estás en San Isidro, en Arequipa o en Piura: el proceso es el mismo y no encarece el proyecto. Lo que sí cambia cuando el cliente es peruano son las integraciones que damos por sentadas y que una agencia de fuera suele cobrar aparte:",
           bullets: [
             "Pagos locales: Yape, Plin, Niubiz, Izipay, Culqi y Mercado Pago.",
             "Facturación electrónica válida para SUNAT, con boletas, facturas y notas de crédito.",

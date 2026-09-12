@@ -53,7 +53,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Websy – Agencia de Tecnología y Desarrollo Web | Lima, Perú",
+    default: "Agencia de Desarrollo Web y Tecnología en Lima | Websy",
     template: "%s | Websy",
   },
   description:
@@ -84,7 +84,7 @@ export const metadata: Metadata = {
     locale: "es_PE",
     url: SITE_URL,
     siteName: "Websy",
-    title: "Websy – Agencia de Tecnología y Desarrollo Web | Lima, Perú",
+    title: "Agencia de Desarrollo Web y Tecnología en Lima | Websy",
     description:
       "Agencia de tecnología y desarrollo de software en Lima, Perú. Diseño exclusivo, soluciones digitales a medida y estrategia real para que tu negocio se destaque y convierta.",
     images: [
@@ -98,7 +98,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Websy – Agencia de Tecnología y Desarrollo Web | Lima, Perú",
+    title: "Agencia de Desarrollo Web y Tecnología en Lima | Websy",
     description:
       "Diseño exclusivo, tecnología de vanguardia y estrategia real para que tu negocio se destaque y convierta.",
     images: ["/og-image.png"],
