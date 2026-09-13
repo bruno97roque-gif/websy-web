@@ -57,7 +57,7 @@ export default function CostosShopifyPage() {
             "La comisión de tu pasarela peruana, según el contrato que tengas con Niubiz, Izipay, Culqi o Mercado Pago.",
             "Más el recargo que Shopify cobra por usar una pasarela que no es la suya: 2 % en el plan Basic, 1 % en Grow, 0,6 % en Advanced y 0,2 % en Plus.",
             "Ese recargo no es una cuota fija: es un porcentaje de cada venta, así que pesa más cuanto mejor te va.",
-            "Los importes de cada plan están en [cuánto cobra Shopify al mes en Perú](/blog/cuanto-cuesta-una-tienda-en-shopify), con los precios oficiales actualizados.",
+            "Los importes de cada plan están en [cuánto cobra cada Shopify plan al mes en Perú](/blog/cuanto-cuesta-una-tienda-en-shopify), con los precios oficiales actualizados.",
           ],
         },
         {

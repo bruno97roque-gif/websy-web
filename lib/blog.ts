@@ -746,10 +746,13 @@ export const BLOG_POSTS: BlogPost[] = [
        20. No se unifica ni se redirige — se reparte por intención: el que ya
        rankea se queda con la pregunta de PRECIO y su tabla, y la página de
        servicio se queda con por qué en Perú sale más caro. */
-    title: "Cuánto cobra Shopify al mes en Perú (2026)",
+    /* 12-sep-2026 · Search Console 13-ago/9-sep: «shopify plan» trae 1.214 de sus
+       1.376 impresiones a este artículo (puesto 7) con CERO clics, y el title no
+       decía «plan». La pregunta de precio sigue siendo de este artículo. */
+    title: "Shopify plan y precios en Perú 2026: de Basic a Plus",
     h1: "¿Cuánto cobra Shopify al mes? Planes y comisiones en Perú",
     description:
-      "Cuánto cobra Shopify al mes en Perú: precio oficial de cada plan en dólares, el recargo por pasarela externa y los gastos que se suman al desarrollo.",
+      "Cada Shopify plan en Perú con su precio oficial: de USD 19 a USD 299 al mes pagando por año, más un recargo de 2 % a 0,2 % por usar pasarela externa.",
     excerpt:
       "Los planes de Shopify van de USD 19 a USD 299 al mes. Esto es lo que pagas de verdad, comisiones peruanas incluidas.",
     datePublished: "2026-06-19",
