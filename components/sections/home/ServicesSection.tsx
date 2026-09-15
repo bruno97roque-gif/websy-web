@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Link from "next/link";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ShimmerButton } from "@/components/ui/shimmer-button";
@@ -21,6 +22,7 @@ const services = [
     title: "Manual de Identidad de Marca",
     desc: "Creamos identidades visuales poderosas que diferencian tu marca, generan confianza inmediata y se quedan grabadas en la mente de tus clientes. Desde el logotipo hasta el manual completo.",
     cta: "Quiero mi branding",
+    pageHref: "/branding",
     ctaHref: "https://wa.me/51940549322?text=Hola%2C%20me%20interesa%20el%20servicio%20de%20Identidad%20de%20Marca%20de%20Websy%20%F0%9F%8E%A8%20%C2%BFpodr%C3%ADan%20darme%20m%C3%A1s%20informaci%C3%B3n%3F",
     feature: true,
     icon: "/icons/Icon-servicio1.webp",
@@ -32,6 +34,7 @@ const services = [
     title: "Webs y Tiendas Virtuales",
     desc: "Desarrollamos sitios web y e-commerce a medida, rápidos, seguros y optimizados para convertir visitantes en compradores reales desde el primer clic.",
     cta: "Quiero mi web",
+    pageHref: "/diseno-de-paginas-web",
     ctaHref: "https://wa.me/51940549322?text=Hola%2C%20me%20interesa%20el%20servicio%20de%20Dise%C3%B1o%20Web%20y%20Tiendas%20Virtuales%20de%20Websy%20%F0%9F%92%BB%20%C2%BFpodr%C3%ADan%20darme%20m%C3%A1s%20informaci%C3%B3n%3F",
     feature: false,
     icon: "/icons/icon-servicio2.webp",
@@ -43,6 +46,7 @@ const services = [
     title: "Google Ads & SEO",
     desc: "Aparecer primero en Google no es casualidad, es estrategia. Diseñamos campañas y optimizaciones que atraen tráfico calificado y multiplican tu retorno de inversión.",
     cta: "Quiero más visitas",
+    pageHref: "/seo",
     ctaHref: "https://wa.me/51940549322?text=Hola%2C%20me%20interesa%20el%20servicio%20de%20Google%20Ads%20y%20SEO%20de%20Websy%20%F0%9F%93%88%20%C2%BFpodr%C3%ADan%20darme%20m%C3%A1s%20informaci%C3%B3n%3F",
     feature: false,
     icon: "/icons/icon-servicio3.webp",
@@ -247,13 +251,23 @@ export default function ServicesSection() {
               <p className="font-poppins mb-6 flex-1 text-[15px] leading-[1.8] text-white md:mb-10">
                 {feature.desc}
               </p>
-              <ShimmerButton href={feature.ctaHref} target="_blank" rel="noopener noreferrer">
+              <div className="relative z-40 inline-flex">
+                <ShimmerButton href={feature.ctaHref} target="_blank" rel="noopener noreferrer">
                 {feature.cta}
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                   <path d="M3 8h10M8 3l5 5-5 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
-              </ShimmerButton>
+                </ShimmerButton>
+              </div>
             </div>
+            {/* La tarjeta entera lleva a su servicio. Llevaba un cursor propio que
+                invita a pulsarla pero solo el boton era enlace: 69 de los 87
+                dead_click de 28 dias caian en esta portada. */}
+            <Link
+              href={feature.pageHref}
+              className="absolute inset-0 z-30 rounded-3xl"
+              aria-label={feature.title}
+            />
           </div>
 
           {/* ── REGULAR CARDS ── */}
@@ -297,11 +311,16 @@ export default function ServicesSection() {
                   href={s.ctaHref}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 border-b-2 border-[#F18C1B] pb-0.5 font-montserrat text-[12px] font-bold uppercase tracking-[1.5px] text-white transition-all group-hover:gap-3.5 group-hover:text-[#F18C1B]"
+                  className="relative z-40 inline-flex items-center gap-2 border-b-2 border-[#F18C1B] pb-0.5 font-montserrat text-[12px] font-bold uppercase tracking-[1.5px] text-white transition-all group-hover:gap-3.5 group-hover:text-[#F18C1B]"
                 >
                   {s.cta} →
                 </a>
               </div>
+              <Link
+                href={s.pageHref}
+                className="absolute inset-0 z-30 rounded-[20px]"
+                aria-label={s.title}
+              />
             </div>
           ))}
 
