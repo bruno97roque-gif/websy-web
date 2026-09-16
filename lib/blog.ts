@@ -4277,7 +4277,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "1. Crea tu cuenta y elige el plan de Shopify",
         body:
-          "Regístrate en Shopify y elige el plan según el tamaño de tu operación. Puedes empezar con un plan básico y subir cuando crezcas. Ten a mano tu logo, tu marca y una idea clara de tu catálogo. Recuerda que el plan mensual de Shopify es un costo aparte del desarrollo; lo explicamos en la guía de [cuánto cuesta una tienda Shopify](/tiendas-virtuales/shopify/costos). La lista completa está en [qué necesitas para vender online en Perú](/blog/que-necesito-para-vender-online-en-peru). Y antes de firmar, mira [qué preguntar a la pasarela](/blog/afiliacion-pasarela-de-pago-peru-requisitos-y-plazos).",
+          "Regístrate en Shopify y elige el plan según el tamaño de tu operación. Puedes empezar con un plan básico y subir cuando crezcas. Ten a mano tu logo, tu marca y una idea clara de tu catálogo. Recuerda que el plan mensual de Shopify es un costo aparte del desarrollo; lo explicamos en la guía de [qué cuesta desarrollar tu tienda Shopify con Websy](/tiendas-virtuales/shopify/costos). La lista completa está en [qué necesitas para vender online en Perú](/blog/que-necesito-para-vender-online-en-peru). Y antes de firmar, mira [qué preguntar a la pasarela](/blog/afiliacion-pasarela-de-pago-peru-requisitos-y-plazos).",
       },
       {
         h2: "2. Elige y personaliza un tema a tu marca",
@@ -4335,7 +4335,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     related: [
       { label: "Agencia Shopify Perú", href: "/tiendas-virtuales/shopify", desc: "La creamos por ti, optimizada para vender." },
-      { label: "Cuánto cuesta una tienda Shopify", href: "/tiendas-virtuales/shopify/costos", desc: "Qué define el precio y en qué inviertes." },
+      { label: "Cuánto cuesta que Websy desarrolle tu tienda", href: "/tiendas-virtuales/shopify/costos", desc: "Qué define el precio y en qué inviertes." },
       { label: "Vender con Yape y Plin en Shopify", href: "/blog/como-vender-con-yape-y-plin-en-shopify", desc: "Cómo aceptar pagos locales en tu tienda." },
     ],
   },
@@ -4484,7 +4484,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Checkout: cómo reducir el abandono de carrito en tu tienda virtual", href: "/blog/reducir-el-abandono-de-carrito-en-tu-tienda-virtual", desc: "La mayoría de carritos se pierde en el último paso, y casi siempre por lo mismo: sorpresas de precio y fricció." },
       { label: "Agencia Shopify Perú", href: "/tiendas-virtuales/shopify", desc: "Tienda optimizada, con solo las apps que suman." },
       { label: "Cómo posicionar tu tienda Shopify en Google", href: "/blog/como-posicionar-una-tienda-shopify-en-google-peru", desc: "SEO para que te encuentren compradores." },
-      { label: "Cuánto cuesta una tienda Shopify", href: "/tiendas-virtuales/shopify/costos", desc: "Incluye el costo recurrente de las apps." },
+      { label: "Costo del desarrollo de tu tienda Shopify", href: "/tiendas-virtuales/shopify/costos", desc: "Incluye el costo recurrente de las apps." },
     ],
   },
 
@@ -4560,7 +4560,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "SEO para tiendas online: cómo optimizar fichas de producto y categoría", href: "/blog/como-posicionar-tu-tienda-online-en-google-peru", desc: "Tu tienda online no vende si nadie la encuentra." },
       { label: "Agencia Shopify Perú", href: "/tiendas-virtuales/shopify", desc: "Tu tienda de moda, optimizada para vender." },
       { label: "Tienda Shopify de belleza y cosmética", href: "/blog/tienda-shopify-para-productos-de-belleza-y-cosmetica", desc: "Otro rubro que vende muy bien online." },
-      { label: "Cuánto cuesta una tienda Shopify", href: "/tiendas-virtuales/shopify/costos", desc: "Qué define el precio de tu tienda de ropa." },
+      { label: "Qué cuesta que armemos tu tienda Shopify", href: "/tiendas-virtuales/shopify/costos", desc: "Qué define el precio de tu tienda de ropa." },
     ],
   },
 
@@ -4631,7 +4631,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Qué necesito para vender online en Perú", href: "/blog/que-necesito-para-vender-online-en-peru", desc: "RUC, comprobantes, cobros, envíos y web." },
       { label: "Agencia Shopify Perú", href: "/tiendas-virtuales/shopify", desc: "Tu tienda de belleza, optimizada para vender." },
       { label: "Tienda Shopify para ropa y moda", href: "/blog/tienda-shopify-para-ropa-y-moda-en-peru", desc: "Otro rubro fuerte en ecommerce." },
-      { label: "Cuánto cuesta una tienda Shopify", href: "/tiendas-virtuales/shopify/costos", desc: "Qué define el precio de tu tienda." },
+      { label: "Presupuesto para desarrollar tu tienda Shopify", href: "/tiendas-virtuales/shopify/costos", desc: "Qué define el precio de tu tienda." },
     ],
   },
 
@@ -4662,7 +4662,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Los costos reales para una pyme",
         body:
-          "Shopify tiene tres costos: el plan mensual, el desarrollo de la tienda y las comisiones de pago. Para una pyme lo importante es dimensionar bien y no sobreinvertir al inicio. Desglosamos cada parte en la guía de [cuánto cuesta una tienda Shopify](/tiendas-virtuales/shopify/costos). Si eliges Izipay, el paso a paso está en [cómo cobrar con Izipay en tu página web](/blog/como-cobrar-con-izipay-en-tu-pagina-web).",
+          "Shopify tiene tres costos: el plan mensual, el desarrollo de la tienda y las comisiones de pago. Para una pyme lo importante es dimensionar bien y no sobreinvertir al inicio. Desglosamos cada parte en la guía de [costos del desarrollo de una tienda Shopify con Websy](/tiendas-virtuales/shopify/costos). Si eliges Izipay, el paso a paso está en [cómo cobrar con Izipay en tu página web](/blog/como-cobrar-con-izipay-en-tu-pagina-web).",
       },
       {
         h2: "Shopify vs WooCommerce vs marketplace",
@@ -4706,7 +4706,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Cómo pasar de vender por WhatsApp a una tienda virtual en Perú", href: "/blog/como-pasar-de-vender-por-whatsapp-a-una-tienda-virtual", desc: "Vender por WhatsApp funciona hasta que deja de funcionar." },
       { label: "Qué necesito para vender online en Perú", href: "/blog/que-necesito-para-vender-online-en-peru", desc: "RUC, comprobantes, cobros, envíos y web." },
       { label: "Agencia Shopify Perú", href: "/tiendas-virtuales/shopify", desc: "Tu tienda de pyme, optimizada para vender." },
-      { label: "Cuánto cuesta una tienda Shopify", href: "/tiendas-virtuales/shopify/costos", desc: "Los costos reales, sin sorpresas." },
+      { label: "Lo que invierte una pyme en desarrollar su tienda", href: "/tiendas-virtuales/shopify/costos", desc: "Los costos reales, sin sorpresas." },
       { label: "Shopify vs WooCommerce", href: "/blog/shopify-vs-woocommerce", desc: "Compara las dos plataformas líderes." },
     ],
   },
