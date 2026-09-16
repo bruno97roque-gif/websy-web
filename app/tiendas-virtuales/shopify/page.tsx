@@ -2,9 +2,12 @@ import type { Metadata } from "next";
 import { pageMeta } from "@/lib/seo";
 import ServiceLanding from "@/components/sections/landing/ServiceLanding";
 
+/* 16-sep-2026 · Search Console 90 d: «shopify peru» es la consulta que más trae
+   a esta página (179 imp, puesto 8) y el title no empezaba por ella. Se reordena
+   sin perder palabras: «agencia shopify peru» (63 imp, puesto 4,9) sigue dentro. */
 export const metadata: Metadata = pageMeta({
   path: "/tiendas-virtuales/shopify",
-  title: "Agencia Shopify Perú: tiendas hechas para vender",
+  title: "Shopify Perú: Agencia que crea tiendas hechas para vender",
   description:
     "Agencia Shopify en Perú: tiendas optimizadas para vender, con velocidad, SEO, CRO y pagos locales (Yape, Plin, Niubiz, Izipay). Desarrollo, migración y soporte.",
 });
@@ -19,7 +22,7 @@ export default function ShopifyPage() {
         { name: "Shopify", path: "/tiendas-virtuales/shopify" },
       ]}
       eyebrow="Agencia Shopify · Perú"
-      h1="Agencia Shopify en Perú: tiendas optimizadas para vender"
+      h1="Shopify Perú: Agencia que crea tiendas optimizadas para vender"
       intro="Somos una agencia especialista en Shopify en Perú: creamos tu tienda Shopify optimizada para vender de verdad, con velocidad de carga, SEO técnico, conversión (CRO) y pagos locales en soles —Yape, Plin, Niubiz e Izipay—. La entregamos autoadministrable y con soporte, para que lances rápido y crezcas sin fricción."
       highlights={["Optimizada para vender", "Velocidad + SEO", "Yape · Plin · Niubiz · Izipay", "Autoadministrable", "Migración incluida", "Soporte local"]}
       stats={[

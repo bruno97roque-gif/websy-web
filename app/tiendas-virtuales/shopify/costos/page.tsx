@@ -28,7 +28,7 @@ export default function CostosShopifyPage() {
       eyebrow="Costo del proyecto · Tienda Shopify en Perú"
       h1="¿Cuánto cuesta que te desarrollen una tienda Shopify en Perú?"
       intro="Esta página responde qué cuesta el proyecto: el desarrollo de tu tienda Shopify, que se paga una vez y depende del diseño, la cantidad de productos y las integraciones. Es una pregunta distinta de cuánto cobra Shopify por su plataforma, que es una mensualidad y la respondemos aparte en el blog. Aquí desglosamos el costo del desarrollo y qué gastos se repiten después."
-      highlights={["Plan + desarrollo + comisiones", "Rangos referenciales", "Sin sorpresas", "Cotización en 24 h"]}
+      highlights={["Plan + desarrollo + comisiones", "Qué incluye cada nivel", "Sin sorpresas", "Cotización en 24 h"]}
       stats={[
         { value: "3", label: "Componentes: plan, desarrollo y comisiones" },
         { value: "Único", label: "El desarrollo se paga una vez" },
@@ -57,7 +57,7 @@ export default function CostosShopifyPage() {
             "La comisión de tu pasarela peruana, según el contrato que tengas con Niubiz, Izipay, Culqi o Mercado Pago.",
             "Más el recargo que Shopify cobra por usar una pasarela que no es la suya: 2 % en el plan Basic, 1 % en Grow, 0,6 % en Advanced y 0,2 % en Plus.",
             "Ese recargo no es una cuota fija: es un porcentaje de cada venta, así que pesa más cuanto mejor te va.",
-            "Los importes de cada plan están en [cuánto cobra cada Shopify plan al mes en Perú](/blog/cuanto-cuesta-una-tienda-en-shopify), con los precios oficiales actualizados.",
+            "Los importes de cada plan están en [precios de Shopify en Perú, plan por plan](/blog/cuanto-cuesta-una-tienda-en-shopify), tomados de la web oficial de Shopify.",
           ],
         },
         {
@@ -130,14 +130,14 @@ export default function CostosShopifyPage() {
         { label: "Cotiza tu tienda Shopify", href: "/cotizacion", desc: "Recibe una propuesta a tu medida en menos de 24 horas." },
       ]}
       articles={[
-        { label: "Cuánto cuesta una tienda en Shopify", href: "/blog/cuanto-cuesta-una-tienda-en-shopify", desc: "El detalle de planes, desarrollo y comisiones." },
+        { label: "Cuánto cuesta una tienda en Shopify", href: "/blog/cuanto-cuesta-una-tienda-en-shopify", desc: "Precio oficial de cada plan y el recargo por pasarela externa." },
         { label: "Shopify para pymes en Perú: ¿vale la pena?", href: "/blog/shopify-para-pymes-en-peru-vale-la-pena", desc: "Si recién empiezas, cuándo conviene invertir en Shopify." },
         { label: "Cuánto cuesta una tienda virtual en Perú", href: "/blog/cuanto-cuesta-una-tienda-virtual-en-peru", desc: "Los factores de precio de un ecommerce, en general." },
       ]}
       faqs={[
         {
-          q: "¿Cuánto cuesta una tienda Shopify en Perú?",
-          a: "No hay un precio único. Se compone del plan mensual de Shopify (recurrente), el desarrollo de la tienda (inversión inicial según diseño, productos e integraciones) y las comisiones de las pasarelas. Te preparamos una cotización a medida sin costo en menos de 24 horas.",
+          q: "¿Cuánto cuesta que Websy desarrolle mi tienda Shopify?",
+          a: "No hay un precio único: el desarrollo se paga una vez y depende del diseño, la cantidad de productos y las integraciones. El plan mensual de Shopify y las comisiones de las pasarelas van aparte. Te preparamos una cotización a medida sin costo en menos de 24 horas.",
         },
         {
           q: "¿El plan de Shopify está incluido en lo que cobra Websy?",
@@ -156,8 +156,8 @@ export default function CostosShopifyPage() {
           a: "Cuéntanos qué vendes, cuántos productos tienes y cómo cobras, por WhatsApp o el formulario de cotización, y te enviamos una propuesta a medida, clara y sin compromiso, en menos de 24 horas.",
         },
       ]}
-      serviceName="Costos de una tienda Shopify en Perú"
-      serviceDescription="Guía de precios de una tienda Shopify en Perú: plan mensual de Shopify vs. desarrollo, qué incluye cada nivel, rangos referenciales y costos recurrentes, con cotización a medida."
+      serviceName="Desarrollo de tiendas Shopify en Perú"
+      serviceDescription="Costo del servicio de desarrollo de tiendas Shopify de Websy en Perú: qué define el precio del proyecto, qué incluye cada nivel, qué se paga una vez y qué se repite, con cotización a medida."
     />
   );
 }

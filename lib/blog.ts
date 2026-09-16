@@ -749,7 +749,11 @@ export const BLOG_POSTS: BlogPost[] = [
     /* 12-sep-2026 · Search Console 13-ago/9-sep: «shopify plan» trae 1.214 de sus
        1.376 impresiones a este artículo (puesto 7) con CERO clics, y el title no
        decía «plan». La pregunta de precio sigue siendo de este artículo. */
-    title: "Shopify plan y precios en Perú 2026: de Basic a Plus",
+    /* 16-sep-2026 · SERP de Lima en escritorio: 7.º orgánico, detrás de cinco
+       resultados de Shopify (shopify.com y help.shopify.com) y uno de gempages, sin resumen de IA. Google no
+       había rastreado el title del 12-sep (último rastreo 22-ago) y dejaba
+       minúscula tras los dos puntos. Ninguno de los de al lado dice el recargo. */
+    title: "Shopify plan en Perú: Precios al mes y recargo de hasta 2 %",
     h1: "¿Cuánto cobra Shopify al mes? Planes y comisiones en Perú",
     description:
       "Cada Shopify plan en Perú con su precio oficial: de USD 19 a USD 299 al mes pagando por año, más un recargo de 2 % a 0,2 % por usar pasarela externa.",
@@ -786,7 +790,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "El desarrollo de la tienda, que se paga una vez",
         body:
-          "Es la inversión en montar tu tienda: diseño a tu marca, carga de productos, configuración de pagos y envíos. Se cotiza según el alcance y se paga una vez (más mejoras futuras si las necesitas). Es la única pieza donde decides cuánto inviertes, porque depende de lo que pidas. Lo cotizamos según lo que necesites: mira [cuánto cuesta una tienda Shopify en Perú](/tiendas-virtuales/shopify/costos), donde está el detalle del proyecto, o cómo trabajamos como [agencia Shopify en Perú](/tiendas-virtuales/shopify). Si tu tienda es Shopify, sigue [cómo aceptar Yape y Plin ahí](/blog/como-vender-con-yape-y-plin-en-shopify).",
+          "Es la inversión en montar tu tienda: diseño a tu marca, carga de productos, configuración de pagos y envíos. Se cotiza según el alcance y se paga una vez (más mejoras futuras si las necesitas). Es la única pieza donde decides cuánto inviertes, porque depende de lo que pidas. Lo cotizamos según lo que necesites: mira [el desglose del desarrollo de tu tienda Shopify con Websy](/tiendas-virtuales/shopify/costos), o cómo trabajamos como [agencia Shopify en Perú](/tiendas-virtuales/shopify). Si tu tienda es Shopify, sigue [cómo aceptar Yape y Plin ahí](/blog/como-vender-con-yape-y-plin-en-shopify).",
       },
       {
         h2: "Por qué en Perú pagas dos comisiones y no una",
@@ -4308,7 +4312,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "6. Revisa, lanza y optimiza",
         body:
-          "Antes de publicar, prueba el checkout completo como si fueras cliente, revisa el móvil y conecta tu WhatsApp para dudas. Después de lanzar, mide qué se ve y qué se vende, y ajusta. Si prefieres que lo hagamos por ti, somos [agencia Shopify en Perú](/tiendas-virtuales/shopify) y entregamos la tienda optimizada para vender.",
+          "Antes de publicar, prueba el checkout completo como si fueras cliente, revisa el móvil y conecta tu WhatsApp para dudas. Después de lanzar, mide qué se ve y qué se vende, y ajusta. Si prefieres que lo hagamos por ti, revisa nuestro servicio de [Shopify Perú](/tiendas-virtuales/shopify): entregamos la tienda optimizada para vender.",
       },
     ],
     faqs: [
