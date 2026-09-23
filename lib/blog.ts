@@ -4111,18 +4111,18 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "cuanto-cuesta-un-hosting-y-un-dominio-pe-en-peru",
-    title: "Cuánto Cuesta un Hosting y Dominio .pe en Perú 2026",
+    title: "Hosting y dominio .pe: S/ 110 al año y desde S/ 15 al mes",
     h1: "¿Cuánto cuesta un hosting y un dominio .pe?",
     description:
-      "Cuánto cuesta un hosting y un dominio .pe en Perú en 2026: precios reales en soles, de qué depende cada costo y qué necesita de verdad tu web o tienda para arrancar.",
+      "Un dominio .pe cuesta S/ 110 al año en el registrador oficial (punto.pe, impuestos incluidos) y un hosting compartido peruano arranca en S/ 15.47 al mes. Precios verificados en setiembre de 2026.",
     excerpt:
-      "Hosting y dominio son los costos base de toda web. Aquí qué son, cuánto cuestan y cuál necesita tu negocio.",
+      "Un dominio .pe cuesta S/ 110 al año y un hosting compartido desde S/ 15.47 al mes. Aquí los precios reales, de dónde salen y cuál necesita tu negocio.",
     datePublished: "2026-07-08",
-    dateModified: "2026-07-08",
+    dateModified: "2026-09-23",
     category: "Web",
     readingMin: 6,
     intro:
-      "Toda página web necesita dos cosas para estar en línea: un dominio (tu dirección en internet) y un hosting (donde vive la web). Son los costos base de cualquier proyecto y, por suerte, suelen ser modestos. Aquí verás qué es cada uno, de qué depende su precio y cuál conviene según tu web o tienda virtual.",
+      "Un dominio .pe cuesta S/ 110 al año en punto.pe, el registrador oficial del Perú, con impuestos incluidos; un hosting compartido peruano arranca alrededor de S/ 15.47 al mes más IGV. Esos dos pagos son el piso de cualquier web: el dominio es tu dirección y el hosting es donde vive el sitio. Abajo están los precios uno por uno y qué plan necesita cada tipo de proyecto.",
     sections: [
       {
         h2: "Qué es el dominio y qué es el hosting",
@@ -4130,9 +4130,39 @@ export const BLOG_POSTS: BlogPost[] = [
           "El dominio es tu dirección en internet, como tunegocio.pe: se alquila por año y es único. El hosting es el espacio en un servidor donde se guardan los archivos de tu web para que esté disponible 24/7. Uno sin el otro no sirve: el dominio dice dónde estás y el hosting guarda lo que la gente ve. Ambos se renuevan y son la base sobre la que corre tu página. Para elegir bien, mira [cómo elegir un hosting en Perú](/blog/como-elegir-un-hosting-en-peru). Lo que te llevas al terminar el proyecto está en [de quién es el código y el dominio](/blog/de-quien-es-el-codigo-el-dominio-y-los-accesos).",
       },
       {
-        h2: "Cuánto cuesta un dominio .pe",
+        h2: "Cuánto cuesta un dominio .pe en 2026",
         body:
-          "El dominio .pe (el de Perú) es económico y se paga por año. También puedes optar por .com.pe, .com u otras extensiones, con precios similares y renovación anual. El costo es bajo comparado con lo que aporta: una dirección profesional y propia. Lo importante es que el dominio esté a tu nombre, no al del proveedor, para que sea de verdad tuyo. El trámite del dominio está en [cómo comprar un dominio .pe paso a paso](/blog/como-comprar-un-dominio-pe-paso-a-paso).",
+          "Estos son los precios de punto.pe, el registrador oficial que opera el dominio .pe en el Perú. Se paga por adelantado y por años completos: mientras más años contratas, menos pagas al año.",
+        table: {
+          cabeceras: ["Extensión", "1 año", "2 años", "5 años"],
+          filas: [
+            [".pe y .com.pe", "S/ 110", "S/ 200", "S/ 465"],
+            [".org.pe, .net.pe, .nom.pe", "S/ 20", "S/ 36", "S/ 85"],
+            [".edu.pe y .gob.pe", "S/ 110", "S/ 200", "S/ 465"],
+          ],
+          nota:
+            "Tarifas de punto.pe (Red Científica Peruana), registrador oficial del .pe. Los precios incluyen impuestos. Consultadas el 23 de setiembre de 2026; son referenciales y pueden variar.",
+        },
+      },
+      {
+        h2: "Cuánto cuesta el hosting en Perú",
+        body:
+          "Un hosting compartido peruano para una web informativa o una tienda pequeña arranca alrededor de S/ 15 al mes. Los planes anuales suelen incluir el dominio del primer año, que es de donde sale la diferencia entre pagar el .com o el .pe.",
+        table: {
+          cabeceras: ["Plan", "Al mes", "Al año con .com", "Al año con .pe o .com.pe"],
+          filas: [
+            ["Personal", "S/ 15.47", "S/ 185.70", "S/ 248.60"],
+            ["Premium", "S/ 18.47", "S/ 221.70", "S/ 284.60"],
+            ["Avanzado", "S/ 25.47", "S/ 305.70", "S/ 368.60"],
+          ],
+          nota:
+            "Precios publicados por Hosting Perú (hostingperu.com.pe) el 23 de setiembre de 2026, sin IGV, con dominio incluido. Son referenciales: cada proveedor arma sus planes distinto.",
+        },
+      },
+      {
+        h2: "Entonces, ¿cuánto sale poner una web en línea el primer año?",
+        body:
+          "Sumando lo anterior: entre S/ 250 y S/ 370 al año si contratas un plan con dominio incluido, o alrededor de S/ 110 del dominio más el hosting por separado. Es el piso de la infraestructura y no incluye el desarrollo de la web. Lo importante es que el dominio quede registrado a nombre de tu empresa: es lo que te permite mudar de proveedor sin perder tu dirección. El trámite está en [cómo comprar un dominio .pe paso a paso](/blog/como-comprar-un-dominio-pe-paso-a-paso).",
       },
       {
         h2: "De qué depende el precio del hosting",
@@ -4158,6 +4188,14 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     faqs: [
+      {
+        q: "¿Cuánto cuesta un dominio .pe al año?",
+        a: "S/ 110 al año en punto.pe, el registrador oficial del .pe en el Perú, con impuestos incluidos. Si lo contratas por dos años son S/ 200 y por cinco años S/ 465, lo que baja el promedio a S/ 93 anuales. Las extensiones .org.pe, .net.pe y .nom.pe cuestan S/ 20 al año.",
+      },
+      {
+        q: "¿Cuánto cuesta un hosting en Perú al mes?",
+        a: "Un hosting compartido peruano para una web informativa o una tienda pequeña arranca alrededor de S/ 15.47 al mes más IGV, y los planes con más recursos llegan a S/ 25.47. Contratado por año, un plan básico con dominio .pe incluido queda en torno a S/ 248.60.",
+      },
       {
         q: "¿El dominio y el hosting se pagan una sola vez?",
         a: "No. Ambos se renuevan: el dominio por año y el hosting mensual o anual, según el plan. Son costos recurrentes bajos, pero hay que mantenerlos al día para que la web no se caiga.",
