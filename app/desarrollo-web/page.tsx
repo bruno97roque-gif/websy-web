@@ -2,7 +2,14 @@ import type { Metadata } from "next";
 import { pageMeta } from "@/lib/seo";
 import ServiceLanding from "@/components/sections/landing/ServiceLanding";
 
-/* 12-sep-2026 · Search Console 13-ago/9-sep: «agencia de desarrollo web» la
+/* 23-set-2026 · Sigue la separación decidida el 12-sep y se completa: el intro
+   abría con «Websy es una agencia de desarrollo web en Lima», el hueco más fuerte
+   de la página después del H1, así que esta URL seguía disputándole la consulta a
+   la portada (GSC 24-ago/20-set: portada 11,2 · esta página 34,8 · 262 impresiones
+   y 1 clic entre las dos). Ahora abre con «desarrollo web a medida», que es lo
+   suyo, y la consulta genérica queda para la portada, que es la que rankea.
+
+   12-sep-2026 · Search Console 13-ago/9-sep: «agencia de desarrollo web» la
    gana la portada (90 impresiones, puesto 15; del 7 al 10-sep, entre el 5,7 y el
    10,2) y esta página iba detrás (14 impresiones, puesto 28,7) con el mismo
    title. No se redirige ni se unifica: esta página se queda con «desarrollo web
@@ -24,7 +31,7 @@ export default function DesarrolloWebPage() {
       ]}
       eyebrow="Desarrollo web a medida"
       h1="Desarrollo web a medida en Lima, Perú"
-      intro="Websy es una agencia de desarrollo web en Lima que crea páginas web, tiendas virtuales y sistemas a medida para empresas de todo el Perú. Diseñamos, desarrollamos y optimizamos tu web para Google, la entregamos administrable y te acompañamos después del lanzamiento con soporte directo por WhatsApp."
+      intro="Hacemos desarrollo web a medida en Lima para empresas de todo el Perú: páginas web, tiendas virtuales y sistemas administrables, construidos para tu caso y no sobre una plantilla. Diseñamos, desarrollamos y optimizamos tu web para Google, la entregamos administrable y te acompañamos después del lanzamiento con soporte directo por WhatsApp."
       highlights={["Páginas web", "Tiendas virtuales", "Sistemas web", "SEO on-page", "Soporte por WhatsApp"]}
       stats={[
         { value: "A medida", label: "Diseño alineado a tu marca y a tu objetivo" },

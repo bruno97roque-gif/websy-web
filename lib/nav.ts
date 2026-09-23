@@ -16,9 +16,10 @@ export const SERVICE_LINKS: NavLink[] = [
   { label: "Migrar a Shopify", href: "/tiendas-virtuales/shopify/migracion", desc: "migración a Shopify desde WooCommerce, Wix o Tiendanube conservando productos, clientes y posicionamiento." },
   { label: "Costos de una Tienda Shopify", href: "/tiendas-virtuales/shopify/costos", desc: "qué define el precio de una tienda Shopify en Perú y qué costos recurrentes se suman cada mes." },
   { label: "Tiendas WooCommerce", href: "/tiendas-virtuales/woocommerce", desc: "tiendas sobre WordPress, sin mensualidad de plataforma y 100% del cliente." },
-  { label: "Desarrollo Web", href: "/desarrollo-web", desc: "agencia de desarrollo web en Lima: páginas, tiendas y sistemas a medida, administrables y optimizados para Google." },
+  { label: "Desarrollo Web", href: "/desarrollo-web", desc: "desarrollo web a medida en Lima: páginas, tiendas y sistemas administrables, optimizados para Google y con soporte después del lanzamiento." },
   { label: "Diseño de Páginas Web", href: "/diseno-de-paginas-web", desc: "páginas web profesionales, responsive y optimizadas para captar clientes." },
   { label: "Software a Medida", href: "/desarrollo-de-software-a-medida", desc: "sistemas y plataformas hechos a la medida de los procesos del negocio." },
+  { label: "Sistemas Web", href: "/sistemas", desc: "qué es un sistema web, qué tipos hay y cuál necesita tu empresa: inventario, ventas y facturación o gestión ERP/CRM." },
   { label: "Sistema de Inventario", href: "/sistemas/inventario", desc: "sistema de inventario y almacén a medida: stock en tiempo real, kardex y alertas de quiebre." },
   { label: "Sistema de Ventas y Facturación", href: "/sistemas/ventas-y-facturacion", desc: "sistema de ventas y facturación con comprobantes electrónicos y control de caja." },
   { label: "Sistema de Gestión (ERP / CRM)", href: "/sistemas/gestion-erp-crm", desc: "sistema de gestión tipo ERP o CRM a medida para ordenar clientes, procesos y reportes." },
@@ -81,10 +82,11 @@ export const SERVICE_SITEMAP: SitemapEntry[] = [
   { path: "/tiendas-virtuales/shopify/migracion", priority: 0.8, lastModified: "2026-07-31" },
   { path: "/tiendas-virtuales/shopify/costos", priority: 0.8, lastModified: "2026-08-11" },
   { path: "/tiendas-virtuales/woocommerce", priority: 0.7, lastModified: "2026-07-31" },
-  { path: "/desarrollo-web", priority: 0.9, lastModified: "2026-08-12" },
+  { path: "/desarrollo-web", priority: 0.9, lastModified: "2026-09-23" },
   { path: "/diseno-de-paginas-web", priority: 0.9, lastModified: "2026-08-11" },
-  { path: "/desarrollo-de-software-a-medida", priority: 0.8, lastModified: "2026-08-11" },
-  // Silo de software por tipo de sistema (hijas de /desarrollo-de-software-a-medida).
+  { path: "/desarrollo-de-software-a-medida", priority: 0.9, lastModified: "2026-09-23" },
+  // Silo de software por tipo de sistema (hijas del hub /sistemas).
+  { path: "/sistemas", priority: 0.9, lastModified: "2026-09-23" },
   { path: "/sistemas/inventario", priority: 0.8, lastModified: "2026-08-12" },
   { path: "/sistemas/ventas-y-facturacion", priority: 0.8, lastModified: "2026-08-12" },
   { path: "/sistemas/gestion-erp-crm", priority: 0.8, lastModified: "2026-08-12" },
@@ -92,7 +94,7 @@ export const SERVICE_SITEMAP: SitemapEntry[] = [
   { path: "/cotizacion", priority: 0.8, lastModified: "2026-07-31" },
   // Nuevos pilares de servicio.
   { path: "/seo", priority: 0.9, lastModified: "2026-08-11" },
-  { path: "/google-ads", priority: 0.9, lastModified: "2026-08-12" },
+  { path: "/google-ads", priority: 0.9, lastModified: "2026-09-23" },
   { path: "/branding", priority: 0.9, lastModified: "2026-07-31" },
   { path: "/mantenimiento-web", priority: 0.9, lastModified: "2026-07-31" },
   // Silo de diseño web por rubro (hijas de /diseno-de-paginas-web).
