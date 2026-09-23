@@ -16,6 +16,7 @@ export default function SistemaInventarioPage() {
       breadcrumb={[
         { name: "Inicio", path: "/" },
         { name: "Software a Medida", path: "/desarrollo-de-software-a-medida" },
+        { name: "Sistemas Web", path: "/sistemas" },
         { name: "Sistema de Inventario", path: "/sistemas/inventario" },
       ]}
       eyebrow="Sistema · Inventario"
@@ -103,6 +104,7 @@ export default function SistemaInventarioPage() {
         },
       ]}
       related={[
+        { label: "Sistemas web: cuál necesitas", href: "/sistemas", desc: "Compara inventario, facturación y gestión, y elige por dónde empezar." },
         { label: "Software a medida", href: "/desarrollo-de-software-a-medida", desc: "Vuelve al pilar y mira todos los sistemas que desarrollamos." },
         { label: "Sistema de ventas y facturación", href: "/sistemas/ventas-y-facturacion", desc: "Conecta tu stock con la facturación electrónica." },
       ]}
