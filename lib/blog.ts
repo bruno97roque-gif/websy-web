@@ -2439,14 +2439,14 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "google-ads-para-pymes-en-peru-cuanto-invertir",
-    title: "Google Ads para pymes en Perú: cuánto invertir",
-    h1: "Google Ads para pymes en Perú: cuánto invertir para empezar a vender",
+    title: "Cuánto invertir en Google Ads siendo pyme en Perú",
+    h1: "Cuánto invertir en Google Ads si tienes una pyme en Perú",
     description:
       "Cuánto invertir en Google Ads si tienes una pyme en Perú, qué tipo de campaña elegir, por qué la landing importa tanto como el anuncio y cómo medir tus leads.",
     excerpt:
       "Google Ads te trae clientes desde el primer día si lo haces bien. Cuánto invertir y cómo no botar la plata.",
     datePublished: "2026-07-06",
-    dateModified: "2026-08-12",
+    dateModified: "2026-09-23",
     category: "Marketing",
     readingMin: 8,
     intro:
@@ -2455,7 +2455,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Por qué Google Ads funciona para pymes",
         body:
-          "A diferencia del SEO, que toma meses, Google Ads te muestra hoy ante quien ya está buscando comprar. Eso lo hace ideal para arrancar, validar qué servicio se vende más y llenar la agenda mientras tu posicionamiento orgánico madura. Pagas por clic, así que el control del gasto está en tus manos.",
+          "A diferencia del SEO, que toma meses, Google Ads te muestra hoy ante quien ya está buscando comprar. Eso lo hace ideal para arrancar, validar qué servicio se vende más y llenar la agenda mientras tu posicionamiento orgánico madura. Pagas por clic, así que el control del gasto está en tus manos. Este artículo resuelve la pregunta del presupuesto; si lo que buscas es quién las gestione por ti, eso lo cubre nuestra [agencia de Google Ads en Perú](/google-ads).",
       },
       {
         h2: "Cuánto invertir al inicio",

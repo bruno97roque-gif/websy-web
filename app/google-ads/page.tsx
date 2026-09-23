@@ -4,7 +4,7 @@ import ServiceLanding from "@/components/sections/landing/ServiceLanding";
 
 export const metadata: Metadata = pageMeta({
   path: "/google-ads",
-  title: "Agencia de Google Ads en Perú: campañas que venden",
+  title: "Google Ads Perú: Agencia que gestiona tus campañas",
   description:
     "Gestión de campañas de Google Ads en Perú: Búsqueda, Display, Shopping y YouTube. Landing pages que convierten, optimización de presupuesto y reportes claros.",
 });
@@ -18,7 +18,7 @@ export default function GoogleAdsPage() {
         { name: "Google Ads", path: "/google-ads" },
       ]}
       eyebrow="Publicidad en Google"
-      h1="Gestión de Google Ads en Perú"
+      h1="Agencia de Google Ads en Perú"
       intro="Creamos y gestionamos campañas de Google Ads que traen clientes, no solo clics. Investigamos tus palabras, estructuramos campañas de Búsqueda, Shopping, Display y YouTube, conectamos landing pages que convierten y optimizamos tu presupuesto para que cada sol invertido rinda lo máximo posible."
       highlights={["Búsqueda", "Shopping", "Display", "YouTube", "Landing pages"]}
       stats={[

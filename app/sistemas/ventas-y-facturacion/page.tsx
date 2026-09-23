@@ -16,6 +16,7 @@ export default function SistemaVentasFacturacionPage() {
       breadcrumb={[
         { name: "Inicio", path: "/" },
         { name: "Software a Medida", path: "/desarrollo-de-software-a-medida" },
+        { name: "Sistemas Web", path: "/sistemas" },
         { name: "Ventas y Facturación", path: "/sistemas/ventas-y-facturacion" },
       ]}
       eyebrow="Sistema · Ventas y Facturación"
@@ -96,6 +97,7 @@ export default function SistemaVentasFacturacionPage() {
         },
       ]}
       related={[
+        { label: "Sistemas web: cuál necesitas", href: "/sistemas", desc: "Compara inventario, facturación y gestión, y elige por dónde empezar." },
         { label: "Software a medida", href: "/desarrollo-de-software-a-medida", desc: "Vuelve al pilar y mira todos los sistemas que desarrollamos." },
         { label: "Sistema de inventario", href: "/sistemas/inventario", desc: "Controla tu stock conectado a las ventas." },
       ]}

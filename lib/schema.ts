@@ -23,6 +23,19 @@ export function organizationSchema() {
     "@type": "ProfessionalService",
     "@id": ORG_ID,
     name: SITE_NAME,
+    /* 23-set-2026 · La consulta de marca «websy» sale en puesto 2,7 para la portada:
+       hay homónimos (websy.cl, websy.com.mx, websyagency) por delante y el nombre
+       circula en cuatro variantes entre la web, la razón social y las redes.
+       legalName, alternateName e identifier son los campos con los que Google
+       enlaza esas variantes a una sola entidad. El RUC y la razón social son datos
+       públicos del padrón de SUNAT: no se inventa ninguno. */
+    legalName: "Websy Agencia de Marketing S.A.C.",
+    alternateName: ["Websy Perú", "Websy Agencia Web", "Websy Agencia de Marketing"],
+    identifier: {
+      "@type": "PropertyValue",
+      propertyID: "RUC",
+      value: "20615554210",
+    },
     description:
       "Agencia de tecnología y desarrollo de software en Lima, Perú. Especialistas en páginas web, aplicaciones a medida, tiendas online, branding y SEO.",
     url: SITE_URL,
@@ -110,6 +123,7 @@ export function websiteSchema() {
     "@id": WEBSITE_ID,
     url: SITE_URL,
     name: SITE_NAME,
+    alternateName: ["Websy Perú", "Websy Agencia Web"],
     inLanguage: "es-PE",
     publisher: { "@id": ORG_ID },
   };
