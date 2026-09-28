@@ -753,7 +753,7 @@ export const BLOG_POSTS: BlogPost[] = [
        resultados de Shopify (shopify.com y help.shopify.com) y uno de gempages, sin resumen de IA. Google no
        había rastreado el title del 12-sep (último rastreo 22-ago) y dejaba
        minúscula tras los dos puntos. Ninguno de los de al lado dice el recargo. */
-    title: "Shopify plan en Perú: Precios al mes y recargo de hasta 2 %",
+    title: "Shopify precios en Perú: Cada plan al mes y su recargo",
     h1: "¿Cuánto cobra Shopify al mes? Planes y comisiones en Perú",
     description:
       "Cada Shopify plan en Perú con su precio oficial: de USD 19 a USD 299 al mes pagando por año, más un recargo de 2 % a 0,2 % por usar pasarela externa.",
@@ -4111,7 +4111,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "cuanto-cuesta-un-hosting-y-un-dominio-pe-en-peru",
-    title: "Hosting y dominio .pe: S/ 110 al año y desde S/ 15 al mes",
+    title: "Hosting y dominio .pe en Perú: Cuánto cuesta cada año",
     h1: "¿Cuánto cuesta un hosting y un dominio .pe?",
     description:
       "Un dominio .pe cuesta S/ 110 al año en el registrador oficial (punto.pe, impuestos incluidos) y un hosting compartido peruano arranca en S/ 15.47 al mes. Precios verificados en setiembre de 2026.",
