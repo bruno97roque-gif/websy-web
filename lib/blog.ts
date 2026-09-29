@@ -190,7 +190,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Qué define realmente el precio de una tienda virtual en Perú y cómo saber cuánto invertir según tu negocio.",
     datePublished: "2026-06-19",
-    dateModified: "2026-08-12",
+    dateModified: "2026-09-02",
     category: "Ecommerce",
     readingMin: 6,
     intro:
@@ -252,7 +252,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Todo lo que necesitas para crear tu tienda online en Perú: plataforma, pagos, productos y lanzamiento.",
     datePublished: "2026-06-19",
-    dateModified: "2026-08-12",
+    dateModified: "2026-09-02",
     category: "Ecommerce",
     readingMin: 7,
     intro:
@@ -314,7 +314,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Comparativa clara entre Shopify y WooCommerce para elegir la plataforma correcta según tu negocio.",
     datePublished: "2026-06-19",
-    dateModified: "2026-08-12",
+    dateModified: "2026-09-02",
     category: "Ecommerce",
     readingMin: 6,
     intro:
@@ -373,7 +373,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Cómo aceptar Yape, Plin y tarjetas en tu tienda virtual y cuál pasarela conviene según tu negocio.",
     datePublished: "2026-06-19",
-    dateModified: "2026-08-12",
+    dateModified: "2026-09-02",
     category: "Ecommerce",
     readingMin: 5,
     intro:
@@ -429,7 +429,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Cuándo te basta una página web y cuándo necesitas una tienda virtual para vender online.",
     datePublished: "2026-06-19",
-    dateModified: "2026-08-12",
+    dateModified: "2026-09-02",
     category: "Web",
     readingMin: 5,
     intro:
@@ -479,7 +479,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Qué factores definen el precio de una página web profesional y qué debe incluir una cotización seria.",
     datePublished: "2026-06-19",
-    dateModified: "2026-08-12",
+    dateModified: "2026-09-02",
     category: "Web",
     readingMin: 5,
     intro:
@@ -534,7 +534,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Las claves de SEO para que tu tienda virtual aparezca en Google y atraiga clientes que ya quieren comprar.",
     datePublished: "2026-06-19",
-    dateModified: "2026-08-12",
+    dateModified: "2026-09-02",
     category: "SEO",
     readingMin: 6,
     intro:
@@ -589,26 +589,31 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Una guía simple para entender la diferencia entre una web, un sistema web y un software a medida.",
     datePublished: "2026-06-19",
-    dateModified: "2026-08-12",
+    dateModified: "2026-09-29",
     category: "Software",
     readingMin: 5,
     intro:
-      "Página web, sistema web y software a medida suenan parecido pero resuelven cosas distintas. Una web comunica y capta clientes; un sistema web automatiza un proceso; un software a medida es una plataforma completa para tu operación. Aquí cómo distinguirlos y elegir.",
+      "Sí, una página web es un software: es código que corre en un servidor y en tu navegador. Pero en el día a día los tres nombres se usan para cosas distintas. Una página web muestra tu negocio y capta clientes. Un sistema web es una aplicación que tu equipo usa desde el navegador para trabajar, con usuarios y datos guardados. Un software a medida es una plataforma completa hecha para tu operación.",
     sections: [
+      {
+        h2: "¿Una página web es un software?",
+        body:
+          "Técnicamente sí. Toda página web está hecha de código (HTML, CSS y JavaScript) que un servidor entrega y tu navegador ejecuta, y eso ya es software. La diferencia práctica está en lo que hace. Si solo muestra información, se le llama página web. Cuando guarda datos, pide usuario y contraseña y ejecuta procesos del negocio, como pedidos, stock o citas, pasa a llamarse sistema web o aplicación web.",
+      },
       {
         h2: "Página web: presencia y captación",
         body:
-          "Es la cara pública de tu negocio. Comunica qué haces y convierte visitas en contactos. No automatiza procesos internos; su trabajo es atraer y dar confianza. En Websy desarrollamos [sistemas de gestión ERP y CRM](/sistemas/gestion-erp-crm) adaptados a cada operación.",
+          "Es la cara pública de tu negocio. Comunica qué haces y convierte visitas en contactos. No automatiza procesos internos; su trabajo es atraer y dar confianza.",
       },
       {
         h2: "Sistema web: automatiza un proceso",
         body:
-          "Resuelve una tarea concreta: controlar inventario, registrar ventas, emitir comprobantes o coordinar a tu equipo. Reemplaza hojas de cálculo y trabajo manual, y se accede desde cualquier dispositivo. Si el stock se te descuadra cada semana, mira el [sistema de inventario y almacén](/sistemas/inventario).",
+          "Un sistema web es una aplicación que se abre desde el navegador, con usuarios y una base de datos, y resuelve una tarea concreta: controlar inventario, registrar ventas, emitir comprobantes o coordinar a tu equipo. Reemplaza hojas de cálculo y trabajo manual, y se accede desde cualquier dispositivo. Si el stock se te descuadra cada semana, mira el [sistema de inventario y almacén](/sistemas/inventario). Si todavía no sabes cuál te toca, en [sistemas web para empresas en Perú](/sistemas) comparamos los tres más pedidos.",
       },
       {
         h2: "Software a medida: plataforma completa",
         body:
-          "Cuando ningún programa del mercado encaja con tu forma de trabajar, se construye uno a tu medida: varios módulos, usuarios, reportes e integraciones, diseñado para tu operación específica. Todo esto se decide en la etapa de [desarrollo web](/desarrollo-web), antes de escribir la primera línea.",
+          "Cuando ningún programa del mercado encaja con tu forma de trabajar, se construye uno a tu medida: varios módulos, usuarios, reportes e integraciones, diseñado para tu operación específica, como un [sistema de gestión ERP o CRM](/sistemas/gestion-erp-crm) que junta ventas, clientes y reportes. Todo esto se decide en la etapa de [desarrollo web](/desarrollo-web), antes de escribir la primera línea.",
       },
       {
         h2: "¿Cómo saber cuál necesitas?",
@@ -620,6 +625,14 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     faqs: [
+      {
+        q: "¿Una página web es un software?",
+        a: "Sí. Es código que corre en un servidor y en el navegador. Se le sigue llamando página web mientras solo muestre información; cuando guarda datos y maneja procesos con usuarios, se le llama sistema web.",
+      },
+      {
+        q: "¿Qué es un sistema web?",
+        a: "Es una aplicación que se usa desde el navegador, sin instalar nada, para una tarea del negocio: inventario, ventas, facturación o citas. Tiene usuarios con permisos y guarda la información en una base de datos.",
+      },
       {
         q: "¿Un sistema web se integra con mi facturación electrónica?",
         a: "Sí. Integramos el sistema con facturación electrónica, pasarelas de pago, CRM u otras herramientas que ya uses.",
@@ -643,7 +656,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "No basta con subir productos. Estos son los elementos que separan una tienda que vende de una que solo existe.",
     datePublished: "2026-06-19",
-    dateModified: "2026-08-12",
+    dateModified: "2026-09-02",
     category: "Ecommerce",
     readingMin: 5,
     intro:
@@ -699,7 +712,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Por qué una tienda virtual deja de ser opcional: vende sola, llega más lejos y trabaja por ti las 24 horas.",
     datePublished: "2026-06-19",
-    dateModified: "2026-08-12",
+    dateModified: "2026-09-02",
     category: "Ecommerce",
     readingMin: 4,
     intro:
@@ -760,7 +773,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Los planes de Shopify van de USD 19 a USD 299 al mes. Esto es lo que pagas de verdad, comisiones peruanas incluidas.",
     datePublished: "2026-06-19",
-    dateModified: "2026-09-01",
+    dateModified: "2026-09-27",
     category: "Ecommerce",
     readingMin: 6,
     intro:
@@ -853,7 +866,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Por qué muchos negocios eligen WooCommerce: control total, sin mensualidad de plataforma y listo para crecer.",
     datePublished: "2026-06-19",
-    dateModified: "2026-08-12",
+    dateModified: "2026-09-02",
     category: "Ecommerce",
     readingMin: 4,
     intro:
@@ -901,7 +914,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Si reconoces estas señales, tu negocio probablemente ya necesita un sistema web a medida.",
     datePublished: "2026-06-19",
-    dateModified: "2026-08-12",
+    dateModified: "2026-09-02",
     category: "Software",
     readingMin: 5,
     intro:
@@ -953,7 +966,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Vender lo que no tienes ahuyenta clientes. Así se controla bien el stock de una tienda online.",
     datePublished: "2026-06-19",
-    dateModified: "2026-08-12",
+    dateModified: "2026-09-02",
     category: "Ecommerce",
     readingMin: 5,
     intro:
@@ -1052,7 +1065,7 @@ export const BLOG_POSTS: BlogPost[] = [
     description: "¿Cuánto tiempo toma hacer una página web? Conoce los plazos reales por tipo de web (landing, corporativa, con blog) y qué factores aceleran o retrasan tu proyecto.",
     excerpt: "Plazos reales para crear una página web en Perú según su tipo y complejidad, y cómo evitar que tu proyecto se retrase.",
     datePublished: "2026-06-20",
-    dateModified: "2026-08-12",
+    dateModified: "2026-09-02",
     category: "Páginas Web",
     readingMin: 6,
     intro: "El tiempo para hacer una página web en Perú depende del tipo y la complejidad: una landing simple puede estar lista en 1 a 2 semanas, una web corporativa en 2 a 4 semanas, y un proyecto con blog, multidioma o funciones avanzadas toma más. El factor que más influye es la rapidez con que el cliente entrega contenido y aprobaciones.",
@@ -1154,7 +1167,7 @@ export const BLOG_POSTS: BlogPost[] = [
     description: "¿Cuál es la diferencia entre página web y landing page? Conoce el objetivo, la estructura y cuándo usar cada una en tus campañas de Google Ads o Meta Ads en Perú.",
     excerpt: "Qué distingue a una página web de una landing page y cómo elegir la indicada para tu negocio o campaña.",
     datePublished: "2026-06-21",
-    dateModified: "2026-08-12",
+    dateModified: "2026-09-02",
     category: "Páginas Web",
     readingMin: 6,
     intro: "La diferencia entre una página web y una landing page está en su objetivo. Una página web informa sobre tu negocio y suele tener varias secciones para posicionarte en Google. Una landing page es una sola página enfocada en una acción concreta, ideal para campañas de Google Ads o Meta Ads. No compiten: se complementan.",
@@ -1253,7 +1266,7 @@ export const BLOG_POSTS: BlogPost[] = [
     description: "Cómo elegir una agencia de desarrollo web en Perú: qué revisar, qué preguntar y las señales de alerta antes de firmar tu proyecto.",
     excerpt: "Guía honesta para elegir una agencia de desarrollo web en Perú sin terminar amarrado ni perder tu inversión.",
     datePublished: "2026-06-22",
-    dateModified: "2026-08-12",
+    dateModified: "2026-09-02",
     category: "Agencia Web",
     readingMin: 7,
     intro: "Para elegir una agencia de desarrollo web en Perú, revisa su portafolio, confirma que la web sea autoadministrable, que el dominio y el código queden a tu nombre, y que el soporte post-venta esté por escrito. Desconfía de precios cerrados sin diagnóstico y de propuestas sin contrato. El acompañamiento es tan importante como el sitio.",
@@ -1499,7 +1512,7 @@ export const BLOG_POSTS: BlogPost[] = [
     description: "Software a medida vs software enlatado: diferencias, ventajas, costos a corto y largo plazo, y cómo saber cuándo tu negocio ya necesita una solución propia.",
     excerpt: "El software enlatado es rápido y económico al inicio; el software a medida se ajusta a tus procesos y crece contigo cuando tu negocio se vuelve único.",
     datePublished: "2026-06-21",
-    dateModified: "2026-08-12",
+    dateModified: "2026-09-02",
     category: "Software",
     readingMin: 7,
     intro: "El software enlatado es un producto listo para usar que sirve para muchos negocios a la vez, mientras que el software a medida se construye específicamente para tu empresa y tus procesos. El primero es rápido y económico al inicio; el segundo se adapta a ti y escala contigo. La decisión correcta depende de cuán únicos sean tus procesos.",
@@ -1616,7 +1629,7 @@ export const BLOG_POSTS: BlogPost[] = [
     description: "Aprende cómo tener presencia online para tu negocio en Perú: web propia, ficha de Google, redes y tienda online, paso a paso y de menos a más.",
     excerpt: "Una buena presencia online combina web propia, ficha de Google y redes; no dependas solo de redes sociales que no controlas.",
     datePublished: "2026-06-23",
-    dateModified: "2026-08-12",
+    dateModified: "2026-09-02",
     category: "Marketing Digital",
     readingMin: 6,
     intro: "Tener presencia online en Perú significa que tus clientes te encuentren y confíen en ti cuando te buscan en Google, redes o WhatsApp. No basta con tener un Instagram: lo ideal es combinar una web propia, una ficha de Google y redes activas, y sumar una tienda online si vendes. Aquí te explicamos cómo construirla de menos a más.",
@@ -1732,7 +1745,7 @@ export const BLOG_POSTS: BlogPost[] = [
     description: "Guía de facturación electrónica SUNAT para tu tienda online en Perú: boleta vs factura, cómo integrarla al confirmar el pago y por qué tu ecommerce la necesita.",
     excerpt: "Qué es la facturación electrónica SUNAT, boleta vs factura y cómo integrarla a tu tienda online para emitir comprobantes automáticos.",
     datePublished: "2026-06-22",
-    dateModified: "2026-08-12",
+    dateModified: "2026-09-02",
     category: "Ecommerce",
     readingMin: 7,
     intro: "La facturación electrónica es el sistema de la SUNAT que permite emitir boletas y facturas digitales con validez tributaria. Para tu tienda online no es opcional: te ordena, genera confianza en el comprador y te mantiene en regla. Lo ideal es integrarla a tu ecommerce para que el comprobante se emita solo, al confirmarse el pago.",
@@ -1840,7 +1853,7 @@ export const BLOG_POSTS: BlogPost[] = [
     description: "Cómo aceptar pagos con tarjeta en tu web en Perú: pasarelas como Niubiz, Izipay, Culqi y Mercado Pago, billeteras Yape y Plin, seguridad e integración.",
     excerpt: "Las pasarelas y billeteras para cobrar online en Perú, cómo funcionan y cómo integrarlas a tu tienda según tu volumen.",
     datePublished: "2026-06-24",
-    dateModified: "2026-06-24",
+    dateModified: "2026-09-02",
     category: "Pagos",
     readingMin: 7,
     intro: "Aceptar pagos con tarjeta en tu web en Perú es hoy más simple de lo que parece: con una pasarela como Niubiz, Izipay, Culqi o Mercado Pago puedes cobrar online en segundos. Sumando billeteras como Yape y Plin cubres a casi todo comprador peruano. La clave está en elegir según tu volumen e integrarla bien a tu tienda.",
@@ -1952,7 +1965,7 @@ export const BLOG_POSTS: BlogPost[] = [
     description: "Cómo registrar tu empresa gratis en Google Mi Negocio en Perú: crear y verificar tu ficha paso a paso, reseñas, fotos y SEO local para salir en el mapa.",
     excerpt: "Cómo crear, verificar y optimizar tu ficha de Google Mi Negocio para aparecer en el mapa y captar clientes locales en Perú.",
     datePublished: "2026-06-25",
-    dateModified: "2026-08-12",
+    dateModified: "2026-09-02",
     category: "SEO Local",
     readingMin: 7,
     intro: "Google Mi Negocio, hoy llamado Google Business Profile, es tu ficha gratuita en Google y Maps. Para empresas en Perú es decisiva: cuando alguien busca tu servicio cerca, esa ficha decide si apareces en el mapa y recibes la llamada. Bien optimizada con datos consistentes y reseñas, atrae clientes locales sin pagar publicidad.",
@@ -2075,7 +2088,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Por qué tu web no sale en Google todavía y los pasos concretos para posicionarla y empezar a recibir clientes.",
     datePublished: "2026-06-30",
-    dateModified: "2026-08-12",
+    dateModified: "2026-09-02",
     category: "SEO",
     readingMin: 8,
     intro:
@@ -2175,7 +2188,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "El canal que más convierte en Perú es WhatsApp. Así lo integras a tu tienda virtual para cerrar más ventas.",
     datePublished: "2026-07-02",
-    dateModified: "2026-08-12",
+    dateModified: "2026-09-02",
     category: "Ecommerce",
     readingMin: 7,
     intro:
@@ -2268,6 +2281,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "El Excel funciona hasta que empieza a costarte ventas y horas. Cuándo dar el salto a un sistema propio.",
     datePublished: "2026-07-03",
+    dateModified: "2026-09-02",
     category: "Software",
     readingMin: 7,
     intro:
@@ -2359,7 +2373,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Deja de pagar comisiones altas por cada pedido: una web propia con carta digital y pedidos directos.",
     datePublished: "2026-07-05",
-    dateModified: "2026-08-12",
+    dateModified: "2026-09-07",
     category: "Diseño web",
     readingMin: 7,
     intro:
@@ -2537,7 +2551,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Los pacientes buscan y eligen su médico en Google. Así debe ser la web de una clínica o consultorio.",
     datePublished: "2026-06-26",
-    dateModified: "2026-08-12",
+    dateModified: "2026-09-07",
     category: "Diseño web",
     readingMin: 6,
     intro:
@@ -2612,7 +2626,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Un cliente con un problema legal busca y elige rápido. Tu web debe transmitir autoridad y facilitar el contacto.",
     datePublished: "2026-06-28",
-    dateModified: "2026-08-12",
+    dateModified: "2026-09-02",
     category: "Diseño web",
     readingMin: 6,
     intro:
@@ -2687,7 +2701,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Vender un inmueble empieza en Google. Tu web debe mostrar proyectos y capturar leads calificados.",
     datePublished: "2026-07-01",
-    dateModified: "2026-08-12",
+    dateModified: "2026-09-07",
     category: "Diseño web",
     readingMin: 7,
     intro:
@@ -2762,7 +2776,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "El precio de un software a medida no es un número fijo. Esto es lo que realmente define cuánto invertir.",
     datePublished: "2026-07-07",
-    dateModified: "2026-08-11",
+    dateModified: "2026-09-02",
     category: "Software",
     readingMin: 7,
     intro:
@@ -2842,7 +2856,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Una web no termina cuando se publica. Esto es lo que cuesta mantenerla viva, segura y funcionando.",
     datePublished: "2026-07-07",
-    dateModified: "2026-08-12",
+    dateModified: "2026-09-02",
     category: "Web",
     readingMin: 6,
     intro:
@@ -2920,7 +2934,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Los nuevos socios te buscan en Google antes de entrar. Así debe ser la web de un gimnasio para captarlos.",
     datePublished: "2026-07-07",
-    dateModified: "2026-08-12",
+    dateModified: "2026-09-02",
     category: "Diseño web",
     readingMin: 6,
     intro:
@@ -2995,7 +3009,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Booking se queda con una comisión de cada reserva. Una web propia te trae huéspedes directos, sin intermediarios.",
     datePublished: "2026-07-08",
-    dateModified: "2026-08-12",
+    dateModified: "2026-09-02",
     category: "Diseño web",
     readingMin: 7,
     intro:
@@ -3145,7 +3159,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Yape y Plin son los medios que todos usan en Perú. Así se integran bien en tu tienda para vender más.",
     datePublished: "2026-07-08",
-    dateModified: "2026-08-12",
+    dateModified: "2026-09-02",
     category: "Pagos",
     readingMin: 6,
     intro:
@@ -3218,7 +3232,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Las dos pasarelas de tarjetas más usadas de Perú, comparadas para que elijas la correcta para tu tienda.",
     datePublished: "2026-07-08",
-    dateModified: "2026-08-12",
+    dateModified: "2026-09-02",
     category: "Pagos",
     readingMin: 6,
     intro:
@@ -3294,7 +3308,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "El SEO no se cobra igual que una web. Aquí cómo se cobra, qué incluye y por qué es inversión, no gasto.",
     datePublished: "2026-07-08",
-    dateModified: "2026-08-12",
+    dateModified: "2026-09-02",
     category: "SEO",
     readingMin: 7,
     intro:
@@ -3374,7 +3388,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "El branding no es solo un logo bonito: es cómo te percibe tu cliente y por qué te elige a ti y no al de al lado.",
     datePublished: "2026-07-08",
-    dateModified: "2026-08-12",
+    dateModified: "2026-09-02",
     category: "Marketing",
     readingMin: 6,
     intro:
@@ -3435,7 +3449,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Branding e identidad de marca", href: "/branding", desc: "Marca sólida que genera confianza y te diferencia." },
       { label: "Diseño de páginas web", href: "/diseno-de-paginas-web", desc: "Una web alineada con tu identidad de marca." },
       { label: "Cotiza tu proyecto", href: "/cotizacion", desc: "Branding y web como proyecto integrado." },
-      { label: "Manual de marca: qué es y qué incluye", href: "/blog/manual-de-marca-que-es-y-por-que-tu-negocio-lo-necesita", desc: "Un manual de marca evita que tu negocio se vea distinto en cada pieza." },
+      { label: "Qué es un manual de marca y qué debe incluir", href: "/blog/manual-de-marca-que-es-y-por-que-tu-negocio-lo-necesita", desc: "Un manual de marca evita que tu negocio se vea distinto en cada pieza." },
     ],
   },
 
@@ -3448,7 +3462,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Uno trae clientes hoy pagando; el otro los trae gratis pero tarda. La verdad es que se complementan.",
     datePublished: "2026-07-08",
-    dateModified: "2026-08-12",
+    dateModified: "2026-09-02",
     category: "Marketing",
     readingMin: 7,
     intro:
@@ -3502,7 +3516,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Google Ads", href: "/google-ads", desc: "Clientes desde el primer día con campañas medidas." },
       { label: "SEO y posicionamiento", href: "/seo", desc: "Tráfico que crece y no depende de pagar por clic." },
       { label: "Google Ads para pymes", href: "/blog/google-ads-para-pymes-en-peru-cuanto-invertir", desc: "Cuánto invertir y cómo no botar la plata." },
-      { label: "Manual de marca: qué es y qué incluye", href: "/blog/manual-de-marca-que-es-y-por-que-tu-negocio-lo-necesita", desc: "Un manual de marca evita que tu negocio se vea distinto en cada pieza." },
+      { label: "Qué es un manual de marca y qué debe incluir", href: "/blog/manual-de-marca-que-es-y-por-que-tu-negocio-lo-necesita", desc: "Un manual de marca evita que tu negocio se vea distinto en cada pieza." },
     ],
   },
 
@@ -3515,7 +3529,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Mercado Libre te da alcance pero se queda con tu comisión y tu cliente. Cuándo conviene tu tienda propia.",
     datePublished: "2026-07-08",
-    dateModified: "2026-08-12",
+    dateModified: "2026-09-02",
     category: "Ecommerce",
     readingMin: 7,
     intro:
@@ -3587,7 +3601,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Rediseñar o cambiar de web puede hundir tu tráfico si se hace mal. Así se migra sin perder tus posiciones.",
     datePublished: "2026-07-08",
-    dateModified: "2026-08-12",
+    dateModified: "2026-09-02",
     category: "SEO",
     readingMin: 7,
     intro:
@@ -3665,7 +3679,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "La mayoría busca servicios 'cerca de mí'. Así logras que tu negocio aparezca primero en tu ciudad o distrito.",
     datePublished: "2026-07-08",
-    dateModified: "2026-08-12",
+    dateModified: "2026-09-07",
     category: "SEO Local",
     readingMin: 7,
     intro:
@@ -3743,7 +3757,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "El SEO on-page es lo que sí controlas de tu web. Esta checklist cubre lo esencial para posicionar mejor.",
     datePublished: "2026-07-08",
-    dateModified: "2026-08-12",
+    dateModified: "2026-09-02",
     category: "SEO",
     readingMin: 7,
     intro:
@@ -3821,7 +3835,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Una campaña de Ads bien estructurada rinde el doble con el mismo presupuesto. Así se arma paso a paso.",
     datePublished: "2026-07-08",
-    dateModified: "2026-08-12",
+    dateModified: "2026-09-07",
     category: "Marketing",
     readingMin: 8,
     intro:
@@ -3898,7 +3912,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Cada clic que no te sirve es plata perdida. Las palabras clave negativas son el freno que casi nadie usa bien.",
     datePublished: "2026-07-08",
-    dateModified: "2026-08-12",
+    dateModified: "2026-09-02",
     category: "Marketing",
     readingMin: 6,
     intro:
@@ -3971,7 +3985,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Un logo no es solo un dibujo bonito. Esto define su precio y qué debe incluir un trabajo serio.",
     datePublished: "2026-07-08",
-    dateModified: "2026-08-12",
+    dateModified: "2026-09-02",
     category: "Marketing",
     readingMin: 6,
     intro:
@@ -4037,14 +4051,14 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "manual-de-marca-que-es-y-por-que-tu-negocio-lo-necesita",
-    title: "Manual de marca: qué es y qué incluye",
+    title: "Qué es un manual de marca y qué debe incluir",
     h1: "Manual de marca: qué es y por qué lo necesitas",
     description:
       "Qué es un manual de marca y por qué tu negocio en Perú lo necesita: reglas de logo, colores, tipografía y tono para verte coherente en todos lados.",
     excerpt:
       "Un manual de marca evita que tu negocio se vea distinto en cada pieza. Esto es lo que incluye y para qué sirve.",
     datePublished: "2026-07-08",
-    dateModified: "2026-08-12",
+    dateModified: "2026-09-29",
     category: "Marketing",
     readingMin: 6,
     intro:
@@ -4118,7 +4132,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Un dominio .pe cuesta S/ 110 al año y un hosting compartido desde S/ 15.47 al mes. Aquí los precios reales, de dónde salen y cuál necesita tu negocio.",
     datePublished: "2026-07-08",
-    dateModified: "2026-09-23",
+    dateModified: "2026-09-27",
     category: "Web",
     readingMin: 6,
     intro:
@@ -4231,7 +4245,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Los pacientes eligen a su dentista por internet. Así debe ser la web de un consultorio o clínica dental.",
     datePublished: "2026-07-08",
-    dateModified: "2026-08-12",
+    dateModified: "2026-09-07",
     category: "Diseño web",
     readingMin: 6,
     intro:
@@ -4306,7 +4320,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Cada paso para montar tu tienda Shopify en Perú: desde la cuenta hasta el lanzamiento, con pagos locales configurados.",
     datePublished: "2026-07-08",
-    dateModified: "2026-08-12",
+    dateModified: "2026-09-16",
     category: "Ecommerce",
     readingMin: 8,
     intro:
@@ -4387,7 +4401,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Yape y Plin son casi obligatorios para vender en Perú. Así los integras en tu tienda Shopify sin perder ventas.",
     datePublished: "2026-07-08",
-    dateModified: "2026-07-08",
+    dateModified: "2026-09-02",
     category: "Pagos",
     readingMin: 6,
     intro:
@@ -4460,7 +4474,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "No necesitas 30 apps. Estas son las categorías de apps de Shopify que sí mueven tus ventas en Perú.",
     datePublished: "2026-07-08",
-    dateModified: "2026-08-12",
+    dateModified: "2026-09-02",
     category: "Ecommerce",
     readingMin: 6,
     intro:
@@ -4535,7 +4549,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Vender ropa online tiene sus reglas: tallas, fotos y cambios. Así se arma una tienda Shopify de moda que vende.",
     datePublished: "2026-07-08",
-    dateModified: "2026-08-12",
+    dateModified: "2026-09-02",
     category: "Ecommerce",
     readingMin: 6,
     intro:
@@ -4611,7 +4625,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Skincare, maquillaje y cuidado personal venden online con la tienda correcta. Así se arma en Shopify.",
     datePublished: "2026-07-08",
-    dateModified: "2026-08-12",
+    dateModified: "2026-09-02",
     category: "Ecommerce",
     readingMin: 6,
     intro:
@@ -4682,7 +4696,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Si tienes una pyme y evalúas Shopify, esto es lo que debes sopesar antes de invertir: pros, costos y cuándo conviene.",
     datePublished: "2026-07-08",
-    dateModified: "2026-07-08",
+    dateModified: "2026-09-16",
     category: "Ecommerce",
     readingMin: 6,
     intro:
@@ -4758,7 +4772,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Estos errores hunden las ventas de muchas tiendas Shopify. Detéctalos a tiempo y evita perder clientes.",
     datePublished: "2026-07-08",
-    dateModified: "2026-08-12",
+    dateModified: "2026-09-02",
     category: "Ecommerce",
     readingMin: 6,
     intro:
@@ -4840,7 +4854,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Tener una tienda Shopify no basta si nadie la encuentra. Así se posiciona en Google, paso a paso.",
     datePublished: "2026-07-08",
-    dateModified: "2026-08-12",
+    dateModified: "2026-09-02",
     category: "SEO",
     readingMin: 7,
     intro:
@@ -5054,7 +5068,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Una plantilla es rápida y barata; una web a medida es única y escalable. Aquí las diferencias reales en SEO, velocidad y crecimiento para que elijas bien.",
     datePublished: "2026-07-27",
-    dateModified: "2026-08-12",
+    dateModified: "2026-09-02",
     category: "Diseño web",
     readingMin: 7,
     intro:
@@ -5124,7 +5138,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Si tu equipo pierde horas en tareas manuales y errores de Excel, es momento de automatizar. Aquí qué procesos delegar a un sistema y por dónde empezar.",
     datePublished: "2026-07-27",
-    dateModified: "2026-08-12",
+    dateModified: "2026-09-02",
     category: "Software",
     readingMin: 7,
     intro:
@@ -5285,7 +5299,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "La mayoría de carritos se pierde en el último paso, y casi siempre por lo mismo: sorpresas de precio y fricción al pagar.",
     datePublished: "2026-08-12",
-    dateModified: "2026-08-12",
+    dateModified: "2026-09-02",
     category: "Ecommerce",
     readingMin: 7,
     intro:
@@ -5454,7 +5468,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Dos pasarelas muy usadas en Perú, con lógicas distintas. Qué mirar antes de elegir y en qué escenario conviene cada una.",
     datePublished: "2026-08-12",
-    dateModified: "2026-08-12",
+    dateModified: "2026-09-02",
     category: "Pagos",
     readingMin: 8,
     intro:
@@ -5537,7 +5551,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Agendar por WhatsApp funciona hasta que se cruzan dos citas. Qué resuelve un sistema de reservas propio y cuándo se justifica.",
     datePublished: "2026-08-12",
-    dateModified: "2026-08-12",
+    dateModified: "2026-09-02",
     category: "Software",
     readingMin: 7,
     intro:
@@ -5698,7 +5712,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Un POS se juzga en la hora punta. Qué debe resolver, qué exige SUNAT y cuándo conviene uno hecho a tu medida.",
     datePublished: "2026-08-12",
-    dateModified: "2026-08-12",
+    dateModified: "2026-09-02",
     category: "Software",
     readingMin: 7,
     intro:
@@ -5850,6 +5864,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "El hosting barato sale caro cuando la web se cae un lunes de campaña. Esto es lo que hay que mirar antes de contratar.",
     datePublished: "2026-08-26",
+    dateModified: "2026-09-08",
     category: "Web",
     readingMin: 7,
     intro:
@@ -5925,6 +5940,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Registrar un .pe tiene sus reglas propias. Aquí está el trámite completo, de la búsqueda del nombre a la web funcionando.",
     datePublished: "2026-08-26",
+    dateModified: "2026-09-08",
     category: "Web",
     readingMin: 6,
     intro:
@@ -6001,6 +6017,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Afiliación, credenciales y pruebas: el camino completo para empezar a cobrar con tarjeta usando Niubiz.",
     datePublished: "2026-08-26",
+    dateModified: "2026-09-02",
     category: "Pagos",
     readingMin: 7,
     intro:
@@ -6078,6 +6095,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Desde el botón de pago más simple hasta la integración completa en tu checkout: las dos formas y cuál te conviene.",
     datePublished: "2026-08-26",
+    dateModified: "2026-09-02",
     category: "Pagos",
     readingMin: 6,
     intro:
@@ -6154,6 +6172,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "RUC, comprobantes, cobros, envíos y web. El checklist completo, en el orden que conviene hacerlo.",
     datePublished: "2026-08-26",
+    dateModified: "2026-09-02",
     category: "Ecommerce",
     readingMin: 8,
     intro:
@@ -6236,6 +6255,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Es el candado del navegador. Sin él Chrome avisa a tus visitantes de que tu sitio no es seguro, y Google lo nota.",
     datePublished: "2026-08-26",
+    dateModified: "2026-09-02",
     category: "Web",
     readingMin: 5,
     intro:
@@ -6502,6 +6522,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Vendiste S/ 5.000 y te depositaron S/ 4.700. No es un error: es la conciliación. Aquí de dónde sale cada diferencia y cómo se controla.",
     datePublished: "2026-09-02",
+    dateModified: "2026-09-08",
     category: "Software",
     readingMin: 7,
     intro:
@@ -6588,6 +6609,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Dos presupuestos por el mismo trabajo pueden diferir tres veces. Casi siempre la diferencia está en lo que uno de los dos no dice.",
     datePublished: "2026-09-02",
+    dateModified: "2026-09-08",
     category: "Agencia Web",
     readingMin: 7,
     intro:
@@ -6676,6 +6698,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "La pregunta que casi nadie hace antes de firmar y que decide si dentro de dos años puedes cambiar de proveedor o no.",
     datePublished: "2026-09-02",
+    dateModified: "2026-09-08",
     category: "Agencia Web",
     readingMin: 6,
     intro:
