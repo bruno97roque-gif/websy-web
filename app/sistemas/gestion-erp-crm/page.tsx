@@ -44,7 +44,7 @@ export default function SistemaErpCrmPage() {
         {
           h2: "CRM: que ningún cliente se enfríe",
           body:
-            "Centraliza contactos, oportunidades y seguimientos. Tu equipo sabe con quién hablar, cuándo y qué se prometió, sin depender de la memoria de cada vendedor.",
+            "Centraliza contactos, oportunidades y seguimientos. Tu equipo sabe con quién hablar, cuándo y qué se prometió, sin depender de la memoria de cada vendedor. Si lo que necesitas es solo la parte comercial, mira el [desarrollo de CRM a medida](/sistemas/crm-a-medida).",
         },
         {
           h2: "Intranet e integraciones",
@@ -72,6 +72,11 @@ export default function SistemaErpCrmPage() {
             "Casi ninguna empresa necesita todos los módulos a la vez, y quien intenta arrancar con todo termina sin nada en producción. El orden que mejor funciona es empezar por el proceso que hoy te hace perder dinero de forma medible —el que genera reclamos, retrabajo o descuadres— y recién después sumar lo que lo alimenta. Un primer módulo en uso real vale más que un plan completo en un documento: enseña cómo trabaja de verdad el equipo y corrige los supuestos del resto antes de que cuesten caro.",
         },
         {
+          h2: "Cuánto cuesta un ERP a medida",
+          body:
+            "Como referencia, un software a medida tipo ERP parte en Websy desde S/ 20,000 a S/ 25,000. Un ejemplo de ese rango es un sistema hotelero: reservas, estado de habitaciones, caja y reportes en una sola plataforma. El monto final depende de cuántos módulos entren en la primera etapa, cuántos usuarios y sedes lo usen y con qué sistemas tenga que conectarse. Los montos indicados son referenciales; la cifra exacta va por escrito en la propuesta.",
+        },
+        {
           h2: "Cómo es el proceso de desarrollo",
           body:
             "Se levanta el proceso actual con quien lo ejecuta —no solo con la gerencia—, se define el alcance por escrito, se desarrolla por módulos con entregas revisables, se migran los datos que ya tienes y se capacita por rol antes de salir en vivo. Después queda el acompañamiento, que en un sistema de gestión pesa más que en una web: los primeros meses de uso real siempre revelan ajustes. Si tu punto de partida es el stock, míralo junto al [sistema de inventario](/sistemas/inventario); si es la caja, con el [sistema de ventas y facturación](/sistemas/ventas-y-facturacion).",
@@ -95,6 +100,7 @@ export default function SistemaErpCrmPage() {
         },
       ]}
       related={[
+        { label: "CRM a medida", href: "/sistemas/crm-a-medida", desc: "Solo la parte comercial: clientes, embudo y cotizaciones." },
         { label: "Sistemas web: cuál necesitas", href: "/sistemas", desc: "Compara inventario, facturación y gestión, y elige por dónde empezar." },
         { label: "Software a medida", href: "/desarrollo-de-software-a-medida", desc: "Vuelve al pilar y mira todos los sistemas que desarrollamos." },
         { label: "Sistema de ventas y facturación", href: "/sistemas/ventas-y-facturacion", desc: "Suma ventas y comprobantes a tu gestión." },
@@ -103,6 +109,10 @@ export default function SistemaErpCrmPage() {
         {
           q: "¿Qué diferencia hay entre un ERP y un CRM?",
           a: "Un ERP integra la gestión interna (ventas, compras, inventario, procesos); un CRM se enfoca en la relación con tus clientes y el seguimiento comercial. Podemos desarrollarlos por separado o como una sola plataforma.",
+        },
+        {
+          q: "¿Cuánto cuesta desarrollar un ERP a medida en Perú?",
+          a: "En Websy, un ERP a medida parte desde S/ 20,000 a S/ 25,000; por ejemplo, un sistema hotelero con reservas, habitaciones, caja y reportes. Los montos indicados son referenciales y varían según los módulos, usuarios e integraciones.",
         },
         {
           q: "¿Se integra con sistemas que ya uso?",

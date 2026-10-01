@@ -94,6 +94,7 @@ export default function SistemasPage() {
         { label: "Sistema de inventario y stock", href: "/sistemas/inventario", desc: "Entradas, salidas, multi-almacén y alertas de quiebre en tiempo real." },
         { label: "Sistema de ventas y facturación", href: "/sistemas/ventas-y-facturacion", desc: "Vende, cobra y emite comprobantes electrónicos en un solo flujo." },
         { label: "Sistema de gestión (ERP / CRM)", href: "/sistemas/gestion-erp-crm", desc: "Centraliza operación, clientes y reportes en un solo panel." },
+        { label: "CRM a medida", href: "/sistemas/crm-a-medida", desc: "Tu propio sistema de clientes, cotizaciones y seguimiento de ventas." },
         { label: "Desarrollo de software a medida", href: "/desarrollo-de-software-a-medida", desc: "Cuando tu proceso no entra en ningún sistema del mercado." },
         { label: "Precios y cotización", href: "/precios", desc: "Qué define el precio de un sistema y cómo arrancar por etapas." },
       ]}
