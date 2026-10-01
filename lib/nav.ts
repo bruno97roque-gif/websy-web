@@ -11,7 +11,7 @@ export type NavLink = {
 
 /** Pilares y landings de servicio (silo de dinero). */
 export const SERVICE_LINKS: NavLink[] = [
-  { label: "Tiendas Virtuales", href: "/tiendas-virtuales", desc: "desarrollo de tiendas online autoadministrables con pasarela de pago (Yape, Plin, Niubiz, Izipay) y control de stock." },
+  { label: "Tiendas Virtuales", href: "/tiendas-virtuales", desc: "desarrollo de tiendas online autoadministrables con pasarela de pago (Yape, Plin, Niubiz, Izipay) y control de stock; desde S/ 2,500 (referencial)." },
   { label: "Tiendas Shopify", href: "/tiendas-virtuales/shopify", desc: "tiendas sobre Shopify, listas para vender rápido con pagos locales." },
   { label: "Migrar a Shopify", href: "/tiendas-virtuales/shopify/migracion", desc: "migración a Shopify desde WooCommerce, Wix o Tiendanube conservando productos, clientes y posicionamiento." },
   { label: "Costos de una Tienda Shopify", href: "/tiendas-virtuales/shopify/costos", desc: "qué define el precio de una tienda Shopify en Perú y qué costos recurrentes se suman cada mes." },
@@ -20,6 +20,7 @@ export const SERVICE_LINKS: NavLink[] = [
   { label: "Diseño de Páginas Web", href: "/diseno-de-paginas-web", desc: "páginas web profesionales, responsive y optimizadas para captar clientes." },
   { label: "Software a Medida", href: "/desarrollo-de-software-a-medida", desc: "software a medida para empresas en Perú: aplicaciones web y móviles, CRM, ERP, SaaS y sistemas web, con precios referenciales desde S/ 15,000." },
   { label: "Aplicaciones Móviles", href: "/desarrollo-de-aplicaciones-moviles", desc: "apps a medida para Android e iOS, con panel de administración, pagos con Yape y Plin y publicación en las tiendas; desde S/ 15,000 (referencial)." },
+  { label: "Aplicaciones Web", href: "/desarrollo-de-aplicaciones-web", desc: "aplicaciones web a medida: portales de clientes, reservas en línea, marketplaces y web apps (PWA) con usuarios y pagos; desde S/ 15,000 (referencial)." },
   { label: "Desarrollo de SaaS", href: "/desarrollo-de-saas", desc: "plataformas SaaS que se venden por suscripción: cuentas por empresa, planes y cobro recurrente; desde S/ 20,000 a S/ 30,000 (referencial)." },
   { label: "Sistemas Web", href: "/sistemas", desc: "qué es un sistema web, qué tipos hay y cuál necesita tu empresa: inventario, ventas y facturación o gestión ERP/CRM." },
   { label: "Sistema de Inventario", href: "/sistemas/inventario", desc: "sistema de inventario y almacén a medida: stock en tiempo real, kardex y alertas de quiebre." },
@@ -80,7 +81,7 @@ export type SitemapEntry = {
  * Regla al editar una página: sube su fecha aquí, y solo esa.
  */
 export const SERVICE_SITEMAP: SitemapEntry[] = [
-  { path: "/tiendas-virtuales", priority: 0.9, lastModified: "2026-09-16" },
+  { path: "/tiendas-virtuales", priority: 0.9, lastModified: "2026-10-01" },
   { path: "/tiendas-virtuales/shopify", priority: 0.9, lastModified: "2026-09-16" },
   { path: "/tiendas-virtuales/shopify/migracion", priority: 0.8, lastModified: "2026-08-12" },
   { path: "/tiendas-virtuales/shopify/costos", priority: 0.8, lastModified: "2026-09-16" },
@@ -90,6 +91,7 @@ export const SERVICE_SITEMAP: SitemapEntry[] = [
   { path: "/desarrollo-de-software-a-medida", priority: 0.9, lastModified: "2026-10-01" },
   { path: "/desarrollo-de-aplicaciones-moviles", priority: 0.9, lastModified: "2026-10-01" },
   { path: "/desarrollo-de-saas", priority: 0.9, lastModified: "2026-10-01" },
+  { path: "/desarrollo-de-aplicaciones-web", priority: 0.9, lastModified: "2026-10-01" },
   // Silo de software por tipo de sistema (hijas del hub /sistemas).
   { path: "/sistemas", priority: 0.9, lastModified: "2026-09-23" },
   { path: "/sistemas/inventario", priority: 0.8, lastModified: "2026-09-23" },
@@ -115,7 +117,7 @@ export const SERVICE_SITEMAP: SitemapEntry[] = [
 
 /** Páginas fijas (institucionales). Misma regla de `lastModified` que arriba. */
 export const FIXED_SITEMAP: SitemapEntry[] = [
-  { path: "", priority: 1, lastModified: "2026-09-23" },
+  { path: "", priority: 1, lastModified: "2026-10-01" },
   { path: "/servicios", priority: 0.7, lastModified: "2026-08-12" },
   { path: "/nosotros", priority: 0.6, lastModified: "2026-07-31" },
   { path: "/contacto", priority: 0.6, lastModified: "2026-08-12" },

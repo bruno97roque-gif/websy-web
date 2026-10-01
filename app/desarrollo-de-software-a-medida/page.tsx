@@ -42,7 +42,7 @@ export default function SoftwareAMedidaPage() {
         {
           h2: "Qué software desarrollamos",
           bullets: [
-            "Aplicaciones web: portales de clientes, paneles de pedidos y plataformas internas que se usan desde el navegador.",
+            "[Aplicaciones web](/desarrollo-de-aplicaciones-web): portales de clientes, paneles de pedidos y plataformas internas que se usan desde el navegador.",
             "[Aplicaciones móviles](/desarrollo-de-aplicaciones-moviles) para celulares Android e iOS, para tus clientes o para tu equipo en campo.",
             "[CRM a medida](/sistemas/crm-a-medida) para registrar clientes, cotizaciones y seguimiento de ventas a tu manera.",
             "[ERP a medida](/sistemas/gestion-erp-crm) que integra ventas, compras, stock, caja y reportes; por ejemplo, un sistema hotelero.",
@@ -123,6 +123,7 @@ export default function SoftwareAMedidaPage() {
         },
       ]}
       related={[
+        { label: "Aplicaciones web", href: "/desarrollo-de-aplicaciones-web", desc: "Portales de clientes, reservas en línea y web apps." },
         { label: "Aplicaciones móviles", href: "/desarrollo-de-aplicaciones-moviles", desc: "Apps para Android e iOS para tus clientes o tu equipo." },
         { label: "Desarrollo de SaaS", href: "/desarrollo-de-saas", desc: "Tu propio software para vender por suscripción a otras empresas." },
         { label: "CRM a medida", href: "/sistemas/crm-a-medida", desc: "Tu propio sistema de clientes y seguimiento de ventas." },

@@ -186,15 +186,15 @@ export const BLOG_POSTS: BlogPost[] = [
     title: "Cuánto cuesta una tienda virtual en Perú (2026)",
     h1: "¿Cuánto cuesta una tienda virtual en Perú?",
     description:
-      "¿Cuánto cuesta una tienda virtual en Perú en 2026? Qué define el precio de un ecommerce, qué incluye y cómo cotizar tu tienda online sin sorpresas.",
+      "¿Cuánto cuesta una tienda virtual en Perú en 2026? Desde cuánto parte (monto referencial), qué define el precio de un ecommerce y cómo cotizarlo sin sorpresas.",
     excerpt:
       "Qué define realmente el precio de una tienda virtual en Perú y cómo saber cuánto invertir según tu negocio.",
     datePublished: "2026-06-19",
-    dateModified: "2026-09-02",
+    dateModified: "2026-10-01",
     category: "Ecommerce",
     readingMin: 6,
     intro:
-      "El precio de una tienda virtual en Perú no es un número fijo: depende de la cantidad de productos, las pasarelas de pago, la plataforma y las integraciones. En esta guía verás qué factores mueven el costo y cómo pedir una cotización clara para tu ecommerce.",
+      "En Websy, una tienda virtual parte desde S/ 2,500 como monto referencial. El precio final depende de la cantidad de productos, las pasarelas de pago, la plataforma y las integraciones. En esta guía verás qué factores mueven el costo y cómo pedir una cotización clara para tu ecommerce.",
     sections: [
       {
         h2: "Qué define el precio de una tienda virtual",
@@ -227,6 +227,10 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         q: "¿Qué es más barato, Shopify o WooCommerce?",
         a: "WooCommerce suele tener menor costo recurrente porque no cobra mensualidad de plataforma, pero Shopify te ahorra tiempo y preocupaciones técnicas. La mejor opción depende de tu operación; en la cotización te recomendamos la correcta.",
+      },
+      {
+        q: "¿Desde cuánto cuesta una tienda virtual con Websy?",
+        a: "Desde S/ 2,500, que es la tienda más pedida: autoadministrable, con catálogo y pasarelas de pago locales. Los montos indicados son referenciales y suben según productos, plataforma e integraciones.",
       },
       {
         q: "¿Cómo obtengo el precio para mi caso?",
@@ -1413,7 +1417,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         h2: "Desde cuánto parte el desarrollo de una app en Websy",
-        body: "Para que tengas un punto de partida antes de pedir una propuesta: una app para celulares, o una aplicación web que se usa desde el navegador, parte desde S/ 15,000. Si lo que quieres es un software que vas a vender por suscripción a otras empresas, eso ya es una plataforma SaaS y parte desde S/ 20,000 a S/ 30,000. Lo que incluye cada servicio está en [desarrollo de aplicaciones móviles](/desarrollo-de-aplicaciones-moviles) y, para aplicaciones web, en [desarrollo de software a medida](/desarrollo-de-software-a-medida).",
+        body: "Para que tengas un punto de partida antes de pedir una propuesta: una app para celulares, o una aplicación web que se usa desde el navegador, parte desde S/ 15,000. Si lo que quieres es un software que vas a vender por suscripción a otras empresas, eso ya es una plataforma SaaS y parte desde S/ 20,000 a S/ 30,000. Lo que incluye cada servicio está en [desarrollo de aplicaciones móviles](/desarrollo-de-aplicaciones-moviles) y [desarrollo de aplicaciones web](/desarrollo-de-aplicaciones-web).",
         table: {
           cabeceras: ["Proyecto", "Desde (referencial)"],
           filas: [
