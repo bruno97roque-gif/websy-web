@@ -1369,18 +1369,19 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: "cuanto-cuesta-una-aplicacion-movil-en-peru",
     title: "Cuánto cuesta una aplicación móvil en Perú",
     h1: "¿Cuánto cuesta una aplicación móvil en Perú?",
-    description: "Cuánto cuesta una app en Perú: los costos fijos de publicar (Apple 99 USD/año, Google Play 25 USD), las comisiones de las tiendas y qué define el desarrollo.",
+    description: "Cuánto cuesta una app en Perú: desde cuánto parte el desarrollo (referencial), los costos fijos de publicar en Apple y Google Play y las comisiones de las tiendas.",
     excerpt: "Publicar cuesta 99 USD al año en Apple y 25 USD una vez en Google Play. El desarrollo es lo que varía, y aquí está por qué.",
     datePublished: "2026-06-20",
-    dateModified: "2026-09-01",
+    dateModified: "2026-10-01",
     category: "Software",
     readingMin: 7,
     /* La intro es el fragmento que Google enseña en la búsqueda, y empezaba
        diciendo «no es un número fijo» a una consulta que pregunta cuánto:
        la página estaba en el puesto 3 y perdió 5 de sus 6 clics en agosto de
        2026 contra dos rivales que publicaron tablas de precios. Ahora abre con
-       las cifras que sí se pueden verificar. */
-    intro: "Publicar una app en Perú tiene dos costos fijos y conocidos: la cuota del Apple Developer Program, 99 USD al año, y el registro en Google Play, 25 USD por única vez (importes oficiales comprobados el 1 de septiembre de 2026). Lo que varía es el desarrollo, y varía mucho: depende de si es para iOS, Android o ambas, de las funciones, del backend y de las integraciones.",
+       las cifras que sí se pueden verificar. Desde octubre de 2026 incluye
+       también el monto de partida del desarrollo que informó Websy. */
+    intro: "Publicar una app en Perú tiene dos costos fijos: 99 USD al año en Apple y 25 USD por única vez en Google Play (importes oficiales comprobados el 1 de septiembre de 2026). El desarrollo es lo que varía: en Websy parte desde S/ 15,000 como monto referencial y sube según las plataformas, las funciones, el backend y las integraciones.",
     sections: [
       {
         h2: "Los costos fijos: qué cobran Apple y Google por publicar tu app",
@@ -1409,6 +1410,19 @@ export const BLOG_POSTS: BlogPost[] = [
           "Integraciones: pasarelas como Culqi, Izipay, Niubiz o Mercado Pago, APIs externas y facturación SUNAT.",
           "Diseño UX/UI: cuánto se invierte en una interfaz pulida, accesible y alineada a tu marca."
         ]
+      },
+      {
+        h2: "Desde cuánto parte el desarrollo de una app en Websy",
+        body: "Para que tengas un punto de partida antes de pedir una propuesta: una app para celulares, o una aplicación web que se usa desde el navegador, parte desde S/ 15,000. Si lo que quieres es un software que vas a vender por suscripción a otras empresas, eso ya es una plataforma SaaS y parte desde S/ 20,000 a S/ 30,000. Lo que incluye cada servicio está en [desarrollo de aplicaciones móviles](/desarrollo-de-aplicaciones-moviles) y, para aplicaciones web, en [desarrollo de software a medida](/desarrollo-de-software-a-medida).",
+        table: {
+          cabeceras: ["Proyecto", "Desde (referencial)"],
+          filas: [
+            ["App móvil para Android e iOS", "S/ 15,000"],
+            ["Aplicación web (incluida una web app o PWA)", "S/ 15,000"],
+            ["Plataforma SaaS", "S/ 20,000 a S/ 30,000"],
+          ],
+          nota: "Los precios son referenciales y varían según el alcance del proyecto. Montos en soles informados por Websy en octubre de 2026; no incluyen las cuotas de Apple y Google Play de la tabla anterior.",
+        },
       },
       {
         h2: "App nativa vs híbrida: cómo impacta en el costo",
@@ -2772,18 +2786,33 @@ export const BLOG_POSTS: BlogPost[] = [
     title: "Cuánto cuesta un software a medida en Perú (2026)",
     h1: "¿Cuánto cuesta un software a medida en Perú?",
     description:
-      "Cuánto cuesta un software a medida en Perú en 2026: qué factores definen el precio, cómo se cotiza por módulos y por qué es una inversión que se paga sola.",
+      "Cuánto cuesta un software a medida en Perú en 2026: desde cuánto parte una app, un ERP o un SaaS (montos referenciales), qué mueve el precio y cómo cotizar.",
     excerpt:
-      "El precio de un software a medida no es un número fijo. Esto es lo que realmente define cuánto invertir.",
+      "Desde cuánto parte una app, un ERP o un SaaS en Websy, y qué hace que el precio suba o baje.",
     datePublished: "2026-07-07",
-    dateModified: "2026-09-02",
+    dateModified: "2026-10-01",
     category: "Software",
     readingMin: 7,
     intro:
-      "El costo de un software a medida en Perú depende del problema que resuelve, no de una lista de precios. Cuántos módulos y usuarios, qué integraciones necesita y qué tan complejo es tu proceso definen la inversión. Aquí verás qué mueve el precio y cómo cotizar sin sorpresas.",
+      "En Websy, una aplicación web o móvil parte desde S/ 15,000, un software a medida tipo ERP desde S/ 20,000 a S/ 25,000 y una plataforma SaaS desde S/ 20,000 a S/ 30,000. Son montos referenciales: cuántos módulos y usuarios, qué integraciones necesita y qué tan complejo es tu proceso definen la cifra final. Aquí verás qué mueve el precio y cómo cotizar sin sorpresas.",
     sections: [
       {
-        h2: "Por qué no existe un precio de lista",
+        h2: "Desde cuánto parte cada tipo de software",
+        body:
+          "Estos son los montos de partida que maneja Websy para cada tipo de proyecto. Sirven para saber en qué rango te mueves antes de pedir una propuesta; el detalle de cada servicio está en [desarrollo de software a medida](/desarrollo-de-software-a-medida).",
+        table: {
+          cabeceras: ["Tipo de proyecto", "Desde (referencial)", "Ejemplo"],
+          filas: [
+            ["Aplicación web", "S/ 15,000", "Portal de clientes, panel de pedidos o plataforma interna"],
+            ["Aplicación móvil (Android e iOS)", "S/ 15,000", "App para tus clientes o para tu equipo en campo"],
+            ["Software a medida tipo ERP", "S/ 20,000 a S/ 25,000", "Sistema hotelero: reservas, habitaciones, caja y reportes"],
+            ["Plataforma SaaS", "S/ 20,000 a S/ 30,000", "Software que vendes por suscripción a otras empresas"],
+          ],
+          nota: "Los precios son referenciales y varían según el alcance del proyecto. Montos en soles informados por Websy en octubre de 2026.",
+        },
+      },
+      {
+        h2: "Por qué el precio final sale del alcance",
         body:
           "Un software a medida se construye para tu operación, así que su precio sale del alcance, no de un catálogo. No es lo mismo un sistema para controlar el stock de un almacén que una plataforma con varios módulos, roles de usuario, reportes e integraciones con SUNAT y pagos. Por eso, cualquiera que te dé una cifra cerrada sin entender tu proceso probablemente te cobre de más o entregue de menos. Lo serio es un diagnóstico corto y luego una propuesta con alcance, etapas y tiempos. La agenda deja de ser un problema con [un sistema de reservas a medida](/blog/sistema-de-reservas-y-citas-a-medida). Después de cobrar viene cuadrar: [por qué el banco no te deposita lo que vendiste](/blog/conciliacion-de-pagos-por-que-no-cuadra-lo-que-te-depositan).",
       },
@@ -2834,6 +2863,10 @@ export const BLOG_POSTS: BlogPost[] = [
         a: "Depende del alcance. Un primer módulo funcional puede estar en algunas semanas; una plataforma con varios módulos e integraciones toma más. Te damos un cronograma antes de empezar.",
       },
       {
+        q: "¿Cuál es el precio mínimo de un software a medida?",
+        a: "Como referencia, en Websy los proyectos de aplicación web o móvil parten desde S/ 15,000, y un ERP a medida desde S/ 20,000 a S/ 25,000. Los montos indicados son referenciales; el precio exacto depende de los módulos e integraciones que necesites.",
+      },
+      {
         q: "¿Cómo obtengo el precio para mi caso?",
         a: "Cuéntanos qué proceso quieres ordenar o automatizar por WhatsApp o el formulario y, tras un diagnóstico corto, te enviamos una propuesta con alcance, etapas y tiempos, sin compromiso.",
       },
@@ -2842,6 +2875,8 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Desarrollo de software a medida", href: "/desarrollo-de-software-a-medida", desc: "Sistemas hechos para tu operación, no plantillas." },
       { label: "Sistema de inventario", href: "/sistemas/inventario", desc: "Control de stock, kardex y alertas de reposición." },
       { label: "Sistema de ventas y facturación", href: "/sistemas/ventas-y-facturacion", desc: "Ventas, comprobantes y facturación electrónica SUNAT." },
+      { label: "Desarrollo de aplicaciones móviles", href: "/desarrollo-de-aplicaciones-moviles", desc: "Apps para Android e iOS, desde S/ 15,000 (referencial)." },
+      { label: "Desarrollo de SaaS", href: "/desarrollo-de-saas", desc: "Tu software por suscripción, desde S/ 20,000 a S/ 30,000 (referencial)." },
       { label: "Software a medida vs enlatado", href: "/blog/software-a-medida-vs-software-enlatado", desc: "Cuándo conviene desarrollar a medida." },
       { label: "Cotiza tu sistema", href: "/cotizacion", desc: "Propuesta con alcance y tiempos en menos de 24 horas." },
     ],
@@ -4929,7 +4964,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Antes de invertir en una app, lee esto. Para la mayoría de negocios en Perú una página web rinde más y cuesta menos. Aquí cómo saber qué necesitas de verdad.",
     datePublished: "2026-07-27",
-    dateModified: "2026-08-12",
+    dateModified: "2026-10-01",
     category: "Software",
     readingMin: 7,
     intro:
@@ -4987,6 +5022,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     related: [
+      { label: "Desarrollo de aplicaciones móviles", href: "/desarrollo-de-aplicaciones-moviles", desc: "Apps para Android e iOS con panel de administración y pagos locales." },
       { label: "Software y aplicaciones a medida", href: "/desarrollo-de-software-a-medida", desc: "Plataformas y aplicaciones web hechas para tu operación." },
       { label: "Diseño de páginas web en Perú", href: "/diseno-de-paginas-web", desc: "La base para que te encuentren y te contraten." },
       { label: "App nativa, híbrida o web: cuál elegir", href: "/blog/aplicacion-nativa-hibrida-o-web-cual-elegir", desc: "Si ya decidiste una app, este es el siguiente paso." },
@@ -5001,7 +5037,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "No todas las apps se hacen igual. Nativa, híbrida o web: cada camino cambia el costo, el plazo y el rendimiento. Aquí cuál conviene según tu proyecto.",
     datePublished: "2026-07-27",
-    dateModified: "2026-08-12",
+    dateModified: "2026-10-01",
     category: "Software",
     readingMin: 7,
     intro:
@@ -5054,6 +5090,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     related: [
+      { label: "Desarrollo de aplicaciones móviles", href: "/desarrollo-de-aplicaciones-moviles", desc: "Apps para Android e iOS con panel de administración y pagos locales." },
       { label: "Software y aplicaciones a medida", href: "/desarrollo-de-software-a-medida", desc: "Desarrollamos la aplicación al tipo y necesidad de tu negocio." },
       { label: "¿App móvil o página web?", href: "/blog/necesito-una-app-movil-o-una-pagina-web-para-mi-negocio", desc: "Primero decide si realmente necesitas una app." },
       { label: "Sistema de gestión (ERP/CRM)", href: "/sistemas/gestion-erp-crm", desc: "Cuando tu app es en realidad una plataforma interna." },
@@ -5632,7 +5669,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "El CRM que nadie usa es el más caro de todos. Cómo elegir entre uno enlatado y uno hecho a tu proceso.",
     datePublished: "2026-08-12",
-    dateModified: "2026-08-12",
+    dateModified: "2026-10-01",
     category: "Software",
     readingMin: 7,
     intro:
@@ -5676,7 +5713,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Cómo lo abordamos",
         body:
-          "Levantamos el proceso con quien vende, no solo con la gerencia; definimos el alcance por escrito; desarrollamos por módulos con entregas revisables y migramos los contactos que ya tienes. El detalle está en [sistema de gestión (ERP / CRM)](/sistemas/gestion-erp-crm), y la comparación general entre ambos enfoques, en [software a medida vs software enlatado](/blog/software-a-medida-vs-software-enlatado).",
+          "Levantamos el proceso con quien vende, no solo con la gerencia; definimos el alcance por escrito; desarrollamos por módulos con entregas revisables y migramos los contactos que ya tienes. El detalle está en [desarrollo de CRM a medida](/sistemas/crm-a-medida), y la comparación general entre ambos enfoques, en [software a medida vs software enlatado](/blog/software-a-medida-vs-software-enlatado).",
       },
     ],
     faqs: [
@@ -5698,6 +5735,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     related: [
+      { label: "Desarrollo de CRM a medida", href: "/sistemas/crm-a-medida", desc: "Tu propio CRM, con tus etapas de venta y sin licencias por usuario." },
       { label: "Sistema de gestión (ERP / CRM)", href: "/sistemas/gestion-erp-crm", desc: "Desarrollamos el CRM alrededor de tu proceso de venta." },
       { label: "Software a medida vs software enlatado", href: "/blog/software-a-medida-vs-software-enlatado", desc: "La comparación completa, más allá del CRM." },
       { label: "Sistema de gestión para pymes: cuándo dejar el Excel", href: "/blog/sistema-de-gestion-para-pymes-cuando-dejar-el-excel", desc: "Las señales de que la hoja de cálculo ya no da más." },

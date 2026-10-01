@@ -38,6 +38,9 @@ type Tier = {
   ideal: string;
   includes: string[];
   highlight?: boolean;
+  /** Monto desde el que parte el servicio, informado por Websy. Siempre referencial:
+   *  la tarjeta lo muestra con su aviso al lado. Sin dato, dice «Cotización a medida». */
+  desde?: string;
 };
 
 const tiers: Tier[] = [
@@ -65,6 +68,20 @@ const tiers: Tier[] = [
       "Capacitación para administrar tu tienda",
     ],
     highlight: true,
+    desde: "S/ 2,500",
+  },
+  {
+    name: "Aplicación web o móvil",
+    href: "/desarrollo-de-aplicaciones-moviles",
+    ideal: "Empresas y emprendedores que necesitan una app para sus clientes o para su equipo.",
+    includes: [
+      "Aplicación web que se usa desde el navegador",
+      "App para celulares Android e iOS",
+      "Usuarios, roles y panel de administración",
+      "Pagos con Yape, Plin o tarjeta si la app cobra",
+      "Publicación en las tiendas y soporte",
+    ],
+    desde: "S/ 15,000",
   },
   {
     name: "Software a medida",
@@ -77,6 +94,7 @@ const tiers: Tier[] = [
       "Integraciones con tus herramientas",
       "Soporte y evolución del sistema",
     ],
+    desde: "S/ 20,000",
   },
 ];
 
@@ -107,8 +125,12 @@ const faqs = [
     a: "El precio de una tienda virtual varía según la cantidad de productos, la plataforma (Shopify o WooCommerce), las pasarelas de pago y las integraciones (facturación, courier, stock). Te preparamos una propuesta clara según lo que vendes y cómo cobras.",
   },
   {
+    q: "¿Cuánto cuesta un software a medida o una aplicación en Perú?",
+    a: "Como referencia, en Websy una aplicación web o una app para celulares parte desde S/ 15,000; un software a medida tipo ERP, por ejemplo un sistema hotelero, desde S/ 20,000 a S/ 25,000; y una plataforma SaaS, desde S/ 20,000 a S/ 30,000. Los montos indicados son referenciales: el precio final depende de módulos, usuarios e integraciones.",
+  },
+  {
     q: "¿Por qué no publican una lista de precios cerrada?",
-    a: "Porque un precio serio sale de entender tu negocio. Una cifra tirada sin preguntar nada suele significar que te cobran de más o te entregan de menos. Preferimos un diagnóstico corto y una propuesta a tu medida, para que sepas exactamente qué recibes.",
+    a: "Porque un precio serio sale de entender tu negocio. Publicamos el monto desde el que parte cada servicio, pero la cifra final sale de un diagnóstico corto y una propuesta a tu medida, para que sepas exactamente qué recibes.",
   },
   {
     q: "¿La cotización tiene costo?",
@@ -197,7 +219,7 @@ export default function PreciosPage() {
             Precios según lo que necesitas
           </h2>
           <p style={{ fontFamily: fp, fontSize: 16, color: "#5a5365", textAlign: "center", maxWidth: 620, margin: "0 auto 40px", lineHeight: 1.6 }}>
-            Cada proyecto se cotiza a medida. Esto es lo que incluye cada servicio para que sepas exactamente qué recibes.
+            Cada proyecto se cotiza a medida. Los montos «desde» son referenciales y varían según el alcance del proyecto; la cifra exacta va por escrito en tu propuesta.
           </p>
 
           <div style={{ display: "grid", gap: 20, gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", alignItems: "start" }}>
@@ -219,8 +241,12 @@ export default function PreciosPage() {
                   </span>
                 )}
                 <h3 style={{ fontFamily: fm, fontSize: 22, fontWeight: 800, color: PURPLE, margin: "0 0 6px" }}>{t.name}</h3>
-                <p style={{ fontFamily: fm, fontSize: 15, fontWeight: 700, color: ORANGE, margin: "0 0 4px" }}>Cotización a medida</p>
-                <p style={{ fontFamily: fp, fontSize: 13.5, color: "#6b6478", margin: "0 0 18px", lineHeight: 1.5 }}>Propuesta clara en menos de 24 h.</p>
+                <p style={{ fontFamily: fm, fontSize: 15, fontWeight: 700, color: ORANGE, margin: "0 0 4px" }}>
+                  {t.desde ? `Desde ${t.desde}` : "Cotización a medida"}
+                </p>
+                <p style={{ fontFamily: fp, fontSize: 13.5, color: "#6b6478", margin: "0 0 18px", lineHeight: 1.5 }}>
+                  {t.desde ? "Precio referencial: varía según el alcance." : "Propuesta clara en menos de 24 h."}
+                </p>
                 <p style={{ fontFamily: fp, fontSize: 14, color: "#46404f", margin: "0 0 16px", lineHeight: 1.6 }}>
                   <strong style={{ color: PURPLE }}>Ideal para:</strong> {t.ideal}
                 </p>
@@ -284,6 +310,8 @@ export default function PreciosPage() {
               { label: "¿Cuánto cuesta una página web en Perú?", href: "/blog/cuanto-cuesta-una-pagina-web-en-peru", desc: "Qué define el precio de una web profesional y qué debe incluir." },
               { label: "¿Cuánto cuesta una tienda virtual en Perú?", href: "/blog/cuanto-cuesta-una-tienda-virtual-en-peru", desc: "Factores que mueven el costo de un ecommerce y cómo cotizarlo." },
               { label: "¿Cuánto cuesta una tienda en Shopify?", href: "/blog/cuanto-cuesta-una-tienda-en-shopify", desc: "Plan mensual, comisiones y qué esperar de una tienda Shopify." },
+              { label: "¿Cuánto cuesta un software a medida?", href: "/blog/cuanto-cuesta-un-software-a-medida-en-peru", desc: "Desde cuánto parte un sistema, un ERP o un SaaS y qué mueve el precio." },
+              { label: "¿Cuánto cuesta una aplicación móvil?", href: "/blog/cuanto-cuesta-una-aplicacion-movil-en-peru", desc: "El desarrollo, las cuotas de Apple y Google Play y las comisiones." },
             ].map((a) => (
               <Link key={a.href} href={a.href} style={{ display: "block", background: "#fff", border: "1px solid #ece8f2", borderRadius: 16, padding: "20px 22px", textDecoration: "none", boxShadow: "0 4px 30px rgba(41,18,49,0.05)" }}>
                 <span style={{ display: "block", fontFamily: fm, fontSize: 16, fontWeight: 700, color: PURPLE, marginBottom: 6 }}>

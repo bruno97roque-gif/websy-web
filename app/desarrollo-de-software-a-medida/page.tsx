@@ -6,7 +6,7 @@ export const metadata: Metadata = pageMeta({
   path: "/desarrollo-de-software-a-medida",
   title: "Desarrollo de Software a Medida en Perú",
   description:
-    "Desarrollo de software y sistemas web a medida para empresas en Perú: sistemas de inventario, ventas, facturación, CRM e intranets que automatizan tu operación.",
+    "Desarrollo de software a medida en Perú: aplicaciones web y móviles, CRM, ERP, plataformas SaaS y sistemas de inventario y ventas hechos para tu operación.",
 });
 
 export default function SoftwareAMedidaPage() {
@@ -17,10 +17,10 @@ export default function SoftwareAMedidaPage() {
         { name: "Inicio", path: "/" },
         { name: "Software a Medida", path: "/desarrollo-de-software-a-medida" },
       ]}
-      eyebrow="Software · Sistemas Web"
+      eyebrow="Software · Apps · Sistemas"
       h1="Desarrollo de software a medida en Perú"
-      intro="Desarrollamos software y sistemas web a medida para empresas en Perú: plataformas que se adaptan a cómo trabajas, no al revés. Automatizamos inventario, ventas, facturación y gestión para que dejes las hojas de cálculo y el trabajo manual atrás."
-      highlights={["Sistemas web", "Inventario", "Ventas y facturación", "CRM / ERP", "Intranets"]}
+      intro="Desarrollamos software a medida para empresas y emprendedores en Perú: aplicaciones web y móviles, CRM, ERP, plataformas SaaS y sistemas de inventario o ventas que se adaptan a cómo trabajas, no al revés. El código y los datos quedan a nombre de tu empresa."
+      highlights={["Aplicaciones web", "Apps móviles", "CRM", "ERP", "SaaS", "Sistemas web"]}
       stats={[
         { value: "A medida", label: "Hecho para tu operación" },
         { value: "Web", label: "Accede desde cualquier lugar" },
@@ -40,14 +40,20 @@ export default function SoftwareAMedidaPage() {
           ],
         },
         {
-          h2: "Tipos de sistema que desarrollamos",
+          h2: "Qué software desarrollamos",
           bullets: [
-            "Sistema de inventario y control de stock para tu almacén o tienda.",
-            "Sistema de ventas y facturación, con integración a facturación electrónica.",
-            "Sistema de gestión empresarial (ERP) y desarrollo de CRM para tus clientes.",
-            "Intranets y plataformas internas para coordinar a tu equipo.",
-            "Automatización de procesos e integración entre sistemas.",
+            "Aplicaciones web: portales de clientes, paneles de pedidos y plataformas internas que se usan desde el navegador.",
+            "[Aplicaciones móviles](/desarrollo-de-aplicaciones-moviles) para celulares Android e iOS, para tus clientes o para tu equipo en campo.",
+            "[CRM a medida](/sistemas/crm-a-medida) para registrar clientes, cotizaciones y seguimiento de ventas a tu manera.",
+            "[ERP a medida](/sistemas/gestion-erp-crm) que integra ventas, compras, stock, caja y reportes; por ejemplo, un sistema hotelero.",
+            "[Plataformas SaaS](/desarrollo-de-saas): software que tú vendes por suscripción a otras empresas.",
+            "Sistemas de inventario, ventas y facturación electrónica, e intranets para coordinar a tu equipo.",
           ],
+        },
+        {
+          h2: "Quiero desarrollar mi propio software: por dónde empezar",
+          body:
+            "Casi siempre se empieza por una frase: «quiero mi propio CRM», «necesito una app para mis clientes» o «quiero dejar el Excel». Antes de hablar de tecnología, conviene responder tres cosas: qué proceso quieres resolver primero, quién va a usar el sistema y qué tiene que pasar con los datos que hoy tienes. Con eso se define una primera versión que funcione en pocas semanas y se le suman módulos después. Si dudas entre comprar un programa o hacer el tuyo, lee [CRM a medida o enlatado](/blog/crm-a-medida-vs-crm-enlatado) y [software a medida vs enlatado](/blog/software-a-medida-vs-software-enlatado).",
         },
         {
           h2: "¿Cuándo conviene un sistema a medida?",
@@ -67,6 +73,22 @@ export default function SoftwareAMedidaPage() {
               ["Integraciones", "Las que el proveedor decida ofrecer", "Las que tu operación necesite"],
               ["Si crece la empresa", "Cambias de plan o de sistema", "Se le suman módulos al mismo sistema"],
             ],
+          },
+        },
+        {
+          h2: "Precios referenciales de software a medida en Perú",
+          body:
+            "Estos son los montos desde los que parte cada tipo de proyecto en Websy. La cifra final sale del relevamiento, según módulos, usuarios, integraciones y reportes, y va por escrito en la propuesta antes de empezar. Si quieres el detalle de qué mueve cada monto, está en [cuánto cuesta un software a medida en Perú](/blog/cuanto-cuesta-un-software-a-medida-en-peru).",
+          table: {
+            cabeceras: ["Tipo de proyecto", "Desde (referencial)", "Ejemplo"],
+            filas: [
+              ["Aplicación web", "S/ 15,000", "Portal de clientes, panel de pedidos o plataforma interna"],
+              ["Aplicación móvil (Android e iOS)", "S/ 15,000", "App para tus clientes o para tu equipo en campo"],
+              ["Software a medida tipo ERP", "S/ 20,000 a S/ 25,000", "Sistema hotelero: reservas, habitaciones, caja y reportes"],
+              ["Plataforma SaaS", "S/ 20,000 a S/ 30,000", "Software que vendes por suscripción a otras empresas"],
+              ["Tienda virtual", "S/ 2,500", "Ecommerce con Yape, Plin y tarjeta"],
+            ],
+            nota: "Los precios son referenciales y varían según el alcance del proyecto. Montos en soles informados por Websy en octubre de 2026.",
           },
         },
         {
@@ -101,6 +123,9 @@ export default function SoftwareAMedidaPage() {
         },
       ]}
       related={[
+        { label: "Aplicaciones móviles", href: "/desarrollo-de-aplicaciones-moviles", desc: "Apps para Android e iOS para tus clientes o tu equipo." },
+        { label: "Desarrollo de SaaS", href: "/desarrollo-de-saas", desc: "Tu propio software para vender por suscripción a otras empresas." },
+        { label: "CRM a medida", href: "/sistemas/crm-a-medida", desc: "Tu propio sistema de clientes y seguimiento de ventas." },
         { label: "Sistemas web: cuál necesitas", href: "/sistemas", desc: "Qué es un sistema web, qué tipos hay y por cuál conviene empezar." },
         { label: "Sistema de inventario y stock", href: "/sistemas/inventario", desc: "Controla entradas, salidas y multi-almacén en tiempo real." },
         { label: "Sistema de ventas y facturación", href: "/sistemas/ventas-y-facturacion", desc: "Vende y emite comprobantes electrónicos en un solo flujo." },
@@ -118,7 +143,7 @@ export default function SoftwareAMedidaPage() {
       faqs={[
         {
           q: "¿Cuánto cuesta desarrollar un software a medida?",
-          a: "Depende del alcance: módulos, usuarios, integraciones y reportes. Hacemos un relevamiento de tu proceso y te entregamos una propuesta clara con etapas y costos antes de empezar.",
+          a: "Como referencia, en Websy una aplicación web o móvil parte desde S/ 15,000, un software a medida tipo ERP desde S/ 20,000 a S/ 25,000 y una plataforma SaaS desde S/ 20,000 a S/ 30,000. Los montos indicados son referenciales: el precio final depende de módulos, usuarios, integraciones y reportes, y te lo entregamos por escrito tras un relevamiento de tu proceso.",
         },
         {
           q: "¿Se integra con mi facturación electrónica o mis sistemas actuales?",
@@ -130,7 +155,7 @@ export default function SoftwareAMedidaPage() {
         },
       ]}
       serviceName="Desarrollo de software a medida"
-      serviceDescription="Desarrollo de software y sistemas web a medida para empresas en Perú: inventario, ventas, facturación, CRM, ERP e intranets con automatización de procesos."
+      serviceDescription="Desarrollo de software a medida para empresas en Perú: aplicaciones web y móviles, CRM, ERP, plataformas SaaS, sistemas de inventario, ventas y facturación e intranets."
     />
   );
 }
