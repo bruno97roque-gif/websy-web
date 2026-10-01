@@ -13,6 +13,7 @@ const CURSORS = {
   heart:    `url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16 27C16 27 3 19 3 11C3 7.1 6.1 4 10 4C12.5 4 14.7 5.2 16 7C17.3 5.2 19.5 4 22 4C25.9 4 29 7.1 29 11C29 19 16 27 16 27Z' fill='%23F18C1B'/%3E%3C/svg%3E") 16 16, pointer`,
   triangle: `url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='16,3 30,29 2,29' fill='%23F18C1B'/%3E%3C/svg%3E") 16 16, pointer`,
   star:     `url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='16,2 20,12 31,12 22,19 25,30 16,23 7,30 10,19 1,12 12,12' fill='%23F18C1B'/%3E%3C/svg%3E") 16 16, pointer`,
+  diamond:  `url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='16,2 30,16 16,30 2,16' fill='%23F18C1B'/%3E%3C/svg%3E") 16 16, pointer`,
 };
 
 const services = [
@@ -51,6 +52,18 @@ const services = [
     feature: false,
     icon: "/icons/icon-servicio3.webp",
     cursor: CURSORS.star,
+  },
+  {
+    num: "04",
+    label: "Tu propio sistema",
+    title: "Software y Apps a Medida",
+    desc: "Desarrollamos aplicaciones web y móviles, CRM, ERP y plataformas SaaS hechas para cómo trabaja tu empresa. El código y los datos quedan a tu nombre.",
+    cta: "Quiero mi software",
+    pageHref: "/desarrollo-de-software-a-medida",
+    ctaHref: "https://wa.me/51940549322?text=Hola%2C%20me%20interesa%20el%20desarrollo%20de%20software%20a%20medida%20de%20Websy%20%F0%9F%92%BB%20%C2%BFpodr%C3%ADan%20darme%20m%C3%A1s%20informaci%C3%B3n%3F",
+    feature: false,
+    icon: "/icons/icon-servicio2.webp",
+    cursor: CURSORS.diamond,
   },
 ];
 
@@ -218,7 +231,7 @@ export default function ServicesSection() {
           {/* ── FEATURE CARD ── */}
           <div
             className="js-serv group relative z-0 flex flex-col overflow-visible rounded-3xl bg-[#291231] p-7 transition-shadow duration-300 hover:z-20 hover:shadow-[0_32px_80px_rgba(41,18,49,.22)] sm:p-10 md:p-[52px_48px]"
-            style={{ gridRow: "1 / 3", cursor: feature.cursor }}
+            style={{ gridRow: `1 / ${rest.length + 1}`, cursor: feature.cursor }}
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
           >
