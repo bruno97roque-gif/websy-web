@@ -4,9 +4,9 @@ import ServiceLanding from "@/components/sections/landing/ServiceLanding";
 
 export const metadata: Metadata = pageMeta({
   path: "/sistemas/gestion-erp-crm",
-  title: "Sistema de gestión ERP y CRM a medida en Perú",
+  title: "Sistema ERP a Medida en Perú: Gestión Empresarial",
   description:
-    "Desarrollo de sistemas de gestión empresarial (ERP) y CRM a medida en Perú. Integra ventas, clientes, procesos e intranet en una sola plataforma para tu empresa.",
+    "Desarrollo de ERP a medida en Perú: ventas, compras, stock, caja y reportes en una sola plataforma hecha para tu operación, con CRM e intranet si los necesitas.",
 });
 
 export default function SistemaErpCrmPage() {
@@ -20,7 +20,7 @@ export default function SistemaErpCrmPage() {
         { name: "Gestión ERP / CRM", path: "/sistemas/gestion-erp-crm" },
       ]}
       eyebrow="Sistema · Gestión ERP / CRM"
-      h1="Sistema de gestión empresarial: ERP y CRM a medida"
+      h1="Sistema ERP a medida: la gestión de tu empresa en un solo lugar"
       intro="Desarrollamos sistemas de gestión empresarial (ERP) y CRM a medida para empresas en Perú: integramos ventas, clientes, procesos internos e intranet en una sola plataforma. Automatiza lo repetitivo, ordena la información y toma decisiones con datos reales."
       highlights={["ERP a medida", "CRM de clientes", "Intranet", "Automatización", "Integraciones"]}
       stats={[
