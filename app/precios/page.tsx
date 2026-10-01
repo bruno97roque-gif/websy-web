@@ -72,7 +72,7 @@ const tiers: Tier[] = [
   },
   {
     name: "Aplicación web o móvil",
-    href: "/desarrollo-de-aplicaciones-moviles",
+    href: "/desarrollo-de-aplicaciones-web",
     ideal: "Empresas y emprendedores que necesitan una app para sus clientes o para su equipo.",
     includes: [
       "Aplicación web que se usa desde el navegador",

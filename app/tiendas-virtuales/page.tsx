@@ -62,6 +62,11 @@ export default function TiendasVirtualesPage() {
           ],
         },
         {
+          h2: "Precio referencial de una tienda virtual",
+          body:
+            "Websy nació haciendo tiendas virtuales y la más pedida parte desde S/ 2,500: tienda autoadministrable, catálogo, pasarelas de pago locales y capacitación para que la manejes tú. El monto sube según la cantidad de productos, la plataforma y las integraciones (facturación, courier, stock). Los montos indicados son referenciales; la cifra exacta va por escrito en la cotización.",
+        },
+        {
           h2: "Nuestro proceso, en 4 pasos",
           bullets: [
             "1. Diagnóstico: entendemos tu negocio, productos y forma de vender.",
@@ -98,7 +103,7 @@ export default function TiendasVirtualesPage() {
       faqs={[
         {
           q: "¿Cuánto cuesta una tienda virtual en Perú?",
-          a: "El precio de una tienda virtual depende de la cantidad de productos, las pasarelas de pago y las integraciones que necesites. Por eso preparamos una cotización a medida sin costo: cuéntanos tu proyecto y te enviamos una propuesta clara en menos de 24 horas.",
+          a: "En Websy, una tienda virtual parte desde S/ 2,500. El precio final depende de la cantidad de productos, las pasarelas de pago y las integraciones que necesites; los montos indicados son referenciales. Cuéntanos tu proyecto y te enviamos una propuesta clara en menos de 24 horas, sin costo.",
         },
         {
           q: "¿Cuánto demora el desarrollo de la tienda?",

@@ -89,6 +89,7 @@ export default function AplicacionesMovilesPage() {
       ]}
       related={[
         { label: "Software a medida", href: "/desarrollo-de-software-a-medida", desc: "Todo lo que desarrollamos: apps, CRM, ERP, SaaS y sistemas web." },
+        { label: "Aplicaciones web", href: "/desarrollo-de-aplicaciones-web", desc: "La versión de navegador de tu plataforma, sin instalar nada." },
         { label: "Desarrollo de SaaS", href: "/desarrollo-de-saas", desc: "Si tu app es un producto que vas a vender por suscripción." },
         { label: "Sistemas web", href: "/sistemas", desc: "El sistema de gestión que tu app puede tener detrás." },
         { label: "Precios y cotización", href: "/precios", desc: "Desde cuánto parte cada servicio y cómo pedir tu propuesta." },
