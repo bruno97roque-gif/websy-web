@@ -84,6 +84,7 @@ export default function DesarrolloSaasPage() {
         { label: "Precios y cotización", href: "/precios", desc: "Desde cuánto parte cada servicio y cómo pedir tu propuesta." },
       ]}
       articles={[
+        { label: "Qué es un SaaS y cuánto cuesta desarrollarlo", href: "/blog/que-es-un-saas-y-cuanto-cuesta-desarrollarlo", desc: "Qué lo diferencia de un sistema a medida y qué lleva la primera versión." },
         { label: "Cuánto cuesta un software a medida en Perú", href: "/blog/cuanto-cuesta-un-software-a-medida-en-peru", desc: "Desde cuánto parte una app, un ERP o un SaaS." },
         { label: "Software a medida vs software enlatado", href: "/blog/software-a-medida-vs-software-enlatado", desc: "Lo que tus futuros clientes comparan antes de pagarte." },
         { label: "De quién es el código, el dominio y los accesos", href: "/blog/de-quien-es-el-codigo-el-dominio-y-los-accesos", desc: "Qué debe quedar a tu nombre al terminar." },

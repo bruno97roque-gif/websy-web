@@ -6821,6 +6821,276 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Mantenimiento web", href: "/mantenimiento-web", desc: "Quién cuida la web cuando ya está publicada." },
     ],
   },
+  {
+    slug: "cuanto-cuesta-un-erp-a-medida-en-peru",
+    title: "Cuánto cuesta un ERP a medida en Perú (2026)",
+    h1: "¿Cuánto cuesta un ERP a medida en Perú?",
+    description:
+      "Cuánto cuesta un ERP a medida en Perú en 2026: desde cuánto parte en Websy (referencial), qué módulos mueven el precio, costos después de la entrega y cómo cotizar por etapas.",
+    excerpt:
+      "Desde cuánto parte un ERP hecho para tu empresa, qué lo encarece y cómo invertir por etapas sin pagar por módulos que no usas.",
+    datePublished: "2026-10-05",
+    category: "Software",
+    readingMin: 6,
+    intro:
+      "En Websy, un ERP a medida parte desde S/ 20,000 a S/ 25,000 con los módulos de la primera etapa; un sistema hotelero con reservas, habitaciones, caja y reportes es un ejemplo de ese rango. Es un monto referencial: cuántos módulos, usuarios, sedes e integraciones necesites define la cifra final. Aquí verás qué mueve el precio y cómo cotizarlo sin sorpresas.",
+    sections: [
+      {
+        h2: "Desde cuánto parte un ERP a medida",
+        body:
+          "Un ERP a medida en Websy parte desde S/ 20,000 a S/ 25,000. Ese rango cubre una primera etapa con tres o cuatro módulos conectados entre sí, usuarios con permisos por rol y reportes básicos. Si lo comparas con otros tipos de proyecto (apps, SaaS, tiendas), la tabla completa está en [cuánto cuesta un software a medida en Perú](/blog/cuanto-cuesta-un-software-a-medida-en-peru).",
+        table: {
+          cabeceras: ["Proyecto", "Desde (referencial)", "Ejemplo de primera etapa"],
+          filas: [
+            ["ERP a medida", "S/ 20,000 a S/ 25,000", "Ventas, inventario, caja y reportes en un solo sistema"],
+            ["Sistema hotelero (ERP para hoteles)", "S/ 20,000 a S/ 25,000", "Reservas, estado de habitaciones, caja y reportes"],
+            ["CRM a medida", "Según alcance", "Clientes, embudo de ventas y cotizaciones"],
+          ],
+          nota: "Los precios son referenciales y varían según el alcance del proyecto. Montos en soles informados por Websy en octubre de 2026.",
+        },
+      },
+      {
+        h2: "Qué es un ERP y qué lo diferencia de un sistema suelto",
+        body:
+          "Un ERP (Enterprise Resource Planning) es un sistema de gestión que junta en una sola base de datos las áreas de la empresa: ventas, compras, inventario, caja, facturación y reportes. La diferencia con tener un programa para cada cosa es que en el ERP una venta descuenta el stock, genera el comprobante y aparece en el reporte del día sin que nadie copie datos de un sitio a otro. Si hoy solo te duele una de esas áreas, quizá te baste un sistema puntual, como uno de [inventario](/sistemas/inventario) o de [ventas y facturación](/sistemas/ventas-y-facturacion).",
+      },
+      {
+        h2: "Qué hace subir o bajar el precio de un ERP",
+        bullets: [
+          "Número de módulos: cada área que entra (compras, producción, planillas, almacén) suma desarrollo.",
+          "Sedes y almacenes: llevar stock y caja por local pide más reglas y reportes.",
+          "Usuarios y roles: vendedor, cajero, almacenero y gerencia ven y aprueban cosas distintas.",
+          "Integraciones: facturación electrónica SUNAT, pasarelas de pago, tu tienda virtual o tu web.",
+          "Reglas propias del negocio: listas de precios por cliente, aprobaciones, comisiones o cálculos especiales.",
+          "Migración de datos: cargar productos, clientes y saldos desde tus archivos actuales.",
+        ],
+      },
+      {
+        h2: "ERP a medida o ERP del mercado: cómo comparar el costo",
+        body:
+          "Un ERP del mercado se paga por suscripción o licencia, normalmente por usuario, y obliga a adaptar el proceso a lo que trae. Uno a medida cuesta más al inicio y luego solo pide servidor y soporte. Para comparar en serio, suma lo que pagarías por licencias en tres o cuatro años con el equipo que esperas tener, más las adaptaciones que el proveedor cobre aparte, y ponlo al lado del desarrollo. La comparación general está en [software a medida vs software enlatado](/blog/software-a-medida-vs-software-enlatado).",
+      },
+      {
+        h2: "Costos que vienen después de la entrega",
+        body:
+          "Un ERP a medida no cobra licencia por usuario, pero sí tiene dos costos recurrentes que conviene conocer desde el inicio: el servidor o hosting donde funciona y el plan de [mantenimiento y soporte](/mantenimiento-web) para respaldos, correcciones y mejoras. Una propuesta seria los detalla por escrito junto al desarrollo.",
+      },
+      {
+        h2: "Cómo cotizar un ERP sin pagar de más",
+        body:
+          "Lo más sano es no construirlo todo de golpe. Se elige el área que hoy te hace perder dinero de forma medible, se arranca por ese módulo y se suman los demás cuando el equipo ya usa el sistema a diario. Así la inversión se reparte en etapas y cada una se paga con lo que ahorra la anterior. El detalle del servicio está en [sistema ERP a medida](/sistemas/gestion-erp-crm) y, si eres un hotel u hospedaje, en [sistema hotelero a medida](/sistemas/sistema-hotelero).",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Cuánto cuesta un ERP a medida en Perú?",
+        a: "En Websy, un ERP a medida parte desde S/ 20,000 a S/ 25,000 con los módulos de la primera etapa. Los montos indicados son referenciales y varían según módulos, usuarios, sedes e integraciones.",
+      },
+      {
+        q: "¿Un ERP a medida tiene pago mensual?",
+        a: "No cobra licencia por usuario. Solo pagas el servidor donde funciona y, si lo deseas, un plan de soporte y mejoras.",
+      },
+      {
+        q: "¿Puedo empezar con un solo módulo?",
+        a: "Sí, y es lo recomendable. Se arranca por el área que más urge (por ejemplo, ventas e inventario) y se suman las demás por etapas.",
+      },
+      {
+        q: "¿El ERP se conecta con la facturación electrónica de SUNAT?",
+        a: "Sí. Se integra para emitir boletas y facturas electrónicas desde el mismo sistema donde registras la venta.",
+      },
+    ],
+    related: [
+      { label: "Sistema ERP a medida", href: "/sistemas/gestion-erp-crm", desc: "Ventas, compras, stock, caja y reportes en una plataforma." },
+      { label: "Sistema hotelero a medida", href: "/sistemas/sistema-hotelero", desc: "El ERP para hoteles y hospedajes, desde S/ 20,000 (referencial)." },
+      { label: "Cuánto cuesta un software a medida", href: "/blog/cuanto-cuesta-un-software-a-medida-en-peru", desc: "Apps, ERP y SaaS: desde cuánto parte cada uno." },
+      { label: "Sistema de gestión: cuándo dejar el Excel", href: "/blog/sistema-de-gestion-para-pymes-cuando-dejar-el-excel", desc: "Las señales de que tu pyme ya necesita un sistema." },
+      { label: "Cotiza tu ERP", href: "/cotizacion", desc: "Propuesta con alcance, etapas y tiempos." },
+    ],
+  },
+  {
+    slug: "que-es-un-saas-y-cuanto-cuesta-desarrollarlo",
+    title: "Qué es un SaaS y cuánto cuesta desarrollar uno",
+    h1: "Qué es un SaaS y cuánto cuesta desarrollar uno en Perú",
+    description:
+      "Qué es un SaaS (software como servicio), ejemplos, cómo se cobra por suscripción, qué necesita la primera versión y cuánto cuesta desarrollarlo en Perú (referencial).",
+    excerpt:
+      "Qué convierte a un software en SaaS, qué debe tener la primera versión y desde cuánto parte su desarrollo.",
+    datePublished: "2026-10-05",
+    category: "Software",
+    readingMin: 6,
+    intro:
+      "Un SaaS (software como servicio) es un programa que tus clientes usan desde el navegador y pagan por suscripción mensual o anual, sin instalar nada. En Websy, desarrollar una plataforma SaaS parte desde S/ 20,000 a S/ 30,000 (referencial), según cuántas funciones entren en la primera versión y qué integraciones necesite.",
+    sections: [
+      {
+        h2: "Qué es un SaaS, en simple",
+        body:
+          "SaaS viene de Software as a Service. En lugar de vender un programa una vez, lo ofreces en internet y cobras por usarlo: cada empresa cliente tiene su cuenta, sus usuarios y sus datos separados de los demás, y paga un plan. Un sistema de facturación en línea, una agenda de citas para clínicas o un software de gestión para colegios que se alquila por mes son ejemplos de SaaS.",
+      },
+      {
+        h2: "SaaS, sistema a medida y aplicación web: la diferencia",
+        table: {
+          cabeceras: ["", "Sistema a medida", "Aplicación web", "SaaS"],
+          filas: [
+            ["Quién lo usa", "Tu propia empresa", "Tus clientes o tu equipo", "Muchas empresas que te pagan"],
+            ["Cómo se cobra", "Lo pagas una vez y es tuyo", "Lo pagas una vez y es tuyo", "Tú cobras una suscripción a cada cliente"],
+            ["Qué necesita extra", "Tus procesos", "Usuarios y pagos", "Cuentas por empresa, planes y cobro recurrente"],
+          ],
+          nota: "Comparación general elaborada por Websy, octubre de 2026.",
+        },
+      },
+      {
+        h2: "Qué debe tener la primera versión de un SaaS",
+        body:
+          "El error más caro es querer lanzar con todo. La primera versión debe tener lo justo para que un cliente pague y lo use; lo demás se suma con lo que pidan los primeros usuarios.",
+        bullets: [
+          "Registro de empresas, con usuarios y permisos dentro de cada una.",
+          "Las dos o tres funciones que resuelven el problema principal, no diez.",
+          "Planes y cobro recurrente con tarjeta.",
+          "Panel de administración para ver clientes, pagos y uso.",
+          "Datos de cada empresa separados y respaldados.",
+        ],
+      },
+      {
+        h2: "Cuánto cuesta desarrollar un SaaS en Perú",
+        body:
+          "En Websy, el desarrollo de un SaaS parte desde S/ 20,000 a S/ 30,000. El rango sale de plataformas SaaS que Websy ya desarrolló para otros clientes. Lo que más mueve la cifra es cuántas funciones entran en la primera versión, si necesita app móvil además de la web y con qué servicios se integra (pagos, facturación, correo, WhatsApp). Los montos indicados son referenciales; la cifra exacta va por escrito en la propuesta.",
+        table: {
+          cabeceras: ["Proyecto", "Desde (referencial)"],
+          filas: [
+            ["Plataforma SaaS", "S/ 20,000 a S/ 30,000"],
+            ["Aplicación web o móvil", "S/ 15,000"],
+            ["Software a medida tipo ERP", "S/ 20,000 a S/ 25,000"],
+          ],
+          nota: "Los precios son referenciales y varían según el alcance del proyecto. Montos en soles informados por Websy en octubre de 2026.",
+        },
+      },
+      {
+        h2: "Qué costos tiene un SaaS después del lanzamiento",
+        body:
+          "Un SaaS vive en un servidor que crece con tus clientes, cobra con una pasarela que retiene una comisión por cada pago y necesita mejoras continuas para no quedarse atrás. Esos costos se pagan con las suscripciones, así que conviene calcularlos antes de fijar el precio de tus planes.",
+      },
+      {
+        h2: "El código es tuyo",
+        body:
+          "Si vas a vender un software, el código, el dominio y las cuentas deben estar a nombre de tu empresa desde el primer día. Es lo que te permite cambiar de proveedor, buscar inversión o vender el negocio. Lo explicamos en [de quién es el código, el dominio y los accesos](/blog/de-quien-es-el-codigo-el-dominio-y-los-accesos). El servicio completo está en [desarrollo de SaaS](/desarrollo-de-saas).",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Qué significa SaaS?",
+        a: "Software as a Service, software como servicio: un programa que se usa desde internet y se paga por suscripción, sin instalarlo.",
+      },
+      {
+        q: "¿Cuánto cuesta desarrollar un SaaS en Perú?",
+        a: "En Websy parte desde S/ 20,000 a S/ 30,000 según las funciones de la primera versión y sus integraciones. Los montos indicados son referenciales.",
+      },
+      {
+        q: "¿Puedo cobrar la suscripción con tarjeta?",
+        a: "Sí. La plataforma se integra con una pasarela de pagos para cobrar los planes de forma recurrente.",
+      },
+      {
+        q: "¿Websy ya ha desarrollado plataformas SaaS?",
+        a: "Sí. Websy ha desarrollado plataformas SaaS para otros clientes, y el rango de precio sale de esa experiencia.",
+      },
+    ],
+    related: [
+      { label: "Desarrollo de SaaS", href: "/desarrollo-de-saas", desc: "Tu software por suscripción, desde S/ 20,000 a S/ 30,000 (referencial)." },
+      { label: "Desarrollo de aplicaciones web", href: "/desarrollo-de-aplicaciones-web", desc: "Portales, reservas y web apps con usuarios y pagos." },
+      { label: "Cuánto cuesta un software a medida", href: "/blog/cuanto-cuesta-un-software-a-medida-en-peru", desc: "Desde cuánto parte cada tipo de proyecto." },
+      { label: "Cotiza tu SaaS", href: "/cotizacion", desc: "Propuesta con alcance, etapas y tiempos." },
+    ],
+  },
+  {
+    slug: "como-crear-tu-propio-crm",
+    title: "Cómo crear tu propio CRM: pasos y costos",
+    h1: "Cómo crear tu propio CRM para tu empresa, paso a paso",
+    description:
+      "Cómo crear tu propio CRM: qué definir antes de programar, qué módulos necesita la primera versión, con qué conectarlo y cuándo conviene mandarlo a desarrollar a medida.",
+    excerpt:
+      "Los pasos para tener un CRM propio que tu equipo sí use: etapas, campos, integraciones y primera versión.",
+    datePublished: "2026-10-05",
+    category: "Software",
+    readingMin: 6,
+    intro:
+      "Crear tu propio CRM empieza antes de programar: defines las etapas por las que pasa una venta en tu empresa, los datos que de verdad usas de cada cliente y por dónde llegan los contactos. Con eso claro, la primera versión puede ser pequeña —clientes, embudo y cotizaciones— y crecer después. Esta guía recorre los pasos.",
+    sections: [
+      {
+        h2: "Paso 1: dibuja tu proceso de venta tal como es",
+        body:
+          "Anota las etapas reales por las que pasa un cliente desde que te escribe hasta que paga: por ejemplo, contacto, visita técnica, cotización, negociación, cierre. Hazlo con quien vende, no solo con la gerencia. Esas etapas serán las columnas del embudo de tu CRM; si copias las de un programa genérico, tu equipo no lo va a usar.",
+      },
+      {
+        h2: "Paso 2: decide qué datos guardar de cada cliente",
+        body:
+          "Cada campo de más es un clic más para el vendedor. Quédate con lo que usas para vender o decidir:",
+        bullets: [
+          "Nombre, empresa, teléfono y correo.",
+          "Por dónde llegó: web, WhatsApp, recomendación, redes.",
+          "Qué le interesa y en qué etapa está.",
+          "Cotizaciones enviadas y su estado.",
+          "Próxima acción y su fecha.",
+        ],
+      },
+      {
+        h2: "Paso 3: conecta por dónde entran los contactos",
+        body:
+          "Un CRM al que hay que copiar todo a mano se abandona en semanas. La primera versión debería recibir sola los contactos de los formularios de tu web y registrar los clics a WhatsApp, y más adelante conectarse con tu [sistema de ventas y facturación](/sistemas/ventas-y-facturacion) para que la cotización aceptada pase a venta sin volver a escribirla.",
+      },
+      {
+        h2: "Paso 4: elige el camino para construirlo",
+        table: {
+          cabeceras: ["Camino", "Cuándo sirve", "Límite"],
+          filas: [
+            ["Hoja de cálculo", "Equipo de 1 o 2 personas y pocos contactos", "Sin alertas, sin permisos, varias versiones del archivo"],
+            ["CRM del mercado", "Proceso de venta estándar", "Pago mensual por usuario y etapas que no son las tuyas"],
+            ["CRM a medida", "Proceso propio, equipo que crece, integraciones", "Inversión inicial de desarrollo"],
+          ],
+          nota: "Comparación general elaborada por Websy, octubre de 2026.",
+        },
+        body:
+          "Si dudas entre los dos últimos, la comparación completa está en [CRM a medida vs CRM enlatado](/blog/crm-a-medida-vs-crm-enlatado).",
+      },
+      {
+        h2: "Paso 5: lanza una primera versión pequeña",
+        body:
+          "La primera versión de un CRM propio debería tener la ficha de clientes, el embudo con tus etapas, las cotizaciones y un recordatorio de seguimiento. Nada más. Cuando el equipo la usa a diario, se suman reportes por vendedor, permisos por rol o la conexión con facturación. Así el CRM empieza a servir en semanas y no en meses.",
+      },
+      {
+        h2: "Paso 6: migra lo que ya tienes",
+        body:
+          "Antes de lanzar, carga tus clientes actuales desde Excel o el programa que uses, limpiando duplicados. Un CRM que arranca vacío no le sirve a nadie el primer día, y el equipo lo deja.",
+      },
+      {
+        h2: "Cuánto cuesta crear tu propio CRM",
+        body:
+          "Depende de cuántas etapas, usuarios e integraciones necesites. Como referencia, en Websy una aplicación web parte desde S/ 15,000 y un ERP a medida, que puede incluir el CRM como uno de sus módulos, desde S/ 20,000 a S/ 25,000. Los montos indicados son referenciales; el detalle del servicio está en [desarrollo de CRM a medida](/sistemas/crm-a-medida).",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Puedo crear mi propio CRM sin saber programar?",
+        a: "Puedes empezar con una hoja de cálculo o un CRM del mercado. Para un CRM con tus etapas, integraciones y sin pago por usuario, lo habitual es encargar el desarrollo a medida.",
+      },
+      {
+        q: "¿Qué debe tener un CRM básico?",
+        a: "Ficha de clientes, embudo de ventas con tus etapas, cotizaciones y recordatorios de seguimiento. Lo demás se suma después.",
+      },
+      {
+        q: "¿Un CRM propio se conecta con WhatsApp?",
+        a: "Sí. Puede registrar los contactos que llegan desde los botones de WhatsApp de tu web y abrir la conversación desde la ficha del cliente.",
+      },
+      {
+        q: "¿Cuánto demora crear un CRM a medida?",
+        a: "Una primera versión con clientes, embudo y cotizaciones puede estar en algunas semanas; el cronograma exacto va en la propuesta.",
+      },
+    ],
+    related: [
+      { label: "Desarrollo de CRM a medida", href: "/sistemas/crm-a-medida", desc: "Tu propio CRM con tus etapas y sin licencias por usuario." },
+      { label: "CRM a medida vs enlatado", href: "/blog/crm-a-medida-vs-crm-enlatado", desc: "Cuál conviene a tu pyme y cuándo." },
+      { label: "Sistema ERP a medida", href: "/sistemas/gestion-erp-crm", desc: "Cuando el CRM es parte de una gestión más amplia." },
+      { label: "Cotiza tu CRM", href: "/cotizacion", desc: "Propuesta con alcance, etapas y tiempos." },
+    ],
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {

@@ -85,6 +85,7 @@ export default function CrmAMedidaPage() {
         { label: "Sistemas web: cuál necesitas", href: "/sistemas", desc: "Compara los tipos de sistema y elige por dónde empezar." },
       ]}
       articles={[
+        { label: "Cómo crear tu propio CRM, paso a paso", href: "/blog/como-crear-tu-propio-crm", desc: "Etapas, datos, integraciones y primera versión." },
         { label: "CRM a medida o enlatado: cuál conviene", href: "/blog/crm-a-medida-vs-crm-enlatado", desc: "Costos, tiempos y cuándo gana cada uno." },
         { label: "Sistema de gestión: cuándo dejar el Excel", href: "/blog/sistema-de-gestion-para-pymes-cuando-dejar-el-excel", desc: "Señales de que tu pyme necesita un sistema propio." },
         { label: "Cuánto cuesta un software a medida en Perú", href: "/blog/cuanto-cuesta-un-software-a-medida-en-peru", desc: "Desde cuánto parte cada tipo de proyecto." },

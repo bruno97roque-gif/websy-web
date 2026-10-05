@@ -26,6 +26,7 @@ export const SERVICE_LINKS: NavLink[] = [
   { label: "Sistema de Inventario", href: "/sistemas/inventario", desc: "sistema de inventario y almacén a medida: stock en tiempo real, kardex y alertas de quiebre." },
   { label: "Sistema de Ventas y Facturación", href: "/sistemas/ventas-y-facturacion", desc: "sistema de ventas y facturación con comprobantes electrónicos y control de caja." },
   { label: "Sistema de Gestión (ERP / CRM)", href: "/sistemas/gestion-erp-crm", desc: "ERP a medida que integra ventas, compras, stock, caja y reportes, por ejemplo un sistema hotelero; desde S/ 20,000 a S/ 25,000 (referencial)." },
+  { label: "Sistema Hotelero", href: "/sistemas/sistema-hotelero", desc: "sistema hotelero a medida: reservas, habitaciones, check-in, caja, consumos y facturación electrónica; desde S/ 20,000 a S/ 25,000 (referencial)." },
   { label: "CRM a Medida", href: "/sistemas/crm-a-medida", desc: "CRM propio con clientes, embudo de ventas y cotizaciones, conectado a la web, WhatsApp y la facturación, sin licencias por usuario." },
   { label: "SEO y Posicionamiento", href: "/seo", desc: "SEO técnico, on-page, de contenidos y local para aparecer en Google sin pagar por cada clic." },
   { label: "Google Ads", href: "/google-ads", desc: "gestión de campañas de Google Ads en Perú orientadas a clientes y retorno." },
@@ -98,6 +99,7 @@ export const SERVICE_SITEMAP: SitemapEntry[] = [
   { path: "/sistemas/ventas-y-facturacion", priority: 0.8, lastModified: "2026-09-23" },
   { path: "/sistemas/gestion-erp-crm", priority: 0.8, lastModified: "2026-10-01" },
   { path: "/sistemas/crm-a-medida", priority: 0.8, lastModified: "2026-10-01" },
+  { path: "/sistemas/sistema-hotelero", priority: 0.8, lastModified: "2026-10-05" },
   { path: "/precios", priority: 0.9, lastModified: "2026-10-01" },
   { path: "/cotizacion", priority: 0.8, lastModified: "2026-07-31" },
   // Nuevos pilares de servicio.

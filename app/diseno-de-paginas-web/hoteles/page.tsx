@@ -80,6 +80,7 @@ export default function PaginaWebHotelesPage() {
       ]}
       related={[
         { label: "Diseño de páginas web", href: "/diseno-de-paginas-web", desc: "El servicio completo de diseño y desarrollo web profesional." },
+        { label: "Sistema hotelero a medida", href: "/sistemas/sistema-hotelero", desc: "Reservas, habitaciones, caja y facturación en un solo sistema." },
         { label: "Precios y cotización", href: "/precios", desc: "Qué define el precio de tu web y cómo pedir tu cotización gratis." },
         { label: "Cotiza tu web de hotel", href: "/cotizacion", desc: "Cuéntanos de tu hotel u hospedaje y te respondemos en 24 h." },
       ]}
