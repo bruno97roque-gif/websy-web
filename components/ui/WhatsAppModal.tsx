@@ -229,7 +229,15 @@ export default function WhatsAppModal() {
     // `_blank` en escritorio deja la web abierta detrás; en móvil el sistema
     // se lleva a la app igual. Si el navegador bloquea la ventana, se navega
     // en la misma pestaña para que nadie se quede sin poder escribir.
-    const ventana = window.open(url, "_blank", "noopener,noreferrer");
+    // Con "noopener" `window.open` devuelve SIEMPRE null (lo dice el estándar),
+    // así que nunca se sabía si se abrió y la web navegaba además a WhatsApp.
+    // Se abre en blanco, se corta `opener` y recién entonces se va a WhatsApp:
+    // la misma protección que `noopener`, pero con la referencia a la ventana.
+    const ventana = window.open("", "_blank");
+    if (ventana) {
+      ventana.opener = null;
+      ventana.location.href = url;
+    }
     const seAbrio = Boolean(ventana);
     if (!seAbrio) window.location.href = url;
 
