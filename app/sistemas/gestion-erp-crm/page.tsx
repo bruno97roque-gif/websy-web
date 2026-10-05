@@ -74,7 +74,7 @@ export default function SistemaErpCrmPage() {
         {
           h2: "Cuánto cuesta un ERP a medida",
           body:
-            "Como referencia, un software a medida tipo ERP parte en Websy desde S/ 20,000 a S/ 25,000. Un ejemplo de ese rango es un sistema hotelero: reservas, estado de habitaciones, caja y reportes en una sola plataforma. El monto final depende de cuántos módulos entren en la primera etapa, cuántos usuarios y sedes lo usen y con qué sistemas tenga que conectarse. Los montos indicados son referenciales; la cifra exacta va por escrito en la propuesta.",
+            "Como referencia, un software a medida tipo ERP parte en Websy desde S/ 20,000 a S/ 25,000. Un ejemplo de ese rango es un [sistema hotelero](/sistemas/sistema-hotelero): reservas, estado de habitaciones, caja y reportes en una sola plataforma. El monto final depende de cuántos módulos entren en la primera etapa, cuántos usuarios y sedes lo usen y con qué sistemas tenga que conectarse. Los montos indicados son referenciales; la cifra exacta va por escrito en la propuesta.",
         },
         {
           h2: "Cómo es el proceso de desarrollo",
@@ -100,6 +100,8 @@ export default function SistemaErpCrmPage() {
         },
       ]}
       related={[
+        { label: "Cuánto cuesta un ERP a medida", href: "/blog/cuanto-cuesta-un-erp-a-medida-en-peru", desc: "Desde cuánto parte y qué mueve el precio." },
+        { label: "Sistema hotelero a medida", href: "/sistemas/sistema-hotelero", desc: "El ERP para hoteles y hospedajes." },
         { label: "CRM a medida", href: "/sistemas/crm-a-medida", desc: "Solo la parte comercial: clientes, embudo y cotizaciones." },
         { label: "Sistemas web: cuál necesitas", href: "/sistemas", desc: "Compara inventario, facturación y gestión, y elige por dónde empezar." },
         { label: "Software a medida", href: "/desarrollo-de-software-a-medida", desc: "Vuelve al pilar y mira todos los sistemas que desarrollamos." },
