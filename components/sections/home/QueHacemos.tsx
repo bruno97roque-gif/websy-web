@@ -8,27 +8,53 @@ import Link from "next/link";
  * autoridad del dominio y la que menos le contaba a Google de qué va el
  * negocio. Esto lo escribe en el cuerpo, con enlaces editoriales a las
  * landings que hoy casi no reciben ninguno.
+ *
+ * Maquetación en dos columnas: el titular se queda fijo a la izquierda y el
+ * texto corre a la derecha con una medida de ~640px. Antes era un bloque de
+ * 900px de ancho a todo lo largo, y a ese ancho la línea pasa de los 100
+ * caracteres: el ojo pierde el renglón al volver. El texto no cambia.
  */
 
-const ENLACE = "font-semibold text-[#c9640a] underline underline-offset-2";
+const ENLACE =
+  "font-semibold text-[#c9640a] underline decoration-[#F18C1B]/40 decoration-2 underline-offset-[3px] transition-colors hover:text-[#F18C1B] hover:decoration-[#F18C1B]";
 
 export default function QueHacemos() {
   return (
     <section
       id="que-hacemos"
       data-track-location="home_que_hacemos"
-      className="bg-white px-8 py-[90px] md:px-[72px]"
+      className="relative overflow-hidden bg-[#faf8fc] px-5 py-[88px] sm:px-8 md:px-[72px] md:py-[120px]"
     >
-      <div className="mx-auto max-w-[900px]">
-        <p className="font-poppins mb-3 text-[11px] font-medium uppercase tracking-[3px] text-[#F18C1B]">
-          Agencia de desarrollo web en Lima
-        </p>
-        <h2 className="font-montserrat text-[clamp(26px,3.4vw,42px)] font-bold leading-[1.18] tracking-tight text-[#291231]">
-          Qué hacemos en Websy, en concreto
-        </h2>
+      {/* Retícula tenue: la misma del fondo de las tarjetas de servicios,
+          en tono claro, para que las dos secciones se lean como una familia. */}
+      <div
+        className="pointer-events-none absolute inset-0"
+        style={{
+          backgroundImage: `
+            linear-gradient(rgba(41,18,49,.035) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(41,18,49,.035) 1px, transparent 1px)`,
+          backgroundSize: "56px 56px",
+        }}
+      />
 
-        <div className="font-poppins mt-7 flex flex-col gap-5 text-[16.5px] leading-[1.78] text-[#3f3948]">
-          <p>
+      <div className="relative mx-auto grid max-w-[1180px] gap-9 md:grid-cols-[minmax(0,320px)_minmax(0,1fr)] md:gap-16 lg:gap-24">
+
+        {/* ── Titular, fijo mientras se lee el texto ── */}
+        <div className="md:sticky md:top-28 md:self-start">
+          <p className="font-poppins mb-3 text-[11px] font-medium uppercase tracking-[3px] text-[#F18C1B]">
+            Agencia de desarrollo web en Lima
+          </p>
+          <h2 className="font-montserrat text-[clamp(26px,3vw,38px)] font-bold leading-[1.15] tracking-tight text-[#291231]">
+            Qué hacemos en Websy, en concreto
+          </h2>
+          <span className="mt-6 block h-[3px] w-14 rounded-full bg-[#F18C1B]" />
+        </div>
+
+        {/* ── Texto ── */}
+        <div className="font-poppins flex max-w-[640px] flex-col gap-5 text-[16px] leading-[1.8] text-[#3f3948]">
+          {/* Entradilla: un punto más grande y en el plum de marca, para que el
+              primer párrafo sostenga el peso del titular. */}
+          <p className="text-[17.5px] leading-[1.72] text-[#291231]">
             Websy es una agencia peruana de tecnología. Desarrollamos{" "}
             <Link href="/diseno-de-paginas-web" className={ENLACE}>
               páginas web

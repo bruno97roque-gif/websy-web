@@ -4,7 +4,6 @@ import { useEffect, useRef } from "react";
 import Link from "next/link";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { ShimmerButton } from "@/components/ui/shimmer-button";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -25,7 +24,6 @@ const services = [
     cta: "Quiero mi branding",
     pageHref: "/branding",
     ctaHref: "https://wa.me/51940549322?text=Hola%2C%20me%20interesa%20el%20servicio%20de%20Identidad%20de%20Marca%20de%20Websy%20%F0%9F%8E%A8%20%C2%BFpodr%C3%ADan%20darme%20m%C3%A1s%20informaci%C3%B3n%3F",
-    feature: true,
     icon: "/icons/Icon-servicio1.webp",
     cursor: CURSORS.heart,
   },
@@ -37,7 +35,6 @@ const services = [
     cta: "Quiero mi web",
     pageHref: "/diseno-de-paginas-web",
     ctaHref: "https://wa.me/51940549322?text=Hola%2C%20me%20interesa%20el%20servicio%20de%20Dise%C3%B1o%20Web%20y%20Tiendas%20Virtuales%20de%20Websy%20%F0%9F%92%BB%20%C2%BFpodr%C3%ADan%20darme%20m%C3%A1s%20informaci%C3%B3n%3F",
-    feature: false,
     icon: "/icons/icon-servicio2.webp",
     cursor: CURSORS.triangle,
   },
@@ -49,7 +46,6 @@ const services = [
     cta: "Quiero más visitas",
     pageHref: "/seo",
     ctaHref: "https://wa.me/51940549322?text=Hola%2C%20me%20interesa%20el%20servicio%20de%20Google%20Ads%20y%20SEO%20de%20Websy%20%F0%9F%93%88%20%C2%BFpodr%C3%ADan%20darme%20m%C3%A1s%20informaci%C3%B3n%3F",
-    feature: false,
     icon: "/icons/icon-servicio3.webp",
     cursor: CURSORS.star,
   },
@@ -61,7 +57,6 @@ const services = [
     cta: "Quiero mi software",
     pageHref: "/desarrollo-de-software-a-medida",
     ctaHref: "https://wa.me/51940549322?text=Hola%2C%20me%20interesa%20el%20desarrollo%20de%20software%20a%20medida%20de%20Websy%20%F0%9F%92%BB%20%C2%BFpodr%C3%ADan%20darme%20m%C3%A1s%20informaci%C3%B3n%3F",
-    feature: false,
     icon: "/icons/icon-servicio2.webp",
     cursor: CURSORS.diamond,
   },
@@ -168,9 +163,6 @@ export default function ServicesSection() {
     if (shine) shine.style.opacity = "0";
   }
 
-  const feature = services[0];
-  const rest = services.slice(1);
-
   return (
     <section
       id="servicios"
@@ -225,69 +217,16 @@ export default function ServicesSection() {
           </a>
         </div>
 
-        {/* ── Grid ── */}
-        <div className="grid gap-6 md:grid-cols-[1.15fr_1fr] md:gap-8 md:gap-x-10">
+        {/* ── Grid 2×2 — las cuatro tarjetas con el mismo peso ──
+             Antes la 01 ocupaba una columna entera y las otras tres se
+             apilaban al lado. Al entrar la cuarta (software), la destacada
+             creció hasta triplicar a sus vecinas y la sección se descompensó. */}
+        <div className="grid gap-6 sm:grid-cols-2 md:gap-8">
 
-          {/* ── FEATURE CARD ── */}
-          <div
-            className="js-serv group relative z-0 flex flex-col overflow-visible rounded-3xl bg-[#291231] p-7 transition-shadow duration-300 hover:z-20 hover:shadow-[0_32px_80px_rgba(41,18,49,.22)] sm:p-10 md:p-[52px_48px]"
-            style={{ gridRow: `1 / ${rest.length + 1}`, cursor: feature.cursor }}
-            onMouseMove={handleMouseMove}
-            onMouseLeave={handleMouseLeave}
-          >
-            {/* inner grid pattern */}
-            <div
-              className="pointer-events-none absolute inset-0 rounded-3xl"
-              style={{
-                backgroundImage: `
-                  linear-gradient(rgba(241,140,27,.06) 1px, transparent 1px),
-                  linear-gradient(90deg, rgba(241,140,27,.06) 1px, transparent 1px)`,
-                backgroundSize: "56px 56px",
-              }}
-            />
-            {/* metallic shine */}
-            <div className="js-shine pointer-events-none absolute inset-0 z-20 rounded-3xl opacity-0 transition-opacity duration-200" />
-
-            <div className="relative z-10">
-              <span className="pointer-events-none absolute right-6 top-4 font-montserrat text-[52px] font-bold leading-none text-[#F18C1B] md:right-8 md:top-6 md:text-[80px]">
-                {feature.num}
-              </span>
-
-              <IconBox src={feature.icon} size={60} />
-
-              <p className="font-poppins mb-3 text-[11px] font-medium uppercase tracking-[3px] text-[#F18C1B]">
-                {feature.label}
-              </p>
-              <h3 className="font-montserrat mb-5 text-[clamp(28px,2.4vw,42px)] font-bold uppercase leading-[1.05] text-white">
-                {feature.title}
-              </h3>
-              <p className="font-poppins mb-6 flex-1 text-[15px] leading-[1.8] text-white md:mb-10">
-                {feature.desc}
-              </p>
-              <div className="relative z-40 inline-flex">
-                <ShimmerButton href={feature.ctaHref} target="_blank" rel="noopener noreferrer">
-                {feature.cta}
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M3 8h10M8 3l5 5-5 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-                </ShimmerButton>
-              </div>
-            </div>
-            {/* La tarjeta entera lleva a su servicio. Llevaba un cursor propio que
-                invita a pulsarla pero solo el boton era enlace: 69 de los 87
-                dead_click de 28 dias caian en esta portada. */}
-            <Link
-              href={feature.pageHref}
-              className="absolute inset-0 z-30 rounded-3xl"
-              aria-label={feature.title}
-            />
-          </div>
-
-          {/* ── REGULAR CARDS ── */}
-          {rest.map((s) => (
+          {services.map((s) => (
             <div
               key={s.num}
-              className="js-serv group relative z-0 flex flex-col overflow-hidden rounded-[20px] bg-[#291231] p-6 transition-shadow duration-300 hover:z-10 hover:shadow-[0_20px_60px_rgba(41,18,49,.35)] sm:p-8 md:p-[40px_38px]"
+              className="js-serv group relative z-0 flex flex-col overflow-hidden rounded-[20px] bg-[#291231] p-6 transition-shadow duration-300 hover:z-10 hover:shadow-[0_24px_64px_rgba(41,18,49,.35)] sm:p-8 md:p-[44px_42px]"
               style={{ cursor: s.cursor }}
               onMouseMove={handleMouseMove}
               onMouseLeave={handleMouseLeave}
@@ -303,32 +242,37 @@ export default function ServicesSection() {
                 }}
               />
               {/* number */}
-              <span className="pointer-events-none absolute right-5 top-4 font-montserrat text-[40px] font-bold leading-none text-[#F18C1B] md:right-6 md:top-5 md:text-[56px]">
+              <span className="pointer-events-none absolute right-5 top-4 font-montserrat text-[44px] font-bold leading-none text-[#F18C1B] md:right-7 md:top-6 md:text-[64px]">
                 {s.num}
               </span>
               {/* metallic shine */}
               <div className="js-shine pointer-events-none absolute inset-0 z-20 rounded-[20px] opacity-0 transition-opacity duration-200" />
 
-              <div className="relative z-10">
-                <IconBox src={s.icon} size={50} />
+              {/* `h-full` + `flex-1` en el párrafo: con textos de distinto largo,
+                  los CTA siguen alineados abajo en las cuatro tarjetas. */}
+              <div className="relative z-10 flex h-full flex-col">
+                <IconBox src={s.icon} size={56} />
                 <p className="font-poppins mb-2 text-[10px] font-semibold uppercase tracking-[2px] text-[#F18C1B]">
                   {s.label}
                 </p>
-                <h3 className="font-montserrat mb-3 text-[clamp(20px,1.8vw,30px)] font-bold uppercase leading-[1.1] text-white">
+                <h3 className="font-montserrat mb-3 text-[clamp(22px,2vw,32px)] font-bold uppercase leading-[1.1] text-white">
                   {s.title}
                 </h3>
-                <p className="font-poppins mb-4 flex-1 text-[14px] leading-[1.75] text-white md:mb-6">
+                <p className="font-poppins mb-6 flex-1 text-[14.5px] leading-[1.75] text-white">
                   {s.desc}
                 </p>
                 <a
                   href={s.ctaHref}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="relative z-40 inline-flex items-center gap-2 border-b-2 border-[#F18C1B] pb-0.5 font-montserrat text-[12px] font-bold uppercase tracking-[1.5px] text-white transition-all group-hover:gap-3.5 group-hover:text-[#F18C1B]"
+                  className="relative z-40 inline-flex w-fit items-center gap-2 border-b-2 border-[#F18C1B] pb-0.5 font-montserrat text-[12px] font-bold uppercase tracking-[1.5px] text-white transition-all group-hover:gap-3.5 group-hover:text-[#F18C1B]"
                 >
                   {s.cta} →
                 </a>
               </div>
+              {/* La tarjeta entera lleva a su servicio. Llevaba un cursor propio que
+                  invita a pulsarla pero solo el boton era enlace: 69 de los 87
+                  dead_click de 28 dias caian en esta portada. */}
               <Link
                 href={s.pageHref}
                 className="absolute inset-0 z-30 rounded-[20px]"
