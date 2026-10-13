@@ -414,6 +414,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     related: [
+      { label: "Integración de Yape y pasarelas de pago", href: "/integracion-de-pagos", desc: "Conectamos Yape, Plin, Izipay, Niubiz o Culqi a tu web, tienda o app." },
       { label: "Desarrollo de tiendas virtuales", href: "/tiendas-virtuales", desc: "Tienda con pagos Yape, Plin, Niubiz e Izipay." },
       { label: "Cotiza tu tienda", href: "/cotizacion", desc: "Te ayudamos a elegir e integrar tus pasarelas." },
       { label: "SEO para tiendas online: fichas y categorías", href: "/blog/como-posicionar-tu-tienda-online-en-google-peru", desc: "Tu tienda online no vende si nadie la encuentra." },
@@ -643,6 +644,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     related: [
+      { label: "Qué es un software a medida", href: "/blog/que-es-un-software-a-medida", desc: "Definición, ejemplos por área y cuándo conviene." },
       { label: "CRM a medida vs CRM enlatado: cuál conviene a tu pyme", href: "/blog/crm-a-medida-vs-crm-enlatado", desc: "El CRM que nadie usa es el más caro de todos." },
       { label: "¿Cuánto tiempo toma hacer una página web en Perú?", href: "/blog/cuanto-tiempo-toma-hacer-una-pagina-web", desc: "Plazos reales para crear una página web en Perú según su tipo y complejidad, y cómo evitar que tu proyecto se ." },
       { label: "Software a medida", href: "/desarrollo-de-software-a-medida", desc: "Sistemas que automatizan tu operación." },
@@ -952,6 +954,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     related: [
+      { label: "Qué es un software a medida", href: "/blog/que-es-un-software-a-medida", desc: "Definición, ejemplos por área y cuándo conviene." },
       { label: "Sistema de punto de venta (POS) a medida para tu negocio", href: "/blog/sistema-de-punto-de-venta-pos-a-medida", desc: "Un POS se juzga en la hora punta." },
       { label: "CRM a medida vs CRM enlatado: cuál conviene a tu pyme", href: "/blog/crm-a-medida-vs-crm-enlatado", desc: "El CRM que nadie usa es el más caro de todos." },
       { label: "Software a medida", href: "/desarrollo-de-software-a-medida", desc: "Sistemas que automatizan tu operación." },
@@ -1622,6 +1625,7 @@ export const BLOG_POSTS: BlogPost[] = [
       }
     ],
     related: [
+      { label: "Qué es un software a medida", href: "/blog/que-es-un-software-a-medida", desc: "Definición, ejemplos por área y cuándo conviene." },
       {
         label: "Desarrollo de software a medida",
         href: "/desarrollo-de-software-a-medida",
@@ -1959,6 +1963,7 @@ export const BLOG_POSTS: BlogPost[] = [
       }
     ],
     related: [
+      { label: "Integración de Yape y pasarelas de pago", href: "/integracion-de-pagos", desc: "Conectamos Yape, Plin, Izipay, Niubiz o Culqi a tu web, tienda o app." },
       {
         label: "Pasarelas de pago para ecommerce en Perú",
         href: "/blog/pasarelas-de-pago-para-ecommerce-en-peru",
@@ -2876,6 +2881,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     related: [
+      { label: "Qué es un software a medida", href: "/blog/que-es-un-software-a-medida", desc: "Definición, ejemplos por área y cuándo conviene." },
       { label: "Desarrollo de software a medida", href: "/desarrollo-de-software-a-medida", desc: "Sistemas hechos para tu operación, no plantillas." },
       { label: "Sistema de inventario", href: "/sistemas/inventario", desc: "Control de stock, kardex y alertas de reposición." },
       { label: "Sistema de ventas y facturación", href: "/sistemas/ventas-y-facturacion", desc: "Ventas, comprobantes y facturación electrónica SUNAT." },
@@ -3254,6 +3260,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     related: [
+      { label: "Integración de Yape y pasarelas de pago", href: "/integracion-de-pagos", desc: "Conectamos Yape, Plin, Izipay, Niubiz o Culqi a tu web, tienda o app." },
       { label: "Checkout: cómo reducir el abandono de carrito en tu tienda virtual", href: "/blog/reducir-el-abandono-de-carrito-en-tu-tienda-virtual", desc: "La mayoría de carritos se pierde en el último paso, y casi siempre por lo mismo: sorpresas de precio y fricció." },
       { label: "Desarrollo de tiendas virtuales", href: "/tiendas-virtuales", desc: "Tienda con Yape, Plin y tarjeta lista para vender." },
       { label: "SEO y posicionamiento web", href: "/seo", desc: "De nada sirve integrar Yape si nadie llega a tu tienda: atrae compradores." },
@@ -3329,6 +3336,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     related: [
+      { label: "Integración de Yape y pasarelas de pago", href: "/integracion-de-pagos", desc: "Conectamos Yape, Plin, Izipay, Niubiz o Culqi a tu web, tienda o app." },
       { label: "Desarrollo de tiendas virtuales", href: "/tiendas-virtuales", desc: "Tienda con la pasarela correcta, lista para cobrar." },
       { label: "SEO para tu tienda virtual", href: "/seo", desc: "Atrae compradores a tu tienda para que esos pagos ocurran." },
       { label: "Pasarelas de pago en Perú", href: "/blog/pasarelas-de-pago-para-ecommerce-en-peru", desc: "El panorama completo: Yape, Plin, Niubiz e Izipay." },
@@ -3633,14 +3641,14 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "como-migrar-tu-pagina-web-sin-perder-posicionamiento-en-google",
-    title: "Migrar tu web sin perder posicionamiento",
-    h1: "Cómo migrar tu web sin perder posicionamiento en Google",
+    title: "Migrar o rediseñar tu web sin perder SEO",
+    h1: "Cómo migrar o rediseñar tu web sin perder posicionamiento en Google",
     description:
       "Cómo migrar o rediseñar tu página web en Perú sin perder posicionamiento en Google: redirecciones 301, estructura de URLs, contenido y los errores que hunden tu SEO.",
     excerpt:
       "Rediseñar o cambiar de web puede hundir tu tráfico si se hace mal. Así se migra sin perder tus posiciones.",
     datePublished: "2026-07-08",
-    dateModified: "2026-09-02",
+    dateModified: "2026-10-13",
     category: "SEO",
     readingMin: 7,
     intro:
@@ -4498,6 +4506,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     related: [
+      { label: "Integración de Yape y pasarelas de pago", href: "/integracion-de-pagos", desc: "Conectamos Yape, Plin, Izipay, Niubiz o Culqi a tu web, tienda o app." },
       { label: "Agencia Shopify Perú", href: "/tiendas-virtuales/shopify", desc: "Tienda con pagos Yape, Plin, Niubiz e Izipay listos." },
       { label: "Cómo crear una tienda Shopify", href: "/blog/como-crear-una-tienda-shopify-en-peru-paso-a-paso", desc: "La guía completa, paso a paso." },
       { label: "Cotiza tu tienda Shopify", href: "/tiendas-virtuales/shopify/costos", desc: "Qué define el precio de tu tienda." },
@@ -5578,6 +5587,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     related: [
+      { label: "Integración de Yape y pasarelas de pago", href: "/integracion-de-pagos", desc: "Conectamos Yape, Plin, Izipay, Niubiz o Culqi a tu web, tienda o app." },
       { label: "Pasarelas de pago en Perú", href: "/blog/pasarelas-de-pago-para-ecommerce-en-peru", desc: "El panorama completo: Yape, Plin, Niubiz e Izipay." },
       { label: "Tiendas virtuales", href: "/tiendas-virtuales", desc: "Integramos la pasarela que elijas a tu tienda." },
       { label: "Izipay o Niubiz: cuál conviene para tu tienda", href: "/blog/izipay-o-niubiz-cual-elegir-para-cobrar-con-tarjeta", desc: "La otra decisión de pagos que toca tomar en Perú." },
@@ -6121,6 +6131,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     related: [
+      { label: "Integración de Yape y pasarelas de pago", href: "/integracion-de-pagos", desc: "Conectamos Yape, Plin, Izipay, Niubiz o Culqi a tu web, tienda o app." },
       { label: "Izipay o Niubiz: cuál elegir", href: "/blog/izipay-o-niubiz-cual-elegir-para-cobrar-con-tarjeta", desc: "La comparación entre las dos pasarelas." },
       { label: "Pasarelas de pago en Perú", href: "/blog/pasarelas-de-pago-para-ecommerce-en-peru", desc: "Todas las opciones del mercado peruano." },
       { label: "Desarrollo de tiendas virtuales", href: "/tiendas-virtuales", desc: "Integramos y probamos tus medios de pago." },
@@ -6199,6 +6210,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     related: [
+      { label: "Integración de Yape y pasarelas de pago", href: "/integracion-de-pagos", desc: "Conectamos Yape, Plin, Izipay, Niubiz o Culqi a tu web, tienda o app." },
       { label: "Izipay o Niubiz: cuál elegir", href: "/blog/izipay-o-niubiz-cual-elegir-para-cobrar-con-tarjeta", desc: "La comparación entre las dos." },
       { label: "Cómo conectar Niubiz", href: "/blog/como-conectar-niubiz-a-tu-tienda-virtual", desc: "El mismo camino, con la otra pasarela." },
       { label: "Desarrollo de tiendas virtuales", href: "/tiendas-virtuales", desc: "Tu tienda con los medios de pago probados." },
@@ -6459,6 +6471,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     related: [
+      { label: "Integración de Yape y pasarelas de pago", href: "/integracion-de-pagos", desc: "Conectamos Yape, Plin, Izipay, Niubiz o Culqi a tu web, tienda o app." },
       { label: "Cómo integrar Yape y Plin en tu tienda virtual", href: "/blog/como-integrar-yape-y-plin-en-tu-tienda-virtual", desc: "El paso a paso de la integración." },
       { label: "Pasarelas de pago para ecommerce en Perú", href: "/blog/pasarelas-de-pago-para-ecommerce-en-peru", desc: "El panorama completo de proveedores." },
       { label: "Tiendas virtuales", href: "/tiendas-virtuales", desc: "Montamos la tienda con los pagos ya conectados." },
@@ -6550,6 +6563,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     related: [
+      { label: "Integración de Yape y pasarelas de pago", href: "/integracion-de-pagos", desc: "Conectamos Yape, Plin, Izipay, Niubiz o Culqi a tu web, tienda o app." },
       { label: "Izipay o Niubiz: cuál elegir", href: "/blog/izipay-o-niubiz-cual-elegir-para-cobrar-con-tarjeta", desc: "La comparación entre las dos más usadas." },
       { label: "Cobrar con Yape: link, API o agregador", href: "/blog/cobrar-con-yape-link-de-pago-api-o-agregador", desc: "Las tres vías de integración comparadas." },
       { label: "Tiendas virtuales", href: "/tiendas-virtuales", desc: "Dejamos la pasarela integrada y probada." },
@@ -6637,6 +6651,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     related: [
+      { label: "Integración de Yape y pasarelas de pago", href: "/integracion-de-pagos", desc: "Conectamos Yape, Plin, Izipay, Niubiz o Culqi a tu web, tienda o app." },
       { label: "Sistema de ventas y facturación", href: "/sistemas/ventas-y-facturacion", desc: "Emite el comprobante y cuadra el cobro solo." },
       { label: "Pasarelas de pago para ecommerce en Perú", href: "/blog/pasarelas-de-pago-para-ecommerce-en-peru", desc: "Qué cobra cada proveedor." },
       { label: "Cómo automatizar los procesos de tu empresa", href: "/blog/como-automatizar-los-procesos-de-tu-empresa", desc: "Qué tareas dejan de hacerse a mano." },
@@ -7089,6 +7104,105 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "CRM a medida vs enlatado", href: "/blog/crm-a-medida-vs-crm-enlatado", desc: "Cuál conviene a tu pyme y cuándo." },
       { label: "Sistema ERP a medida", href: "/sistemas/gestion-erp-crm", desc: "Cuando el CRM es parte de una gestión más amplia." },
       { label: "Cotiza tu CRM", href: "/cotizacion", desc: "Propuesta con alcance, etapas y tiempos." },
+    ],
+  },
+  {
+    slug: "que-es-un-software-a-medida",
+    title: "Qué es un software a medida: ejemplos y cuándo conviene",
+    h1: "¿Qué es un software a medida? Ejemplos y cuándo le conviene a tu empresa",
+    description:
+      "Qué es un software a medida, en qué se diferencia de un programa del mercado, ejemplos por área (ventas, inventario, reservas, CRM) y señales de que tu empresa ya lo necesita.",
+    excerpt:
+      "Un software a medida se construye para tus procesos, no al revés. Qué es, ejemplos reales por área y cómo saber si ya te conviene.",
+    datePublished: "2026-10-13",
+    category: "Software",
+    readingMin: 6,
+    intro:
+      "Un software a medida es un programa creado específicamente para una empresa, a partir de cómo trabaja ella, en lugar de un producto genérico que muchas empresas usan igual. Puede ser un sistema web, una aplicación móvil o un panel interno, y es tuyo: el código, los datos y las reglas responden a tu negocio. Aquí verás qué incluye, ejemplos concretos y cuándo vale la pena.",
+    sections: [
+      {
+        h2: "Qué significa que un software sea «a medida»",
+        body:
+          "Significa que el sistema se diseña desde cero alrededor de tus procesos: qué datos registras, quién aprueba qué, qué reportes necesitas y con qué otras herramientas debe conversar. Un programa del mercado (también llamado enlatado) hace lo contrario: trae un flujo fijo y tu equipo se adapta a él. Ninguno es mejor en todos los casos; la diferencia está en quién se adapta a quién.",
+        table: {
+          cabeceras: ["", "Software a medida", "Software del mercado"],
+          filas: [
+            ["Quién se adapta", "El sistema a tu proceso", "Tu proceso al sistema"],
+            ["Pago", "Desarrollo inicial + servidor y soporte", "Suscripción o licencia, a menudo por usuario"],
+            ["Propiedad", "El código y los datos son tuyos", "Usas el producto mientras pagas"],
+            ["Tiempo para empezar", "Semanas o meses según el alcance", "Inmediato"],
+            ["Integraciones", "Las que tu negocio necesite", "Las que el proveedor ofrezca"],
+          ],
+        },
+      },
+      {
+        h2: "Ejemplos de software a medida por área",
+        body:
+          "Casi siempre nace de una tarea que hoy se hace en Excel, WhatsApp o papel y que ya no aguanta el volumen. Estos son los casos más comunes en empresas peruanas:",
+        bullets: [
+          "Ventas y facturación: registrar pedidos y emitir boletas y facturas electrónicas de SUNAT desde el mismo lugar. Ver [sistema de ventas y facturación](/sistemas/ventas-y-facturacion).",
+          "Inventario: stock por almacén o sede que se descuenta solo con cada venta. Ver [sistema de inventario](/sistemas/inventario).",
+          "CRM: seguimiento de clientes, cotizaciones y embudo de ventas del equipo comercial. Ver [CRM a medida](/sistemas/crm-a-medida).",
+          "ERP: ventas, compras, inventario, caja y reportes en una sola base de datos. Ver [ERP a medida](/sistemas/gestion-erp-crm).",
+          "Reservas y citas: hoteles, clínicas o restaurantes que agendan sin cruces. Ver [sistema hotelero](/sistemas/sistema-hotelero) y [sistema para restaurantes](/sistemas/sistema-para-restaurantes).",
+          "Aplicaciones para clientes: una app web o móvil para pedir, pagar o hacer seguimiento. Ver [aplicaciones móviles](/desarrollo-de-aplicaciones-moviles).",
+          "Producto propio (SaaS): un software que tu empresa vende por suscripción a otras. Ver [desarrollo de SaaS](/desarrollo-de-saas).",
+        ],
+      },
+      {
+        h2: "Señales de que tu empresa ya necesita uno",
+        bullets: [
+          "Los mismos datos se copian a mano entre dos o más herramientas, y ahí aparecen los errores.",
+          "Pagas licencias por usuario de un programa del que usas una parte y aun así te falta lo importante.",
+          "Tu forma de trabajar es lo que te diferencia y ningún sistema del mercado la respeta.",
+          "Necesitas que el sistema hable con tu web, tu tienda, tu pasarela de pagos o la facturación electrónica.",
+          "Gerencia no puede ver un reporte del día sin pedírselo a alguien.",
+        ],
+      },
+      {
+        h2: "Cuándo NO conviene",
+        body:
+          "Si tu proceso es estándar y un programa del mercado lo cubre a un precio razonable, úsalo: es más rápido y barato al inicio. Tampoco conviene empezar con todo a la vez. Lo sano es construir primero el módulo que hoy te hace perder dinero de forma medible y sumar el resto por etapas. La comparación completa está en [software a medida vs software enlatado](/blog/software-a-medida-vs-software-enlatado).",
+      },
+      {
+        h2: "Cuánto cuesta un software a medida en Perú",
+        body:
+          "Depende de los módulos, los usuarios y las integraciones. Como referencia, en Websy una aplicación web o móvil a medida parte desde S/ 15,000 y un ERP a medida desde S/ 20,000 a S/ 25,000. Son montos referenciales y varían según el alcance. El desglose por tipo de proyecto está en [cuánto cuesta un software a medida en Perú](/blog/cuanto-cuesta-un-software-a-medida-en-peru).",
+      },
+      {
+        h2: "Cómo se desarrolla, paso a paso",
+        bullets: [
+          "Diagnóstico: entender el proceso actual, dónde se pierde tiempo o dinero y qué datos se manejan.",
+          "Alcance y cotización por etapas: qué entra en la primera versión y qué después.",
+          "Diseño de pantallas: tu equipo ve y valida cómo se usará antes de programar.",
+          "Desarrollo con entregas parciales que puedes probar.",
+          "Puesta en marcha, capacitación y migración de tus datos actuales.",
+          "Soporte y mejoras con el sistema ya en uso.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Qué es un software a medida?",
+        a: "Es un programa creado específicamente para una empresa a partir de sus propios procesos, en lugar de un producto genérico. Puede ser un sistema web, una app móvil o un panel interno, y el código y los datos son del cliente.",
+      },
+      {
+        q: "¿Cuál es la diferencia entre software a medida y software enlatado?",
+        a: "El enlatado trae un flujo fijo y se paga por suscripción o licencia; tu equipo se adapta a él. El software a medida se construye alrededor de tu proceso, se paga como desarrollo y luego solo pide servidor y soporte.",
+      },
+      {
+        q: "¿Qué ejemplos de software a medida hay?",
+        a: "Sistemas de ventas y facturación electrónica, inventario, CRM, ERP, sistemas de reservas para hoteles o restaurantes, aplicaciones móviles para clientes y productos SaaS propios.",
+      },
+      {
+        q: "¿El código del software a medida es mío?",
+        a: "En Websy sí: el código, la base de datos y los accesos se entregan al cliente. Antes de firmar con cualquier proveedor, conviene dejarlo por escrito.",
+      },
+    ],
+    related: [
+      { label: "Desarrollo de software a medida", href: "/desarrollo-de-software-a-medida", desc: "Sistemas, apps y SaaS hechos para tu empresa en Perú." },
+      { label: "Cuánto cuesta un software a medida en Perú", href: "/blog/cuanto-cuesta-un-software-a-medida-en-peru", desc: "Precios referenciales por tipo de proyecto." },
+      { label: "Software a medida vs enlatado", href: "/blog/software-a-medida-vs-software-enlatado", desc: "Cuál elegir según tu etapa y tu proceso." },
     ],
   },
 ];

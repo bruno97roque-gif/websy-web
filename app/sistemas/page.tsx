@@ -96,6 +96,7 @@ export default function SistemasPage() {
         { label: "Sistema de gestión (ERP / CRM)", href: "/sistemas/gestion-erp-crm", desc: "Centraliza operación, clientes y reportes en un solo panel." },
         { label: "CRM a medida", href: "/sistemas/crm-a-medida", desc: "Tu propio sistema de clientes, cotizaciones y seguimiento de ventas." },
         { label: "Sistema hotelero", href: "/sistemas/sistema-hotelero", desc: "Reservas, habitaciones, caja y facturación para hoteles y hospedajes." },
+        { label: "Sistema para restaurantes", href: "/sistemas/sistema-para-restaurantes", desc: "Pedidos, mesas, delivery, caja e insumos para restaurantes." },
         { label: "Desarrollo de software a medida", href: "/desarrollo-de-software-a-medida", desc: "Cuando tu proceso no entra en ningún sistema del mercado." },
         { label: "Precios y cotización", href: "/precios", desc: "Qué define el precio de un sistema y cómo arrancar por etapas." },
       ]}
