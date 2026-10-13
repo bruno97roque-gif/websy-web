@@ -86,6 +86,28 @@ export default function ContactSection() {
     const form = e.currentTarget;
     const data = Object.fromEntries(new FormData(form));
 
+    // El formulario es noValidate (los mensajes nativos del navegador no
+    // combinan con el diseño), así que la comprobación va aquí: sin ella, el
+    // envío llegaba al servidor incompleto y el visitante veía un error genérico.
+    const nombre = String(data.nombre || "").trim();
+    const email = String(data.email || "").trim();
+    const digitos = String(data.whatsapp || "").replace(/\D/g, "");
+    const falta = !nombre
+      ? "Escribe tu nombre para saber a quién responder."
+      : !email && digitos.length < 7
+        ? "Déjanos un email o un WhatsApp para responderte."
+        : "";
+    if (falta) {
+      trackEvent("form_submit_error", {
+        form_name: "contacto",
+        error_type: "validacion_cliente",
+        error_message: falta,
+      });
+      setErrMsg(falta);
+      setStatus("error");
+      return;
+    }
+
     trackEvent("form_submit", {
       form_name: "contacto",
       servicio: String(data.servicio || "sin_especificar"),
@@ -223,8 +245,11 @@ export default function ContactSection() {
 
               {/* Fila 2: Email + WhatsApp */}
               <div className="mb-5 grid grid-cols-1 gap-4 sm:grid-cols-2">
-                <FormField name="email"    label="Email"    type="email" placeholder="tu@email.com"    required />
+                <FormField name="email"    label="Email"    type="email" placeholder="tu@email.com" />
                 <FormField name="whatsapp" label="WhatsApp" type="tel"   placeholder="+51 999 999 999" />
+                <p className="font-poppins text-[12px] text-white/60 sm:col-span-2">
+                  Con tu email o tu WhatsApp nos basta para responderte.
+                </p>
               </div>
 
               {/* Servicio de interés */}
@@ -244,13 +269,12 @@ export default function ContactSection() {
                   htmlFor="campo-proyecto"
                   className="font-montserrat text-[11px] font-bold uppercase tracking-[1.5px] text-white"
                 >
-                  Cuéntanos tu proyecto <span className="text-[#F18C1B]">*</span>
+                  Cuéntanos tu proyecto
                 </label>
                 <textarea
                   id="campo-proyecto"
                   name="proyecto"
                   rows={7}
-                  required
                   placeholder="Describe brevemente qué necesitas…"
                   className="w-full resize-none rounded-[10px] border border-[#F18C1B]/40 bg-white/[0.06] px-4 py-3.5 font-poppins text-[14px] text-white placeholder:text-white/25 outline-none backdrop-blur-sm transition-colors focus:border-[#F18C1B]"
                 />

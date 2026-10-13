@@ -64,15 +64,19 @@ export async function POST(req: NextRequest) {
     const email    = clean(body.email,    120);
     const whatsapp = clean(body.whatsapp, 30)   || "—";
     const servicio = clean(body.servicio, 60)   || "—";
-    const proyecto = clean(body.proyecto, 1000);
+    const proyecto = clean(body.proyecto, 1000) || "—";
 
-    if (!nombre || !email || !proyecto) {
+    /* Basta con UNA forma de responder: email o WhatsApp. En Perú mucha gente
+       deja solo su número, y exigir email + descripción tiraba leads reales
+       (form_submit_error con 400 en / y /cotizacion, set-oct 2026). */
+    const tieneWhatsapp = whatsapp.replace(/\D/g, "").length >= 7;
+    if (!nombre || (!email && !tieneWhatsapp)) {
       return NextResponse.json(
-        { error: "Nombre, email y descripción del proyecto son obligatorios." },
+        { error: "Déjanos tu nombre y un email o WhatsApp para responderte." },
         { status: 400 }
       );
     }
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
       return NextResponse.json(
         { error: "El email no tiene un formato válido." },
         { status: 400 }
@@ -93,7 +97,7 @@ export async function POST(req: NextRequest) {
     const { error: fallo } = await resend.emails.send({
       from:    `Websy Contacto <${process.env.FROM_EMAIL ?? "onboarding@resend.dev"}>`,
       to:      [process.env.CONTACT_EMAIL ?? "ventas@websy.com.pe"],
-      replyTo: email,
+      replyTo: email || undefined,
       subject: `✉️ Nuevo contacto: ${nombre} · ${servicio}`,
       html:    buildEmailHtml({ nombre, empresa, email, whatsapp, servicio, proyecto, fecha }),
     });
@@ -129,10 +133,10 @@ export async function POST(req: NextRequest) {
         canal: "formulario",
         nombre,
         telefono: whatsapp === "—" ? null : whatsapp,
-        correo: email,
+        correo: email || null,
         empresa: empresa === "—" ? null : empresa,
         servicio: servicio === "—" ? null : servicio,
-        mensaje: proyecto,
+        mensaje: proyecto === "—" ? null : proyecto,
         pagina: clean(body.pagina, 300) || null,
         ubicacion: "formulario_contacto",
         ctx: {
@@ -258,7 +262,7 @@ function buildEmailHtml(d: EmailData): string {
         </div>
         <div class="row">
           <div class="cell-lbl"><span class="lbl">Email</span></div>
-          <div class="cell-val"><span class="val"><a href="mailto:${esc(d.email)}">${esc(d.email)}</a></span></div>
+          <div class="cell-val"><span class="val">${d.email ? `<a href="mailto:${esc(d.email)}">${esc(d.email)}</a>` : "—"}</span></div>
         </div>
         <div class="row">
           <div class="cell-lbl"><span class="lbl">WhatsApp</span></div>
@@ -280,7 +284,7 @@ function buildEmailHtml(d: EmailData): string {
 
       <!-- Botón responder -->
       <div class="btn-wrap">
-        <a class="btn" href="mailto:${esc(d.email)}">Responder a ${esc(d.nombre)} →</a>
+        <a class="btn" href="${d.email ? `mailto:${esc(d.email)}` : `https://wa.me/${d.whatsapp.replace(/\D/g, "")}`}">Responder a ${esc(d.nombre)} →</a>
       </div>
 
     </div>
