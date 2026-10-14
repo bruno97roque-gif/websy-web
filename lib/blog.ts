@@ -480,16 +480,55 @@ export const BLOG_POSTS: BlogPost[] = [
     title: "Cuánto cuesta una página web en Perú (2026)",
     h1: "¿Cuánto cuesta una página web en Perú?",
     description:
-      "¿Cuánto cuesta una página web para empresa en Perú en 2026? Qué define el precio, qué debe incluir y cómo cotizar tu web sin pagar de más.",
+      "Precio de una página web en Perú en 2026 por tipo de proyecto, costos anuales de dominio .pe y hosting en soles, plazos y qué debe incluir una cotización seria.",
     excerpt:
-      "Qué factores definen el precio de una página web profesional y qué debe incluir una cotización seria.",
+      "Precios referenciales por tipo de proyecto, lo que se paga cada año (dominio y hosting), plazos y qué debe incluir una cotización seria.",
     datePublished: "2026-06-19",
-    dateModified: "2026-09-02",
+    dateModified: "2026-10-14",
     category: "Web",
-    readingMin: 5,
+    readingMin: 8,
+    /* 14-oct-2026 · La versión anterior no daba ni una cifra y Google la tenía
+       entre el puesto 75 y el 94 para «diseño de página web precio», «precios de
+       páginas web» y «cotización de página web» (GSC 90 d). Ahora responde con las
+       cifras que Websy ya publica en /precios y /tiendas-virtuales y con los costos
+       anuales del artículo de hosting, con su fuente. No se inventa ningún monto:
+       la web informativa no tiene «desde» publicado y aquí tampoco. */
     intro:
-      "El precio de una página web en Perú depende del número de secciones, el contenido y las funciones que necesites. Una landing simple no cuesta lo mismo que una web corporativa con blog. Aquí qué mueve el costo y qué debería incluir tu inversión.",
+      "En Perú, el precio de una página web depende del tipo de proyecto. En Websy una tienda virtual parte desde S/ 2,500, una aplicación web o móvil desde S/ 15,000 y un software a medida desde S/ 20,000; una web informativa se cotiza según sus secciones. A eso se suman el dominio .pe (S/ 110 al año) y el hosting. Los montos son referenciales.",
     sections: [
+      {
+        h2: "Precio de una página web en Perú según el tipo de proyecto",
+        body:
+          "La forma más rápida de saber cuánto vas a invertir es ubicar tu proyecto en esta tabla. Una página informativa, una tienda que cobra con Yape y tarjeta y un sistema con usuarios y permisos son trabajos muy distintos, y su precio también lo es. Los montos son los que Websy publica en su página de [precios](/precios).",
+        table: {
+          cabeceras: ["Tipo de proyecto", "Para qué sirve", "Precio referencial en Websy", "Plazo habitual"],
+          filas: [
+            ["Landing page", "Una sola página para una campaña de Google Ads o redes", "Según cotización", "1 a 2 semanas"],
+            ["Página web corporativa (4 a 6 secciones)", "Presentar la empresa y captar contactos por formulario y WhatsApp", "Según cotización", "2 a 4 semanas"],
+            ["Web con blog o catálogo informativo", "Atraer visitas desde Google con contenido", "Según cotización", "3 a 5 semanas"],
+            ["Tienda virtual (Shopify o WooCommerce)", "Vender online con Yape, Plin y tarjeta", "Desde S/ 2,500", "Más que una web corporativa, por catálogo y pagos"],
+            ["Aplicación web o app móvil", "Un servicio para tus clientes o tu equipo, con usuarios y roles", "Desde S/ 15,000", "Según módulos"],
+            ["Software a medida (ERP, sistema hotelero)", "Automatizar ventas, stock, reservas o facturación", "Desde S/ 20,000 (sistema hotelero: S/ 20,000 a S/ 25,000)", "Según módulos"],
+          ],
+          nota:
+            "Los precios son referenciales y varían según el alcance del proyecto. Plazos tomados de cuánto tiempo toma hacer una página web; asumen que el contenido se entrega a tiempo. Actualizado el 14 de octubre de 2026.",
+        },
+      },
+      {
+        h2: "Lo que pagas cada año aparte del desarrollo: dominio y hosting",
+        body:
+          "El desarrollo se paga una vez; el dominio y el hosting se renuevan todos los años. Poner una web en línea cuesta entre S/ 250 y S/ 370 al año con un plan de hosting que incluye el dominio, o S/ 110 del dominio .pe más el hosting por separado. El detalle por proveedor está en [cuánto cuesta un hosting y un dominio .pe en Perú](/blog/cuanto-cuesta-un-hosting-y-un-dominio-pe-en-peru).",
+        table: {
+          cabeceras: ["Concepto", "Costo al año", "Fuente"],
+          filas: [
+            ["Dominio .pe o .com.pe", "S/ 110", "punto.pe, registrador oficial del .pe (incluye impuestos)"],
+            ["Hosting compartido con dominio .com incluido", "S/ 185.70 a S/ 305.70", "Hosting Perú, planes Personal a Avanzado (sin IGV)"],
+            ["Hosting compartido con dominio .pe incluido", "S/ 248.60 a S/ 368.60", "Hosting Perú, planes Personal a Avanzado (sin IGV)"],
+          ],
+          nota:
+            "Tarifas consultadas el 23 de setiembre de 2026. Son referenciales: cada proveedor arma sus planes distinto. Una tienda en Shopify paga además el plan mensual de la plataforma.",
+        },
+      },
       {
         h2: "Qué factores definen el precio",
         bullets: [
@@ -512,12 +551,28 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     faqs: [
       {
+        q: "¿Cuánto cuesta una página web en Perú en 2026?",
+        a: "Depende del tipo de proyecto. En Websy una tienda virtual parte desde S/ 2,500, una aplicación web o móvil desde S/ 15,000 y un software a medida desde S/ 20,000; una web informativa o corporativa se cotiza según sus secciones y funciones. Los montos indicados son referenciales.",
+      },
+      {
+        q: "¿Cuánto cuesta mantener una página web al año?",
+        a: "Como mínimo, el dominio .pe (S/ 110 al año en punto.pe) y el hosting (desde S/ 185.70 al año en un plan compartido con dominio .com incluido). Si quieres que alguien la actualice y la cuide, se suma el mantenimiento. Los montos indicados son referenciales.",
+      },
+      {
+        q: "¿Cuánto demora hacer una página web?",
+        a: "Una landing page toma de 1 a 2 semanas, una web corporativa de 4 a 6 secciones de 2 a 4 semanas y una web con blog o catálogo de 3 a 5 semanas, siempre que el contenido se entregue a tiempo.",
+      },
+      {
         q: "¿La página incluye hosting y dominio?",
         a: "Sí. Incluimos la configuración de hosting, dominio y certificado SSL para que tu web salga publicada y segura.",
       },
       {
         q: "¿Puedo editar la web yo mismo después?",
         a: "Sí. Entregamos una web administrable y te capacitamos para editar textos e imágenes sin programar.",
+      },
+      {
+        q: "¿Cómo pido una cotización?",
+        a: "Desde la página de cotización de Websy o por WhatsApp. Es gratis y sin compromiso, y te enviamos la propuesta con alcance y tiempos en menos de 24 horas.",
       },
     ],
     related: [
@@ -3726,11 +3781,11 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "La mayoría busca servicios 'cerca de mí'. Así logras que tu negocio aparezca primero en tu ciudad o distrito.",
     datePublished: "2026-07-08",
-    dateModified: "2026-09-07",
+    dateModified: "2026-10-14",
     category: "SEO Local",
     readingMin: 7,
     intro:
-      "Cuando alguien busca un servicio en su zona, Google le muestra un mapa con tres negocios y luego los resultados de siempre. Salir en ese paquete local es lo que llena tu agenda. El SEO local trabaja tu ficha de Google y tu web para que aparezcas primero cuando buscan lo que ofreces en tu ciudad o distrito.",
+      "Cuando alguien busca un servicio en su zona, Google le muestra un mapa con tres negocios y luego los resultados de siempre. Salir en ese paquete local es lo que llena tu agenda. El SEO local trabaja tu ficha de Google y tu web para que aparezcas primero cuando buscan lo que ofreces en tu ciudad o distrito. Si prefieres que lo hagamos por ti, mira nuestro [servicio de SEO local](/seo/seo-local).",
     sections: [
       {
         h2: "Qué es el SEO local y por qué importa",
@@ -3789,6 +3844,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     related: [
+      { label: "Servicio de SEO local en Lima y Perú", href: "/seo/seo-local", desc: "Ficha de Google, reseñas, NAP y páginas por distrito, hecho por Websy." },
       { label: "SEO y posicionamiento web", href: "/seo", desc: "SEO local y técnico para aparecer primero en tu zona." },
       { label: "Google Mi Negocio para empresas", href: "/blog/google-mi-negocio-para-empresas-en-peru", desc: "Cómo optimizar tu ficha y ganar reseñas." },
       { label: "Cómo aparecer en Google", href: "/blog/como-aparecer-en-google-con-tu-pagina-web", desc: "Las bases del posicionamiento web." },

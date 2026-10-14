@@ -132,7 +132,7 @@ export default function HeroSection() {
               <span className="relative inline-flex h-[8px] w-[8px] rounded-full bg-white shadow-[0_0_6px_rgba(255,255,255,0.7)]" />
             </span>
             <span className="font-poppins text-[9px] font-medium uppercase tracking-[1.7px] text-[#F18C1B]">
-              Agencia de Tecnología · Lima, Perú
+              Páginas web · Software · Tiendas virtuales
             </span>
           </div>
 
@@ -146,6 +146,13 @@ export default function HeroSection() {
           */}
           <h1 ref={titleRef} style={{ opacity: 0 }}
             className="font-montserrat mb-6 w-full text-[26px] font-bold leading-[1.1] tracking-tight text-white md:leading-[1] md:text-[34px] lg:text-[38px] xl:text-[48px] 2xl:text-[74px]">
+            {/* 14-oct-2026 · La portada es la URL que Google elige para «agencia de
+                desarrollo web» (GSC 90 d: 358 imp, puesto 19,1; «empresa de desarrollo
+                web» 111 imp; «agencia de páginas web» 77 imp en el 28,4) y el H1 no
+                decía ni «agencia» ni «desarrollo web». El eslogan se queda igual. */}
+            <span className="font-poppins mb-4 block text-[13px] font-semibold tracking-[0.5px] text-[#F18C1B] md:text-[15px] xl:text-[17px]">
+              Agencia de desarrollo web en Lima, Perú
+            </span>
             <span className="block md:whitespace-nowrap">Tu marca en la cima</span>
             <span className="block md:whitespace-nowrap">del Mundo <span className="text-[#F18C1B]">Digital</span></span>
           </h1>

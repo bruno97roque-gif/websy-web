@@ -90,7 +90,7 @@ export const SERVICE_SITEMAP: SitemapEntry[] = [
   { path: "/tiendas-virtuales/shopify/costos", priority: 0.8, lastModified: "2026-09-16" },
   { path: "/tiendas-virtuales/woocommerce", priority: 0.7, lastModified: "2026-07-31" },
   { path: "/desarrollo-web", priority: 0.9, lastModified: "2026-09-23" },
-  { path: "/diseno-de-paginas-web", priority: 0.9, lastModified: "2026-09-02" },
+  { path: "/diseno-de-paginas-web", priority: 0.9, lastModified: "2026-10-14" },
   { path: "/desarrollo-de-software-a-medida", priority: 0.9, lastModified: "2026-10-01" },
   { path: "/desarrollo-de-aplicaciones-moviles", priority: 0.9, lastModified: "2026-10-01" },
   { path: "/desarrollo-de-saas", priority: 0.9, lastModified: "2026-10-01" },
@@ -107,7 +107,8 @@ export const SERVICE_SITEMAP: SitemapEntry[] = [
   { path: "/precios", priority: 0.9, lastModified: "2026-10-01" },
   { path: "/cotizacion", priority: 0.8, lastModified: "2026-07-31" },
   // Nuevos pilares de servicio.
-  { path: "/seo", priority: 0.9, lastModified: "2026-08-12" },
+  { path: "/seo", priority: 0.9, lastModified: "2026-10-14" },
+  { path: "/seo/seo-local", priority: 0.8, lastModified: "2026-10-14" },
   { path: "/google-ads", priority: 0.9, lastModified: "2026-09-23" },
   { path: "/branding", priority: 0.9, lastModified: "2026-08-12" },
   { path: "/mantenimiento-web", priority: 0.9, lastModified: "2026-07-31" },
@@ -123,7 +124,7 @@ export const SERVICE_SITEMAP: SitemapEntry[] = [
 
 /** Páginas fijas (institucionales). Misma regla de `lastModified` que arriba. */
 export const FIXED_SITEMAP: SitemapEntry[] = [
-  { path: "", priority: 1, lastModified: "2026-10-01" },
+  { path: "", priority: 1, lastModified: "2026-10-14" },
   { path: "/servicios", priority: 0.7, lastModified: "2026-08-12" },
   { path: "/nosotros", priority: 0.6, lastModified: "2026-07-31" },
   { path: "/contacto", priority: 0.6, lastModified: "2026-08-12" },
