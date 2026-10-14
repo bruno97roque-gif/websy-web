@@ -85,7 +85,7 @@ export default function PaginaWebAbogadosPage() {
       ]}
       articles={[
         { label: "Página web para estudios de abogados", href: "/blog/pagina-web-para-estudios-de-abogados", desc: "Qué debe tener la web de un estudio jurídico para captar clientes." },
-        { label: "Cómo aparecer en Google con tu página web", href: "/blog/como-aparecer-en-google-con-tu-pagina-web", desc: "Guía práctica de SEO para que te encuentren en tu zona." },
+        { label: "Cómo hacer que tu página web aparezca en Google", href: "/blog/como-hacer-que-tu-pagina-web-aparezca-en-google-peru", desc: "Guía práctica de SEO para que te encuentren en tu zona." },
       ]}
       faqs={[
         {

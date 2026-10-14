@@ -126,7 +126,6 @@ export function ctaDelPost(categoria: string, slug?: string): CtaServicio {
   /* Un puñado de artículos hablan de un servicio distinto al de su categoría.
      Mandan ellos: la categoría es para ordenar el blog, no para vender. */
   const porSlug: Record<string, CtaServicio> = {
-    "como-aparecer-en-google-con-tu-pagina-web": SEO,
     "como-hacer-que-tu-pagina-web-aparezca-en-google-peru": SEO,
     "google-ads-vs-seo-cual-conviene-para-tu-negocio": ADS,
     "palabras-clave-negativas-en-google-ads": ADS,

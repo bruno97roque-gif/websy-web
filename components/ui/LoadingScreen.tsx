@@ -30,6 +30,8 @@ export default function LoadingScreen() {
       <img
         src="/icons/logo-white.webp"
         alt="Websy"
+        width={1772}
+        height={1155}
         className="h-10 w-auto object-contain"
         draggable={false}
       />

@@ -75,6 +75,19 @@ const nextConfig: NextConfig = {
 
      El colector emite sus rutas y sus ficheros ya bajo `/panel` (basePath),
      así que sus `_next/static` no chocan con los de este sitio. */
+  /* 14-oct-2026 · Dos guías competían por «cómo hacer que mi página web aparezca
+     en Google» y Google elegía la segunda (puesto 17-22 frente a 43-55). Se fusionaron
+     en una y la otra redirige con 301. */
+  async redirects() {
+    return [
+      {
+        source: "/blog/como-aparecer-en-google-con-tu-pagina-web",
+        destination: "/blog/como-hacer-que-tu-pagina-web-aparezca-en-google-peru",
+        permanent: true,
+      },
+    ];
+  },
+
   async rewrites() {
     const PANEL = "https://websy-panel.vercel.app/panel";
     return [

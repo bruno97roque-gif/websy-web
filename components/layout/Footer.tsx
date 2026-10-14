@@ -77,7 +77,9 @@ export default function Footer() {
           <img
             src="/images/logo-websy-servicios.webp"
             alt="Websy"
-            style={{ height: 38, objectFit: "contain" }}
+            width={453}
+            height={121}
+            style={{ height: 38, width: "auto", objectFit: "contain" }}
           />
 
           {/* Nav */}
