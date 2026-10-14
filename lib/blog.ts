@@ -35,23 +35,35 @@ export type BlogPost = {
 export const BLOG_POSTS: BlogPost[] = [
   {
     slug: "como-hacer-que-tu-pagina-web-aparezca-en-google-peru",
-    title: "Dar de alta tu web en Search Console e indexarla",
-    h1: "Cómo dar de alta tu web en Google Search Console e indexarla",
+    title: "Cómo hacer que tu página web aparezca en Google",
+    h1: "Cómo hacer que tu página web aparezca en Google, paso a paso",
     description:
-      "Cómo dar de alta tu web en Google Search Console: verificar el dominio, enviar el sitemap y pedir la indexación de una URL, paso a paso.",
+      "¿Tu página web no aparece en Google? Cómo darla de alta en Search Console, enviar el sitemap, indexarla y posicionarla en Perú con SEO on-page y local.",
     excerpt:
-      "Tu web está en línea pero no aparece en Google. Aquí los pasos reales para darla de alta, indexarla y empezar a posicionar en Perú.",
+      "Por qué tu web todavía no sale en Google y los pasos concretos para indexarla, posicionarla y empezar a recibir clientes.",
     datePublished: "2026-07-23",
-    dateModified: "2026-08-12",
+    dateModified: "2026-10-14",
     category: "SEO",
-    readingMin: 7,
+    readingMin: 10,
+    /* 14-oct-2026 · Fusión con /blog/como-aparecer-en-google-con-tu-pagina-web, que
+       ahora redirige aquí con 301. La separación de agosto no funcionó: para las mismas
+       búsquedas («cómo hacer que mi página web aparezca en Google» y variantes, ~2.000
+       imp en 90 días y 0 clics) Google elegía esta URL (puesto 17-22) y la otra se
+       quedaba en el 43-55. Esta guía junta el trámite técnico y el posicionamiento. */
     intro:
-      "Publicaste tu página web pero al buscar tu negocio en Google no aparece. Es normal: estar en línea no es lo mismo que estar indexado. Esta guía cubre solo el trámite técnico —dar de alta el dominio en Search Console, enviar el sitemap y pedir la indexación—; si lo que buscas es la visión completa, empieza por [cómo aparecer en Google con tu página web](/blog/como-aparecer-en-google-con-tu-pagina-web).",
+      "Para que tu página web aparezca en Google hay que hacer tres cosas: darla de alta en Google Search Console, enviar el sitemap para que Google la indexe y optimizarla para lo que busca tu cliente. Estar en línea no es lo mismo que estar indexado. Aquí tienes los pasos en orden, desde el trámite técnico hasta el SEO on-page y local.",
     sections: [
       {
-        h2: "Estar en línea no es lo mismo que aparecer en Google",
+        h2: "Por qué tu página web todavía no aparece en Google",
         body:
-          "Cuando subes tu web ya está disponible para quien escriba tu dirección exacta. Pero para salir en los resultados de búsqueda, Google primero tiene que descubrir tu sitio, rastrearlo e indexarlo (guardarlo en su índice). Recién ahí puede mostrarlo cuando alguien busca. Ese proceso no es automático ni inmediato: hay que ayudarlo, y eso es justo lo que verás aquí.",
+          "Casi siempre es una de tres razones: Google aún no la ha indexado, el contenido no responde a lo que busca tu cliente, o hay webs más antiguas y con más autoridad para esa búsqueda. Cuando subes tu web ya está disponible para quien escriba tu dirección exacta, pero para salir en los resultados Google primero tiene que descubrirla, rastrearla e indexarla. Las causas más comunes:",
+        bullets: [
+          "Es reciente: Google necesita semanas para confiar en un dominio nuevo.",
+          "No tiene contenido suficiente ni las palabras que la gente busca.",
+          "Falta autoridad: casi ningún otro sitio la enlaza todavía.",
+          "Problemas técnicos: bloqueos en robots.txt, etiqueta noindex o velocidad muy baja.",
+          "Compites contra sitios grandes ya posicionados para esa búsqueda.",
+        ],
       },
       {
         h2: "Paso 1: Da de alta tu web en Google Search Console",
@@ -69,27 +81,49 @@ export const BLOG_POSTS: BlogPost[] = [
           "El sitemap es un archivo (normalmente sitemap.xml) que lista todas las páginas de tu web para que Google las encuentre de un tirón. Las webs profesionales lo generan solas. Envíalo desde Search Console en la sección 'Sitemaps'. Así Google descubre todo tu contenido sin depender de que llegue enlace por enlace. Si tu web no tiene sitemap, es señal de que le falta base técnica de SEO.",
       },
       {
-        h2: "Paso 3: Por qué tu web todavía no aparece",
+        h2: "Paso 3: Que Google pueda leer tu web",
         body:
-          "Que Google la haya indexado no garantiza salir arriba. Las razones más comunes por las que una web nueva no aparece (o aparece muy abajo) son:",
+          "Antes de pensar en posiciones, Google tiene que poder leer tu sitio. Lo mínimo indispensable: Si vas a rehacerla, primero lee [cómo migrar tu web sin perder posicionamiento](/blog/como-migrar-tu-pagina-web-sin-perder-posicionamiento-en-google).",
         bullets: [
-          "Es reciente: Google necesita semanas para confiar en un dominio nuevo.",
-          "No tiene contenido suficiente ni las palabras que la gente busca.",
-          "Falta autoridad: casi ningún otro sitio la enlaza todavía.",
-          "Problemas técnicos: bloqueos en robots.txt, etiqueta noindex o velocidad muy baja.",
-          "Compites contra sitios grandes ya posicionados para esa búsqueda.",
+          "Un robots.txt que no bloquee el sitio y ninguna página importante con noindex.",
+          "Contenido en texto real (no todo dentro de imágenes) que Google pueda leer.",
+          "Una sola versión del dominio (con o sin www) para no dividir la fuerza.",
+          "Buena velocidad y versión móvil: una web lenta indexa y posiciona peor.",
         ],
       },
       {
-        h2: "Paso 4: De 'aparecer' a 'posicionar' (que te encuentren y te contraten)",
+        h2: "Paso 4: Escribe para lo que tu cliente realmente busca",
         body:
-          "Salir en Google es solo el arranque. Para que tu web te traiga clientes tiene que posicionar para las búsquedas correctas (tu servicio + tu ciudad), tener contenido útil, buena velocidad y señales de confianza como reseñas y tu ficha de Google Mi Negocio. Eso es SEO, y es un trabajo continuo. Si prefieres que lo hagamos por ti —desde lo técnico hasta el contenido que atrae a tu cliente— revisa nuestro [servicio de SEO en Perú](/seo). Y si tu web aún no está lista o necesita una base sólida, empieza por un [diseño web optimizado para SEO](/diseno-de-paginas-web).",
+          "La gente no busca como tú describes tu servicio, busca su problema. Antes de redactar, lista las frases exactas que usaría tu cliente (por ejemplo cuánto cuesta, cerca de mí, en Lima, para mi rubro) y crea una página o artículo para cada intención. Una web con una sola página lo tiene difícil: cada servicio y cada duda frecuente merece su propia URL. El registro del dominio lo explicamos en [cómo comprar un dominio .pe paso a paso](/blog/como-comprar-un-dominio-pe-paso-a-paso).",
+      },
+      {
+        h2: "Paso 5: SEO on-page, el que más depende de ti",
+        body:
+          "Es el trabajo dentro de cada página y es donde más rápido se ven mejoras. Un [diseño de páginas web optimizado para SEO](/diseno-de-paginas-web) ya viene con esto resuelto desde el inicio: La parte de seguridad la explicamos en [qué es un certificado SSL](/blog/certificado-ssl-que-es-y-por-que-tu-web-lo-necesita).",
+        bullets: [
+          "Un título (title) y una meta descripción únicos por página, con la palabra clave.",
+          "Un solo H1 y una estructura de encabezados ordenada (H2, H3).",
+          "URLs cortas y descriptivas, sin códigos raros.",
+          "Imágenes livianas con texto alternativo (alt).",
+          "Datos estructurados (schema) para que Google entienda tu negocio.",
+          "Enlaces internos entre tus páginas para repartir autoridad.",
+        ],
+      },
+      {
+        h2: "Paso 6: SEO local, tu mejor palanca en Perú",
+        body:
+          "Si atiendes a clientes de una ciudad o rubro, el SEO local rinde rapidísimo. Optimiza tu ficha de Google (mira nuestra guía de [Google Mi Negocio para empresas en Perú](/blog/google-mi-negocio-para-empresas-en-peru)), consigue reseñas reales, y crea páginas que mencionen tu ciudad y tus servicios. Así apareces en el mapa y en las búsquedas cerca de mí. Si tus clientes te buscan por distrito, lee [cómo salir primero en tu ciudad](/blog/seo-local-en-peru-como-salir-primero-en-tu-ciudad) o mira nuestro [servicio de SEO local](/seo/seo-local).",
+      },
+      {
+        h2: "Cuánto tarda y qué esperar",
+        body:
+          "El SEO es acumulativo: la indexación toma de unos días a un par de semanas, las primeras señales aparecen en semanas y las buenas posiciones se consolidan en meses de trabajo constante. No es magia ni es instantáneo, pero es el canal más rentable a mediano plazo porque no pagas por cada clic. Si prefieres que lo hagamos por ti —desde lo técnico hasta el contenido que atrae a tu cliente— revisa nuestro [servicio de SEO en Perú](/seo).",
       },
     ],
     faqs: [
       {
-        q: "¿Cuánto tarda una web nueva en aparecer en Google?",
-        a: "La indexación puede tardar desde unos días hasta un par de semanas. Posicionar bien para búsquedas competitivas toma más: normalmente varios meses de trabajo de SEO constante, sobre todo en un dominio nuevo.",
+        q: "¿Cuánto tarda una página web nueva en aparecer en Google?",
+        a: "Indexarse puede tomar de pocos días a un par de semanas. Posicionar en los primeros lugares para búsquedas con competencia toma meses de contenido y optimización constante. El SEO local suele dar resultados más rápido.",
       },
       {
         q: "¿Tengo que pagar para aparecer en Google?",
@@ -103,13 +137,25 @@ export const BLOG_POSTS: BlogPost[] = [
         q: "Mi web aparece pero muy abajo, ¿qué hago?",
         a: "Es lo esperable al inicio. Hay que reforzar contenido enfocado en lo que busca tu cliente, mejorar velocidad y señales locales (Google Mi Negocio, reseñas) y ganar enlaces. Es justo lo que trabaja nuestro servicio de SEO.",
       },
+      {
+        q: "¿Necesito un blog para posicionar?",
+        a: "No es obligatorio, pero ayuda mucho. Un blog te permite responder las dudas de tus clientes y crear una página por cada búsqueda, lo que multiplica las puertas de entrada a tu web.",
+      },
+      {
+        q: "¿Ustedes dejan la web lista para Google?",
+        a: "Sí. Cada página que entregamos incluye SEO on-page desde el inicio: títulos, estructura, velocidad y datos estructurados. Pídenos una cotización y te explicamos el alcance.",
+      },
     ],
     related: [
       { label: "Servicio de SEO en Perú", href: "/seo", desc: "Posicionamos tu web para que te encuentren y te contraten." },
+      { label: "Diseño de páginas web optimizadas para SEO", href: "/diseno-de-paginas-web", desc: "Webs listas para Google desde el primer día." },
       { label: "Google Mi Negocio para empresas", href: "/blog/google-mi-negocio-para-empresas-en-peru", desc: "Aparece en el mapa y capta clientes locales." },
-      { label: "Diseño de páginas web", href: "/diseno-de-paginas-web", desc: "Una web con base técnica lista para posicionar." },
+      { label: "Cómo posicionar una tienda virtual en Google", href: "/blog/como-posicionar-una-tienda-virtual-en-google", desc: "SEO aplicado a un ecommerce, paso a paso." },
+      { label: "SEO on-page: la checklist para tu página web (2026)", href: "/blog/seo-on-page-checklist-para-tu-pagina-web", desc: "El SEO on-page es lo que sí controlas de tu web. Esta checklist cubre lo esencial para posicionar mejor." },
+      { label: "Ver precios y qué incluye cada servicio", href: "/precios", desc: "Qué entra en una web pensada para posicionar." },
     ],
   },
+
   {
     slug: "como-posicionar-tu-tienda-online-en-google-peru",
     title: "SEO para tiendas online: fichas y categorías",
@@ -2091,7 +2137,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         h2: "Fotos, publicaciones y cómo se complementa con tu web",
-        body: "Una ficha con buenas fotos de tu local, productos o equipo genera más clics que una vacía. Las publicaciones (novedades, promociones, eventos) mantienen la ficha activa. Y todo esto rinde más cuando tu web refuerza las mismas señales: una página clara, con tu dirección, tu rubro y contenido local, le confirma a Google que eres relevante para esas búsquedas. La ficha y la web trabajan juntas en el SEO local. Si prefieres que configuremos y optimicemos tu ficha de Google por ti, revisa nuestro [servicio de SEO local en Perú](/seo). Y si tu página todavía no sale en los resultados, empieza por esta [guía para aparecer en Google con tu página web](/blog/como-aparecer-en-google-con-tu-pagina-web).",
+        body: "Una ficha con buenas fotos de tu local, productos o equipo genera más clics que una vacía. Las publicaciones (novedades, promociones, eventos) mantienen la ficha activa. Y todo esto rinde más cuando tu web refuerza las mismas señales: una página clara, con tu dirección, tu rubro y contenido local, le confirma a Google que eres relevante para esas búsquedas. La ficha y la web trabajan juntas en el SEO local. Si prefieres que configuremos y optimicemos tu ficha de Google por ti, revisa nuestro [servicio de SEO local en Perú](/seo). Y si tu página todavía no sale en los resultados, empieza por esta [guía para aparecer en Google con tu página web](/blog/como-hacer-que-tu-pagina-web-aparezca-en-google-peru).",
         bullets: [
           "Sube fotos reales de tu local, productos, equipo y trabajos.",
           "Publica novedades y promociones para mantener la ficha viva.",
@@ -2157,105 +2203,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ]
   },
 
-  {
-    slug: "como-aparecer-en-google-con-tu-pagina-web",
-    title: "Cómo aparecer en Google con tu página web",
-    h1: "Cómo hacer que tu página web aparezca en Google",
-    description:
-      "¿Tu página web no aparece en Google? Guía práctica 2026 para indexar, elegir palabras clave, optimizar el SEO on-page y ganar posiciones locales en Perú.",
-    excerpt:
-      "Por qué tu web no sale en Google todavía y los pasos concretos para posicionarla y empezar a recibir clientes.",
-    datePublished: "2026-06-30",
-    dateModified: "2026-09-02",
-    category: "SEO",
-    readingMin: 8,
-    intro:
-      "Tener una página web no garantiza aparecer en Google: hay que ayudarla a que Google la encuentre, la entienda y confíe en ella. En esta guía verás, en orden, qué hace que una web posicione en Perú y qué puedes hacer tú mismo para empezar a recibir clientes desde el buscador.",
-    sections: [
-      {
-        h2: "Por qué tu página web todavía no aparece en Google",
-        body:
-          "Casi siempre es una de tres razones: Google aún no la ha indexado, el contenido no responde a lo que busca tu cliente, o hay webs más antiguas y con más autoridad para esa búsqueda. Lo bueno es que todas se trabajan. Una web recién publicada puede tardar de días a algunas semanas en empezar a mostrarse, y las posiciones mejoran con contenido y enlaces con el tiempo. El trámite exacto está aquí: [dar de alta tu web en Search Console e indexarla](/blog/como-hacer-que-tu-pagina-web-aparezca-en-google-peru).",
-      },
-      {
-        h2: "Paso 1: que Google pueda encontrar e indexar tu web",
-        body:
-          "Antes de pensar en posiciones, Google tiene que poder leer tu sitio. Lo mínimo indispensable: Si vas a rehacerla, primero lee [cómo migrar tu web sin perder posicionamiento](/blog/como-migrar-tu-pagina-web-sin-perder-posicionamiento-en-google).",
-        bullets: [
-          "Un sitemap.xml y un robots.txt correctos que no bloqueen el sitio.",
-          "Registrar tu web en Google Search Console y pedir la indexación.",
-          "Contenido en texto real (no todo dentro de imágenes) que Google pueda leer.",
-          "Una sola versión del dominio (con o sin www) para no dividir la fuerza.",
-          "Buena velocidad y versión móvil: una web lenta indexa y posiciona peor.",
-        ],
-      },
-      {
-        h2: "Paso 2: escribe para lo que tu cliente realmente busca",
-        body:
-          "La gente no busca como tú describes tu servicio, busca su problema. Antes de redactar, lista las frases exactas que usaría tu cliente (por ejemplo cuánto cuesta, cerca de mí, en Lima, para mi rubro) y crea una página o artículo para cada intención. Una web con una sola página lo tiene difícil: cada servicio y cada duda frecuente merece su propia URL. El registro del dominio lo explicamos en [cómo comprar un dominio .pe paso a paso](/blog/como-comprar-un-dominio-pe-paso-a-paso).",
-      },
-      {
-        h2: "Paso 3: SEO on-page, el que más depende de ti",
-        body:
-          "Es el trabajo dentro de cada página y es donde más rápido se ven mejoras. Un [diseño de páginas web optimizado para SEO](/diseno-de-paginas-web) ya viene con esto resuelto desde el inicio: La parte de seguridad la explicamos en [qué es un certificado SSL](/blog/certificado-ssl-que-es-y-por-que-tu-web-lo-necesita).",
-        bullets: [
-          "Un título (title) y una meta descripción únicos por página, con la palabra clave.",
-          "Un solo H1 y una estructura de encabezados ordenada (H2, H3).",
-          "URLs cortas y descriptivas, sin códigos raros.",
-          "Imágenes livianas con texto alternativo (alt).",
-          "Datos estructurados (schema) para que Google entienda tu negocio.",
-          "Enlaces internos entre tus páginas para repartir autoridad.",
-        ],
-      },
-      {
-        h2: "Paso 4: SEO local, tu mejor palanca en Perú",
-        body:
-          "Si atiendes a clientes de una ciudad o rubro, el SEO local rinde rapidísimo. Optimiza tu ficha de Google (mira nuestra guía de [Google Mi Negocio para empresas en Perú](/blog/google-mi-negocio-para-empresas-en-peru)), consigue reseñas reales, y crea páginas que mencionen tu ciudad y tus servicios. Así apareces en el mapa y en las búsquedas cerca de mí. Si tus clientes te buscan por distrito, lee [cómo salir primero en tu ciudad](/blog/seo-local-en-peru-como-salir-primero-en-tu-ciudad).",
-      },
-      {
-        h2: "Cuánto tarda y qué esperar",
-        body:
-          "El SEO es acumulativo: las primeras señales aparecen en semanas y las buenas posiciones se consolidan en meses de trabajo constante. No es magia ni es instantáneo, pero es el canal más rentable a mediano plazo porque no pagas por cada clic. Si quieres saber qué incluye una web lista para posicionar, revisa [nuestros precios y qué entra en cada servicio](/precios).",
-      },
-    ],
-    faqs: [
-      {
-        q: "¿Cuánto tarda una página web nueva en aparecer en Google?",
-        a: "Indexarse puede tomar de pocos días a algunas semanas. Posicionar en los primeros lugares para búsquedas con competencia toma meses de contenido y optimización constante. El SEO local suele dar resultados más rápido.",
-      },
-      {
-        q: "¿Aparecer en Google es gratis?",
-        a: "El posicionamiento orgánico (SEO) no se paga por clic, pero requiere trabajo: una web bien hecha, contenido y optimización. Distinto es Google Ads, donde pagas por cada clic para aparecer arriba de inmediato.",
-      },
-      {
-        q: "¿Necesito un blog para posicionar?",
-        a: "No es obligatorio, pero ayuda mucho. Un blog te permite responder las dudas de tus clientes y crear una página por cada búsqueda, lo que multiplica las puertas de entrada a tu web.",
-      },
-      {
-        q: "¿Ustedes dejan la web lista para Google?",
-        a: "Sí. Cada página que entregamos incluye SEO on-page desde el inicio: títulos, estructura, velocidad y datos estructurados. Pídenos una cotización y te explicamos el alcance.",
-      },
-    ],
-    related: [
-      {
-        label: "Diseño de páginas web optimizadas para SEO",
-        href: "/diseno-de-paginas-web",
-        desc: "Webs listas para Google desde el primer día.",
-      },
-      {
-        label: "Cómo posicionar una tienda virtual en Google",
-        href: "/blog/como-posicionar-una-tienda-virtual-en-google",
-        desc: "SEO aplicado a un ecommerce, paso a paso.",
-      },
-      {
-        label: "Ver precios y qué incluye cada servicio",
-        href: "/precios",
-        desc: "Qué entra en una web pensada para posicionar.",
-      },
-      { label: "Dar de alta tu web en Search Console e indexarla", href: "/blog/como-hacer-que-tu-pagina-web-aparezca-en-google-peru", desc: "Tu web está en línea pero no aparece en Google." },
-      { label: "SEO on-page: la checklist para tu página web (2026)", href: "/blog/seo-on-page-checklist-para-tu-pagina-web", desc: "El SEO on-page es lo que sí controlas de tu web. Esta checklist cubre lo esencial para posicionar mejor." },
-    ],
-  },
+
 
   {
     slug: "como-vender-por-whatsapp-desde-tu-tienda-virtual",
@@ -2487,7 +2435,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "SEO local: aparece cuando buscan dónde comer",
         body:
-          "La mitad de la batalla es salir en Google cuando alguien busca tu tipo de comida cerca. Con una web optimizada y tu ficha de Google al día, apareces en el mapa y en las búsquedas locales. Te lo dejamos listo cuando hacemos tu [página web para restaurantes](/diseno-de-paginas-web/restaurantes), y puedes profundizar en nuestra guía para [aparecer en Google](/blog/como-aparecer-en-google-con-tu-pagina-web). Para aparecer en tu zona, mira [SEO local en Perú](/blog/seo-local-en-peru-como-salir-primero-en-tu-ciudad).",
+          "La mitad de la batalla es salir en Google cuando alguien busca tu tipo de comida cerca. Con una web optimizada y tu ficha de Google al día, apareces en el mapa y en las búsquedas locales. Te lo dejamos listo cuando hacemos tu [página web para restaurantes](/diseno-de-paginas-web/restaurantes), y puedes profundizar en nuestra guía para [aparecer en Google](/blog/como-hacer-que-tu-pagina-web-aparezca-en-google-peru). Para aparecer en tu zona, mira [SEO local en Perú](/blog/seo-local-en-peru-como-salir-primero-en-tu-ciudad).",
       },
     ],
     faqs: [
@@ -2660,7 +2608,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "SEO local: aparece cuando buscan tu especialidad",
         body:
-          "La mayoría de pacientes busca dentista cerca, pediatra en su distrito o su especialidad en Lima. Con una web optimizada y tu ficha de Google al día apareces en esas búsquedas. Revisa nuestra guía para [aparecer en Google](/blog/como-aparecer-en-google-con-tu-pagina-web) y gana pacientes desde el buscador.",
+          "La mayoría de pacientes busca dentista cerca, pediatra en su distrito o su especialidad en Lima. Con una web optimizada y tu ficha de Google al día apareces en esas búsquedas. Revisa nuestra guía para [aparecer en Google](/blog/como-hacer-que-tu-pagina-web-aparezca-en-google-peru) y gana pacientes desde el buscador.",
       },
       {
         h2: "Cuánto cuesta y cómo empezar",
@@ -2688,7 +2636,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     related: [
       { label: "Diseño de páginas web para negocios", href: "/diseno-de-paginas-web", desc: "Webs que transmiten confianza y captan pacientes." },
-      { label: "Cómo aparecer en Google", href: "/blog/como-aparecer-en-google-con-tu-pagina-web", desc: "SEO local para que te encuentren en tu ciudad." },
+      { label: "Cómo aparecer en Google", href: "/blog/como-hacer-que-tu-pagina-web-aparezca-en-google-peru", desc: "SEO local para que te encuentren en tu ciudad." },
       { label: "Ver precios y cotizar", href: "/precios", desc: "Qué incluye la web de una clínica o consultorio." },
       { label: "Página web para restaurantes en Perú", href: "/blog/pagina-web-para-restaurantes-en-peru", desc: "Deja de pagar comisiones altas por cada pedido: una web propia con carta digital y pedidos directos." },
       { label: "Qué debe tener la web de un colegio en Perú", href: "/blog/pagina-web-para-colegios-e-instituciones-educativas-en-peru", desc: "Los padres investigan el colegio en internet antes de matricular." },
@@ -2730,7 +2678,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Contenido que capta clientes",
         body:
-          "Responder en tu web las dudas legales más comunes (qué hacer ante un despido, cómo iniciar un trámite) atrae exactamente a quien necesita tu ayuda y te posiciona como experto. Es la misma lógica que explicamos en cómo [aparecer en Google con tu página web](/blog/como-aparecer-en-google-con-tu-pagina-web).",
+          "Responder en tu web las dudas legales más comunes (qué hacer ante un despido, cómo iniciar un trámite) atrae exactamente a quien necesita tu ayuda y te posiciona como experto. Es la misma lógica que explicamos en cómo [aparecer en Google con tu página web](/blog/como-hacer-que-tu-pagina-web-aparezca-en-google-peru).",
       },
       {
         h2: "SEO local para abogados",
@@ -2763,7 +2711,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     related: [
       { label: "Diseño de páginas web profesionales", href: "/diseno-de-paginas-web", desc: "Webs que proyectan autoridad y captan consultas." },
-      { label: "Cómo aparecer en Google", href: "/blog/como-aparecer-en-google-con-tu-pagina-web", desc: "SEO para que te encuentren clientes con intención." },
+      { label: "Cómo aparecer en Google", href: "/blog/como-hacer-que-tu-pagina-web-aparezca-en-google-peru", desc: "SEO para que te encuentren clientes con intención." },
       { label: "Ver precios y cotizar", href: "/precios", desc: "Qué incluye la web de un estudio de abogados." },
       { label: "Página web para restaurantes en Perú", href: "/blog/pagina-web-para-restaurantes-en-peru", desc: "Deja de pagar comisiones altas por cada pedido: una web propia con carta digital y pedidos directos." },
       { label: "Qué debe tener la web de un colegio en Perú", href: "/blog/pagina-web-para-colegios-e-instituciones-educativas-en-peru", desc: "Los padres investigan el colegio en internet antes de matricular." },
@@ -2810,7 +2758,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "SEO local: aparece por proyecto y por zona",
         body:
-          "La gente busca departamentos en un distrito específico o proyectos en su ciudad. Con una [web optimizada](/diseno-de-paginas-web) y una página por proyecto y por zona, apareces en esas búsquedas. Nuestra guía para [aparecer en Google](/blog/como-aparecer-en-google-con-tu-pagina-web) aplica igual al rubro inmobiliario.",
+          "La gente busca departamentos en un distrito específico o proyectos en su ciudad. Con una [web optimizada](/diseno-de-paginas-web) y una página por proyecto y por zona, apareces en esas búsquedas. Nuestra guía para [aparecer en Google](/blog/como-hacer-que-tu-pagina-web-aparezca-en-google-peru) aplica igual al rubro inmobiliario.",
       },
       {
         h2: "Cuánto cuesta y cómo empezar",
@@ -3065,7 +3013,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "SEO local: aparece cuando buscan gimnasio cerca",
         body:
-          "La mayoría de socios elige el gimnasio por cercanía. Salir en Google cuando alguien busca 'gimnasio en [tu distrito]' es media batalla ganada. Con una web optimizada y tu ficha de Google al día, apareces en el mapa y en las búsquedas locales de tu zona. Puedes profundizar en cómo [aparecer en Google con tu web](/blog/como-aparecer-en-google-con-tu-pagina-web). Ese trabajo de zona lo cubrimos en [SEO local en Perú](/blog/seo-local-en-peru-como-salir-primero-en-tu-ciudad).",
+          "La mayoría de socios elige el gimnasio por cercanía. Salir en Google cuando alguien busca 'gimnasio en [tu distrito]' es media batalla ganada. Con una web optimizada y tu ficha de Google al día, apareces en el mapa y en las búsquedas locales de tu zona. Puedes profundizar en cómo [aparecer en Google con tu web](/blog/como-hacer-que-tu-pagina-web-aparezca-en-google-peru). Ese trabajo de zona lo cubrimos en [SEO local en Perú](/blog/seo-local-en-peru-como-salir-primero-en-tu-ciudad).",
       },
       {
         h2: "Automatiza inscripciones y control de socios",
@@ -3145,7 +3093,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "SEO local y turístico: aparece cuando buscan dónde dormir",
         body:
-          "Los viajeros buscan 'hotel en [ciudad]' u 'hospedaje cerca de [atractivo]' antes de reservar. Salir en Google y en el mapa cuando buscan tu zona te trae reservas directas sin pagar comisión ni publicidad. Con una web optimizada y tu ficha de Google al día, apareces en las búsquedas de tu destino. Aprende más en nuestra guía para [aparecer en Google](/blog/como-aparecer-en-google-con-tu-pagina-web).",
+          "Los viajeros buscan 'hotel en [ciudad]' u 'hospedaje cerca de [atractivo]' antes de reservar. Salir en Google y en el mapa cuando buscan tu zona te trae reservas directas sin pagar comisión ni publicidad. Con una web optimizada y tu ficha de Google al día, apareces en las búsquedas de tu destino. Aprende más en nuestra guía para [aparecer en Google](/blog/como-hacer-que-tu-pagina-web-aparezca-en-google-peru).",
       },
     ],
     faqs: [
@@ -3168,7 +3116,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     related: [
       { label: "Diseño de páginas web para hoteles", href: "/diseno-de-paginas-web/hoteles", desc: "Reservas directas, sin comisión de intermediarios." },
-      { label: "Cómo aparecer en Google", href: "/blog/como-aparecer-en-google-con-tu-pagina-web", desc: "SEO local para captar viajeros de tu zona." },
+      { label: "Cómo aparecer en Google", href: "/blog/como-hacer-que-tu-pagina-web-aparezca-en-google-peru", desc: "SEO local para captar viajeros de tu zona." },
       { label: "Ver precios y cotizar", href: "/precios", desc: "Qué incluye la web de un hotel." },
       { label: "Página web para inmobiliarias y constructoras", href: "/blog/pagina-web-para-inmobiliarias-y-constructoras", desc: "Vender un inmueble empieza en Google. Tu web debe mostrar proyectos y capturar leads calificados." },
       { label: "Web a medida vs plantilla (WordPress, Wix)", href: "/blog/pagina-web-a-medida-vs-plantilla-wordpress-wix", desc: "Una plantilla es rápida y barata; una web a medida es única y escalable." },
@@ -3220,7 +3168,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "SEO local: aparece cuando buscan colegios en tu zona",
         body:
-          "Muchas familias buscan 'colegios en [distrito]' o 'colegio [tipo] cerca'. Salir en Google y en el mapa cuando investigan tu zona te trae familias interesadas en temporada de admisión. Con una web optimizada y tu ficha de Google al día, apareces en esas búsquedas locales. Puedes profundizar en cómo [aparecer en Google con tu web](/blog/como-aparecer-en-google-con-tu-pagina-web).",
+          "Muchas familias buscan 'colegios en [distrito]' o 'colegio [tipo] cerca'. Salir en Google y en el mapa cuando investigan tu zona te trae familias interesadas en temporada de admisión. Con una web optimizada y tu ficha de Google al día, apareces en esas búsquedas locales. Puedes profundizar en cómo [aparecer en Google con tu web](/blog/como-hacer-que-tu-pagina-web-aparezca-en-google-peru).",
       },
     ],
     faqs: [
@@ -3475,7 +3423,7 @@ export const BLOG_POSTS: BlogPost[] = [
     related: [
       { label: "SEO y posicionamiento web", href: "/seo", desc: "Posiciona tu negocio en Google de forma sostenible." },
       { label: "Google Ads vs SEO", href: "/blog/google-ads-vs-seo-cual-conviene-para-tu-negocio", desc: "Cuál conviene y por qué se complementan." },
-      { label: "Cómo aparecer en Google", href: "/blog/como-aparecer-en-google-con-tu-pagina-web", desc: "Las bases para posicionar tu web." },
+      { label: "Cómo aparecer en Google", href: "/blog/como-hacer-que-tu-pagina-web-aparezca-en-google-peru", desc: "Las bases para posicionar tu web." },
       { label: "Migrar tu web sin perder posicionamiento", href: "/blog/como-migrar-tu-pagina-web-sin-perder-posicionamiento-en-google", desc: "Rediseñar o cambiar de web puede hundir tu tráfico si se hace mal." },
       { label: "SEO on-page: la checklist para tu página web (2026)", href: "/blog/seo-on-page-checklist-para-tu-pagina-web", desc: "El SEO on-page es lo que sí controlas de tu web. Esta checklist cubre lo esencial para posicionar mejor." },
     ],
@@ -3768,7 +3716,7 @@ export const BLOG_POSTS: BlogPost[] = [
     related: [
       { label: "SEO y posicionamiento web", href: "/seo", desc: "Migra y crece sin perder tus posiciones en Google." },
       { label: "Diseño de páginas web", href: "/diseno-de-paginas-web", desc: "Rediseños que cuidan tu tráfico y tu SEO." },
-      { label: "Cómo aparecer en Google", href: "/blog/como-aparecer-en-google-con-tu-pagina-web", desc: "Las bases del posicionamiento web." },
+      { label: "Cómo aparecer en Google", href: "/blog/como-hacer-que-tu-pagina-web-aparezca-en-google-peru", desc: "Las bases del posicionamiento web." },
     ],
   },
 
@@ -3847,7 +3795,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Servicio de SEO local en Lima y Perú", href: "/seo/seo-local", desc: "Ficha de Google, reseñas, NAP y páginas por distrito, hecho por Websy." },
       { label: "SEO y posicionamiento web", href: "/seo", desc: "SEO local y técnico para aparecer primero en tu zona." },
       { label: "Google Mi Negocio para empresas", href: "/blog/google-mi-negocio-para-empresas-en-peru", desc: "Cómo optimizar tu ficha y ganar reseñas." },
-      { label: "Cómo aparecer en Google", href: "/blog/como-aparecer-en-google-con-tu-pagina-web", desc: "Las bases del posicionamiento web." },
+      { label: "Cómo aparecer en Google", href: "/blog/como-hacer-que-tu-pagina-web-aparezca-en-google-peru", desc: "Las bases del posicionamiento web." },
     ],
   },
 
@@ -3924,7 +3872,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     related: [
       { label: "SEO y posicionamiento web", href: "/seo", desc: "SEO técnico, on-page y de contenidos en un solo servicio." },
-      { label: "Cómo aparecer en Google", href: "/blog/como-aparecer-en-google-con-tu-pagina-web", desc: "Guía práctica para posicionar tu web en Perú." },
+      { label: "Cómo aparecer en Google", href: "/blog/como-hacer-que-tu-pagina-web-aparezca-en-google-peru", desc: "Guía práctica para posicionar tu web en Perú." },
       { label: "Cuánto cuesta el SEO en Perú", href: "/blog/cuanto-cuesta-el-seo-en-peru", desc: "Cómo se cobra el posicionamiento y qué incluye." },
     ],
   },
@@ -4384,7 +4332,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "SEO local: aparece cuando buscan dentista cerca",
         body:
-          "La mayoría de pacientes busca 'dentista en [su distrito]' o 'clínica dental cerca de mí'. Salir en Google y en el mapa cuando investigan tu zona te trae pacientes nuevos sin pagar publicidad. Con una web optimizada y tu ficha de Google al día, apareces en esas búsquedas locales. Puedes profundizar en cómo [aparecer en Google con tu web](/blog/como-aparecer-en-google-con-tu-pagina-web). Si tus clientes te buscan por distrito, lee [cómo salir primero en tu ciudad](/blog/seo-local-en-peru-como-salir-primero-en-tu-ciudad).",
+          "La mayoría de pacientes busca 'dentista en [su distrito]' o 'clínica dental cerca de mí'. Salir en Google y en el mapa cuando investigan tu zona te trae pacientes nuevos sin pagar publicidad. Con una web optimizada y tu ficha de Google al día, apareces en esas búsquedas locales. Puedes profundizar en cómo [aparecer en Google con tu web](/blog/como-hacer-que-tu-pagina-web-aparezca-en-google-peru). Si tus clientes te buscan por distrito, lee [cómo salir primero en tu ciudad](/blog/seo-local-en-peru-como-salir-primero-en-tu-ciudad).",
       },
     ],
     faqs: [

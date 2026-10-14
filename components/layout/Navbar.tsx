@@ -35,6 +35,8 @@ export default function Navbar() {
             <img
               src="/icons/logo-white.webp"
               alt="Websy"
+              width={1772}
+              height={1155}
               className={`h-10 w-auto object-contain transition-opacity duration-300 ${
                 solid && !menuOpen ? "absolute opacity-0" : "opacity-100"
               }`}
@@ -43,6 +45,8 @@ export default function Navbar() {
             <img
               src="/icons/logo-dark.webp"
               alt="Websy"
+              width={2402}
+              height={705}
               className={`h-10 w-auto object-contain transition-opacity duration-300 ${
                 solid && !menuOpen ? "opacity-100" : "absolute opacity-0"
               }`}
@@ -67,6 +71,8 @@ export default function Navbar() {
             <img
               src="/icons/menu-burguer-pc-mobil.svg"
               alt=""
+              width={20}
+              height={15}
               className={`h-8 w-8 object-contain transition-all duration-300 ${
                 solid && !menuOpen ? "brightness-0" : "brightness-100"
               }`}
