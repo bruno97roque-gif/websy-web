@@ -2,9 +2,14 @@ import type { Metadata } from "next";
 import { pageMeta } from "@/lib/seo";
 import ServiceLanding from "@/components/sections/landing/ServiceLanding";
 
+/* 14-oct-2026 · «agencia de páginas web» (77 imp, puesto 28,4), «diseño web lima»
+   (31,3) y «diseño web profesional peru» (32,6) en GSC 90 d. Las tres agencias que
+   salen arriba en Lima (linklab.pe, globdigital.pe, limaweb.pe) llevan «agencia» y
+   «diseño de páginas web en Lima» en el title y el H1. El title abre distinto que el
+   de la portada («Agencia de Desarrollo Web…») para no pisarse. */
 export const metadata: Metadata = pageMeta({
   path: "/diseno-de-paginas-web",
-  title: "Diseño de Páginas Web en Lima, Perú",
+  title: "Agencia de diseño de páginas web en Lima, Perú",
   description:
     "Diseño y desarrollo de páginas web para empresas en Lima y Perú: profesionales, administrables, responsive y optimizadas para SEO. Cotiza gratis en 24 h.",
 });
@@ -18,8 +23,8 @@ export default function DisenoPaginasWebPage() {
         { name: "Diseño de Páginas Web", path: "/diseno-de-paginas-web" },
       ]}
       eyebrow="Diseño y Desarrollo Web"
-      h1="Diseño de páginas web en Lima, Perú"
-      intro="Diseñamos y desarrollamos páginas web profesionales para empresas en Lima y todo el Perú: sitios administrables, responsive y optimizados para SEO, con formulario, WhatsApp, hosting y dominio. Una página pensada para generar contactos, no solo para verse bien."
+      h1="Agencia de diseño de páginas web en Lima, Perú"
+      intro="Websy es una agencia de diseño de páginas web en Lima. Diseñamos y desarrollamos páginas web profesionales para empresas de todo el Perú: sitios administrables, responsive y optimizados para SEO, con formulario, WhatsApp, hosting y dominio. Una página pensada para generar contactos, no solo para verse bien."
       highlights={["Responsive", "Administrable", "Optimizada SEO", "Con WhatsApp", "Hosting + dominio"]}
       stats={[
         { value: "24 h", label: "Respuesta a tu cotización" },

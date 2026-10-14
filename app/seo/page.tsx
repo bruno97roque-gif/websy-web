@@ -58,7 +58,7 @@ export default function SeoPage() {
         {
           h2: "SEO local: gana a tu competencia de zona",
           body:
-            "Si tu negocio atiende a una zona, el SEO local es donde está tu mayor retorno. Optimizamos tu web y tu ficha de Google Business Profile para que aparezcas en el mapa y en búsquedas como '[tu servicio] cerca de mí' o 'en [tu distrito]'. Trabajamos reseñas, NAP consistente y páginas por ubicación para dominar tu mercado local.",
+            "Si tu negocio atiende a una zona, el SEO local es donde está tu mayor retorno. Optimizamos tu web y tu ficha de Google Business Profile para que aparezcas en el mapa y en búsquedas como '[tu servicio] cerca de mí' o 'en [tu distrito]'. Trabajamos reseñas, NAP consistente y páginas por ubicación para dominar tu mercado local. El detalle está en nuestro [servicio de SEO local](/seo/seo-local).",
           bullets: [
             "Optimización de Google Business Profile.",
             "Posicionamiento en el mapa y el paquete local.",
