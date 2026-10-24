@@ -116,19 +116,19 @@ function CometSVG() {
 // iniciales, nunca con la foto de otra persona.
 const TEAM: { name: string; surname: string; role: string; tag: string; Planet: () => React.JSX.Element; img?: string }[] = [
   // Gerentes
-  { name: "Bruno",         surname: "Roque",      role: "Co-Fundador",              tag: "Gerencia",   Planet: SaturnSVG },
-  { name: "Debora",        surname: "Santa María", role: "Co-Fundadora",            tag: "Gerencia",   Planet: MoonSVG },
+  { name: "Bruno",         surname: "Roque",      role: "Co-Founder",               tag: "Gerencia",   Planet: SaturnSVG, img: "/images/bruno-roque.webp"         },
+  { name: "Debora",        surname: "Santa María", role: "Co-Founder",              tag: "Gerencia",   Planet: MoonSVG,   img: "/images/debora-santa-maria.webp"  },
   // Ventas
   { name: "Gimena",        surname: "",           role: "Sales Manager",             tag: "Ventas",     Planet: CometSVG,  img: "/images/gimena-comercial.webp"  },
   // Ingenieros
-  { name: "Luis",          surname: "Diestra",    role: "Developer Full Stack",      tag: "Tecnología", Planet: RocketSVG, img: "/images/luis-esta-si-es.webp"    },
-  { name: "Aaron",         surname: "Jauregui",   role: "Developer Full Stack",      tag: "Tecnología", Planet: RocketSVG, img: "/images/aaron-esta-si-es.webp"             },
-  { name: "Rubid",         surname: "Camacho",    role: "Ingeniera de Sistemas",     tag: "Tecnología", Planet: NebulaSVG, img: "/images/Rubid-esta-si-es.webp"             },
+  { name: "Luis",          surname: "Diestra",    role: "Full Stack Developer",      tag: "Tecnología", Planet: RocketSVG, img: "/images/luis-esta-si-es.webp"    },
+  { name: "Aaron",         surname: "Jauregui",   role: "Full Stack Developer",      tag: "Tecnología", Planet: RocketSVG, img: "/images/aaron-esta-si-es.webp"             },
+  { name: "Rubid",         surname: "Camacho",    role: "Systems Engineer",          tag: "Tecnología", Planet: NebulaSVG, img: "/images/Rubid-esta-si-es.webp"             },
   // Diseñadores
   { name: "Ada",           surname: "",           role: "Brand Designer",            tag: "Diseño",     Planet: NebulaSVG, img: "/images/ada-diseñadora.webp"    },
   { name: "Juan Carlos",   surname: "Huapaya",    role: "Brand Designer",            tag: "Diseño",     Planet: NebulaSVG, img: "/images/juan-carlos-esta-si-es.webp"        },
   // Administrativo
-  { name: "Julio",         surname: "",           role: "Asistente Administrativo",  tag: "Equipo",     Planet: MoonSVG,   img: "/images/julio-asistente.webp"   },
+  { name: "Julio",         surname: "",           role: "Administrative Assistant",  tag: "Equipo",     Planet: MoonSVG,   img: "/images/julio-asistente.webp"   },
 ];
 
 type TeamMember = typeof TEAM[0];
