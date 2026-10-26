@@ -2,7 +2,10 @@ import type { Metadata } from "next";
 import NosotrosHero    from "@/components/sections/nosotros/NosotrosHero";
 import NosotrosValores from "@/components/sections/nosotros/NosotrosValores";
 import TeamGrid        from "@/components/sections/nosotros/TeamGrid";
-import NosotrosGaleria from "@/components/sections/nosotros/NosotrosGaleria";
+// La galería «Proyectos que hablan por sí solos» queda oculta, no borrada: el
+// componente sigue en components/sections/nosotros/NosotrosGaleria.tsx y se
+// vuelve a mostrar descomentando el import y la etiqueta de abajo.
+// import NosotrosGaleria from "@/components/sections/nosotros/NosotrosGaleria";
 import { pageMeta } from "@/lib/seo";
 import JsonLd from "@/components/seo/JsonLd";
 import { aboutPageSchema, breadcrumbSchema } from "@/lib/schema";
@@ -30,7 +33,7 @@ export default function NosotrosPage() {
       <NosotrosHero />
       <NosotrosValores />
       <TeamGrid />
-      <NosotrosGaleria />
+      {/* <NosotrosGaleria /> */}
     </>
   );
 }
