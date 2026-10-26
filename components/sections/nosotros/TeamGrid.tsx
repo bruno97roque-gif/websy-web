@@ -122,11 +122,12 @@ const TEAM: { name: string; surname: string; role: string; tag: string; Planet: 
   { name: "Gimena",        surname: "",           role: "Sales Manager",             tag: "Ventas",     Planet: CometSVG,  img: "/images/gimena-comercial.webp"  },
   // Ingenieros
   { name: "Luis",          surname: "Diestra",    role: "Full Stack Developer",      tag: "Tecnología", Planet: RocketSVG, img: "/images/luis-esta-si-es.webp"    },
+  { name: "Aymar",         surname: "Molina",     role: "Full Stack Developer",      tag: "Tecnología", Planet: RocketSVG, img: "/images/aymar-molina.webp"       },
   { name: "Aaron",         surname: "Jauregui",   role: "Full Stack Developer",      tag: "Tecnología", Planet: RocketSVG, img: "/images/aaron-esta-si-es.webp"             },
   { name: "Rubid",         surname: "Camacho",    role: "Systems Engineer",          tag: "Tecnología", Planet: NebulaSVG, img: "/images/Rubid-esta-si-es.webp"             },
   // Diseñadores
   { name: "Ada",           surname: "",           role: "Brand Designer",            tag: "Diseño",     Planet: NebulaSVG, img: "/images/ada-diseñadora.webp"    },
-  { name: "Juan Carlos",   surname: "Huapaya",    role: "Brand Designer",            tag: "Diseño",     Planet: NebulaSVG, img: "/images/juan-carlos-esta-si-es.webp"        },
+  { name: "Juan Carlos",   surname: "Huapaya",    role: "UI/UX Designer",            tag: "Diseño",     Planet: NebulaSVG, img: "/images/juan-carlos-esta-si-es.webp"        },
   // Administrativo
   { name: "Julio",         surname: "",           role: "Administrative Assistant",  tag: "Equipo",     Planet: MoonSVG,   img: "/images/julio-asistente.webp"   },
 ];
