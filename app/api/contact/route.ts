@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
-import { COLECTOR, SITIO } from "../w/destino";
+import { COLECTOR, SITIO, destinoAviso } from "../w/destino";
 
 // ⚠️ NO instanciar Resend en el módulo global — solo en el handler (runtime)
 // Si se instancia aquí, el build falla porque RESEND_API_KEY no existe en build time
@@ -96,7 +96,7 @@ export async function POST(req: NextRequest) {
        «✓ Mensaje enviado» mientras el correo no salía de ningún sitio. */
     const { error: fallo } = await resend.emails.send({
       from:    `Websy Contacto <${process.env.FROM_EMAIL ?? "onboarding@resend.dev"}>`,
-      to:      [process.env.CONTACT_EMAIL ?? "ventas@websy.com.pe"],
+      to:      [destinoAviso(nombre)],
       replyTo: email || undefined,
       subject: `✉️ Nuevo contacto: ${nombre} · ${servicio}`,
       html:    buildEmailHtml({ nombre, empresa, email, whatsapp, servicio, proyecto, fecha }),
@@ -139,6 +139,13 @@ export async function POST(req: NextRequest) {
         mensaje: proyecto === "—" ? null : proyecto,
         pagina: clean(body.pagina, 300) || null,
         ubicacion: "formulario_contacto",
+        /* Por dónde llegó: sin esto el lead del formulario entraba sin fuente
+           en el panel (el modal de WhatsApp sí la mandaba). */
+        referrer: clean(body.referrer, 500) || null,
+        landing: clean(body.landing, 300) || null,
+        fuente: clean(body.fuente, 120) || null,
+        medio: clean(body.medio, 120) || null,
+        campana: clean(body.campana, 160) || null,
         ctx: {
           pais: req.headers.get("x-vercel-ip-country") ?? "",
           ciudad: req.headers.get("x-vercel-ip-city") ?? "",

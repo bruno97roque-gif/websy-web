@@ -13,5 +13,19 @@ export const COLECTOR = process.env.COLECTOR_URL ?? "https://websy-panel.vercel.
 /** Identifica de qué web viene el dato. El colector rechaza cualquier otro. */
 export const SITIO = "websy.com.pe";
 
+/**
+ * A quién va el correo de aviso de un contacto nuevo.
+ *
+ * Un contacto que se llama «Marco Verificacion» es una prueba de punta a punta
+ * del propio equipo técnico: su aviso NO va al equipo comercial sino a quien
+ * hace la prueba. Sin esto, comprobar que el aviso sale obligaba a mandarle un
+ * correo falso a ventas. El lead se guarda igual en el panel, y el panel ya lo
+ * marca como prueba para borrarlo con «Borrar pruebas».
+ */
+export function destinoAviso(nombre: string | null | undefined): string {
+  if (/^\s*marco\s+verificaci[oó]n\b/i.test(nombre ?? "")) return "josegaspardhernani@gmail.com";
+  return process.env.CONTACT_EMAIL ?? "ventas@websy.com.pe";
+}
+
 /** WhatsApp de Websy, en formato internacional sin signos. */
 export const WHATSAPP = "51940549322";

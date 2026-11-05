@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
-import { COLECTOR, SITIO } from "../destino";
+import { COLECTOR, SITIO, destinoAviso } from "../destino";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -193,7 +193,7 @@ async function avisar(c: Carga) {
      sola línea en los registros para enterarse. */
   const { error } = await resend.emails.send({
     from: `Websy Contacto <${process.env.FROM_EMAIL ?? "onboarding@resend.dev"}>`,
-    to: [process.env.CONTACT_EMAIL ?? "ventas@websy.com.pe"],
+    to: [destinoAviso(c.nombre)],
     subject: `🟢 ${c.nombre ?? "Alguien"} quiere que le escribas por WhatsApp`,
     html: correo(c, fecha, wa),
   });
