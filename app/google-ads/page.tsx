@@ -99,6 +99,7 @@ export default function GoogleAdsPage() {
         { label: "Nuestros servicios", href: "/servicios", desc: "Conoce todo lo que hacemos: web, ecommerce, software, SEO y más." },
         { label: "Precios y cotización", href: "/precios", desc: "Qué define el precio de gestionar campañas y cómo cotizarlo." },
         { label: "SEO y posicionamiento", href: "/seo", desc: "Combina Ads con SEO para resultados rápidos y sostenidos." },
+        { label: "Diseño de landing pages", href: "/diseno-de-landing-pages", desc: "La página a la que llega tu anuncio, hecha para convertir y medida." },
       ]}
       articles={[
         { label: "Google Ads vs SEO: cuál conviene", href: "/blog/google-ads-vs-seo-cual-conviene-para-tu-negocio", desc: "Cuándo usar cada uno y por qué combinarlos rinde más." },

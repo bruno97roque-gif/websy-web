@@ -4,7 +4,7 @@ import ServiceLanding from "@/components/sections/landing/ServiceLanding";
 
 export const metadata: Metadata = pageMeta({
   path: "/desarrollo-de-aplicaciones-moviles",
-  title: "Desarrollo de Aplicaciones Móviles en Perú",
+  title: "Empresa de desarrollo de aplicaciones móviles en Perú",
   description:
     "Desarrollo de aplicaciones móviles a medida en Perú: apps para Android e iOS para tus clientes o tu equipo, con panel de administración, pagos con Yape y Plin y publicación.",
 });

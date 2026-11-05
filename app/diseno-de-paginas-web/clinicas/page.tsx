@@ -80,6 +80,7 @@ export default function PaginaWebClinicasPage() {
       ]}
       related={[
         { label: "Diseño de páginas web", href: "/diseno-de-paginas-web", desc: "El servicio completo de diseño y desarrollo web profesional." },
+        { label: "Sistema para clínicas", href: "/sistemas/sistema-para-clinicas", desc: "Agenda de citas, historia clínica y caja conectadas con tu web." },
         { label: "Precios y cotización", href: "/precios", desc: "Qué define el precio de tu web y cómo pedir tu cotización gratis." },
         { label: "Cotiza tu web de clínica", href: "/cotizacion", desc: "Cuéntanos de tu clínica o consultorio y te respondemos en 24 h." },
       ]}

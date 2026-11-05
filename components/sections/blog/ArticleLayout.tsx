@@ -225,7 +225,7 @@ export default function ArticleLayout({ post }: { post: BlogPost }) {
         <div style={{ maxWidth: 760, margin: "0 auto" }}>
           {/* Intro destacada (citable) */}
           <p style={{ fontFamily: fp, fontSize: "clamp(17px, 2vw, 20px)", color: PURPLE, lineHeight: 1.65, fontWeight: 500, margin: "0 0 44px", paddingLeft: 20, borderLeft: `3px solid ${ORANGE}` }}>
-            {post.intro}
+            {renderRich(post.intro)}
           </p>
 
           <div style={{ display: "flex", flexDirection: "column", gap: 44 }}>

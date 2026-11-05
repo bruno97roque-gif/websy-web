@@ -97,6 +97,7 @@ export default function SistemasPage() {
         { label: "CRM a medida", href: "/sistemas/crm-a-medida", desc: "Tu propio sistema de clientes, cotizaciones y seguimiento de ventas." },
         { label: "Sistema hotelero", href: "/sistemas/sistema-hotelero", desc: "Reservas, habitaciones, caja y facturación para hoteles y hospedajes." },
         { label: "Sistema para restaurantes", href: "/sistemas/sistema-para-restaurantes", desc: "Pedidos, mesas, delivery, caja e insumos para restaurantes." },
+        { label: "Sistema para clínicas", href: "/sistemas/sistema-para-clinicas", desc: "Citas, historia clínica, caja y recordatorios para clínicas y consultorios." },
         { label: "Desarrollo de software a medida", href: "/desarrollo-de-software-a-medida", desc: "Cuando tu proceso no entra en ningún sistema del mercado." },
         { label: "Precios y cotización", href: "/precios", desc: "Qué define el precio de un sistema y cómo arrancar por etapas." },
       ]}
