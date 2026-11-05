@@ -89,7 +89,7 @@ const nextConfig: NextConfig = {
   },
 
   async rewrites() {
-    const PANEL = "https://websy-panel.vercel.app/panel";
+    const PANEL = "https://websy-datos.josegaspard.dev/panel";
     return [
       { source: "/panel", destination: PANEL },
       { source: "/panel/:ruta*", destination: `${PANEL}/:ruta*` },

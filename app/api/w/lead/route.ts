@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
-import { COLECTOR, SITIO, destinoAviso } from "../destino";
+import { COLECTOR, SITIO, esPrueba } from "../destino";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -84,6 +84,7 @@ export async function POST(req: NextRequest) {
       fuente: limpiar(b.fuente, 120),
       medio: limpiar(b.medio, 120),
       campana: limpiar(b.campana, 160),
+      prueba: esPrueba(nombre),
       ctx: {
         pais: req.headers.get("x-vercel-ip-country") ?? "",
         ciudad: descodificar(req.headers.get("x-vercel-ip-city")),
@@ -119,7 +120,7 @@ export async function POST(req: NextRequest) {
 
     // El aviso al equipo se manda aparte y nunca bloquea la respuesta: la
     // persona no tiene que esperar a que salga un correo para ir a WhatsApp.
-    void avisar(carga).catch(() => null);
+    if (!carga.prueba) void avisar(carga).catch(() => null);
 
     return NextResponse.json({ ok: true, id });
   } catch (err) {
@@ -193,7 +194,7 @@ async function avisar(c: Carga) {
      sola línea en los registros para enterarse. */
   const { error } = await resend.emails.send({
     from: `Websy Contacto <${process.env.FROM_EMAIL ?? "onboarding@resend.dev"}>`,
-    to: [destinoAviso(c.nombre)],
+    to: [process.env.CONTACT_EMAIL ?? "ventas@websy.com.pe"],
     subject: `🟢 ${c.nombre ?? "Alguien"} quiere que le escribas por WhatsApp`,
     html: correo(c, fecha, wa),
   });
