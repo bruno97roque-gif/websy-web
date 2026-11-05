@@ -973,11 +973,11 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Por qué muchos negocios eligen WooCommerce: control total, sin mensualidad de plataforma y listo para crecer.",
     datePublished: "2026-06-19",
-    dateModified: "2026-09-02",
+    dateModified: "2026-11-05",
     category: "Ecommerce",
     readingMin: 4,
     intro:
-      "WooCommerce convierte tu WordPress en una tienda virtual completa. Para muchos negocios en Perú es la opción ideal: control total, sin mensualidad de plataforma y con un SEO muy potente. Estas son sus principales ventajas.",
+      "WooCommerce convierte tu WordPress en una tienda virtual completa. Para muchos negocios en Perú es la opción ideal: control total, sin mensualidad de plataforma y con un SEO muy potente. Estas son sus principales ventajas. Si te preocupa dónde alojarla, lee [hosting para WooCommerce en Perú](/blog/hosting-para-woocommerce-en-peru).",
     sections: [
       {
         h2: "Sin mensualidad de plataforma",
@@ -1074,11 +1074,11 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Vender lo que no tienes ahuyenta clientes. Así se controla bien el stock de una tienda online.",
     datePublished: "2026-06-19",
-    dateModified: "2026-09-02",
+    dateModified: "2026-11-05",
     category: "Ecommerce",
     readingMin: 5,
     intro:
-      "Uno de los errores que más cuesta en ecommerce es vender un producto que ya no tienes en stock. Controlar bien el inventario de tu tienda online evita cancelaciones, reembolsos y clientes molestos. Aquí cómo hacerlo de forma ordenada.",
+      "Uno de los errores que más cuesta en ecommerce es vender un producto que ya no tienes en stock. Controlar bien el inventario de tu tienda online evita cancelaciones, reembolsos y clientes molestos. Aquí cómo hacerlo de forma ordenada. Si vendes ropa, tallas y colores tienen su propia guía: [cómo controlar el stock de una tienda de ropa](/blog/como-controlar-el-stock-de-una-tienda-de-ropa).",
     sections: [
       {
         h2: "Centraliza el stock en un solo lugar",
@@ -1275,10 +1275,10 @@ export const BLOG_POSTS: BlogPost[] = [
     description: "¿Cuál es la diferencia entre página web y landing page? Conoce el objetivo, la estructura y cuándo usar cada una en tus campañas de Google Ads o Meta Ads en Perú.",
     excerpt: "Qué distingue a una página web de una landing page y cómo elegir la indicada para tu negocio o campaña.",
     datePublished: "2026-06-21",
-    dateModified: "2026-09-02",
+    dateModified: "2026-11-05",
     category: "Páginas Web",
     readingMin: 6,
-    intro: "La diferencia entre una página web y una landing page está en su objetivo. Una página web informa sobre tu negocio y suele tener varias secciones para posicionarte en Google. Una landing page es una sola página enfocada en una acción concreta, ideal para campañas de Google Ads o Meta Ads. No compiten: se complementan.",
+    intro: "La diferencia entre una página web y una landing page está en su objetivo. Una página web informa sobre tu negocio y suele tener varias secciones para posicionarte en Google. Una landing page es una sola página enfocada en una acción concreta, ideal para campañas de Google Ads o Meta Ads. No compiten: se complementan. Si ya decidiste que necesitas una, revisa nuestro servicio de [diseño de landing pages](/diseno-de-landing-pages).",
     sections: [
       {
         h2: "¿Qué es una página web?",
@@ -2486,11 +2486,11 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Google Ads te trae clientes desde el primer día si lo haces bien. Cuánto invertir y cómo no botar la plata.",
     datePublished: "2026-07-06",
-    dateModified: "2026-09-23",
+    dateModified: "2026-11-05",
     category: "Marketing",
     readingMin: 8,
     intro:
-      "Google Ads pone tu negocio arriba de todo justo cuando alguien busca lo que vendes. Para una pyme en Perú es la forma más rápida de conseguir clientes, pero también la más fácil de malgastar. Aquí verás cuánto invertir para empezar, qué campaña elegir y cómo asegurarte de que cada sol traiga leads.",
+      "Google Ads pone tu negocio arriba de todo justo cuando alguien busca lo que vendes. Para una pyme en Perú es la forma más rápida de conseguir clientes, pero también la más fácil de malgastar. Aquí verás cuánto invertir para empezar, qué campaña elegir y cómo asegurarte de que cada sol traiga leads. Si quieres que gestionemos tu presupuesto, mira nuestro [servicio de Google Ads en Lima](/google-ads).",
     sections: [
       {
         h2: "Por qué Google Ads funciona para pymes",
@@ -3358,11 +3358,11 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "El SEO no se cobra igual que una web. Aquí cómo se cobra, qué incluye y por qué es inversión, no gasto.",
     datePublished: "2026-07-08",
-    dateModified: "2026-09-02",
+    dateModified: "2026-11-05",
     category: "SEO",
     readingMin: 7,
     intro:
-      "El SEO en Perú no se cobra como una página web: es un trabajo continuo, no un pago único. Su precio depende de la competencia de tus palabras clave y del alcance del trabajo. Aquí verás cómo se cobra el posicionamiento, qué debe incluir un servicio serio y por qué es una inversión de mediano plazo.",
+      "El SEO en Perú no se cobra como una página web: es un trabajo continuo, no un pago único. Su precio depende de la competencia de tus palabras clave y del alcance del trabajo. Aquí verás cómo se cobra el posicionamiento, qué debe incluir un servicio serio y por qué es una inversión de mediano plazo. Si buscas un servicio de SEO mensual, aquí está el [servicio de SEO de Websy](/seo).",
     sections: [
       {
         h2: "Por qué el SEO no se cobra como una web",
@@ -3644,18 +3644,18 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "como-migrar-tu-pagina-web-sin-perder-posicionamiento-en-google",
-    title: "Migrar o rediseñar tu web sin perder SEO",
-    h1: "Cómo migrar o rediseñar tu web sin perder posicionamiento en Google",
+    title: "Cómo migrar tu web de plataforma o dominio sin perder SEO",
+    h1: "Cómo migrar tu web a otra plataforma o dominio sin perder posicionamiento en Google",
     description:
-      "Cómo migrar o rediseñar tu página web en Perú sin perder posicionamiento en Google: redirecciones 301, estructura de URLs, contenido y los errores que hunden tu SEO.",
+      "Cómo migrar tu página web a otra plataforma o dominio en Perú sin perder posicionamiento en Google: redirecciones 301, estructura de URLs, contenido y los errores que hunden tu SEO.",
     excerpt:
       "Rediseñar o cambiar de web puede hundir tu tráfico si se hace mal. Así se migra sin perder tus posiciones.",
     datePublished: "2026-07-08",
-    dateModified: "2026-10-13",
+    dateModified: "2026-11-05",
     category: "SEO",
     readingMin: 7,
     intro:
-      "Rediseñar o cambiar de plataforma tu página web puede disparar tu negocio o hundir el tráfico que tanto costó construir. El error más común es migrar sin plan y perder de golpe las posiciones en Google. Aquí verás cómo migrar tu web cuidando el SEO y qué errores evitar a toda costa.",
+      "Rediseñar o cambiar de plataforma tu página web puede disparar tu negocio o hundir el tráfico que tanto costó construir. El error más común es migrar sin plan y perder de golpe las posiciones en Google. Aquí verás cómo migrar tu web cuidando el SEO y qué errores evitar a toda costa. Si solo cambias el diseño y mantienes dominio y plataforma, sigue el [checklist para rediseñar tu web sin perder el SEO](/blog/como-redisenar-tu-pagina-web-sin-perder-seo).",
     sections: [
       {
         h2: "Por qué una migración puede hundir tu SEO",
@@ -3729,11 +3729,11 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "La mayoría busca servicios 'cerca de mí'. Así logras que tu negocio aparezca primero en tu ciudad o distrito.",
     datePublished: "2026-07-08",
-    dateModified: "2026-10-14",
+    dateModified: "2026-11-05",
     category: "SEO Local",
     readingMin: 7,
     intro:
-      "Cuando alguien busca un servicio en su zona, Google le muestra un mapa con tres negocios y luego los resultados de siempre. Salir en ese paquete local es lo que llena tu agenda. El SEO local trabaja tu ficha de Google y tu web para que aparezcas primero cuando buscan lo que ofreces en tu ciudad o distrito. Si prefieres que lo hagamos por ti, mira nuestro [servicio de SEO local](/seo/seo-local).",
+      "Cuando alguien busca un servicio en su zona, Google le muestra un mapa con tres negocios y luego los resultados de siempre. Salir en ese paquete local es lo que llena tu agenda. El SEO local trabaja tu ficha de Google y tu web para que aparezcas primero cuando buscan lo que ofreces en tu ciudad o distrito. Si prefieres que lo hagamos por ti, mira nuestro [servicio de SEO local](/seo/seo-local). Si prefieres que lo trabajemos por ti, mira nuestro [servicio de SEO local](/seo/seo-local).",
     sections: [
       {
         h2: "Qué es el SEO local y por qué importa",
@@ -5843,11 +5843,11 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Pagas por cada clic y lo mandas a una página que no responde lo que se buscó. Ahí se va la mitad del presupuesto.",
     datePublished: "2026-08-12",
-    dateModified: "2026-08-12",
+    dateModified: "2026-11-05",
     category: "Marketing",
     readingMin: 7,
     intro:
-      "En Google Ads pagas por el clic aunque el visitante se vaya en dos segundos. La landing es el único tramo del embudo donde puedes mejorar el resultado sin subir la inversión, y es justamente el que casi nadie toca: la mayoría de campañas siguen apuntando a la home.",
+      "En Google Ads pagas por el clic aunque el visitante se vaya en dos segundos. La landing es el único tramo del embudo donde puedes mejorar el resultado sin subir la inversión, y es justamente el que casi nadie toca: la mayoría de campañas siguen apuntando a la home. Si quieres que la hagamos nosotros, mira el [diseño de landing pages](/diseno-de-landing-pages) de Websy.",
     sections: [
       {
         h2: "Por qué la home es una mala landing",
@@ -7119,10 +7119,11 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Un software a medida se construye para tus procesos, no al revés. Qué es, ejemplos reales por área y cómo saber si ya te conviene.",
     datePublished: "2026-10-13",
+    dateModified: "2026-11-05",
     category: "Software",
     readingMin: 6,
     intro:
-      "Un software a medida es un programa creado específicamente para una empresa, a partir de cómo trabaja ella, en lugar de un producto genérico que muchas empresas usan igual. Puede ser un sistema web, una aplicación móvil o un panel interno, y es tuyo: el código, los datos y las reglas responden a tu negocio. Aquí verás qué incluye, ejemplos concretos y cuándo vale la pena.",
+      "Un software a medida es un programa creado específicamente para una empresa, a partir de cómo trabaja ella, en lugar de un producto genérico que muchas empresas usan igual. Puede ser un sistema web, una aplicación móvil o un panel interno, y es tuyo: el código, los datos y las reglas responden a tu negocio. Aquí verás qué incluye, ejemplos concretos y cuándo vale la pena. Si ya sabes que lo necesitas, aquí está nuestro servicio de [desarrollo de software a medida en Perú](/desarrollo-de-software-a-medida).",
     sections: [
       {
         h2: "Qué significa que un software sea «a medida»",
@@ -7207,6 +7208,285 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Desarrollo de software a medida", href: "/desarrollo-de-software-a-medida", desc: "Sistemas, apps y SaaS hechos para tu empresa en Perú." },
       { label: "Cuánto cuesta un software a medida en Perú", href: "/blog/cuanto-cuesta-un-software-a-medida-en-peru", desc: "Precios referenciales por tipo de proyecto." },
       { label: "Software a medida vs enlatado", href: "/blog/software-a-medida-vs-software-enlatado", desc: "Cuál elegir según tu etapa y tu proceso." },
+    ],
+  },
+  {
+    /* 5-nov-2026 · Search Console 90 d: «hosting woocommerce peru» 94 impresiones
+       en el puesto 18,7, repartidas entre /blog/ventajas-de-woocommerce-para-negocios y
+       /tiendas-virtuales/woocommerce, que no hablan de hosting. Una intención, una URL. */
+    slug: "hosting-para-woocommerce-en-peru",
+    title: "Hosting para WooCommerce en Perú: qué necesita tu tienda",
+    h1: "Hosting para WooCommerce en Perú: qué necesita tu tienda para no caerse",
+    description:
+      "Qué hosting necesita una tienda WooCommerce en Perú: requisitos oficiales (PHP 8.3, MySQL 8, 256 MB), compartido o VPS, copias, SSL y las señales de que tu plan se quedó corto.",
+    excerpt:
+      "Los requisitos oficiales de WooCommerce, cuándo basta un hosting compartido y cuándo pasar a un VPS, explicado para tiendas peruanas.",
+    datePublished: "2026-11-05",
+    category: "Ecommerce",
+    readingMin: 7,
+    intro:
+      "Una tienda WooCommerce necesita más hosting que una web informativa: cada visita al carrito, cada pago y cada búsqueda de producto consulta la base de datos. Según la documentación oficial, tu servidor debe tener PHP 8.3 o superior, MySQL 8.0 o MariaDB 10.6, HTTPS y al menos 256 MB de memoria para WordPress. Aquí verás cómo elegir el plan y cuándo cambiarlo. Si prefieres que te la dejemos montada, mira nuestras [tiendas WooCommerce](/tiendas-virtuales/woocommerce) o [escríbenos por WhatsApp](https://wa.me/51940549322?text=Hola%2C%20quiero%20una%20tienda%20WooCommerce%20con%20el%20hosting%20resuelto.).",
+    sections: [
+      {
+        h2: "Requisitos oficiales del servidor para WooCommerce",
+        body:
+          "Antes de contratar un plan, pídele al proveedor que te confirme estos puntos por escrito. Si alguno no se cumple, la tienda puede funcionar, pero más lenta y con huecos de seguridad.",
+        table: {
+          cabeceras: ["Requisito", "Lo que pide WooCommerce", "Qué preguntarle al hosting"],
+          filas: [
+            ["WordPress", "6.9 o superior", "¿Actualizan WordPress o lo hago yo?"],
+            ["PHP", "8.3 o superior (probado hasta 8.4)", "¿Puedo elegir la versión de PHP desde el panel?"],
+            ["Base de datos", "MySQL 8.0+ o MariaDB 10.6+", "¿Qué versión de MySQL o MariaDB tienen?"],
+            ["HTTPS", "Obligatorio", "¿El certificado SSL está incluido y se renueva solo?"],
+            ["Memoria de WordPress", "256 MB o más", "¿Cuál es el límite de memoria de PHP del plan?"],
+          ],
+          nota: "Fuente: requisitos de servidor de WooCommerce 10.8 y posteriores, woocommerce.com/document/server-requirements, revisado el 5-nov-2026. Con PHP 7.4 y MySQL 5.6 todavía funciona, pero esas versiones ya no reciben parches de seguridad.",
+        },
+      },
+      {
+        h2: "Hosting compartido, VPS o administrado: cuál te toca",
+        body:
+          "La diferencia está en con cuántas webs compartes el servidor y quién lo cuida. Para una tienda que recién empieza, con pocas decenas de pedidos al mes, un buen hosting compartido que cumpla los requisitos suele alcanzar. Cuando la tienda crece o haces campañas que traen picos de visitas, el compartido se queda corto.",
+        bullets: [
+          "Compartido: barato y sin mantenimiento técnico, pero repartes recursos con otras webs. Sirve para empezar.",
+          "VPS: recursos reservados para tu tienda. Más rápido y estable, pero alguien tiene que configurarlo y actualizarlo.",
+          "Hosting administrado para WordPress: el proveedor se encarga de caché, copias y actualizaciones. Cuesta más, te ahorras el técnico.",
+        ],
+      },
+      {
+        h2: "Lo que no puede faltar en el plan",
+        body:
+          "Más allá de los requisitos mínimos, hay cuatro cosas que en una tienda no se negocian, porque cuando fallan pierdes ventas o pedidos.",
+        bullets: [
+          "Copias de seguridad diarias que puedas restaurar tú, con al menos una semana de historial.",
+          "Certificado SSL incluido: sin HTTPS las pasarelas de pago no funcionan y el navegador marca tu tienda como insegura.",
+          "Servidor cerca de tus clientes o con CDN, para que cargue rápido desde Perú.",
+          "Correo de la tienda (ventas@tunegocio.pe) que no caiga en spam: revisa que puedas configurar SPF y DKIM.",
+        ],
+      },
+      {
+        h2: "Señales de que tu hosting ya se quedó chico",
+        body:
+          "Si notas dos o más de estas, el problema probablemente no es WooCommerce sino el servidor. Antes de cambiar de plataforma, prueba un plan con más recursos.",
+        bullets: [
+          "El panel de administración tarda varios segundos en abrir cada pedido.",
+          "La tienda se cae o da error 500 cuando lanzas una campaña.",
+          "El proveedor te avisa que superaste los recursos del plan.",
+          "El carrito y el checkout cargan más lento que el resto de páginas.",
+        ],
+      },
+      {
+        h2: "Hosting, plugins y pasarela: la tienda es el conjunto",
+        body:
+          "Un buen servidor no compensa veinte plugins mal elegidos ni una pasarela mal integrada. Si estás armando la tienda desde cero, revisa también [las ventajas de WooCommerce](/blog/ventajas-de-woocommerce-para-negocios), la comparación [Shopify vs WooCommerce](/blog/shopify-vs-woocommerce) y cómo [integrar Yape y Plin](/blog/como-integrar-yape-y-plin-en-tu-tienda-virtual). En Shopify el hosting viene incluido; en WooCommerce lo eliges tú, y por eso pesa tanto esta decisión.",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Qué hosting necesita WooCommerce?",
+        a: "Uno con PHP 8.3 o superior, MySQL 8.0 o MariaDB 10.6, HTTPS y al menos 256 MB de memoria para WordPress, según los requisitos oficiales de WooCommerce. Además, copias diarias y SSL incluido.",
+      },
+      {
+        q: "¿Sirve un hosting compartido para una tienda WooCommerce?",
+        a: "Para empezar, sí, si cumple los requisitos y tienes pocos pedidos al mes. Cuando la tienda crece o haces campañas con picos de visitas, conviene pasar a un VPS o a un hosting administrado.",
+      },
+      {
+        q: "¿El hosting debe estar en Perú?",
+        a: "No es obligatorio. Importa más que cargue rápido para tus clientes; un servidor en la región o una CDN suelen bastar.",
+      },
+      {
+        q: "¿Websy se encarga del hosting de la tienda?",
+        a: "Sí. Cuando hacemos una tienda WooCommerce la dejamos publicada con hosting, dominio, certificado SSL y correos configurados, y todo queda a tu nombre.",
+      },
+    ],
+    related: [
+      { label: "Tiendas WooCommerce", href: "/tiendas-virtuales/woocommerce", desc: "Tu tienda sobre WordPress, sin mensualidad de plataforma." },
+      { label: "Cómo elegir un hosting en Perú", href: "/blog/como-elegir-un-hosting-en-peru", desc: "Lo que hay que mirar en cualquier plan de hosting." },
+      { label: "Cuánto cuesta un hosting y un dominio .pe", href: "/blog/cuanto-cuesta-un-hosting-y-un-dominio-pe-en-peru", desc: "Los costos de cada año, sin sorpresas." },
+    ],
+  },
+  {
+    /* 5-nov-2026 · Search Console 90 d: «cómo controlar stock en una tienda de ropa»
+       entra al artículo genérico de inventario en el puesto 59,7. Tallas y colores
+       son un problema propio; el artículo de tienda de ropa es el que más convierte
+       del blog (2 contactos con 2 sesiones orgánicas en GA4). */
+    slug: "como-controlar-el-stock-de-una-tienda-de-ropa",
+    title: "Cómo controlar el stock de una tienda de ropa",
+    h1: "Cómo controlar el stock de una tienda de ropa por talla y color",
+    description:
+      "Cómo llevar el stock de una tienda de ropa en Perú: códigos por talla y color, inventario físico y online sincronizado, conteos cíclicos y alertas para no vender lo que no tienes.",
+    excerpt:
+      "Variantes por talla y color, un solo stock para la tienda física, Instagram y la web, y conteos que no paran la venta.",
+    datePublished: "2026-11-05",
+    category: "Software",
+    readingMin: 7,
+    intro:
+      "En una tienda de ropa el stock no se cuenta por modelo, se cuenta por talla y color: un polo en cinco tallas y cuatro colores son veinte productos distintos. Por eso el Excel deja de servir tan rápido. La clave es dar un código a cada variante, tener un solo stock para la tienda física, Instagram y la web, y contar por partes sin cerrar. Si ya necesitas un sistema, mira nuestro [sistema de inventario a medida](/sistemas/inventario).",
+    sections: [
+      {
+        h2: "1. Un código para cada talla y color",
+        body:
+          "El primer paso es dejar de llamar a los productos «el polo negro». Cada combinación de modelo, talla y color necesita su propio código (SKU), y ese código va en la etiqueta, en el sistema y en la web. Un formato simple funciona: modelo, color y talla, por ejemplo POL-NEG-M. Con eso, cada venta descuenta exactamente la prenda que salió.",
+        table: {
+          cabeceras: ["Modelo", "Color", "Talla", "Código (SKU)"],
+          filas: [
+            ["Polo básico", "Negro", "M", "POL-NEG-M"],
+            ["Polo básico", "Negro", "L", "POL-NEG-L"],
+            ["Polo básico", "Blanco", "M", "POL-BLA-M"],
+            ["Jean slim", "Azul", "30", "JEA-AZU-30"],
+          ],
+          nota: "Ejemplo ilustrativo de codificación; cada tienda define sus abreviaturas.",
+        },
+      },
+      {
+        h2: "2. Un solo stock para tienda física, redes y web",
+        body:
+          "El error más caro en moda es vender por Instagram la última talla M que ya se vendió en el local. Pasa cuando cada canal lleva su propia cuenta. La solución es que todas las ventas descuenten del mismo inventario: la caja del local, los pedidos por WhatsApp y la [tienda virtual](/tiendas-virtuales). Si vendes mucho por redes, lee también [cómo pasar de vender por WhatsApp a una tienda virtual](/blog/como-pasar-de-vender-por-whatsapp-a-una-tienda-virtual).",
+      },
+      {
+        h2: "3. Registra entradas, cambios y devoluciones",
+        body:
+          "En ropa hay más movimientos que la compra y la venta. Los cambios de talla son el caso típico: entra una M y sale una L. Si solo registras la venta original, el stock se descuadra en silencio.",
+        bullets: [
+          "Ingreso de mercadería por pedido al proveedor, con talla y color.",
+          "Cambios de talla o color como dos movimientos: entrada y salida.",
+          "Devoluciones que vuelven al stock solo si la prenda está vendible.",
+          "Prendas dañadas o de muestra fuera del stock disponible.",
+        ],
+      },
+      {
+        h2: "4. Conteos cíclicos sin cerrar la tienda",
+        body:
+          "Contar todo el inventario una vez al año obliga a cerrar y casi nunca cuadra. Es mejor contar por partes: una categoría o una zona cada semana. Así detectas rápido dónde se pierde mercadería y corriges el stock antes de que el error crezca.",
+        bullets: [
+          "Semana 1: polos y blusas. Semana 2: pantalones. Semana 3: casacas y accesorios.",
+          "Cuenta primero las tallas que más se venden: ahí aparecen las diferencias.",
+          "Anota la diferencia y la causa probable (venta sin registrar, cambio, robo).",
+        ],
+      },
+      {
+        h2: "5. Alertas de reposición por talla",
+        body:
+          "Que te quede stock del modelo no significa que tengas la talla que te piden. Configura un mínimo por variante, no por modelo, y una alerta cuando la talla que más rota baje de ese mínimo. Con el historial de ventas por talla puedes además comprar mejor la siguiente temporada: menos XS que nadie lleva y más M que se agota.",
+      },
+      {
+        h2: "Excel, programa o sistema propio",
+        body:
+          "Con un local y pocas decenas de modelos, una hoja de cálculo bien ordenada aguanta. Cuando sumas la tienda online, ventas por redes y más de un almacén, necesitas que el stock se actualice solo con cada venta. Ahí conviene un programa de inventario o un sistema a medida conectado a tu tienda virtual. Lo explicamos en [cómo controlar el inventario en una tienda online](/blog/como-controlar-inventario-en-una-tienda-online) y en [cuándo dejar el Excel](/blog/sistema-de-gestion-para-pymes-cuando-dejar-el-excel).",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Cómo se controla el stock de ropa por tallas?",
+        a: "Dando un código (SKU) a cada combinación de modelo, talla y color, y registrando cada venta, cambio y devolución con ese código. Así el stock se lleva por variante y no por modelo.",
+      },
+      {
+        q: "¿Cómo evito vender por Instagram una talla que ya no tengo?",
+        a: "Haciendo que todos los canales descuenten del mismo inventario: caja del local, pedidos por WhatsApp y tienda virtual. Si cada canal lleva su cuenta, el descuadre es inevitable.",
+      },
+      {
+        q: "¿Cada cuánto hay que contar el inventario de una tienda de ropa?",
+        a: "Lo práctico es contar por partes cada semana, una categoría a la vez, en lugar de un conteo total al año. Así encuentras las diferencias rápido y sin cerrar la tienda.",
+      },
+      {
+        q: "¿Websy hace sistemas de inventario para tiendas de ropa?",
+        a: "Sí. Desarrollamos sistemas de inventario a medida con variantes por talla y color, conectados a la caja y a la tienda virtual, para que el stock se actualice solo con cada venta.",
+      },
+    ],
+    related: [
+      { label: "Sistema de inventario a medida", href: "/sistemas/inventario", desc: "Stock en tiempo real, kardex y alertas de quiebre." },
+      { label: "Tienda virtual para vender ropa", href: "/blog/tienda-virtual-para-vender-ropa", desc: "Qué necesita una tienda de moda para vender online." },
+      { label: "Tiendas virtuales", href: "/tiendas-virtuales", desc: "Tiendas con Yape, Plin y tarjeta, y control de stock." },
+    ],
+  },
+  {
+    /* 5-nov-2026 · Search Console 90 d: «rediseñar sitio web sin perder seo» 154 imp
+       (puesto 51) y «rediseñar web sin perder seo» 42 (puesto 61) caen en el artículo
+       de migración, que mezcla las dos cosas y no gana ninguna. Se separan: aquí el
+       rediseño (mismo dominio, nueva web); allá la migración (cambio de plataforma o
+       de dominio). Los dos se enlazan entre sí. */
+    slug: "como-redisenar-tu-pagina-web-sin-perder-seo",
+    title: "Cómo rediseñar tu página web sin perder el SEO",
+    h1: "Cómo rediseñar tu página web sin perder el SEO: checklist antes y después",
+    description:
+      "Checklist para rediseñar tu página web sin perder posiciones en Google: inventario de URLs, contenido que rankea, redirecciones 301, títulos, velocidad y qué revisar en Search Console después.",
+    excerpt:
+      "Lo que tienes que guardar antes de cambiar el diseño, lo que no debes tocar y cómo vigilar Search Console las semanas siguientes.",
+    datePublished: "2026-11-05",
+    category: "SEO",
+    readingMin: 8,
+    intro:
+      "Rediseñar una web casi nunca hace perder posiciones por el diseño en sí. Se pierden cuando cambian las URLs sin redirección, cuando desaparece el texto que Google ya posicionaba o cuando la nueva versión carga más lento. Si haces un inventario antes, conservas lo que rankea y revisas Search Console después, puedes estrenar web sin caer. Si además cambias de plataforma o de dominio, eso es una migración: mira [cómo migrar tu web sin perder posicionamiento](/blog/como-migrar-tu-pagina-web-sin-perder-posicionamiento-en-google).",
+    sections: [
+      {
+        h2: "1. Haz el inventario de lo que ya funciona",
+        body:
+          "Antes de tocar el diseño, saca de Google Search Console las páginas con clics e impresiones de los últimos tres meses, y de Google Analytics las que traen contactos. Esa lista es lo que no puedes perder. Guarda también el title, la meta descripción y el H1 de cada una.",
+        bullets: [
+          "Exporta Rendimiento › Páginas de Search Console (últimos 3 meses).",
+          "Exporta las páginas de entrada con conversiones de GA4.",
+          "Rastrea la web actual y guarda todas las URLs, títulos y H1.",
+          "Anota los enlaces que te llegan de otros sitios: esas URLs no pueden dar error.",
+        ],
+      },
+      {
+        h2: "2. Conserva las URLs, y si cambian, redirige cada una",
+        body:
+          "Lo ideal en un rediseño es mantener las mismas direcciones. Si alguna cambia o se fusiona con otra, necesita una redirección 301 a la página nueva más parecida, una por una. Mandar todo a la portada no sirve: Google lo trata como una página que desapareció.",
+        table: {
+          cabeceras: ["Caso", "Qué hacer"],
+          filas: [
+            ["La URL se mantiene", "Nada: es lo mejor para el SEO"],
+            ["La URL cambia", "301 de la vieja a la nueva equivalente"],
+            ["Dos páginas se fusionan", "301 de la que desaparece a la que se queda"],
+            ["La página se elimina sin reemplazo", "Que responda 404 o 410, no redirigir a la portada"],
+          ],
+        },
+      },
+      {
+        h2: "3. No borres el texto que Google ya posiciona",
+        body:
+          "Muchos rediseños cambian párrafos por bloques visuales con poco texto. Se ve más limpio, pero Google se queda sin las palabras por las que te encontraba. Mantén el contenido de las páginas que rankean, con sus subtítulos y preguntas frecuentes, aunque cambies cómo se ve. Lo mismo con los títulos y meta descripciones: cámbialos solo si tienes datos de que la nueva versión es mejor.",
+      },
+      {
+        h2: "4. Revisa velocidad y versión móvil antes de publicar",
+        body:
+          "Un diseño nuevo con videos de fondo, fuentes pesadas y animaciones puede cargar el doble de lento en el celular. Mide la versión de prueba con PageSpeed Insights y compárala con la actual. Si empeora, corrige antes de publicar, no después.",
+        bullets: [
+          "Imágenes en WebP o AVIF, con ancho y alto definidos.",
+          "Una o dos fuentes, no cinco.",
+          "Que el menú y los botones funcionen en una pantalla de 360 px.",
+          "Que el formulario y el botón de WhatsApp sigan midiéndose en GA4.",
+        ],
+      },
+      {
+        h2: "5. Publica y vigila Search Console cuatro semanas",
+        body:
+          "El día del lanzamiento envía el sitemap nuevo en Search Console e inspecciona las páginas principales. Durante las siguientes semanas revisa el informe de páginas no indexadas y los errores 404, y compara clics e impresiones con el inventario del paso 1. Una baja leve los primeros días es normal; si a las tres o cuatro semanas una página sigue cayendo, compárala con su versión anterior para ver qué se perdió.",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Se pierde posicionamiento al rediseñar una web?",
+        a: "No necesariamente. Se pierde cuando cambian las URLs sin redirección 301, cuando se elimina el texto que rankeaba o cuando la web nueva es más lenta. Con un inventario previo y redirecciones bien hechas, el rediseño no tiene por qué afectar.",
+      },
+      {
+        q: "¿Qué diferencia hay entre rediseñar y migrar una web?",
+        a: "Rediseñar es cambiar el diseño y la estructura manteniendo el dominio y la plataforma. Migrar es cambiar de plataforma (por ejemplo, de Wix a WordPress) o de dominio. La migración tiene más riesgo y pide más redirecciones.",
+      },
+      {
+        q: "¿Cuánto tarda Google en reconocer el rediseño?",
+        a: "Las páginas principales suelen volver a rastrearse en días si envías el sitemap y las inspeccionas en Search Console. Las posiciones se estabilizan en algunas semanas.",
+      },
+      {
+        q: "¿Websy rediseña webs cuidando el SEO?",
+        a: "Sí. Hacemos el inventario de URLs y contenido antes de empezar, dejamos las redirecciones listas y revisamos Search Console después del lanzamiento.",
+      },
+    ],
+    related: [
+      { label: "Diseño de páginas web", href: "/diseno-de-paginas-web", desc: "Webs nuevas o rediseñadas, rápidas y medidas." },
+      { label: "Servicio de SEO", href: "/seo", desc: "Posicionamiento técnico, de contenidos y local." },
+      { label: "Checklist de SEO on-page", href: "/blog/seo-on-page-checklist-para-tu-pagina-web", desc: "Lo básico que cada página debe tener." },
     ],
   },
 ];
