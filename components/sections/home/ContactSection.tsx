@@ -4,7 +4,7 @@ import { useState, useRef, useEffect } from "react";
 import { ShimmerButton } from "@/components/ui/shimmer-button";
 import { AnimatedMedia } from "@/components/ui/animated-media";
 import { trackLead, trackEvent } from "@/lib/analytics";
-import { sesionId } from "@/lib/wtrack";
+import { sesionId, contextoGuardado } from "@/lib/wtrack";
 
 /* ── Estado del formulario ── */
 type Status = "idle" | "loading" | "success" | "error";
@@ -128,6 +128,17 @@ export default function ContactSection() {
           ...data,
           sid: sesionId(),
           pagina: window.location.pathname,
+          // Mismo contexto de llegada que manda el modal de WhatsApp.
+          ...(() => {
+            const c = contextoGuardado();
+            return {
+              referrer: c.referrer,
+              landing: c.landing,
+              fuente: c.utm_source,
+              medio: c.utm_medium,
+              campana: c.utm_campaign,
+            };
+          })(),
         }),
       });
 

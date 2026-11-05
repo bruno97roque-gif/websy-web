@@ -126,7 +126,7 @@ function contextoDeLlegada() {
   };
 }
 
-function contextoGuardado() {
+export function contextoGuardado() {
   try {
     const c = localStorage.getItem("wsy_ctx");
     if (c) return JSON.parse(c);

@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
-import { COLECTOR, SITIO } from "../w/destino";
+import { COLECTOR, SITIO, esPrueba } from "../w/destino";
 
 // ⚠️ NO instanciar Resend en el módulo global — solo en el handler (runtime)
 // Si se instancia aquí, el build falla porque RESEND_API_KEY no existe en build time
@@ -90,23 +90,26 @@ export async function POST(req: NextRequest) {
     });
 
     /* 4 — Enviar email vía Resend (instanciado aquí = solo en runtime, no en build) */
-    const resend = new Resend(process.env.RESEND_API_KEY);
-    /* Resend NO lanza cuando falla: devuelve `{ error }`. Sin leerlo, una clave
-       revocada o un dominio sin verificar dejaba al visitante viendo
-       «✓ Mensaje enviado» mientras el correo no salía de ningún sitio. */
-    const { error: fallo } = await resend.emails.send({
-      from:    `Websy Contacto <${process.env.FROM_EMAIL ?? "onboarding@resend.dev"}>`,
-      to:      [process.env.CONTACT_EMAIL ?? "ventas@websy.com.pe"],
-      replyTo: email || undefined,
-      subject: `✉️ Nuevo contacto: ${nombre} · ${servicio}`,
-      html:    buildEmailHtml({ nombre, empresa, email, whatsapp, servicio, proyecto, fecha }),
-    });
-    if (fallo) console.error("[contact/route] resend no envió el mensaje:", fallo);
+    const prueba = esPrueba(nombre);
+    if (!prueba) {
+      const resend = new Resend(process.env.RESEND_API_KEY);
+      /* Resend NO lanza cuando falla: devuelve `{ error }`. Sin leerlo, una clave
+         revocada o un dominio sin verificar dejaba al visitante viendo
+         «✓ Mensaje enviado» mientras el correo no salía de ningún sitio. */
+      const { error: fallo } = await resend.emails.send({
+        from:    `Websy Contacto <${process.env.FROM_EMAIL ?? "onboarding@resend.dev"}>`,
+        to:      [process.env.CONTACT_EMAIL ?? "ventas@websy.com.pe"],
+        replyTo: email || undefined,
+        subject: `✉️ Nuevo contacto: ${nombre} · ${servicio}`,
+        html:    buildEmailHtml({ nombre, empresa, email, whatsapp, servicio, proyecto, fecha }),
+      });
+      if (fallo) console.error("[contact/route] resend no envió el mensaje:", fallo);
+    }
 
     /* 5 — Google Sheets vía Apps Script webhook
        Ver instrucciones en /docs/google-sheets-script.js */
     const webhookUrl = process.env.GOOGLE_SHEETS_WEBHOOK_URL;
-    if (webhookUrl) {
+    if (webhookUrl && !prueba) {
       // Con reloj: `.catch()` atrapa un rechazo, pero no una petición que se
       // queda colgada, y ahí el visitante se come la espera entera.
       await fetch(webhookUrl, {
@@ -139,6 +142,14 @@ export async function POST(req: NextRequest) {
         mensaje: proyecto === "—" ? null : proyecto,
         pagina: clean(body.pagina, 300) || null,
         ubicacion: "formulario_contacto",
+        prueba,
+        /* Por dónde llegó: sin esto el lead del formulario entraba sin fuente
+           en el panel (el modal de WhatsApp sí la mandaba). */
+        referrer: clean(body.referrer, 500) || null,
+        landing: clean(body.landing, 300) || null,
+        fuente: clean(body.fuente, 120) || null,
+        medio: clean(body.medio, 120) || null,
+        campana: clean(body.campana, 160) || null,
         ctx: {
           pais: req.headers.get("x-vercel-ip-country") ?? "",
           ciudad: req.headers.get("x-vercel-ip-city") ?? "",
