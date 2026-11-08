@@ -4,9 +4,9 @@ import ServiceLanding from "@/components/sections/landing/ServiceLanding";
 
 export const metadata: Metadata = pageMeta({
   path: "/desarrollo-de-software-a-medida",
-  title: "Desarrollo de Software a Medida en Perú",
+  title: "Software a medida en Perú: desarrollo para empresas",
   description:
-    "Desarrollo de software a medida en Perú: aplicaciones web y móviles, CRM, ERP, plataformas SaaS y sistemas de inventario y ventas hechos para tu operación.",
+    "Software a medida en Perú para empresas: sistemas web, apps, CRM y ERP hechos sobre tu proceso, por etapas y con el código a tu nombre. Desde S/ 15,000 referencial.",
 });
 
 export default function SoftwareAMedidaPage() {
@@ -18,8 +18,8 @@ export default function SoftwareAMedidaPage() {
         { name: "Software a Medida", path: "/desarrollo-de-software-a-medida" },
       ]}
       eyebrow="Software · Apps · Sistemas"
-      h1="Desarrollo de software a medida en Perú"
-      intro="Desarrollamos software a medida para empresas y emprendedores en Perú: aplicaciones web y móviles, CRM, ERP, plataformas SaaS y sistemas de inventario o ventas que se adaptan a cómo trabajas, no al revés. El código y los datos quedan a nombre de tu empresa."
+      h1="Desarrollo de software a medida para empresas en Perú"
+      intro="Desarrollamos software a medida para empresas y emprendedores en Perú: aplicaciones a medida web y móviles, CRM, ERP, plataformas SaaS y sistemas de inventario o ventas que se adaptan a cómo trabajas, no al revés. El código y los datos quedan a nombre de tu empresa."
       highlights={["Aplicaciones web", "Apps móviles", "CRM", "ERP", "SaaS", "Sistemas web"]}
       stats={[
         { value: "A medida", label: "Hecho para tu operación" },
@@ -38,6 +38,36 @@ export default function SoftwareAMedidaPage() {
             "Plataformas web a medida que reemplazan el trabajo manual.",
             "Paneles con reportes para tomar decisiones con datos.",
           ],
+        },
+        {
+          h2: "Software a medida para empresas: qué área se automatiza primero",
+          body:
+            "Un software a medida para empresas no tiene que cubrir todo desde el día uno. Lo normal es empezar por el área donde hoy se pierde más tiempo o más plata, ponerla en producción y sumar módulos después. Estas son las áreas que más se piden y el módulo que suele resolverlas:",
+          bullets: [
+            "Ventas y caja: registro de ventas, cobro con Yape, Plin o tarjeta y comprobantes electrónicos, en el [sistema de ventas y facturación](/sistemas/ventas-y-facturacion).",
+            "Almacén y logística: entradas, salidas, transferencias entre sedes y stock mínimo, en el [sistema de inventario](/sistemas/inventario).",
+            "Clientes y seguimiento comercial: cotizaciones, oportunidades y recordatorios por vendedor, en un [CRM a medida](/sistemas/crm-a-medida).",
+            "Operación completa: compras, ventas, stock, caja y reportes conectados en un [ERP a medida](/sistemas/gestion-erp-crm).",
+            "Atención a tus clientes: portales donde consultan pedidos, reservan o descargan documentos, como [aplicación web](/desarrollo-de-aplicaciones-web) o [app móvil](/desarrollo-de-aplicaciones-moviles).",
+            "Reportes para gerencia: paneles que juntan los datos de todas las áreas sin armar el Excel cada lunes.",
+          ],
+        },
+        {
+          h2: "Casos de uso de software a medida",
+          body:
+            "Son situaciones típicas que llegan como consulta y cómo se resuelven con desarrollo propio. No son clientes concretos: sirven para que reconozcas tu caso y sepas por qué módulo empezar.",
+          table: {
+            cabeceras: ["Situación de la empresa", "Qué se desarrolla", "Por dónde se empieza"],
+            filas: [
+              ["Distribuidora con dos o más almacenes que cuadra el stock a mano", "Inventario multi-almacén conectado a ventas", "[Sistema de inventario](/sistemas/inventario)"],
+              ["Tienda con local y venta online que vende lo que ya no tiene", "Stock único para el local y la [tienda virtual](/tiendas-virtuales)", "Inventario conectado a la tienda"],
+              ["Clínica o consultorio que agenda por WhatsApp y pierde citas", "Agenda por especialista, historia clínica y caja", "[Sistema para clínicas](/sistemas/sistema-para-clinicas)"],
+              ["Hotel u hospedaje que lleva reservas en un cuaderno", "Reservas, habitaciones, caja y reportes", "[Sistema hotelero](/sistemas/sistema-hotelero)"],
+              ["Restaurante con pedidos en salón, delivery y para llevar", "Comandas, caja y control de insumos", "[Sistema para restaurantes](/sistemas/sistema-para-restaurantes)"],
+              ["Empresa de servicios que cotiza en Word y no sabe qué cotización cerró", "CRM con cotizaciones y seguimiento", "[CRM a medida](/sistemas/crm-a-medida)"],
+              ["Negocio que quiere vender su sistema a otras empresas", "Plataforma por suscripción", "[Desarrollo de SaaS](/desarrollo-de-saas)"],
+            ],
+          },
         },
         {
           h2: "Qué software desarrollamos",
@@ -135,6 +165,7 @@ export default function SoftwareAMedidaPage() {
         { label: "Precios y cotización", href: "/precios", desc: "Qué define el precio de tu sistema y cómo empezar por etapas." },
       ]}
       articles={[
+        { label: "Qué es un software a medida", href: "/blog/que-es-un-software-a-medida", desc: "La definición, con ejemplos, antes de pedir una cotización." },
         { label: "Sistema de gestión: cuándo dejar el Excel", href: "/blog/sistema-de-gestion-para-pymes-cuando-dejar-el-excel", desc: "Señales de que tu pyme ya necesita un sistema propio." },
         { label: "¿Cuándo una empresa necesita un sistema web?", href: "/blog/cuando-una-empresa-necesita-un-sistema-web", desc: "Señales de que tu operación ya pide un software a medida." },
         { label: "Cómo controlar inventario en una tienda online", href: "/blog/como-controlar-inventario-en-una-tienda-online", desc: "Integra stock y ventas para dejar de cuadrar a mano." },
@@ -149,6 +180,14 @@ export default function SoftwareAMedidaPage() {
         {
           q: "¿Se integra con mi facturación electrónica o mis sistemas actuales?",
           a: "Sí. Integramos el sistema con facturación electrónica, pasarelas de pago, CRM u otras herramientas que ya uses, para que todo trabaje conectado.",
+        },
+        {
+          q: "¿Desarrollan software a medida para empresas pequeñas?",
+          a: "Sí. Una pyme no necesita un ERP completo para empezar: se arranca con el módulo que más trabajo ahorra, por ejemplo inventario o ventas, y se le suman módulos cuando la operación lo pide. Así la inversión se reparte en etapas.",
+        },
+        {
+          q: "¿Hacen aplicaciones a medida para celular?",
+          a: "Sí. Desarrollamos aplicaciones a medida para Android e iOS, para tus clientes o para tu equipo en campo, y pueden compartir la misma base de datos que tu sistema web.",
         },
         {
           q: "¿Cuál es la diferencia entre página web, sistema web y software a medida?",

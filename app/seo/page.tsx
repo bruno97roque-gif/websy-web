@@ -4,9 +4,9 @@ import ServiceLanding from "@/components/sections/landing/ServiceLanding";
 
 export const metadata: Metadata = pageMeta({
   path: "/seo",
-  title: "Servicio de SEO en Perú: posicionamiento web",
+  title: "Servicio de SEO mensual en Perú: posicionamiento web",
   description:
-    "Servicio de SEO y posicionamiento web en Perú: SEO on-page, técnico, de contenidos y local para aparecer en Google, atraer clientes y crecer de forma sostenida.",
+    "Servicio de SEO mensual y posicionamiento web en Perú: qué se hace cada mes (técnico, contenidos, enlaces y SEO local) y un reporte claro de posiciones y clientes.",
 });
 
 export default function SeoPage() {
@@ -18,7 +18,7 @@ export default function SeoPage() {
         { name: "SEO y Posicionamiento Web", path: "/seo" },
       ]}
       eyebrow="Posicionamiento web"
-      h1="Servicio de SEO en Perú"
+      h1="Servicio de SEO y posicionamiento web en Perú"
       intro="Posicionamos tu web en Google para que te encuentren quienes ya buscan lo que ofreces. Nuestro servicio de SEO en Perú combina SEO técnico, on-page, de contenidos y local para atraer tráfico de calidad y convertirlo en clientes, con un crecimiento sostenido que no depende de pagar por cada clic."
       highlights={["SEO on-page", "SEO técnico", "SEO de contenidos", "SEO local", "Reportes claros"]}
       stats={[
@@ -32,6 +32,28 @@ export default function SeoPage() {
           h2: "SEO: el tráfico que trabaja para ti todos los días",
           body:
             "A diferencia de la publicidad pagada, que se detiene cuando dejas de invertir, el SEO construye un activo: una web que aparece en Google cuando alguien busca lo que ofreces, hoy y dentro de un año. Nuestro servicio de posicionamiento web en Perú trabaja las bases técnicas, el contenido y la autoridad de tu sitio para que suba de forma sostenida en los resultados y capte clientes con intención de compra real, sin pagar por cada visita.",
+        },
+        {
+          h2: "¿Tu negocio atiende a una zona? Empieza por el SEO local",
+          body:
+            "Si tus clientes te buscan por distrito o «cerca de mí», lo que más rápido se nota es el [servicio de SEO local](/seo/seo-local): tu web y tus páginas por zona trabajadas para salir en el mapa y en las búsquedas de tu ciudad. Si vendes a todo el país o por internet, el servicio mensual de abajo es el que corresponde.",
+        },
+        {
+          h2: "Servicio de SEO mensual: qué incluye cada mes",
+          body:
+            "El SEO no es un trabajo que se entrega y se cierra: Google cambia, tu competencia publica y tu web crece. Por eso se trabaja como un servicio mensual con un ciclo fijo. El orden y el peso de cada tarea cambian según tu web, pero cada mes tiene estas partes:",
+          table: {
+            cabeceras: ["Parte del mes", "Qué se hace", "Qué recibes"],
+            filas: [
+              ["Revisión técnica", "Errores de rastreo e indexación en Search Console, velocidad, páginas caídas y redirecciones", "Lista de problemas corregidos o pendientes, con prioridad"],
+              ["Páginas que venden", "Ajuste de títulos, meta descripciones, encabezados y textos de las páginas de servicio o de categoría que están cerca del top 10", "Páginas optimizadas y la palabra clave a la que apunta cada una"],
+              ["Contenido nuevo", "Artículos o páginas nuevas para búsquedas que hoy no tienen una URL propia en tu web, sin repetir temas que ya tienes", "Calendario del mes y piezas publicadas"],
+              ["Enlazado y autoridad", "Enlaces internos entre páginas y, cuando aplica, menciones y enlaces desde otros sitios", "Detalle de qué se enlazó y desde dónde"],
+              ["SEO local", "Páginas por zona, datos de contacto consistentes y reseñas, si tu negocio atiende a un área", "Avance en las búsquedas de tu ciudad o distrito"],
+              ["Reporte", "Clics, impresiones, posiciones y contactos que llegaron desde Google, comparados con el mes anterior", "Reporte en lenguaje simple y el plan del mes siguiente"],
+            ],
+            nota: "El alcance exacto y el precio se definen en la propuesta según el estado de tu web y la competencia de tu rubro. En [cuánto cuesta el SEO en Perú](/blog/cuanto-cuesta-el-seo-en-peru) explicamos qué mueve el precio.",
+          },
         },
         {
           h2: "Auditoría y SEO técnico",
@@ -88,6 +110,7 @@ export default function SeoPage() {
         },
       ]}
       related={[
+        { label: "Servicio de SEO local", href: "/seo/seo-local", desc: "Para negocios que atienden a una zona: sal en el mapa y en las búsquedas de tu ciudad." },
         { label: "Nuestros servicios", href: "/servicios", desc: "Conoce todo lo que hacemos: web, ecommerce, software, branding y más." },
         { label: "Precios y cotización", href: "/precios", desc: "Qué define el precio de un servicio de SEO y cómo cotizarlo." },
         { label: "Diseño de páginas web", href: "/diseno-de-paginas-web", desc: "Una web optimizada para SEO desde su construcción." },
@@ -103,6 +126,18 @@ export default function SeoPage() {
         {
           q: "¿En cuánto tiempo veo resultados de SEO?",
           a: "El SEO es progresivo: los primeros movimientos suelen verse en algunas semanas y los resultados sólidos en algunos meses, según la competencia de tus palabras clave y el estado inicial de tu web. A cambio, es un tráfico que se acumula y no depende de pagar por cada clic.",
+        },
+        {
+          q: "¿Qué incluye un servicio de SEO mensual?",
+          a: "Cada mes se revisa la parte técnica en Search Console, se optimizan las páginas que están cerca del top 10, se publica contenido nuevo para búsquedas sin cubrir, se trabaja el enlazado y, si aplica, el SEO local. Al cierre recibes un reporte con clics, posiciones y contactos, y el plan del mes siguiente.",
+        },
+        {
+          q: "¿Por qué el SEO se contrata por mes y no como un trabajo único?",
+          a: "Porque las posiciones se mueven: la competencia publica, Google actualiza su algoritmo y tu web suma páginas. Una optimización única deja la web lista, pero sin seguimiento mensual el avance se estanca o se pierde.",
+        },
+        {
+          q: "¿Qué diferencia hay entre SEO y SEO local?",
+          a: "El SEO general busca posicionar tu web para búsquedas de todo el país o de internet. El SEO local apunta a quien busca en una zona concreta, con páginas por distrito, datos de contacto consistentes y reseñas. Si atiendes a una zona, conviene empezar por el SEO local.",
         },
         {
           q: "¿Cuál es la diferencia entre SEO y Google Ads?",
