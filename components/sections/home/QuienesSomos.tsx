@@ -35,11 +35,12 @@ const pillars = [
 
 /* ─── Slides del carrusel — agrega más objetos para más slides ─── */
 const slides = [
-  { src: "/images/Galeria-1.webp", label: "Identidad de Marca",  tag: "Branding" },
-  { src: "/images/Galeria-2.webp", label: "Diseño de logos e identidad",    tag: "Logotipos" },
-  { src: "/images/Galeria-3.webp", label: "Manuales de Marcas", tag: "Manuales" },
-  { src: "/images/Galeria-4.webp", label: "Lo último en software",        tag: "Adobe Suit" },
-  { src: "/images/Galeria-5.webp", label: "Estrategia digital creativa",  tag: "Branding 360°" },
+  // w/h = tamaño real del fichero (sips, 7-nov-2026)
+  { src: "/images/Galeria-1.webp", w: 1334, h: 2000, label: "Identidad de Marca",  tag: "Branding" },
+  { src: "/images/Galeria-2.webp", w: 2000, h: 1334, label: "Diseño de logos e identidad",    tag: "Logotipos" },
+  { src: "/images/Galeria-3.webp", w: 1334, h: 2000, label: "Manuales de Marcas", tag: "Manuales" },
+  { src: "/images/Galeria-4.webp", w: 1334, h: 2000, label: "Lo último en software",        tag: "Adobe Suit" },
+  { src: "/images/Galeria-5.webp", w: 2000, h: 2000, label: "Estrategia digital creativa",  tag: "Branding 360°" },
 ];
 
 export default function QuienesSomos() {
@@ -112,6 +113,8 @@ export default function QuienesSomos() {
                     <img
                       src={s.src}
                       alt={s.label}
+                      width={s.w}
+                      height={s.h}
                       className="h-full w-full object-cover"
                       draggable={false}
                     />
@@ -177,6 +180,9 @@ export default function QuienesSomos() {
           <img
             src="/images/astro-flotando.webp"
             alt=""
+            aria-hidden="true"
+            width={226}
+            height={226}
             className="pointer-events-none absolute -right-4 -top-30 hidden h-[200px] w-auto animate-[floatY_6s_ease-in-out_infinite] drop-shadow-2xl md:block"
             draggable={false}
           />

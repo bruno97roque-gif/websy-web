@@ -3729,11 +3729,11 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "La mayoría busca servicios 'cerca de mí'. Así logras que tu negocio aparezca primero en tu ciudad o distrito.",
     datePublished: "2026-07-08",
-    dateModified: "2026-11-05",
+    dateModified: "2026-11-07",
     category: "SEO Local",
     readingMin: 7,
     intro:
-      "Cuando alguien busca un servicio en su zona, Google le muestra un mapa con tres negocios y luego los resultados de siempre. Salir en ese paquete local es lo que llena tu agenda. El SEO local trabaja tu ficha de Google y tu web para que aparezcas primero cuando buscan lo que ofreces en tu ciudad o distrito. Si prefieres que lo hagamos por ti, mira nuestro [servicio de SEO local](/seo/seo-local). Si prefieres que lo trabajemos por ti, mira nuestro [servicio de SEO local](/seo/seo-local).",
+      "Cuando alguien busca un servicio en su zona, Google le muestra un mapa con tres negocios y luego los resultados de siempre. Salir en ese paquete local es lo que llena tu agenda. El SEO local trabaja tu ficha de Google y tu web para que aparezcas primero cuando buscan lo que ofreces en tu ciudad o distrito. Si prefieres que lo hagamos por ti, mira nuestro [servicio de SEO local](/seo/seo-local).",
     sections: [
       {
         h2: "Qué es el SEO local y por qué importa",

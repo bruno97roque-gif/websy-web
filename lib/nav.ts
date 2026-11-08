@@ -33,6 +33,9 @@ export const SERVICE_LINKS: NavLink[] = [
   { label: "Diseño de Landing Pages", href: "/diseno-de-landing-pages", desc: "landing pages para campañas de Google Ads y Meta: un solo objetivo, carga rápida en el celular y cada contacto por formulario o WhatsApp medido en GA4." },
   { label: "Integración de Pagos", href: "/integracion-de-pagos", desc: "integración de Yape, Plin y pasarelas de pago (Izipay, Niubiz, Culqi, Mercado Pago) en tu web, tienda virtual, app o sistema a medida." },
   { label: "SEO y Posicionamiento", href: "/seo", desc: "SEO técnico, on-page, de contenidos y local para aparecer en Google sin pagar por cada clic." },
+  // 7-nov-2026 · /seo/seo-local llevaba 24 días «Discovered - currently not indexed»
+  // con solo 2 enlaces internos. Aquí entra en el pie, /servicios y /llms.txt.
+  { label: "SEO Local", href: "/seo/seo-local", desc: "SEO local en Lima y Perú: ficha de Google Business Profile, reseñas, NAP coherente y páginas por distrito para salir en el mapa y en «cerca de mí»." },
   { label: "Google Ads", href: "/google-ads", desc: "gestión de campañas de Google Ads en Perú orientadas a clientes y retorno." },
   { label: "Branding", href: "/branding", desc: "identidad de marca, logotipo, manual de marca y aplicaciones." },
   { label: "Mantenimiento Web", href: "/mantenimiento-web", desc: "soporte, actualizaciones, seguridad y mejoras continuas de tu sitio." },
@@ -112,7 +115,7 @@ export const SERVICE_SITEMAP: SitemapEntry[] = [
   { path: "/cotizacion", priority: 0.8, lastModified: "2026-07-31" },
   // Nuevos pilares de servicio.
   { path: "/seo", priority: 0.9, lastModified: "2026-10-14" },
-  { path: "/seo/seo-local", priority: 0.8, lastModified: "2026-10-14" },
+  { path: "/seo/seo-local", priority: 0.8, lastModified: "2026-10-14" }, // enlazada desde el pie el 7-nov; su contenido no cambió
   { path: "/google-ads", priority: 0.9, lastModified: "2026-11-05" },
   { path: "/branding", priority: 0.9, lastModified: "2026-08-12" },
   { path: "/mantenimiento-web", priority: 0.9, lastModified: "2026-07-31" },
@@ -128,9 +131,9 @@ export const SERVICE_SITEMAP: SitemapEntry[] = [
 
 /** Páginas fijas (institucionales). Misma regla de `lastModified` que arriba. */
 export const FIXED_SITEMAP: SitemapEntry[] = [
-  { path: "", priority: 1, lastModified: "2026-10-14" },
-  { path: "/servicios", priority: 0.7, lastModified: "2026-08-12" },
-  { path: "/nosotros", priority: 0.6, lastModified: "2026-07-31" },
+  { path: "", priority: 1, lastModified: "2026-11-07" },
+  { path: "/servicios", priority: 0.7, lastModified: "2026-11-07" },
+  { path: "/nosotros", priority: 0.6, lastModified: "2026-11-07" },
   { path: "/contacto", priority: 0.6, lastModified: "2026-08-12" },
   { path: "/blog", priority: 0.7, lastModified: "2026-09-02", changeFrequency: "weekly" },
   { path: "/terminos", priority: 0.3, lastModified: "2026-03-06" },

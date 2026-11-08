@@ -65,6 +65,8 @@ export default function ClientsSection() {
               <img
                 src="/images/logo-websy-servicios.webp"
                 alt="Websy"
+                width={453}
+                height={121}
                 className="inline-block h-[1em] w-auto object-contain align-middle"
                 draggable={false}
               />
