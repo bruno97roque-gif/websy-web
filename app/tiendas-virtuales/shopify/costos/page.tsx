@@ -7,12 +7,15 @@ import ServiceLanding from "@/components/sections/landing/ServiceLanding";
    puesto 11 y con CERO clics entre ambas. No se redirige ni se unifica: se
    reparte por intención. El artículo responde qué cobra SHOPIFY (planes y
    comisiones) y esta responde qué cuesta que te DESARROLLEN la tienda, que es
-   otra pregunta y de otra persona. El title lo dice ahora explícitamente. */
+   otra pregunta y de otra persona. El title lo dice ahora explícitamente.
+   7-nov-2026 · «shopify precios» (33 imp) seguía repartida: esta página puesto 12,8
+   y el blog de planes 8,9. El title pasa a «costo de desarrollo» para dejarle al
+   blog la búsqueda de precios de Shopify, y la meta deja de decir «precio». */
 export const metadata: Metadata = pageMeta({
   path: "/tiendas-virtuales/shopify/costos",
-  title: "Cuánto cuesta desarrollar tu tienda Shopify",
+  title: "Costo de desarrollo de una tienda Shopify en Perú",
   description:
-    "Qué cuesta que te desarrollen una tienda Shopify en Perú: qué define el precio del proyecto, qué se paga una vez y qué se repite cada mes. Cotización en 24 h.",
+    "Cuánto cuesta que te desarrollen una tienda Shopify en Perú: qué define el costo del proyecto, qué se paga una vez y qué se repite cada mes. Cotización en 24 h.",
 });
 
 export default function CostosShopifyPage() {
@@ -76,7 +79,7 @@ export default function CostosShopifyPage() {
           body:
             "Es la confusión más común. Son dos costos distintos y conviene entenderlos por separado antes de cotizar.",
           bullets: [
-            "Plan mensual de Shopify: lo cobra Shopify por usar su plataforma (hosting, seguridad, actualizaciones). Es recurrente y va en dólares.",
+            "Plan mensual de Shopify: lo cobra Shopify por usar su plataforma (hosting, seguridad, actualizaciones). Es recurrente y va en dólares; el importe de cada uno está en [planes y precios de Shopify](/blog/cuanto-cuesta-una-tienda-en-shopify).",
             "Desarrollo de la tienda: es nuestra inversión inicial para montar tu tienda —diseño, carga de productos, pagos, envíos y optimización—. Se paga una vez (más mejoras futuras si las necesitas).",
             "Comisiones de pago: la de tu pasarela más el recargo de Shopify. Conviene tenerlo en cuenta al fijar tus precios de venta.",
           ],
