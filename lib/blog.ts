@@ -163,13 +163,17 @@ export const BLOG_POSTS: BlogPost[] = [
     description:
       "Cómo optimizar fichas de producto y páginas de categoría de tu tienda online en Perú: títulos, descripciones únicas y los errores que la dejan invisible.",
     excerpt:
-      "Tu tienda online no vende si nadie la encuentra. Aquí cómo posicionarla en Google en Perú: SEO de productos, categorías y contenido.",
+      "El SEO de una tienda online se juega en las fichas de producto y las categorías. Qué poner en cada una y qué errores la dejan invisible.",
     datePublished: "2026-07-23",
-    dateModified: "2026-08-12",
+    dateModified: "2026-11-07",
     category: "Tiendas virtuales",
     readingMin: 7,
+    /* 7-nov-2026 · Se disputaba «como posicionar mi tienda online en google» (84 imp,
+       puesto 34,8) con /blog/como-posicionar-una-tienda-virtual-en-google. Reparto por
+       intención: este se queda con el SEO de FICHAS Y CATEGORÍAS; la guía general de
+       posicionar la tienda es el otro. Fusión con 301 pendiente de OK. */
     intro:
-      "Tener una tienda online no sirve de nada si nadie la encuentra. Posicionar tu e-commerce en Google es lo que te trae ventas todos los días sin pagar por cada clic. Aquí verás cómo hacerlo en Perú: desde las fichas de producto y las categorías hasta la velocidad y el contenido que atrae compradores.",
+      "El SEO de una tienda online se gana en dos tipos de página: las fichas de producto y las categorías. Son las que Google muestra cuando alguien busca lo que vendes con intención de comprar. Aquí verás qué debe llevar cada ficha, cómo escribir una categoría que posicione y qué errores dejan invisible tu catálogo en Perú. La estrategia general está en [cómo posicionar una tienda virtual en Google](/blog/como-posicionar-una-tienda-virtual-en-google).",
     sections: [
       {
         h2: "Por qué el SEO es clave para una tienda virtual",
@@ -633,18 +637,18 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "como-posicionar-una-tienda-virtual-en-google",
-    title: "Cómo posicionar una tienda virtual en Google",
-    h1: "Cómo posicionar una tienda virtual en Google",
+    title: "Cómo posicionar tu tienda online en Google (guía Perú)",
+    h1: "Cómo posicionar tu tienda online en Google",
     description:
-      "SEO para ecommerce: cómo posicionar tu tienda virtual en Google con fichas optimizadas, categorías, contenido y velocidad para atraer compradores.",
+      "Cómo posicionar tu tienda online o tienda virtual en Google en Perú: estructura, contenido, velocidad, datos estructurados y reseñas para atraer compradores.",
     excerpt:
       "Las claves de SEO para que tu tienda virtual aparezca en Google y atraiga clientes que ya quieren comprar.",
     datePublished: "2026-06-19",
-    dateModified: "2026-09-02",
+    dateModified: "2026-11-07",
     category: "SEO",
     readingMin: 6,
     intro:
-      "Tener una tienda virtual no sirve de nada si nadie la encuentra. El SEO para ecommerce hace que tus productos aparezcan en Google cuando alguien busca lo que vendes. Estas son las bases para posicionar tu tienda y atraer compradores con intención real.",
+      "Para posicionar tu tienda online en Google necesitas cuatro cosas: fichas y categorías optimizadas, contenido que atraiga antes de la compra, una tienda rápida en el celular y datos estructurados con reseñas reales. El SEO para ecommerce hace que tus productos aparezcan cuando alguien busca lo que vendes. Estas son las bases, y el detalle de fichas y categorías está en [SEO para tiendas online](/blog/como-posicionar-tu-tienda-online-en-google-peru).",
     sections: [
       {
         h2: "Optimiza fichas de producto y categorías",
@@ -688,14 +692,17 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "pagina-web-sistema-web-y-software-a-medida",
-    title: "Página web, sistema web y software: diferencias",
-    h1: "Página web, sistema web y software a medida: ¿qué necesitas?",
+    /* 7-nov-2026 · GSC: «una pagina web es un software» 113 imp puesto 7,7 → la
+       respuesta va en el title y en la primera frase. «sistema web» (209 imp, 7,3)
+       debe ganarlo /sistemas: enlace con «sistemas web para empresas». */
+    title: "¿Una página web es un software? Diferencias con un sistema web",
+    h1: "¿Una página web es un software? Página web, sistema web y software a medida",
     description:
-      "Diferencias entre página web, sistema web y software a medida para empresas en Perú: para qué sirve cada uno y cuándo conviene desarrollarlo.",
+      "Sí, una página web es un software. Diferencias entre página web, sistema web y software a medida para empresas en Perú y cuándo conviene cada uno.",
     excerpt:
       "Una guía simple para entender la diferencia entre una web, un sistema web y un software a medida.",
     datePublished: "2026-06-19",
-    dateModified: "2026-09-29",
+    dateModified: "2026-11-07",
     category: "Software",
     readingMin: 5,
     intro:
@@ -714,7 +721,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Sistema web: automatiza un proceso",
         body:
-          "Un sistema web es una aplicación que se abre desde el navegador, con usuarios y una base de datos, y resuelve una tarea concreta: controlar inventario, registrar ventas, emitir comprobantes o coordinar a tu equipo. Reemplaza hojas de cálculo y trabajo manual, y se accede desde cualquier dispositivo. Si el stock se te descuadra cada semana, mira el [sistema de inventario y almacén](/sistemas/inventario). Si todavía no sabes cuál te toca, en [sistemas web para empresas en Perú](/sistemas) comparamos los tres más pedidos.",
+          "Un sistema web es una aplicación que se abre desde el navegador, con usuarios y una base de datos, y resuelve una tarea concreta: controlar inventario, registrar ventas, emitir comprobantes o coordinar a tu equipo. Reemplaza hojas de cálculo y trabajo manual, y se accede desde cualquier dispositivo. Si el stock se te descuadra cada semana, mira el [sistema de inventario y almacén](/sistemas/inventario). Si todavía no sabes cuál te toca, en [sistemas web para empresas](/sistemas) comparamos los tres más pedidos.",
       },
       {
         h2: "Software a medida: plataforma completa",
@@ -873,18 +880,22 @@ export const BLOG_POSTS: BlogPost[] = [
        resultados de Shopify (shopify.com y help.shopify.com) y uno de gempages, sin resumen de IA. Google no
        había rastreado el title del 12-sep (último rastreo 22-ago) y dejaba
        minúscula tras los dos puntos. Ninguno de los de al lado dice el recargo. */
-    title: "Shopify precios en Perú: Cada plan al mes y su recargo",
-    h1: "¿Cuánto cobra Shopify al mes? Planes y comisiones en Perú",
+    /* 7-nov-2026 · GSC 28 d: «shopify precios» 211 imp puesto 9,5, «planes shopify»
+       96 (8,4), «cuanto cuesta shopify al mes» 69 (7,7), «shopify precio» 63,
+       «planes de shopify» 53. Title con «planes y precios» y «al mes»; precios
+       vueltos a comprobar en shopify.com/pe/precios hoy (sin cambios). */
+    title: "Planes y precios de Shopify en Perú: cuánto cuesta al mes",
+    h1: "Planes y precios de Shopify en Perú: cuánto cuesta al mes",
     description:
-      "Cada Shopify plan en Perú con su precio oficial: de USD 19 a USD 299 al mes pagando por año, más un recargo de 2 % a 0,2 % por usar pasarela externa.",
+      "Planes y precios de Shopify en Perú: de USD 19 a USD 299 al mes pagando por año (USD 25 a 399 mes a mes), más un recargo de 2 % a 0,2 % por pasarela externa.",
     excerpt:
       "Los planes de Shopify van de USD 19 a USD 299 al mes. Esto es lo que pagas de verdad, comisiones peruanas incluidas.",
     datePublished: "2026-06-19",
-    dateModified: "2026-09-27",
+    dateModified: "2026-11-07",
     category: "Ecommerce",
     readingMin: 6,
     intro:
-      "Shopify cobra entre USD 19 y USD 299 al mes según el plan, pagando por año, y no publica tarifa en soles para Perú (precios oficiales comprobados el 1 de septiembre de 2026). A esa mensualidad se le suman el desarrollo de la tienda y las comisiones de cada venta, que en Perú son dos y no una. Aquí está el desglose completo.",
+      "Shopify cuesta entre USD 19 y USD 299 al mes según el plan si pagas por año, y entre USD 25 y USD 399 si pagas mes a mes; no publica tarifa en soles para Perú (precios oficiales comprobados el 7 de noviembre de 2026). Ojo: eso es solo el plan de Shopify. El desarrollo de la tienda se paga aparte y una sola vez, y a cada venta se le suman dos comisiones. Aquí está el desglose completo.",
     sections: [
       {
         h2: "Cuánto cobra Shopify al mes: precio de cada plan",
@@ -899,8 +910,13 @@ export const BLOG_POSTS: BlogPost[] = [
             ["Plus", "desde USD 2.300/mes", "—", "0,2 %"],
           ],
           nota:
-            "Precios oficiales de shopify.com/pe/precios comprobados el 1 de septiembre de 2026. Shopify los fija en dólares y puede cambiarlos sin aviso.",
+            "Precios oficiales de shopify.com/pe/precios comprobados el 7 de noviembre de 2026. Shopify los fija en dólares y puede cambiarlos sin aviso.",
         },
+      },
+      {
+        h2: "El plan de Shopify no es el precio de tu tienda",
+        body:
+          "La tabla de arriba es lo que le pagas a Shopify cada mes por usar su plataforma. No incluye el diseño, la carga de productos ni la configuración de pagos y envíos: eso es el desarrollo, se cotiza aparte y se paga una vez. Lo explicamos con detalle en [cuánto cuesta desarrollar una tienda Shopify en Perú](/tiendas-virtuales/shopify/costos).",
       },
       {
         h2: "Qué plan te conviene según lo que vendas",
@@ -2479,23 +2495,27 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "google-ads-para-pymes-en-peru-cuanto-invertir",
-    title: "Cuánto invertir en Google Ads siendo pyme en Perú",
-    h1: "Cuánto invertir en Google Ads si tienes una pyme en Perú",
+    /* 7-nov-2026 · GSC 90 d: 818 imp en puesto 34 y le quitaba «google ads perú» y
+       «agencia google ads» a la landing /google-ads (puesto 55-72). Este artículo se
+       queda con la pregunta de PRECIO («cuanto cuesta google ads perú», «google ads
+       precio peru», del autocompletado) y la intención de agencia va a /google-ads. */
+    title: "Cuánto cuesta Google Ads en Perú y cuánto invertir siendo pyme",
+    h1: "¿Cuánto cuesta Google Ads en Perú? Lo que conviene invertir a una pyme",
     description:
-      "Cuánto invertir en Google Ads si tienes una pyme en Perú, qué tipo de campaña elegir, por qué la landing importa tanto como el anuncio y cómo medir tus leads.",
+      "Cuánto cuesta Google Ads en Perú: no hay monto mínimo, tú fijas el presupuesto diario y pagas por clic. Cuánto invertir al empezar y cómo medir cada lead.",
     excerpt:
-      "Google Ads te trae clientes desde el primer día si lo haces bien. Cuánto invertir y cómo no botar la plata.",
+      "Cuánto cuesta Google Ads en Perú, cuánto invertir al empezar y cómo no botar la plata en clics que no venden.",
     datePublished: "2026-07-06",
-    dateModified: "2026-11-05",
+    dateModified: "2026-11-07",
     category: "Marketing",
     readingMin: 8,
     intro:
-      "Google Ads pone tu negocio arriba de todo justo cuando alguien busca lo que vendes. Para una pyme en Perú es la forma más rápida de conseguir clientes, pero también la más fácil de malgastar. Aquí verás cuánto invertir para empezar, qué campaña elegir y cómo asegurarte de que cada sol traiga leads. Si quieres que gestionemos tu presupuesto, mira nuestro [servicio de Google Ads en Lima](/google-ads).",
+      "Google Ads no tiene un precio fijo ni un monto mínimo: tú decides el presupuesto diario, pagas solo cuando alguien hace clic y Google no te cobra en el mes más que ese presupuesto diario promedio por 30,4. Lo que cuesta cada clic depende de tu rubro y de cuántos compiten por la misma búsqueda. Aquí verás cuánto conviene invertir a una pyme para empezar, qué campaña elegir y cómo medir que cada sol traiga leads. Si prefieres que lo gestione un equipo, trabajamos como [agencia de Google Ads en Perú](/google-ads).",
     sections: [
       {
         h2: "Por qué Google Ads funciona para pymes",
         body:
-          "A diferencia del SEO, que toma meses, Google Ads te muestra hoy ante quien ya está buscando comprar. Eso lo hace ideal para arrancar, validar qué servicio se vende más y llenar la agenda mientras tu posicionamiento orgánico madura. Pagas por clic, así que el control del gasto está en tus manos. Este artículo resuelve la pregunta del presupuesto; si lo que buscas es quién las gestione por ti, eso lo cubre nuestra [agencia de Google Ads en Perú](/google-ads).",
+          "A diferencia del SEO, que toma meses, Google Ads te muestra hoy ante quien ya está buscando comprar. Eso lo hace ideal para arrancar, validar qué servicio se vende más y llenar la agenda mientras tu posicionamiento orgánico madura. Pagas por clic, así que el control del gasto está en tus manos. Este artículo resuelve la pregunta de cuánto cuesta y cuánto invertir.",
       },
       {
         h2: "Cuánto invertir al inicio",
@@ -2530,6 +2550,10 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     faqs: [
+      {
+        q: "¿Cuánto cuesta Google Ads en Perú?",
+        a: "No hay tarifa fija ni mínimo. Google Ads funciona por subasta: fijas un presupuesto diario, pagas por cada clic y el cobro del mes no supera tu presupuesto diario promedio multiplicado por 30,4. El costo por clic cambia según el rubro y la competencia de cada búsqueda.",
+      },
       {
         q: "¿Cuánto debo invertir en Google Ads al mes?",
         a: "Depende de tu rubro y competencia. Muchas pymes empiezan con un presupuesto diario modesto y lo ajustan según el retorno. Lo importante es sostenerlo unas semanas para que la campaña tenga datos y medir el costo por lead.",
@@ -3512,11 +3536,11 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Uno trae clientes hoy pagando; el otro los trae gratis pero tarda. La verdad es que se complementan.",
     datePublished: "2026-07-08",
-    dateModified: "2026-09-02",
+    dateModified: "2026-11-07",
     category: "Marketing",
     readingMin: 7,
     intro:
-      "Google Ads y SEO son las dos formas de aparecer en Google, pero funcionan distinto: Ads te pone arriba hoy pagando por cada clic; el SEO te posiciona con el tiempo sin pagar por visita. No son rivales. Aquí verás las diferencias reales y cuándo conviene cada uno para tu negocio en Perú.",
+      "Google Ads y SEO son las dos formas de aparecer en Google, pero funcionan distinto: Ads te pone arriba hoy pagando por cada clic; el SEO te posiciona con el tiempo sin pagar por visita. No son rivales. Aquí verás las diferencias reales y cuándo conviene cada uno para tu negocio. Si decides empezar por los anuncios, trabajamos como [agencia de Google Ads en Perú](/google-ads).",
     sections: [
       {
         h2: "La diferencia de fondo",
@@ -3879,18 +3903,19 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "como-estructurar-una-campana-de-google-ads-para-servicios",
-    title: "Estructurar una campaña de Google Ads paso a paso",
+    /* 7-nov-2026 · GSC: «estructura campañas google ads» 41 imp puesto 19,6. */
+    title: "Estructura de campañas de Google Ads para servicios, paso a paso",
     h1: "Cómo estructurar una campaña de Google Ads para servicios",
     description:
-      "Guía paso a paso para estructurar una campaña de Google Ads de servicios en Perú: objetivo, estructura de cuenta, palabras clave y conversiones.",
+      "Estructura de campañas de Google Ads para servicios, paso a paso: objetivo y conversión, campañas y grupos de anuncios, palabras clave, negativas y landing.",
     excerpt:
       "Una campaña de Ads bien estructurada rinde el doble con el mismo presupuesto. Así se arma paso a paso.",
     datePublished: "2026-07-08",
-    dateModified: "2026-09-07",
+    dateModified: "2026-11-07",
     category: "Marketing",
     readingMin: 8,
     intro:
-      "En Google Ads, la estructura lo es todo: una campaña ordenada llega a la persona correcta y rinde el doble con el mismo presupuesto, mientras que una mal armada quema plata. Si vendes servicios (clínica, estudio, taller, agencia), esta guía te lleva paso a paso por cómo estructurar una campaña que traiga contactos reales.",
+      "La estructura de una campaña de Google Ads es el orden de la cuenta: qué campañas tienes, qué grupos de anuncios van dentro, qué palabras clave tiene cada grupo y a qué landing manda cada anuncio. Bien armada llega a la persona correcta con el mismo presupuesto; mal armada quema plata. Si vendes servicios (clínica, estudio, taller), esta guía te lleva paso a paso. Si prefieres que la armemos contigo, trabajamos como [agencia de Google Ads en Perú](/google-ads).",
     sections: [
       {
         h2: "1. Define un objetivo y una conversión clara",
@@ -3950,24 +3975,24 @@ export const BLOG_POSTS: BlogPost[] = [
     related: [
       { label: "Google Ads", href: "/google-ads", desc: "Campañas medidas que traen contactos, no solo clics." },
       { label: "Google Ads vs SEO", href: "/blog/google-ads-vs-seo-cual-conviene-para-tu-negocio", desc: "Cuándo conviene cada uno y por qué se complementan." },
-      { label: "Google Ads para pymes", href: "/blog/google-ads-para-pymes-en-peru-cuanto-invertir", desc: "Cuánto invertir al mes y cómo no botar la plata." },
+      { label: "Cuánto cuesta Google Ads en Perú", href: "/blog/google-ads-para-pymes-en-peru-cuanto-invertir", desc: "Cuánto invertir al mes y cómo no botar la plata." },
     ],
   },
 
   {
     slug: "palabras-clave-negativas-en-google-ads",
-    title: "Palabras clave negativas en Google Ads",
+    title: "Palabras clave negativas en Google Ads: qué son y ejemplos",
     h1: "Palabras clave negativas: deja de botar la plata en Ads",
     description:
-      "Qué son las palabras clave negativas en Google Ads y cómo usarlas para dejar de pagar clics inútiles en Perú. Listas, niveles y ejemplos prácticos.",
+      "Qué son las palabras clave negativas en Google Ads, cómo usarlas para dejar de pagar clics inútiles y ejemplos de listas para negocios de servicios.",
     excerpt:
       "Cada clic que no te sirve es plata perdida. Las palabras clave negativas son el freno que casi nadie usa bien.",
     datePublished: "2026-07-08",
-    dateModified: "2026-09-02",
+    dateModified: "2026-11-07",
     category: "Marketing",
     readingMin: 6,
     intro:
-      "Si tu campaña de Google Ads gasta rápido y trae pocos contactos útiles, el problema suele estar en las palabras clave negativas: los términos por los que NO quieres aparecer. Bien usadas, dejan de pagar clics inútiles y bajan tu costo por contacto. Aquí qué son, cómo armarlas y por qué son el ajuste que más plata ahorra.",
+      "Las palabras clave negativas son los términos por los que NO quieres que salga tu anuncio de Google Ads. Si tu campaña gasta rápido y trae pocos contactos útiles, casi siempre faltan negativas. Bien usadas, dejan de pagar clics inútiles y bajan tu costo por contacto. Aquí qué son, cómo armarlas y por qué son el ajuste que más plata ahorra. Si prefieres que lo revise un equipo, trabajamos como [agencia de Google Ads en Perú](/google-ads).",
     sections: [
       {
         h2: "Qué son las palabras clave negativas",
@@ -4176,14 +4201,18 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "cuanto-cuesta-un-hosting-y-un-dominio-pe-en-peru",
-    title: "Hosting y dominio .pe en Perú: Cuánto cuesta cada año",
-    h1: "¿Cuánto cuesta un hosting y un dominio .pe?",
+    /* 7-nov-2026 · Se canibalizaba con /blog/como-elegir-un-hosting-en-peru (unas
+       1.500 imp de hosting con 0 clics). Este se queda con PRECIO y DOMINIO («hosting
+       y dominio» 164 imp puesto 17,4, «cuanto cuesta un dominio web en perú» 106 en 8,1,
+       «precio de hosting y dominio» 87 en 9,4); el otro, con elegir/contratar. */
+    title: "Precio de hosting y dominio .pe en Perú: cuánto cuesta al año",
+    h1: "¿Cuánto cuesta un hosting y un dominio .pe en Perú?",
     description:
       "Un dominio .pe cuesta S/ 110 al año en el registrador oficial (punto.pe, impuestos incluidos) y un hosting compartido peruano arranca en S/ 15.47 al mes. Precios verificados en setiembre de 2026.",
     excerpt:
       "Un dominio .pe cuesta S/ 110 al año y un hosting compartido desde S/ 15.47 al mes. Aquí los precios reales, de dónde salen y cuál necesita tu negocio.",
     datePublished: "2026-07-08",
-    dateModified: "2026-09-27",
+    dateModified: "2026-11-07",
     category: "Web",
     readingMin: 6,
     intro:
@@ -4192,7 +4221,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Qué es el dominio y qué es el hosting",
         body:
-          "El dominio es tu dirección en internet, como tunegocio.pe: se alquila por año y es único. El hosting es el espacio en un servidor donde se guardan los archivos de tu web para que esté disponible 24/7. Uno sin el otro no sirve: el dominio dice dónde estás y el hosting guarda lo que la gente ve. Ambos se renuevan y son la base sobre la que corre tu página. Para elegir bien, mira [cómo elegir un hosting en Perú](/blog/como-elegir-un-hosting-en-peru). Lo que te llevas al terminar el proyecto está en [de quién es el código y el dominio](/blog/de-quien-es-el-codigo-el-dominio-y-los-accesos).",
+          "El dominio es tu dirección en internet, como tunegocio.pe: se alquila por año y es único. El hosting es el espacio en un servidor donde se guardan los archivos de tu web para que esté disponible 24/7. Uno sin el otro no sirve: el dominio dice dónde estás y el hosting guarda lo que la gente ve. Ambos se renuevan y son la base sobre la que corre tu página. Aquí solo hablamos de precios; qué revisar antes de contratar está en [el mejor hosting en Perú y cómo elegirlo](/blog/como-elegir-un-hosting-en-peru). Lo que te llevas al terminar el proyecto está en [de quién es el código y el dominio](/blog/de-quien-es-el-codigo-el-dominio-y-los-accesos).",
       },
       {
         h2: "Cuánto cuesta un dominio .pe en 2026",
@@ -4242,7 +4271,7 @@ export const BLOG_POSTS: BlogPost[] = [
         ],
       },
       {
-        h2: "Qué hosting necesita tu proyecto",
+        h2: "Cuánto hosting paga cada tipo de proyecto",
         body:
           "Para una web informativa o corporativa, un hosting compartido de calidad suele bastar y es lo más económico. Para una tienda virtual con catálogo grande, mucho tráfico o un sistema a medida, conviene un hosting con más recursos (VPS) para que todo cargue rápido y estable. La regla simple: mientras más movimiento y funciones tenga tu web, mejor debe ser el hosting que la sostiene. Si todavía no tienes la web y estás calculando el total, en [nuestro desarrollo web](/desarrollo-web) el hosting, el dominio y el certificado van incluidos el primer año.",
       },
@@ -5836,18 +5865,18 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "landing-page-para-google-ads",
-    title: "Landing page para Google Ads: la clave del retorno",
+    title: "Landing page para Google Ads: cómo debe ser para convertir",
     h1: "Landing page para Google Ads: lo que casi nadie optimiza",
     description:
       "Por qué enviar tus campañas de Google Ads a la home desperdicia presupuesto y cómo debe ser la landing page que convierte el clic pagado en cliente.",
     excerpt:
       "Pagas por cada clic y lo mandas a una página que no responde lo que se buscó. Ahí se va la mitad del presupuesto.",
     datePublished: "2026-08-12",
-    dateModified: "2026-11-05",
+    dateModified: "2026-11-07",
     category: "Marketing",
     readingMin: 7,
     intro:
-      "En Google Ads pagas por el clic aunque el visitante se vaya en dos segundos. La landing es el único tramo del embudo donde puedes mejorar el resultado sin subir la inversión, y es justamente el que casi nadie toca: la mayoría de campañas siguen apuntando a la home. Si quieres que la hagamos nosotros, mira el [diseño de landing pages](/diseno-de-landing-pages) de Websy.",
+      "En Google Ads pagas por el clic aunque el visitante se vaya en dos segundos. La landing es el único tramo del embudo donde puedes mejorar el resultado sin subir la inversión, y es justamente el que casi nadie toca: la mayoría de campañas siguen apuntando a la home. Si quieres que la hagamos nosotros, mira el [diseño de landing pages](/diseno-de-landing-pages) de Websy; si además buscas quién gestione la campaña, trabajamos como [agencia de Google Ads en Perú](/google-ads).",
     sections: [
       {
         h2: "Por qué la home es una mala landing",
@@ -5907,24 +5936,29 @@ export const BLOG_POSTS: BlogPost[] = [
     related: [
       { label: "Google Ads", href: "/google-ads", desc: "Gestionamos campañas orientadas a clientes, no a clics." },
       { label: "Diferencia entre página web y landing page", href: "/blog/diferencia-entre-pagina-web-y-landing-page", desc: "Cuál necesitas según lo que quieras conseguir." },
-      { label: "Google Ads para pymes en Perú: cuánto invertir", href: "/blog/google-ads-para-pymes-en-peru-cuanto-invertir", desc: "Qué presupuesto tiene sentido para empezar." },
+      { label: "Cuánto cuesta Google Ads en Perú", href: "/blog/google-ads-para-pymes-en-peru-cuanto-invertir", desc: "Qué presupuesto tiene sentido para empezar." },
     ],
   },
 
   {
     slug: "como-elegir-un-hosting-en-peru",
-    title: "Cómo elegir un hosting en Perú sin equivocarte",
-    h1: "Cómo elegir un hosting en Perú sin equivocarte",
+    /* 7-nov-2026 · GSC 28 d: 1.549 imp en puesto 15,8 y 0 clics («hosting peru» 150,
+       «hosting» 151, «hosting web» 135, «contratar hosting peru» 127, «hosting barato»
+       112, «ranking hosting peru» 92, «hosting recomendados» 57, «hosting seguro peru»
+       47). Este se queda con ELEGIR/CONTRATAR; el precio es de
+       /blog/cuanto-cuesta-un-hosting-y-un-dominio-pe-en-peru. */
+    title: "Mejor hosting en Perú: cómo elegir uno sin equivocarte (2026)",
+    h1: "Cuál es el mejor hosting en Perú y cómo elegirlo sin equivocarte",
     description:
-      "Qué mirar antes de contratar un hosting en Perú: velocidad, soporte real, respaldos, certificado SSL y los cobros que aparecen en la renovación.",
+      "El mejor hosting en Perú es el que aguanta tus visitas: qué revisar antes de contratar uno (velocidad, soporte, respaldos, SSL, renovación) y cuál te toca.",
     excerpt:
       "El hosting barato sale caro cuando la web se cae un lunes de campaña. Esto es lo que hay que mirar antes de contratar.",
     datePublished: "2026-08-26",
-    dateModified: "2026-09-08",
+    dateModified: "2026-11-07",
     category: "Web",
     readingMin: 7,
     intro:
-      "Elegir hosting no es elegir el más barato: es elegir el que aguanta cuando tu web recibe visitas de verdad. Lo que decide la factura final no es el precio del primer año, sino la velocidad, el soporte cuando algo falla y cuánto sube la renovación. Aquí están los seis puntos que conviene revisar antes de pagar, y las trampas más comunes del mercado peruano.",
+      "El mejor hosting en Perú no es una marca: es el que aguanta cuando tu web recibe visitas de verdad, responde rápido desde Lima y tiene soporte cuando algo falla. Para elegirlo sin equivocarte hay seis puntos que conviene revisar antes de contratar, más las trampas de renovación más comunes del mercado peruano. Si lo que buscas son tarifas, están en [el precio de un hosting y un dominio .pe](/blog/cuanto-cuesta-un-hosting-y-un-dominio-pe-en-peru).",
     sections: [
       {
         h2: "Velocidad: dónde está el servidor importa",
@@ -7123,7 +7157,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: "Software",
     readingMin: 6,
     intro:
-      "Un software a medida es un programa creado específicamente para una empresa, a partir de cómo trabaja ella, en lugar de un producto genérico que muchas empresas usan igual. Puede ser un sistema web, una aplicación móvil o un panel interno, y es tuyo: el código, los datos y las reglas responden a tu negocio. Aquí verás qué incluye, ejemplos concretos y cuándo vale la pena. Si ya sabes que lo necesitas, aquí está nuestro servicio de [desarrollo de software a medida en Perú](/desarrollo-de-software-a-medida).",
+      "Un software a medida es un programa creado específicamente para una empresa, a partir de cómo trabaja ella, en lugar de un producto genérico que muchas empresas usan igual. Puede ser un sistema web, una aplicación móvil o un panel interno, y es tuyo: el código, los datos y las reglas responden a tu negocio. Aquí verás qué incluye, ejemplos concretos y cuándo vale la pena. Si ya sabes que lo necesitas, aquí está nuestro servicio de [software a medida en Perú](/desarrollo-de-software-a-medida).",
     sections: [
       {
         h2: "Qué significa que un software sea «a medida»",
