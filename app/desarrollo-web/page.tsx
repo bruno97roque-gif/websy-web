@@ -13,12 +13,17 @@ import ServiceLanding from "@/components/sections/landing/ServiceLanding";
    gana la portada (90 impresiones, puesto 15; del 7 al 10-sep, entre el 5,7 y el
    10,2) y esta página iba detrás (14 impresiones, puesto 28,7) con el mismo
    title. No se redirige ni se unifica: esta página se queda con «desarrollo web
-   a medida» y enlaza a la portada con la búsqueda que gana la portada. */
+   a medida» y enlaza a la portada con la búsqueda que gana la portada.
+
+   7-nov-2026 · GSC 8-oct/4-nov: 467 impresiones en el puesto 20,7; «desarrollo
+   web perú» 88 imp. en el 14,8 y «desarrollo web en perú» 82 en el 24. El title
+   pasa de «Lima, Perú» a «Perú» y se suman el stack, el proceso nombrado y la
+   propiedad del código. «agencia de desarrollo web» sigue siendo de la portada. */
 export const metadata: Metadata = pageMeta({
   path: "/desarrollo-web",
-  title: "Desarrollo web a medida en Lima, Perú",
+  title: "Desarrollo web a medida en Perú: webs rápidas y propias",
   description:
-    "Desarrollo web a medida en Lima, Perú: páginas, tiendas virtuales y sistemas administrables, responsive y optimizados para Google, con soporte por WhatsApp.",
+    "Desarrollo web a medida en Perú con WordPress, Shopify o Next.js: webs rápidas y administrables, con el código, el dominio y los accesos a tu nombre.",
 });
 
 export default function DesarrolloWebPage() {
@@ -30,7 +35,7 @@ export default function DesarrolloWebPage() {
         { name: "Desarrollo Web", path: "/desarrollo-web" },
       ]}
       eyebrow="Desarrollo web a medida"
-      h1="Desarrollo web a medida en Lima, Perú"
+      h1="Desarrollo web a medida en Perú"
       intro="Hacemos desarrollo web a medida en Lima para empresas de todo el Perú: páginas web, tiendas virtuales y sistemas administrables, construidos para tu caso y no sobre una plantilla. Diseñamos, desarrollamos y optimizamos tu web para Google, la entregamos administrable y te acompañamos después del lanzamiento con soporte directo por WhatsApp."
       highlights={["Páginas web", "Tiendas virtuales", "Sistemas web", "SEO on-page", "Soporte por WhatsApp"]}
       stats={[
@@ -69,7 +74,7 @@ export default function DesarrolloWebPage() {
           ],
         },
         {
-          h2: "Cómo trabajamos: del diagnóstico al lanzamiento",
+          h2: "Proceso de desarrollo web: del diagnóstico al lanzamiento",
           body:
             "Un desarrollo serio empieza por entender tu negocio, no por vender una plantilla. Primero hacemos un diagnóstico corto de lo que necesitas y te enviamos una propuesta con alcance y tiempos claros en menos de 24 horas. Luego diseñamos, desarrollamos y revisamos contigo antes de lanzar. Después del lanzamiento no desaparecemos: te capacitamos para administrar tu web y seguimos disponibles para soporte y mejoras.",
           bullets: [
@@ -78,6 +83,19 @@ export default function DesarrolloWebPage() {
             "Lanzamiento con SEO, medición y WhatsApp configurados.",
             "Capacitación y soporte después de publicar.",
           ],
+        },
+        {
+          h2: "Con qué tecnología desarrollamos tu web",
+          body:
+            "El stack se elige por lo que la web tiene que hacer y por quién la va a mantener, no por moda. Trabajamos con WordPress, Shopify y Next.js, y te explicamos en la propuesta por qué recomendamos uno y no otro. Si estás entre una web a medida y una plantilla, la comparación está en [página web a medida vs plantilla de WordPress o Wix](/blog/pagina-web-a-medida-vs-plantilla-wordpress-wix).",
+          table: {
+            cabeceras: ["Tecnología", "Conviene para", "Qué ganas"],
+            filas: [
+              ["WordPress", "Webs corporativas y de servicios que tu equipo edita a diario", "Panel conocido, sin mensualidad de plataforma"],
+              ["Shopify o WooCommerce", "Tiendas virtuales con pagos locales", "Catálogo, pedidos y cobros listos para operar"],
+              ["Next.js", "Webs que necesitan cargar muy rápido o conectarse con un sistema", "Velocidad y libertad para integrar lo que haga falta"],
+            ],
+          },
         },
         {
           h2: "Desarrollo web optimizado para Google desde el día uno",
@@ -99,7 +117,12 @@ export default function DesarrolloWebPage() {
         {
           h2: "Qué te llevas al terminar el proyecto",
           body:
-            "Esto es lo que más conviene preguntar antes de contratar a cualquiera, porque es donde se nota la diferencia meses después. Con nosotros el dominio y el hosting quedan a tu nombre, no al de la agencia; la web es administrable por ti, así que cambiar un texto o subir un producto no depende de que alguien te conteste; recibes capacitación grabada del panel; y el alcance, los plazos y lo que incluye cada etapa van por escrito desde el inicio. Si estás comparando proveedores, la lista completa de qué revisar está en [cómo elegir una agencia de desarrollo web en Perú](/blog/como-elegir-una-agencia-de-desarrollo-web-en-peru).",
+            "Esto es lo que más conviene preguntar antes de contratar a cualquiera, porque es donde se nota la diferencia meses después. Con nosotros el dominio y el hosting quedan a tu nombre, no al de la agencia; la web es administrable por ti, así que cambiar un texto o subir un producto no depende de que alguien te conteste; recibes capacitación grabada del panel; y el alcance, los plazos y lo que incluye cada etapa van por escrito desde el inicio. Qué debe quedar a tu nombre y cómo comprobarlo antes de firmar está en [de quién es el código, el dominio y los accesos](/blog/de-quien-es-el-codigo-el-dominio-y-los-accesos). Si estás comparando proveedores, la lista completa de qué revisar está en [cómo elegir una agencia de desarrollo web en Perú](/blog/como-elegir-una-agencia-de-desarrollo-web-en-peru).",
+          bullets: [
+            "Código fuente entregado o en un repositorio de tu empresa.",
+            "Dominio, hosting y cuentas de Google (Analytics, Search Console) a tu nombre.",
+            "Usuario administrador de la web para ti, no solo para la agencia.",
+          ],
         },
       ]}
       related={[
@@ -111,6 +134,7 @@ export default function DesarrolloWebPage() {
       articles={[
         { label: "Cómo elegir una agencia de desarrollo web en Perú", href: "/blog/como-elegir-una-agencia-de-desarrollo-web-en-peru", desc: "Qué revisar, qué preguntar y qué señales de alerta mirar." },
         { label: "Cuánto cuesta una página web en Perú", href: "/blog/cuanto-cuesta-una-pagina-web-en-peru", desc: "De qué depende el precio y qué debe incluir tu inversión." },
+        { label: "De quién es el código, el dominio y los accesos", href: "/blog/de-quien-es-el-codigo-el-dominio-y-los-accesos", desc: "Qué debe quedar a tu nombre cuando termina el proyecto." },
         { label: "Página web, sistema web y software a medida", href: "/blog/pagina-web-sistema-web-y-software-a-medida", desc: "Qué es cada uno y cuál necesita tu negocio hoy." },
       ]}
       faqs={[
@@ -138,9 +162,25 @@ export default function DesarrolloWebPage() {
           q: "¿La web sale optimizada para Google?",
           a: "Sí. Toda web que desarrollamos incluye SEO on-page desde el primer día: estructura correcta, velocidad, versión móvil y contenido orientado a lo que busca tu cliente. Si quieres ir más allá, también ofrecemos servicio de SEO continuo y gestión de Google Ads.",
         },
+        {
+          q: "¿Con qué tecnología desarrollan las webs?",
+          a: "Con WordPress, Shopify o WooCommerce y Next.js, según el proyecto. WordPress conviene si tu equipo edita la web seguido; Shopify o WooCommerce si vas a vender; Next.js si la web necesita máxima velocidad o conectarse con un sistema propio.",
+        },
+        {
+          q: "¿El código de mi web es mío?",
+          a: "Sí. Al terminar recibes el código o el acceso al repositorio, y el dominio, el hosting y las cuentas de Google quedan a tu nombre. Si un día quieres cambiar de proveedor, te llevas la web completa.",
+        },
+        {
+          q: "¿Cuánto demora el desarrollo de una página web?",
+          a: "Una página web suele tomar de 1 a 3 semanas; una tienda virtual o un sistema, más según los módulos. El plazo exacto va por escrito en la propuesta, junto con el alcance de cada etapa.",
+        },
+        {
+          q: "¿Pueden rehacer mi web actual sin perder lo que ya posiciona en Google?",
+          a: "Sí. Antes de cambiar nada revisamos qué páginas te traen visitas, mantenemos o redirigimos sus direcciones y comprobamos en Search Console después del lanzamiento. Así no pierdes el tráfico que ya tienes.",
+        },
       ]}
-      serviceName="Desarrollo web"
-      serviceDescription="Desarrollo web en Lima, Perú: páginas web corporativas, tiendas virtuales y sistemas web a medida, administrables, responsive y optimizadas para Google, con soporte local por WhatsApp."
+      serviceName="Desarrollo web a medida"
+      serviceDescription="Desarrollo web a medida en Perú, desde Lima: páginas web corporativas, tiendas virtuales y sistemas web a medida, administrables, responsive y optimizadas para Google, con soporte local por WhatsApp."
     />
   );
 }

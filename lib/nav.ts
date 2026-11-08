@@ -90,11 +90,11 @@ export const SERVICE_SITEMAP: SitemapEntry[] = [
   { path: "/tiendas-virtuales/shopify", priority: 0.9, lastModified: "2026-09-16" },
   { path: "/tiendas-virtuales/shopify/migracion", priority: 0.8, lastModified: "2026-08-12" },
   { path: "/tiendas-virtuales/shopify/costos", priority: 0.8, lastModified: "2026-09-16" },
-  { path: "/tiendas-virtuales/woocommerce", priority: 0.7, lastModified: "2026-07-31" },
-  { path: "/desarrollo-web", priority: 0.9, lastModified: "2026-09-23" },
+  { path: "/tiendas-virtuales/woocommerce", priority: 0.7, lastModified: "2026-11-07" },
+  { path: "/desarrollo-web", priority: 0.9, lastModified: "2026-11-07" },
   { path: "/diseno-de-paginas-web", priority: 0.9, lastModified: "2026-10-14" },
   { path: "/desarrollo-de-software-a-medida", priority: 0.9, lastModified: "2026-10-01" },
-  { path: "/desarrollo-de-aplicaciones-moviles", priority: 0.9, lastModified: "2026-11-05" },
+  { path: "/desarrollo-de-aplicaciones-moviles", priority: 0.9, lastModified: "2026-11-07" },
   { path: "/desarrollo-de-saas", priority: 0.9, lastModified: "2026-10-01" },
   { path: "/desarrollo-de-aplicaciones-web", priority: 0.9, lastModified: "2026-10-01" },
   // Silo de software por tipo de sistema (hijas del hub /sistemas).
@@ -108,7 +108,7 @@ export const SERVICE_SITEMAP: SitemapEntry[] = [
   { path: "/sistemas/sistema-para-clinicas", priority: 0.8, lastModified: "2026-11-05" },
   { path: "/diseno-de-landing-pages", priority: 0.8, lastModified: "2026-11-05" },
   { path: "/integracion-de-pagos", priority: 0.9, lastModified: "2026-10-13" },
-  { path: "/precios", priority: 0.9, lastModified: "2026-10-01" },
+  { path: "/precios", priority: 0.9, lastModified: "2026-11-07" },
   { path: "/cotizacion", priority: 0.8, lastModified: "2026-07-31" },
   // Nuevos pilares de servicio.
   { path: "/seo", priority: 0.9, lastModified: "2026-10-14" },

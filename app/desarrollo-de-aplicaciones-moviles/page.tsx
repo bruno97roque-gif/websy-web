@@ -6,7 +6,7 @@ export const metadata: Metadata = pageMeta({
   path: "/desarrollo-de-aplicaciones-moviles",
   title: "Empresa de desarrollo de aplicaciones móviles en Perú",
   description:
-    "Desarrollo de aplicaciones móviles a medida en Perú: apps para Android e iOS para tus clientes o tu equipo, con panel de administración, pagos con Yape y Plin y publicación.",
+    "Empresa de desarrollo de apps móviles en Perú: nativas, híbridas o PWA para Android e iOS, con panel, pagos con Yape y Plin y publicación. Desde S/ 15,000.",
 });
 
 export default function AplicacionesMovilesPage() {
@@ -19,8 +19,8 @@ export default function AplicacionesMovilesPage() {
         { name: "Aplicaciones Móviles", path: "/desarrollo-de-aplicaciones-moviles" },
       ]}
       eyebrow="Software · Apps móviles"
-      h1="Desarrollo de aplicaciones móviles en Perú"
-      intro="Desarrollamos aplicaciones móviles a medida para empresas y emprendedores en Perú: apps para Android e iOS que tus clientes usan para comprar, reservar o seguir un pedido, o que tu equipo usa en campo. Entregamos la app publicada, con su panel de administración y el código a nombre de tu empresa."
+      h1="Empresa de desarrollo de aplicaciones móviles en Perú"
+      intro="Somos una empresa de desarrollo de aplicaciones móviles a medida para empresas y emprendedores en Perú: apps para Android e iOS que tus clientes usan para comprar, reservar o seguir un pedido, o que tu equipo usa en campo. Entregamos la app publicada, con su panel de administración y el código a nombre de tu empresa."
       highlights={["Android", "iOS", "Panel de administración", "Yape y Plin", "Notificaciones"]}
       stats={[
         { value: "Android + iOS", label: "Un proyecto, dos tiendas" },
@@ -53,6 +53,11 @@ export default function AplicacionesMovilesPage() {
               ["Conviene cuando", "Usa a fondo cámara, sensores o gráficos", "Quieres estar en las tiendas con un solo desarrollo", "Quieres validar la idea o es de uso interno"],
             ],
           },
+          bullets: [
+            "App nativa: la mejor respuesta del celular, a cambio de mantener dos códigos. Vale cuando la app vive de la cámara, el GPS o la animación.",
+            "App híbrida: un solo código con herramientas multiplataforma como Flutter o React Native, publicada en las dos tiendas. Es lo que más piden las pymes porque baja plazo y costo; cuánto, lo desglosamos en [cuánto cuesta una aplicación móvil en Perú](/blog/cuanto-cuesta-una-aplicacion-movil-en-peru).",
+            "PWA (web app): se instala desde el navegador, sin pasar por App Store ni Google Play. Sirve para validar la idea o para uso interno, y a veces basta una web: lo vemos en [¿app móvil o página web para tu negocio?](/blog/necesito-una-app-movil-o-una-pagina-web-para-mi-negocio).",
+          ],
         },
         {
           h2: "Qué incluye el desarrollo de tu app",
@@ -63,6 +68,18 @@ export default function AplicacionesMovilesPage() {
             "Pagos dentro de la app con Yape, Plin o tarjeta a través de Niubiz o Izipay, si la app cobra.",
             "Publicación en App Store y Google Play con las cuentas de desarrollador a nombre de tu empresa.",
             "Soporte y nuevas versiones después del lanzamiento.",
+          ],
+        },
+        {
+          h2: "Un equipo de desarrollo de apps, de la idea a la tienda",
+          body:
+            "Contratar a desarrolladores de aplicaciones sueltos suele dejar huecos: alguien programa la app, pero nadie diseña el recorrido, arma el servidor o se pelea con la revisión de Apple. Como agencia de desarrollo de apps cubrimos el proyecto completo y respondemos por el resultado:",
+          bullets: [
+            "Diseño de pantallas y prototipo que apruebas antes de programar.",
+            "Desarrollo de la app y del servidor, con su panel web de administración.",
+            "Integraciones con tu sistema, tu tienda virtual o tu pasarela de pagos.",
+            "Publicación en App Store y Google Play, incluida la revisión de cada tienda.",
+            "Mantenimiento y nuevas versiones cuando cambian los sistemas operativos.",
           ],
         },
         {
@@ -119,6 +136,10 @@ export default function AplicacionesMovilesPage() {
         {
           q: "¿También hacen la versión web de la app?",
           a: "Sí. El panel de administración ya es web, y si tus usuarios también la necesitan desde la computadora, se desarrolla una aplicación web que comparte el mismo servidor y los mismos datos.",
+        },
+        {
+          q: "¿Qué conviene más: app nativa, híbrida o PWA?",
+          a: "Depende de lo que haga la app. La nativa conviene si usa a fondo la cámara, el GPS o gráficos exigentes; la híbrida, si quieres estar en las dos tiendas con un solo desarrollo; y la PWA, si quieres validar la idea rápido o es de uso interno. Te lo recomendamos por escrito en la propuesta.",
         },
       ]}
       serviceName="Desarrollo de aplicaciones móviles"
