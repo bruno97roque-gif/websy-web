@@ -113,7 +113,7 @@ export const SERVICE_SITEMAP: SitemapEntry[] = [
   // Nuevos pilares de servicio.
   { path: "/seo", priority: 0.9, lastModified: "2026-10-14" },
   { path: "/seo/seo-local", priority: 0.8, lastModified: "2026-10-14" },
-  { path: "/google-ads", priority: 0.9, lastModified: "2026-11-05" },
+  { path: "/google-ads", priority: 0.9, lastModified: "2026-11-07" },
   { path: "/branding", priority: 0.9, lastModified: "2026-08-12" },
   { path: "/mantenimiento-web", priority: 0.9, lastModified: "2026-07-31" },
   // Silo de diseño web por rubro (hijas de /diseno-de-paginas-web).
