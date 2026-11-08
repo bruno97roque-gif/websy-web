@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import dynamic from "next/dynamic";
 import HeroSection    from "@/components/sections/home/HeroSection";
 import MarqueeSection from "@/components/sections/home/MarqueeSection";
@@ -15,6 +16,14 @@ const QuienesSomos    = dynamic(() => import("@/components/sections/home/Quienes
 const ServicesSection = dynamic(() => import("@/components/sections/home/ServicesSection"));
 const ClientsSection  = dynamic(() => import("@/components/sections/home/ClientsSection"));
 const QueHacemos      = dynamic(() => import("@/components/sections/home/QueHacemos"));
+
+/* 7-nov-2026 · GSC 28 d: «empresa de desarrollo web» 143 imp, puesto 16,1 en la
+   portada, y la meta no la decía. Solo se cambia la description: el title y el
+   Open Graph siguen saliendo del layout. */
+export const metadata: Metadata = {
+  description:
+    "Empresa de desarrollo web en Lima, Perú: páginas web, tiendas virtuales con Yape y Plin, sistemas y software a medida. Cotización gratis en menos de 24 horas.",
+};
 
 export default function HomePage() {
   return (

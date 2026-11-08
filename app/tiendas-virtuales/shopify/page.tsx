@@ -4,12 +4,15 @@ import ServiceLanding from "@/components/sections/landing/ServiceLanding";
 
 /* 16-sep-2026 · Search Console 90 d: «shopify peru» es la consulta que más trae
    a esta página (179 imp, puesto 8) y el title no empezaba por ella. Se reordena
-   sin perder palabras: «agencia shopify peru» (63 imp, puesto 4,9) sigue dentro. */
+   sin perder palabras: «agencia shopify peru» (63 imp, puesto 4,9) sigue dentro.
+   7-nov-2026 · 28 d: «shopify peru» 831 imp puesto 6,7 con 1 clic y «agencia shopify
+   peru» 77 imp puesto 5,8 con 0 clics. El puesto ya está; falla el clic. El title
+   dice ahora qué trae la tienda (Yape, Plin, envíos) y la meta cierra con la cotización. */
 export const metadata: Metadata = pageMeta({
   path: "/tiendas-virtuales/shopify",
-  title: "Shopify Perú: Agencia que crea tiendas hechas para vender",
+  title: "Agencia Shopify en Perú: tiendas con Yape, Plin y envíos",
   description:
-    "Agencia Shopify en Perú: tiendas optimizadas para vender, con velocidad, SEO, CRO y pagos locales (Yape, Plin, Niubiz, Izipay). Desarrollo, migración y soporte.",
+    "Agencia Shopify en Perú: creamos tu tienda con Yape, Plin, tarjeta (Niubiz o Izipay) y envíos por zona, rápida y lista para Google. Cotización gratis en 24 h.",
 });
 
 export default function ShopifyPage() {
@@ -108,7 +111,7 @@ export default function ShopifyPage() {
         {
           h2: "Cuánto cuesta y cómo cotizar",
           body:
-            "Además del plan mensual de Shopify, el desarrollo se cotiza según el diseño, la cantidad de productos y las integraciones. No damos un precio cerrado sin entender tu negocio: preparamos una propuesta a medida, clara y sin sorpresas. Revisa qué define el precio en nuestra guía de costos de una tienda Shopify o mira nuestros precios y pide tu cotización gratis.",
+            "Además del plan mensual de Shopify, el desarrollo se cotiza según el diseño, la cantidad de productos y las integraciones. No damos un precio cerrado sin entender tu negocio: preparamos una propuesta a medida, clara y sin sorpresas. Revisa qué define el precio en el [costo de desarrollo de una tienda Shopify](/tiendas-virtuales/shopify/costos) o mira nuestros [precios](/precios) y pide tu cotización gratis.",
         },
       ]}
       related={[

@@ -192,6 +192,14 @@ export function serviceSchema({
       "@type": "ServiceChannel",
       serviceUrl: `${SITE_URL}/cotizacion`,
     },
+    /* Offer sin precio a propósito: el precio se cotiza por proyecto y no se
+       inventa una cifra. Solo dice dónde se pide y quién lo vende. */
+    offers: {
+      "@type": "Offer",
+      url: `${SITE_URL}/cotizacion`,
+      seller: { "@id": ORG_ID },
+      areaServed: { "@type": "Country", name: "Perú" },
+    },
   };
 }
 

@@ -163,13 +163,17 @@ export const BLOG_POSTS: BlogPost[] = [
     description:
       "Cómo optimizar fichas de producto y páginas de categoría de tu tienda online en Perú: títulos, descripciones únicas y los errores que la dejan invisible.",
     excerpt:
-      "Tu tienda online no vende si nadie la encuentra. Aquí cómo posicionarla en Google en Perú: SEO de productos, categorías y contenido.",
+      "El SEO de una tienda online se juega en las fichas de producto y las categorías. Qué poner en cada una y qué errores la dejan invisible.",
     datePublished: "2026-07-23",
-    dateModified: "2026-08-12",
+    dateModified: "2026-11-07",
     category: "Tiendas virtuales",
     readingMin: 7,
+    /* 7-nov-2026 · Se disputaba «como posicionar mi tienda online en google» (84 imp,
+       puesto 34,8) con /blog/como-posicionar-una-tienda-virtual-en-google. Reparto por
+       intención: este se queda con el SEO de FICHAS Y CATEGORÍAS; la guía general de
+       posicionar la tienda es el otro. Fusión con 301 pendiente de OK. */
     intro:
-      "Tener una tienda online no sirve de nada si nadie la encuentra. Posicionar tu e-commerce en Google es lo que te trae ventas todos los días sin pagar por cada clic. Aquí verás cómo hacerlo en Perú: desde las fichas de producto y las categorías hasta la velocidad y el contenido que atrae compradores.",
+      "El SEO de una tienda online se gana en dos tipos de página: las fichas de producto y las categorías. Son las que Google muestra cuando alguien busca lo que vendes con intención de comprar. Aquí verás qué debe llevar cada ficha, cómo escribir una categoría que posicione y qué errores dejan invisible tu catálogo en Perú. La estrategia general está en [cómo posicionar una tienda virtual en Google](/blog/como-posicionar-una-tienda-virtual-en-google).",
     sections: [
       {
         h2: "Por qué el SEO es clave para una tienda virtual",
@@ -295,18 +299,21 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "como-crear-una-tienda-virtual-en-peru",
-    title: "Cómo crear una tienda virtual en Perú (paso a paso)",
+    /* 7-nov-2026 · «crear tienda virtual» (47 imp, puesto 13,3) y «crear tienda
+       online» (24 imp, 25,7): title con las dos formas. Enlace a /tiendas-virtuales,
+       que convierte (13 eventos clave en 90 d). */
+    title: "Cómo crear una tienda virtual u online en Perú, paso a paso",
     h1: "Cómo crear una tienda virtual en Perú (paso a paso)",
     description:
-      "Guía para crear una tienda virtual en Perú: qué necesitas, qué plataforma elegir, cómo cobrar con Yape, Plin y tarjeta, y cómo lanzarla para vender.",
+      "Cómo crear una tienda virtual u online en Perú en 5 pasos: qué necesitas, qué plataforma elegir, cómo cobrar con Yape, Plin y tarjeta, y cómo lanzarla para vender.",
     excerpt:
       "Todo lo que necesitas para crear tu tienda online en Perú: plataforma, pagos, productos y lanzamiento.",
     datePublished: "2026-06-19",
-    dateModified: "2026-09-02",
+    dateModified: "2026-11-07",
     category: "Ecommerce",
     readingMin: 7,
     intro:
-      "Crear una tienda virtual en Perú es más sencillo de lo que parece si sigues un orden: definir qué vendes, elegir plataforma, configurar pagos locales (Yape, Plin, tarjeta), cargar productos y lanzar. Esta guía te lleva paso a paso por cada decisión.",
+      "Crear una tienda virtual u online en Perú es más sencillo de lo que parece si sigues un orden: definir qué vendes, elegir plataforma, configurar pagos locales (Yape, Plin, tarjeta), cargar productos y lanzar. Esta guía te lleva paso a paso por cada decisión. Si prefieres que la construyamos por ti, mira nuestro servicio de [desarrollo de tiendas virtuales](/tiendas-virtuales).",
     sections: [
       {
         h2: "1. Define qué vas a vender y cómo",
@@ -460,6 +467,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     related: [
+      { label: "Cómo integrar Mercado Pago", href: "/blog/como-integrar-mercado-pago-en-tu-tienda-virtual-en-peru", desc: "Pasos en Shopify, WooCommerce y webs a medida." },
       { label: "Integración de Yape y pasarelas de pago", href: "/integracion-de-pagos", desc: "Conectamos Yape, Plin, Izipay, Niubiz o Culqi a tu web, tienda o app." },
       { label: "Desarrollo de tiendas virtuales", href: "/tiendas-virtuales", desc: "Tienda con pagos Yape, Plin, Niubiz e Izipay." },
       { label: "Cotiza tu tienda", href: "/cotizacion", desc: "Te ayudamos a elegir e integrar tus pasarelas." },
@@ -622,7 +630,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     related: [
-      { label: "Cómo migrar tu web sin perder posicionamiento en Google", href: "/blog/como-migrar-tu-pagina-web-sin-perder-posicionamiento-en-google", desc: "Rediseñar o cambiar de web puede hundir tu tráfico si se hace mal." },
+      { label: "Cómo migrar tu web sin perder posicionamiento en Google", href: "/blog/como-migrar-tu-pagina-web-sin-perder-posicionamiento-en-google", desc: "Cambiar de plataforma o de dominio puede hundir tu tráfico si se hace mal." },
       { label: "¿Cuánto cuesta mantener una página web en Perú?", href: "/blog/costos-de-mantenimiento-de-una-pagina-web-en-peru", desc: "Una web no termina cuando se publica." },
       { label: "Diseño de páginas web", href: "/diseno-de-paginas-web", desc: "Webs profesionales optimizadas para captar clientes." },
       { label: "Cotiza tu página web", href: "/cotizacion", desc: "Presupuesto a tu medida en menos de 24 horas." },
@@ -633,18 +641,18 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "como-posicionar-una-tienda-virtual-en-google",
-    title: "Cómo posicionar una tienda virtual en Google",
-    h1: "Cómo posicionar una tienda virtual en Google",
+    title: "Cómo posicionar tu tienda online en Google (guía Perú)",
+    h1: "Cómo posicionar tu tienda online en Google",
     description:
-      "SEO para ecommerce: cómo posicionar tu tienda virtual en Google con fichas optimizadas, categorías, contenido y velocidad para atraer compradores.",
+      "Cómo posicionar tu tienda online o tienda virtual en Google en Perú: estructura, contenido, velocidad, datos estructurados y reseñas para atraer compradores.",
     excerpt:
       "Las claves de SEO para que tu tienda virtual aparezca en Google y atraiga clientes que ya quieren comprar.",
     datePublished: "2026-06-19",
-    dateModified: "2026-09-02",
+    dateModified: "2026-11-07",
     category: "SEO",
     readingMin: 6,
     intro:
-      "Tener una tienda virtual no sirve de nada si nadie la encuentra. El SEO para ecommerce hace que tus productos aparezcan en Google cuando alguien busca lo que vendes. Estas son las bases para posicionar tu tienda y atraer compradores con intención real.",
+      "Para posicionar tu tienda online en Google necesitas cuatro cosas: fichas y categorías optimizadas, contenido que atraiga antes de la compra, una tienda rápida en el celular y datos estructurados con reseñas reales. El SEO para ecommerce hace que tus productos aparezcan cuando alguien busca lo que vendes. Estas son las bases, y el detalle de fichas y categorías está en [SEO para tiendas online](/blog/como-posicionar-tu-tienda-online-en-google-peru).",
     sections: [
       {
         h2: "Optimiza fichas de producto y categorías",
@@ -682,20 +690,23 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Diseño de páginas web", href: "/diseno-de-paginas-web", desc: "Webs rápidas y listas para posicionar." },
       { label: "Dar de alta tu web en Search Console e indexarla", href: "/blog/como-hacer-que-tu-pagina-web-aparezca-en-google-peru", desc: "Tu web está en línea pero no aparece en Google." },
       { label: "Cómo elegir una agencia de desarrollo web en Perú", href: "/blog/como-elegir-una-agencia-de-desarrollo-web-en-peru", desc: "Guía honesta para elegir una agencia de desarrollo web en Perú sin terminar amarrado ni perder tu…" },
-      { label: "Migrar tu web sin perder posicionamiento", href: "/blog/como-migrar-tu-pagina-web-sin-perder-posicionamiento-en-google", desc: "Rediseñar o cambiar de web puede hundir tu tráfico si se hace mal." },
+      { label: "Migrar tu web sin perder posicionamiento", href: "/blog/como-migrar-tu-pagina-web-sin-perder-posicionamiento-en-google", desc: "Cambiar de plataforma o de dominio puede hundir tu tráfico si se hace mal." },
     ],
   },
 
   {
     slug: "pagina-web-sistema-web-y-software-a-medida",
-    title: "Página web, sistema web y software: diferencias",
-    h1: "Página web, sistema web y software a medida: ¿qué necesitas?",
+    /* 7-nov-2026 · GSC: «una pagina web es un software» 113 imp puesto 7,7 → la
+       respuesta va en el title y en la primera frase. «sistema web» (209 imp, 7,3)
+       debe ganarlo /sistemas: enlace con «sistemas web para empresas». */
+    title: "¿Una página web es un software? Diferencias con un sistema web",
+    h1: "¿Una página web es un software? Página web, sistema web y software a medida",
     description:
-      "Diferencias entre página web, sistema web y software a medida para empresas en Perú: para qué sirve cada uno y cuándo conviene desarrollarlo.",
+      "Sí, una página web es un software. Diferencias entre página web, sistema web y software a medida para empresas en Perú y cuándo conviene cada uno.",
     excerpt:
       "Una guía simple para entender la diferencia entre una web, un sistema web y un software a medida.",
     datePublished: "2026-06-19",
-    dateModified: "2026-09-29",
+    dateModified: "2026-11-07",
     category: "Software",
     readingMin: 5,
     intro:
@@ -714,7 +725,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Sistema web: automatiza un proceso",
         body:
-          "Un sistema web es una aplicación que se abre desde el navegador, con usuarios y una base de datos, y resuelve una tarea concreta: controlar inventario, registrar ventas, emitir comprobantes o coordinar a tu equipo. Reemplaza hojas de cálculo y trabajo manual, y se accede desde cualquier dispositivo. Si el stock se te descuadra cada semana, mira el [sistema de inventario y almacén](/sistemas/inventario). Si todavía no sabes cuál te toca, en [sistemas web para empresas en Perú](/sistemas) comparamos los tres más pedidos.",
+          "Un sistema web es una aplicación que se abre desde el navegador, con usuarios y una base de datos, y resuelve una tarea concreta: controlar inventario, registrar ventas, emitir comprobantes o coordinar a tu equipo. Reemplaza hojas de cálculo y trabajo manual, y se accede desde cualquier dispositivo. Si el stock se te descuadra cada semana, mira el [sistema de inventario y almacén](/sistemas/inventario). Si todavía no sabes cuál te toca, en [sistemas web para empresas](/sistemas) comparamos los tres más pedidos.",
       },
       {
         h2: "Software a medida: plataforma completa",
@@ -873,18 +884,22 @@ export const BLOG_POSTS: BlogPost[] = [
        resultados de Shopify (shopify.com y help.shopify.com) y uno de gempages, sin resumen de IA. Google no
        había rastreado el title del 12-sep (último rastreo 22-ago) y dejaba
        minúscula tras los dos puntos. Ninguno de los de al lado dice el recargo. */
-    title: "Shopify precios en Perú: Cada plan al mes y su recargo",
-    h1: "¿Cuánto cobra Shopify al mes? Planes y comisiones en Perú",
+    /* 7-nov-2026 · GSC 28 d: «shopify precios» 211 imp puesto 9,5, «planes shopify»
+       96 (8,4), «cuanto cuesta shopify al mes» 69 (7,7), «shopify precio» 63,
+       «planes de shopify» 53. Title con «planes y precios» y «al mes»; precios
+       vueltos a comprobar en shopify.com/pe/precios hoy (sin cambios). */
+    title: "Planes y precios de Shopify en Perú: cuánto cuesta al mes",
+    h1: "Planes y precios de Shopify en Perú: cuánto cuesta al mes",
     description:
-      "Cada Shopify plan en Perú con su precio oficial: de USD 19 a USD 299 al mes pagando por año, más un recargo de 2 % a 0,2 % por usar pasarela externa.",
+      "Planes y precios de Shopify en Perú: de USD 19 a USD 299 al mes pagando por año (USD 25 a 399 mes a mes), más un recargo de 2 % a 0,2 % por pasarela externa.",
     excerpt:
       "Los planes de Shopify van de USD 19 a USD 299 al mes. Esto es lo que pagas de verdad, comisiones peruanas incluidas.",
     datePublished: "2026-06-19",
-    dateModified: "2026-09-27",
+    dateModified: "2026-11-07",
     category: "Ecommerce",
     readingMin: 6,
     intro:
-      "Shopify cobra entre USD 19 y USD 299 al mes según el plan, pagando por año, y no publica tarifa en soles para Perú (precios oficiales comprobados el 1 de septiembre de 2026). A esa mensualidad se le suman el desarrollo de la tienda y las comisiones de cada venta, que en Perú son dos y no una. Aquí está el desglose completo.",
+      "Shopify cuesta entre USD 19 y USD 299 al mes según el plan si pagas por año, y entre USD 25 y USD 399 si pagas mes a mes; no publica tarifa en soles para Perú (precios oficiales comprobados el 7 de noviembre de 2026). Ojo: eso es solo el plan de Shopify. El desarrollo de la tienda se paga aparte y una sola vez, y a cada venta se le suman dos comisiones. Aquí está el desglose completo.",
     sections: [
       {
         h2: "Cuánto cobra Shopify al mes: precio de cada plan",
@@ -899,8 +914,13 @@ export const BLOG_POSTS: BlogPost[] = [
             ["Plus", "desde USD 2.300/mes", "—", "0,2 %"],
           ],
           nota:
-            "Precios oficiales de shopify.com/pe/precios comprobados el 1 de septiembre de 2026. Shopify los fija en dólares y puede cambiarlos sin aviso.",
+            "Precios oficiales de shopify.com/pe/precios comprobados el 7 de noviembre de 2026. Shopify los fija en dólares y puede cambiarlos sin aviso.",
         },
+      },
+      {
+        h2: "El plan de Shopify no es el precio de tu tienda",
+        body:
+          "La tabla de arriba es lo que le pagas a Shopify cada mes por usar su plataforma. No incluye el diseño, la carga de productos ni la configuración de pagos y envíos: eso es el desarrollo, se cotiza aparte y se paga una vez. Lo explicamos con detalle en [cuánto cuesta desarrollar una tienda Shopify en Perú](/tiendas-virtuales/shopify/costos).",
       },
       {
         h2: "Qué plan te conviene según lo que vendas",
@@ -988,7 +1008,7 @@ export const BLOG_POSTS: BlogPost[] = [
         h2: "Control total y propiedad",
         bullets: [
           "Eres dueño de tu tienda, tu contenido y tus datos de clientes.",
-          "Eliges tu hosting y no dependes de las reglas de una plataforma.",
+          "Eliges tu hosting y no dependes de las reglas de una plataforma (qué pedirle lo explicamos en [qué hosting necesita una tienda WooCommerce](/blog/hosting-para-woocommerce-en-peru)).",
           "Puedes ampliar la tienda sin límites con el tiempo.",
         ],
       },
@@ -1106,6 +1126,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     related: [
+      { label: "Cuánto cuesta un sistema de inventario", href: "/blog/cuanto-cuesta-un-sistema-de-inventario-en-peru", desc: "Enlatado o a medida, mensualidad o pago único." },
       { label: "Envíos y courier para tu tienda virtual en Perú: cómo elegir", href: "/blog/envios-y-courier-para-tu-tienda-virtual-en-peru", desc: "El envío decide más ventas que el diseño de la tienda." },
       { label: "Sistema de punto de venta (POS) a medida para tu negocio", href: "/blog/sistema-de-punto-de-venta-pos-a-medida", desc: "Un POS se juzga en la hora punta." },
       { label: "Software a medida", href: "/desarrollo-de-software-a-medida", desc: "Sistemas de inventario y stock en tiempo real, hechos a tu medida." },
@@ -1133,7 +1154,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Tallas, colores y variantes",
         body:
-          "Una tienda de ropa necesita manejar variantes: cada prenda en sus tallas y colores, con stock independiente. Así el cliente elige exacto lo que quiere y tú controlas qué se vende más.",
+          "Una tienda de ropa necesita manejar variantes: cada prenda en sus tallas y colores, con stock independiente. Así el cliente elige exacto lo que quiere y tú controlas qué se vende más. Cómo llevar ese stock por talla y color sin vender lo agotado lo explicamos en [cómo controlar el stock de una tienda de ropa](/blog/como-controlar-el-stock-de-una-tienda-de-ropa).",
       },
       {
         h2: "Fotos que venden",
@@ -1270,12 +1291,15 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "diferencia-entre-pagina-web-y-landing-page",
-    title: "Diferencia entre página web y landing page",
+    /* 7-nov-2026 · ~100 imp repartidas en 6 variantes en los puestos 17-55
+       («diferencia entre pagina web y landing page» 35 imp 19,5; «landing page vs
+       página web» 12 imp 54,9). Title con las dos formas y tabla comparativa. */
+    title: "Landing page vs página web: diferencias y cuándo usar cada una",
     h1: "Diferencia entre página web y landing page: cuál necesitas",
-    description: "¿Cuál es la diferencia entre página web y landing page? Conoce el objetivo, la estructura y cuándo usar cada una en tus campañas de Google Ads o Meta Ads en Perú.",
+    description: "Landing page vs página web: tabla con las diferencias de objetivo, estructura, tráfico y medición, y cuándo usar cada una en tus campañas de Google Ads o Meta Ads en Perú.",
     excerpt: "Qué distingue a una página web de una landing page y cómo elegir la indicada para tu negocio o campaña.",
     datePublished: "2026-06-21",
-    dateModified: "2026-11-05",
+    dateModified: "2026-11-07",
     category: "Páginas Web",
     readingMin: 6,
     intro: "La diferencia entre una página web y una landing page está en su objetivo. Una página web informa sobre tu negocio y suele tener varias secciones para posicionarte en Google. Una landing page es una sola página enfocada en una acción concreta, ideal para campañas de Google Ads o Meta Ads. No compiten: se complementan. Si ya decidiste que necesitas una, revisa nuestro servicio de [diseño de landing pages](/diseno-de-landing-pages).",
@@ -1301,8 +1325,18 @@ export const BLOG_POSTS: BlogPost[] = [
         ]
       },
       {
-        h2: "Objetivo y estructura: las diferencias clave",
-        body: "Aunque ambas viven en internet, cumplen funciones distintas. Entender esto evita gastar de más o lanzar campañas con bajo resultado. Lo desglosamos en [cuánto cuesta un logo profesional en Perú](/blog/cuanto-cuesta-un-logo-profesional-en-peru). Antes de comparar precios, aprende [cómo leer una cotización de página web](/blog/como-leer-una-cotizacion-de-pagina-web).",
+        h2: "Landing page vs página web: tabla de diferencias",
+        body: "Aunque ambas viven en internet, cumplen funciones distintas. Entender esto evita gastar de más o lanzar campañas con bajo resultado. Antes de comparar precios, aprende [cómo leer una cotización de página web](/blog/como-leer-una-cotizacion-de-pagina-web).",
+        table: {
+          cabeceras: ["Aspecto", "Página web", "Landing page"],
+          filas: [
+            ["Objetivo", "Informar y generar confianza", "Una sola acción (lead, WhatsApp, compra)"],
+            ["Estructura", "Varias páginas y menú", "Una página, sin menú o casi"],
+            ["Tráfico principal", "SEO y búsquedas de marca", "Google Ads, Meta Ads, correo"],
+            ["Duración", "Permanente", "Por campaña o temporada"],
+            ["Cómo se mide", "Tráfico y consultas", "Tasa de conversión"],
+          ],
+        },
         bullets: [
           "Página web: informa y posiciona; landing page: convierte una campaña.",
           "La web tiene navegación amplia; la landing concentra todo en una vista.",
@@ -1971,15 +2005,18 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "como-aceptar-pagos-con-tarjeta-en-tu-web-peru",
-    title: "Cómo aceptar pagos con tarjeta en tu web en Perú",
-    h1: "Cómo aceptar pagos con tarjeta en tu web en Perú",
-    description: "Cómo aceptar pagos con tarjeta en tu web en Perú: pasarelas como Niubiz, Izipay, Culqi y Mercado Pago, billeteras Yape y Plin, seguridad e integración.",
+    /* 7-nov-2026 · 660 imp en 90 d en el puesto 5,9 y 0 clics: el title repetía la
+       búsqueda sin decir qué se llevaba el lector. Ahora promete lo concreto (Yape,
+       tarjeta, link de pago y qué hace falta) y la intro deriva al servicio. */
+    title: "Yape, tarjeta y link de pago: cómo cobrar en tu web",
+    h1: "Cómo aceptar pagos con tarjeta y Yape en tu web en Perú",
+    description: "Qué necesitas para cobrar en tu web en Perú con tarjeta, Yape, Plin o link de pago: cuenta de comercio, pasarela (Niubiz, Izipay, Culqi o Mercado Pago), 3D Secure e integración.",
     excerpt: "Las pasarelas y billeteras para cobrar online en Perú, cómo funcionan y cómo integrarlas a tu tienda según tu volumen.",
     datePublished: "2026-06-24",
-    dateModified: "2026-09-02",
+    dateModified: "2026-11-07",
     category: "Pagos",
     readingMin: 7,
-    intro: "Aceptar pagos con tarjeta en tu web en Perú es hoy más simple de lo que parece: con una pasarela como Niubiz, Izipay, Culqi o Mercado Pago puedes cobrar online en segundos. Sumando billeteras como Yape y Plin cubres a casi todo comprador peruano. La clave está en elegir según tu volumen e integrarla bien a tu tienda.",
+    intro: "Para aceptar pagos con tarjeta en tu web en Perú necesitas tres cosas: una cuenta de comercio con una pasarela (Niubiz, Izipay, Culqi o Mercado Pago), una cuenta bancaria donde recibir el dinero y la integración con tu checkout. Sumando Yape, Plin o un link de pago cubres a casi todo comprador peruano. Si prefieres que lo dejemos conectado y probado, mira nuestra [integración de pagos con Yape y tarjeta](/integracion-de-pagos).",
     sections: [
       {
         h2: "Pasarelas y billeteras disponibles en Perú",
@@ -2435,7 +2472,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "SEO local: aparece cuando buscan dónde comer",
         body:
-          "La mitad de la batalla es salir en Google cuando alguien busca tu tipo de comida cerca. Con una web optimizada y tu ficha de Google al día, apareces en el mapa y en las búsquedas locales. Te lo dejamos listo cuando hacemos tu [página web para restaurantes](/diseno-de-paginas-web/restaurantes), y puedes profundizar en nuestra guía para [aparecer en Google](/blog/como-hacer-que-tu-pagina-web-aparezca-en-google-peru). Para aparecer en tu zona, mira [SEO local en Perú](/blog/seo-local-en-peru-como-salir-primero-en-tu-ciudad).",
+          "La mitad de la batalla es salir en Google cuando alguien busca tu tipo de comida cerca. Con una web optimizada y tu ficha de Google al día, apareces en el mapa y en las búsquedas locales. Te lo dejamos listo en nuestro servicio de [diseño web para restaurantes](/diseno-de-paginas-web/restaurantes), y puedes profundizar en nuestra guía para [aparecer en Google](/blog/como-hacer-que-tu-pagina-web-aparezca-en-google-peru). Para aparecer en tu zona, mira [SEO local en Perú](/blog/seo-local-en-peru-como-salir-primero-en-tu-ciudad).",
       },
     ],
     faqs: [
@@ -2479,23 +2516,27 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "google-ads-para-pymes-en-peru-cuanto-invertir",
-    title: "Cuánto invertir en Google Ads siendo pyme en Perú",
-    h1: "Cuánto invertir en Google Ads si tienes una pyme en Perú",
+    /* 7-nov-2026 · GSC 90 d: 818 imp en puesto 34 y le quitaba «google ads perú» y
+       «agencia google ads» a la landing /google-ads (puesto 55-72). Este artículo se
+       queda con la pregunta de PRECIO («cuanto cuesta google ads perú», «google ads
+       precio peru», del autocompletado) y la intención de agencia va a /google-ads. */
+    title: "Cuánto cuesta Google Ads en Perú y cuánto invertir siendo pyme",
+    h1: "¿Cuánto cuesta Google Ads en Perú? Lo que conviene invertir a una pyme",
     description:
-      "Cuánto invertir en Google Ads si tienes una pyme en Perú, qué tipo de campaña elegir, por qué la landing importa tanto como el anuncio y cómo medir tus leads.",
+      "Cuánto cuesta Google Ads en Perú: no hay monto mínimo, tú fijas el presupuesto diario y pagas por clic. Cuánto invertir al empezar y cómo medir cada lead.",
     excerpt:
-      "Google Ads te trae clientes desde el primer día si lo haces bien. Cuánto invertir y cómo no botar la plata.",
+      "Cuánto cuesta Google Ads en Perú, cuánto invertir al empezar y cómo no botar la plata en clics que no venden.",
     datePublished: "2026-07-06",
-    dateModified: "2026-11-05",
+    dateModified: "2026-11-07",
     category: "Marketing",
     readingMin: 8,
     intro:
-      "Google Ads pone tu negocio arriba de todo justo cuando alguien busca lo que vendes. Para una pyme en Perú es la forma más rápida de conseguir clientes, pero también la más fácil de malgastar. Aquí verás cuánto invertir para empezar, qué campaña elegir y cómo asegurarte de que cada sol traiga leads. Si quieres que gestionemos tu presupuesto, mira nuestro [servicio de Google Ads en Lima](/google-ads).",
+      "Google Ads no tiene un precio fijo ni un monto mínimo: tú decides el presupuesto diario, pagas solo cuando alguien hace clic y Google no te cobra en el mes más que ese presupuesto diario promedio por 30,4. Lo que cuesta cada clic depende de tu rubro y de cuántos compiten por la misma búsqueda. Aquí verás cuánto conviene invertir a una pyme para empezar, qué campaña elegir y cómo medir que cada sol traiga leads. Si prefieres que lo gestione un equipo, trabajamos como [agencia de Google Ads en Perú](/google-ads).",
     sections: [
       {
         h2: "Por qué Google Ads funciona para pymes",
         body:
-          "A diferencia del SEO, que toma meses, Google Ads te muestra hoy ante quien ya está buscando comprar. Eso lo hace ideal para arrancar, validar qué servicio se vende más y llenar la agenda mientras tu posicionamiento orgánico madura. Pagas por clic, así que el control del gasto está en tus manos. Este artículo resuelve la pregunta del presupuesto; si lo que buscas es quién las gestione por ti, eso lo cubre nuestra [agencia de Google Ads en Perú](/google-ads).",
+          "A diferencia del SEO, que toma meses, Google Ads te muestra hoy ante quien ya está buscando comprar. Eso lo hace ideal para arrancar, validar qué servicio se vende más y llenar la agenda mientras tu posicionamiento orgánico madura. Pagas por clic, así que el control del gasto está en tus manos. Este artículo resuelve la pregunta de cuánto cuesta y cuánto invertir.",
       },
       {
         h2: "Cuánto invertir al inicio",
@@ -2530,6 +2571,10 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     faqs: [
+      {
+        q: "¿Cuánto cuesta Google Ads en Perú?",
+        a: "No hay tarifa fija ni mínimo. Google Ads funciona por subasta: fijas un presupuesto diario, pagas por cada clic y el cobro del mes no supera tu presupuesto diario promedio multiplicado por 30,4. El costo por clic cambia según el rubro y la competencia de cada búsqueda.",
+      },
       {
         q: "¿Cuánto debo invertir en Google Ads al mes?",
         a: "Depende de tu rubro y competencia. Muchas pymes empiezan con un presupuesto diario modesto y lo ajustan según el retorno. Lo importante es sostenerlo unas semanas para que la campaña tenga datos y medir el costo por lead.",
@@ -2688,7 +2733,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Cuánto cuesta y cómo empezar",
         body:
-          "Según tengas un abogado independiente o un estudio con varias áreas, el alcance cambia. Te damos una cotización clara y sin costo; mira qué incluye cada servicio en [nuestros precios](/precios). Si quieres ver el detalle de cómo trabajamos este rubro en concreto, revisa nuestro servicio de [páginas web para abogados y estudios jurídicos](/diseno-de-paginas-web/abogados).",
+          "Según tengas un abogado independiente o un estudio con varias áreas, el alcance cambia. Te damos una cotización clara y sin costo; mira qué incluye cada servicio en [nuestros precios](/precios). Si quieres ver el detalle de cómo trabajamos este rubro en concreto, revisa nuestro servicio de [diseño web para abogados](/diseno-de-paginas-web/abogados) y estudios jurídicos.",
       },
     ],
     faqs: [
@@ -2763,7 +2808,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Cuánto cuesta y cómo empezar",
         body:
-          "Depende de cuántos proyectos manejes y si necesitas integración con CRM. Te preparamos una cotización a medida y sin costo; revisa qué incluye cada opción en [nuestra página de precios](/precios) o el detalle de nuestras [páginas web para inmobiliarias y constructoras](/diseno-de-paginas-web/inmobiliarias).",
+          "Depende de cuántos proyectos manejes y si necesitas integración con CRM. Te preparamos una cotización a medida y sin costo; revisa qué incluye cada opción en [nuestra página de precios](/precios) o el detalle de nuestro servicio de [diseño web para inmobiliarias](/diseno-de-paginas-web/inmobiliarias) y constructoras.",
       },
     ],
     faqs: [
@@ -2884,6 +2929,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     related: [
+      { label: "Cuánto cuesta un sistema de inventario", href: "/blog/cuanto-cuesta-un-sistema-de-inventario-en-peru", desc: "Lo que mueve el precio de un sistema de stock." },
       { label: "Qué es un software a medida", href: "/blog/que-es-un-software-a-medida", desc: "Definición, ejemplos por área y cuándo conviene." },
       { label: "Desarrollo de software a medida", href: "/desarrollo-de-software-a-medida", desc: "Sistemas hechos para tu operación, no plantillas." },
       { label: "Sistema de inventario", href: "/sistemas/inventario", desc: "Control de stock, kardex y alertas de reposición." },
@@ -3008,7 +3054,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Muestra tus planes y capta inscripciones",
         body:
-          "El nuevo socio quiere saber cuánto cuesta y qué incluye antes de ir. Mostrar tus planes de membresía con claridad reduce las preguntas repetidas y filtra a quien sí va a inscribirse. Un botón de WhatsApp con el plan ya cargado, o un formulario de inscripción, convierte esa visita a la web en un socio real. Cuando armamos tu [página web](/diseno-de-paginas-web/gimnasios), la dejamos pensada para captar, no solo para mostrar. A dónde llega el clic importa tanto como el anuncio: [la landing page para Google Ads](/blog/landing-page-para-google-ads).",
+          "El nuevo socio quiere saber cuánto cuesta y qué incluye antes de ir. Mostrar tus planes de membresía con claridad reduce las preguntas repetidas y filtra a quien sí va a inscribirse. Un botón de WhatsApp con el plan ya cargado, o un formulario de inscripción, convierte esa visita a la web en un socio real. En nuestro servicio de [diseño web para gimnasios](/diseno-de-paginas-web/gimnasios) la dejamos pensada para captar, no solo para mostrar. A dónde llega el clic importa tanto como el anuncio: [la landing page para Google Ads](/blog/landing-page-para-google-ads).",
       },
       {
         h2: "SEO local: aparece cuando buscan gimnasio cerca",
@@ -3083,7 +3129,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Reservas directas sin comisión",
         body:
-          "Cada reserva que entra por tu web es dinero que no compartes con una plataforma. Un motor de reservas o, para empezar, un botón de reserva por WhatsApp con las fechas ya cargadas, convierte la visita en huésped. La clave es que reservar sea fácil y transmita confianza: fotos reales, políticas claras y respuesta rápida. Cuando armamos tu [página web de hotel](/diseno-de-paginas-web/hoteles), la dejamos lista para captar reservas directas. Si tu negocio va por citas, mira [el sistema de reservas y citas a medida](/blog/sistema-de-reservas-y-citas-a-medida).",
+          "Cada reserva que entra por tu web es dinero que no compartes con una plataforma. Un motor de reservas o, para empezar, un botón de reserva por WhatsApp con las fechas ya cargadas, convierte la visita en huésped. La clave es que reservar sea fácil y transmita confianza: fotos reales, políticas claras y respuesta rápida. En nuestro servicio de [diseño web para hoteles](/diseno-de-paginas-web/hoteles) la dejamos lista para captar reservas directas. Si tu negocio va por citas, mira [el sistema de reservas y citas a medida](/blog/sistema-de-reservas-y-citas-a-medida).",
       },
       {
         h2: "Fotos y experiencia que venden",
@@ -3158,7 +3204,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Facilita el proceso de admisión",
         body:
-          "El momento clave es la admisión. Explicar con claridad los pasos, requisitos y fechas reduce las llamadas repetidas y ordena a las familias interesadas. Un formulario de admisión o un botón de cita por WhatsApp convierte al padre que investiga en una visita agendada. Cuando armamos tu [página web para colegios](/diseno-de-paginas-web/colegios), la dejamos pensada para captar matrículas, no solo para informar.",
+          "El momento clave es la admisión. Explicar con claridad los pasos, requisitos y fechas reduce las llamadas repetidas y ordena a las familias interesadas. Un formulario de admisión o un botón de cita por WhatsApp convierte al padre que investiga en una visita agendada. En nuestro servicio de [diseño web para colegios](/diseno-de-paginas-web/colegios) la dejamos pensada para captar matrículas, no solo para informar.",
       },
       {
         h2: "Comunica con padres y comunidad",
@@ -3424,7 +3470,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "SEO y posicionamiento web", href: "/seo", desc: "Posiciona tu negocio en Google de forma sostenible." },
       { label: "Google Ads vs SEO", href: "/blog/google-ads-vs-seo-cual-conviene-para-tu-negocio", desc: "Cuál conviene y por qué se complementan." },
       { label: "Cómo aparecer en Google", href: "/blog/como-hacer-que-tu-pagina-web-aparezca-en-google-peru", desc: "Las bases para posicionar tu web." },
-      { label: "Migrar tu web sin perder posicionamiento", href: "/blog/como-migrar-tu-pagina-web-sin-perder-posicionamiento-en-google", desc: "Rediseñar o cambiar de web puede hundir tu tráfico si se hace mal." },
+      { label: "Migrar tu web sin perder posicionamiento", href: "/blog/como-migrar-tu-pagina-web-sin-perder-posicionamiento-en-google", desc: "Cambiar de plataforma o de dominio puede hundir tu tráfico si se hace mal." },
       { label: "SEO on-page: la checklist para tu página web (2026)", href: "/blog/seo-on-page-checklist-para-tu-pagina-web", desc: "El SEO on-page es lo que sí controlas de tu web. Esta checklist cubre lo esencial para posicionar mejor." },
     ],
   },
@@ -3512,11 +3558,11 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Uno trae clientes hoy pagando; el otro los trae gratis pero tarda. La verdad es que se complementan.",
     datePublished: "2026-07-08",
-    dateModified: "2026-09-02",
+    dateModified: "2026-11-07",
     category: "Marketing",
     readingMin: 7,
     intro:
-      "Google Ads y SEO son las dos formas de aparecer en Google, pero funcionan distinto: Ads te pone arriba hoy pagando por cada clic; el SEO te posiciona con el tiempo sin pagar por visita. No son rivales. Aquí verás las diferencias reales y cuándo conviene cada uno para tu negocio en Perú.",
+      "Google Ads y SEO son las dos formas de aparecer en Google, pero funcionan distinto: Ads te pone arriba hoy pagando por cada clic; el SEO te posiciona con el tiempo sin pagar por visita. No son rivales. Aquí verás las diferencias reales y cuándo conviene cada uno para tu negocio. Si decides empezar por los anuncios, trabajamos como [agencia de Google Ads en Perú](/google-ads).",
     sections: [
       {
         h2: "La diferencia de fondo",
@@ -3649,23 +3695,38 @@ export const BLOG_POSTS: BlogPost[] = [
     description:
       "Cómo migrar tu página web a otra plataforma o dominio en Perú sin perder posicionamiento en Google: redirecciones 301, estructura de URLs, contenido y los errores que hunden tu SEO.",
     excerpt:
-      "Rediseñar o cambiar de web puede hundir tu tráfico si se hace mal. Así se migra sin perder tus posiciones.",
+      "Cambiar de plataforma o de dominio puede hundir tu tráfico si se hace mal. Así se migra sin perder tus posiciones.",
     datePublished: "2026-07-08",
-    dateModified: "2026-11-05",
+    dateModified: "2026-11-07",
     category: "SEO",
-    readingMin: 7,
+    readingMin: 8,
+    /* 7-nov-2026 · «rediseñar sin perder seo» (201 imp, puesto 50-60) caía aquí y no
+       en su guía. Este artículo se queda con migrar de plataforma y cambiar de
+       dominio; lo de rediseñar se manda a /blog/como-redisenar-tu-pagina-web-sin-perder-seo. */
     intro:
-      "Rediseñar o cambiar de plataforma tu página web puede disparar tu negocio o hundir el tráfico que tanto costó construir. El error más común es migrar sin plan y perder de golpe las posiciones en Google. Aquí verás cómo migrar tu web cuidando el SEO y qué errores evitar a toda costa. Si solo cambias el diseño y mantienes dominio y plataforma, sigue el [checklist para rediseñar tu web sin perder el SEO](/blog/como-redisenar-tu-pagina-web-sin-perder-seo).",
+      "Cambiar tu página web de plataforma o de dominio puede disparar tu negocio o hundir el tráfico que tanto costó construir. El error más común es migrar sin plan y perder de golpe las posiciones en Google. Aquí verás cómo migrar tu web cuidando el SEO, qué hacer si cambias de dominio y qué errores evitar. Si solo cambias el diseño y mantienes dominio y plataforma, eso no es una migración: sigue el [checklist para rediseñar tu web sin perder el SEO](/blog/como-redisenar-tu-pagina-web-sin-perder-seo).",
     sections: [
       {
         h2: "Por qué una migración puede hundir tu SEO",
         body:
-          "Google conoce tu web actual: sabe qué URLs tienes, qué contenido hay en cada una y qué posición merecen. Cuando migras (cambias de plataforma, rediseñas o mueves de dominio) y esas URLs cambian o desaparecen sin avisar, Google encuentra páginas rotas y pierde el rastro de lo que ya valoraba. El resultado es una caída de tráfico que puede tardar meses en recuperarse. La buena noticia: se evita con un plan de migración cuidado. Lo que te llevas al terminar el proyecto está en [de quién es el código y el dominio](/blog/de-quien-es-el-codigo-el-dominio-y-los-accesos).",
+          "Google conoce tu web actual: sabe qué URLs tienes, qué contenido hay en cada una y qué posición merecen. Cuando migras (cambias de plataforma o mueves de dominio) y esas URLs cambian o desaparecen sin avisar, Google encuentra páginas rotas y pierde el rastro de lo que ya valoraba. El resultado es una caída de tráfico que puede tardar meses en recuperarse. La buena noticia: se evita con un plan de migración cuidado. Lo que te llevas al terminar el proyecto está en [de quién es el código y el dominio](/blog/de-quien-es-el-codigo-el-dominio-y-los-accesos).",
       },
       {
         h2: "Las redirecciones 301: lo más importante",
         body:
           "Si una URL cambia, hay que decirle a Google a dónde fue: eso es una redirección 301 (permanente). Sin ellas, cada página vieja que Google visita da error 404 y pierdes el posicionamiento que tenía. Antes de migrar hay que listar todas las URLs actuales y mapear cada una a su equivalente nueva. Es el paso que más se descuida y el que más tráfico salva. Si tu web tiene muchas páginas o un blog, este mapeo es imprescindible.",
+      },
+      {
+        h2: "¿Cambiar el dominio hace perder posiciones en SEO?",
+        body:
+          "Puede hacerlo, aunque no tiene por qué. Al pasar de un dominio a otro (por ejemplo de un .com a un .com.pe, o tras un cambio de nombre comercial) todas las URLs cambian a la vez, y Google tiene que trasladar a la dirección nueva lo que había aprendido de la vieja. Lo normal es una bajada temporal mientras rastrea el cambio; lo que la vuelve permanente es hacerlo sin redirecciones. Para que el traslado salga bien:",
+        bullets: [
+          "Redirige con 301 cada URL del dominio viejo a su equivalente exacta en el nuevo, no todo a la portada.",
+          "Verifica los dos dominios en Search Console y usa la herramienta «Cambio de dirección».",
+          "Mantén el dominio viejo registrado y redirigiendo como mínimo un año.",
+          "No cambies a la vez de dominio, de plataforma y de contenido: si algo cae, no sabrás qué fue.",
+          "Actualiza los enlaces que controlas (redes, Google Business Profile, directorios) al dominio nuevo.",
+        ],
       },
       {
         h2: "Qué revisar antes de migrar",
@@ -3682,7 +3743,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Errores que arruinan una migración",
         body:
-          "Los más caros: lanzar la web nueva sin redirecciones (todo cae en 404), cambiar todas las URLs sin necesidad, dejar la web bloqueada a Google por un ajuste de 'en construcción' que nadie quitó, o borrar contenido que traía tráfico pensando que 'no servía'. También olvidar avisar el cambio en Search Console. Cada uno de estos errores, por sí solo, puede tumbar tu posicionamiento. Por eso una migración no se improvisa un viernes por la tarde.",
+          "Los más caros: lanzar la web nueva sin redirecciones (todo cae en 404), cambiar todas las URLs sin necesidad, dejar la web bloqueada a Google por un ajuste de 'en construcción' que nadie quitó, o borrar contenido que traía tráfico pensando que 'no servía'. También olvidar avisar el cambio en Search Console. Cada uno de estos errores, por sí solo, puede tumbar tu posicionamiento. Por eso una migración no se improvisa un viernes por la tarde. Si lo que cambias es solo el diseño, los mismos cuidados están ordenados en [cómo rediseñar tu página web sin perder SEO](/blog/como-redisenar-tu-pagina-web-sin-perder-seo).",
       },
       {
         h2: "Después de migrar: monitorea",
@@ -3692,13 +3753,17 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Cómo lo maneja Websy",
         body:
-          "Cuando rediseñamos o migramos una web, tratamos el SEO como prioridad, no como algo que se ve al final. Mapeamos las redirecciones, conservamos el contenido que posiciona y monitoreamos tras el lanzamiento. Si tu web actual ya tiene tráfico, migrar bien es la diferencia entre crecer o empezar de cero. Puedes ver qué incluye nuestro servicio de [SEO](/seo) o de [diseño de páginas web](/diseno-de-paginas-web).",
+          "Cuando migramos una web de plataforma o de dominio, tratamos el SEO como prioridad, no como algo que se ve al final. Mapeamos las redirecciones, conservamos el contenido que posiciona y monitoreamos tras el lanzamiento. Si tu web actual ya tiene tráfico, migrar bien es la diferencia entre crecer o empezar de cero. Puedes ver qué incluye nuestro servicio de [SEO](/seo) o de [diseño de páginas web](/diseno-de-paginas-web).",
       },
     ],
     faqs: [
       {
-        q: "¿Voy a perder posiciones si rediseño mi web?",
-        a: "No si se hace bien. El riesgo aparece cuando cambian las URLs sin redirecciones 301 o se borra contenido que posiciona. Con un plan de migración cuidado, puedes rediseñar y hasta mejorar tu SEO.",
+        q: "¿Voy a perder posiciones si migro mi web de plataforma?",
+        a: "No si se hace bien. El riesgo aparece cuando cambian las URLs sin redirecciones 301 o se borra contenido que posiciona. Con un plan de migración cuidado, puedes pasar, por ejemplo, de Wix a WordPress o de WooCommerce a Shopify y hasta mejorar tu SEO.",
+      },
+      {
+        q: "¿Cambiar el dominio hace perder posiciones en SEO?",
+        a: "Suele haber una bajada temporal mientras Google rastrea el cambio. Se recupera si redirigiste con 301 cada URL a su equivalente en el dominio nuevo y avisaste el cambio en Search Console; si no, la caída puede quedarse.",
       },
       {
         q: "¿Qué es una redirección 301 y por qué importa?",
@@ -3715,7 +3780,8 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     related: [
       { label: "SEO y posicionamiento web", href: "/seo", desc: "Migra y crece sin perder tus posiciones en Google." },
-      { label: "Diseño de páginas web", href: "/diseno-de-paginas-web", desc: "Rediseños que cuidan tu tráfico y tu SEO." },
+      { label: "Diseño de páginas web", href: "/diseno-de-paginas-web", desc: "Webs nuevas que cuidan tu tráfico y tu SEO." },
+      { label: "Rediseñar tu web sin perder SEO", href: "/blog/como-redisenar-tu-pagina-web-sin-perder-seo", desc: "Si solo cambias el diseño: el checklist para no perder posiciones." },
       { label: "Cómo aparecer en Google", href: "/blog/como-hacer-que-tu-pagina-web-aparezca-en-google-peru", desc: "Las bases del posicionamiento web." },
     ],
   },
@@ -3729,11 +3795,15 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "La mayoría busca servicios 'cerca de mí'. Así logras que tu negocio aparezca primero en tu ciudad o distrito.",
     datePublished: "2026-07-08",
-    dateModified: "2026-11-05",
+    dateModified: "2026-11-07",
     category: "SEO Local",
     readingMin: 7,
+    /* 7-nov-2026 · Esta guía se lleva «servicio seo local» (104 imp, puesto 12,2)
+       mientras /seo/seo-local sigue sin indexar. El enlace al servicio sube al
+       principio de la intro con el anchor de la intención comercial. Se quita
+       además la frase repetida que tenía la intro. */
     intro:
-      "Cuando alguien busca un servicio en su zona, Google le muestra un mapa con tres negocios y luego los resultados de siempre. Salir en ese paquete local es lo que llena tu agenda. El SEO local trabaja tu ficha de Google y tu web para que aparezcas primero cuando buscan lo que ofreces en tu ciudad o distrito. Si prefieres que lo hagamos por ti, mira nuestro [servicio de SEO local](/seo/seo-local). Si prefieres que lo trabajemos por ti, mira nuestro [servicio de SEO local](/seo/seo-local).",
+      "Si buscas un [servicio de SEO local en Lima](/seo/seo-local) que lo haga por ti, esa es nuestra página del servicio; aquí te explicamos cómo funciona. Cuando alguien busca un servicio en su zona, Google le muestra un mapa con tres negocios y luego los resultados de siempre. Salir en ese paquete local es lo que llena tu agenda. El SEO local trabaja tu ficha de Google y tu web para que aparezcas primero cuando buscan lo que ofreces en tu ciudad o distrito.",
     sections: [
       {
         h2: "Qué es el SEO local y por qué importa",
@@ -3822,7 +3892,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Encabezados y estructura del contenido",
         body:
-          "Un solo H1 por página con el tema principal, y H2/H3 que organicen el contenido en secciones lógicas. Esta jerarquía ayuda a Google a entender de qué trata la página y facilita la lectura. Un texto ordenado por encabezados, con párrafos cortos y listas, se lee mejor y tiene más opciones de aparecer en fragmentos destacados y en respuestas de IA. El protocolo está en [migrar tu página web sin perder posicionamiento](/blog/como-migrar-tu-pagina-web-sin-perder-posicionamiento-en-google).",
+          "Un solo H1 por página con el tema principal, y H2/H3 que organicen el contenido en secciones lógicas. Esta jerarquía ayuda a Google a entender de qué trata la página y facilita la lectura. Un texto ordenado por encabezados, con párrafos cortos y listas, se lee mejor y tiene más opciones de aparecer en fragmentos destacados y en respuestas de IA. El protocolo está en [migrar tu página web sin perder posicionamiento](/blog/como-migrar-tu-pagina-web-sin-perder-posicionamiento-en-google). Y si vas a cambiar el diseño, esta misma checklist se usa antes y después: lo explicamos en [cómo rediseñar tu web sin perder SEO](/blog/como-redisenar-tu-pagina-web-sin-perder-seo).",
       },
       {
         h2: "URLs, imágenes y datos que Google entiende",
@@ -3879,18 +3949,19 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "como-estructurar-una-campana-de-google-ads-para-servicios",
-    title: "Estructurar una campaña de Google Ads paso a paso",
+    /* 7-nov-2026 · GSC: «estructura campañas google ads» 41 imp puesto 19,6. */
+    title: "Estructura de campañas de Google Ads para servicios, paso a paso",
     h1: "Cómo estructurar una campaña de Google Ads para servicios",
     description:
-      "Guía paso a paso para estructurar una campaña de Google Ads de servicios en Perú: objetivo, estructura de cuenta, palabras clave y conversiones.",
+      "Estructura de campañas de Google Ads para servicios, paso a paso: objetivo y conversión, campañas y grupos de anuncios, palabras clave, negativas y landing.",
     excerpt:
       "Una campaña de Ads bien estructurada rinde el doble con el mismo presupuesto. Así se arma paso a paso.",
     datePublished: "2026-07-08",
-    dateModified: "2026-09-07",
+    dateModified: "2026-11-07",
     category: "Marketing",
     readingMin: 8,
     intro:
-      "En Google Ads, la estructura lo es todo: una campaña ordenada llega a la persona correcta y rinde el doble con el mismo presupuesto, mientras que una mal armada quema plata. Si vendes servicios (clínica, estudio, taller, agencia), esta guía te lleva paso a paso por cómo estructurar una campaña que traiga contactos reales.",
+      "La estructura de una campaña de Google Ads es el orden de la cuenta: qué campañas tienes, qué grupos de anuncios van dentro, qué palabras clave tiene cada grupo y a qué landing manda cada anuncio. Bien armada llega a la persona correcta con el mismo presupuesto; mal armada quema plata. Si vendes servicios (clínica, estudio, taller), esta guía te lleva paso a paso. Si prefieres que la armemos contigo, trabajamos como [agencia de Google Ads en Perú](/google-ads).",
     sections: [
       {
         h2: "1. Define un objetivo y una conversión clara",
@@ -3950,24 +4021,24 @@ export const BLOG_POSTS: BlogPost[] = [
     related: [
       { label: "Google Ads", href: "/google-ads", desc: "Campañas medidas que traen contactos, no solo clics." },
       { label: "Google Ads vs SEO", href: "/blog/google-ads-vs-seo-cual-conviene-para-tu-negocio", desc: "Cuándo conviene cada uno y por qué se complementan." },
-      { label: "Google Ads para pymes", href: "/blog/google-ads-para-pymes-en-peru-cuanto-invertir", desc: "Cuánto invertir al mes y cómo no botar la plata." },
+      { label: "Cuánto cuesta Google Ads en Perú", href: "/blog/google-ads-para-pymes-en-peru-cuanto-invertir", desc: "Cuánto invertir al mes y cómo no botar la plata." },
     ],
   },
 
   {
     slug: "palabras-clave-negativas-en-google-ads",
-    title: "Palabras clave negativas en Google Ads",
+    title: "Palabras clave negativas en Google Ads: qué son y ejemplos",
     h1: "Palabras clave negativas: deja de botar la plata en Ads",
     description:
-      "Qué son las palabras clave negativas en Google Ads y cómo usarlas para dejar de pagar clics inútiles en Perú. Listas, niveles y ejemplos prácticos.",
+      "Qué son las palabras clave negativas en Google Ads, cómo usarlas para dejar de pagar clics inútiles y ejemplos de listas para negocios de servicios.",
     excerpt:
       "Cada clic que no te sirve es plata perdida. Las palabras clave negativas son el freno que casi nadie usa bien.",
     datePublished: "2026-07-08",
-    dateModified: "2026-09-02",
+    dateModified: "2026-11-07",
     category: "Marketing",
     readingMin: 6,
     intro:
-      "Si tu campaña de Google Ads gasta rápido y trae pocos contactos útiles, el problema suele estar en las palabras clave negativas: los términos por los que NO quieres aparecer. Bien usadas, dejan de pagar clics inútiles y bajan tu costo por contacto. Aquí qué son, cómo armarlas y por qué son el ajuste que más plata ahorra.",
+      "Las palabras clave negativas son los términos por los que NO quieres que salga tu anuncio de Google Ads. Si tu campaña gasta rápido y trae pocos contactos útiles, casi siempre faltan negativas. Bien usadas, dejan de pagar clics inútiles y bajan tu costo por contacto. Aquí qué son, cómo armarlas y por qué son el ajuste que más plata ahorra. Si prefieres que lo revise un equipo, trabajamos como [agencia de Google Ads en Perú](/google-ads).",
     sections: [
       {
         h2: "Qué son las palabras clave negativas",
@@ -4102,18 +4173,21 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "manual-de-marca-que-es-y-por-que-tu-negocio-lo-necesita",
+    /* 7-nov-2026 · 885 imp en 90 d, puesto 9,3. «manual de marca que es» (103 imp,
+       7,4), «que es un manual de marca» (45, 17,6) y «que es manual de marca» (37,
+       8,4): H1 en forma de pregunta y definición de 40-50 palabras arriba. */
     title: "Qué es un manual de marca y qué debe incluir",
-    h1: "Manual de marca: qué es y por qué lo necesitas",
+    h1: "¿Qué es un manual de marca y qué debe incluir?",
     description:
-      "Qué es un manual de marca y por qué tu negocio en Perú lo necesita: reglas de logo, colores, tipografía y tono para verte coherente en todos lados.",
+      "Qué es un manual de marca, qué debe incluir (logo, colores, tipografía, tono y usos prohibidos) y por qué tu negocio en Perú lo necesita para verse coherente en todos lados.",
     excerpt:
       "Un manual de marca evita que tu negocio se vea distinto en cada pieza. Esto es lo que incluye y para qué sirve.",
     datePublished: "2026-07-08",
-    dateModified: "2026-09-29",
+    dateModified: "2026-11-07",
     category: "Marketing",
     readingMin: 6,
     intro:
-      "Un manual de marca es el documento que define cómo debe verse y comunicarse tu marca en todos lados: logo, colores, tipografía y tono. Sin él, cada pieza que hace una persona distinta sale diferente y tu negocio se ve improvisado. Aquí qué incluye un manual de marca y por qué le da coherencia y valor a tu negocio.",
+      "Un manual de marca es el documento que reúne las reglas para usar tu identidad: cómo va el logo y qué no se le hace, los colores con sus códigos, las tipografías y el tono con el que habla tu negocio. Sirve para que tu marca se vea y suene igual en cualquier pieza, la haga quien la haga. Lo armamos como parte de nuestro servicio de [branding e identidad de marca](/branding).",
     sections: [
       {
         h2: "Qué es un manual de marca",
@@ -4176,14 +4250,18 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "cuanto-cuesta-un-hosting-y-un-dominio-pe-en-peru",
-    title: "Hosting y dominio .pe en Perú: Cuánto cuesta cada año",
-    h1: "¿Cuánto cuesta un hosting y un dominio .pe?",
+    /* 7-nov-2026 · Se canibalizaba con /blog/como-elegir-un-hosting-en-peru (unas
+       1.500 imp de hosting con 0 clics). Este se queda con PRECIO y DOMINIO («hosting
+       y dominio» 164 imp puesto 17,4, «cuanto cuesta un dominio web en perú» 106 en 8,1,
+       «precio de hosting y dominio» 87 en 9,4); el otro, con elegir/contratar. */
+    title: "Precio de hosting y dominio .pe en Perú: cuánto cuesta al año",
+    h1: "¿Cuánto cuesta un hosting y un dominio .pe en Perú?",
     description:
       "Un dominio .pe cuesta S/ 110 al año en el registrador oficial (punto.pe, impuestos incluidos) y un hosting compartido peruano arranca en S/ 15.47 al mes. Precios verificados en setiembre de 2026.",
     excerpt:
       "Un dominio .pe cuesta S/ 110 al año y un hosting compartido desde S/ 15.47 al mes. Aquí los precios reales, de dónde salen y cuál necesita tu negocio.",
     datePublished: "2026-07-08",
-    dateModified: "2026-09-27",
+    dateModified: "2026-11-07",
     category: "Web",
     readingMin: 6,
     intro:
@@ -4192,7 +4270,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Qué es el dominio y qué es el hosting",
         body:
-          "El dominio es tu dirección en internet, como tunegocio.pe: se alquila por año y es único. El hosting es el espacio en un servidor donde se guardan los archivos de tu web para que esté disponible 24/7. Uno sin el otro no sirve: el dominio dice dónde estás y el hosting guarda lo que la gente ve. Ambos se renuevan y son la base sobre la que corre tu página. Para elegir bien, mira [cómo elegir un hosting en Perú](/blog/como-elegir-un-hosting-en-peru). Lo que te llevas al terminar el proyecto está en [de quién es el código y el dominio](/blog/de-quien-es-el-codigo-el-dominio-y-los-accesos).",
+          "El dominio es tu dirección en internet, como tunegocio.pe: se alquila por año y es único. El hosting es el espacio en un servidor donde se guardan los archivos de tu web para que esté disponible 24/7. Uno sin el otro no sirve: el dominio dice dónde estás y el hosting guarda lo que la gente ve. Ambos se renuevan y son la base sobre la que corre tu página. Aquí solo hablamos de precios; qué revisar antes de contratar está en [el mejor hosting en Perú y cómo elegirlo](/blog/como-elegir-un-hosting-en-peru). Lo que te llevas al terminar el proyecto está en [de quién es el código y el dominio](/blog/de-quien-es-el-codigo-el-dominio-y-los-accesos).",
       },
       {
         h2: "Cuánto cuesta un dominio .pe en 2026",
@@ -4242,7 +4320,7 @@ export const BLOG_POSTS: BlogPost[] = [
         ],
       },
       {
-        h2: "Qué hosting necesita tu proyecto",
+        h2: "Cuánto hosting paga cada tipo de proyecto",
         body:
           "Para una web informativa o corporativa, un hosting compartido de calidad suele bastar y es lo más económico. Para una tienda virtual con catálogo grande, mucho tráfico o un sistema a medida, conviene un hosting con más recursos (VPS) para que todo cargue rápido y estable. La regla simple: mientras más movimiento y funciones tenga tu web, mejor debe ser el hosting que la sostiene. Si todavía no tienes la web y estás calculando el total, en [nuestro desarrollo web](/desarrollo-web) el hosting, el dominio y el certificado van incluidos el primer año.",
       },
@@ -4279,6 +4357,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     related: [
+      { label: "Hosting.pe vs hosting.com.pe", href: "/blog/hosting-pe-vs-hosting-com-pe-cual-elegir", desc: "Dos proveedores peruanos comparados lado a lado." },
       { label: "Mantenimiento web", href: "/mantenimiento-web", desc: "Hosting, seguridad, respaldos y actualizaciones al día." },
       { label: "Costos de mantenimiento de una web", href: "/blog/costos-de-mantenimiento-de-una-pagina-web-en-peru", desc: "Qué incluye mantener tu web viva y segura." },
       { label: "Ver precios y cotizar", href: "/precios", desc: "El panorama completo de la inversión en tu web." },
@@ -4364,18 +4443,20 @@ export const BLOG_POSTS: BlogPost[] = [
   /* ── Cluster Shopify ─────────────────────────────────────────── */
   {
     slug: "como-crear-una-tienda-shopify-en-peru-paso-a-paso",
-    title: "Cómo crear una tienda Shopify en Perú paso a paso",
+    /* 7-nov-2026 · 658 imp en el puesto 6,9 y 0 clics. Title con «paso a paso 2026»
+       y meta que dice el resultado (tienda lista para cobrar con Yape y tarjeta). */
+    title: "Crear una tienda Shopify en Perú: paso a paso 2026",
     h1: "Cómo crear una tienda Shopify en Perú (paso a paso)",
     description:
-      "Guía paso a paso para crear una tienda Shopify en Perú: cuenta, tema, productos, pagos con Yape, Plin, Niubiz e Izipay, envíos y lanzamiento para empezar a vender.",
+      "Seis pasos para crear tu tienda Shopify en Perú y terminar con ella lista para vender: plan, tema, productos, cobro con Yape, Plin y tarjeta (Niubiz, Izipay), envíos y lanzamiento.",
     excerpt:
       "Cada paso para montar tu tienda Shopify en Perú: desde la cuenta hasta el lanzamiento, con pagos locales configurados.",
     datePublished: "2026-07-08",
-    dateModified: "2026-09-16",
+    dateModified: "2026-11-07",
     category: "Ecommerce",
     readingMin: 8,
     intro:
-      "Crear una tienda Shopify en Perú sigue un orden claro: abrir la cuenta, elegir y personalizar el tema, cargar tus productos, configurar los pagos locales (Yape, Plin, Niubiz, Izipay), definir envíos y lanzar. En esta guía recorremos cada paso para que tu tienda quede lista para vender, no solo montada.",
+      "Crear una tienda Shopify en Perú sigue un orden claro: abrir la cuenta, elegir y personalizar el tema, cargar tus productos, configurar los pagos locales (Yape, Plin, Niubiz, Izipay), definir envíos y lanzar. En esta guía recorremos cada paso para que tu tienda quede lista para vender, no solo montada. Si prefieres que la armemos por ti, mira nuestro servicio de [tiendas Shopify en Perú](/tiendas-virtuales/shopify).",
     sections: [
       {
         h2: "1. Crea tu cuenta y elige el plan de Shopify",
@@ -4610,7 +4691,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Tallas, colores y variantes bien organizadas",
         body:
-          "Cada prenda debe tener sus tallas y colores como variantes con stock independiente. Así el cliente elige exacto lo que quiere, tú controlas qué se vende más y evitas vender lo agotado. La comparación completa está en [tienda virtual o marketplace](/blog/tienda-virtual-vs-marketplace-conviene-vender-en-mercadolibre).",
+          "Cada prenda debe tener sus tallas y colores como variantes con stock independiente. Así el cliente elige exacto lo que quiere, tú controlas qué se vende más y evitas vender lo agotado. El paso a paso de ese control está en [cómo controlar el stock de una tienda de ropa](/blog/como-controlar-el-stock-de-una-tienda-de-ropa). La comparación completa está en [tienda virtual o marketplace](/blog/tienda-virtual-vs-marketplace-conviene-vender-en-mercadolibre).",
       },
       {
         h2: "Fotos que venden moda",
@@ -5192,9 +5273,11 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Si tu equipo pierde horas en tareas manuales y errores de Excel, es momento de automatizar. Aquí qué procesos delegar a un sistema y por dónde empezar.",
     datePublished: "2026-07-27",
-    dateModified: "2026-09-02",
+    dateModified: "2026-11-07",
     category: "Software",
     readingMin: 7,
+    /* 7-nov-2026 · «automatizar la operación de mi empresa» (67 imp, puesto 10,9):
+       la frase pasa a un H2 y a una FAQ, con enlace a /sistemas. */
     intro:
       "Automatizar es dejar que un sistema haga el trabajo repetitivo que hoy hace tu equipo a mano: registrar ventas, controlar stock, emitir comprobantes o armar reportes. El resultado son menos errores, menos horas perdidas y datos al instante para decidir. Aquí ves qué procesos conviene automatizar primero y cómo empezar sin frenar tu operación.",
     sections: [
@@ -5237,9 +5320,9 @@ export const BLOG_POSTS: BlogPost[] = [
         ],
       },
       {
-        h2: "Por dónde empezar",
+        h2: "Cómo automatizar la operación de tu empresa: por dónde empezar",
         body:
-          "No hace falta automatizar todo de golpe. Lo más rentable es empezar por el proceso que hoy te genera más errores o te quita más tiempo, y crecer desde ahí. Si nos cuentas cómo trabajas, identificamos ese primer paso y [te preparamos una propuesta a medida](/cotizacion), sin compromiso.",
+          "Para automatizar la operación de tu empresa no hace falta hacerlo todo de golpe. Puedes ver los módulos que ya construimos en [sistemas a medida para empresas](/sistemas). Lo más rentable es empezar por el proceso que hoy te genera más errores o te quita más tiempo, y crecer desde ahí. Si nos cuentas cómo trabajas, identificamos ese primer paso y [te preparamos una propuesta a medida](/cotizacion), sin compromiso.",
       },
     ],
     faqs: [
@@ -5254,6 +5337,10 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         q: "¿Cuánto tiempo toma implementar un sistema así?",
         a: "Depende del alcance, pero se puede arrancar por módulos para ver resultados pronto y seguir ampliando. Lo definimos contigo según qué proceso automatizar primero.",
+      },
+      {
+        q: "¿Cómo automatizo la operación de mi empresa sin parar el trabajo diario?",
+        a: "Empezando por un solo proceso, el que hoy da más errores o quita más horas, y poniéndolo en marcha en paralelo a como trabajas ahora hasta que el equipo se acostumbre. Luego se suman módulos de inventario, ventas o reportes. Así lo hacemos con nuestros [sistemas a medida](/sistemas).",
       },
     ],
     related: [
@@ -5591,6 +5678,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     related: [
+      { label: "Cómo integrar Mercado Pago en tu tienda", href: "/blog/como-integrar-mercado-pago-en-tu-tienda-virtual-en-peru", desc: "Requisitos, pasos y qué checkout elegir." },
       { label: "Integración de Yape y pasarelas de pago", href: "/integracion-de-pagos", desc: "Conectamos Yape, Plin, Izipay, Niubiz o Culqi a tu web, tienda o app." },
       { label: "Pasarelas de pago en Perú", href: "/blog/pasarelas-de-pago-para-ecommerce-en-peru", desc: "El panorama completo: Yape, Plin, Niubiz e Izipay." },
       { label: "Tiendas virtuales", href: "/tiendas-virtuales", desc: "Integramos la pasarela que elijas a tu tienda." },
@@ -5836,18 +5924,18 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "landing-page-para-google-ads",
-    title: "Landing page para Google Ads: la clave del retorno",
+    title: "Landing page para Google Ads: cómo debe ser para convertir",
     h1: "Landing page para Google Ads: lo que casi nadie optimiza",
     description:
       "Por qué enviar tus campañas de Google Ads a la home desperdicia presupuesto y cómo debe ser la landing page que convierte el clic pagado en cliente.",
     excerpt:
       "Pagas por cada clic y lo mandas a una página que no responde lo que se buscó. Ahí se va la mitad del presupuesto.",
     datePublished: "2026-08-12",
-    dateModified: "2026-11-05",
+    dateModified: "2026-11-07",
     category: "Marketing",
     readingMin: 7,
     intro:
-      "En Google Ads pagas por el clic aunque el visitante se vaya en dos segundos. La landing es el único tramo del embudo donde puedes mejorar el resultado sin subir la inversión, y es justamente el que casi nadie toca: la mayoría de campañas siguen apuntando a la home. Si quieres que la hagamos nosotros, mira el [diseño de landing pages](/diseno-de-landing-pages) de Websy.",
+      "En Google Ads pagas por el clic aunque el visitante se vaya en dos segundos. La landing es el único tramo del embudo donde puedes mejorar el resultado sin subir la inversión, y es justamente el que casi nadie toca: la mayoría de campañas siguen apuntando a la home. Si quieres que la hagamos nosotros, mira el [diseño de landing pages](/diseno-de-landing-pages) de Websy; si además buscas quién gestione la campaña, trabajamos como [agencia de Google Ads en Perú](/google-ads).",
     sections: [
       {
         h2: "Por qué la home es una mala landing",
@@ -5907,24 +5995,29 @@ export const BLOG_POSTS: BlogPost[] = [
     related: [
       { label: "Google Ads", href: "/google-ads", desc: "Gestionamos campañas orientadas a clientes, no a clics." },
       { label: "Diferencia entre página web y landing page", href: "/blog/diferencia-entre-pagina-web-y-landing-page", desc: "Cuál necesitas según lo que quieras conseguir." },
-      { label: "Google Ads para pymes en Perú: cuánto invertir", href: "/blog/google-ads-para-pymes-en-peru-cuanto-invertir", desc: "Qué presupuesto tiene sentido para empezar." },
+      { label: "Cuánto cuesta Google Ads en Perú", href: "/blog/google-ads-para-pymes-en-peru-cuanto-invertir", desc: "Qué presupuesto tiene sentido para empezar." },
     ],
   },
 
   {
     slug: "como-elegir-un-hosting-en-peru",
-    title: "Cómo elegir un hosting en Perú sin equivocarte",
-    h1: "Cómo elegir un hosting en Perú sin equivocarte",
+    /* 7-nov-2026 · GSC 28 d: 1.549 imp en puesto 15,8 y 0 clics («hosting peru» 150,
+       «hosting» 151, «hosting web» 135, «contratar hosting peru» 127, «hosting barato»
+       112, «ranking hosting peru» 92, «hosting recomendados» 57, «hosting seguro peru»
+       47). Este se queda con ELEGIR/CONTRATAR; el precio es de
+       /blog/cuanto-cuesta-un-hosting-y-un-dominio-pe-en-peru. */
+    title: "Mejor hosting en Perú: cómo elegir uno sin equivocarte (2026)",
+    h1: "Cuál es el mejor hosting en Perú y cómo elegirlo sin equivocarte",
     description:
-      "Qué mirar antes de contratar un hosting en Perú: velocidad, soporte real, respaldos, certificado SSL y los cobros que aparecen en la renovación.",
+      "El mejor hosting en Perú es el que aguanta tus visitas: qué revisar antes de contratar uno (velocidad, soporte, respaldos, SSL, renovación) y cuál te toca.",
     excerpt:
       "El hosting barato sale caro cuando la web se cae un lunes de campaña. Esto es lo que hay que mirar antes de contratar.",
     datePublished: "2026-08-26",
-    dateModified: "2026-09-08",
+    dateModified: "2026-11-07",
     category: "Web",
     readingMin: 7,
     intro:
-      "Elegir hosting no es elegir el más barato: es elegir el que aguanta cuando tu web recibe visitas de verdad. Lo que decide la factura final no es el precio del primer año, sino la velocidad, el soporte cuando algo falla y cuánto sube la renovación. Aquí están los seis puntos que conviene revisar antes de pagar, y las trampas más comunes del mercado peruano.",
+      "El mejor hosting en Perú no es una marca: es el que aguanta cuando tu web recibe visitas de verdad, responde rápido desde Lima y tiene soporte cuando algo falla. Para elegirlo sin equivocarte hay seis puntos que conviene revisar antes de contratar, más las trampas de renovación más comunes del mercado peruano. Si lo que buscas son tarifas, están en [el precio de un hosting y un dominio .pe](/blog/cuanto-cuesta-un-hosting-y-un-dominio-pe-en-peru).",
     sections: [
       {
         h2: "Velocidad: dónde está el servidor importa",
@@ -5954,7 +6047,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Compartido, VPS o gestionado: cuál te toca",
         body:
-          "Un hosting compartido reparte un servidor entre muchas webs: es lo más barato y suficiente para una web institucional o un blog. Un VPS te reserva recursos propios y aguanta más visitas, tiene sentido para tiendas con catálogo grande o sistemas a medida. El gestionado cuesta más pero el proveedor se encarga de actualizaciones y seguridad. Si no tienes a nadie que administre el servidor, el gestionado sale más barato que un VPS mal cuidado. Cuando el proyecto arranca de cero, lo habitual es que el alojamiento venga resuelto dentro del [desarrollo de la web](/desarrollo-web) y no haya que elegir nada.",
+          "Un hosting compartido reparte un servidor entre muchas webs: es lo más barato y suficiente para una web institucional o un blog. Un VPS te reserva recursos propios y aguanta más visitas, tiene sentido para tiendas con catálogo grande o sistemas a medida. El gestionado cuesta más pero el proveedor se encarga de actualizaciones y seguridad. Si no tienes a nadie que administre el servidor, el gestionado sale más barato que un VPS mal cuidado. Si lo que vas a alojar es una tienda, los requisitos cambian: lo vemos en [hosting para WooCommerce en Perú](/blog/hosting-para-woocommerce-en-peru). Cuando el proyecto arranca de cero, lo habitual es que el alojamiento venga resuelto dentro del [desarrollo de la web](/desarrollo-web) y no haya que elegir nada.",
       },
       {
         h2: "Y si prefieres no ocuparte de esto",
@@ -5981,6 +6074,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     related: [
+      { label: "Hosting.pe vs hosting.com.pe", href: "/blog/hosting-pe-vs-hosting-com-pe-cual-elegir", desc: "Planes, IGV, soporte y renovación de dos proveedores peruanos." },
       { label: "Cuánto cuesta un hosting y un dominio .pe", href: "/blog/cuanto-cuesta-un-hosting-y-un-dominio-pe-en-peru", desc: "Los precios reales y qué incluye cada plan." },
       { label: "Mantenimiento y soporte web", href: "/mantenimiento-web", desc: "Nos ocupamos del hosting, los respaldos y las actualizaciones." },
       { label: "Diseño de páginas web", href: "/diseno-de-paginas-web", desc: "Tu web lista y alojada, sin que tengas que elegir servidores." },
@@ -6306,18 +6400,22 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "certificado-ssl-que-es-y-por-que-tu-web-lo-necesita",
-    title: "Certificado SSL: qué es y por qué tu web lo necesita",
-    h1: "Certificado SSL: qué es y por qué tu web lo necesita",
+    /* 7-nov-2026 · Cluster SSL de 273 imp en los puestos 16-30 («certificado ssl
+       peru» 85 imp 16,1; «para que sirve un certificado ssl» 58 imp 26,8). Title con
+       Perú y las tres preguntas; respuesta directa a qué es, para qué sirve y cuánto
+       cuesta en la intro; FAQ con las formas exactas de búsqueda. */
+    title: "Certificado SSL en Perú: qué es, para qué sirve y cuánto cuesta",
+    h1: "Certificado SSL: qué es, para qué sirve y cuánto cuesta en Perú",
     description:
-      "Qué es un certificado SSL, por qué Chrome marca tu web como no segura sin él, cuánto cuesta y cómo comprobar que está bien instalado.",
+      "Qué es un certificado SSL, para qué sirve, cuánto cuesta en Perú (casi siempre viene gratis con el hosting) y cómo comprobar que tu web lo tiene bien instalado.",
     excerpt:
       "Es el candado del navegador. Sin él Chrome avisa a tus visitantes de que tu sitio no es seguro, y Google lo nota.",
     datePublished: "2026-08-26",
-    dateModified: "2026-09-02",
+    dateModified: "2026-11-07",
     category: "Web",
     readingMin: 5,
     intro:
-      "Un certificado SSL cifra lo que viaja entre tu web y quien la visita, para que nadie pueda leerlo por el camino. Es lo que hace que la dirección empiece por «https» y aparezca el candado. Sin él, Chrome muestra un aviso de «no es seguro» antes de que el visitante vea tu contenido. Hoy es gratis en casi cualquier hosting, así que no tenerlo no se justifica.",
+      "Un certificado SSL es un archivo instalado en el servidor que cifra lo que viaja entre tu web y quien la visita. Sirve para que nadie lea por el camino los datos de un formulario o de un pago, y es lo que pone el «https» y el candado en la dirección. En Perú casi todos los hostings lo incluyen gratis con Let's Encrypt, así que no tenerlo no se justifica.",
     sections: [
       {
         h2: "Qué pasa si tu web no lo tiene",
@@ -6351,6 +6449,18 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     faqs: [
+      {
+        q: "¿Qué es un certificado SSL?",
+        a: "Es un archivo que se instala en el servidor de tu web y cifra la conexión con cada visitante. Gracias a él la dirección empieza por «https» y el navegador muestra el candado.",
+      },
+      {
+        q: "¿Para qué sirve un certificado SSL?",
+        a: "Sirve para que los datos que se envían en tu web (formularios, contraseñas, pagos) viajen cifrados, para que Chrome no marque tu sitio como «no seguro» y para que las pasarelas de pago te habiliten. También es uno de los factores que Google considera.",
+      },
+      {
+        q: "¿Cuánto cuesta un certificado SSL en Perú?",
+        a: "Normalmente nada: la mayoría de hostings en Perú incluye certificados gratuitos de Let's Encrypt que se renuevan solos. Los de pago solo se justifican si necesitas validación extendida de la empresa o garantías comerciales; su precio depende de cada emisor.",
+      },
       {
         q: "¿El SSL gratis protege igual que uno de pago?",
         a: "El cifrado es el mismo. Lo que cambia son las garantías comerciales y el nivel de validación de la organización, que importan en casos concretos. Para una web de empresa o una tienda, el gratuito cumple.",
@@ -7123,7 +7233,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: "Software",
     readingMin: 6,
     intro:
-      "Un software a medida es un programa creado específicamente para una empresa, a partir de cómo trabaja ella, en lugar de un producto genérico que muchas empresas usan igual. Puede ser un sistema web, una aplicación móvil o un panel interno, y es tuyo: el código, los datos y las reglas responden a tu negocio. Aquí verás qué incluye, ejemplos concretos y cuándo vale la pena. Si ya sabes que lo necesitas, aquí está nuestro servicio de [desarrollo de software a medida en Perú](/desarrollo-de-software-a-medida).",
+      "Un software a medida es un programa creado específicamente para una empresa, a partir de cómo trabaja ella, en lugar de un producto genérico que muchas empresas usan igual. Puede ser un sistema web, una aplicación móvil o un panel interno, y es tuyo: el código, los datos y las reglas responden a tu negocio. Aquí verás qué incluye, ejemplos concretos y cuándo vale la pena. Si ya sabes que lo necesitas, aquí está nuestro servicio de [software a medida en Perú](/desarrollo-de-software-a-medida).",
     sections: [
       {
         h2: "Qué significa que un software sea «a medida»",
@@ -7487,6 +7597,358 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Diseño de páginas web", href: "/diseno-de-paginas-web", desc: "Webs nuevas o rediseñadas, rápidas y medidas." },
       { label: "Servicio de SEO", href: "/seo", desc: "Posicionamiento técnico, de contenidos y local." },
       { label: "Checklist de SEO on-page", href: "/blog/seo-on-page-checklist-para-tu-pagina-web", desc: "Lo básico que cada página debe tener." },
+    ],
+  },
+  {
+    /* 7-nov-2026 · Search Console 90 d: «hosting.pe vs hosting.com.pe» 82 imp (puesto
+       12,6) y «hosting.pe opiniones» 78 imp (puesto 26,7) caían en los artículos
+       genéricos de hosting, que no comparan proveedores. Datos leídos en vivo en
+       www.hosting.pe y www.hosting.com.pe el 7-nov-2026. Comparativa neutral. */
+    slug: "hosting-pe-vs-hosting-com-pe-cual-elegir",
+    title: "Hosting.pe vs hosting.com.pe: cuál elegir",
+    h1: "Hosting.pe vs hosting.com.pe: diferencias en planes, soporte y renovación",
+    description:
+      "Hosting.pe y hosting.com.pe son dos empresas distintas. Comparamos sus planes de entrada, el IGV, el soporte y la renovación con datos leídos en sus webs el 7-nov-2026.",
+    excerpt:
+      "Dos dominios que se confunden y dos empresas que venden hosting de forma distinta. Planes, IGV, soporte y renovación, lado a lado.",
+    datePublished: "2026-11-07",
+    category: "Web",
+    readingMin: 8,
+    intro:
+      "Hosting.pe y hosting.com.pe son dos empresas distintas, aunque los nombres se parezcan. Hosting.pe vende planes con más espacio, precios más IGV y soporte telefónico 24/7; hosting.com.pe, que se presenta como Hosting Peru, tiene planes de entrada más baratos con el IGV ya incluido. Cuál te conviene depende de cuántos correos y webs vas a alojar. Si prefieres no administrar el hosting tú, en Websy nos encargamos con nuestro [mantenimiento web](/mantenimiento-web).",
+    sections: [
+      {
+        h2: "Primero: son dos empresas, no la misma con dos dominios",
+        body:
+          "Mucha gente llega a esta búsqueda porque escribió una dirección pensando en la otra. Hosting.pe dice operar en Perú desde 1999 y tener datacenter propio. Hosting.com.pe usa el nombre comercial Hosting Peru, habla de más de 19 años en el mercado y de un local propio en Lima. Tienen teléfonos, paneles de cliente y facturación separados. Si ya tienes un servicio con una de las dos, el soporte y los pagos se hacen solo con esa: la otra no puede ver tu cuenta.",
+      },
+      {
+        h2: "Planes de entrada lado a lado",
+        body:
+          "Comparamos el plan más barato de hosting compartido y el plan intermedio de cada una, tal como aparecen en sus portadas. Fíjate en el IGV antes de comparar precios: una publica el monto sin impuesto y la otra con impuesto incluido.",
+        table: {
+          cabeceras: ["Punto", "Hosting.pe", "Hosting.com.pe"],
+          filas: [
+            ["Plan de entrada", "Hosting Perfecto: 20 GB SSD, 1 web, 20 correos", "Hosting Personal: 3 GB, 10 GB de tráfico al mes, 5 correos"],
+            ["Precio anual del plan de entrada", "S/ 159 + IGV", "S/ 59 con IGV incluido (dominio .com aparte, S/ 29)"],
+            ["Plan intermedio", "Hosting Pyme: 50 GB SSD, 5 webs, 50 correos", "Hosting Empresarial: 10 GB, 250 GB de tráfico, 30 correos, dominio .com gratis"],
+            ["Precio anual del plan intermedio", "S/ 259 + IGV", "S/ 139 con IGV incluido"],
+            ["Copias de seguridad", "Diarias, con 30 días de historial", "Diarias (usa JetBackup)"],
+            ["Panel", "cPanel y Softaculous", "cPanel y Softaculous en los planes superiores"],
+            ["Soporte", "Teléfono 24/7, incluidos feriados", "Teléfono, WhatsApp y soporte 24/7 según su web"],
+            ["Renovación", "Ofrece «garantía de precio»: la siguiente renovación al mismo precio", "No encontramos en su portada una garantía de precio para la renovación"],
+          ],
+          nota: "Fuente: portadas de www.hosting.pe y www.hosting.com.pe, leídas el 7-nov-2026. Los precios y recursos cambian con frecuencia; confirma en la web de cada proveedor antes de pagar.",
+        },
+      },
+      {
+        h2: "Dónde gana cada una",
+        body:
+          "Hosting.com.pe es más barato para empezar, y que el precio ya traiga el IGV evita la sorpresa al pagar. Su plan de entrada sirve para una web sencilla con pocos correos. Para una empresa con diez o más personas usando correo, el salto al plan Empresarial o Corporativo llega pronto. Hosting.pe cuesta más desde el primer plan, pero da bastante más espacio y cuentas de correo por plan, promete que la renovación mantiene el precio y pone el soporte telefónico 24/7 en el centro de su oferta. También ofrece seis meses de garantía de devolución, según su portada.",
+        bullets: [
+          "Web informativa pequeña, presupuesto ajustado: hosting.com.pe, plan Personal o Económico.",
+          "Empresa con muchos correos corporativos: compara el plan Pyme de hosting.pe con el Corporativo de hosting.com.pe.",
+          "Si te preocupa que el precio suba al renovar: hosting.pe lo deja por escrito; con hosting.com.pe, pídelo por escrito antes de contratar.",
+        ],
+      },
+      {
+        h2: "Opiniones: qué mirar antes de fiarte de las estrellas",
+        body:
+          "Hosting.pe muestra en su portada una nota de 4,8 en reseñas de Google y algunos comentarios de clientes. Hosting.com.pe no muestra una nota en su portada. Las dos tienen reseñas públicas en su ficha de Google, y ahí es donde conviene leer, no en la web de la empresa. Al revisarlas, ordénalas por las más recientes y busca tres cosas: si los problemas son de correo (que no llega o cae en spam), si hablan de caídas largas y cómo respondió el soporte cuando algo falló. Una reseña de alguien que recién contrató dice poco; una de alguien que lleva años y tuvo un problema dice mucho más.",
+      },
+      {
+        h2: "Lo que te recomendamos preguntar antes de pagar",
+        body:
+          "Las dos empresas tienen asesores de venta. Antes de pagar, pídeles por escrito estas respuestas. Te ahorran la mayoría de disgustos que vemos cuando un cliente nos trae una web con problemas de hosting.",
+        bullets: [
+          "¿Cuánto cuesta renovar el mismo plan el segundo año, con IGV?",
+          "¿El dominio gratis también es gratis al renovar?",
+          "¿Cuántos días de copias guardan y puedo restaurarlas yo desde el panel?",
+          "¿Qué versión de PHP tienen y puedo cambiarla? (importa si usas WordPress o WooCommerce)",
+          "¿Puedo configurar SPF, DKIM y DMARC para que mis correos no caigan en spam?",
+          "¿La migración desde mi proveedor actual es gratuita y quién la hace?",
+        ],
+      },
+      {
+        h2: "Cómo cambiarte de uno a otro sin perder correos",
+        body:
+          "Las dos empresas dicen en su web que migran gratis desde tu proveedor actual. Aun así, el riesgo de una mudanza de hosting no está en los archivos de la web, está en el correo. Si cambias los DNS antes de copiar los buzones, durante unas horas los mensajes nuevos llegan al servidor nuevo y los antiguos se quedan en el viejo. Para evitarlo, sigue este orden:",
+        bullets: [
+          "Contrata el nuevo plan sin cancelar el anterior.",
+          "Pide la migración de la web y de los buzones de correo, y revisa que todo funcione en el servidor nuevo antes de tocar el dominio.",
+          "Cambia los DNS o los registros MX en un día de poco movimiento, no un lunes en la mañana.",
+          "Deja el plan anterior activo una o dos semanas, por si algún correo o archivo quedó atrás.",
+          "Después de la mudanza, vuelve a configurar SPF y DKIM con los datos del nuevo proveedor.",
+        ],
+      },
+      {
+        h2: "¿Y si no quieres elegir hosting?",
+        body:
+          "Elegir proveedor es la parte fácil. Lo que da trabajo es mantener la web al día: actualizar plugins, revisar copias, renovar el dominio a tiempo y arreglar el correo cuando deja de llegar. Si quieres el detalle de qué mirar en cualquier proveedor, lee [cómo elegir un hosting en Perú](/blog/como-elegir-un-hosting-en-peru). Para el presupuesto anual completo, con dominio .pe incluido, revisa [cuánto cuesta un hosting y un dominio .pe](/blog/cuanto-cuesta-un-hosting-y-un-dominio-pe-en-peru). Y si tu web es una tienda, los requisitos cambian: lo explicamos en [hosting para WooCommerce](/blog/hosting-para-woocommerce-en-peru).",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Hosting.pe y hosting.com.pe son la misma empresa?",
+        a: "No. Son dos empresas peruanas distintas, con planes, teléfonos y facturación separados. Hosting.com.pe usa el nombre comercial Hosting Peru.",
+      },
+      {
+        q: "¿Cuál es más barato, hosting.pe o hosting.com.pe?",
+        a: "En planes de entrada, hosting.com.pe: su plan Personal costaba S/ 59 al año con IGV incluido al 7-nov-2026, frente a S/ 159 + IGV del plan Perfecto de hosting.pe. Hosting.pe da más espacio y correos por plan.",
+      },
+      {
+        q: "¿Los precios de hosting.pe incluyen IGV?",
+        a: "No. Hosting.pe publica sus precios más IGV. Hosting.com.pe los publica con IGV incluido. Compara siempre el monto final.",
+      },
+      {
+        q: "¿Sube el precio al renovar?",
+        a: "Hosting.pe ofrece una garantía de precio para la siguiente renovación. En la portada de hosting.com.pe no encontramos esa garantía, así que conviene pedir el precio de renovación por escrito.",
+      },
+      {
+        q: "¿Websy trabaja con alguno de estos proveedores?",
+        a: "No vendemos ni revendemos hosting de ninguno de los dos. Con nuestro mantenimiento web administramos el hosting que tengas o te ayudamos a elegir uno, y todo queda a tu nombre.",
+      },
+    ],
+    related: [
+      { label: "Mantenimiento web", href: "/mantenimiento-web", desc: "Hosting, respaldos y actualizaciones al día, sin que tengas que hacerlo tú." },
+      { label: "Cómo elegir un hosting en Perú", href: "/blog/como-elegir-un-hosting-en-peru", desc: "Los seis puntos que conviene revisar antes de pagar." },
+      { label: "Cuánto cuesta un hosting y un dominio .pe", href: "/blog/cuanto-cuesta-un-hosting-y-un-dominio-pe-en-peru", desc: "El presupuesto anual completo de una web." },
+    ],
+  },
+  {
+    /* 7-nov-2026 · Search Console 90 d: el cluster de Mercado Pago suma 705 imp
+       («¿qué diferencia a mercado pago de otras pasarelas?» 210 imp puesto 6,3;
+       «alternativas a mercado pago» 83 imp puesto 8) y no había guía de integración,
+       solo la comparativa culqi-vs-mercado-pago. Pasos y medios de pago leídos en la
+       documentación oficial (mercadopago.com.pe/developers) el 7-nov-2026. Sin comisiones. */
+    slug: "como-integrar-mercado-pago-en-tu-tienda-virtual-en-peru",
+    title: "Cómo integrar Mercado Pago en tu tienda virtual en Perú",
+    h1: "Cómo integrar Mercado Pago en tu tienda virtual en Perú: Shopify, WooCommerce o web a medida",
+    description:
+      "Guía para integrar Mercado Pago en Perú: requisitos, pasos en Shopify y WooCommerce, y Checkout Pro frente a Bricks o API en una web a medida, según la documentación oficial.",
+    excerpt:
+      "Requisitos, pasos por plataforma y qué checkout elegir, con lo que dice la documentación oficial de Mercado Pago Perú.",
+    datePublished: "2026-11-07",
+    category: "Ecommerce",
+    readingMin: 9,
+    intro:
+      "Para integrar Mercado Pago en tu tienda virtual en Perú necesitas una cuenta de vendedor de Mercado Pago y un certificado SSL. En Shopify y WooCommerce se hace con la app o el plugin oficial, sin programar; en una web a medida eliges entre Checkout Pro, que lleva al cliente a pagar en Mercado Pago, o Checkout Bricks y Checkout API, que cobran dentro de tu web. Si quieres que lo conectemos nosotros, mira nuestra [integración de pasarelas de pago](/integracion-de-pagos).",
+    sections: [
+      {
+        h2: "Lo que necesitas antes de empezar",
+        body:
+          "La documentación de Mercado Pago Perú pide lo mismo para todas las plataformas. Tenlo listo antes de tocar la tienda, porque la vinculación falla si falta algo.",
+        bullets: [
+          "Una cuenta de vendedor de Mercado Pago. Puedes crearla con un usuario de Mercado Pago o de Mercado Libre.",
+          "Certificado SSL activo: la tienda tiene que cargar con https.",
+          "Acceso de administrador a tu tienda (Shopify, WordPress o el servidor de tu web).",
+          "Los datos de tu negocio y la cuenta bancaria donde vas a retirar el dinero, cargados en Mercado Pago.",
+        ],
+      },
+      {
+        h2: "Los tres checkouts de Mercado Pago, comparados",
+        body:
+          "Antes de integrar, decide dónde quieres que pague el cliente. Esa decisión define cuánto desarrollo necesitas.",
+        table: {
+          cabeceras: ["Checkout", "Dónde paga el cliente", "Medios de pago en Perú", "Para quién"],
+          filas: [
+            ["Checkout Pro", "En Mercado Pago, por redirección, y vuelve a tu tienda", "Tarjeta de crédito o débito, cuenta Mercado Pago y Yape", "Quien quiere integrar rápido y aprovechar los datos que el cliente ya guardó en Mercado Pago"],
+            ["Checkout Bricks", "En tu web, con módulos ya diseñados por Mercado Pago", "Tarjeta de crédito o débito, cuenta Mercado Pago y Yape", "Webs a medida que quieren cobrar sin salir del sitio y sin diseñar el formulario desde cero"],
+            ["Checkout API", "En tu web, con un formulario propio", "Tarjeta de crédito o débito, cuenta Mercado Pago y Yape", "Proyectos con equipo de desarrollo que necesitan control total del cobro"],
+          ],
+          nota: "Fuente: documentación de Mercado Pago Perú, mercadopago.com.pe/developers (Checkout Pro, Checkout Bricks y Checkout API), leída el 7-nov-2026. En los plugins de Shopify y WooCommerce, la versión Checkout API muestra solo tarjeta.",
+        },
+      },
+      {
+        h2: "Cómo integrar Mercado Pago en Shopify",
+        body:
+          "En Shopify no se programa nada. Mercado Pago tiene aplicaciones oficiales que se instalan desde el panel de la tienda. Los pasos que indica la documentación son:",
+        bullets: [
+          "Crear la cuenta de vendedor en Mercado Pago.",
+          "Instalar las aplicaciones de Mercado Pago en Shopify.",
+          "Vincular tu cuenta de Mercado Pago con la tienda.",
+          "Configurar y activar los medios de pago que vas a ofrecer.",
+          "Hacer una compra de prueba antes de abrir al público.",
+        ],
+      },
+      {
+        h2: "Cómo integrar Mercado Pago en WooCommerce",
+        body:
+          "En WooCommerce se usa el plugin oficial de Mercado Pago para WordPress. Es compatible con WooCommerce Blocks, el checkout nuevo de WooCommerce, y te deja elegir entre Checkout Pro y Checkout API o activar los dos. El orden es crear la cuenta, instalar el plugin, vincular la cuenta, configurar los medios de pago, probar y pasar a producción. Revisa antes que tu hosting cumpla los requisitos de WooCommerce: un servidor lento hace fallar los avisos de pago y el pedido queda pendiente aunque el cliente ya pagó. Lo explicamos en [hosting para WooCommerce](/blog/hosting-para-woocommerce-en-peru).",
+      },
+      {
+        h2: "Cómo integrar Mercado Pago en una web a medida",
+        body:
+          "Si tu tienda está hecha a medida, la integración la hace un desarrollador. Con Checkout Pro, la documentación oficial marca este camino: crear una aplicación en «Tus integraciones», preparar el ambiente de desarrollo, crear la preferencia de pago (el monto y los productos), configurar las URLs de retorno, agregar el SDK en la web, configurar las notificaciones de pago por webhooks o IPN, probar y salir a producción. Con Bricks se inicializa el SDK y se elige el módulo que necesitas: Payment Brick para varios medios de pago, Card Payment Brick solo para tarjeta, Wallet Brick para pagar con la cuenta de Mercado Pago y Status Screen Brick para mostrar el resultado de la compra.",
+        bullets: [
+          "No confirmes el pedido solo porque el cliente volvió a la URL de retorno. Confírmalo cuando llegue la notificación del pago.",
+          "Usa las credenciales de prueba hasta que las compras de prueba con tarjeta salgan bien, y recién entonces cambia a las de producción.",
+          "Guarda en tu sistema el número de pago de Mercado Pago junto a cada pedido: lo vas a necesitar para devoluciones y contracargos.",
+        ],
+      },
+      {
+        h2: "Errores que vemos al integrar Mercado Pago",
+        body:
+          "Casi todos los problemas que nos llegan después de una integración son de configuración, no de Mercado Pago. Los más repetidos:",
+        bullets: [
+          "Dejar las credenciales de prueba en la tienda publicada: el cliente cree que pagó y el dinero nunca entra.",
+          "No configurar las notificaciones: el pago se aprueba, pero el pedido queda pendiente y nadie lo despacha.",
+          "Ofrecer Mercado Pago como única opción: parte de los compradores prefiere pagar con Yape directo o por transferencia.",
+          "No probar desde el celular: la mayoría de compras en Perú se hacen desde el teléfono, y ahí es donde aparecen los botones que no se ven.",
+          "No revisar el correo de confirmación: si no llega o cae en spam, el cliente escribe por WhatsApp preguntando si su pedido existe.",
+        ],
+      },
+      {
+        h2: "Qué diferencia a Mercado Pago de otras pasarelas en Perú",
+        body:
+          "La diferencia principal es la cuenta del comprador. Con Checkout Pro, quien ya usa Mercado Pago o Mercado Libre paga con los medios que tiene guardados, y quien no tiene cuenta puede pagar como invitado. En Perú el checkout incluye Yape además de tarjeta. Culqi, Niubiz o Izipay cobran con tarjeta dentro de tu tienda y no traen esa cuenta del comprador. Si estás eligiendo entre opciones, compara [Culqi y Mercado Pago](/blog/culqi-vs-mercado-pago-en-peru) y revisa el panorama de [pasarelas de pago en Perú](/blog/pasarelas-de-pago-para-ecommerce-en-peru). Las comisiones cambian según el plazo en que retiras el dinero; consúltalas en la página de tarifas de Mercado Pago antes de decidir.",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Qué necesito para integrar Mercado Pago en mi tienda?",
+        a: "Una cuenta de vendedor de Mercado Pago (puede ser con tu usuario de Mercado Libre) y un certificado SSL activo en la tienda, según la documentación oficial de Mercado Pago Perú.",
+      },
+      {
+        q: "¿Mercado Pago acepta Yape en Perú?",
+        a: "Sí. Según la documentación oficial, Checkout Pro, Checkout Bricks y Checkout API aceptan en Perú tarjeta de crédito o débito, cuenta Mercado Pago y Yape.",
+      },
+      {
+        q: "¿Se puede integrar Mercado Pago en WooCommerce sin programar?",
+        a: "Sí. Mercado Pago tiene un plugin oficial para WooCommerce: lo instalas, vinculas tu cuenta, configuras los medios de pago y pruebas antes de publicar.",
+      },
+      {
+        q: "¿Qué diferencia hay entre Checkout Pro y Checkout Bricks?",
+        a: "Con Checkout Pro el cliente paga en Mercado Pago y vuelve a tu tienda. Con Checkout Bricks paga dentro de tu web, con módulos que Mercado Pago ya diseñó.",
+      },
+      {
+        q: "¿Cuáles son las alternativas a Mercado Pago en Perú?",
+        a: "Para cobrar con tarjeta, Culqi, Niubiz e Izipay. Para pagos inmediatos, Yape y Plin. Muchas tiendas combinan una pasarela de tarjeta con Yape.",
+      },
+      {
+        q: "¿Websy integra Mercado Pago?",
+        a: "Sí. Lo conectamos en Shopify, WooCommerce o en webs y sistemas a medida, probamos los pagos y dejamos los pedidos confirmándose solos.",
+      },
+    ],
+    related: [
+      { label: "Integración de pasarelas de pago", href: "/integracion-de-pagos", desc: "Conectamos Mercado Pago, Yape, Culqi, Niubiz o Izipay a tu tienda." },
+      { label: "Culqi vs Mercado Pago", href: "/blog/culqi-vs-mercado-pago-en-peru", desc: "Cuál conviene según dónde vendes y quién te compra." },
+      { label: "Pasarelas de pago en Perú", href: "/blog/pasarelas-de-pago-para-ecommerce-en-peru", desc: "Cómo combinar Yape, Plin y tarjeta para no perder ventas." },
+      { label: "Tiendas virtuales", href: "/tiendas-virtuales", desc: "Tiendas con pagos integrados y control de stock." },
+    ],
+  },
+  {
+    /* 7-nov-2026 · Search Console 90 d: «sistema de inventario» 11 imp en el puesto 65,
+       y /sistemas/inventario 3 clics en el puesto 16,6. No había una pieza de costo
+       para inventario (la de software a medida es general). Única cifra: «software a
+       medida desde S/ 20,000», publicada en /precios. */
+    slug: "cuanto-cuesta-un-sistema-de-inventario-en-peru",
+    title: "Cuánto cuesta un sistema de inventario en Perú",
+    h1: "Cuánto cuesta un sistema de inventario en Perú: enlatado o a medida",
+    description:
+      "De qué depende el costo de un sistema de inventario en Perú: almacenes, usuarios, integraciones, enlatado o a medida y mensualidad o pago único. Con la referencia de precio de Websy.",
+    excerpt:
+      "Los factores que suben o bajan el precio, cuándo basta un programa enlatado y cuándo conviene uno propio.",
+    datePublished: "2026-11-07",
+    category: "Software",
+    readingMin: 8,
+    intro:
+      "El costo de un sistema de inventario depende de cuántos almacenes y usuarios tienes, de con qué debe conectarse (caja, facturación electrónica, tienda virtual) y de si lo alquilas por mes o lo mandas a hacer a medida. Un programa enlatado se paga por mensualidad; un sistema propio se paga una vez y queda tuyo. En Websy el software a medida parte desde S/ 20,000. Aquí ves qué mueve el precio. Si ya sabes que necesitas uno, revisa nuestro [sistema de inventario a medida](/sistemas/inventario).",
+    sections: [
+      {
+        h2: "Enlatado o a medida: la primera decisión",
+        body:
+          "Un sistema enlatado es un programa que ya existe y que alquilas: lo usas como viene, con algunas opciones de configuración. Un sistema a medida se construye sobre tu forma de trabajar. Ninguno es mejor en abstracto. El enlatado tiene sentido cuando tu proceso es estándar; el propio, cuando el programa te obliga a trabajar como él quiere y ya estás llevando parte del stock en Excel por fuera. Lo desarrollamos con más detalle en [software a medida vs enlatado](/blog/software-a-medida-vs-software-enlatado).",
+        table: {
+          cabeceras: ["Punto", "Sistema enlatado", "Sistema a medida"],
+          filas: [
+            ["Cómo se paga", "Mensualidad, normalmente por usuario o por plan", "Pago por el desarrollo, más mantenimiento si lo contratas"],
+            ["Tiempo para empezar", "Días", "Semanas o meses, según los módulos"],
+            ["Ajuste a tu proceso", "Te adaptas tú al programa", "El sistema se adapta a tu operación"],
+            ["Integraciones", "Las que el proveedor ya tenga", "Las que necesites: caja, facturación, tienda virtual, courier"],
+            ["De quién son los datos y el código", "Del proveedor; tú tienes acceso mientras pagues", "En Websy, el código y la base de datos se entregan al cliente"],
+            ["Precio de referencia", "Consultar con cada proveedor", "Software a medida desde S/ 20,000 en Websy"],
+          ],
+          nota: "Precio de referencia publicado en websy.com.pe/precios, revisado el 7-nov-2026. Es un monto desde: el precio final depende de módulos, usuarios e integraciones.",
+        },
+      },
+      {
+        h2: "Qué sube o baja el precio de un sistema de inventario",
+        body:
+          "Dos empresas pueden pedir «un sistema de inventario» y estar hablando de proyectos muy distintos. Estos son los puntos que más cambian el presupuesto:",
+        bullets: [
+          "Número de almacenes o tiendas: con uno, el stock es una sola cifra; con varios, hay transferencias entre locales y stock por ubicación.",
+          "Variantes de producto: tallas, colores, lotes o fechas de vencimiento multiplican los registros y las reglas.",
+          "Usuarios y permisos: no es lo mismo un dueño que hace todo que un equipo con almacenero, vendedor y contador, cada uno con su acceso.",
+          "Integraciones: conectar la caja, la facturación electrónica o la tienda virtual para que cada venta descuente sola.",
+          "Lectores de código de barras o una app en el celular para contar en el almacén.",
+          "Reportes: kardex, valorización del inventario, rotación y alertas de reposición.",
+          "Migración de datos: pasar tu Excel actual al sistema, limpio y sin duplicados.",
+        ],
+      },
+      {
+        h2: "Mensualidad o pago único: cómo compararlos bien",
+        body:
+          "La mensualidad parece más barata porque el primer mes cuesta poco. Para comparar en serio, suma lo que pagarías en tres años por todos tus usuarios, más lo que pagas hoy por los trabajos que el programa no cubre (la persona que cuadra el Excel cada semana, los pedidos perdidos por falta de stock). Del otro lado, el sistema a medida tiene un costo inicial más alto y después necesita servidor y mantenimiento. Ninguna de las dos cuentas es difícil de hacer, pero hay que hacerlas con números de tu negocio, no con el precio de la portada del proveedor.",
+      },
+      {
+        h2: "Qué pedir en la primera versión (y qué dejar para después)",
+        body:
+          "La forma más segura de controlar el costo es no construir todo de golpe. Una primera versión que ya resuelva el descuadre suele bastar para empezar a usarla, y el resto se suma con lo que aprendes en el día a día. Así lo ordenamos normalmente:",
+        bullets: [
+          "Primera versión: productos con su código, entradas y salidas, stock por almacén, kardex y usuarios con permisos.",
+          "Segunda etapa: conexión con la caja o la tienda virtual, para que cada venta descuente sola.",
+          "Después: alertas de reposición, reportes de rotación, app para conteos con el celular y lo que haya salido en el uso.",
+        ],
+      },
+      {
+        h2: "Cómo pedir cotizaciones que puedas comparar",
+        body:
+          "Si pides presupuesto a varios proveedores con la frase «quiero un sistema de inventario», cada uno va a cotizar algo distinto y no vas a poder compararlos. Antes de escribir, anota en una hoja cuántos almacenes tienes, cuántas personas van a usar el sistema y con qué rol, cuántos productos y variantes manejas, por dónde vendes y qué reportes miras hoy. Pide que cada cotización separe el desarrollo, el servidor y el mantenimiento, y que diga por escrito de quién es el código y los datos al terminar. Con esa misma hoja puedes comparar también un programa enlatado: si no cubre algo de tu lista, ya sabes qué vas a seguir haciendo en Excel.",
+      },
+      {
+        h2: "Costos que se olvidan al presupuestar",
+        body:
+          "En los presupuestos que nos traen para comparar, estos son los puntos que más se omiten:",
+        bullets: [
+          "Servidor o hosting del sistema, si es a medida.",
+          "Mantenimiento: corrección de errores, copias de seguridad y actualizaciones de seguridad.",
+          "Capacitación del equipo, sobre todo de quienes hacen los conteos.",
+          "Cambios después de empezar: el primer mes de uso siempre revela algo que no se pidió al inicio.",
+        ],
+      },
+      {
+        h2: "Cuándo ya vale la pena pagar por un sistema",
+        body:
+          "Si vendes en un solo canal y tienes pocas decenas de productos, una hoja de cálculo ordenada todavía aguanta. El momento de invertir llega cuando vendes en tienda física, redes y web a la vez y el stock se descuadra, o cuando el conteo te toma un día entero. Revisa las señales en [cuándo dejar el Excel](/blog/sistema-de-gestion-para-pymes-cuando-dejar-el-excel) y, si tienes tienda online, empieza por [cómo controlar el inventario en una tienda online](/blog/como-controlar-inventario-en-una-tienda-online). Para el panorama general de precios de software, lee [cuánto cuesta un software a medida en Perú](/blog/cuanto-cuesta-un-software-a-medida-en-peru).",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Cuánto cuesta un sistema de inventario a medida en Perú?",
+        a: "Depende de almacenes, usuarios, integraciones y reportes. Como referencia, en Websy el software a medida parte desde S/ 20,000; el monto final sale del alcance que definimos contigo.",
+      },
+      {
+        q: "¿Es mejor un sistema de inventario enlatado o a medida?",
+        a: "El enlatado conviene si tu proceso es estándar y quieres empezar en días. El sistema a medida conviene cuando el programa te obliga a llevar parte del stock por fuera o necesitas conectarlo con tu caja, facturación o tienda virtual.",
+      },
+      {
+        q: "¿Un sistema de inventario se paga por mes o una sola vez?",
+        a: "Los enlatados se pagan por mensualidad. Un sistema a medida se paga por el desarrollo y luego por el servidor y el mantenimiento, si lo contratas.",
+      },
+      {
+        q: "¿Qué debe incluir un sistema de inventario?",
+        a: "Entradas y salidas, stock por almacén, kardex, alertas de reposición, usuarios con permisos y reportes de valorización. Si vendes online, la conexión con la tienda virtual.",
+      },
+      {
+        q: "¿Websy desarrolla sistemas de inventario?",
+        a: "Sí. Hacemos sistemas de inventario a medida conectados a tu caja, facturación y tienda virtual, y te entregamos el código y la base de datos.",
+      },
+    ],
+    related: [
+      { label: "Sistema de inventario a medida", href: "/sistemas/inventario", desc: "Stock en tiempo real, kardex y alertas de quiebre." },
+      { label: "Cuánto cuesta un software a medida en Perú", href: "/blog/cuanto-cuesta-un-software-a-medida-en-peru", desc: "Precios referenciales por tipo de proyecto." },
+      { label: "Software a medida vs enlatado", href: "/blog/software-a-medida-vs-software-enlatado", desc: "Cuál elegir según tu etapa y tu proceso." },
     ],
   },
 ];

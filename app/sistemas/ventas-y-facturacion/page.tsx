@@ -4,9 +4,9 @@ import ServiceLanding from "@/components/sections/landing/ServiceLanding";
 
 export const metadata: Metadata = pageMeta({
   path: "/sistemas/ventas-y-facturacion",
-  title: "Sistema de Ventas y Facturación Electrónica en Perú",
+  title: "Sistema de facturación electrónica y ventas en Perú",
   description:
-    "Sistemas de ventas y facturación a medida para empresas en Perú, con facturación electrónica. Registra ventas, emite comprobantes y controla tu caja.",
+    "Sistema de ventas y facturación electrónica a medida: boletas y facturas SUNAT desde la caja o tu tienda virtual, vía OSE o PSE, con stock y caja conectados.",
 });
 
 export default function SistemaVentasFacturacionPage() {
@@ -20,7 +20,7 @@ export default function SistemaVentasFacturacionPage() {
         { name: "Ventas y Facturación", path: "/sistemas/ventas-y-facturacion" },
       ]}
       eyebrow="Sistema · Ventas y Facturación"
-      h1="Sistema de ventas y facturación electrónica"
+      h1="Sistema de ventas y facturación electrónica SUNAT"
       intro="Desarrollamos sistemas de ventas con integración a facturación electrónica para empresas en Perú: registra cada venta, emite boletas y facturas, y controla tu caja en un solo lugar. Menos errores, menos trabajo manual y tus comprobantes en orden."
       highlights={["Facturación electrónica", "Boletas y facturas", "Control de caja", "Reportes de ventas", "Multi-usuario"]}
       stats={[
@@ -69,6 +69,36 @@ export default function SistemaVentasFacturacionPage() {
           ],
         },
         {
+          h2: "OSE o PSE: cómo llega el comprobante a SUNAT",
+          body:
+            "Un sistema de facturación no envía los comprobantes «directo a SUNAT» por arte de magia: pasa por un intermediario autorizado. Conviene entender la diferencia antes de contratar, porque cambia quién firma el comprobante y quién responde si algo falla.",
+          table: {
+            cabeceras: ["", "PSE (Proveedor de Servicios Electrónicos)", "OSE (Operador de Servicios Electrónicos)"],
+            filas: [
+              ["Qué hace", "Genera y firma el comprobante por encargo de tu empresa", "Valida el comprobante y emite la constancia de recepción (CDR) en nombre de SUNAT"],
+              ["Cuándo se usa", "Cuando no quieres manejar tu propio certificado digital", "Cuando tu sistema ya genera el XML y solo necesitas validarlo"],
+              ["Qué hace tu sistema", "Envía los datos de la venta al PSE por API", "Genera el XML firmado y lo envía al OSE"],
+            ],
+            nota: "Muchos proveedores ofrecen los dos servicios juntos. La lista de proveedores autorizados está publicada por SUNAT.",
+          },
+          bullets: [
+            "Nos integramos con el proveedor que ya tengas contratado, si expone una API.",
+            "Guardamos el XML y el CDR de cada comprobante dentro de tu sistema, no solo en el portal del proveedor.",
+            "Si un comprobante es rechazado, el sistema lo marca y muestra el motivo para corregirlo y reenviarlo.",
+          ],
+        },
+        {
+          h2: "Boletas y facturas desde tu tienda virtual",
+          body:
+            "Si vendes online, el comprobante también puede salir solo. Al confirmarse el pago en tu [tienda virtual](/tiendas-virtuales), el sistema emite la boleta o la factura con los datos que dejó el cliente en el checkout y se la envía por correo, mientras el stock se descuenta del mismo inventario que usa el local. Las reglas que aplican a la venta online están en [facturación electrónica SUNAT para tu tienda online](/blog/facturacion-electronica-sunat-para-tu-tienda-online).",
+          bullets: [
+            "El cliente elige boleta o factura en el checkout; si es factura, se pide el RUC y se valida.",
+            "El comprobante se emite cuando el pago se confirma, no cuando se arma el carrito.",
+            "Devoluciones online con nota de crédito asociada al comprobante original.",
+            "Las ventas del local y de la web en un solo reporte para tu contador.",
+          ],
+        },
+        {
           h2: "Cómo se comporta cuando hay cola en caja",
           body:
             "Un sistema de ventas se juzga en la hora punta. Por eso se diseña para que la operación más frecuente —cobrar— se haga con el mínimo de pasos: búsqueda por código, por nombre o por lector de código de barras; cobro combinado en efectivo, tarjeta, Yape o Plin en la misma venta; y cierre de caja que compara lo registrado con lo contado en físico y deja la diferencia documentada. Si el internet se cae, la caja no debería detenerse: definimos contigo qué operaciones siguen disponibles y cómo se sincronizan al volver la conexión.",
@@ -105,6 +135,14 @@ export default function SistemaVentasFacturacionPage() {
         {
           q: "¿Emite comprobantes válidos para SUNAT?",
           a: "Sí. Integramos el sistema con un proveedor de facturación electrónica para emitir boletas y facturas válidas, según la normativa vigente.",
+        },
+        {
+          q: "¿Qué diferencia hay entre OSE y PSE?",
+          a: "El PSE genera y firma los comprobantes por encargo de tu empresa; el OSE valida los comprobantes que tu sistema ya generó y emite la constancia de recepción en nombre de SUNAT. Muchos proveedores ofrecen ambos servicios, y el sistema se integra con el que elijas.",
+        },
+        {
+          q: "¿Puedo emitir boletas y facturas desde mi tienda virtual?",
+          a: "Sí. Al confirmarse el pago, el sistema emite la boleta o la factura con los datos del checkout y se la envía al cliente por correo, con el stock descontado del mismo inventario que usa tu local.",
         },
         {
           q: "¿Se integra con mi inventario?",

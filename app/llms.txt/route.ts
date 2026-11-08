@@ -30,7 +30,11 @@ const INTRO = `# Websy — Agencia de desarrollo web y software en Lima, Perú
 /** Páginas institucionales que no son ni servicio ni artículo. */
 const INSTITUCIONALES: { href: string; label: string; desc: string }[] = [
   { href: "/", label: "Inicio", desc: "qué hace Websy, servicios y forma de trabajo." },
-  { href: "/servicios", label: "Servicios", desc: "índice de las 23 páginas de servicio y de rubro." },
+  {
+    href: "/servicios",
+    label: "Servicios",
+    desc: `índice de las ${SERVICE_LINKS.length + RUBRO_LINKS.length} páginas de servicio y de rubro.`,
+  },
   { href: "/nosotros", label: "Nosotros", desc: "el equipo de Websy y cómo trabaja la agencia." },
   { href: "/contacto", label: "Contacto", desc: "teléfono, correo, horario y formulario de contacto." },
   { href: "/blog", label: "Blog", desc: "guías de ecommerce, web, software, SEO y pagos en Perú." },
