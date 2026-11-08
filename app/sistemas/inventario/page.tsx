@@ -4,9 +4,9 @@ import ServiceLanding from "@/components/sections/landing/ServiceLanding";
 
 export const metadata: Metadata = pageMeta({
   path: "/sistemas/inventario",
-  title: "Sistema de Inventario y Control de Stock en Perú",
+  title: "Sistema de inventario y stock a medida en Perú",
   description:
-    "Desarrollo de sistemas de inventario y control de stock para empresas en Perú. Controla entradas, salidas, almacenes y pedidos en tiempo real, desde la web.",
+    "Sistema de inventario a medida para empresas en Perú: stock multi-almacén, tallas y colores, kardex y conexión con tu tienda virtual para no vender lo que no tienes.",
 });
 
 export default function SistemaInventarioPage() {
@@ -20,9 +20,9 @@ export default function SistemaInventarioPage() {
         { name: "Sistema de Inventario", path: "/sistemas/inventario" },
       ]}
       eyebrow="Sistema · Inventario"
-      h1="Sistema de inventario y control de stock"
-      intro="Desarrollamos sistemas de inventario a medida para empresas en Perú: controla entradas, salidas, almacenes y stock en tiempo real desde cualquier dispositivo. Deja atrás el Excel y los descuadres, y sabe siempre qué tienes y qué te falta."
-      highlights={["Control de stock", "Multi-almacén", "Alertas de quiebre", "Reportes", "En la nube"]}
+      h1="Sistema de inventario y control de stock a medida"
+      intro="Desarrollamos sistemas de inventario a medida para empresas en Perú: controla entradas, salidas, almacenes y stock en tiempo real desde cualquier dispositivo, con variantes de talla y color y conexión con tu tienda virtual. Deja atrás el Excel y los descuadres, y sabe siempre qué tienes y qué te falta."
+      highlights={["Control de stock", "Multi-almacén", "Tallas y colores", "Tienda virtual", "Alertas de quiebre", "Reportes"]}
       stats={[
         { value: "Tiempo real", label: "Stock siempre actualizado" },
         { value: "Multi-almacén", label: "Controla varias sedes" },
@@ -48,10 +48,36 @@ export default function SistemaInventarioPage() {
             "No te damos un software rígido: lo construimos según cómo trabajas. Si recibes por guías, despachas por pedidos o manejas kits y combos, el sistema se adapta a eso, no al revés.",
         },
         {
-          h2: "Se conecta con el resto de tu negocio",
+          h2: "Inventario multi-almacén: un stock por sede y uno consolidado",
+          body:
+            "Cuando hay más de un almacén, un local y un depósito, o varias tiendas, la pregunta deja de ser «cuánto tengo» y pasa a ser «dónde lo tengo». El sistema lleva el stock de cada ubicación por separado y te muestra el total de la empresa en la misma pantalla.",
           bullets: [
-            "Integración con tu sistema de ventas y facturación.",
-            "Integración con tu tienda virtual para descontar stock al vender.",
+            "Stock por almacén, por sede y consolidado, en tiempo real.",
+            "Transferencias entre almacenes con guía interna: sale de uno y entra al otro cuando se recibe, no antes.",
+            "Ubicación dentro del almacén (pasillo, estante) si el volumen lo pide.",
+            "Permisos por sede: cada encargado ve y mueve solo su almacén; gerencia ve todo.",
+            "Reposición sugerida por sede según su propia rotación, no la del promedio.",
+          ],
+        },
+        {
+          h2: "Variantes: inventario por talla, color y modelo",
+          body:
+            "En ropa, calzado o accesorios, «tengo 40 polos» no dice nada: lo que importa es cuántos M negros quedan. El sistema trata cada combinación de talla y color como su propio código, con su stock y su alerta, y te deja ver el modelo agrupado o abierto por variante. Si vendes moda, en [cómo controlar el stock de una tienda de ropa](/blog/como-controlar-el-stock-de-una-tienda-de-ropa) está el detalle de cómo se organiza.",
+          bullets: [
+            "Un código (SKU) por cada talla y color, generado desde el modelo.",
+            "Matriz de stock talla × color por modelo, por sede.",
+            "Alertas por variante: te avisa que se acaba la talla S antes de que se acabe el modelo.",
+            "Reportes de qué tallas y colores rotan y cuáles se quedan, para comprar mejor la próxima temporada.",
+          ],
+        },
+        {
+          h2: "Sistema de ventas e inventario conectado con tu tienda virtual",
+          body:
+            "El descuadre más caro es vender en la web algo que ya se vendió en el local. Conectando el inventario con tu [tienda virtual](/tiendas-virtuales), las ventas de todos los canales descuentan del mismo stock, y lo que se repone en el almacén aparece disponible en la web. El paso a paso está en [cómo controlar el inventario en una tienda online](/blog/como-controlar-inventario-en-una-tienda-online).",
+          bullets: [
+            "Integración con tu [sistema de ventas y facturación](/sistemas/ventas-y-facturacion): cada boleta o factura descuenta stock.",
+            "Conexión con tiendas en Shopify, WooCommerce o desarrolladas a medida, según la plataforma que uses.",
+            "Stock de seguridad por canal, para no publicar en la web las últimas unidades del local.",
             "Usuarios con permisos por rol (almacén, ventas, gerencia).",
           ],
         },
@@ -93,6 +119,11 @@ export default function SistemaInventarioPage() {
           desc: "Por qué el stock se descuadra cuando vendes por varios canales y cómo evitarlo.",
         },
         {
+          label: "Cómo controlar el stock de una tienda de ropa",
+          href: "/blog/como-controlar-el-stock-de-una-tienda-de-ropa",
+          desc: "Tallas, colores y temporadas sin perder la cuenta de lo que queda.",
+        },
+        {
           label: "Sistema de gestión para pymes: cuándo dejar el Excel",
           href: "/blog/sistema-de-gestion-para-pymes-cuando-dejar-el-excel",
           desc: "Las señales de que tu hoja de cálculo ya te está costando plata.",
@@ -116,6 +147,14 @@ export default function SistemaInventarioPage() {
         {
           q: "¿Se integra con mi tienda virtual?",
           a: "Sí. Podemos conectar el inventario con tu tienda online para que el stock se descuente automáticamente con cada venta.",
+        },
+        {
+          q: "¿Maneja tallas y colores?",
+          a: "Sí. Cada combinación de talla y color tiene su propio código y su propio stock por sede, y puedes ver el modelo agrupado o abierto por variante, con alertas cuando se agota una talla.",
+        },
+        {
+          q: "¿Puedo tener un sistema de ventas e inventario en uno?",
+          a: "Sí. Se desarrolla junto con el módulo de ventas y facturación electrónica, para que cada venta emita su comprobante y descuente el stock en el mismo paso.",
         },
         {
           q: "¿Necesito instalar algo?",
