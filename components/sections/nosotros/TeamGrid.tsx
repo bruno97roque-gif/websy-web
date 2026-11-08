@@ -132,6 +132,21 @@ const TEAM: { name: string; surname: string; role: string; tag: string; Planet: 
   { name: "Julio",         surname: "",           role: "Administrative Assistant",  tag: "Equipo",     Planet: MoonSVG,   img: "/images/julio-asistente.webp"   },
 ];
 
+// Tamaño real de cada foto (sips, 7-nov-2026). El recorte lo hace el contenedor
+// 3:4 con object-cover; width/height solo evitan que el navegador adivine.
+const IMG_SIZE: Record<string, [number, number]> = {
+  "/images/bruno-roque.webp": [900, 900],
+  "/images/debora-santa-maria.webp": [900, 1146],
+  "/images/gimena-comercial.webp": [1024, 1024],
+  "/images/luis-esta-si-es.webp": [900, 900],
+  "/images/aymar-molina.webp": [900, 1146],
+  "/images/aaron-esta-si-es.webp": [900, 900],
+  "/images/Rubid-esta-si-es.webp": [900, 900],
+  "/images/ada-diseñadora.webp": [1024, 1024],
+  "/images/juan-carlos-esta-si-es.webp": [900, 900],
+  "/images/julio-asistente.webp": [900, 900],
+};
+
 type TeamMember = typeof TEAM[0];
 
 function Card({
@@ -160,6 +175,8 @@ function Card({
           <img
             src={member.img}
             alt={`${member.name}${member.surname ? ` ${member.surname}` : ""}`}
+            width={IMG_SIZE[member.img]?.[0] ?? 900}
+            height={IMG_SIZE[member.img]?.[1] ?? 1200}
             loading="lazy"
             decoding="async"
             className="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-105"

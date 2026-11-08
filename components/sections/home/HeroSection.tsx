@@ -16,6 +16,8 @@ function OrangeIcon({
   imgSize?: number;
   circleSize?: number;
 }) {
+  // Decorativos: width/height = tamaño pintado (el style ya lo fija), así el HTML
+  // reserva el hueco antes de que cargue el CSS.
   const sizeStyle = circleSize ? { width: circleSize, height: circleSize } : undefined;
   return (
     <div
@@ -23,7 +25,7 @@ function OrangeIcon({
       style={sizeStyle}
     >
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src={src} alt="" style={{ width: imgSize, height: imgSize }} className="object-contain" draggable={false} />
+      <img src={src} alt="" aria-hidden="true" width={imgSize} height={imgSize} style={{ width: imgSize, height: imgSize }} className="object-contain" draggable={false} />
     </div>
   );
 }
@@ -91,7 +93,7 @@ export default function HeroSection() {
 
       {/* ── GROUND IMAGE ── */}
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src="/images/hero-ground.webp" alt=""
+      <img src="/images/hero-ground.webp" alt="" aria-hidden="true" width={2000} height={1121}
         className="pointer-events-none absolute bottom-0 left-0 z-[5] w-full select-none" />
 
       {/* ── OVERLAY ─────────────────────────────────────────────────────
@@ -190,7 +192,7 @@ export default function HeroSection() {
                 {/* Centro: logo flotante */}
                 <div className="relative z-10 flex h-64 w-64 animate-[floatY_8s_ease-in-out_infinite] items-center justify-center">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="/images/logo-hero.webp" alt="Websy"
+                  <img src="/images/logo-hero.webp" alt="Websy" width={1212} height={808}
                     className="h-full w-full object-contain"
                     draggable={false} />
                 </div>
@@ -211,6 +213,9 @@ export default function HeroSection() {
                   <img
                     src="/icons/remplazo-de-cohete-ovni.webp"
                     alt=""
+                    aria-hidden="true"
+                    width={90}
+                    height={90}
                     className="h-[90px] w-[90px] object-contain drop-shadow-[0_2px_14px_rgba(0,0,0,.6)]"
                     draggable={false}
                   />

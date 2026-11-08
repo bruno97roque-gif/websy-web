@@ -92,6 +92,9 @@ function IconBox({ src, size = 88 }: { src: string; size?: number }) {
         <img
           src={src}
           alt=""
+          aria-hidden="true"
+          width={Math.round(size * 0.58)}
+          height={Math.round(size * 0.58)}
           className="object-contain"
           style={{ width: Math.round(size * 0.58), height: Math.round(size * 0.58) }}
           draggable={false}
@@ -180,14 +183,14 @@ export default function ServicesSection() {
       {/* 2 — degradado top */}
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
-        src="/images/degradado.webp" alt="" draggable={false}
+        src="/images/degradado.webp" alt="" aria-hidden="true" width={2527} height={376} draggable={false}
         className="pointer-events-none absolute left-0 right-0 top-0 z-[2] w-full select-none"
         style={{ height: 90, objectFit: "fill" }}
       />
       {/* 2 — degradado bottom */}
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
-        src="/images/degradado.webp" alt="" draggable={false}
+        src="/images/degradado.webp" alt="" aria-hidden="true" width={2527} height={376} draggable={false}
         className="pointer-events-none absolute bottom-0 left-0 right-0 z-[2] w-full rotate-180 select-none"
         style={{ height: 90, objectFit: "fill" }}
       />
