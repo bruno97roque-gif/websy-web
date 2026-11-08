@@ -15,9 +15,9 @@ import { faqPageSchema, breadcrumbSchema, serviceSchema, speakablePageSchema } f
 
 export const metadata: Metadata = pageMeta({
   path: "/precios",
-  title: "Precios: cuánto cuesta tu web, tienda o software",
+  title: "Precios de páginas web, tiendas virtuales y software en Perú",
   description:
-    "¿Cuánto cuesta una página web, tienda virtual o software a medida en Perú? Qué define el precio, qué incluye cada servicio y cómo pedir tu cotización gratis.",
+    "Precios de diseño y creación de páginas web, tiendas virtuales desde S/ 2,500, apps desde S/ 15,000 y software desde S/ 20,000 en Perú. Cotiza gratis en 24 h.",
 });
 
 const PURPLE = "#291231";
@@ -115,6 +115,18 @@ const incluyeSiempre = [
   "Capacitación y soporte después del lanzamiento.",
 ];
 
+/* 7-nov-2026 · GSC: «diseño de pagina web precio» y «creacion de pagina web
+   precio» en el puesto 63, «tienda virtual precio» en el 25. La tabla repite
+   SOLO los montos que ya publica la web (tarjetas de arriba y FAQ de software):
+   no se inventa ninguno. La web informativa sigue sin monto, a cotización. */
+const tablaPrecios: { proyecto: string; href: string; desde: string; mueve: string; guia: { label: string; href: string } }[] = [
+  { proyecto: "Página web informativa", href: "/diseno-de-paginas-web", desde: "Según cotización", mueve: "Secciones, contenido y funciones (blog, reservas, multidioma)", guia: { label: "Cuánto cuesta una página web", href: "/blog/cuanto-cuesta-una-pagina-web-en-peru" } },
+  { proyecto: "Tienda virtual", href: "/tiendas-virtuales", desde: "S/ 2,500", mueve: "Productos, plataforma, pasarelas e integraciones", guia: { label: "Cuánto cuesta una tienda virtual", href: "/blog/cuanto-cuesta-una-tienda-virtual-en-peru" } },
+  { proyecto: "Aplicación web o móvil", href: "/desarrollo-de-aplicaciones-moviles", desde: "S/ 15,000", mueve: "Plataformas, funciones, pagos y publicación", guia: { label: "Cuánto cuesta una app", href: "/blog/cuanto-cuesta-una-aplicacion-movil-en-peru" } },
+  { proyecto: "Software a medida (ERP, sistema)", href: "/desarrollo-de-software-a-medida", desde: "S/ 20,000", mueve: "Módulos, usuarios e integraciones", guia: { label: "Cuánto cuesta un software a medida", href: "/blog/cuanto-cuesta-un-software-a-medida-en-peru" } },
+  { proyecto: "Mantenimiento web", href: "/mantenimiento-web", desde: "Según cotización", mueve: "Frecuencia de cambios, copias y soporte", guia: { label: "Costos de mantenimiento", href: "/blog/costos-de-mantenimiento-de-una-pagina-web-en-peru" } },
+];
+
 const faqs = [
   {
     q: "¿Cuánto cuesta una página web en Perú?",
@@ -122,7 +134,7 @@ const faqs = [
   },
   {
     q: "¿Cuánto cuesta una tienda virtual o ecommerce?",
-    a: "El precio de una tienda virtual varía según la cantidad de productos, la plataforma (Shopify o WooCommerce), las pasarelas de pago y las integraciones (facturación, courier, stock). Te preparamos una propuesta clara según lo que vendes y cómo cobras.",
+    a: "En Websy una tienda virtual parte desde S/ 2,500 (monto referencial). El precio final varía según la cantidad de productos, la plataforma (Shopify o WooCommerce), las pasarelas de pago y las integraciones (facturación, courier, stock). Te preparamos una propuesta clara según lo que vendes y cómo cobras.",
   },
   {
     q: "¿Cuánto cuesta un software a medida o una aplicación en Perú?",
@@ -193,7 +205,7 @@ export default function PreciosPage() {
             Precios y cotización
           </p>
           <h1 style={{ fontFamily: fm, fontSize: "clamp(30px, 5vw, 52px)", fontWeight: 800, lineHeight: 1.08, letterSpacing: "-0.02em", margin: 0, maxWidth: 820 }}>
-            ¿Cuánto cuesta tu página web, tienda virtual o software?
+            Precios de páginas web, tiendas virtuales y software en Perú
           </h1>
           <p className="precios-speakable-intro" style={{ fontFamily: fp, fontSize: "clamp(16px, 2vw, 19px)", color: "rgba(255,255,255,0.82)", marginTop: 20, maxWidth: 700, lineHeight: 1.6 }}>
             El precio depende de lo que necesitas: secciones, productos, pasarelas de pago e integraciones. En Websy no te tiramos una cifra al aire: hacemos un diagnóstico corto y te enviamos una <strong style={{ color: "#fff" }}>cotización a medida y gratis en menos de 24 horas</strong>, con alcance y tiempos por escrito.
@@ -267,6 +279,52 @@ export default function PreciosPage() {
         </div>
       </section>
 
+      {/* ── TABLA DE PRECIOS POR TIPO DE PROYECTO ── */}
+      <section data-track-location="precios_tabla" style={{ padding: "40px 24px 8px" }}>
+        <div style={{ maxWidth: 960, margin: "0 auto" }}>
+          <h2 style={{ fontFamily: fm, fontSize: "clamp(20px, 2.6vw, 26px)", fontWeight: 700, color: PURPLE, marginBottom: 10, lineHeight: 1.2 }}>
+            Tabla de precios por tipo de proyecto
+          </h2>
+          <p style={{ fontFamily: fp, fontSize: 15.5, color: "#46404f", lineHeight: 1.65, margin: "0 0 18px" }}>
+            El precio del diseño y la creación de una página web depende de cuántas secciones tiene y qué funciones suma, por eso se cotiza a medida. En tiendas, apps y software publicamos el monto desde el que parte cada proyecto. Todos los montos son referenciales y la cifra final va por escrito en tu propuesta.
+          </p>
+          <div style={{ overflowX: "auto", borderRadius: 14, border: "1px solid #ece8f2", background: "#fff" }}>
+            <table style={{ width: "100%", borderCollapse: "collapse", fontFamily: fp, fontSize: 15 }}>
+              <thead>
+                <tr>
+                  {["Proyecto", "Desde", "Qué mueve el precio", "Guía de precios"].map((c) => (
+                    <th key={c} scope="col" style={{ textAlign: "left", fontFamily: fm, fontSize: 12.5, fontWeight: 700, letterSpacing: "0.4px", textTransform: "uppercase", color: "#7a6882", padding: "14px 16px", borderBottom: "1px solid #ece8f2", whiteSpace: "nowrap" }}>
+                      {c}
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {tablaPrecios.map((f, i) => {
+                  const td = { padding: "13px 16px", borderBottom: i === tablaPrecios.length - 1 ? "none" : "1px solid #f4f0f8", color: "#46404f", verticalAlign: "top" as const };
+                  const link = { color: "#c9640a", textDecoration: "underline", textUnderlineOffset: "2px", fontWeight: 600 } as const;
+                  return (
+                    <tr key={f.proyecto}>
+                      <th scope="row" style={{ ...td, textAlign: "left", color: PURPLE, fontWeight: 600 }}>
+                        <Link href={f.href} style={{ color: PURPLE, textDecoration: "none" }}>{f.proyecto}</Link>
+                      </th>
+                      <td style={{ ...td, whiteSpace: "nowrap", fontWeight: 600, color: PURPLE }}>{f.desde}</td>
+                      <td style={td}>{f.mueve}</td>
+                      <td style={td}>
+                        <Link href={f.guia.href} style={link}>{f.guia.label}</Link>
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+          <p style={{ fontFamily: fp, fontSize: 13.5, color: "#6b6478", lineHeight: 1.6, margin: "10px 2px 0" }}>
+            Montos referenciales de Websy en soles, sin cuotas de terceros (plan de Shopify, hosting, tiendas de apps). Una plataforma SaaS parte desde S/ 20,000 a S/ 30,000.
+          </p>
+        </div>
+      </section>
+
       {/* ── FACTORES + INCLUYE SIEMPRE ── */}
       <section data-track-location="precios_factores" style={{ padding: "40px 24px 8px" }}>
         <div style={{ maxWidth: 860, margin: "0 auto", display: "grid", gap: 44, gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))" }}>
@@ -312,6 +370,7 @@ export default function PreciosPage() {
               { label: "¿Cuánto cuesta una tienda en Shopify?", href: "/blog/cuanto-cuesta-una-tienda-en-shopify", desc: "Plan mensual, comisiones y qué esperar de una tienda Shopify." },
               { label: "¿Cuánto cuesta un software a medida?", href: "/blog/cuanto-cuesta-un-software-a-medida-en-peru", desc: "Desde cuánto parte un sistema, un ERP o un SaaS y qué mueve el precio." },
               { label: "¿Cuánto cuesta una aplicación móvil?", href: "/blog/cuanto-cuesta-una-aplicacion-movil-en-peru", desc: "El desarrollo, las cuotas de Apple y Google Play y las comisiones." },
+              { label: "¿Cuánto cuesta mantener una página web?", href: "/blog/costos-de-mantenimiento-de-una-pagina-web-en-peru", desc: "Hosting, dominio, actualizaciones y soporte: qué se paga cada año." },
             ].map((a) => (
               <Link key={a.href} href={a.href} style={{ display: "block", background: "#fff", border: "1px solid #ece8f2", borderRadius: 16, padding: "20px 22px", textDecoration: "none", boxShadow: "0 4px 30px rgba(41,18,49,0.05)" }}>
                 <span style={{ display: "block", fontFamily: fm, fontSize: 16, fontWeight: 700, color: PURPLE, marginBottom: 6 }}>
