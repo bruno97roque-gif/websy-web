@@ -460,6 +460,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     related: [
+      { label: "Cómo integrar Mercado Pago", href: "/blog/como-integrar-mercado-pago-en-tu-tienda-virtual-en-peru", desc: "Pasos en Shopify, WooCommerce y webs a medida." },
       { label: "Integración de Yape y pasarelas de pago", href: "/integracion-de-pagos", desc: "Conectamos Yape, Plin, Izipay, Niubiz o Culqi a tu web, tienda o app." },
       { label: "Desarrollo de tiendas virtuales", href: "/tiendas-virtuales", desc: "Tienda con pagos Yape, Plin, Niubiz e Izipay." },
       { label: "Cotiza tu tienda", href: "/cotizacion", desc: "Te ayudamos a elegir e integrar tus pasarelas." },
@@ -1106,6 +1107,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     related: [
+      { label: "Cuánto cuesta un sistema de inventario", href: "/blog/cuanto-cuesta-un-sistema-de-inventario-en-peru", desc: "Enlatado o a medida, mensualidad o pago único." },
       { label: "Envíos y courier para tu tienda virtual en Perú: cómo elegir", href: "/blog/envios-y-courier-para-tu-tienda-virtual-en-peru", desc: "El envío decide más ventas que el diseño de la tienda." },
       { label: "Sistema de punto de venta (POS) a medida para tu negocio", href: "/blog/sistema-de-punto-de-venta-pos-a-medida", desc: "Un POS se juzga en la hora punta." },
       { label: "Software a medida", href: "/desarrollo-de-software-a-medida", desc: "Sistemas de inventario y stock en tiempo real, hechos a tu medida." },
@@ -2884,6 +2886,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     related: [
+      { label: "Cuánto cuesta un sistema de inventario", href: "/blog/cuanto-cuesta-un-sistema-de-inventario-en-peru", desc: "Lo que mueve el precio de un sistema de stock." },
       { label: "Qué es un software a medida", href: "/blog/que-es-un-software-a-medida", desc: "Definición, ejemplos por área y cuándo conviene." },
       { label: "Desarrollo de software a medida", href: "/desarrollo-de-software-a-medida", desc: "Sistemas hechos para tu operación, no plantillas." },
       { label: "Sistema de inventario", href: "/sistemas/inventario", desc: "Control de stock, kardex y alertas de reposición." },
@@ -4279,6 +4282,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     related: [
+      { label: "Hosting.pe vs hosting.com.pe", href: "/blog/hosting-pe-vs-hosting-com-pe-cual-elegir", desc: "Dos proveedores peruanos comparados lado a lado." },
       { label: "Mantenimiento web", href: "/mantenimiento-web", desc: "Hosting, seguridad, respaldos y actualizaciones al día." },
       { label: "Costos de mantenimiento de una web", href: "/blog/costos-de-mantenimiento-de-una-pagina-web-en-peru", desc: "Qué incluye mantener tu web viva y segura." },
       { label: "Ver precios y cotizar", href: "/precios", desc: "El panorama completo de la inversión en tu web." },
@@ -5591,6 +5595,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     related: [
+      { label: "Cómo integrar Mercado Pago en tu tienda", href: "/blog/como-integrar-mercado-pago-en-tu-tienda-virtual-en-peru", desc: "Requisitos, pasos y qué checkout elegir." },
       { label: "Integración de Yape y pasarelas de pago", href: "/integracion-de-pagos", desc: "Conectamos Yape, Plin, Izipay, Niubiz o Culqi a tu web, tienda o app." },
       { label: "Pasarelas de pago en Perú", href: "/blog/pasarelas-de-pago-para-ecommerce-en-peru", desc: "El panorama completo: Yape, Plin, Niubiz e Izipay." },
       { label: "Tiendas virtuales", href: "/tiendas-virtuales", desc: "Integramos la pasarela que elijas a tu tienda." },
@@ -5981,6 +5986,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     related: [
+      { label: "Hosting.pe vs hosting.com.pe", href: "/blog/hosting-pe-vs-hosting-com-pe-cual-elegir", desc: "Planes, IGV, soporte y renovación de dos proveedores peruanos." },
       { label: "Cuánto cuesta un hosting y un dominio .pe", href: "/blog/cuanto-cuesta-un-hosting-y-un-dominio-pe-en-peru", desc: "Los precios reales y qué incluye cada plan." },
       { label: "Mantenimiento y soporte web", href: "/mantenimiento-web", desc: "Nos ocupamos del hosting, los respaldos y las actualizaciones." },
       { label: "Diseño de páginas web", href: "/diseno-de-paginas-web", desc: "Tu web lista y alojada, sin que tengas que elegir servidores." },
@@ -7487,6 +7493,358 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Diseño de páginas web", href: "/diseno-de-paginas-web", desc: "Webs nuevas o rediseñadas, rápidas y medidas." },
       { label: "Servicio de SEO", href: "/seo", desc: "Posicionamiento técnico, de contenidos y local." },
       { label: "Checklist de SEO on-page", href: "/blog/seo-on-page-checklist-para-tu-pagina-web", desc: "Lo básico que cada página debe tener." },
+    ],
+  },
+  {
+    /* 7-nov-2026 · Search Console 90 d: «hosting.pe vs hosting.com.pe» 82 imp (puesto
+       12,6) y «hosting.pe opiniones» 78 imp (puesto 26,7) caían en los artículos
+       genéricos de hosting, que no comparan proveedores. Datos leídos en vivo en
+       www.hosting.pe y www.hosting.com.pe el 7-nov-2026. Comparativa neutral. */
+    slug: "hosting-pe-vs-hosting-com-pe-cual-elegir",
+    title: "Hosting.pe vs hosting.com.pe: cuál elegir",
+    h1: "Hosting.pe vs hosting.com.pe: diferencias en planes, soporte y renovación",
+    description:
+      "Hosting.pe y hosting.com.pe son dos empresas distintas. Comparamos sus planes de entrada, el IGV, el soporte y la renovación con datos leídos en sus webs el 7-nov-2026.",
+    excerpt:
+      "Dos dominios que se confunden y dos empresas que venden hosting de forma distinta. Planes, IGV, soporte y renovación, lado a lado.",
+    datePublished: "2026-11-07",
+    category: "Web",
+    readingMin: 8,
+    intro:
+      "Hosting.pe y hosting.com.pe son dos empresas distintas, aunque los nombres se parezcan. Hosting.pe vende planes con más espacio, precios más IGV y soporte telefónico 24/7; hosting.com.pe, que se presenta como Hosting Peru, tiene planes de entrada más baratos con el IGV ya incluido. Cuál te conviene depende de cuántos correos y webs vas a alojar. Si prefieres no administrar el hosting tú, en Websy nos encargamos con nuestro [mantenimiento web](/mantenimiento-web).",
+    sections: [
+      {
+        h2: "Primero: son dos empresas, no la misma con dos dominios",
+        body:
+          "Mucha gente llega a esta búsqueda porque escribió una dirección pensando en la otra. Hosting.pe dice operar en Perú desde 1999 y tener datacenter propio. Hosting.com.pe usa el nombre comercial Hosting Peru, habla de más de 19 años en el mercado y de un local propio en Lima. Tienen teléfonos, paneles de cliente y facturación separados. Si ya tienes un servicio con una de las dos, el soporte y los pagos se hacen solo con esa: la otra no puede ver tu cuenta.",
+      },
+      {
+        h2: "Planes de entrada lado a lado",
+        body:
+          "Comparamos el plan más barato de hosting compartido y el plan intermedio de cada una, tal como aparecen en sus portadas. Fíjate en el IGV antes de comparar precios: una publica el monto sin impuesto y la otra con impuesto incluido.",
+        table: {
+          cabeceras: ["Punto", "Hosting.pe", "Hosting.com.pe"],
+          filas: [
+            ["Plan de entrada", "Hosting Perfecto: 20 GB SSD, 1 web, 20 correos", "Hosting Personal: 3 GB, 10 GB de tráfico al mes, 5 correos"],
+            ["Precio anual del plan de entrada", "S/ 159 + IGV", "S/ 59 con IGV incluido (dominio .com aparte, S/ 29)"],
+            ["Plan intermedio", "Hosting Pyme: 50 GB SSD, 5 webs, 50 correos", "Hosting Empresarial: 10 GB, 250 GB de tráfico, 30 correos, dominio .com gratis"],
+            ["Precio anual del plan intermedio", "S/ 259 + IGV", "S/ 139 con IGV incluido"],
+            ["Copias de seguridad", "Diarias, con 30 días de historial", "Diarias (usa JetBackup)"],
+            ["Panel", "cPanel y Softaculous", "cPanel y Softaculous en los planes superiores"],
+            ["Soporte", "Teléfono 24/7, incluidos feriados", "Teléfono, WhatsApp y soporte 24/7 según su web"],
+            ["Renovación", "Ofrece «garantía de precio»: la siguiente renovación al mismo precio", "No encontramos en su portada una garantía de precio para la renovación"],
+          ],
+          nota: "Fuente: portadas de www.hosting.pe y www.hosting.com.pe, leídas el 7-nov-2026. Los precios y recursos cambian con frecuencia; confirma en la web de cada proveedor antes de pagar.",
+        },
+      },
+      {
+        h2: "Dónde gana cada una",
+        body:
+          "Hosting.com.pe es más barato para empezar, y que el precio ya traiga el IGV evita la sorpresa al pagar. Su plan de entrada sirve para una web sencilla con pocos correos. Para una empresa con diez o más personas usando correo, el salto al plan Empresarial o Corporativo llega pronto. Hosting.pe cuesta más desde el primer plan, pero da bastante más espacio y cuentas de correo por plan, promete que la renovación mantiene el precio y pone el soporte telefónico 24/7 en el centro de su oferta. También ofrece seis meses de garantía de devolución, según su portada.",
+        bullets: [
+          "Web informativa pequeña, presupuesto ajustado: hosting.com.pe, plan Personal o Económico.",
+          "Empresa con muchos correos corporativos: compara el plan Pyme de hosting.pe con el Corporativo de hosting.com.pe.",
+          "Si te preocupa que el precio suba al renovar: hosting.pe lo deja por escrito; con hosting.com.pe, pídelo por escrito antes de contratar.",
+        ],
+      },
+      {
+        h2: "Opiniones: qué mirar antes de fiarte de las estrellas",
+        body:
+          "Hosting.pe muestra en su portada una nota de 4,8 en reseñas de Google y algunos comentarios de clientes. Hosting.com.pe no muestra una nota en su portada. Las dos tienen reseñas públicas en su ficha de Google, y ahí es donde conviene leer, no en la web de la empresa. Al revisarlas, ordénalas por las más recientes y busca tres cosas: si los problemas son de correo (que no llega o cae en spam), si hablan de caídas largas y cómo respondió el soporte cuando algo falló. Una reseña de alguien que recién contrató dice poco; una de alguien que lleva años y tuvo un problema dice mucho más.",
+      },
+      {
+        h2: "Lo que te recomendamos preguntar antes de pagar",
+        body:
+          "Las dos empresas tienen asesores de venta. Antes de pagar, pídeles por escrito estas respuestas. Te ahorran la mayoría de disgustos que vemos cuando un cliente nos trae una web con problemas de hosting.",
+        bullets: [
+          "¿Cuánto cuesta renovar el mismo plan el segundo año, con IGV?",
+          "¿El dominio gratis también es gratis al renovar?",
+          "¿Cuántos días de copias guardan y puedo restaurarlas yo desde el panel?",
+          "¿Qué versión de PHP tienen y puedo cambiarla? (importa si usas WordPress o WooCommerce)",
+          "¿Puedo configurar SPF, DKIM y DMARC para que mis correos no caigan en spam?",
+          "¿La migración desde mi proveedor actual es gratuita y quién la hace?",
+        ],
+      },
+      {
+        h2: "Cómo cambiarte de uno a otro sin perder correos",
+        body:
+          "Las dos empresas dicen en su web que migran gratis desde tu proveedor actual. Aun así, el riesgo de una mudanza de hosting no está en los archivos de la web, está en el correo. Si cambias los DNS antes de copiar los buzones, durante unas horas los mensajes nuevos llegan al servidor nuevo y los antiguos se quedan en el viejo. Para evitarlo, sigue este orden:",
+        bullets: [
+          "Contrata el nuevo plan sin cancelar el anterior.",
+          "Pide la migración de la web y de los buzones de correo, y revisa que todo funcione en el servidor nuevo antes de tocar el dominio.",
+          "Cambia los DNS o los registros MX en un día de poco movimiento, no un lunes en la mañana.",
+          "Deja el plan anterior activo una o dos semanas, por si algún correo o archivo quedó atrás.",
+          "Después de la mudanza, vuelve a configurar SPF y DKIM con los datos del nuevo proveedor.",
+        ],
+      },
+      {
+        h2: "¿Y si no quieres elegir hosting?",
+        body:
+          "Elegir proveedor es la parte fácil. Lo que da trabajo es mantener la web al día: actualizar plugins, revisar copias, renovar el dominio a tiempo y arreglar el correo cuando deja de llegar. Si quieres el detalle de qué mirar en cualquier proveedor, lee [cómo elegir un hosting en Perú](/blog/como-elegir-un-hosting-en-peru). Para el presupuesto anual completo, con dominio .pe incluido, revisa [cuánto cuesta un hosting y un dominio .pe](/blog/cuanto-cuesta-un-hosting-y-un-dominio-pe-en-peru). Y si tu web es una tienda, los requisitos cambian: lo explicamos en [hosting para WooCommerce](/blog/hosting-para-woocommerce-en-peru).",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Hosting.pe y hosting.com.pe son la misma empresa?",
+        a: "No. Son dos empresas peruanas distintas, con planes, teléfonos y facturación separados. Hosting.com.pe usa el nombre comercial Hosting Peru.",
+      },
+      {
+        q: "¿Cuál es más barato, hosting.pe o hosting.com.pe?",
+        a: "En planes de entrada, hosting.com.pe: su plan Personal costaba S/ 59 al año con IGV incluido al 7-nov-2026, frente a S/ 159 + IGV del plan Perfecto de hosting.pe. Hosting.pe da más espacio y correos por plan.",
+      },
+      {
+        q: "¿Los precios de hosting.pe incluyen IGV?",
+        a: "No. Hosting.pe publica sus precios más IGV. Hosting.com.pe los publica con IGV incluido. Compara siempre el monto final.",
+      },
+      {
+        q: "¿Sube el precio al renovar?",
+        a: "Hosting.pe ofrece una garantía de precio para la siguiente renovación. En la portada de hosting.com.pe no encontramos esa garantía, así que conviene pedir el precio de renovación por escrito.",
+      },
+      {
+        q: "¿Websy trabaja con alguno de estos proveedores?",
+        a: "No vendemos ni revendemos hosting de ninguno de los dos. Con nuestro mantenimiento web administramos el hosting que tengas o te ayudamos a elegir uno, y todo queda a tu nombre.",
+      },
+    ],
+    related: [
+      { label: "Mantenimiento web", href: "/mantenimiento-web", desc: "Hosting, respaldos y actualizaciones al día, sin que tengas que hacerlo tú." },
+      { label: "Cómo elegir un hosting en Perú", href: "/blog/como-elegir-un-hosting-en-peru", desc: "Los seis puntos que conviene revisar antes de pagar." },
+      { label: "Cuánto cuesta un hosting y un dominio .pe", href: "/blog/cuanto-cuesta-un-hosting-y-un-dominio-pe-en-peru", desc: "El presupuesto anual completo de una web." },
+    ],
+  },
+  {
+    /* 7-nov-2026 · Search Console 90 d: el cluster de Mercado Pago suma 705 imp
+       («¿qué diferencia a mercado pago de otras pasarelas?» 210 imp puesto 6,3;
+       «alternativas a mercado pago» 83 imp puesto 8) y no había guía de integración,
+       solo la comparativa culqi-vs-mercado-pago. Pasos y medios de pago leídos en la
+       documentación oficial (mercadopago.com.pe/developers) el 7-nov-2026. Sin comisiones. */
+    slug: "como-integrar-mercado-pago-en-tu-tienda-virtual-en-peru",
+    title: "Cómo integrar Mercado Pago en tu tienda virtual en Perú",
+    h1: "Cómo integrar Mercado Pago en tu tienda virtual en Perú: Shopify, WooCommerce o web a medida",
+    description:
+      "Guía para integrar Mercado Pago en Perú: requisitos, pasos en Shopify y WooCommerce, y Checkout Pro frente a Bricks o API en una web a medida, según la documentación oficial.",
+    excerpt:
+      "Requisitos, pasos por plataforma y qué checkout elegir, con lo que dice la documentación oficial de Mercado Pago Perú.",
+    datePublished: "2026-11-07",
+    category: "Ecommerce",
+    readingMin: 9,
+    intro:
+      "Para integrar Mercado Pago en tu tienda virtual en Perú necesitas una cuenta de vendedor de Mercado Pago y un certificado SSL. En Shopify y WooCommerce se hace con la app o el plugin oficial, sin programar; en una web a medida eliges entre Checkout Pro, que lleva al cliente a pagar en Mercado Pago, o Checkout Bricks y Checkout API, que cobran dentro de tu web. Si quieres que lo conectemos nosotros, mira nuestra [integración de pasarelas de pago](/integracion-de-pagos).",
+    sections: [
+      {
+        h2: "Lo que necesitas antes de empezar",
+        body:
+          "La documentación de Mercado Pago Perú pide lo mismo para todas las plataformas. Tenlo listo antes de tocar la tienda, porque la vinculación falla si falta algo.",
+        bullets: [
+          "Una cuenta de vendedor de Mercado Pago. Puedes crearla con un usuario de Mercado Pago o de Mercado Libre.",
+          "Certificado SSL activo: la tienda tiene que cargar con https.",
+          "Acceso de administrador a tu tienda (Shopify, WordPress o el servidor de tu web).",
+          "Los datos de tu negocio y la cuenta bancaria donde vas a retirar el dinero, cargados en Mercado Pago.",
+        ],
+      },
+      {
+        h2: "Los tres checkouts de Mercado Pago, comparados",
+        body:
+          "Antes de integrar, decide dónde quieres que pague el cliente. Esa decisión define cuánto desarrollo necesitas.",
+        table: {
+          cabeceras: ["Checkout", "Dónde paga el cliente", "Medios de pago en Perú", "Para quién"],
+          filas: [
+            ["Checkout Pro", "En Mercado Pago, por redirección, y vuelve a tu tienda", "Tarjeta de crédito o débito, cuenta Mercado Pago y Yape", "Quien quiere integrar rápido y aprovechar los datos que el cliente ya guardó en Mercado Pago"],
+            ["Checkout Bricks", "En tu web, con módulos ya diseñados por Mercado Pago", "Tarjeta de crédito o débito, cuenta Mercado Pago y Yape", "Webs a medida que quieren cobrar sin salir del sitio y sin diseñar el formulario desde cero"],
+            ["Checkout API", "En tu web, con un formulario propio", "Tarjeta de crédito o débito, cuenta Mercado Pago y Yape", "Proyectos con equipo de desarrollo que necesitan control total del cobro"],
+          ],
+          nota: "Fuente: documentación de Mercado Pago Perú, mercadopago.com.pe/developers (Checkout Pro, Checkout Bricks y Checkout API), leída el 7-nov-2026. En los plugins de Shopify y WooCommerce, la versión Checkout API muestra solo tarjeta.",
+        },
+      },
+      {
+        h2: "Cómo integrar Mercado Pago en Shopify",
+        body:
+          "En Shopify no se programa nada. Mercado Pago tiene aplicaciones oficiales que se instalan desde el panel de la tienda. Los pasos que indica la documentación son:",
+        bullets: [
+          "Crear la cuenta de vendedor en Mercado Pago.",
+          "Instalar las aplicaciones de Mercado Pago en Shopify.",
+          "Vincular tu cuenta de Mercado Pago con la tienda.",
+          "Configurar y activar los medios de pago que vas a ofrecer.",
+          "Hacer una compra de prueba antes de abrir al público.",
+        ],
+      },
+      {
+        h2: "Cómo integrar Mercado Pago en WooCommerce",
+        body:
+          "En WooCommerce se usa el plugin oficial de Mercado Pago para WordPress. Es compatible con WooCommerce Blocks, el checkout nuevo de WooCommerce, y te deja elegir entre Checkout Pro y Checkout API o activar los dos. El orden es crear la cuenta, instalar el plugin, vincular la cuenta, configurar los medios de pago, probar y pasar a producción. Revisa antes que tu hosting cumpla los requisitos de WooCommerce: un servidor lento hace fallar los avisos de pago y el pedido queda pendiente aunque el cliente ya pagó. Lo explicamos en [hosting para WooCommerce](/blog/hosting-para-woocommerce-en-peru).",
+      },
+      {
+        h2: "Cómo integrar Mercado Pago en una web a medida",
+        body:
+          "Si tu tienda está hecha a medida, la integración la hace un desarrollador. Con Checkout Pro, la documentación oficial marca este camino: crear una aplicación en «Tus integraciones», preparar el ambiente de desarrollo, crear la preferencia de pago (el monto y los productos), configurar las URLs de retorno, agregar el SDK en la web, configurar las notificaciones de pago por webhooks o IPN, probar y salir a producción. Con Bricks se inicializa el SDK y se elige el módulo que necesitas: Payment Brick para varios medios de pago, Card Payment Brick solo para tarjeta, Wallet Brick para pagar con la cuenta de Mercado Pago y Status Screen Brick para mostrar el resultado de la compra.",
+        bullets: [
+          "No confirmes el pedido solo porque el cliente volvió a la URL de retorno. Confírmalo cuando llegue la notificación del pago.",
+          "Usa las credenciales de prueba hasta que las compras de prueba con tarjeta salgan bien, y recién entonces cambia a las de producción.",
+          "Guarda en tu sistema el número de pago de Mercado Pago junto a cada pedido: lo vas a necesitar para devoluciones y contracargos.",
+        ],
+      },
+      {
+        h2: "Errores que vemos al integrar Mercado Pago",
+        body:
+          "Casi todos los problemas que nos llegan después de una integración son de configuración, no de Mercado Pago. Los más repetidos:",
+        bullets: [
+          "Dejar las credenciales de prueba en la tienda publicada: el cliente cree que pagó y el dinero nunca entra.",
+          "No configurar las notificaciones: el pago se aprueba, pero el pedido queda pendiente y nadie lo despacha.",
+          "Ofrecer Mercado Pago como única opción: parte de los compradores prefiere pagar con Yape directo o por transferencia.",
+          "No probar desde el celular: la mayoría de compras en Perú se hacen desde el teléfono, y ahí es donde aparecen los botones que no se ven.",
+          "No revisar el correo de confirmación: si no llega o cae en spam, el cliente escribe por WhatsApp preguntando si su pedido existe.",
+        ],
+      },
+      {
+        h2: "Qué diferencia a Mercado Pago de otras pasarelas en Perú",
+        body:
+          "La diferencia principal es la cuenta del comprador. Con Checkout Pro, quien ya usa Mercado Pago o Mercado Libre paga con los medios que tiene guardados, y quien no tiene cuenta puede pagar como invitado. En Perú el checkout incluye Yape además de tarjeta. Culqi, Niubiz o Izipay cobran con tarjeta dentro de tu tienda y no traen esa cuenta del comprador. Si estás eligiendo entre opciones, compara [Culqi y Mercado Pago](/blog/culqi-vs-mercado-pago-en-peru) y revisa el panorama de [pasarelas de pago en Perú](/blog/pasarelas-de-pago-para-ecommerce-en-peru). Las comisiones cambian según el plazo en que retiras el dinero; consúltalas en la página de tarifas de Mercado Pago antes de decidir.",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Qué necesito para integrar Mercado Pago en mi tienda?",
+        a: "Una cuenta de vendedor de Mercado Pago (puede ser con tu usuario de Mercado Libre) y un certificado SSL activo en la tienda, según la documentación oficial de Mercado Pago Perú.",
+      },
+      {
+        q: "¿Mercado Pago acepta Yape en Perú?",
+        a: "Sí. Según la documentación oficial, Checkout Pro, Checkout Bricks y Checkout API aceptan en Perú tarjeta de crédito o débito, cuenta Mercado Pago y Yape.",
+      },
+      {
+        q: "¿Se puede integrar Mercado Pago en WooCommerce sin programar?",
+        a: "Sí. Mercado Pago tiene un plugin oficial para WooCommerce: lo instalas, vinculas tu cuenta, configuras los medios de pago y pruebas antes de publicar.",
+      },
+      {
+        q: "¿Qué diferencia hay entre Checkout Pro y Checkout Bricks?",
+        a: "Con Checkout Pro el cliente paga en Mercado Pago y vuelve a tu tienda. Con Checkout Bricks paga dentro de tu web, con módulos que Mercado Pago ya diseñó.",
+      },
+      {
+        q: "¿Cuáles son las alternativas a Mercado Pago en Perú?",
+        a: "Para cobrar con tarjeta, Culqi, Niubiz e Izipay. Para pagos inmediatos, Yape y Plin. Muchas tiendas combinan una pasarela de tarjeta con Yape.",
+      },
+      {
+        q: "¿Websy integra Mercado Pago?",
+        a: "Sí. Lo conectamos en Shopify, WooCommerce o en webs y sistemas a medida, probamos los pagos y dejamos los pedidos confirmándose solos.",
+      },
+    ],
+    related: [
+      { label: "Integración de pasarelas de pago", href: "/integracion-de-pagos", desc: "Conectamos Mercado Pago, Yape, Culqi, Niubiz o Izipay a tu tienda." },
+      { label: "Culqi vs Mercado Pago", href: "/blog/culqi-vs-mercado-pago-en-peru", desc: "Cuál conviene según dónde vendes y quién te compra." },
+      { label: "Pasarelas de pago en Perú", href: "/blog/pasarelas-de-pago-para-ecommerce-en-peru", desc: "Cómo combinar Yape, Plin y tarjeta para no perder ventas." },
+      { label: "Tiendas virtuales", href: "/tiendas-virtuales", desc: "Tiendas con pagos integrados y control de stock." },
+    ],
+  },
+  {
+    /* 7-nov-2026 · Search Console 90 d: «sistema de inventario» 11 imp en el puesto 65,
+       y /sistemas/inventario 3 clics en el puesto 16,6. No había una pieza de costo
+       para inventario (la de software a medida es general). Única cifra: «software a
+       medida desde S/ 20,000», publicada en /precios. */
+    slug: "cuanto-cuesta-un-sistema-de-inventario-en-peru",
+    title: "Cuánto cuesta un sistema de inventario en Perú",
+    h1: "Cuánto cuesta un sistema de inventario en Perú: enlatado o a medida",
+    description:
+      "De qué depende el costo de un sistema de inventario en Perú: almacenes, usuarios, integraciones, enlatado o a medida y mensualidad o pago único. Con la referencia de precio de Websy.",
+    excerpt:
+      "Los factores que suben o bajan el precio, cuándo basta un programa enlatado y cuándo conviene uno propio.",
+    datePublished: "2026-11-07",
+    category: "Software",
+    readingMin: 8,
+    intro:
+      "El costo de un sistema de inventario depende de cuántos almacenes y usuarios tienes, de con qué debe conectarse (caja, facturación electrónica, tienda virtual) y de si lo alquilas por mes o lo mandas a hacer a medida. Un programa enlatado se paga por mensualidad; un sistema propio se paga una vez y queda tuyo. En Websy el software a medida parte desde S/ 20,000. Aquí ves qué mueve el precio. Si ya sabes que necesitas uno, revisa nuestro [sistema de inventario a medida](/sistemas/inventario).",
+    sections: [
+      {
+        h2: "Enlatado o a medida: la primera decisión",
+        body:
+          "Un sistema enlatado es un programa que ya existe y que alquilas: lo usas como viene, con algunas opciones de configuración. Un sistema a medida se construye sobre tu forma de trabajar. Ninguno es mejor en abstracto. El enlatado tiene sentido cuando tu proceso es estándar; el propio, cuando el programa te obliga a trabajar como él quiere y ya estás llevando parte del stock en Excel por fuera. Lo desarrollamos con más detalle en [software a medida vs enlatado](/blog/software-a-medida-vs-software-enlatado).",
+        table: {
+          cabeceras: ["Punto", "Sistema enlatado", "Sistema a medida"],
+          filas: [
+            ["Cómo se paga", "Mensualidad, normalmente por usuario o por plan", "Pago por el desarrollo, más mantenimiento si lo contratas"],
+            ["Tiempo para empezar", "Días", "Semanas o meses, según los módulos"],
+            ["Ajuste a tu proceso", "Te adaptas tú al programa", "El sistema se adapta a tu operación"],
+            ["Integraciones", "Las que el proveedor ya tenga", "Las que necesites: caja, facturación, tienda virtual, courier"],
+            ["De quién son los datos y el código", "Del proveedor; tú tienes acceso mientras pagues", "En Websy, el código y la base de datos se entregan al cliente"],
+            ["Precio de referencia", "Consultar con cada proveedor", "Software a medida desde S/ 20,000 en Websy"],
+          ],
+          nota: "Precio de referencia publicado en websy.com.pe/precios, revisado el 7-nov-2026. Es un monto desde: el precio final depende de módulos, usuarios e integraciones.",
+        },
+      },
+      {
+        h2: "Qué sube o baja el precio de un sistema de inventario",
+        body:
+          "Dos empresas pueden pedir «un sistema de inventario» y estar hablando de proyectos muy distintos. Estos son los puntos que más cambian el presupuesto:",
+        bullets: [
+          "Número de almacenes o tiendas: con uno, el stock es una sola cifra; con varios, hay transferencias entre locales y stock por ubicación.",
+          "Variantes de producto: tallas, colores, lotes o fechas de vencimiento multiplican los registros y las reglas.",
+          "Usuarios y permisos: no es lo mismo un dueño que hace todo que un equipo con almacenero, vendedor y contador, cada uno con su acceso.",
+          "Integraciones: conectar la caja, la facturación electrónica o la tienda virtual para que cada venta descuente sola.",
+          "Lectores de código de barras o una app en el celular para contar en el almacén.",
+          "Reportes: kardex, valorización del inventario, rotación y alertas de reposición.",
+          "Migración de datos: pasar tu Excel actual al sistema, limpio y sin duplicados.",
+        ],
+      },
+      {
+        h2: "Mensualidad o pago único: cómo compararlos bien",
+        body:
+          "La mensualidad parece más barata porque el primer mes cuesta poco. Para comparar en serio, suma lo que pagarías en tres años por todos tus usuarios, más lo que pagas hoy por los trabajos que el programa no cubre (la persona que cuadra el Excel cada semana, los pedidos perdidos por falta de stock). Del otro lado, el sistema a medida tiene un costo inicial más alto y después necesita servidor y mantenimiento. Ninguna de las dos cuentas es difícil de hacer, pero hay que hacerlas con números de tu negocio, no con el precio de la portada del proveedor.",
+      },
+      {
+        h2: "Qué pedir en la primera versión (y qué dejar para después)",
+        body:
+          "La forma más segura de controlar el costo es no construir todo de golpe. Una primera versión que ya resuelva el descuadre suele bastar para empezar a usarla, y el resto se suma con lo que aprendes en el día a día. Así lo ordenamos normalmente:",
+        bullets: [
+          "Primera versión: productos con su código, entradas y salidas, stock por almacén, kardex y usuarios con permisos.",
+          "Segunda etapa: conexión con la caja o la tienda virtual, para que cada venta descuente sola.",
+          "Después: alertas de reposición, reportes de rotación, app para conteos con el celular y lo que haya salido en el uso.",
+        ],
+      },
+      {
+        h2: "Cómo pedir cotizaciones que puedas comparar",
+        body:
+          "Si pides presupuesto a varios proveedores con la frase «quiero un sistema de inventario», cada uno va a cotizar algo distinto y no vas a poder compararlos. Antes de escribir, anota en una hoja cuántos almacenes tienes, cuántas personas van a usar el sistema y con qué rol, cuántos productos y variantes manejas, por dónde vendes y qué reportes miras hoy. Pide que cada cotización separe el desarrollo, el servidor y el mantenimiento, y que diga por escrito de quién es el código y los datos al terminar. Con esa misma hoja puedes comparar también un programa enlatado: si no cubre algo de tu lista, ya sabes qué vas a seguir haciendo en Excel.",
+      },
+      {
+        h2: "Costos que se olvidan al presupuestar",
+        body:
+          "En los presupuestos que nos traen para comparar, estos son los puntos que más se omiten:",
+        bullets: [
+          "Servidor o hosting del sistema, si es a medida.",
+          "Mantenimiento: corrección de errores, copias de seguridad y actualizaciones de seguridad.",
+          "Capacitación del equipo, sobre todo de quienes hacen los conteos.",
+          "Cambios después de empezar: el primer mes de uso siempre revela algo que no se pidió al inicio.",
+        ],
+      },
+      {
+        h2: "Cuándo ya vale la pena pagar por un sistema",
+        body:
+          "Si vendes en un solo canal y tienes pocas decenas de productos, una hoja de cálculo ordenada todavía aguanta. El momento de invertir llega cuando vendes en tienda física, redes y web a la vez y el stock se descuadra, o cuando el conteo te toma un día entero. Revisa las señales en [cuándo dejar el Excel](/blog/sistema-de-gestion-para-pymes-cuando-dejar-el-excel) y, si tienes tienda online, empieza por [cómo controlar el inventario en una tienda online](/blog/como-controlar-inventario-en-una-tienda-online). Para el panorama general de precios de software, lee [cuánto cuesta un software a medida en Perú](/blog/cuanto-cuesta-un-software-a-medida-en-peru).",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Cuánto cuesta un sistema de inventario a medida en Perú?",
+        a: "Depende de almacenes, usuarios, integraciones y reportes. Como referencia, en Websy el software a medida parte desde S/ 20,000; el monto final sale del alcance que definimos contigo.",
+      },
+      {
+        q: "¿Es mejor un sistema de inventario enlatado o a medida?",
+        a: "El enlatado conviene si tu proceso es estándar y quieres empezar en días. El sistema a medida conviene cuando el programa te obliga a llevar parte del stock por fuera o necesitas conectarlo con tu caja, facturación o tienda virtual.",
+      },
+      {
+        q: "¿Un sistema de inventario se paga por mes o una sola vez?",
+        a: "Los enlatados se pagan por mensualidad. Un sistema a medida se paga por el desarrollo y luego por el servidor y el mantenimiento, si lo contratas.",
+      },
+      {
+        q: "¿Qué debe incluir un sistema de inventario?",
+        a: "Entradas y salidas, stock por almacén, kardex, alertas de reposición, usuarios con permisos y reportes de valorización. Si vendes online, la conexión con la tienda virtual.",
+      },
+      {
+        q: "¿Websy desarrolla sistemas de inventario?",
+        a: "Sí. Hacemos sistemas de inventario a medida conectados a tu caja, facturación y tienda virtual, y te entregamos el código y la base de datos.",
+      },
+    ],
+    related: [
+      { label: "Sistema de inventario a medida", href: "/sistemas/inventario", desc: "Stock en tiempo real, kardex y alertas de quiebre." },
+      { label: "Cuánto cuesta un software a medida en Perú", href: "/blog/cuanto-cuesta-un-software-a-medida-en-peru", desc: "Precios referenciales por tipo de proyecto." },
+      { label: "Software a medida vs enlatado", href: "/blog/software-a-medida-vs-software-enlatado", desc: "Cuál elegir según tu etapa y tu proceso." },
     ],
   },
 ];
