@@ -299,18 +299,21 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "como-crear-una-tienda-virtual-en-peru",
-    title: "Cómo crear una tienda virtual en Perú (paso a paso)",
+    /* 7-nov-2026 · «crear tienda virtual» (47 imp, puesto 13,3) y «crear tienda
+       online» (24 imp, 25,7): title con las dos formas. Enlace a /tiendas-virtuales,
+       que convierte (13 eventos clave en 90 d). */
+    title: "Cómo crear una tienda virtual u online en Perú, paso a paso",
     h1: "Cómo crear una tienda virtual en Perú (paso a paso)",
     description:
-      "Guía para crear una tienda virtual en Perú: qué necesitas, qué plataforma elegir, cómo cobrar con Yape, Plin y tarjeta, y cómo lanzarla para vender.",
+      "Cómo crear una tienda virtual u online en Perú en 5 pasos: qué necesitas, qué plataforma elegir, cómo cobrar con Yape, Plin y tarjeta, y cómo lanzarla para vender.",
     excerpt:
       "Todo lo que necesitas para crear tu tienda online en Perú: plataforma, pagos, productos y lanzamiento.",
     datePublished: "2026-06-19",
-    dateModified: "2026-09-02",
+    dateModified: "2026-11-07",
     category: "Ecommerce",
     readingMin: 7,
     intro:
-      "Crear una tienda virtual en Perú es más sencillo de lo que parece si sigues un orden: definir qué vendes, elegir plataforma, configurar pagos locales (Yape, Plin, tarjeta), cargar productos y lanzar. Esta guía te lleva paso a paso por cada decisión.",
+      "Crear una tienda virtual u online en Perú es más sencillo de lo que parece si sigues un orden: definir qué vendes, elegir plataforma, configurar pagos locales (Yape, Plin, tarjeta), cargar productos y lanzar. Esta guía te lleva paso a paso por cada decisión. Si prefieres que la construyamos por ti, mira nuestro servicio de [desarrollo de tiendas virtuales](/tiendas-virtuales).",
     sections: [
       {
         h2: "1. Define qué vas a vender y cómo",
@@ -627,7 +630,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     related: [
-      { label: "Cómo migrar tu web sin perder posicionamiento en Google", href: "/blog/como-migrar-tu-pagina-web-sin-perder-posicionamiento-en-google", desc: "Rediseñar o cambiar de web puede hundir tu tráfico si se hace mal." },
+      { label: "Cómo migrar tu web sin perder posicionamiento en Google", href: "/blog/como-migrar-tu-pagina-web-sin-perder-posicionamiento-en-google", desc: "Cambiar de plataforma o de dominio puede hundir tu tráfico si se hace mal." },
       { label: "¿Cuánto cuesta mantener una página web en Perú?", href: "/blog/costos-de-mantenimiento-de-una-pagina-web-en-peru", desc: "Una web no termina cuando se publica." },
       { label: "Diseño de páginas web", href: "/diseno-de-paginas-web", desc: "Webs profesionales optimizadas para captar clientes." },
       { label: "Cotiza tu página web", href: "/cotizacion", desc: "Presupuesto a tu medida en menos de 24 horas." },
@@ -687,7 +690,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Diseño de páginas web", href: "/diseno-de-paginas-web", desc: "Webs rápidas y listas para posicionar." },
       { label: "Dar de alta tu web en Search Console e indexarla", href: "/blog/como-hacer-que-tu-pagina-web-aparezca-en-google-peru", desc: "Tu web está en línea pero no aparece en Google." },
       { label: "Cómo elegir una agencia de desarrollo web en Perú", href: "/blog/como-elegir-una-agencia-de-desarrollo-web-en-peru", desc: "Guía honesta para elegir una agencia de desarrollo web en Perú sin terminar amarrado ni perder tu…" },
-      { label: "Migrar tu web sin perder posicionamiento", href: "/blog/como-migrar-tu-pagina-web-sin-perder-posicionamiento-en-google", desc: "Rediseñar o cambiar de web puede hundir tu tráfico si se hace mal." },
+      { label: "Migrar tu web sin perder posicionamiento", href: "/blog/como-migrar-tu-pagina-web-sin-perder-posicionamiento-en-google", desc: "Cambiar de plataforma o de dominio puede hundir tu tráfico si se hace mal." },
     ],
   },
 
@@ -1288,12 +1291,15 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "diferencia-entre-pagina-web-y-landing-page",
-    title: "Diferencia entre página web y landing page",
+    /* 7-nov-2026 · ~100 imp repartidas en 6 variantes en los puestos 17-55
+       («diferencia entre pagina web y landing page» 35 imp 19,5; «landing page vs
+       página web» 12 imp 54,9). Title con las dos formas y tabla comparativa. */
+    title: "Landing page vs página web: diferencias y cuándo usar cada una",
     h1: "Diferencia entre página web y landing page: cuál necesitas",
-    description: "¿Cuál es la diferencia entre página web y landing page? Conoce el objetivo, la estructura y cuándo usar cada una en tus campañas de Google Ads o Meta Ads en Perú.",
+    description: "Landing page vs página web: tabla con las diferencias de objetivo, estructura, tráfico y medición, y cuándo usar cada una en tus campañas de Google Ads o Meta Ads en Perú.",
     excerpt: "Qué distingue a una página web de una landing page y cómo elegir la indicada para tu negocio o campaña.",
     datePublished: "2026-06-21",
-    dateModified: "2026-11-05",
+    dateModified: "2026-11-07",
     category: "Páginas Web",
     readingMin: 6,
     intro: "La diferencia entre una página web y una landing page está en su objetivo. Una página web informa sobre tu negocio y suele tener varias secciones para posicionarte en Google. Una landing page es una sola página enfocada en una acción concreta, ideal para campañas de Google Ads o Meta Ads. No compiten: se complementan. Si ya decidiste que necesitas una, revisa nuestro servicio de [diseño de landing pages](/diseno-de-landing-pages).",
@@ -1319,8 +1325,18 @@ export const BLOG_POSTS: BlogPost[] = [
         ]
       },
       {
-        h2: "Objetivo y estructura: las diferencias clave",
-        body: "Aunque ambas viven en internet, cumplen funciones distintas. Entender esto evita gastar de más o lanzar campañas con bajo resultado. Lo desglosamos en [cuánto cuesta un logo profesional en Perú](/blog/cuanto-cuesta-un-logo-profesional-en-peru). Antes de comparar precios, aprende [cómo leer una cotización de página web](/blog/como-leer-una-cotizacion-de-pagina-web).",
+        h2: "Landing page vs página web: tabla de diferencias",
+        body: "Aunque ambas viven en internet, cumplen funciones distintas. Entender esto evita gastar de más o lanzar campañas con bajo resultado. Antes de comparar precios, aprende [cómo leer una cotización de página web](/blog/como-leer-una-cotizacion-de-pagina-web).",
+        table: {
+          cabeceras: ["Aspecto", "Página web", "Landing page"],
+          filas: [
+            ["Objetivo", "Informar y generar confianza", "Una sola acción (lead, WhatsApp, compra)"],
+            ["Estructura", "Varias páginas y menú", "Una página, sin menú o casi"],
+            ["Tráfico principal", "SEO y búsquedas de marca", "Google Ads, Meta Ads, correo"],
+            ["Duración", "Permanente", "Por campaña o temporada"],
+            ["Cómo se mide", "Tráfico y consultas", "Tasa de conversión"],
+          ],
+        },
         bullets: [
           "Página web: informa y posiciona; landing page: convierte una campaña.",
           "La web tiene navegación amplia; la landing concentra todo en una vista.",
@@ -1989,15 +2005,18 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "como-aceptar-pagos-con-tarjeta-en-tu-web-peru",
-    title: "Cómo aceptar pagos con tarjeta en tu web en Perú",
-    h1: "Cómo aceptar pagos con tarjeta en tu web en Perú",
-    description: "Cómo aceptar pagos con tarjeta en tu web en Perú: pasarelas como Niubiz, Izipay, Culqi y Mercado Pago, billeteras Yape y Plin, seguridad e integración.",
+    /* 7-nov-2026 · 660 imp en 90 d en el puesto 5,9 y 0 clics: el title repetía la
+       búsqueda sin decir qué se llevaba el lector. Ahora promete lo concreto (Yape,
+       tarjeta, link de pago y qué hace falta) y la intro deriva al servicio. */
+    title: "Yape, tarjeta y link de pago: cómo cobrar en tu web",
+    h1: "Cómo aceptar pagos con tarjeta y Yape en tu web en Perú",
+    description: "Qué necesitas para cobrar en tu web en Perú con tarjeta, Yape, Plin o link de pago: cuenta de comercio, pasarela (Niubiz, Izipay, Culqi o Mercado Pago), 3D Secure e integración.",
     excerpt: "Las pasarelas y billeteras para cobrar online en Perú, cómo funcionan y cómo integrarlas a tu tienda según tu volumen.",
     datePublished: "2026-06-24",
-    dateModified: "2026-09-02",
+    dateModified: "2026-11-07",
     category: "Pagos",
     readingMin: 7,
-    intro: "Aceptar pagos con tarjeta en tu web en Perú es hoy más simple de lo que parece: con una pasarela como Niubiz, Izipay, Culqi o Mercado Pago puedes cobrar online en segundos. Sumando billeteras como Yape y Plin cubres a casi todo comprador peruano. La clave está en elegir según tu volumen e integrarla bien a tu tienda.",
+    intro: "Para aceptar pagos con tarjeta en tu web en Perú necesitas tres cosas: una cuenta de comercio con una pasarela (Niubiz, Izipay, Culqi o Mercado Pago), una cuenta bancaria donde recibir el dinero y la integración con tu checkout. Sumando Yape, Plin o un link de pago cubres a casi todo comprador peruano. Si prefieres que lo dejemos conectado y probado, mira nuestra [integración de pagos con Yape y tarjeta](/integracion-de-pagos).",
     sections: [
       {
         h2: "Pasarelas y billeteras disponibles en Perú",
@@ -3451,7 +3470,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "SEO y posicionamiento web", href: "/seo", desc: "Posiciona tu negocio en Google de forma sostenible." },
       { label: "Google Ads vs SEO", href: "/blog/google-ads-vs-seo-cual-conviene-para-tu-negocio", desc: "Cuál conviene y por qué se complementan." },
       { label: "Cómo aparecer en Google", href: "/blog/como-hacer-que-tu-pagina-web-aparezca-en-google-peru", desc: "Las bases para posicionar tu web." },
-      { label: "Migrar tu web sin perder posicionamiento", href: "/blog/como-migrar-tu-pagina-web-sin-perder-posicionamiento-en-google", desc: "Rediseñar o cambiar de web puede hundir tu tráfico si se hace mal." },
+      { label: "Migrar tu web sin perder posicionamiento", href: "/blog/como-migrar-tu-pagina-web-sin-perder-posicionamiento-en-google", desc: "Cambiar de plataforma o de dominio puede hundir tu tráfico si se hace mal." },
       { label: "SEO on-page: la checklist para tu página web (2026)", href: "/blog/seo-on-page-checklist-para-tu-pagina-web", desc: "El SEO on-page es lo que sí controlas de tu web. Esta checklist cubre lo esencial para posicionar mejor." },
     ],
   },
@@ -3676,23 +3695,38 @@ export const BLOG_POSTS: BlogPost[] = [
     description:
       "Cómo migrar tu página web a otra plataforma o dominio en Perú sin perder posicionamiento en Google: redirecciones 301, estructura de URLs, contenido y los errores que hunden tu SEO.",
     excerpt:
-      "Rediseñar o cambiar de web puede hundir tu tráfico si se hace mal. Así se migra sin perder tus posiciones.",
+      "Cambiar de plataforma o de dominio puede hundir tu tráfico si se hace mal. Así se migra sin perder tus posiciones.",
     datePublished: "2026-07-08",
-    dateModified: "2026-11-05",
+    dateModified: "2026-11-07",
     category: "SEO",
-    readingMin: 7,
+    readingMin: 8,
+    /* 7-nov-2026 · «rediseñar sin perder seo» (201 imp, puesto 50-60) caía aquí y no
+       en su guía. Este artículo se queda con migrar de plataforma y cambiar de
+       dominio; lo de rediseñar se manda a /blog/como-redisenar-tu-pagina-web-sin-perder-seo. */
     intro:
-      "Rediseñar o cambiar de plataforma tu página web puede disparar tu negocio o hundir el tráfico que tanto costó construir. El error más común es migrar sin plan y perder de golpe las posiciones en Google. Aquí verás cómo migrar tu web cuidando el SEO y qué errores evitar a toda costa. Si solo cambias el diseño y mantienes dominio y plataforma, sigue el [checklist para rediseñar tu web sin perder el SEO](/blog/como-redisenar-tu-pagina-web-sin-perder-seo).",
+      "Cambiar tu página web de plataforma o de dominio puede disparar tu negocio o hundir el tráfico que tanto costó construir. El error más común es migrar sin plan y perder de golpe las posiciones en Google. Aquí verás cómo migrar tu web cuidando el SEO, qué hacer si cambias de dominio y qué errores evitar. Si solo cambias el diseño y mantienes dominio y plataforma, eso no es una migración: sigue el [checklist para rediseñar tu web sin perder el SEO](/blog/como-redisenar-tu-pagina-web-sin-perder-seo).",
     sections: [
       {
         h2: "Por qué una migración puede hundir tu SEO",
         body:
-          "Google conoce tu web actual: sabe qué URLs tienes, qué contenido hay en cada una y qué posición merecen. Cuando migras (cambias de plataforma, rediseñas o mueves de dominio) y esas URLs cambian o desaparecen sin avisar, Google encuentra páginas rotas y pierde el rastro de lo que ya valoraba. El resultado es una caída de tráfico que puede tardar meses en recuperarse. La buena noticia: se evita con un plan de migración cuidado. Lo que te llevas al terminar el proyecto está en [de quién es el código y el dominio](/blog/de-quien-es-el-codigo-el-dominio-y-los-accesos).",
+          "Google conoce tu web actual: sabe qué URLs tienes, qué contenido hay en cada una y qué posición merecen. Cuando migras (cambias de plataforma o mueves de dominio) y esas URLs cambian o desaparecen sin avisar, Google encuentra páginas rotas y pierde el rastro de lo que ya valoraba. El resultado es una caída de tráfico que puede tardar meses en recuperarse. La buena noticia: se evita con un plan de migración cuidado. Lo que te llevas al terminar el proyecto está en [de quién es el código y el dominio](/blog/de-quien-es-el-codigo-el-dominio-y-los-accesos).",
       },
       {
         h2: "Las redirecciones 301: lo más importante",
         body:
           "Si una URL cambia, hay que decirle a Google a dónde fue: eso es una redirección 301 (permanente). Sin ellas, cada página vieja que Google visita da error 404 y pierdes el posicionamiento que tenía. Antes de migrar hay que listar todas las URLs actuales y mapear cada una a su equivalente nueva. Es el paso que más se descuida y el que más tráfico salva. Si tu web tiene muchas páginas o un blog, este mapeo es imprescindible.",
+      },
+      {
+        h2: "¿Cambiar el dominio hace perder posiciones en SEO?",
+        body:
+          "Puede hacerlo, aunque no tiene por qué. Al pasar de un dominio a otro (por ejemplo de un .com a un .com.pe, o tras un cambio de nombre comercial) todas las URLs cambian a la vez, y Google tiene que trasladar a la dirección nueva lo que había aprendido de la vieja. Lo normal es una bajada temporal mientras rastrea el cambio; lo que la vuelve permanente es hacerlo sin redirecciones. Para que el traslado salga bien:",
+        bullets: [
+          "Redirige con 301 cada URL del dominio viejo a su equivalente exacta en el nuevo, no todo a la portada.",
+          "Verifica los dos dominios en Search Console y usa la herramienta «Cambio de dirección».",
+          "Mantén el dominio viejo registrado y redirigiendo como mínimo un año.",
+          "No cambies a la vez de dominio, de plataforma y de contenido: si algo cae, no sabrás qué fue.",
+          "Actualiza los enlaces que controlas (redes, Google Business Profile, directorios) al dominio nuevo.",
+        ],
       },
       {
         h2: "Qué revisar antes de migrar",
@@ -3719,13 +3753,17 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Cómo lo maneja Websy",
         body:
-          "Cuando rediseñamos o migramos una web, tratamos el SEO como prioridad, no como algo que se ve al final. Mapeamos las redirecciones, conservamos el contenido que posiciona y monitoreamos tras el lanzamiento. Si tu web actual ya tiene tráfico, migrar bien es la diferencia entre crecer o empezar de cero. Puedes ver qué incluye nuestro servicio de [SEO](/seo) o de [diseño de páginas web](/diseno-de-paginas-web).",
+          "Cuando migramos una web de plataforma o de dominio, tratamos el SEO como prioridad, no como algo que se ve al final. Mapeamos las redirecciones, conservamos el contenido que posiciona y monitoreamos tras el lanzamiento. Si tu web actual ya tiene tráfico, migrar bien es la diferencia entre crecer o empezar de cero. Puedes ver qué incluye nuestro servicio de [SEO](/seo) o de [diseño de páginas web](/diseno-de-paginas-web).",
       },
     ],
     faqs: [
       {
-        q: "¿Voy a perder posiciones si rediseño mi web?",
-        a: "No si se hace bien. El riesgo aparece cuando cambian las URLs sin redirecciones 301 o se borra contenido que posiciona. Con un plan de migración cuidado, puedes rediseñar y hasta mejorar tu SEO.",
+        q: "¿Voy a perder posiciones si migro mi web de plataforma?",
+        a: "No si se hace bien. El riesgo aparece cuando cambian las URLs sin redirecciones 301 o se borra contenido que posiciona. Con un plan de migración cuidado, puedes pasar, por ejemplo, de Wix a WordPress o de WooCommerce a Shopify y hasta mejorar tu SEO.",
+      },
+      {
+        q: "¿Cambiar el dominio hace perder posiciones en SEO?",
+        a: "Suele haber una bajada temporal mientras Google rastrea el cambio. Se recupera si redirigiste con 301 cada URL a su equivalente en el dominio nuevo y avisaste el cambio en Search Console; si no, la caída puede quedarse.",
       },
       {
         q: "¿Qué es una redirección 301 y por qué importa?",
@@ -3742,7 +3780,8 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     related: [
       { label: "SEO y posicionamiento web", href: "/seo", desc: "Migra y crece sin perder tus posiciones en Google." },
-      { label: "Diseño de páginas web", href: "/diseno-de-paginas-web", desc: "Rediseños que cuidan tu tráfico y tu SEO." },
+      { label: "Diseño de páginas web", href: "/diseno-de-paginas-web", desc: "Webs nuevas que cuidan tu tráfico y tu SEO." },
+      { label: "Rediseñar tu web sin perder SEO", href: "/blog/como-redisenar-tu-pagina-web-sin-perder-seo", desc: "Si solo cambias el diseño: el checklist para no perder posiciones." },
       { label: "Cómo aparecer en Google", href: "/blog/como-hacer-que-tu-pagina-web-aparezca-en-google-peru", desc: "Las bases del posicionamiento web." },
     ],
   },
@@ -3756,11 +3795,15 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "La mayoría busca servicios 'cerca de mí'. Así logras que tu negocio aparezca primero en tu ciudad o distrito.",
     datePublished: "2026-07-08",
-    dateModified: "2026-11-05",
+    dateModified: "2026-11-07",
     category: "SEO Local",
     readingMin: 7,
+    /* 7-nov-2026 · Esta guía se lleva «servicio seo local» (104 imp, puesto 12,2)
+       mientras /seo/seo-local sigue sin indexar. El enlace al servicio sube al
+       principio de la intro con el anchor de la intención comercial. Se quita
+       además la frase repetida que tenía la intro. */
     intro:
-      "Cuando alguien busca un servicio en su zona, Google le muestra un mapa con tres negocios y luego los resultados de siempre. Salir en ese paquete local es lo que llena tu agenda. El SEO local trabaja tu ficha de Google y tu web para que aparezcas primero cuando buscan lo que ofreces en tu ciudad o distrito. Si prefieres que lo hagamos por ti, mira nuestro [servicio de SEO local](/seo/seo-local). Si prefieres que lo trabajemos por ti, mira nuestro [servicio de SEO local](/seo/seo-local).",
+      "Si buscas un [servicio de SEO local en Lima](/seo/seo-local) que lo haga por ti, esa es nuestra página del servicio; aquí te explicamos cómo funciona. Cuando alguien busca un servicio en su zona, Google le muestra un mapa con tres negocios y luego los resultados de siempre. Salir en ese paquete local es lo que llena tu agenda. El SEO local trabaja tu ficha de Google y tu web para que aparezcas primero cuando buscan lo que ofreces en tu ciudad o distrito.",
     sections: [
       {
         h2: "Qué es el SEO local y por qué importa",
@@ -4130,18 +4173,21 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "manual-de-marca-que-es-y-por-que-tu-negocio-lo-necesita",
+    /* 7-nov-2026 · 885 imp en 90 d, puesto 9,3. «manual de marca que es» (103 imp,
+       7,4), «que es un manual de marca» (45, 17,6) y «que es manual de marca» (37,
+       8,4): H1 en forma de pregunta y definición de 40-50 palabras arriba. */
     title: "Qué es un manual de marca y qué debe incluir",
-    h1: "Manual de marca: qué es y por qué lo necesitas",
+    h1: "¿Qué es un manual de marca y qué debe incluir?",
     description:
-      "Qué es un manual de marca y por qué tu negocio en Perú lo necesita: reglas de logo, colores, tipografía y tono para verte coherente en todos lados.",
+      "Qué es un manual de marca, qué debe incluir (logo, colores, tipografía, tono y usos prohibidos) y por qué tu negocio en Perú lo necesita para verse coherente en todos lados.",
     excerpt:
       "Un manual de marca evita que tu negocio se vea distinto en cada pieza. Esto es lo que incluye y para qué sirve.",
     datePublished: "2026-07-08",
-    dateModified: "2026-09-29",
+    dateModified: "2026-11-07",
     category: "Marketing",
     readingMin: 6,
     intro:
-      "Un manual de marca es el documento que define cómo debe verse y comunicarse tu marca en todos lados: logo, colores, tipografía y tono. Sin él, cada pieza que hace una persona distinta sale diferente y tu negocio se ve improvisado. Aquí qué incluye un manual de marca y por qué le da coherencia y valor a tu negocio.",
+      "Un manual de marca es el documento que reúne las reglas para usar tu identidad: cómo va el logo y qué no se le hace, los colores con sus códigos, las tipografías y el tono con el que habla tu negocio. Sirve para que tu marca se vea y suene igual en cualquier pieza, la haga quien la haga. Lo armamos como parte de nuestro servicio de [branding e identidad de marca](/branding).",
     sections: [
       {
         h2: "Qué es un manual de marca",
@@ -4397,18 +4443,20 @@ export const BLOG_POSTS: BlogPost[] = [
   /* ── Cluster Shopify ─────────────────────────────────────────── */
   {
     slug: "como-crear-una-tienda-shopify-en-peru-paso-a-paso",
-    title: "Cómo crear una tienda Shopify en Perú paso a paso",
+    /* 7-nov-2026 · 658 imp en el puesto 6,9 y 0 clics. Title con «paso a paso 2026»
+       y meta que dice el resultado (tienda lista para cobrar con Yape y tarjeta). */
+    title: "Crear una tienda Shopify en Perú: paso a paso 2026",
     h1: "Cómo crear una tienda Shopify en Perú (paso a paso)",
     description:
-      "Guía paso a paso para crear una tienda Shopify en Perú: cuenta, tema, productos, pagos con Yape, Plin, Niubiz e Izipay, envíos y lanzamiento para empezar a vender.",
+      "Seis pasos para crear tu tienda Shopify en Perú y terminar con ella lista para vender: plan, tema, productos, cobro con Yape, Plin y tarjeta (Niubiz, Izipay), envíos y lanzamiento.",
     excerpt:
       "Cada paso para montar tu tienda Shopify en Perú: desde la cuenta hasta el lanzamiento, con pagos locales configurados.",
     datePublished: "2026-07-08",
-    dateModified: "2026-09-16",
+    dateModified: "2026-11-07",
     category: "Ecommerce",
     readingMin: 8,
     intro:
-      "Crear una tienda Shopify en Perú sigue un orden claro: abrir la cuenta, elegir y personalizar el tema, cargar tus productos, configurar los pagos locales (Yape, Plin, Niubiz, Izipay), definir envíos y lanzar. En esta guía recorremos cada paso para que tu tienda quede lista para vender, no solo montada.",
+      "Crear una tienda Shopify en Perú sigue un orden claro: abrir la cuenta, elegir y personalizar el tema, cargar tus productos, configurar los pagos locales (Yape, Plin, Niubiz, Izipay), definir envíos y lanzar. En esta guía recorremos cada paso para que tu tienda quede lista para vender, no solo montada. Si prefieres que la armemos por ti, mira nuestro servicio de [tiendas Shopify en Perú](/tiendas-virtuales/shopify).",
     sections: [
       {
         h2: "1. Crea tu cuenta y elige el plan de Shopify",
@@ -5225,9 +5273,11 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Si tu equipo pierde horas en tareas manuales y errores de Excel, es momento de automatizar. Aquí qué procesos delegar a un sistema y por dónde empezar.",
     datePublished: "2026-07-27",
-    dateModified: "2026-09-02",
+    dateModified: "2026-11-07",
     category: "Software",
     readingMin: 7,
+    /* 7-nov-2026 · «automatizar la operación de mi empresa» (67 imp, puesto 10,9):
+       la frase pasa a un H2 y a una FAQ, con enlace a /sistemas. */
     intro:
       "Automatizar es dejar que un sistema haga el trabajo repetitivo que hoy hace tu equipo a mano: registrar ventas, controlar stock, emitir comprobantes o armar reportes. El resultado son menos errores, menos horas perdidas y datos al instante para decidir. Aquí ves qué procesos conviene automatizar primero y cómo empezar sin frenar tu operación.",
     sections: [
@@ -5270,9 +5320,9 @@ export const BLOG_POSTS: BlogPost[] = [
         ],
       },
       {
-        h2: "Por dónde empezar",
+        h2: "Cómo automatizar la operación de tu empresa: por dónde empezar",
         body:
-          "No hace falta automatizar todo de golpe. Lo más rentable es empezar por el proceso que hoy te genera más errores o te quita más tiempo, y crecer desde ahí. Si nos cuentas cómo trabajas, identificamos ese primer paso y [te preparamos una propuesta a medida](/cotizacion), sin compromiso.",
+          "Para automatizar la operación de tu empresa no hace falta hacerlo todo de golpe. Puedes ver los módulos que ya construimos en [sistemas a medida para empresas](/sistemas). Lo más rentable es empezar por el proceso que hoy te genera más errores o te quita más tiempo, y crecer desde ahí. Si nos cuentas cómo trabajas, identificamos ese primer paso y [te preparamos una propuesta a medida](/cotizacion), sin compromiso.",
       },
     ],
     faqs: [
@@ -5287,6 +5337,10 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         q: "¿Cuánto tiempo toma implementar un sistema así?",
         a: "Depende del alcance, pero se puede arrancar por módulos para ver resultados pronto y seguir ampliando. Lo definimos contigo según qué proceso automatizar primero.",
+      },
+      {
+        q: "¿Cómo automatizo la operación de mi empresa sin parar el trabajo diario?",
+        a: "Empezando por un solo proceso, el que hoy da más errores o quita más horas, y poniéndolo en marcha en paralelo a como trabajas ahora hasta que el equipo se acostumbre. Luego se suman módulos de inventario, ventas o reportes. Así lo hacemos con nuestros [sistemas a medida](/sistemas).",
       },
     ],
     related: [
@@ -6346,18 +6400,22 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "certificado-ssl-que-es-y-por-que-tu-web-lo-necesita",
-    title: "Certificado SSL: qué es y por qué tu web lo necesita",
-    h1: "Certificado SSL: qué es y por qué tu web lo necesita",
+    /* 7-nov-2026 · Cluster SSL de 273 imp en los puestos 16-30 («certificado ssl
+       peru» 85 imp 16,1; «para que sirve un certificado ssl» 58 imp 26,8). Title con
+       Perú y las tres preguntas; respuesta directa a qué es, para qué sirve y cuánto
+       cuesta en la intro; FAQ con las formas exactas de búsqueda. */
+    title: "Certificado SSL en Perú: qué es, para qué sirve y cuánto cuesta",
+    h1: "Certificado SSL: qué es, para qué sirve y cuánto cuesta en Perú",
     description:
-      "Qué es un certificado SSL, por qué Chrome marca tu web como no segura sin él, cuánto cuesta y cómo comprobar que está bien instalado.",
+      "Qué es un certificado SSL, para qué sirve, cuánto cuesta en Perú (casi siempre viene gratis con el hosting) y cómo comprobar que tu web lo tiene bien instalado.",
     excerpt:
       "Es el candado del navegador. Sin él Chrome avisa a tus visitantes de que tu sitio no es seguro, y Google lo nota.",
     datePublished: "2026-08-26",
-    dateModified: "2026-09-02",
+    dateModified: "2026-11-07",
     category: "Web",
     readingMin: 5,
     intro:
-      "Un certificado SSL cifra lo que viaja entre tu web y quien la visita, para que nadie pueda leerlo por el camino. Es lo que hace que la dirección empiece por «https» y aparezca el candado. Sin él, Chrome muestra un aviso de «no es seguro» antes de que el visitante vea tu contenido. Hoy es gratis en casi cualquier hosting, así que no tenerlo no se justifica.",
+      "Un certificado SSL es un archivo instalado en el servidor que cifra lo que viaja entre tu web y quien la visita. Sirve para que nadie lea por el camino los datos de un formulario o de un pago, y es lo que pone el «https» y el candado en la dirección. En Perú casi todos los hostings lo incluyen gratis con Let's Encrypt, así que no tenerlo no se justifica.",
     sections: [
       {
         h2: "Qué pasa si tu web no lo tiene",
@@ -6391,6 +6449,18 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     faqs: [
+      {
+        q: "¿Qué es un certificado SSL?",
+        a: "Es un archivo que se instala en el servidor de tu web y cifra la conexión con cada visitante. Gracias a él la dirección empieza por «https» y el navegador muestra el candado.",
+      },
+      {
+        q: "¿Para qué sirve un certificado SSL?",
+        a: "Sirve para que los datos que se envían en tu web (formularios, contraseñas, pagos) viajen cifrados, para que Chrome no marque tu sitio como «no seguro» y para que las pasarelas de pago te habiliten. También es uno de los factores que Google considera.",
+      },
+      {
+        q: "¿Cuánto cuesta un certificado SSL en Perú?",
+        a: "Normalmente nada: la mayoría de hostings en Perú incluye certificados gratuitos de Let's Encrypt que se renuevan solos. Los de pago solo se justifican si necesitas validación extendida de la empresa o garantías comerciales; su precio depende de cada emisor.",
+      },
       {
         q: "¿El SSL gratis protege igual que uno de pago?",
         a: "El cifrado es el mismo. Lo que cambia son las garantías comerciales y el nivel de validación de la organización, que importan en casos concretos. Para una web de empresa o una tienda, el gratuito cumple.",
