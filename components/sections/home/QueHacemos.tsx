@@ -45,7 +45,7 @@ export default function QueHacemos() {
             Agencia de desarrollo web en Lima
           </p>
           <h2 className="font-montserrat text-[clamp(26px,3vw,38px)] font-bold leading-[1.15] tracking-tight text-[#291231]">
-            Qué hacemos en Websy, en concreto
+            Empresa de desarrollo web en Lima: qué hacemos, en concreto
           </h2>
           <span className="mt-6 block h-[3px] w-14 rounded-full bg-[#F18C1B]" />
         </div>
@@ -91,6 +91,21 @@ export default function QueHacemos() {
             Yape, Plin, Niubiz e Izipay; facturación electrónica válida para SUNAT; envíos con los
             couriers que se usan en el país; y WhatsApp como canal principal, medido para saber
             cuántos contactos trae de verdad.
+          </p>
+          <p>
+            Y armamos piezas concretas cuando eso es lo que hace falta: una{" "}
+            <Link href="/diseno-de-landing-pages" className={ENLACE}>
+              landing page
+            </Link>{" "}
+            para una campaña, el{" "}
+            <Link href="/seo/seo-local" className={ENLACE}>
+              SEO local
+            </Link>{" "}
+            para que te encuentren en tu distrito, o un{" "}
+            <Link href="/sistemas/sistema-para-clinicas" className={ENLACE}>
+              sistema para clínicas
+            </Link>{" "}
+            con citas, historia clínica y caja.
           </p>
           <p>
             Si por dentro tu empresa se ordena con hojas de cálculo, el trabajo no empieza por la

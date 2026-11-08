@@ -988,7 +988,7 @@ export const BLOG_POSTS: BlogPost[] = [
         h2: "Control total y propiedad",
         bullets: [
           "Eres dueño de tu tienda, tu contenido y tus datos de clientes.",
-          "Eliges tu hosting y no dependes de las reglas de una plataforma.",
+          "Eliges tu hosting y no dependes de las reglas de una plataforma (qué pedirle lo explicamos en [qué hosting necesita una tienda WooCommerce](/blog/hosting-para-woocommerce-en-peru)).",
           "Puedes ampliar la tienda sin límites con el tiempo.",
         ],
       },
@@ -1133,7 +1133,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Tallas, colores y variantes",
         body:
-          "Una tienda de ropa necesita manejar variantes: cada prenda en sus tallas y colores, con stock independiente. Así el cliente elige exacto lo que quiere y tú controlas qué se vende más.",
+          "Una tienda de ropa necesita manejar variantes: cada prenda en sus tallas y colores, con stock independiente. Así el cliente elige exacto lo que quiere y tú controlas qué se vende más. Cómo llevar ese stock por talla y color sin vender lo agotado lo explicamos en [cómo controlar el stock de una tienda de ropa](/blog/como-controlar-el-stock-de-una-tienda-de-ropa).",
       },
       {
         h2: "Fotos que venden",
@@ -2435,7 +2435,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "SEO local: aparece cuando buscan dónde comer",
         body:
-          "La mitad de la batalla es salir en Google cuando alguien busca tu tipo de comida cerca. Con una web optimizada y tu ficha de Google al día, apareces en el mapa y en las búsquedas locales. Te lo dejamos listo cuando hacemos tu [página web para restaurantes](/diseno-de-paginas-web/restaurantes), y puedes profundizar en nuestra guía para [aparecer en Google](/blog/como-hacer-que-tu-pagina-web-aparezca-en-google-peru). Para aparecer en tu zona, mira [SEO local en Perú](/blog/seo-local-en-peru-como-salir-primero-en-tu-ciudad).",
+          "La mitad de la batalla es salir en Google cuando alguien busca tu tipo de comida cerca. Con una web optimizada y tu ficha de Google al día, apareces en el mapa y en las búsquedas locales. Te lo dejamos listo en nuestro servicio de [diseño web para restaurantes](/diseno-de-paginas-web/restaurantes), y puedes profundizar en nuestra guía para [aparecer en Google](/blog/como-hacer-que-tu-pagina-web-aparezca-en-google-peru). Para aparecer en tu zona, mira [SEO local en Perú](/blog/seo-local-en-peru-como-salir-primero-en-tu-ciudad).",
       },
     ],
     faqs: [
@@ -2688,7 +2688,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Cuánto cuesta y cómo empezar",
         body:
-          "Según tengas un abogado independiente o un estudio con varias áreas, el alcance cambia. Te damos una cotización clara y sin costo; mira qué incluye cada servicio en [nuestros precios](/precios). Si quieres ver el detalle de cómo trabajamos este rubro en concreto, revisa nuestro servicio de [páginas web para abogados y estudios jurídicos](/diseno-de-paginas-web/abogados).",
+          "Según tengas un abogado independiente o un estudio con varias áreas, el alcance cambia. Te damos una cotización clara y sin costo; mira qué incluye cada servicio en [nuestros precios](/precios). Si quieres ver el detalle de cómo trabajamos este rubro en concreto, revisa nuestro servicio de [diseño web para abogados](/diseno-de-paginas-web/abogados) y estudios jurídicos.",
       },
     ],
     faqs: [
@@ -2763,7 +2763,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Cuánto cuesta y cómo empezar",
         body:
-          "Depende de cuántos proyectos manejes y si necesitas integración con CRM. Te preparamos una cotización a medida y sin costo; revisa qué incluye cada opción en [nuestra página de precios](/precios) o el detalle de nuestras [páginas web para inmobiliarias y constructoras](/diseno-de-paginas-web/inmobiliarias).",
+          "Depende de cuántos proyectos manejes y si necesitas integración con CRM. Te preparamos una cotización a medida y sin costo; revisa qué incluye cada opción en [nuestra página de precios](/precios) o el detalle de nuestro servicio de [diseño web para inmobiliarias](/diseno-de-paginas-web/inmobiliarias) y constructoras.",
       },
     ],
     faqs: [
@@ -3008,7 +3008,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Muestra tus planes y capta inscripciones",
         body:
-          "El nuevo socio quiere saber cuánto cuesta y qué incluye antes de ir. Mostrar tus planes de membresía con claridad reduce las preguntas repetidas y filtra a quien sí va a inscribirse. Un botón de WhatsApp con el plan ya cargado, o un formulario de inscripción, convierte esa visita a la web en un socio real. Cuando armamos tu [página web](/diseno-de-paginas-web/gimnasios), la dejamos pensada para captar, no solo para mostrar. A dónde llega el clic importa tanto como el anuncio: [la landing page para Google Ads](/blog/landing-page-para-google-ads).",
+          "El nuevo socio quiere saber cuánto cuesta y qué incluye antes de ir. Mostrar tus planes de membresía con claridad reduce las preguntas repetidas y filtra a quien sí va a inscribirse. Un botón de WhatsApp con el plan ya cargado, o un formulario de inscripción, convierte esa visita a la web en un socio real. En nuestro servicio de [diseño web para gimnasios](/diseno-de-paginas-web/gimnasios) la dejamos pensada para captar, no solo para mostrar. A dónde llega el clic importa tanto como el anuncio: [la landing page para Google Ads](/blog/landing-page-para-google-ads).",
       },
       {
         h2: "SEO local: aparece cuando buscan gimnasio cerca",
@@ -3083,7 +3083,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Reservas directas sin comisión",
         body:
-          "Cada reserva que entra por tu web es dinero que no compartes con una plataforma. Un motor de reservas o, para empezar, un botón de reserva por WhatsApp con las fechas ya cargadas, convierte la visita en huésped. La clave es que reservar sea fácil y transmita confianza: fotos reales, políticas claras y respuesta rápida. Cuando armamos tu [página web de hotel](/diseno-de-paginas-web/hoteles), la dejamos lista para captar reservas directas. Si tu negocio va por citas, mira [el sistema de reservas y citas a medida](/blog/sistema-de-reservas-y-citas-a-medida).",
+          "Cada reserva que entra por tu web es dinero que no compartes con una plataforma. Un motor de reservas o, para empezar, un botón de reserva por WhatsApp con las fechas ya cargadas, convierte la visita en huésped. La clave es que reservar sea fácil y transmita confianza: fotos reales, políticas claras y respuesta rápida. En nuestro servicio de [diseño web para hoteles](/diseno-de-paginas-web/hoteles) la dejamos lista para captar reservas directas. Si tu negocio va por citas, mira [el sistema de reservas y citas a medida](/blog/sistema-de-reservas-y-citas-a-medida).",
       },
       {
         h2: "Fotos y experiencia que venden",
@@ -3158,7 +3158,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Facilita el proceso de admisión",
         body:
-          "El momento clave es la admisión. Explicar con claridad los pasos, requisitos y fechas reduce las llamadas repetidas y ordena a las familias interesadas. Un formulario de admisión o un botón de cita por WhatsApp convierte al padre que investiga en una visita agendada. Cuando armamos tu [página web para colegios](/diseno-de-paginas-web/colegios), la dejamos pensada para captar matrículas, no solo para informar.",
+          "El momento clave es la admisión. Explicar con claridad los pasos, requisitos y fechas reduce las llamadas repetidas y ordena a las familias interesadas. Un formulario de admisión o un botón de cita por WhatsApp convierte al padre que investiga en una visita agendada. En nuestro servicio de [diseño web para colegios](/diseno-de-paginas-web/colegios) la dejamos pensada para captar matrículas, no solo para informar.",
       },
       {
         h2: "Comunica con padres y comunidad",
@@ -3682,7 +3682,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Errores que arruinan una migración",
         body:
-          "Los más caros: lanzar la web nueva sin redirecciones (todo cae en 404), cambiar todas las URLs sin necesidad, dejar la web bloqueada a Google por un ajuste de 'en construcción' que nadie quitó, o borrar contenido que traía tráfico pensando que 'no servía'. También olvidar avisar el cambio en Search Console. Cada uno de estos errores, por sí solo, puede tumbar tu posicionamiento. Por eso una migración no se improvisa un viernes por la tarde.",
+          "Los más caros: lanzar la web nueva sin redirecciones (todo cae en 404), cambiar todas las URLs sin necesidad, dejar la web bloqueada a Google por un ajuste de 'en construcción' que nadie quitó, o borrar contenido que traía tráfico pensando que 'no servía'. También olvidar avisar el cambio en Search Console. Cada uno de estos errores, por sí solo, puede tumbar tu posicionamiento. Por eso una migración no se improvisa un viernes por la tarde. Si lo que cambias es solo el diseño, los mismos cuidados están ordenados en [cómo rediseñar tu página web sin perder SEO](/blog/como-redisenar-tu-pagina-web-sin-perder-seo).",
       },
       {
         h2: "Después de migrar: monitorea",
@@ -3822,7 +3822,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Encabezados y estructura del contenido",
         body:
-          "Un solo H1 por página con el tema principal, y H2/H3 que organicen el contenido en secciones lógicas. Esta jerarquía ayuda a Google a entender de qué trata la página y facilita la lectura. Un texto ordenado por encabezados, con párrafos cortos y listas, se lee mejor y tiene más opciones de aparecer en fragmentos destacados y en respuestas de IA. El protocolo está en [migrar tu página web sin perder posicionamiento](/blog/como-migrar-tu-pagina-web-sin-perder-posicionamiento-en-google).",
+          "Un solo H1 por página con el tema principal, y H2/H3 que organicen el contenido en secciones lógicas. Esta jerarquía ayuda a Google a entender de qué trata la página y facilita la lectura. Un texto ordenado por encabezados, con párrafos cortos y listas, se lee mejor y tiene más opciones de aparecer en fragmentos destacados y en respuestas de IA. El protocolo está en [migrar tu página web sin perder posicionamiento](/blog/como-migrar-tu-pagina-web-sin-perder-posicionamiento-en-google). Y si vas a cambiar el diseño, esta misma checklist se usa antes y después: lo explicamos en [cómo rediseñar tu web sin perder SEO](/blog/como-redisenar-tu-pagina-web-sin-perder-seo).",
       },
       {
         h2: "URLs, imágenes y datos que Google entiende",
@@ -4610,7 +4610,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Tallas, colores y variantes bien organizadas",
         body:
-          "Cada prenda debe tener sus tallas y colores como variantes con stock independiente. Así el cliente elige exacto lo que quiere, tú controlas qué se vende más y evitas vender lo agotado. La comparación completa está en [tienda virtual o marketplace](/blog/tienda-virtual-vs-marketplace-conviene-vender-en-mercadolibre).",
+          "Cada prenda debe tener sus tallas y colores como variantes con stock independiente. Así el cliente elige exacto lo que quiere, tú controlas qué se vende más y evitas vender lo agotado. El paso a paso de ese control está en [cómo controlar el stock de una tienda de ropa](/blog/como-controlar-el-stock-de-una-tienda-de-ropa). La comparación completa está en [tienda virtual o marketplace](/blog/tienda-virtual-vs-marketplace-conviene-vender-en-mercadolibre).",
       },
       {
         h2: "Fotos que venden moda",
@@ -5954,7 +5954,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Compartido, VPS o gestionado: cuál te toca",
         body:
-          "Un hosting compartido reparte un servidor entre muchas webs: es lo más barato y suficiente para una web institucional o un blog. Un VPS te reserva recursos propios y aguanta más visitas, tiene sentido para tiendas con catálogo grande o sistemas a medida. El gestionado cuesta más pero el proveedor se encarga de actualizaciones y seguridad. Si no tienes a nadie que administre el servidor, el gestionado sale más barato que un VPS mal cuidado. Cuando el proyecto arranca de cero, lo habitual es que el alojamiento venga resuelto dentro del [desarrollo de la web](/desarrollo-web) y no haya que elegir nada.",
+          "Un hosting compartido reparte un servidor entre muchas webs: es lo más barato y suficiente para una web institucional o un blog. Un VPS te reserva recursos propios y aguanta más visitas, tiene sentido para tiendas con catálogo grande o sistemas a medida. El gestionado cuesta más pero el proveedor se encarga de actualizaciones y seguridad. Si no tienes a nadie que administre el servidor, el gestionado sale más barato que un VPS mal cuidado. Si lo que vas a alojar es una tienda, los requisitos cambian: lo vemos en [hosting para WooCommerce en Perú](/blog/hosting-para-woocommerce-en-peru). Cuando el proyecto arranca de cero, lo habitual es que el alojamiento venga resuelto dentro del [desarrollo de la web](/desarrollo-web) y no haya que elegir nada.",
       },
       {
         h2: "Y si prefieres no ocuparte de esto",

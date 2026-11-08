@@ -4,9 +4,9 @@ import ServiceLanding from "@/components/sections/landing/ServiceLanding";
 
 export const metadata: Metadata = pageMeta({
   path: "/diseno-de-paginas-web/abogados",
-  title: "Creamos la web de tu estudio de abogados",
+  title: "Diseño web para abogados y estudios jurídicos en Perú",
   description:
-    "Diseño de páginas web para abogados y estudios jurídicos en Perú: áreas de práctica, casos, confianza profesional, captación de clientes y SEO local.",
+    "Diseño web para abogados y estudios jurídicos en Perú: una página por área de práctica, perfil del abogado, consulta por WhatsApp y SEO local. Cotiza gratis en 24 h.",
 });
 
 export default function PaginaWebAbogadosPage() {
@@ -20,7 +20,7 @@ export default function PaginaWebAbogadosPage() {
       ]}
       eyebrow="Servicio · Estudios de abogados"
       h1="Creamos la página web de tu estudio de abogados"
-      intro="Diseñamos páginas web para abogados y estudios jurídicos en Lima y todo el Perú: con áreas de práctica, perfil del abogado, consulta directa y SEO local. Una web sobria y confiable que convierte una búsqueda urgente en una consulta con tu estudio."
+      intro="Hacemos diseño web para abogados y estudios jurídicos en Lima y todo el Perú: con áreas de práctica, perfil del abogado, consulta directa y SEO local. Una web sobria y confiable que convierte una búsqueda urgente en una consulta con tu estudio."
       highlights={["Áreas de práctica", "Perfil profesional", "Consulta directa", "SEO local", "Confianza"]}
       stats={[
         { value: "Consultas", label: "Directo por WhatsApp o formulario" },
@@ -32,7 +32,7 @@ export default function PaginaWebAbogadosPage() {
         {
           h2: "Un cliente con un problema legal decide con la web en la mano",
           body:
-            "Quien busca un abogado suele tener una necesidad urgente: un despido, un divorcio, una deuda, un contrato. Antes de llamar, investiga en Google y evalúa en segundos si tu estudio le inspira confianza. Diseñamos una web sobria y profesional que comunica tus áreas de práctica, tu experiencia y cómo puedes ayudarlo, con un camino claro para agendar una consulta. En derecho, la credibilidad que proyecta tu web es tu primer alegato.",
+            "Quien busca un abogado suele tener una necesidad urgente: un despido, un divorcio, una deuda, un contrato. Antes de llamar, investiga en Google y evalúa en segundos si tu estudio le inspira confianza. Diseñamos una web sobria y profesional que comunica tus áreas de práctica, tu experiencia y cómo puedes ayudarlo, con un camino claro para agendar una consulta. En derecho, la credibilidad que proyecta tu web es tu primer alegato. Si antes quieres repasar qué debe tener la web de un estudio, lo explicamos en la guía de [página web para estudios de abogados](/blog/pagina-web-para-estudios-de-abogados).",
         },
         {
           h2: "Áreas de práctica bien explicadas",

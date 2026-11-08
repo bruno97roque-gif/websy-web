@@ -6,7 +6,7 @@ export const metadata: Metadata = pageMeta({
   path: "/sistemas",
   title: "Sistemas Web para Empresas en Perú: Cuál necesitas",
   description:
-    "Qué es un sistema web, qué tipos existen y cuál necesita tu empresa en Perú. Sistemas de inventario, ventas y facturación y gestión (ERP/CRM) para automatizar tu operación.",
+    "¿Qué sistema web necesita tu empresa? Inventario, ventas con facturación SUNAT o ERP/CRM, a medida y por etapas. Te decimos por cuál empezar y cotizas gratis en 24 h.",
 });
 
 export default function SistemasPage() {

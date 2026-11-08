@@ -24,7 +24,7 @@ export default function DisenoPaginasWebPage() {
       ]}
       eyebrow="Diseño y Desarrollo Web"
       h1="Agencia de diseño de páginas web en Lima, Perú"
-      intro="Websy es una agencia de diseño de páginas web en Lima. Diseñamos y desarrollamos páginas web profesionales para empresas de todo el Perú: sitios administrables, responsive y optimizados para SEO, con formulario, WhatsApp, hosting y dominio. Una página pensada para generar contactos, no solo para verse bien."
+      intro="Websy es una agencia de páginas web en Lima. Diseñamos y desarrollamos páginas web profesionales para empresas de todo el Perú: sitios administrables, responsive y optimizados para SEO, con formulario, WhatsApp, hosting y dominio. Una página pensada para generar contactos, no solo para verse bien."
       highlights={["Responsive", "Administrable", "Optimizada SEO", "Con WhatsApp", "Hosting + dominio"]}
       stats={[
         { value: "24 h", label: "Respuesta a tu cotización" },
@@ -53,8 +53,25 @@ export default function DisenoPaginasWebPage() {
           bullets: [
             "Página web corporativa para proyectar confianza y profesionalismo.",
             "Web para negocios y emprendedores que recién empiezan.",
-            "Landing pages para campañas de Google Ads y redes.",
+            "[Landing pages](/diseno-de-landing-pages) para campañas de Google Ads y redes.",
             "Escala a tienda virtual cuando estés listo para vender online.",
+          ],
+        },
+        {
+          /* 7-nov-2026 · «agencia de páginas web» 105 imp, puesto 21,3 (28 d) y
+             ningún H2 la nombraba. Este bloque además enlaza las 7 páginas por
+             sector, que desde aquí solo recibían el enlace del menú. */
+          h2: "Una agencia de páginas web que conoce tu rubro",
+          body:
+            "Cada sector necesita cosas distintas de su web: un restaurante vive de la carta y los pedidos, una clínica de las citas, un estudio de abogados de la confianza. Por eso tenemos un servicio armado para cada rubro con lo que de verdad le pide su cliente:",
+          bullets: [
+            "[Diseño web para restaurantes](/diseno-de-paginas-web/restaurantes): carta digital, pedidos y reservas sin comisión.",
+            "[Diseño web para clínicas](/diseno-de-paginas-web/clinicas): especialidades, staff médico y citas por WhatsApp.",
+            "[Diseño web para abogados](/diseno-de-paginas-web/abogados): áreas de práctica, perfil del abogado y consulta directa.",
+            "[Diseño web para inmobiliarias](/diseno-de-paginas-web/inmobiliarias): proyectos, fichas de inmuebles y captación de interesados.",
+            "[Diseño web para gimnasios](/diseno-de-paginas-web/gimnasios): planes, horarios e inscripciones.",
+            "[Diseño web para colegios](/diseno-de-paginas-web/colegios): admisión, niveles y comunicación con las familias.",
+            "[Diseño web para hoteles](/diseno-de-paginas-web/hoteles): habitaciones, fotos y reservas directas.",
           ],
         },
         {
