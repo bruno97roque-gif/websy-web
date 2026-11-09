@@ -85,6 +85,13 @@ const nextConfig: NextConfig = {
         destination: "/blog/como-hacer-que-tu-pagina-web-aparezca-en-google-peru",
         permanent: true,
       },
+      /* 8-nov-2026 · Canibalización en «como posicionar mi tienda online en google»:
+         la guía general (207 imp en 90 d) absorbe a la de fichas y categorías (11 imp). */
+      {
+        source: "/blog/como-posicionar-tu-tienda-online-en-google-peru",
+        destination: "/blog/como-posicionar-una-tienda-virtual-en-google",
+        permanent: true,
+      },
     ];
   },
 

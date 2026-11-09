@@ -157,81 +157,6 @@ export const BLOG_POSTS: BlogPost[] = [
   },
 
   {
-    slug: "como-posicionar-tu-tienda-online-en-google-peru",
-    title: "SEO para tiendas online: fichas y categorías",
-    h1: "SEO para tiendas online: cómo optimizar fichas de producto y categorías",
-    description:
-      "Cómo optimizar fichas de producto y páginas de categoría de tu tienda online en Perú: títulos, descripciones únicas y los errores que la dejan invisible.",
-    excerpt:
-      "El SEO de una tienda online se juega en las fichas de producto y las categorías. Qué poner en cada una y qué errores la dejan invisible.",
-    datePublished: "2026-07-23",
-    dateModified: "2026-11-07",
-    category: "Tiendas virtuales",
-    readingMin: 7,
-    /* 7-nov-2026 · Se disputaba «como posicionar mi tienda online en google» (84 imp,
-       puesto 34,8) con /blog/como-posicionar-una-tienda-virtual-en-google. Reparto por
-       intención: este se queda con el SEO de FICHAS Y CATEGORÍAS; la guía general de
-       posicionar la tienda es el otro. Fusión con 301 pendiente de OK. */
-    intro:
-      "El SEO de una tienda online se gana en dos tipos de página: las fichas de producto y las categorías. Son las que Google muestra cuando alguien busca lo que vendes con intención de comprar. Aquí verás qué debe llevar cada ficha, cómo escribir una categoría que posicione y qué errores dejan invisible tu catálogo en Perú. La estrategia general está en [cómo posicionar una tienda virtual en Google](/blog/como-posicionar-una-tienda-virtual-en-google).",
-    sections: [
-      {
-        h2: "Por qué el SEO es clave para una tienda virtual",
-        body:
-          "La publicidad pagada trae ventas mientras pagas; el SEO trae ventas de forma sostenida. Una tienda bien posicionada aparece cuando alguien busca exactamente lo que vendes, con intención de comprar. En un e-commerce el SEO no es una sola página: son decenas de productos y categorías que pueden rankear cada uno por su búsqueda. Ese es el gran potencial de una tienda optimizada.",
-      },
-      {
-        h2: "Optimiza tus fichas de producto",
-        body:
-          "Cada producto es una oportunidad de rankear. Para eso, la ficha necesita:",
-        bullets: [
-          "Un título claro con el nombre real del producto (como lo busca la gente).",
-          "Descripción propia y útil, no la copiada del proveedor (Google penaliza el contenido duplicado).",
-          "Fotos de calidad con texto alternativo (alt) descriptivo.",
-          "URL limpia y datos estructurados de producto (precio, stock, reseñas).",
-        ],
-      },
-      {
-        h2: "Las categorías son tus páginas más potentes",
-        body:
-          "Las páginas de categoría (por ejemplo 'zapatillas para correr') suelen tener más búsquedas que un producto individual y son las que más tráfico capturan. Dales un título y un texto propio que explique la categoría, no solo un listado de productos. Una buena arquitectura de categorías, bien enlazada, es la columna vertebral del SEO de tu tienda.",
-      },
-      {
-        h2: "Velocidad, móvil y confianza",
-        body:
-          "En Perú la mayoría compra desde el celular: si tu tienda carga lento, pierdes ventas y posiciones. Google prioriza las tiendas rápidas y aptas para móvil. Súmale señales de confianza (pagos locales como Yape y Plin, envíos claros, reseñas) y no solo posicionas mejor: conviertes más. Velocidad y confianza van de la mano con las ventas.",
-      },
-      {
-        h2: "Contenido que atrae compradores",
-        body:
-          "Un blog con guías de compra ('cómo elegir…', 'mejores… 2026') atrae a gente en fase de investigación y la lleva a tus productos. Es la forma de captar tráfico que aún no busca tu marca pero sí lo que vendes. Si quieres una tienda construida y optimizada para vender desde el día uno —con SEO, pagos locales y velocidad— revisa nuestro servicio de [tiendas virtuales](/tiendas-virtuales). Y para el trabajo de posicionamiento continuo, nuestro [servicio de SEO](/seo) lleva tu catálogo a la primera página.",
-      },
-    ],
-    faqs: [
-      {
-        q: "¿Cuánto tarda en posicionar una tienda online?",
-        a: "Las primeras mejoras se ven en semanas, pero posicionar categorías y productos competitivos toma varios meses de trabajo constante. Un dominio nuevo tarda más; por eso conviene empezar cuanto antes.",
-      },
-      {
-        q: "¿SEO o Google Ads para mi tienda?",
-        a: "Lo ideal es combinar: Ads te da ventas inmediatas mientras el SEO madura, y el SEO te da ventas sostenidas sin pagar por clic. A largo plazo, el SEO baja tu costo de adquisición.",
-      },
-      {
-        q: "¿Sirve el SEO si vendo también por redes o marketplaces?",
-        a: "Sí. Tu tienda propia posicionada en Google es un canal que no depende de algoritmos ajenos ni de comisiones. Complementa muy bien a redes y marketplaces, y la marca queda tuya.",
-      },
-      {
-        q: "¿Ustedes optimizan tiendas ya existentes?",
-        a: "Sí. Auditamos tu tienda (Shopify, WooCommerce u otra), corregimos lo técnico y trabajamos el SEO de productos y categorías. Cuéntanos qué plataforma usas y te orientamos.",
-      },
-    ],
-    related: [
-      { label: "Tiendas virtuales", href: "/tiendas-virtuales", desc: "Creamos tu e-commerce optimizado para vender." },
-      { label: "Servicio de SEO en Perú", href: "/seo", desc: "Llevamos tu catálogo a la primera página de Google." },
-      { label: "Cómo integrar Yape y Plin en tu tienda", href: "/blog/como-integrar-yape-y-plin-en-tu-tienda-virtual", desc: "Pagos locales que aumentan tus ventas." },
-    ],
-  },
-  {
     slug: "cuanto-cuesta-una-tienda-virtual-en-peru",
     title: "Cuánto cuesta una tienda virtual en Perú (2026)",
     h1: "¿Cuánto cuesta una tienda virtual en Perú?",
@@ -415,7 +340,7 @@ export const BLOG_POSTS: BlogPost[] = [
     related: [
       { label: "Tiendas Shopify", href: "/tiendas-virtuales/shopify", desc: "Desarrollo y migración sobre Shopify." },
       { label: "Tiendas WooCommerce", href: "/tiendas-virtuales/woocommerce", desc: "Tu tienda sobre WordPress, sin mensualidad." },
-      { label: "SEO para tiendas online: fichas y categorías", href: "/blog/como-posicionar-tu-tienda-online-en-google-peru", desc: "Tu tienda online no vende si nadie la encuentra." },
+      { label: "Cómo posicionar una tienda virtual en Google", href: "/blog/como-posicionar-una-tienda-virtual-en-google", desc: "Tu tienda online no vende si nadie la encuentra." },
       { label: "Cuánto cuesta una tienda virtual en Perú (2026)", href: "/blog/cuanto-cuesta-una-tienda-virtual-en-peru", desc: "Qué define realmente el precio de una tienda virtual en Perú y cómo saber cuánto invertir según tu…" },
       { label: "Cuánto cobra Shopify al mes en Perú (2026)", href: "/blog/cuanto-cuesta-una-tienda-en-shopify", desc: "El plan mensual es solo una parte. Esto es lo que realmente compone el costo de una tienda Shopify." },
     ],
@@ -471,7 +396,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Integración de Yape y pasarelas de pago", href: "/integracion-de-pagos", desc: "Conectamos Yape, Plin, Izipay, Niubiz o Culqi a tu web, tienda o app." },
       { label: "Desarrollo de tiendas virtuales", href: "/tiendas-virtuales", desc: "Tienda con pagos Yape, Plin, Niubiz e Izipay." },
       { label: "Cotiza tu tienda", href: "/cotizacion", desc: "Te ayudamos a elegir e integrar tus pasarelas." },
-      { label: "SEO para tiendas online: fichas y categorías", href: "/blog/como-posicionar-tu-tienda-online-en-google-peru", desc: "Tu tienda online no vende si nadie la encuentra." },
+      { label: "Cómo posicionar una tienda virtual en Google", href: "/blog/como-posicionar-una-tienda-virtual-en-google", desc: "Tu tienda online no vende si nadie la encuentra." },
       { label: "Qué necesita una tienda virtual para vender", href: "/blog/que-necesita-una-tienda-virtual-para-vender", desc: "No basta con subir productos. Estos son los elementos que separan una tienda que vende de una que solo…" },
       { label: "Cuánto cobra Shopify al mes en Perú (2026)", href: "/blog/cuanto-cuesta-una-tienda-en-shopify", desc: "El plan mensual es solo una parte. Esto es lo que realmente compone el costo de una tienda Shopify." },
           { label: "Cómo conectar Niubiz paso a paso", href: "/blog/como-conectar-niubiz-a-tu-tienda-virtual", desc: "El proceso real de integración." },
@@ -648,19 +573,34 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Las claves de SEO para que tu tienda virtual aparezca en Google y atraiga clientes que ya quieren comprar.",
     datePublished: "2026-06-19",
-    dateModified: "2026-11-07",
+    dateModified: "2026-11-08",
     category: "SEO",
-    readingMin: 6,
+    readingMin: 8,
     intro:
-      "Para posicionar tu tienda online en Google necesitas cuatro cosas: fichas y categorías optimizadas, contenido que atraiga antes de la compra, una tienda rápida en el celular y datos estructurados con reseñas reales. El SEO para ecommerce hace que tus productos aparezcan cuando alguien busca lo que vendes. Estas son las bases, y el detalle de fichas y categorías está en [SEO para tiendas online](/blog/como-posicionar-tu-tienda-online-en-google-peru).",
+      "Para posicionar tu tienda online en Google necesitas cuatro cosas: fichas y categorías optimizadas, contenido que atraiga antes de la compra, una tienda rápida en el celular y datos estructurados con reseñas reales. El SEO para ecommerce hace que tus productos aparezcan cuando alguien busca lo que vendes. Estas son las bases, con el detalle de fichas y categorías.",
+    /* 8-nov-2026 · Fusión: /blog/como-posicionar-tu-tienda-online-en-google-peru
+       (11 imp en 90 d) redirige con 301 aquí (207 imp, «como posicionar mi tienda
+       online en google» 85 imp). Se trajeron sus secciones y FAQ que no estaban aquí. */
     sections: [
+      {
+        h2: "Por qué el SEO es clave para una tienda virtual",
+        body:
+          "La publicidad pagada trae ventas mientras pagas; el SEO trae ventas de forma sostenida. Una tienda bien posicionada aparece cuando alguien busca exactamente lo que vendes, con intención de comprar. En un ecommerce el SEO no es una sola página: son decenas de productos y categorías que pueden rankear cada uno por su búsqueda.",
+      },
       {
         h2: "Optimiza fichas de producto y categorías",
         bullets: [
           "Títulos y descripciones únicas con la palabra que la gente busca.",
           "Categorías con texto propio, no vacías: Google las usa para entender tu tienda.",
           "Imágenes con texto alternativo (alt) y buen peso para que carguen rápido.",
+          "Descripción propia en cada producto, no la copiada del proveedor: el texto duplicado no posiciona.",
+          "URL limpia con el nombre real del producto, como lo escribe la gente.",
         ],
+      },
+      {
+        h2: "Las categorías son tus páginas más potentes",
+        body:
+          "Las páginas de categoría (por ejemplo 'zapatillas para correr') suelen tener más búsquedas que un producto individual y son las que más tráfico capturan. Dales un título y un texto propio que explique la categoría, no solo un listado de productos. Una arquitectura de categorías bien enlazada es la columna vertebral del SEO de tu tienda.",
       },
       {
         h2: "Suma contenido que atraiga antes de la compra",
@@ -670,7 +610,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Cuida la velocidad y el móvil",
         body:
-          "La mayoría compra desde el celular. Una tienda lenta pierde ventas y posiciones. Optimizar imágenes, hosting y código mejora tanto la experiencia como el ranking. Ese riesgo se evita siguiendo [cómo migrar una web sin perder posiciones en Google](/blog/como-migrar-tu-pagina-web-sin-perder-posicionamiento-en-google).",
+          "La mayoría compra desde el celular. Una tienda lenta pierde ventas y posiciones. Optimizar imágenes, hosting y código mejora tanto la experiencia como el ranking. En Perú súmale señales de confianza: pagos locales como Yape y Plin, envíos claros y reseñas; así no solo posicionas mejor, también conviertes más. Ese riesgo se evita siguiendo [cómo migrar una web sin perder posiciones en Google](/blog/como-migrar-tu-pagina-web-sin-perder-posicionamiento-en-google).",
       },
       {
         h2: "Datos estructurados y reseñas",
@@ -681,11 +621,24 @@ export const BLOG_POSTS: BlogPost[] = [
     faqs: [
       {
         q: "¿En cuánto tiempo veo resultados de SEO?",
-        a: "El SEO es progresivo: los primeros movimientos suelen verse en semanas y los resultados sólidos en algunos meses, según la competencia de tus palabras clave.",
+        a: "El SEO es progresivo: los primeros movimientos suelen verse en semanas y los resultados sólidos en algunos meses, según la competencia de tus palabras clave. Un dominio nuevo tarda más; por eso conviene empezar cuanto antes.",
+      },
+      {
+        q: "¿SEO o Google Ads para mi tienda?",
+        a: "Lo ideal es combinar: Ads te da ventas inmediatas mientras el SEO madura, y el SEO te da ventas sostenidas sin pagar por clic. A largo plazo, el SEO baja tu costo de adquisición.",
+      },
+      {
+        q: "¿Sirve el SEO si vendo también por redes o marketplaces?",
+        a: "Sí. Tu tienda propia posicionada en Google es un canal que no depende de algoritmos ajenos ni de comisiones. Complementa muy bien a redes y marketplaces, y la marca queda tuya.",
+      },
+      {
+        q: "¿Ustedes optimizan tiendas ya existentes?",
+        a: "Sí. Auditamos tu tienda (Shopify, WooCommerce u otra), corregimos lo técnico y trabajamos el SEO de productos y categorías. Cuéntanos qué plataforma usas y te orientamos.",
       },
     ],
     related: [
-      { label: "SEO para tiendas online: cómo optimizar fichas de producto y categoría", href: "/blog/como-posicionar-tu-tienda-online-en-google-peru", desc: "Tu tienda online no vende si nadie la encuentra." },
+      { label: "Servicio de SEO en Perú", href: "/seo", desc: "Llevamos tu catálogo a la primera página de Google." },
+      { label: "Cómo integrar Yape y Plin en tu tienda", href: "/blog/como-integrar-yape-y-plin-en-tu-tienda-virtual", desc: "Pagos locales que aumentan tus ventas." },
       { label: "Desarrollo de tiendas virtuales", href: "/tiendas-virtuales", desc: "Tiendas optimizadas para SEO desde el inicio." },
       { label: "Diseño de páginas web", href: "/diseno-de-paginas-web", desc: "Webs rápidas y listas para posicionar." },
       { label: "Dar de alta tu web en Search Console e indexarla", href: "/blog/como-hacer-que-tu-pagina-web-aparezca-en-google-peru", desc: "Tu web está en línea pero no aparece en Google." },
@@ -3430,7 +3383,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Qué debe incluir un servicio serio de SEO",
         body:
-          "Un servicio de [SEO y posicionamiento](/seo) serio no es 'poner palabras clave'. Debe incluir una auditoría técnica (velocidad, indexación, estructura), optimización on-page, creación de contenido que atraiga búsquedas, mejora del enlazado interno y trabajo de autoridad, además de reportes claros de avance. Si una propuesta no explica qué se hace cada mes ni cómo se mide, desconfía. El buen SEO se nota en el tráfico y los contactos, no en promesas. Ese trabajo fino lo cubrimos en [SEO de fichas de producto y categorías](/blog/como-posicionar-tu-tienda-online-en-google-peru).",
+          "Un servicio de [SEO y posicionamiento](/seo) serio no es 'poner palabras clave'. Debe incluir una auditoría técnica (velocidad, indexación, estructura), optimización on-page, creación de contenido que atraiga búsquedas, mejora del enlazado interno y trabajo de autoridad, además de reportes claros de avance. Si una propuesta no explica qué se hace cada mes ni cómo se mide, desconfía. El buen SEO se nota en el tráfico y los contactos, no en promesas. Ese trabajo fino lo cubrimos en [SEO de fichas de producto y categorías](/blog/como-posicionar-una-tienda-virtual-en-google).",
       },
       {
         h2: "Modelos de cobro más comunes",
@@ -3909,7 +3862,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Contenido que responde la intención de búsqueda",
         body:
-          "De nada sirve optimizar la forma si el contenido no responde lo que la persona buscaba. Antes de escribir, entiende qué quiere quien busca esa palabra (informarse, comparar o comprar) y dale exactamente eso. Un contenido completo, útil y actualizado, que cubre el tema mejor que la competencia, es la base del SEO on-page. La técnica ayuda, pero el contenido es el que convence a Google y al lector. Ese trabajo fino lo cubrimos en [SEO de fichas de producto y categorías](/blog/como-posicionar-tu-tienda-online-en-google-peru).",
+          "De nada sirve optimizar la forma si el contenido no responde lo que la persona buscaba. Antes de escribir, entiende qué quiere quien busca esa palabra (informarse, comparar o comprar) y dale exactamente eso. Un contenido completo, útil y actualizado, que cubre el tema mejor que la competencia, es la base del SEO on-page. La técnica ayuda, pero el contenido es el que convence a Google y al lector. Ese trabajo fino lo cubrimos en [SEO de fichas de producto y categorías](/blog/como-posicionar-una-tienda-virtual-en-google).",
       },
       {
         h2: "Enlazado interno: conecta tus páginas",
@@ -4616,7 +4569,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Menos apps, más velocidad (y más ventas)",
         body:
-          "Cada app suma código que puede volver lenta tu tienda. Una tienda lenta pierde ventas y ranking. Por eso instalamos solo lo necesario y priorizamos la velocidad, que es parte de tener una [tienda optimizada para vender](/tiendas-virtuales/shopify). El detalle de fichas y categorías está en [SEO para tiendas online](/blog/como-posicionar-tu-tienda-online-en-google-peru).",
+          "Cada app suma código que puede volver lenta tu tienda. Una tienda lenta pierde ventas y ranking. Por eso instalamos solo lo necesario y priorizamos la velocidad, que es parte de tener una [tienda optimizada para vender](/tiendas-virtuales/shopify). El detalle de fichas y categorías está en [SEO para tiendas online](/blog/como-posicionar-una-tienda-virtual-en-google).",
       },
       {
         h2: "Pagos y billeteras locales",
@@ -4742,7 +4695,7 @@ export const BLOG_POSTS: BlogPost[] = [
     related: [
       { label: "Cómo vender con Yape y Plin en tu tienda Shopify", href: "/blog/como-vender-con-yape-y-plin-en-shopify", desc: "Yape y Plin son casi obligatorios para vender en Perú." },
       { label: "Envíos y courier para tu tienda virtual en Perú: cómo elegir", href: "/blog/envios-y-courier-para-tu-tienda-virtual-en-peru", desc: "El envío decide más ventas que el diseño de la tienda." },
-      { label: "SEO para tiendas online: cómo optimizar fichas de producto y categoría", href: "/blog/como-posicionar-tu-tienda-online-en-google-peru", desc: "Tu tienda online no vende si nadie la encuentra." },
+      { label: "Cómo posicionar una tienda virtual en Google", href: "/blog/como-posicionar-una-tienda-virtual-en-google", desc: "Tu tienda online no vende si nadie la encuentra." },
       { label: "Agencia Shopify Perú", href: "/tiendas-virtuales/shopify", desc: "Tu tienda de moda, optimizada para vender." },
       { label: "Tienda Shopify de belleza y cosmética", href: "/blog/tienda-shopify-para-productos-de-belleza-y-cosmetica", desc: "Otro rubro que vende muy bien online." },
       { label: "Qué cuesta que armemos tu tienda Shopify", href: "/tiendas-virtuales/shopify/costos", desc: "Qué define el precio de tu tienda de ropa." },
@@ -4933,7 +4886,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "Descuidar la experiencia móvil",
         body:
-          "La mayoría compra desde el celular. Una tienda que se ve mal o es difícil de usar en el móvil pierde ventas aunque el producto sea bueno. Siempre hay que probar la tienda en el celular antes de lanzar. El detalle de fichas y categorías está en [SEO para tiendas online](/blog/como-posicionar-tu-tienda-online-en-google-peru).",
+          "La mayoría compra desde el celular. Una tienda que se ve mal o es difícil de usar en el móvil pierde ventas aunque el producto sea bueno. Siempre hay que probar la tienda en el celular antes de lanzar. El detalle de fichas y categorías está en [SEO para tiendas online](/blog/como-posicionar-una-tienda-virtual-en-google).",
       },
       {
         h2: "Fichas pobres y poca confianza",
@@ -5025,7 +4978,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "6. Enlaces internos y autoridad",
         body:
-          "Enlaza tus fichas desde el blog y las colecciones, y consigue menciones de otros sitios con el tiempo. Todo esto suma autoridad. Si quieres una tienda optimizada para SEO desde el inicio, somos [agencia Shopify en Perú](/tiendas-virtuales/shopify) y la entregamos lista para posicionar. Si tienes catálogo grande, mira [cómo optimizar fichas y categorías](/blog/como-posicionar-tu-tienda-online-en-google-peru).",
+          "Enlaza tus fichas desde el blog y las colecciones, y consigue menciones de otros sitios con el tiempo. Todo esto suma autoridad. Si quieres una tienda optimizada para SEO desde el inicio, somos [agencia Shopify en Perú](/tiendas-virtuales/shopify) y la entregamos lista para posicionar. Si tienes catálogo grande, mira [cómo optimizar fichas y categorías](/blog/como-posicionar-una-tienda-virtual-en-google).",
       },
     ],
     faqs: [
@@ -6364,7 +6317,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         h2: "6. Que te encuentren",
         body:
-          "Una tienda sin visitas no vende, y la publicidad pagada deja de traer clientes el día que dejas de pagarla. Aparecer en Google por lo que tu cliente busca es lo que sostiene las ventas en el tiempo. Empieza por lo básico: una ficha de Google Business para tu negocio y contenido que responda las dudas reales de tus compradores. Está desarrollado en [cómo posicionar tu tienda online en Google Perú](/blog/como-posicionar-tu-tienda-online-en-google-peru).",
+          "Una tienda sin visitas no vende, y la publicidad pagada deja de traer clientes el día que dejas de pagarla. Aparecer en Google por lo que tu cliente busca es lo que sostiene las ventas en el tiempo. Empieza por lo básico: una ficha de Google Business para tu negocio y contenido que responda las dudas reales de tus compradores. Está desarrollado en [cómo posicionar tu tienda online en Google Perú](/blog/como-posicionar-una-tienda-virtual-en-google).",
       },
       {
         h2: "El orden importa",
