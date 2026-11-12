@@ -74,7 +74,7 @@ export default function QueHacemos() {
             </Link>{" "}
             y{" "}
             <Link href="/google-ads" className={ENLACE}>
-              Google Ads
+              campañas de Google Ads
             </Link>
             . Un solo equipo para las dos mitades del problema: tener presencia y que esa
             presencia venda.

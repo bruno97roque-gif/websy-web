@@ -2,6 +2,11 @@ import type { Metadata } from "next";
 import { pageMeta } from "@/lib/seo";
 import ServiceLanding from "@/components/sections/landing/ServiceLanding";
 
+/* 12-nov-2026 · GSC 12-oct/8-nov: «agencia google ads» 93 imp. en el puesto 48,9,
+   «google ads perú» 67 en el 67,2, y esa misma consulta la rankea mejor el blog de
+   cuánto invertir (puesto 16,9). No se toca el title: faltaba contenido de servicio
+   (proceso, segmentación por zona, revisión de cuentas) y enlaces desde páginas con
+   tráfico (guía de Google Mi Negocio, Shopify, portada). */
 export const metadata: Metadata = pageMeta({
   path: "/google-ads",
   title: "Agencia de Google Ads en Perú: campañas que traen clientes",
@@ -34,6 +39,18 @@ export default function GoogleAdsPage() {
             "El SEO construye posicionamiento con el tiempo; Google Ads te pone arriba hoy. Es la vía más rápida para captar clientes que ya están buscando lo que vendes, en el momento exacto en que lo buscan. Gestionamos tus campañas con foco en resultados de negocio (contactos, ventas, reservas), no en métricas de vanidad. Cada campaña se estructura, se mide y se optimiza para que tu inversión publicitaria vuelva en clientes.",
         },
         {
+          h2: "Cómo trabajamos tu cuenta de Google Ads, paso a paso",
+          body:
+            "En Websy una campaña de Google Ads pasa por cinco pasos y no se lanza hasta que la medición funciona. El orden importa: si los anuncios salen primero y la medición se deja para después, las primeras semanas de inversión no le enseñan nada a Google sobre quién es tu cliente.",
+          bullets: [
+            "Diagnóstico: qué vendes, a quién, en qué zona y qué cuenta como cliente para ti (un formulario, un mensaje de WhatsApp, una llamada o una compra). Si ya tienes cuenta, revisamos su historial antes de tocar nada.",
+            "Medición: Google Tag Manager y GA4 instalados, conversiones definidas y probadas con envíos reales.",
+            "Estructura: campañas y grupos de anuncios por servicio, palabras con intención de compra, palabras negativas desde el primer día y anuncios escritos para cada grupo.",
+            "Página de destino: revisamos la landing o la hacemos, porque el anuncio promete algo y la página tiene que cumplirlo.",
+            "Lanzamiento y optimización: revisión semanal de términos de búsqueda, pujas y anuncios, y un reporte mensual con inversión, contactos y costo por contacto.",
+          ],
+        },
+        {
           h2: "Búsqueda, Performance Max o remarketing: qué campaña te conviene",
           body:
             "Cada tipo de campaña resuelve un problema distinto, y elegir mal es la forma más común de gastar sin resultados. Para un negocio de servicios en Perú casi siempre se empieza por Búsqueda y se suma lo demás cuando ya hay conversiones medidas que le den a Google con qué aprender.",
@@ -53,6 +70,17 @@ export default function GoogleAdsPage() {
             "Estructura de campañas y grupos de anuncios ordenada por servicio.",
             "Palabras negativas para no gastar en clics inútiles («gratis», «curso», «empleo»…).",
             "Anuncios con textos que responden a lo que se buscó.",
+          ],
+        },
+        {
+          h2: "Google Ads en Lima y en el resto del Perú: dónde sale tu anuncio",
+          body:
+            "Google Ads deja elegir dónde se muestra cada anuncio: todo el Perú, una región, una ciudad o un radio en kilómetros alrededor de tu local. Si atiendes en persona en Lima, mostrar el anuncio en todo el país es pagar clics de gente que nunca va a llegar, así que la segmentación se arma según dónde atiendes de verdad. Trabajamos desde Lima con negocios de todo el país: la gestión es a distancia y las reuniones van por videollamada y WhatsApp.",
+          bullets: [
+            "Zona: ciudad, región o radio alrededor de tu local o de tu zona de reparto.",
+            "Presencia, no interés: la opción que Google trae por defecto también muestra el anuncio a quien busca sobre tu zona desde otro lugar. Para un negocio local suele convenir limitarlo a quienes están en ella.",
+            "Horario: si solo contestas el WhatsApp de lunes a sábado, el anuncio se puede pausar o bajar la puja fuera de ese horario.",
+            "Ficha de Google: al vincular tu [Perfil de Empresa en Google](/blog/google-mi-negocio-para-empresas-en-peru), el anuncio muestra tu dirección y puede salir en Google Maps marcado como patrocinado.",
           ],
         },
         {
@@ -76,6 +104,19 @@ export default function GoogleAdsPage() {
             "Llamadas: con extensión de llamada o número de seguimiento, si tu negocio vende por teléfono.",
             "Ventas cerradas: si tienes CRM o una hoja con los contactos que compraron, se pueden subir a Google Ads para que optimice hacia clientes que pagan y no solo hacia formularios.",
             "Todo se configura con Google Tag Manager y GA4 y se comprueba con envíos de prueba antes de lanzar.",
+          ],
+        },
+        {
+          h2: "Si ya tienes campañas: qué revisamos primero",
+          body:
+            "Cuando una cuenta gasta y no trae clientes, el problema casi siempre está en alguno de estos puntos, y se ven en la primera revisión sin cambiar nada todavía. Te explicamos lo que encontramos antes de proponer cambios.",
+          bullets: [
+            "Conversiones que cuentan visitas o clics sueltos en lugar de contactos reales.",
+            "Palabras en concordancia amplia sin negativas, pagando por búsquedas que no tienen que ver con tu servicio.",
+            "Performance Max sin conversiones reales que la guíen.",
+            "Ubicación abierta a todo el país o en «presencia o interés» cuando el negocio atiende en una sola ciudad.",
+            "Anuncios que llevan a la portada en vez de a la página del servicio que se anuncia.",
+            "Una cuenta creada a nombre de un proveedor anterior, sin acceso de administrador para el dueño del negocio.",
           ],
         },
         {
@@ -120,6 +161,7 @@ export default function GoogleAdsPage() {
         { label: "Landing page para Google Ads", href: "/blog/landing-page-para-google-ads", desc: "Qué debe tener la página a la que llega tu anuncio." },
         { label: "Google Ads para pymes: cuánto invertir", href: "/blog/google-ads-para-pymes-en-peru-cuanto-invertir", desc: "Cuánto presupuesto necesitas y cómo no desperdiciarlo." },
         { label: "Google Ads vs SEO: cuál conviene", href: "/blog/google-ads-vs-seo-cual-conviene-para-tu-negocio", desc: "Cuándo usar cada uno y por qué combinarlos rinde más." },
+        { label: "Google Mi Negocio para empresas en Perú", href: "/blog/google-mi-negocio-para-empresas-en-peru", desc: "La ficha que tus anuncios pueden mostrar con dirección y mapa." },
       ]}
       faqs={[
         {
@@ -137,6 +179,18 @@ export default function GoogleAdsPage() {
         {
           q: "¿En cuánto tiempo veo resultados con Google Ads?",
           a: "A diferencia del SEO, Ads genera visibilidad y clics casi de inmediato. Los primeros contactos pueden llegar en los primeros días; las primeras semanas sirven para cortar lo que gasta sin convertir, y las pujas automáticas necesitan un periodo de aprendizaje antes de estabilizar el costo por resultado.",
+        },
+        {
+          q: "¿Qué necesito para empezar con Google Ads?",
+          a: "Una tarjeta para pagar la publicidad directamente a Google, acceso a tu web (o a quien la administra) para instalar la medición, y tener claro qué servicio quieres vender primero y en qué zona. Si todavía no tienes cuenta de Google Ads, la creamos a tu nombre.",
+        },
+        {
+          q: "¿Pueden mostrar mis anuncios solo en mi distrito o en mi ciudad?",
+          a: "Sí. Google Ads permite segmentar por ciudad, por región o por un radio en kilómetros alrededor de tu local, y limitarlo a personas que están en esa zona. Así no pagas clics de gente que no puede llegar a ti.",
+        },
+        {
+          q: "¿Atienden negocios fuera de Lima?",
+          a: "Sí. Trabajamos desde Lima con empresas de todo el Perú. La gestión de Google Ads es a distancia, y las reuniones y reportes van por videollamada y WhatsApp.",
         },
         {
           q: "¿Qué es Performance Max y me conviene?",
