@@ -5,6 +5,8 @@ import {
   faqPageSchema,
   breadcrumbSchema,
 } from "@/lib/schema";
+import type { Portafolio } from "@/lib/portfolio";
+import PortfolioVideos from "./PortfolioVideos";
 
 /* ─────────────────────────────────────────────────────────────
    Componente reusable de landing de servicio.
@@ -49,6 +51,8 @@ export type ServiceLandingProps = {
   serviceDescription: string;
   /** Sustituye el Service del JSON-LD. Para páginas que no son un servicio (p. ej. /contacto). */
   pageSchema?: Record<string, unknown>;
+  /** Proyectos reales en video (lib/portfolio.ts). Sale justo después de las cifras. */
+  portfolio?: Portafolio;
 };
 
 const PURPLE = "#291231";
@@ -182,6 +186,7 @@ export default function ServiceLanding({
   serviceName,
   serviceDescription,
   pageSchema,
+  portfolio,
 }: ServiceLandingProps) {
   return (
     <main style={{ backgroundColor: "#f8f5fc" }}>
@@ -278,6 +283,9 @@ export default function ServiceLanding({
           </div>
         </section>
       )}
+
+      {/* ── PORTAFOLIO EN VIDEO (opcional) ── */}
+      {portfolio && <PortfolioVideos data={portfolio} />}
 
       {/* ── SECCIONES ── */}
       <section data-track-location="landing_secciones" style={{ padding: "64px 24px 32px" }}>

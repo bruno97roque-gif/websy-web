@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { pageMeta } from "@/lib/seo";
 import ServiceLanding from "@/components/sections/landing/ServiceLanding";
+import { PORTAFOLIO_SOFTWARE } from "@/lib/portfolio";
 
 export const metadata: Metadata = pageMeta({
   path: "/desarrollo-de-software-a-medida",
@@ -194,6 +195,7 @@ export default function SoftwareAMedidaPage() {
           a: "Una página web comunica y capta clientes; un sistema web automatiza un proceso (inventario, ventas); un software a medida es una plataforma completa diseñada para tu operación específica. Te ayudamos a identificar qué necesitas.",
         },
       ]}
+      portfolio={PORTAFOLIO_SOFTWARE}
       serviceName="Desarrollo de software a medida"
       serviceDescription="Desarrollo de software a medida para empresas en Perú: aplicaciones web y móviles, CRM, ERP, plataformas SaaS, sistemas de inventario, ventas y facturación e intranets."
     />

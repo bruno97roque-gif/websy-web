@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { pageMeta } from "@/lib/seo";
 import ServiceLanding from "@/components/sections/landing/ServiceLanding";
+import { PORTAFOLIO_TIENDAS } from "@/lib/portfolio";
 
 export const metadata: Metadata = pageMeta({
   path: "/tiendas-virtuales",
@@ -122,6 +123,7 @@ export default function TiendasVirtualesPage() {
           a: "Depende de tu operación. Shopify es ideal si quieres lanzar rápido con algo robusto; WooCommerce te da control total sobre WordPress y costos más flexibles. En la cotización te recomendamos la opción correcta para tu caso.",
         },
       ]}
+      portfolio={PORTAFOLIO_TIENDAS}
       serviceName="Desarrollo de tiendas virtuales"
       serviceDescription="Desarrollo y diseño de tiendas virtuales (ecommerce) para empresas en Perú, con pasarela de pago Yape, Plin, Niubiz e Izipay, control de stock y panel autoadministrable."
     />

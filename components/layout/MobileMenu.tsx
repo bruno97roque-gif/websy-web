@@ -91,7 +91,8 @@ export default function MobileMenu({
   return (
     <div
       ref={overlayRef}
-      className="fixed inset-0 z-[950] flex-col bg-[#291231]"
+      /* h-dvh: altura real visible en móvil (sin la barra del navegador encima) */
+      className="fixed inset-x-0 top-0 z-[950] h-dvh flex-col bg-[#291231]"
       style={{ display: "none" }}
       /* Etiqueta de medición: marca todos los clics de aquí como "menu".
          No afecta al diseño; solo permite separarlos en los informes. */
@@ -126,7 +127,7 @@ export default function MobileMenu({
       />
 
       {/* ── Top bar ── */}
-      <div className="relative z-10 flex h-[78px] shrink-0 items-center justify-between border-b border-white/10 px-8 md:px-[72px]">
+      <div className="relative z-10 flex h-[64px] shrink-0 items-center justify-between border-b border-white/10 px-6 sm:h-[78px] sm:px-8 md:px-[72px]">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="/icons/logo-white.webp"
@@ -153,10 +154,18 @@ export default function MobileMenu({
       </div>
 
       {/* ── Body ── */}
-      <div className="relative z-10 flex flex-1 overflow-hidden flex-col md:flex-row">
+      <div className="relative z-10 flex min-h-0 flex-1 flex-col lg:flex-row">
 
-        {/* Left — big navigation links */}
-        <div className="flex flex-1 flex-col justify-center gap-1 px-8 py-10 md:gap-3 md:px-[72px] md:py-0">
+        {/* Left — big navigation links.
+            Scroll propio si la lista no cabe (pantallas bajas / móvil horizontal).
+            data-lenis-prevent: que Lenis no se coma la rueda del ratón aquí.
+            my-auto en vez de justify-center: centra cuando cabe y, si no cabe,
+            no recorta el primer enlace por arriba. */}
+        <div
+          data-lenis-prevent
+          className="flex min-h-0 flex-1 flex-col overflow-y-auto overscroll-contain px-6 sm:px-8 md:px-[72px]"
+        >
+          <div className="my-auto flex flex-col gap-1 py-6 sm:py-8 md:gap-2 lg:gap-3">
           {NAV_LINKS.map((link, i) => (
             <div
               key={link.num}
@@ -164,25 +173,28 @@ export default function MobileMenu({
               className="group flex items-baseline gap-4"
               style={{ opacity: 0, transform: "translateY(40px)" }}
             >
-              <span className="font-montserrat text-[13px] font-bold leading-none text-[#F18C1B] md:text-[15px]">
+              <span className="font-montserrat text-[12px] font-bold leading-none text-[#F18C1B] md:text-[15px]">
                 {link.num}
               </span>
+              {/* Tamaño según ancho Y alto: los 8 enlaces caben siempre en la
+                  pantalla (7vh × 8 ≈ 56% del alto), sin bajar de 26px. */}
               <Link
                 href={link.href}
                 onClick={onClose}
-                className="font-montserrat text-[clamp(48px,9vw,96px)] font-bold uppercase leading-[1] text-white transition-colors duration-200 hover:text-[#F18C1B]"
+                className="font-montserrat break-words text-[clamp(26px,min(9vw,7vh),88px)] font-bold uppercase leading-[1.05] text-white transition-colors duration-200 hover:text-[#F18C1B]"
               >
                 {link.label}
               </Link>
             </div>
           ))}
+          </div>
         </div>
 
         {/* Vertical divider — desktop only */}
-        <div className="hidden w-px shrink-0 self-stretch bg-white/10 md:block" />
+        <div className="hidden w-px shrink-0 self-stretch bg-white/10 lg:block" />
 
-        {/* Right panel — desktop only */}
-        <div className="hidden w-[380px] shrink-0 flex-col justify-center px-[60px] md:flex">
+        {/* Right panel — desktop only (en tablet le quitaba ancho a los enlaces) */}
+        <div className="hidden w-[380px] shrink-0 flex-col justify-center px-[60px] lg:flex">
           <p className="font-poppins mb-3 text-[11px] font-medium uppercase tracking-[3px] text-[#F18C1B]">
             ¿Listo para crecer?
           </p>
@@ -217,8 +229,8 @@ export default function MobileMenu({
       </div>
 
       {/* ── Bottom bar — mobile only ── */}
-      <div className="relative z-10 shrink-0 border-t border-white/10 px-8 py-5 md:hidden">
-        <div className="flex items-center justify-between">
+      <div className="relative z-10 shrink-0 border-t border-white/10 px-6 pt-4 pb-[max(16px,env(safe-area-inset-bottom))] sm:px-8 md:px-[72px] lg:hidden">
+        <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-2">
           <a
             href="mailto:ventas@websy.com.pe"
             className="font-poppins text-[13px] text-white transition-colors hover:text-[#F18C1B]"
