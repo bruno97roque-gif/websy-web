@@ -34,6 +34,315 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    /* Miércoles 11-nov-2026. Cluster Culqi (325 imp en GSC 28 d): «culqi que es»
+       pos 46,7, «culqi vs izipay vs niubiz» pos 8,8, «culqi peru», «comision culqi».
+       Solo existía culqi-vs-mercado-pago (comparación). Este cubre la intención de
+       integrar. Requisitos y pasos tomados de docs.culqi.com (plugins Shopify y
+       WooCommerce, índice de integraciones) el 7-nov-2026. Sin comisiones: cambian
+       y no se publican aquí sin fuente. */
+    slug: "como-integrar-culqi-en-tu-pagina-web",
+    title: "Cómo integrar Culqi en tu página web",
+    h1: "Cómo integrar Culqi en tu página web: Shopify, WooCommerce o a medida",
+    description:
+      "Qué es Culqi y cómo integrarlo en tu web en Perú: requisitos, llaves test y live, webhooks y pasos para Shopify, WooCommerce o una integración a medida.",
+    excerpt:
+      "Requisitos, llaves y pasos para cobrar con Culqi en Shopify, WooCommerce o en una web hecha a medida.",
+    datePublished: "2026-11-11",
+    category: "Pagos",
+    readingMin: 8,
+    intro:
+      "Culqi es una pasarela de pagos peruana: permite cobrar en tu web con tarjeta, Yape, PagoEfectivo, billeteras y Cuotéalo BCP. Para integrarla necesitas una cuenta habilitada en CulqiPanel, tus llaves de prueba y de producción y un webhook configurado. En Shopify y WooCommerce se hace con su plugin oficial; en una web propia, con su API. Si prefieres que lo dejemos funcionando, mira nuestra [integración de pasarelas de pago](/integracion-de-pagos).",
+    sections: [
+      {
+        h2: "Qué es Culqi y qué medios de pago acepta",
+        body:
+          "Culqi es la pasarela con la que muchas tiendas peruanas cobran en línea sin mandar al cliente a otra página. El cliente paga dentro de un formulario de Culqi (el checkout) que se abre en tu web, y el dinero llega a tu cuenta según las condiciones de tu afiliación. Según su documentación de plugins, los medios que se pueden activar son estos:",
+        bullets: [
+          "Tarjetas de crédito y débito (vienen activas por defecto).",
+          "Yape.",
+          "Banca móvil y por internet.",
+          "Agentes y bodegas, a través de PagoEfectivo.",
+          "Billeteras móviles.",
+          "Cuotéalo BCP.",
+        ],
+      },
+      {
+        h2: "Lo que necesitas antes de integrar",
+        body:
+          "Antes de tocar la web, deja lista la parte de Culqi. Sin esto, ningún plugin te va a funcionar:",
+        bullets: [
+          "Una cuenta habilitada en CulqiPanel, en ambiente de integración (test) o de producción (live).",
+          "Tu llave pública y tu llave privada. Las de integración se identifican como «test» y las de producción como «live».",
+          "Las llaves RSA (RSA Id y RSA public key), que se generan en el mismo CulqiPanel y sirven para cifrar los datos que viajan al checkout.",
+          "La URL del webhook revisada en CulqiPanel, con el evento order.status.changed, para que tu tienda se entere cuando un pago se confirma.",
+          "Una tienda o web ya creada, con certificado SSL activo (https).",
+        ],
+      },
+      {
+        h2: "Cómo integrar Culqi en Shopify",
+        body:
+          "Culqi tiene una app de pagos en la tienda de apps de Shopify. El proceso, según su guía oficial, es este:",
+        bullets: [
+          "Instala la app de pagos de Culqi desde la tienda de apps de Shopify e inicia sesión con tu usuario de CulqiPanel.",
+          "Deja activo el checkout de Culqi y elige el ambiente: integración para probar o producción para vender.",
+          "Selecciona tu comercio y carga las llaves pública y privada del ambiente elegido.",
+          "Marca los medios de pago adicionales que quieras ofrecer. Para PagoEfectivo, billeteras y Cuotéalo define el tiempo de expiración del pago; si no lo cambias, queda en 24 horas.",
+          "Ingresa el RSA Id y la RSA public key, revisa el webhook y guarda.",
+          "Haz compras con las tarjetas de prueba de Culqi con el modo de prueba de Shopify activado. Cuando todo cuadre, pasa a producción con las llaves live y desactiva el modo de prueba.",
+        ],
+      },
+      {
+        h2: "Cómo integrar Culqi en WooCommerce",
+        body:
+          "En WooCommerce se usa el plugin oficial de Culqi. Su documentación pide PHP 7.1 o superior y la versión 2.6.11 del plugin o una más reciente. Los pasos:",
+        bullets: [
+          "Descarga el .zip del plugin desde el enlace de GitHub que indica la documentación de Culqi y súbelo en WordPress como un plugin más.",
+          "Actívalo e inicia sesión con tu CulqiPanel. Así las llaves se cargan solas; también puedes pegarlas a mano.",
+          "Activa el checkout, elige el ambiente y el comercio, y escoge los medios de pago adicionales.",
+          "Configura el tiempo de expiración, las llaves RSA y revisa la URL del webhook en CulqiPanel.",
+          "Haz pruebas completas con tarjetas de prueba antes de cambiar a las llaves live.",
+        ],
+      },
+      {
+        h2: "Integración a medida: cuándo conviene y cómo funciona",
+        body:
+          "Si tu web está hecha en código propio (por ejemplo, un sistema de reservas o una plataforma con suscripciones), no hay plugin: se integra con el checkout de Culqi y su API. El navegador del cliente genera un token con tu llave pública, y tu servidor usa ese token y tu llave privada para crear el cargo. La llave privada nunca va en el código que ve el cliente. Culqi ofrece librerías para PHP, Java, Python y .NET, además de Android e iOS. Este camino da más control: puedes guardar el pago en tu propio sistema, emitir el comprobante y avisar por WhatsApp al instante. Lo hacemos dentro de [desarrollo de aplicaciones web](/desarrollo-de-aplicaciones-web).",
+      },
+      {
+        h2: "Errores comunes al integrar Culqi",
+        bullets: [
+          "Pasar a producción con las llaves test, o mezclar una llave test con otra live.",
+          "No configurar el webhook: el pago entra en Culqi pero el pedido se queda «pendiente» en la tienda.",
+          "Activar PagoEfectivo o billeteras sin pensar en el tiempo de expiración y reservar stock de pedidos que nunca se pagan.",
+          "Probar solo con tarjeta y no con los demás medios que vas a ofrecer.",
+          "Dejar la llave privada en el frontend o en un repositorio público.",
+        ],
+      },
+      {
+        h2: "Culqi, Izipay o Niubiz",
+        body:
+          "Las tres permiten cobrar con tarjeta en Perú; cambian el proceso de afiliación, los medios incluidos y las condiciones de cada contrato. Las comisiones se negocian y se actualizan, así que conviene pedir la tarifa vigente directamente a cada una. Para comparar con calma, revisa [Culqi vs Mercado Pago](/blog/culqi-vs-mercado-pago-en-peru), [Izipay o Niubiz](/blog/izipay-o-niubiz-cual-elegir-para-cobrar-con-tarjeta) y nuestra guía de [pasarelas de pago para ecommerce en Perú](/blog/pasarelas-de-pago-para-ecommerce-en-peru).",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Qué es Culqi?",
+        a: "Es una pasarela de pagos peruana que permite cobrar en una web o tienda virtual con tarjeta, Yape, PagoEfectivo, billeteras y Cuotéalo BCP, a través de un checkout que se abre dentro de tu propia página.",
+      },
+      {
+        q: "¿Qué necesito para integrar Culqi en mi web?",
+        a: "Una cuenta habilitada en CulqiPanel, tus llaves pública y privada (test y live), las llaves RSA, el webhook con el evento order.status.changed y una web con SSL. En Shopify y WooCommerce se usa el plugin oficial; en una web propia, la API.",
+      },
+      {
+        q: "¿Culqi funciona con Shopify y WooCommerce?",
+        a: "Sí. Culqi tiene una app de pagos para Shopify y un plugin oficial para WooCommerce. Su documentación también lista plugins para PrestaShop y Magento.",
+      },
+      {
+        q: "¿Cuánto cobra Culqi de comisión?",
+        a: "La comisión depende del medio de pago y de tu contrato, y Culqi la actualiza. Pide la tarifa vigente a Culqi al afiliarte y compárala con Izipay, Niubiz o Mercado Pago antes de decidir.",
+      },
+      {
+        q: "¿Websy integra Culqi?",
+        a: "Sí. Integramos Culqi, Izipay, Niubiz, Mercado Pago y Yape en tiendas Shopify, WooCommerce y webs a medida, con pruebas de pago completas antes de pasar a producción.",
+      },
+    ],
+    related: [
+      { label: "Integración de pasarelas de pago", href: "/integracion-de-pagos", desc: "Culqi, Izipay, Niubiz, Mercado Pago y Yape en tu web." },
+      { label: "Culqi vs Mercado Pago", href: "/blog/culqi-vs-mercado-pago-en-peru", desc: "En qué caso conviene cada una." },
+      { label: "Tienda Shopify en Perú", href: "/tiendas-virtuales/shopify", desc: "Tiendas con pagos locales listos para vender." },
+    ],
+  },
+  {
+    /* Miércoles 11-nov-2026. Tema de RESERVA: «cuánto cuesta un CRM a medida» se
+       descartó porque como-crear-tu-propio-crm ya responde el precio (H2 «Cuánto
+       cuesta crear tu propio CRM»). Demanda: «control de stock por tallas y colores
+       en shopify» 4 imp pos 20,8. No pisa como-controlar-el-stock-de-una-tienda-de-ropa
+       (método general) ni tienda-shopify-para-ropa-y-moda-en-peru (cómo armar la
+       tienda): este es el paso a paso dentro del admin de Shopify. Límites de 3
+       opciones y 2.048 variantes por producto según help.shopify.com (nov-2026). */
+    slug: "control-de-stock-por-tallas-y-colores-en-shopify",
+    title: "Control de stock por tallas y colores en Shopify",
+    h1: "Control de stock por tallas y colores en Shopify, paso a paso",
+    description:
+      "Cómo controlar el stock por talla y color en Shopify: variantes, SKU, seguimiento de cantidad, ubicaciones para tienda física y almacén, y cómo evitar vender lo agotado.",
+    excerpt:
+      "Variantes, SKU, seguimiento de cantidad y ubicaciones: cómo dejar el stock de ropa bien configurado en Shopify.",
+    datePublished: "2026-11-11",
+    category: "Tiendas virtuales",
+    readingMin: 7,
+    intro:
+      "En Shopify el stock por talla y color se controla con variantes: creas las opciones Talla y Color en el producto, Shopify genera cada combinación y cada una lleva su SKU y su propia cantidad. Luego activas el seguimiento de cantidad, decides si se sigue vendiendo sin stock y repartes el inventario por ubicación. Si quieres tu tienda lista así, mira nuestras [tiendas Shopify en Perú](/tiendas-virtuales/shopify).",
+    sections: [
+      {
+        h2: "1. Crea las opciones Talla y Color",
+        body:
+          "En el producto, en la sección de variantes, agrega una opción «Talla» con sus valores (S, M, L, XL) y otra «Color» (negro, blanco, azul). Shopify arma solo todas las combinaciones: un polo en cuatro tallas y tres colores son doce variantes. Shopify permite hasta tres opciones por producto y, desde 2025, hasta 2.048 variantes. Si necesitas una cuarta opción, como el largo de manga, normalmente conviene crear otro producto.",
+        table: {
+          cabeceras: ["Producto", "Opción 1", "Opción 2", "Variantes que se crean"],
+          filas: [
+            ["Polo básico", "Talla: S, M, L, XL", "Color: negro, blanco, azul", "12"],
+            ["Jean slim", "Talla: 28, 30, 32, 34", "Color: azul, negro", "8"],
+            ["Casaca", "Talla: S, M, L", "—", "3"],
+          ],
+          nota: "Ejemplo ilustrativo. Límites de opciones y variantes según el Centro de ayuda de Shopify, noviembre de 2026.",
+        },
+      },
+      {
+        h2: "2. Ponle un SKU a cada variante",
+        body:
+          "Cada combinación necesita su código (SKU): por ejemplo POL-NEG-M. Ese mismo código va en la etiqueta de la prenda y en la caja. Con SKU ordenados puedes buscar rápido, importar y exportar inventario por CSV y conectar la tienda con tu sistema de facturación o tu almacén. La lógica de codificación la explicamos en [cómo controlar el stock de una tienda de ropa](/blog/como-controlar-el-stock-de-una-tienda-de-ropa).",
+      },
+      {
+        h2: "3. Activa «Seguir cantidad» en cada variante",
+        body:
+          "En la sección Inventario de cada variante activa el seguimiento de cantidad y escribe las unidades que tienes. Sin esto Shopify no descuenta nada al vender. Luego elige qué pasa cuando la variante llega a cero: por defecto deja de venderse, y puedes cambiarlo a «seguir vendiendo» solo si trabajas con preventa o fabricas a pedido. En ropa con stock limitado, lo seguro es dejar que se detenga la venta.",
+      },
+      {
+        h2: "4. Usa ubicaciones para la tienda física y el almacén",
+        body:
+          "Shopify guarda el inventario por ubicación. Si tienes un local y un almacén, crea las dos y reparte las unidades de cada variante. Así sabes dónde está cada talla y puedes decidir desde qué ubicación se despachan los pedidos online. Si vendes en el local con Shopify POS, la caja y la web descuentan del mismo inventario y no vendes dos veces la última M. Ojo: la opción de seguir vendiendo sin stock no aplica en Shopify POS.",
+      },
+      {
+        h2: "5. Revisa el stock sin abrir producto por producto",
+        bullets: [
+          "Usa la vista de Inventario del admin y filtra por ubicación o por cantidad baja.",
+          "Exporta el inventario a CSV antes de un conteo y vuelve a importarlo con las cantidades corregidas.",
+          "Registra los cambios de talla como dos movimientos: entra una prenda y sale otra.",
+          "Revisa cada semana las tallas que más rotan: ahí se agota primero.",
+        ],
+      },
+      {
+        h2: "Cuándo Shopify ya no alcanza",
+        body:
+          "Si además vendes por Instagram y WhatsApp sin pasar por la tienda, o tienes varios almacenes con traslados, el admin se queda corto. En esos casos conectamos Shopify con un [sistema de inventario a medida](/sistemas/inventario) para que todas las ventas descuenten del mismo stock. Para la parte comercial de una tienda de moda, revisa [tienda Shopify para ropa y moda](/blog/tienda-shopify-para-ropa-y-moda-en-peru).",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Cómo pongo tallas y colores en Shopify?",
+        a: "En el producto agregas las opciones Talla y Color con sus valores. Shopify crea una variante por cada combinación, y cada variante puede tener su precio, su SKU y su stock.",
+      },
+      {
+        q: "¿Shopify lleva el stock por talla?",
+        a: "Sí, si activas el seguimiento de cantidad en cada variante. Cada talla y color tiene su propio inventario, y al llegar a cero la variante deja de venderse si mantienes la opción por defecto.",
+      },
+      {
+        q: "¿Cuántas variantes permite Shopify por producto?",
+        a: "Hasta tres opciones (por ejemplo talla, color y material) y hasta 2.048 variantes por producto, según el Centro de ayuda de Shopify.",
+      },
+      {
+        q: "¿Puedo tener el stock de mi tienda física y de la web juntos en Shopify?",
+        a: "Sí. Con ubicaciones separas el local y el almacén, y con Shopify POS las ventas del local descuentan del mismo inventario que la web.",
+      },
+      {
+        q: "¿Websy configura el inventario de tiendas Shopify?",
+        a: "Sí. Armamos la tienda con variantes, SKU, ubicaciones y pagos locales, y si hace falta la conectamos con un sistema de inventario a medida.",
+      },
+    ],
+    related: [
+      { label: "Tiendas Shopify en Perú", href: "/tiendas-virtuales/shopify", desc: "Tiendas con variantes, stock y pagos locales." },
+      { label: "Stock de una tienda de ropa", href: "/blog/como-controlar-el-stock-de-una-tienda-de-ropa", desc: "Códigos, conteos y alertas por talla." },
+      { label: "Sistema de inventario a medida", href: "/sistemas/inventario", desc: "Un solo stock para tienda, redes y web." },
+    ],
+  },
+  {
+    /* Miércoles 11-nov-2026. «pedidos online para restaurantes» 6 imp pos 32,7,
+       «delivery sin comisión restaurante» pos 4. pagina-web-para-restaurantes-en-peru
+       es la intención de diseño web (carta, reservas, Maps); este es el sistema de
+       pedidos propio. «paginas web de restaurantes» se deja al post de diseño.
+       Sin cifras de comisión de apps: no hay fuente pública estable. */
+    slug: "pedidos-online-para-restaurantes-sin-comision",
+    title: "Pedidos online para restaurantes sin comisión",
+    h1: "Pedidos online para tu restaurante sin pagar comisión por pedido",
+    description:
+      "Cómo recibir pedidos online en tu restaurante con tu propia web y WhatsApp, sin comisión por pedido: carta con carrito, pagos con Yape y tarjeta, zonas de reparto y cocina.",
+    excerpt:
+      "Carta con carrito, pedido directo a WhatsApp o a cocina, pagos con Yape y tarjeta y zonas de reparto propias.",
+    datePublished: "2026-11-11",
+    category: "Software",
+    readingMin: 7,
+    intro:
+      "Un restaurante puede recibir pedidos online sin pagar comisión por cada pedido si tiene su propio canal: una carta web con carrito que envía el pedido a WhatsApp o a la cocina, cobro con Yape o tarjeta y zonas de reparto definidas por el local. Las apps de delivery siguen sirviendo para que te descubran; los pedidos de los clientes que repiten conviene llevarlos a tu canal. Lo armamos como [sistema para restaurantes](/sistemas/sistema-para-restaurantes).",
+    sections: [
+      {
+        h2: "Apps de delivery o canal propio: qué te da cada uno",
+        table: {
+          cabeceras: ["", "App de delivery", "Canal propio (web + WhatsApp)"],
+          filas: [
+            ["Costo por pedido", "Comisión según tu contrato con la app", "Sin comisión por pedido; pagas desarrollo y hosting"],
+            ["Datos del cliente", "Quedan en la app", "Son tuyos: teléfono, dirección, historial"],
+            ["Nuevos clientes", "Te muestra a gente que no te conoce", "Depende de tu SEO, redes y Google Maps"],
+            ["Reparto", "Lo pone la app (según el plan)", "Propio o con un courier que tú eliges"],
+            ["Promociones", "Con las reglas de la app", "Las que tú decidas, para quien tú quieras"],
+          ],
+          nota: "La comisión de cada app depende del contrato del local; revisa la tuya antes de comparar.",
+        },
+      },
+      {
+        h2: "Qué necesita un sistema de pedidos propio",
+        bullets: [
+          "Carta digital con fotos, precios, extras y combos, que el local edite sin programador.",
+          "Carrito que calcule el total con el costo de envío de la zona.",
+          "Envío del pedido ordenado: a tu WhatsApp, a un panel o directo a la impresora de cocina.",
+          "Pago con Yape, Plin, tarjeta o contra entrega, según lo que aceptes.",
+          "Horarios de atención y platos agotados que se apaguen solos.",
+          "Registro de cada cliente para volver a escribirle con una promoción.",
+        ],
+      },
+      {
+        h2: "Opción simple: carta web que envía el pedido a WhatsApp",
+        body:
+          "Es la forma más rápida de empezar. El cliente arma su pedido en la carta, toca «Pedir» y se abre WhatsApp con el pedido ya escrito: platos, cantidades, dirección y forma de pago. Tú confirmas y cobras con Yape o link de pago. Funciona bien para locales con pocos pedidos por hora. Te contamos cómo hacerlo en [cómo vender por WhatsApp desde tu tienda virtual](/blog/como-vender-por-whatsapp-desde-tu-tienda-virtual).",
+      },
+      {
+        h2: "Opción completa: pedidos que llegan solos a cocina",
+        body:
+          "Cuando los pedidos se cruzan en hora punta, copiar de WhatsApp a la comanda genera errores. El paso siguiente es que el pedido pagado entre a un panel o a la impresora de cocina, con estados (recibido, en preparación, en camino) y aviso automático al cliente. Ahí también se suma el cobro en línea con [pasarela de pago](/integracion-de-pagos) y el registro de ventas para cuadrar caja al cierre.",
+      },
+      {
+        h2: "Cómo llevar a tus clientes de la app a tu canal",
+        bullets: [
+          "Incluye en la bolsa del pedido una tarjeta con el QR de tu carta propia.",
+          "Ofrece una ventaja en tu canal: un postre, envío gratis en tu zona o un precio de combo.",
+          "Pon el enlace de pedidos en tu perfil de Google Maps, Instagram y TikTok.",
+          "Guarda los teléfonos que te escriben y avisa del menú del día por WhatsApp a quien aceptó recibirlo.",
+        ],
+      },
+      {
+        h2: "Que te encuentren en Google",
+        body:
+          "Un canal propio necesita que la gente llegue a él. La carta web debe cargar rápido en el celular, tener tu dirección y horario, y estar enlazada desde tu ficha de Google. El diseño de la web del restaurante, con carta, reservas y Maps, lo explicamos en [página web para restaurantes en Perú](/blog/pagina-web-para-restaurantes-en-peru) y en nuestro servicio de [diseño de páginas web para restaurantes](/diseno-de-paginas-web/restaurantes).",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Cómo puedo recibir pedidos online en mi restaurante sin comisión?",
+        a: "Con un canal propio: una carta web con carrito que envíe el pedido a tu WhatsApp o a cocina, y cobro con Yape, Plin o tarjeta. No pagas comisión por pedido a una app; pagas el desarrollo y el hosting.",
+      },
+      {
+        q: "¿Tengo que dejar las apps de delivery?",
+        a: "No. Las apps sirven para que te descubra gente nueva. Lo que conviene es llevar a tu canal propio a los clientes que ya repiten, que son los que más pedidos hacen.",
+      },
+      {
+        q: "¿Puedo recibir pedidos por WhatsApp desde mi web?",
+        a: "Sí. El cliente arma el pedido en la carta web y al confirmar se abre WhatsApp con el pedido escrito, listo para que lo confirmes y cobres.",
+      },
+      {
+        q: "¿Cómo cobro los pedidos online de mi restaurante?",
+        a: "Con Yape o Plin al confirmar el pedido, con link de pago, con tarjeta mediante una pasarela integrada en la web o contra entrega, según lo que acepte tu local.",
+      },
+      {
+        q: "¿Websy hace sistemas de pedidos para restaurantes?",
+        a: "Sí. Desarrollamos cartas web con carrito, pedidos a WhatsApp o a cocina, pagos con Yape y tarjeta y zonas de reparto, como parte de nuestro sistema para restaurantes.",
+      },
+    ],
+    related: [
+      { label: "Sistema para restaurantes", href: "/sistemas/sistema-para-restaurantes", desc: "Pedidos, cocina, caja y reparto en un solo sistema." },
+      { label: "Web para restaurantes", href: "/diseno-de-paginas-web/restaurantes", desc: "Carta digital, reservas y Google Maps." },
+      { label: "Página web para restaurantes", href: "/blog/pagina-web-para-restaurantes-en-peru", desc: "Qué debe tener la web de tu restaurante." },
+    ],
+  },
+  {
     slug: "como-hacer-que-tu-pagina-web-aparezca-en-google-peru",
     title: "Cómo hacer que tu página web aparezca en Google",
     h1: "Cómo hacer que tu página web aparezca en Google, paso a paso",
@@ -2464,6 +2773,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       { label: "Página web para estudios de abogados en Perú", href: "/blog/pagina-web-para-estudios-de-abogados", desc: "Un cliente con un problema legal busca y elige rápido." },
       { label: "Página web para hoteles y hospedajes en Perú", href: "/blog/pagina-web-para-hoteles-y-hospedajes-en-peru", desc: "Booking se queda con una comisión de cada reserva." },
+      { label: "Pedidos online sin comisión", href: "/blog/pedidos-online-para-restaurantes-sin-comision", desc: "Tu propio canal de pedidos por web y WhatsApp." },
     ],
   },
 
@@ -4699,6 +5009,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Agencia Shopify Perú", href: "/tiendas-virtuales/shopify", desc: "Tu tienda de moda, optimizada para vender." },
       { label: "Tienda Shopify de belleza y cosmética", href: "/blog/tienda-shopify-para-productos-de-belleza-y-cosmetica", desc: "Otro rubro que vende muy bien online." },
       { label: "Qué cuesta que armemos tu tienda Shopify", href: "/tiendas-virtuales/shopify/costos", desc: "Qué define el precio de tu tienda de ropa." },
+      { label: "Stock por tallas y colores en Shopify", href: "/blog/control-de-stock-por-tallas-y-colores-en-shopify", desc: "Variantes, SKU y ubicaciones paso a paso." },
     ],
   },
 
@@ -5636,6 +5947,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: "Pasarelas de pago en Perú", href: "/blog/pasarelas-de-pago-para-ecommerce-en-peru", desc: "El panorama completo: Yape, Plin, Niubiz e Izipay." },
       { label: "Tiendas virtuales", href: "/tiendas-virtuales", desc: "Integramos la pasarela que elijas a tu tienda." },
       { label: "Izipay o Niubiz: cuál conviene para tu tienda", href: "/blog/izipay-o-niubiz-cual-elegir-para-cobrar-con-tarjeta", desc: "La otra decisión de pagos que toca tomar en Perú." },
+      { label: "Cómo integrar Culqi", href: "/blog/como-integrar-culqi-en-tu-pagina-web", desc: "Requisitos y pasos en Shopify, WooCommerce o a medida." },
     ],
   },
   {
