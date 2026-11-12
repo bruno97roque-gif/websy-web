@@ -30,6 +30,7 @@ export const SERVICE_LINKS: NavLink[] = [
   { label: "CRM a Medida", href: "/sistemas/crm-a-medida", desc: "CRM propio con clientes, embudo de ventas y cotizaciones, conectado a la web, WhatsApp y la facturación, sin licencias por usuario." },
   { label: "Sistema para Restaurantes", href: "/sistemas/sistema-para-restaurantes", desc: "sistema para restaurantes a medida: pedidos y comandas, mesas, delivery, caja, inventario de insumos y facturación electrónica SUNAT; un sistema web a medida parte desde S/ 15,000 (referencial)." },
   { label: "Sistema para Clínicas", href: "/sistemas/sistema-para-clinicas", desc: "sistema para clínicas, consultorios y centros odontológicos a medida: agenda de citas, historia clínica, caja, recordatorios por WhatsApp y facturación electrónica; un sistema web a medida parte desde S/ 15,000 (referencial)." },
+  { label: "Rediseño de Páginas Web", href: "/rediseno-de-paginas-web", desc: "rediseño de páginas web y tiendas sin perder posicionamiento: inventario de URLs, redirecciones 301, diseño móvil y seguimiento en Search Console." },
   { label: "Diseño de Landing Pages", href: "/diseno-de-landing-pages", desc: "landing pages para campañas de Google Ads y Meta: un solo objetivo, carga rápida en el celular y cada contacto por formulario o WhatsApp medido en GA4." },
   { label: "Integración de Pagos", href: "/integracion-de-pagos", desc: "integración de Yape, Plin y pasarelas de pago (Izipay, Niubiz, Culqi, Mercado Pago) en tu web, tienda virtual, app o sistema a medida." },
   { label: "SEO y Posicionamiento", href: "/seo", desc: "SEO técnico, on-page, de contenidos y local para aparecer en Google sin pagar por cada clic." },
@@ -39,6 +40,7 @@ export const SERVICE_LINKS: NavLink[] = [
   { label: "Google Ads", href: "/google-ads", desc: "gestión de campañas de Google Ads en Perú orientadas a clientes y retorno." },
   { label: "Branding", href: "/branding", desc: "identidad de marca, logotipo, manual de marca y aplicaciones." },
   { label: "Mantenimiento Web", href: "/mantenimiento-web", desc: "soporte, actualizaciones, seguridad y mejoras continuas de tu sitio." },
+  { label: "Hosting y Dominio", href: "/hosting-y-dominio", desc: "hosting y dominio .pe, .com.pe o .com a nombre de tu empresa, con certificado SSL, correos y renovaciones al día; incluidos el primer año cuando Websy hace tu web." },
   { label: "Precios", href: "/precios", desc: "desde cuánto parte una tienda virtual, una aplicación o un software a medida en Perú (montos referenciales) y qué incluye cada servicio." },
 ];
 
@@ -110,6 +112,7 @@ export const SERVICE_SITEMAP: SitemapEntry[] = [
   { path: "/sistemas/sistema-para-restaurantes", priority: 0.8, lastModified: "2026-10-13" },
   { path: "/sistemas/sistema-para-clinicas", priority: 0.8, lastModified: "2026-11-05" },
   { path: "/diseno-de-landing-pages", priority: 0.8, lastModified: "2026-11-05" },
+  { path: "/rediseno-de-paginas-web", priority: 0.8, lastModified: "2026-11-12" },
   { path: "/integracion-de-pagos", priority: 0.9, lastModified: "2026-10-13" },
   { path: "/precios", priority: 0.9, lastModified: "2026-11-07" },
   { path: "/cotizacion", priority: 0.8, lastModified: "2026-07-31" },
@@ -118,7 +121,8 @@ export const SERVICE_SITEMAP: SitemapEntry[] = [
   { path: "/seo/seo-local", priority: 0.8, lastModified: "2026-10-14" },
   { path: "/google-ads", priority: 0.9, lastModified: "2026-11-07" },
   { path: "/branding", priority: 0.9, lastModified: "2026-08-12" },
-  { path: "/mantenimiento-web", priority: 0.9, lastModified: "2026-07-31" },
+  { path: "/mantenimiento-web", priority: 0.9, lastModified: "2026-11-12" },
+  { path: "/hosting-y-dominio", priority: 0.8, lastModified: "2026-11-12" },
   // Silo de diseño web por rubro (hijas de /diseno-de-paginas-web).
   { path: "/diseno-de-paginas-web/restaurantes", priority: 0.8, lastModified: "2026-09-02" },
   { path: "/diseno-de-paginas-web/clinicas", priority: 0.8, lastModified: "2026-11-05" },

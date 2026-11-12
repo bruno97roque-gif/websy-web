@@ -62,7 +62,7 @@ export default function MantenimientoWebPage() {
           bullets: [
             "Monitoreo de disponibilidad (uptime) del sitio.",
             "Optimización de velocidad y Core Web Vitals.",
-            "Gestión de hosting y dominio.",
+            "Gestión de [hosting y dominio](/hosting-y-dominio).",
             "Alertas y resolución ante caídas o errores.",
           ],
         },
@@ -82,6 +82,8 @@ export default function MantenimientoWebPage() {
         { label: "Nuestros servicios", href: "/servicios", desc: "Conoce todo lo que hacemos: web, ecommerce, software, SEO y más." },
         { label: "Precios y cotización", href: "/precios", desc: "Qué define el precio del mantenimiento y cómo contratarlo." },
         { label: "Diseño de páginas web", href: "/diseno-de-paginas-web", desc: "¿Aún no tienes web? Empieza por una hecha para durar." },
+        { label: "Hosting y dominio", href: "/hosting-y-dominio", desc: "Dominio a nombre de tu empresa, hosting, SSL y correos configurados." },
+        { label: "Rediseño de páginas web", href: "/rediseno-de-paginas-web", desc: "Renueva tu web sin perder lo que ya posiciona en Google." },
       ]}
       articles={[
         { label: "Costos de mantenimiento de una página web", href: "/blog/costos-de-mantenimiento-de-una-pagina-web-en-peru", desc: "Hosting, seguridad y respaldos: qué incluye y por qué importa." },
