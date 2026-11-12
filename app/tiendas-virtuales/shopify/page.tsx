@@ -67,6 +67,7 @@ export default function ShopifyPage() {
             "Velocidad: tema ligero, imágenes optimizadas y apps mínimas para que cargue en segundos y no pierdas ventas ni ranking.",
             "SEO: fichas y categorías optimizadas, datos estructurados y una arquitectura que Google entiende y posiciona.",
             "CRO (conversión): fichas claras, checkout corto, confianza visible (envíos, políticas, pagos) y llamados a la acción que convierten visitas en compras.",
+            "Tráfico pagado: Shopify se conecta con Google Merchant Center para que tus productos salgan con foto y precio en Google Shopping. Si quieres que llevemos esas campañas, es parte de nuestra [gestión de Google Ads en Perú](/google-ads).",
           ],
         },
         {

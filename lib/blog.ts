@@ -1619,7 +1619,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         h2: "Cómo se complementan en una campaña peruana",
-        body: "Lo ideal es combinarlas. Por ejemplo, una clínica o tienda en Lima mantiene su página web para posicionarse en Google y generar confianza, y cuando lanza una promoción crea una landing page específica para su campaña en Meta Ads o Google Ads. Así el tráfico pagado llega a una página optimizada para convertir, mientras la web sigue captando consultas orgánicas y derivando contactos por WhatsApp. Nosotros construimos las dos: mira cómo trabajamos como [agencia de desarrollo web en Lima](/desarrollo-web) y qué incluye [la gestión de tus campañas de Google Ads](/google-ads). Si tienes un estudio jurídico, mira cómo trabajamos las [webs para abogados](/diseno-de-paginas-web/abogados)."
+        body: "Lo ideal es combinarlas. Por ejemplo, una clínica o tienda en Lima mantiene su página web para posicionarse en Google y generar confianza, y cuando lanza una promoción crea una landing page específica para su campaña en Meta Ads o Google Ads. Así el tráfico pagado llega a una página optimizada para convertir, mientras la web sigue captando consultas orgánicas y derivando contactos por WhatsApp. Nosotros construimos las dos: mira cómo trabajamos como [agencia de desarrollo web en Lima](/) y qué incluye [la gestión de tus campañas de Google Ads](/google-ads). Si tienes un estudio jurídico, mira cómo trabajamos las [webs para abogados](/diseno-de-paginas-web/abogados)."
       }
     ],
     faqs: [
@@ -1717,7 +1717,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         h2: "Cómo trabaja Websy",
-        body: "En Websy buscamos que el cliente quede dueño de su proyecto. Como [agencia de desarrollo web en Lima](/desarrollo-web), entregamos páginas web y tiendas virtuales autoadministrables, con alcance y cronograma definidos desde el inicio, y dejamos el dominio y los accesos a tu nombre. Acompañamos después del lanzamiento y dejamos la web lista para SEO y para integraciones útiles en Perú como WhatsApp, facturación electrónica SUNAT y pasarelas de pago. Si estás evaluando opciones, conversemos sin compromiso: en [contacto](/contacto) están el teléfono, el correo y el horario de atención. Y cuando termine, asegúrate de [con qué te quedas: código, dominio y accesos](/blog/de-quien-es-el-codigo-el-dominio-y-los-accesos)."
+        body: "En Websy buscamos que el cliente quede dueño de su proyecto. Como [agencia de desarrollo web en Lima](/), entregamos páginas web y tiendas virtuales autoadministrables, con alcance y cronograma definidos desde el inicio, y dejamos el dominio y los accesos a tu nombre. Acompañamos después del lanzamiento y dejamos la web lista para SEO y para integraciones útiles en Perú como WhatsApp, facturación electrónica SUNAT y pasarelas de pago. Si estás evaluando opciones, conversemos sin compromiso: en [contacto](/contacto) están el teléfono, el correo y el horario de atención. Y cuando termine, asegúrate de [con qué te quedas: código, dominio y accesos](/blog/de-quien-es-el-codigo-el-dominio-y-los-accesos)."
       }
     ],
     faqs: [
@@ -1748,7 +1748,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     related: [
       {
-        label: "Agencia de desarrollo web en Lima",
+        label: "Desarrollo web a medida",
         href: "/desarrollo-web",
         desc: "Cómo trabajamos: alcance cerrado, cronograma y accesos a tu nombre."
       },
@@ -2110,7 +2110,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         h2: "El siguiente paso para tu negocio",
-        body: "Tener presencia online sólida es un proceso, pero empieza por lo más importante: una web propia bien hecha que sea tu centro de operaciones digital. Desde ahí conectas tu ficha de Google, tus redes, tu WhatsApp y, si vendes, tu tienda online. Como [agencia de desarrollo web en Lima](/desarrollo-web) diseñamos páginas web y [tiendas virtuales](/tiendas-virtuales) pensadas para el mercado peruano, y podemos ayudarte a dar el primer paso o a profesionalizar lo que ya tienes. Si cada área lleva su propio Excel, lo que falta es un [ERP a medida](/sistemas/gestion-erp-crm)."
+        body: "Tener presencia online sólida es un proceso, pero empieza por lo más importante: una web propia bien hecha que sea tu centro de operaciones digital. Desde ahí conectas tu ficha de Google, tus redes, tu WhatsApp y, si vendes, tu tienda online. Como [agencia de desarrollo web en Lima](/) diseñamos páginas web y [tiendas virtuales](/tiendas-virtuales) pensadas para el mercado peruano, y podemos ayudarte a dar el primer paso o a profesionalizar lo que ya tienes. Si cada área lleva su propio Excel, lo que falta es un [ERP a medida](/sistemas/gestion-erp-crm)."
       }
     ],
     faqs: [
@@ -2395,7 +2395,7 @@ export const BLOG_POSTS: BlogPost[] = [
     sections: [
       {
         h2: "Qué es Google Mi Negocio y por qué aparecer en el mapa",
-        body: "Google Mi Negocio (ahora Google Business Profile) es la ficha gratuita de tu empresa que se muestra en la búsqueda de Google y en Google Maps. Cuando alguien busca un servicio o producto con intención local (por ejemplo, sumando una zona o un distrito), Google muestra un bloque con un mapa y tres negocios destacados: el llamado local pack. Aparecer ahí pone tu negocio frente a clientes que ya están buscando comprar. Si aún no la diste de alta, empieza por [cómo indexar tu web en Search Console](/blog/como-hacer-que-tu-pagina-web-aparezca-en-google-peru).",
+        body: "Google Mi Negocio (ahora Google Business Profile) es la ficha gratuita de tu empresa que se muestra en la búsqueda de Google y en Google Maps. Cuando alguien busca un servicio o producto con intención local (por ejemplo, sumando una zona o un distrito), Google muestra un bloque con un mapa y tres negocios destacados: el llamado local pack. Aparecer ahí pone tu negocio frente a clientes que ya están buscando comprar. Si aún no la diste de alta, empieza por [cómo indexar tu web en Search Console](/blog/como-hacer-que-tu-pagina-web-aparezca-en-google-peru). El orden del mapa no se compra: depende de la relevancia, la distancia y la reputación de la ficha. Lo que sí se paga son los anuncios con la ubicación de tu ficha, que aparecen marcados como patrocinados en Maps y en la búsqueda; es una de las piezas que configuramos en la [gestión de Google Ads en Perú](/google-ads).",
         bullets: [
           "Apareces en Google Maps y en la búsqueda con intención local.",
           "El local pack muestra tu negocio cuando el cliente busca cerca.",
@@ -3872,7 +3872,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     related: [
-      { label: "Google Ads", href: "/google-ads", desc: "Clientes desde el primer día con campañas medidas." },
+      { label: "Agencia de Google Ads en Perú", href: "/google-ads", desc: "Clientes desde el primer día con campañas medidas." },
       { label: "SEO y posicionamiento", href: "/seo", desc: "Tráfico que crece y no depende de pagar por clic." },
       { label: "Google Ads para pymes", href: "/blog/google-ads-para-pymes-en-peru-cuanto-invertir", desc: "Cuánto invertir y cómo no botar la plata." },
       { label: "Qué es un manual de marca y qué debe incluir", href: "/blog/manual-de-marca-que-es-y-por-que-tu-negocio-lo-necesita", desc: "Un manual de marca evita que tu negocio se vea distinto en cada pieza." },
@@ -4282,7 +4282,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     related: [
-      { label: "Google Ads", href: "/google-ads", desc: "Campañas medidas que traen contactos, no solo clics." },
+      { label: "Agencia de Google Ads en Perú", href: "/google-ads", desc: "Campañas medidas que traen contactos, no solo clics." },
       { label: "Google Ads vs SEO", href: "/blog/google-ads-vs-seo-cual-conviene-para-tu-negocio", desc: "Cuándo conviene cada uno y por qué se complementan." },
       { label: "Cuánto cuesta Google Ads en Perú", href: "/blog/google-ads-para-pymes-en-peru-cuanto-invertir", desc: "Cuánto invertir al mes y cómo no botar la plata." },
     ],
@@ -4355,7 +4355,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     related: [
-      { label: "Google Ads", href: "/google-ads", desc: "Campañas optimizadas que no botan tu presupuesto." },
+      { label: "Agencia de Google Ads en Perú", href: "/google-ads", desc: "Campañas optimizadas que no botan tu presupuesto." },
       { label: "Cómo estructurar una campaña de Ads", href: "/blog/como-estructurar-una-campana-de-google-ads-para-servicios", desc: "Arma tu campaña de servicios paso a paso." },
       { label: "Google Ads para pymes", href: "/blog/google-ads-para-pymes-en-peru-cuanto-invertir", desc: "Cuánto invertir y cómo medir tus resultados." },
     ],
@@ -6258,7 +6258,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     related: [
-      { label: "Google Ads", href: "/google-ads", desc: "Gestionamos campañas orientadas a clientes, no a clics." },
+      { label: "Agencia de Google Ads en Perú", href: "/google-ads", desc: "Gestionamos campañas orientadas a clientes, no a clics." },
       { label: "Diferencia entre página web y landing page", href: "/blog/diferencia-entre-pagina-web-y-landing-page", desc: "Cuál necesitas según lo que quieras conseguir." },
       { label: "Cuánto cuesta Google Ads en Perú", href: "/blog/google-ads-para-pymes-en-peru-cuanto-invertir", desc: "Qué presupuesto tiene sentido para empezar." },
     ],
