@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { pageMeta } from "@/lib/seo";
 import ServiceLanding from "@/components/sections/landing/ServiceLanding";
+import { PORTAFOLIO_WEBS } from "@/lib/portfolio";
 
 /* 14-oct-2026 · «agencia de páginas web» (77 imp, puesto 28,4), «diseño web lima»
    (31,3) y «diseño web profesional peru» (32,6) en GSC 90 d. Las tres agencias que
@@ -123,6 +124,7 @@ export default function DisenoPaginasWebPage() {
           a: "Cada página la entregamos con SEO on-page: títulos, descripciones, estructura de encabezados, velocidad y datos estructurados, para que tenga base sólida para posicionar.",
         },
       ]}
+      portfolio={PORTAFOLIO_WEBS}
       serviceName="Diseño y desarrollo de páginas web"
       serviceDescription="Diseño y desarrollo de páginas web profesionales para empresas en Lima y Perú: administrables, responsive, optimizadas para SEO, con hosting, dominio y WhatsApp."
     />
