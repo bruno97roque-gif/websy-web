@@ -4042,6 +4042,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     related: [
+      { label: "Rediseño de páginas web", href: "/rediseno-de-paginas-web", desc: "Renovamos tu web cuidando las posiciones que ya tiene." },
       { label: "SEO y posicionamiento web", href: "/seo", desc: "Migra y crece sin perder tus posiciones en Google." },
       { label: "Diseño de páginas web", href: "/diseno-de-paginas-web", desc: "Webs nuevas que cuidan tu tráfico y tu SEO." },
       { label: "Rediseñar tu web sin perder SEO", href: "/blog/como-redisenar-tu-pagina-web-sin-perder-seo", desc: "Si solo cambias el diseño: el checklist para no perder posiciones." },
@@ -4620,6 +4621,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     related: [
+      { label: "Hosting y dominio con Websy", href: "/hosting-y-dominio", desc: "Dominio a nombre de tu empresa, hosting, SSL y correos configurados." },
       { label: "Hosting.pe vs hosting.com.pe", href: "/blog/hosting-pe-vs-hosting-com-pe-cual-elegir", desc: "Dos proveedores peruanos comparados lado a lado." },
       { label: "Mantenimiento web", href: "/mantenimiento-web", desc: "Hosting, seguridad, respaldos y actualizaciones al día." },
       { label: "Costos de mantenimiento de una web", href: "/blog/costos-de-mantenimiento-de-una-pagina-web-en-peru", desc: "Qué incluye mantener tu web viva y segura." },
@@ -6339,6 +6341,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     related: [
+      { label: "Hosting y dominio con Websy", href: "/hosting-y-dominio", desc: "Dominio a nombre de tu empresa, hosting, SSL y correos configurados." },
       { label: "Hosting.pe vs hosting.com.pe", href: "/blog/hosting-pe-vs-hosting-com-pe-cual-elegir", desc: "Planes, IGV, soporte y renovación de dos proveedores peruanos." },
       { label: "Cuánto cuesta un hosting y un dominio .pe", href: "/blog/cuanto-cuesta-un-hosting-y-un-dominio-pe-en-peru", desc: "Los precios reales y qué incluye cada plan." },
       { label: "Mantenimiento y soporte web", href: "/mantenimiento-web", desc: "Nos ocupamos del hosting, los respaldos y las actualizaciones." },
@@ -7859,6 +7862,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     related: [
+      { label: "Rediseño de páginas web", href: "/rediseno-de-paginas-web", desc: "Renovamos tu web cuidando las posiciones que ya tiene." },
       { label: "Diseño de páginas web", href: "/diseno-de-paginas-web", desc: "Webs nuevas o rediseñadas, rápidas y medidas." },
       { label: "Servicio de SEO", href: "/seo", desc: "Posicionamiento técnico, de contenidos y local." },
       { label: "Checklist de SEO on-page", href: "/blog/seo-on-page-checklist-para-tu-pagina-web", desc: "Lo básico que cada página debe tener." },
